@@ -1,0 +1,114 @@
+{
+    "name": "t:sections.footer.name",
+    "type": "footer",
+    "sections": {
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "enable_popup": true,
+          "popup_test": false,
+          "fadein": 4,
+          "popup_count": 1,
+          "trigger_link": true,
+          "layout": "style_3",
+          "popup_image": "",
+          "image_width": 45,
+          "image_alt": "Alt text",
+          "popup_title": "Sign up for 20% off your first order!",
+          "header_font_size": 32,
+          "popup_message": "Join our newsletter to be the first to know about new arrivals, exclusive promotions, and online-only deals.",
+          "message_font_size": 14,
+          "submit_button_text": "Sign-up",
+          "success_message": "Thank you for subscribing!",
+          "show_social": true,
+          "enable_terms": true,
+          "terms_label": "<p>I agree to receive marketing emails</p>",
+          "terms_position": "position_above",
+          "subs_form": false,
+          "button_label": "",
+          "link": "",
+          "color_scheme": "option-1"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "brand_information": {
+            "type": "brand_information",
+            "settings": {
+              "brand_headline": "",
+              "brand_description": "<p>Indulge in a nutritious and delicious experience with the Flux collection of protein powders and chocolate treats. Each product is thoughtfully crafted to nourish your body while satisfying your taste buds. Whether you're fueling up after a workout or simply looking for a wholesome snack, our protein powders provide the perfect balance of plant-based nutrition. </p>",
+              "brand_image": "",
+              "brand_image_width": 80,
+              "hide_image": false,
+              "newsletter_enable": true,
+              "show_social": true,
+              "social_icons_size": "small"
+            }
+          },
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "heading": "Our Shop",
+              "subtext": "<p>Find a location nearest you. </p><p>📍 <a href=\"#\" title=\"#\"><strong>See Our Stores</strong></a></p><p>✉️ <a href=\"#\" title=\"#\"><strong>info@refuel.com</strong></a></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-2": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_width": 550,
+              "image_headline": "Organic & Homemade",
+              "image_description": "<p>Our latest collection of high-protein products. </p>",
+              "button_label": "New Arrivals",
+              "button_link": "",
+              "button_style_secondary": true,
+              "color_scheme_1": "option-2"
+            }
+          }
+        },
+        "block_order": [
+          "brand_information",
+          "footer-0",
+          "footer-1",
+          "footer-2"
+        ],
+        "settings": {
+          "enable_follow_on_shop": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "show_powered_by_link": true,
+          "show_policy": true,
+          "enable_terms": false,
+          "terms_label": "<p>I agree to receive marketing emails</p>",
+          "back_to_top_desktop": true,
+          "back_to_top_bottom": 80,
+          "back_to_top_right": 4,
+          "back_to_top_mobile": true,
+          "centered_content": false,
+          "color_scheme": "option-1",
+          "footer_border": false,
+          "swipe_on_mobile": false,
+          "disable_arrow_mobile": true,
+          "margin_top": 0,
+          "margin_bottom": 80,
+          "make_columns_even": false,
+          "padding_top": 48,
+          "padding_bottom": 16,
+          "ignore_spacing": true
+        }
+      }
+    },
+    "order": [
+      "popup",
+      "footer"
+    ]
+  }  
