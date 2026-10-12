@@ -1,0 +1,46 @@
+<div class="block-spacer block-spacer-{{ block.id }}" aria-hidden="true" {{ block.shopify_attributes }}></div>
+
+{%- style -%}
+  .block-spacer-{{ block.id }} {
+    height: {{ block.settings.height_mobile }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .block-spacer-{{ block.id }} {
+      height: {{ block.settings.height }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "t:blocks.spacer.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "range",
+      "id": "height",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 24,
+      "label": "t:blocks.spacer.settings.height.label"
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 16,
+      "label": "t:blocks.spacer.settings.height_mobile.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:blocks.spacer.name"
+    }
+  ]
+}
+{% endschema %}

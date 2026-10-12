@@ -166,65 +166,7 @@
 
           <!-- Tooltips List -->
           <ol class="tooltips-list" aria-label="{{ section.settings.title }}">
-            {%- for block in section.blocks -%}
-              <li class="tooltip-item" id="tooltip-{{ block.id }}">
-                <button
-                  class="tooltip-button"
-                  type="button"
-                  value="{{ block.id }}"
-                  aria-describedby="tooltip-overlay-{{ block.id }}"
-                  aria-label="{{ forloop.index }}, {{ block.settings.title }}"
-                  aria-expanded="false"
-                  data-tooltip-trigger
-                  {{ block.shopify_attributes }}
-                >
-                  <div class="tooltip-index" role="none">{{ forloop.index }}</div>
-                </button>
-                <!-- Hidden content for the tooltip -->
-                <aside
-                  class="color-{{ section.settings.color_scheme_1 }} gradient tooltip-overlay global-media-settings"
-                  id="tooltip-overlay-{{ block.id }}"
-                  data-tooltip-overlay
-                >
-                  {%- if block.settings.product != blank -%}
-                    <a href="{{ block.settings.product.url }}">
-                      {{
-                        block.settings.product.featured_image
-                        | image_url: width: 260, height: 260
-                        | image_tag: loading: 'lazy'
-                      }}
-                    </a>
-                    {% assign product = block.settings.product %}
-                    <h4 class="column product-title">
-                      <a
-                        class="link"
-                        {% if block.settings.product.url == blank %}
-                          role="link" aria-disabled="true"
-                        {% else %}
-                          href="{{ block.settings.product.url }}"
-                        {% endif %}
-                      >
-                        {%- if block.settings.product.title != blank -%}
-                          {{ block.settings.product.title | escape }}
-                        {%- else -%}
-                          {{ 'onboarding.product_title' | t }}
-                        {%- endif -%}
-                      </a>
-                    </h4>
-                    
-                  {% assign product = block.settings.product %}
-                  {% if product %}
-                    <div class="spotlight-price">
-                      <span class="product-price">{{ product.price | money }}</span>
-                      <span class="product-price sale">{{ product.compare_at_price | money }}</span>
-                    </div>
-                  {% endif %}
-                  
-                  {%- endif -%}
-                  <p class="tooltip-text">{{ block.settings.content }}</p>
-                </aside>
-              </li>
-            {%- endfor -%}
+            {% content_for 'blocks' %}
           </ol>
         </div>
 
@@ -266,7 +208,10 @@
   "name": "t:sections.image-hotspots.name",
   "class": "section",
   "disabled_on": {
-    "groups": ["header", "footer"]
+    "groups": [
+      "header",
+      "footer"
+    ]
   },
   "settings": [
     {
@@ -290,123 +235,123 @@
       "default": "default",
       "label": "t:sections.image-hotspots.settings.image_size.label"
     },
-  {
-    "type": "text",
-    "id": "caption",
-    "default": "Caption",
-    "label": "t:sections.image-hotspots.settings.caption.label"
-  },
-  {
-    "type": "select",
-    "id": "text_style",
-    "options": [
-      {
-        "value": "subtitle",
-        "label": "t:sections.image-hotspots.settings.text_style.options__1.label"
-      },
-      {
-        "value": "caption-with-letter-spacing",
-        "label": "t:sections.image-hotspots.settings.text_style.options__2.label"
-      }
-    ],
-    "default": "caption-with-letter-spacing",
-    "label": "t:sections.image-hotspots.settings.text_style.label"
-  },
-  {
-    "type": "select",
-    "id": "text_size",
-    "options": [
-      {
-        "value": "small",
-        "label": "t:sections.image-hotspots.settings.text_size.options__1.label"
-      },
-      {
-        "value": "medium",
-        "label": "t:sections.image-hotspots.settings.text_size.options__2.label"
-      },
-      {
-        "value": "large",
-        "label": "t:sections.image-hotspots.settings.text_size.options__3.label"
-      }
-    ],
-    "default": "medium",
-    "label": "t:sections.image-hotspots.settings.text_size.label"
-  },
-  {
+    {
+      "type": "text",
+      "id": "caption",
+      "default": "Caption",
+      "label": "t:sections.image-hotspots.settings.caption.label"
+    },
+    {
+      "type": "select",
+      "id": "text_style",
+      "options": [
+        {
+          "value": "subtitle",
+          "label": "t:sections.image-hotspots.settings.text_style.options__1.label"
+        },
+        {
+          "value": "caption-with-letter-spacing",
+          "label": "t:sections.image-hotspots.settings.text_style.options__2.label"
+        }
+      ],
+      "default": "caption-with-letter-spacing",
+      "label": "t:sections.image-hotspots.settings.text_style.label"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.image-hotspots.settings.text_size.options__1.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.image-hotspots.settings.text_size.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-hotspots.settings.text_size.options__3.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.image-hotspots.settings.text_size.label"
+    },
+    {
       "type": "text",
       "id": "heading",
       "default": "Heading",
       "label": "t:sections.image-hotspots.settings.heading.label"
-  },
-  {
-    "type": "select",
-    "id": "heading_size",
-    "options": [
-      {
-        "value": "large",
-        "label": "t:sections.all.heading_size.options__2.label"
-      },
-      {
-        "value": "medium",
-        "label": "t:sections.all.heading_size.options__3.label"
-      },
-      {
-        "value": "small",
-        "label": "t:sections.all.heading_size.options__4.label"
-      }
-    ],
-    "default": "small",
-    "label": "t:sections.all.heading_size.label"
-  },
-  {
-    "type": "select",
-    "id": "heading_style",
-    "options": [
-      {
-        "value": "default",
-        "label": "t:sections.all.heading_style.options__1.label"
-      },
-      {
-        "value": "uppercase",
-        "label": "t:sections.all.heading_style.options__2.label"
-      }
-    ],
-    "default": "default",
-    "label": "t:sections.all.heading_style.label"
-  },
-  {
-    "type": "select",
-    "id": "heading_tag",
-    "options": [
-      {
-        "value": "h1",
-        "label": "t:sections.all.heading_tag.options__1.label"
-      },
-      {
-        "value": "h2",
-        "label": "t:sections.all.heading_tag.options__2.label"
-      },
-      {
-        "value": "h3",
-        "label": "t:sections.all.heading_tag.options__3.label"
-      },
-      {
-        "value": "h4",
-        "label": "t:sections.all.heading_tag.options__4.label"
-      },
-      {
-        "value": "h5",
-        "label": "t:sections.all.heading_tag.options__5.label"
-      },
-      {
-        "value": "h6",
-        "label": "t:sections.all.heading_tag.options__6.label"
-      }
-    ],
-    "default": "h2",
-    "label": "t:sections.all.heading_tag.label",
-    "info": "t:sections.all.heading_tag.info"
-  },
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "large",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.all.heading_size.options__4.label"
+        }
+      ],
+      "default": "small",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.heading_style.options__1.label"
+        },
+        {
+          "value": "uppercase",
+          "label": "t:sections.all.heading_style.options__2.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.all.heading_style.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.all.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.all.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.all.heading_tag.options__6.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_tag.label",
+      "info": "t:sections.all.heading_tag.info"
+    },
     {
       "type": "select",
       "id": "layout",
@@ -476,25 +421,25 @@
       "label": "t:sections.all.ignore_spacing.label"
     },
     {
-        "type": "header",
-        "content": "t:sections.featured-collection.settings.header_mobile.content"
-      },
-      {
-        "type": "select",
-        "id": "margin_spacing",
-        "options": [
-          {
-            "value": "negative",
-            "label": "t:sections.all.margin_spacing.options__1.label"
-          },
-          {
-            "value": "positive",
-            "label": "t:sections.all.margin_spacing.options__2.label"
-          }
-        ],
-        "default": "negative",
-        "label": "t:sections.all.margin_spacing.label"
-      },
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header_mobile.content"
+    },
+    {
+      "type": "select",
+      "id": "margin_spacing",
+      "options": [
+        {
+          "value": "negative",
+          "label": "t:sections.all.margin_spacing.options__1.label"
+        },
+        {
+          "value": "positive",
+          "label": "t:sections.all.margin_spacing.options__2.label"
+        }
+      ],
+      "default": "negative",
+      "label": "t:sections.all.margin_spacing.label"
+    },
     {
       "type": "range",
       "id": "margin_top",
@@ -524,41 +469,7 @@
   ],
   "blocks": [
     {
-      "type": "Tooltip",
-      "name": "Tooltip",
-      "settings": [
-        {
-          "type": "product",
-          "id": "product",
-          "label": "t:sections.image-hotspots.blocks.tooltip.settings.product.label"
-        },
-        {
-          "type": "text",
-          "id": "content",
-          "label": "t:sections.image-hotspots.blocks.tooltip.settings.content.label",
-          "default": "I am a tooltip, I provide additional explanatory content and showcase product features."
-        },
-        {
-          "type": "range",
-          "id": "top",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "%",
-          "label": "t:sections.image-hotspots.blocks.tooltip.settings.top.label",
-          "default": 20
-        },
-        {
-          "type": "range",
-          "id": "left",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "%",
-          "label": "t:sections.image-hotspots.blocks.tooltip.settings.left.label",
-          "default": 50
-        }
-      ]
+      "type": "_hotspot"
     }
   ],
   "presets": [
@@ -566,7 +477,7 @@
       "name": "t:sections.image-hotspots.presets.name",
       "blocks": [
         {
-          "type": "Tooltip"
+          "type": "_hotspot"
         }
       ]
     }

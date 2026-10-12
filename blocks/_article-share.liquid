@@ -1,0 +1,32 @@
+<div class="article-template-social-sharing" {{ block.shopify_attributes }}>
+  {% assign share_url = request.origin | append: article.url %}
+  {% render 'share-button-article', block: block, share_link: share_url %}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-article.blocks.share.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "share_label",
+      "label": "t:sections.main-article.blocks.share.settings.text.label",
+      "default": "Share"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-article.blocks.share.settings.featured_image_info.content"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-article.blocks.share.settings.title_info.content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-article.blocks.share.name"
+    }
+  ]
+}
+{% endschema %}

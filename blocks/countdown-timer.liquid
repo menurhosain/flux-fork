@@ -1,0 +1,127 @@
+{%- if block.settings['countdown-date'] != blank -%}
+  <div
+    class="block-countdown countdown-option-1 countdown-text-position-{{ block.settings.countdown-text-position }} {{ block.settings.countdown-date-time-style }} countdown-big-{{ block.settings.large-countdown }}"
+    {{ block.shopify_attributes }}
+  >
+    {% render 'countdown-timer',
+      title: block.settings['countdown-text'],
+      end_date: block.settings['countdown-date'],
+      end_time: block.settings['countdown-time'],
+      countdown_finished_message: block.settings.countdown_finished_message
+    %}
+  </div>
+{%- elsif request.design_mode -%}
+  <div class="block-countdown" {{ block.shopify_attributes }}></div>
+{%- endif -%}
+
+{% stylesheet %}
+  .block-countdown.countdown-big-true countdown-timer {
+    font-size: calc(var(--font-heading-scale) * 5.2rem);
+  }
+
+  .block-countdown.countdown-big-true .timer-text {
+    font-size: calc(var(--font-heading-scale) * 1.2rem);
+  }
+
+  .block-countdown.countdown-big-true countdown-timer div {
+    padding-right: 15px;
+  }
+
+  @media only screen and (max-width: 990px) {
+    .block-countdown.countdown-big-true countdown-timer div {
+      padding-right: 10px;
+    }
+
+    .block-countdown.countdown-big-true countdown-timer {
+      font-size: calc(var(--font-heading-scale) * 4rem);
+    }
+
+    .block-countdown.countdown-big-true .timer-number {
+      font-size: calc(var(--font-heading-scale) * 2.5rem);
+      padding: 0 5px;
+    }
+
+    .block-countdown.countdown-big-true .timer-text {
+      font-size: calc(var(--font-heading-scale) * 1rem);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:blocks.countdown_timer.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "countdown-text",
+      "label": "t:sections.all.countdown-text.label",
+      "default": "Offer Ends In"
+    },
+    {
+      "type": "select",
+      "id": "countdown-text-position",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:sections.all.countdown-text-position.options__1.label"
+        },
+        {
+          "value": "left",
+          "label": "t:sections.all.countdown-text-position.options__2.label"
+        }
+      ],
+      "default": "top",
+      "label": "t:sections.all.countdown-text-position.label"
+    },
+    {
+      "type": "text",
+      "id": "countdown-date",
+      "label": "t:sections.all.countdown-date.label",
+      "info": "t:sections.all.countdown-date.info",
+      "default": "Dec 31, 2026"
+    },
+    {
+      "type": "text",
+      "id": "countdown-time",
+      "label": "t:sections.all.countdown-time.label",
+      "info": "t:sections.all.countdown-time.info",
+      "default": "9:00"
+    },
+    {
+      "type": "select",
+      "id": "countdown-date-time-style",
+      "options": [
+        {
+          "value": "style-one",
+          "label": "t:sections.all.countdown-date-time-style.options__1.label"
+        },
+        {
+          "value": "style-two",
+          "label": "t:sections.all.countdown-date-time-style.options__2.label"
+        }
+      ],
+      "default": "style-one",
+      "label": "t:sections.all.countdown-date-time-style.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "large-countdown",
+      "default": false,
+      "label": "t:sections.all.large-countdown.label"
+    },
+    {
+      "type": "text",
+      "id": "countdown_finished_message",
+      "label": "t:sections.all.countdown_finished_message.label",
+      "info": "t:sections.all.countdown_finished_message.info",
+      "default": "This offer has ended"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:blocks.countdown_timer.name"
+    }
+  ]
+}
+{% endschema %}

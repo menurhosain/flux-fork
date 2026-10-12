@@ -1,0 +1,227 @@
+{%- liquid
+  for item in section.blocks
+    if item.id == block.id
+      assign block_index = forloop.index
+      break
+    endif
+  endfor
+-%}
+{%- liquid
+  assign has_social_icons = true
+  if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank and settings.social_whatsapp_link == blank and settings.social_linkedin_link == blank
+    assign has_social_icons = false
+  endif
+-%}
+<div
+  class="footer-block grid-item {% if section.settings.swipe_on_mobile %} slider-slide{% endif %}"
+  id="Slide-{{ section.id }}-{{ block_index }}"
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.heading != blank -%}
+    <h2 class="footer-block__heading heading-bold">{{- block.settings.heading | escape -}}</h2>
+  {%- endif -%}
+
+  <div class="footer-block__brand-info">
+    {% if block.settings.hide_image != true %}
+      {%- if block.settings.brand_image != blank -%}
+        {%- assign brand_image_height = block.settings.brand_image_width
+          | divided_by: block.settings.brand_image.aspect_ratio
+        -%}
+        <div
+          class="footer-block__image-wrapper"
+          style="max-width: min(100%, {{ block.settings.brand_image_width }}px);"
+        >
+          {{
+            block.settings.brand_image
+            | image_url: width: 1100
+            | image_tag:
+              loading: 'lazy',
+              widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+              height: brand_image_height,
+              width: block.settings.brand_image_width
+          }}
+        </div>
+      {%- else -%}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if block.settings.brand_headline != blank -%}
+      <h2 class="footer-block__heading heading-bold rte">
+        {{ block.settings.brand_headline }}
+      </h2>
+    {%- endif -%}
+    {%- if block.settings.brand_description != blank -%}
+      <div class="rte">{{ block.settings.brand_description }}</div>
+    {%- endif -%}
+
+    {%- if block.settings.newsletter_enable -%}
+      <div class="footer-block__newsletter">
+        {%- form 'customer',
+          id: 'ContactFooter',
+          class: 'footer__newsletter newsletter-form'
+        -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div class="newsletter-form__field-wrapper">
+            <div class="newsletter-field">
+              <input
+                id="NewsletterForm--{{ section.id }}"
+                type="email"
+                name="contact[email]"
+                class="field-input email-input"
+                value="{{ form.email }}"
+                aria-required="true"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="email"
+                {% if form.errors %}
+                  autofocus
+                  aria-invalid="true"
+                  aria-describedby="ContactFooter-error"
+                {% elsif form.posted_successfully? %}
+                  aria-describedby="ContactFooter-success"
+                {% endif %}
+                placeholder="{{ 'newsletter.label' | t }}"
+                required
+              >
+              <label class="field-label" for="NewsletterForm--{{ section.id }}">
+                {{ 'newsletter.label' | t }}
+              </label>
+              <button
+                type="submit"
+                class="newsletter-form__button field__button"
+                name="commit"
+                id="FooterSubscribe"
+                aria-label="{{ 'newsletter.button_label' | t }}"
+                {% if section.settings.enable_terms%} disabled {% endif %}
+              >
+                {% render 'icon-arrow' %}
+              </button>
+            </div>
+
+            {% if section.settings.enable_terms == true %}               
+              <div class="terms-cart">
+                <input type="checkbox" id="signup-checkbox-footer" name="termsCheckbox" value="1">
+                <label for="signup-checkbox-footer">{{ section.settings.terms_label }}</label>
+              </div>
+            {% endif %}
+
+            {%- if form.errors -%}
+              <small class="newsletter-form-message form-message" id="ContactFooter-error">
+                {%- render 'icon-error' -%}
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </small>
+            {%- endif -%}
+          </div>
+          {%- if form.posted_successfully? -%}
+            <h3
+              class="newsletter-form-message newsletter-form-message--success form-message"
+              id="ContactFooter-success"
+              tabindex="-1"
+              autofocus
+            >
+              {% render 'icon-success' -%}
+              {{- 'newsletter.success' | t }}
+            </h3>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.show_social and has_social_icons -%}
+      <div class="social-icons-size-{{ block.settings.social_icons_size }}">
+        {%- render 'social-icons' -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.footer.blocks.brand_information.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "brand_headline",
+      "label": "t:sections.footer.blocks.brand_information.settings.brand_headline.label"
+    },
+    {
+      "type": "richtext",
+      "id": "brand_description",
+      "label": "t:sections.footer.blocks.brand_information.settings.brand_description.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_image",
+      "label": "t:sections.footer.blocks.brand_information.settings.brand_image.label"
+    },
+    {
+      "type": "range",
+      "id": "brand_image_width",
+      "min": 50,
+      "max": 550,
+      "step": 5,
+      "default": 100,
+      "unit": "px",
+      "label": "t:sections.footer.blocks.brand_information.settings.brand_image_width.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_image",
+      "default": false,
+      "label": "t:sections.multicolumn.blocks.column.settings.hide_image.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.blocks.brand_information.settings.header__2.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "newsletter_enable",
+      "default": true,
+      "label": "t:sections.footer.blocks.brand_information.settings.newsletter_enable.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.blocks.brand_information.settings.header__1.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social",
+      "default": true,
+      "label": "t:sections.footer.blocks.brand_information.settings.show_social.label",
+      "info": "t:sections.footer.blocks.brand_information.settings.show_social.info"
+    },
+    {
+      "type": "select",
+      "id": "social_icons_size",
+      "options": [
+        {
+          "value": "extra-small",
+          "label": "t:sections.footer.blocks.brand_information.settings.social_icons_size.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.footer.blocks.brand_information.settings.social_icons_size.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.footer.blocks.brand_information.settings.social_icons_size.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.footer.blocks.brand_information.settings.social_icons_size.options__4.label"
+        }
+      ],
+      "default": "small",
+      "label": "t:sections.footer.blocks.brand_information.settings.social_icons_size.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.footer.blocks.brand_information.name"
+    }
+  ]
+}
+{% endschema %}

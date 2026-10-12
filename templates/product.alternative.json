@@ -4,7 +4,7 @@
       "type": "main-product",
       "blocks": {
         "text_1": {
-          "type": "text",
+          "type": "_product-text",
           "settings": {
             "column": "left",
             "text": "<p>Organic. All-Natural. Non-Allergenic. No Preservatives.</p>",
@@ -17,7 +17,7 @@
           }
         },
         "title": {
-          "type": "title",
+          "type": "_product-title",
           "settings": {
             "column": "left",
             "heading_size": "large",
@@ -26,7 +26,7 @@
           }
         },
         "product-meta": {
-          "type": "product-meta",
+          "type": "_product-meta",
           "settings": {
             "column": "left",
             "show_product_inventory": true,
@@ -39,7 +39,7 @@
           }
         },
         "price": {
-          "type": "price",
+          "type": "_product-price",
           "settings": {
             "column": "left",
             "price_size": "small",
@@ -48,7 +48,7 @@
           }
         },
         "spacer_1": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "left",
             "margin_top": 0,
@@ -56,7 +56,7 @@
           }
         },
         "delivery_estimator": {
-          "type": "delivery_estimator",
+          "type": "_product-delivery-estimator",
           "settings": {
             "column": "left",
             "delivery_estimator_text": "Delivery between",
@@ -70,7 +70,7 @@
           }
         },
         "description": {
-          "type": "description",
+          "type": "_product-description",
           "settings": {
             "column": "left",
             "margin_top": 0,
@@ -78,7 +78,7 @@
           }
         },
         "ingredient_details": {
-          "type": "ingredient_details",
+          "type": "_product-ingredient-details",
           "settings": {
             "column": "left",
             "heading": "Nutritional Information",
@@ -94,7 +94,7 @@
           }
         },
         "collapsible_tab_1": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "left",
             "heading": "Shipping & Returns",
@@ -114,7 +114,7 @@
           }
         },
         "spacer_2": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "left",
             "margin_top": 0,
@@ -122,7 +122,7 @@
           }
         },
         "collapsible_tab_2": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "left",
             "heading": "24/7 Support",
@@ -142,7 +142,7 @@
           }
         },
         "spacer_3": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "left",
             "margin_top": 0,
@@ -150,7 +150,7 @@
           }
         },
         "collapsible_tab_3": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "left",
             "heading": "Main benefits",
@@ -170,7 +170,7 @@
           }
         },
         "buy_buttons": {
-          "type": "buy_buttons",
+          "type": "_product-buy-buttons",
           "settings": {
             "column": "left",
             "show_dynamic_checkout": true,
@@ -186,7 +186,7 @@
           }
         },
         "complementary": {
-          "type": "complementary",
+          "type": "_product-complementary",
           "settings": {
             "column": "left",
             "block_heading": "Goes well with",
@@ -201,7 +201,7 @@
           }
         },
         "share": {
-          "type": "share",
+          "type": "_product-share",
           "settings": {
             "column": "left",
             "share_label": "Share",
@@ -210,7 +210,7 @@
           }
         },
         "spacer_4": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "under-gallery",
             "margin_top": 0,
@@ -218,7 +218,7 @@
           }
         },
         "collapsible_tab_4": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "under-gallery",
             "heading": "About the product",
@@ -238,7 +238,7 @@
           }
         },
         "spacer_5": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "under-gallery",
             "margin_top": 0,
@@ -246,7 +246,7 @@
           }
         },
         "collapsible_tab_5": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "under-gallery",
             "heading": "Product Ingredients",
@@ -265,7 +265,7 @@
           }
         },
         "spacer_6": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "disabled": true,
           "settings": {
             "column": "under-gallery",
@@ -274,7 +274,7 @@
           }
         },
         "text_2": {
-          "type": "text",
+          "type": "_product-text",
           "settings": {
             "column": "under-gallery",
             "text": "<h3>⭐ Limited time offer ⭐ - 20% Sale</h3><p>Make this space work for you by spotlighting exclusive deals or time-sensitive discounts on your product. For instance: \"Hurry! Save 20% on this item for a limited time only!\" Inspire urgency by emphasizing how long the offer lasts, motivating customers to grab the deal before it’s too late. </p>",
@@ -337,7 +337,7 @@
       "type": "tabs",
       "blocks": {
         "tab_1": {
-          "type": "tab",
+          "type": "_tab",
           "settings": {
             "heading": "Product description",
             "image": "",
@@ -350,7 +350,7 @@
           }
         },
         "tab_2": {
-          "type": "tab",
+          "type": "_tab",
           "settings": {
             "heading": "Nutritional Info",
             "image": "",
@@ -363,7 +363,7 @@
           }
         },
         "tab_3": {
-          "type": "tab",
+          "type": "_tab",
           "settings": {
             "heading": "Shipping & Returns",
             "image": "",
@@ -397,7 +397,7 @@
       "type": "collapsible-content",
       "blocks": {
         "collapsible_row_1": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are Fuel products organic?",
             "icon": "question_mark",
@@ -406,7 +406,7 @@
           }
         },
         "collapsible_row_2": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are Fuel products high in protein?",
             "icon": "question_mark",
@@ -415,7 +415,7 @@
           }
         },
         "collapsible_row_3": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Do you offer a variety of vegan options?",
             "icon": "question_mark",
@@ -424,7 +424,7 @@
           }
         },
         "collapsible_row_4": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are Fuel products suitable for athletes?",
             "icon": "question_mark",
@@ -433,7 +433,7 @@
           }
         },
         "collapsible_row_5": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are there any artificial additives or preservatives in Fuel products?",
             "icon": "question_mark",
@@ -473,7 +473,7 @@
       "type": "testimonials",
       "blocks": {
         "column_1": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -485,7 +485,7 @@
           }
         },
         "column_2": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -497,7 +497,7 @@
           }
         },
         "column_3": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -509,7 +509,7 @@
           }
         },
         "column_4": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -521,7 +521,7 @@
           }
         },
         "column_5": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -567,7 +567,7 @@
       "type": "slick-slider",
       "blocks": {
         "slide_1": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "image": "",
             "heading": "Instant Meal",
@@ -578,7 +578,7 @@
           }
         },
         "slide_2": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "image": "",
             "heading": "Smoothies",
@@ -589,7 +589,7 @@
           }
         },
         "slide_3": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "image": "",
             "heading": "Suplements",

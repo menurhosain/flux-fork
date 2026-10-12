@@ -1,0 +1,20 @@
+<div
+  class="article-template-content rte"
+  itemprop="articleBody"
+  {{ block.shopify_attributes }}
+>
+  {{ article.content }}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-article.blocks.content.name",
+  "tag": null,
+  "settings": [],
+  "presets": [
+    {
+      "name": "t:sections.main-article.blocks.content.name"
+    }
+  ]
+}
+{% endschema %}

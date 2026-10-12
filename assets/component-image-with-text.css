@@ -524,3 +524,37 @@
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
+/* Theme blocks */
+.image-with-text-content .block-heading {
+  margin-bottom: 0;
+}
+
+.image-with-text-content > :first-child:is(.block-heading),
+.image-with-text-content .block-caption + .block-heading,
+.image-with-text-content > .block-caption:first-child {
+  margin-top: 0;
+}
+
+.image-with-text-content :last-child:is(.block-heading),
+.image-with-text-content .block-caption {
+  margin-bottom: 0;
+}
+
+.image-with-text-content .block-buttons + .block-text {
+  margin-top: 2rem;
+}
+
+.image-with-text-content .block-text + .block-buttons {
+  margin-top: 3rem;
+}
+
+.image-with-text-content .block-text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+  .image-with-text-content .block-text.rte {
+    font-size: calc(var(--font-body-scale) * 1.8rem);
+  }
+}

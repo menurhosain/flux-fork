@@ -1,0 +1,124 @@
+{%- liquid
+  assign product = closest.product
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- capture block_attributes -%}{% if is_featured %}{{ block.shopify_attributes }}{% endif %}{%- endcapture -%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+    {{ block.shopify_attributes }}
+  >
+{%- endunless -%}
+{%- if is_featured -%}
+  {%- if product.description != blank -%}
+    <div class="section-{{ block.id }}-margin product-description rte {{ block.settings.text_size }}" {{ block_attributes }}>
+      {{ product.description }}
+    </div>
+  {% else %}
+    <p>This area is used to describe your product’s details. Tell customers about the look, feel, and style of your product. Add details on color, materials used, sizing, and where it was made.</p>
+  {% endif %}
+{%- else -%}
+  {%- if product.description != blank -%}
+    <div
+      class="section-{{ block.id }}-margin product-description rte {{ block.settings.text_size }}"
+    >
+      {{ product.description }}
+    </div>
+  {%- endif -%}
+{%- endif -%}
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.description.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "options": [
+        {
+          "value": "extra-large",
+          "label": "t:sections.main-product.blocks.description.settings.text_size.options__1.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-product.blocks.description.settings.text_size.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-product.blocks.description.settings.text_size.options__3.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-product.blocks.description.settings.text_size.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-product.blocks.description.settings.text_size.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.featured-collection.settings.header_mobile.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "pin_to_top",
+      "default": false,
+      "label": "t:sections.main-product.blocks.title.settings.pin_to_top.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.description.name"
+    }
+  ]
+}
+{% endschema %}

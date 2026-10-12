@@ -1,0 +1,110 @@
+{%- liquid
+  for item in section.blocks
+    if item.id == block.id
+      assign block_index = forloop.index
+      break
+    endif
+  endfor
+-%}
+<li class="tooltip-item" id="tooltip-{{ block.id }}">
+  <button
+    class="tooltip-button"
+    type="button"
+    value="{{ block.id }}"
+    aria-describedby="tooltip-overlay-{{ block.id }}"
+    aria-label="{{ block_index }}, {{ block.settings.title }}"
+    aria-expanded="false"
+    data-tooltip-trigger
+    {{ block.shopify_attributes }}
+  >
+    <div class="tooltip-index" role="none">{{ block_index }}</div>
+  </button>
+  <!-- Hidden content for the tooltip -->
+  <aside
+    class="color-{{ section.settings.color_scheme_1 }} gradient tooltip-overlay global-media-settings"
+    id="tooltip-overlay-{{ block.id }}"
+    data-tooltip-overlay
+  >
+    {%- if block.settings.product != blank -%}
+      <a href="{{ block.settings.product.url }}">
+        {{
+          block.settings.product.featured_image
+          | image_url: width: 260, height: 260
+          | image_tag: loading: 'lazy'
+        }}
+      </a>
+      {% assign product = block.settings.product %}
+      <h4 class="column product-title">
+        <a
+          class="link"
+          {% if block.settings.product.url == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ block.settings.product.url }}"
+          {% endif %}
+        >
+          {%- if block.settings.product.title != blank -%}
+            {{ block.settings.product.title | escape }}
+          {%- else -%}
+            {{ 'onboarding.product_title' | t }}
+          {%- endif -%}
+        </a>
+      </h4>
+
+    {% assign product = block.settings.product %}
+    {% if product %}
+      <div class="spotlight-price">
+        <span class="product-price">{{ product.price | money }}</span>
+        <span class="product-price sale">{{ product.compare_at_price | money }}</span>
+      </div>
+    {% endif %}
+
+    {%- endif -%}
+    <p class="tooltip-text">{{ block.settings.content }}</p>
+  </aside>
+</li>
+
+{% schema %}
+{
+  "name": "Tooltip",
+  "tag": null,
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "t:sections.image-hotspots.blocks.tooltip.settings.product.label"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "t:sections.image-hotspots.blocks.tooltip.settings.content.label",
+      "default": "I am a tooltip, I provide additional explanatory content and showcase product features."
+    },
+    {
+      "type": "range",
+      "id": "top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "t:sections.image-hotspots.blocks.tooltip.settings.top.label",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "t:sections.image-hotspots.blocks.tooltip.settings.left.label",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tooltip"
+    }
+  ]
+}
+{% endschema %}

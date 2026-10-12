@@ -145,3 +145,23 @@
     height: 20rem;
   }
 }
+/* Theme blocks */
+.two-images-text-wrapper .block-text {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.two-images-text-wrapper .block-heading,
+.two-images-text-wrapper .block-caption {
+  margin-bottom: 0;
+}
+
+.two-images-text-wrapper .block-caption + .block-heading {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .two-images-text-wrapper .block-caption:first-child {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,172 @@
+{%- liquid
+  assign product = closest.product
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- capture block_attributes -%}{% if is_featured %}{{ block.shopify_attributes }}{% endif %}{%- endcapture -%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+    {{ block.shopify_attributes }}
+  >
+{%- endunless -%}
+{%- if is_featured -%}
+  <div class="section-{{ block.id }}-margin no-js-hidden {{ block.settings.price_size }}" id="price-{{ section.id }}" role="status" {{ block_attributes }}>
+    {%- render 'price',
+      product: product,
+      use_variant: true,
+      show_badges: true,
+      price_class: 'price--large'
+    -%}
+  </div>
+  {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+    <div class="product-tax caption rte">
+      {%- if cart.taxes_included -%}
+        {{ 'products.product.include_taxes' | t }}
+      {%- endif -%}
+      {%- if shop.shipping_policy.body != blank -%}
+        {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+{%- else -%}
+  <div
+    class="section-{{ block.id }}-margin no-js-hidden {{ block.settings.price_size }}"
+    id="price-{{ section.id }}"
+    role="status"
+  >
+    {%- render 'price',
+      product: product,
+      use_variant: true,
+      show_badges: true,
+      price_class: 'price--large',
+      badge_discount: block.settings.badge_discount
+    -%}
+  </div>
+
+  <div class="product-tax-price">
+    {%- if block.settings.text != blank -%}
+      <div class="section-{{ block.id }}-margin text">
+        <div
+          class="product-text"
+        >
+          {{- block.settings.text -}}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+      <div class="product-tax caption rte">
+        {%- if cart.taxes_included -%}
+          <span class="tax-display">{{ 'products.product.include_taxes' | t }}</span>
+        {% endif %}
+        {% if shop.shipping_policy.body != blank %}
+          <span class="shipping-policy">{{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}</span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div>
+    {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+    {%- form 'product',
+      product,
+      id: product_form_installment_id,
+      class: 'installment caption-large'
+    -%}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      {{ form | payment_terms }}
+    {%- endform -%}
+  </div>
+{%- endif -%}
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.price.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "select",
+      "id": "price_size",
+      "options": [
+        {
+          "value": "extra-large",
+          "label": "t:sections.all.price_size.options__1.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.all.price_size.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.all.price_size.options__3.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.all.price_size.options__4.label"
+        }
+      ],
+      "default": "small",
+      "label": "t:sections.all.price_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "badge_discount",
+      "default": false,
+      "label": "t:settings_schema.badges.settings.badge_discount.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.price.name"
+    }
+  ]
+}
+{% endschema %}

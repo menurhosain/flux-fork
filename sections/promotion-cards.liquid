@@ -100,86 +100,7 @@
               endif
             endfor
           -%}
-          {%- for block in section.blocks -%}
-            {%- assign empty_column = '' -%}
-            {%- if block.settings.image == blank
-              and block.settings.title == blank
-              and block.settings.text == blank
-              and block.settings.link_label == blank
-            -%}
-              {%- assign empty_column = ' promotion-cards-list__item--empty' -%}
-            {%- endif -%}
-
-            <li
-              id="Slide-{{ section.id }}-{{ forloop.index }}"
-              class="promotion-cards-list__item grid-item{% if section.settings.swipe_on_mobile %} slider-slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}"
-              {{ block.shopify_attributes }}
-            >
-              <div class="promotion-cards content-container">
-                {%- if block.settings.image != blank -%}
-                  <a
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
-                  >
-                    <div class="promotion-cards-image">
-                      <div class="promotion-cards-media media media--square">
-                        {%- capture sizes -%}(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %}, (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %}, calc(100vw - 30px){%- endcapture -%}
-                        {{
-                          block.settings.image
-                          | image_url: width: 1420
-                          | image_tag:
-                            loading: 'lazy',
-                            sizes: sizes,
-                            widths: '275, 550, 710, 1420',
-                            class: 'multicolumn-card__image'
-                        }}
-                      </div>
-                    </div>
-                  </a>
-                {%- else -%}
-                <div class="promotion-cards-media media media--square">
-                  {%- assign placeholder_slide = forloop.index | modulo: 4 -%}
-                  {%- if placeholder_slide == 1 -%}
-                    {{ 'collection-3' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- elsif placeholder_slide == 2 -%}
-                    {{ 'collection-4' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- elsif placeholder_slide == 3 -%}
-                    {{ 'collection-5' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- else -%}
-                    {{ 'collection-6' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
-                </div>
-                {%- endif -%}
-
-                <div class="color-{{ section.settings.color_scheme_1 }} gradient promotion-cards-text">
-                  {%- if block.settings.caption != blank -%}
-                    <p class="caption caption-with-letter-spacing--small caption-with-letter-spacing">
-                      {{ block.settings.caption | escape }}
-                    </p>
-                  {%- endif -%}
-                  {%- if block.settings.title != blank -%}
-                    <h3 class="heading-bold">{{ block.settings.title | escape }}</h3>
-                  {%- endif -%}
-                  {%- if block.settings.link_label != blank -%}
-                    <a
-                      class="link animate-arrow"
-                      {% if block.settings.link == blank %}
-                        role="link" aria-disabled="true"
-                      {% else %}
-                        href="{{ block.settings.link }}" {% if block.settings.open_new_tab_1 %} target="_blank" {% endif %}
-                      {% endif %}
-                    >
-                      {{- block.settings.link_label | escape -}}
-                      <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a
-                    >
-                  {%- endif -%}
-                </div>
-              </div>
-            </li>
-          {%- endfor -%}
+          {% content_for 'blocks' %}
         </ul>
       </slider-component>
     </div>
@@ -192,7 +113,10 @@
   "class": "section",
   "tag": "section",
   "disabled_on": {
-    "groups": ["header", "footer"]
+    "groups": [
+      "header",
+      "footer"
+    ]
   },
   "settings": [
     {
@@ -454,43 +378,7 @@
   ],
   "blocks": [
     {
-      "type": "column",
-      "name": "t:sections.promotion-cards.blocks.column.name",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.promotion-cards.blocks.column.settings.image.label"
-        },
-        {
-          "type": "text",
-          "id": "caption",
-          "default": "Caption Text",
-          "label": "t:sections.promotion-cards.blocks.column.settings.caption.label"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "default": "Column",
-          "label": "t:sections.promotion-cards.blocks.column.settings.title.label"
-        },
-        {
-          "type": "text",
-          "id": "link_label",
-          "label": "t:sections.promotion-cards.blocks.column.settings.link_label.label"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.promotion-cards.blocks.column.settings.link.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "open_new_tab_1",
-          "default": false,
-          "label": "t:sections.all.open_new_tab.label"
-        }
-      ]
+      "type": "_promotion-card"
     }
   ],
   "presets": [
@@ -498,13 +386,13 @@
       "name": "t:sections.promotion-cards.presets.name",
       "blocks": [
         {
-          "type": "column"
+          "type": "_promotion-card"
         },
         {
-          "type": "column"
+          "type": "_promotion-card"
         },
         {
-          "type": "column"
+          "type": "_promotion-card"
         }
       ]
     }

@@ -4,7 +4,7 @@
       "type": "main-product",
       "blocks": {
         "text": {
-          "type": "text",
+          "type": "_product-text",
           "settings": {
             "column": "left",
             "text": "<p>No GMO. Dairy Free. Gluten Free. Peanut Free</p>",
@@ -17,7 +17,7 @@
           }
         },
         "title": {
-          "type": "title",
+          "type": "_product-title",
           "settings": {
             "column": "left",
             "heading_size": "large",
@@ -26,7 +26,7 @@
           }
         },
         "price": {
-          "type": "price",
+          "type": "_product-price",
           "settings": {
             "column": "left",
             "price_size": "small",
@@ -35,7 +35,7 @@
           }
         },
         "spacer": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "left",
             "margin_top": 0,
@@ -43,7 +43,7 @@
           }
         },
         "inventory": {
-          "type": "inventory",
+          "type": "_product-inventory",
           "settings": {
             "column": "left",
             "inventory_threshold": 10,
@@ -53,7 +53,7 @@
           }
         },
         "description": {
-          "type": "description",
+          "type": "_product-description",
           "settings": {
             "column": "left",
             "margin_top": 0,
@@ -61,7 +61,7 @@
           }
         },
         "dynamic_card_icons": {
-          "type": "dynamic_card_icons",
+          "type": "_product-dynamic-card-icons",
           "settings": {
             "column": "left",
             "card_metafield_text": "",
@@ -77,7 +77,7 @@
           }
         },
         "payment_enable_1": {
-          "type": "payment_enable",
+          "type": "_product-payment-enable",
           "settings": {
             "column": "left",
             "margin_top": 0,
@@ -87,7 +87,7 @@
           }
         },
         "complementary": {
-          "type": "complementary",
+          "type": "_product-complementary",
           "settings": {
             "column": "left",
             "block_heading": "Goes well with",
@@ -102,7 +102,7 @@
           }
         },
         "share": {
-          "type": "share",
+          "type": "_product-share",
           "disabled": true,
           "settings": {
             "column": "right",
@@ -112,7 +112,7 @@
           }
         },
         "ingredient_details": {
-          "type": "ingredient_details",
+          "type": "_product-ingredient-details",
           "settings": {
             "column": "right",
             "heading": "Nutritional information",
@@ -128,7 +128,7 @@
           }
         },
         "collapsible_tab_1": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "disabled": true,
           "settings": {
             "column": "right",
@@ -149,7 +149,7 @@
           }
         },
         "spacer_1": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "disabled": true,
           "settings": {
             "column": "right",
@@ -158,7 +158,7 @@
           }
         },
         "collapsible_tab_2": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "right",
             "heading": "Shipping & Returns",
@@ -178,7 +178,7 @@
           }
         },
         "spacer_2": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "right",
             "margin_top": 0,
@@ -186,7 +186,7 @@
           }
         },
         "collapsible_tab_3": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "right",
             "heading": "24/7 Support",
@@ -206,7 +206,7 @@
           }
         },
         "spacer_3": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "column": "right",
             "margin_top": 0,
@@ -214,7 +214,7 @@
           }
         },
         "collapsible_tab_4": {
-          "type": "collapsible_tab",
+          "type": "_product-collapsible-tab",
           "settings": {
             "column": "right",
             "heading": "Main Benefits",
@@ -234,7 +234,7 @@
           }
         },
         "delivery_estimator": {
-          "type": "delivery_estimator",
+          "type": "_product-delivery-estimator",
           "settings": {
             "column": "right",
             "delivery_estimator_text": "Delivery between",
@@ -248,7 +248,7 @@
           }
         },
         "buy_buttons": {
-          "type": "buy_buttons",
+          "type": "_product-buy-buttons",
           "settings": {
             "column": "right",
             "show_dynamic_checkout": true,
@@ -264,7 +264,7 @@
           }
         },
         "payment_enable_2": {
-          "type": "payment_enable",
+          "type": "_product-payment-enable",
           "settings": {
             "column": "right",
             "margin_top": 0,
@@ -323,7 +323,7 @@
       "type": "scrolling-text",
       "blocks": {
         "text": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "disabled": true,
           "settings": {
             "text": "",
@@ -332,14 +332,14 @@
           }
         },
         "text_1": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "<p>Plant-Based. No Additives. Eco-Friendly.</p>",
             "image_link": ""
           }
         },
         "text_2": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "disabled": true,
           "settings": {
             "text": "",
@@ -348,14 +348,14 @@
           }
         },
         "text_3": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "<p>Organic. All-Natural. Non-Allergenic.</p>",
             "image_link": ""
           }
         },
         "text_4": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "disabled": true,
           "settings": {
             "text": "",
@@ -364,7 +364,7 @@
           }
         },
         "text_5": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "<p>Soy Free. Low Sugar. High Protein.</p>",
             "image_link": ""
@@ -402,7 +402,7 @@
       "type": "tabs",
       "blocks": {
         "tab_1": {
-          "type": "tab",
+          "type": "_tab",
           "settings": {
             "heading": "Product description",
             "image": "",
@@ -415,7 +415,7 @@
           }
         },
         "tab_2": {
-          "type": "tab",
+          "type": "_tab",
           "settings": {
             "heading": "Nutritional Info",
             "image": "",
@@ -428,7 +428,7 @@
           }
         },
         "tab_3": {
-          "type": "tab",
+          "type": "_tab",
           "settings": {
             "heading": "Shipping & Returns",
             "image": "",
@@ -462,7 +462,7 @@
       "type": "collapsible-content",
       "blocks": {
         "collapsible_row_1": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are Fuel products organic?",
             "icon": "question_mark",
@@ -471,7 +471,7 @@
           }
         },
         "collapsible_row_2": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are Fuel products high in protein?",
             "icon": "question_mark",
@@ -480,7 +480,7 @@
           }
         },
         "collapsible_row_3": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Do you offer a variety of vegan options?",
             "icon": "question_mark",
@@ -489,7 +489,7 @@
           }
         },
         "collapsible_row_4": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are Fuel products suitable for athletes?",
             "icon": "question_mark",
@@ -498,7 +498,7 @@
           }
         },
         "collapsible_row_5": {
-          "type": "collapsible_row",
+          "type": "_collapsible-row",
           "settings": {
             "heading": "Are there any artificial additives or preservatives in Fuel products?",
             "icon": "question_mark",
@@ -538,14 +538,14 @@
       "type": "scrolling-text",
       "blocks": {
         "text": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "<p>No Artificial Flavors. Pure Ingredients</p>",
             "image_link": ""
           }
         },
         "text_1": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "",
             "image": "",
@@ -553,14 +553,14 @@
           }
         },
         "text_2": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "<p>Sugar-Free. Low Carb. High Fiber. Nutrient Dense</p>",
             "image_link": ""
           }
         },
         "text_3": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "",
             "image": "",
@@ -568,14 +568,14 @@
           }
         },
         "text_4": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "<p>Whole Foods. Allergen Friendly. Preservative Free</p>",
             "image_link": ""
           }
         },
         "text_5": {
-          "type": "text",
+          "type": "_scrolling-text-item",
           "settings": {
             "text": "",
             "image": "",
@@ -614,7 +614,7 @@
       "type": "testimonials",
       "blocks": {
         "column_1": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -626,7 +626,7 @@
           }
         },
         "column_2": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "4-star",
@@ -638,7 +638,7 @@
           }
         },
         "column_3": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "3-star",
@@ -682,7 +682,7 @@
       "type": "slick-slider",
       "blocks": {
         "slide_1": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "image": "",
             "heading": "Complete Nutrition",
@@ -693,7 +693,7 @@
           }
         },
         "slide_2": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "image": "",
             "heading": "Cooking Workshop",
@@ -704,7 +704,7 @@
           }
         },
         "slide_3": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "image": "",
             "heading": "Fuel Restaurant",

@@ -1,0 +1,205 @@
+{%- liquid
+  assign product = closest.product
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- capture block_attributes -%}{% if is_featured %}{{ block.shopify_attributes }}{% endif %}{%- endcapture -%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+    {{ block.shopify_attributes }}
+  >
+{%- endunless -%}
+{%- if is_featured -%}
+  <p
+    class="section-{{ block.id }}-margin product-inventory no-js-hidden {% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
+    {{ block_attributes }}
+    id="Inventory-{{ section.id }}"
+    role="status"
+  >
+    {%- if product.selected_or_first_available_variant.inventory_management == 'shopify' -%}
+      {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
+        {%- if product.selected_or_first_available_variant.inventory_quantity
+            <= block.settings.inventory_threshold
+        -%}
+          <svg class="pulse-circle" width="20" height="20" aria-hidden="true">
+            <circle cx="10" cy="10" r="8" fill="none" stroke="#ffa680" stroke-width="2"/>
+            <circle cx="10" cy="10" r="3" fill="#ffa680"/>
+          </svg>
+          {%- if block.settings.show_inventory_quantity -%}
+            {{-
+              'products.product.inventory_low_stock_show_count'
+              | t: quantity: product.selected_or_first_available_variant.inventory_quantity
+            -}}
+          {%- else -%}
+            {{- 'products.product.inventory_low_stock' | t -}}
+          {%- endif -%}
+
+        {%- else -%}
+          <svg class="pulse-circle" width="20" height="20" aria-hidden="true">
+            <rect x="2" y="2" width="16" height="16" rx="8" fill="#b0dbc7"/>
+            <rect x="6" y="6" width="8" height="8" rx="4" fill="#3FA366" fill-opacity="0.8"/>
+          </svg>
+          {%- if block.settings.show_inventory_quantity -%}
+            {{-
+              'products.product.inventory_in_stock_show_count'
+              | t: quantity: product.selected_or_first_available_variant.inventory_quantity
+            -}}
+          {%- else -%}
+            {{- 'products.product.inventory_in_stock' | t -}}
+          {%- endif -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- if product.selected_or_first_available_variant.inventory_policy == 'continue' -%}
+          <svg width="20" height="20" aria-hidden="true">
+            <rect x="2" y="2" width="16" height="16" rx="8" fill="#FF8C5A"/>
+            <line x1="5" y1="5" x2="15" y2="15" stroke="rgb(255, 255, 255)" stroke-width="2"/>
+            <line x1="5" y1="15" x2="15" y2="5" stroke="rgb(255, 255, 255)" stroke-width="2"/>
+          </svg>
+          {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
+        {%- else -%}
+          <svg width="20" height="20" aria-hidden="true">
+            <circle cx="10" cy="10" r="9" fill="#ffa680"/>
+            <line x1="6" y1="6" x2="14" y2="14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="6" y1="14" x2="14" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          {{- 'products.product.inventory_out_of_stock' | t -}}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  </p>
+{%- else -%}
+  <p
+    class="product-inventory no-js-hidden {% if product.selected_or_first_available_variant.inventory_management == blank %} visibility-hidden {% else %} section-{{ block.id }}-margin {% endif %}"
+    id="Inventory-{{ section.id }}"
+    role="status"
+  >
+    {%- if product.selected_or_first_available_variant.inventory_management != blank -%}
+      {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
+        {%- if product.selected_or_first_available_variant.inventory_quantity
+            <= block.settings.inventory_threshold
+        -%}
+          <svg class="pulse-circle" width="20" height="20" aria-hidden="true">
+            <circle cx="10" cy="10" r="8" fill="none" stroke="#ffa680" stroke-width="2"/>
+            <circle cx="10" cy="10" r="3" fill="#ffa680"/>
+          </svg>
+          {%- if block.settings.show_inventory_quantity -%}
+            {{-
+              'products.product.inventory_low_stock_show_count'
+              | t: quantity: product.selected_or_first_available_variant.inventory_quantity
+            -}}
+          {%- else -%}
+            {{- 'products.product.inventory_low_stock' | t -}}
+          {%- endif -%}
+
+        {%- else -%}
+          <svg class="pulse-circle" width="20" height="20" aria-hidden="true">
+            <rect x="2" y="2" width="16" height="16" rx="8" fill="#b0dbc7"/>
+            <rect x="6" y="6" width="8" height="8" rx="4" fill="#3FA366" fill-opacity="0.8"/>
+          </svg>
+          {%- if block.settings.show_inventory_quantity -%}
+            {{-
+              'products.product.inventory_in_stock_show_count'
+              | t: quantity: product.selected_or_first_available_variant.inventory_quantity
+            -}}
+          {%- else -%}
+            {{- 'products.product.inventory_in_stock' | t -}}
+          {%- endif -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- if product.selected_or_first_available_variant.inventory_policy == 'continue' -%}
+          <svg width="20" height="20" aria-hidden="true">
+            <rect x="2" y="2" width="16" height="16" rx="8" fill="#FF8C5A"/>
+            <line x1="5" y1="5" x2="15" y2="15" stroke="rgb(255, 255, 255)" stroke-width="2"/>
+            <line x1="5" y1="15" x2="15" y2="5" stroke="rgb(255, 255, 255)" stroke-width="2"/>
+          </svg>
+          {{- 'products.product.inventory_out_of_stock_continue_selling' | t -}}
+        {%- else -%}
+          <svg width="20" height="20" aria-hidden="true">
+            <circle cx="10" cy="10" r="9" fill="#ffa680"/>
+            <line x1="6" y1="6" x2="14" y2="14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="6" y1="14" x2="14" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          {{- 'products.product.inventory_out_of_stock' | t -}}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  </p>
+{%- endif -%}
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.inventory.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "range",
+      "id": "inventory_threshold",
+      "label": "t:sections.main-product.blocks.inventory.settings.inventory_threshold.label",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "info": "t:sections.main-product.blocks.inventory.settings.inventory_threshold.info",
+      "default": 10
+    },
+    {
+      "type": "checkbox",
+      "id": "show_inventory_quantity",
+      "label": "t:sections.main-product.blocks.inventory.settings.show_inventory_quantity.label",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.inventory.name"
+    }
+  ]
+}
+{% endschema %}

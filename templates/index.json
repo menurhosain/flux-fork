@@ -22,10 +22,10 @@
           }
         },
         "buttons": {
-          "type": "buttons",
+          "type": "button",
           "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": ""
+            "button_label": "Shop Now",
+            "button_link": ""
           }
         }
       },
@@ -71,55 +71,55 @@
       "type": "collection-list",
       "blocks": {
         "featured_collection_1": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_2": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_3": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_4": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_5": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_6": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_7": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_8": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
         },
         "featured_collection_9": {
-          "type": "featured_collection",
+          "type": "_collection-list-item",
           "settings": {
             "collection": ""
           }
@@ -233,7 +233,7 @@
           }
         },
         "image": {
-          "type": "image",
+          "type": "_image-with-text-decoration",
           "settings": {
             "mobile_disable_image": false
           }
@@ -266,21 +266,21 @@
       "type": "collection-tabs",
       "blocks": {
         "collection_1": {
-          "type": "collection",
+          "type": "_collection-tab",
           "settings": {
             "collection": "",
             "tab_heading": "Best Sellers"
           }
         },
         "collection_2": {
-          "type": "collection",
+          "type": "_collection-tab",
           "settings": {
             "collection": "",
             "tab_heading": "New Arrivals"
           }
         },
         "collection_3": {
-          "type": "collection",
+          "type": "_collection-tab",
           "settings": {
             "collection": "",
             "tab_heading": "Save Big"
@@ -329,7 +329,7 @@
       "type": "slick-slider",
       "blocks": {
         "slide_1": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "heading": "Nutrients for Health",
             "caption": "Elevate your wellness journey with Flux's range of organic vitamin supplements. Nourish your body with premium-quality supplements and embrace a healthier you.",
@@ -338,7 +338,7 @@
           }
         },
         "slide_2": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "heading": "Complete Nutrition",
             "caption": "Crafted with organic ingredients, our complete protein offers the perfect blend of nutrients to support your active lifestyle.",
@@ -347,7 +347,7 @@
           }
         },
         "slide_3": {
-          "type": "slide",
+          "type": "_slick-slide",
           "settings": {
             "heading": "Snack Smart with Flux",
             "caption": "Indulge guilt-free in Flux Organic's delicious and nutritious snack options. Snack smart and nourish your body with Flux Organic today!",
@@ -384,7 +384,7 @@
       "type": "info-cards",
       "blocks": {
         "infocard_1": {
-          "type": "infocard",
+          "type": "_infocard",
           "settings": {
             "image": "",
             "hide_image": false,
@@ -399,7 +399,7 @@
           }
         },
         "infocard_2": {
-          "type": "infocard",
+          "type": "_infocard",
           "settings": {
             "image": "",
             "hide_image": false,
@@ -414,7 +414,7 @@
           }
         },
         "infocard_3": {
-          "type": "infocard",
+          "type": "_infocard",
           "settings": {
             "image": "",
             "hide_image": false,
@@ -429,7 +429,7 @@
           }
         },
         "infocard_4": {
-          "type": "infocard",
+          "type": "_infocard",
           "settings": {
             "image": "",
             "hide_image": false,
@@ -464,7 +464,7 @@
       "type": "promotion-cards",
       "blocks": {
         "column_1": {
-          "type": "column",
+          "type": "_promotion-card",
           "settings": {
             "caption": "20% sale",
             "title": "Suplements",
@@ -473,7 +473,7 @@
           }
         },
         "column_2": {
-          "type": "column",
+          "type": "_promotion-card",
           "settings": {
             "caption": "30% sale",
             "title": "Snacks",
@@ -482,7 +482,7 @@
           }
         },
         "column_3": {
-          "type": "column",
+          "type": "_promotion-card",
           "settings": {
             "caption": "Complete Protein",
             "title": "15% sale",
@@ -491,7 +491,7 @@
           }
         },
         "column_4": {
-          "type": "column",
+          "type": "_promotion-card",
           "settings": {
             "caption": "20% sale",
             "title": "Powders",
@@ -500,7 +500,7 @@
           }
         },
         "column_5": {
-          "type": "column",
+          "type": "_promotion-card",
           "settings": {
             "caption": "15% sale",
             "title": "Instant Meals",
@@ -509,7 +509,7 @@
           }
         },
         "column_6": {
-          "type": "column",
+          "type": "_promotion-card",
           "settings": {
             "caption": "Caption",
             "title": "Title",
@@ -551,7 +551,7 @@
       "type": "image-hotspots",
       "blocks": {
         "tooltip_1": {
-          "type": "Tooltip",
+          "type": "_hotspot",
           "settings": {
             "product": "",
             "content": "Made with organic ingredients, this protein powder provides a convenient way to fuel your body.",
@@ -560,7 +560,7 @@
           }
         },
         "tooltip_2": {
-          "type": "Tooltip",
+          "type": "_hotspot",
           "settings": {
             "product": "",
             "content": "This decadent treat combines creamy caramel with a hint of sea salt, creating a symphony of flavors.",
@@ -598,7 +598,7 @@
       "type": "testimonials",
       "blocks": {
         "column_1": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "4-star",
@@ -608,7 +608,7 @@
           }
         },
         "column_2": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -618,7 +618,7 @@
           }
         },
         "column_3": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "3-star",
@@ -628,7 +628,7 @@
           }
         },
         "column_4": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -638,7 +638,7 @@
           }
         },
         "column_5": {
-          "type": "column",
+          "type": "_testimonial",
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
@@ -682,37 +682,37 @@
       "type": "featured-product",
       "blocks": {
         "title": {
-          "type": "title",
+          "type": "_product-title",
           "settings": {
             "heading_size": "large"
           }
         },
         "price": {
-          "type": "price",
+          "type": "_product-price",
           "settings": {}
         },
         "spacer": {
-          "type": "spacer",
+          "type": "_product-spacer",
           "settings": {
             "margin_top": 0
           }
         },
         "description": {
-          "type": "description",
+          "type": "_product-description",
           "settings": {}
         },
         "image": {
-          "type": "image",
+          "type": "_product-image",
           "settings": {
             "image_link": ""
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector",
+          "type": "_product-quantity-selector",
           "settings": {}
         },
         "buy_buttons": {
-          "type": "buy_buttons",
+          "type": "_product-buy-buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
@@ -777,8 +777,10 @@
           }
         },
         "image_1": {
-          "type": "image_1",
-          "settings": {}
+          "type": "_two-images-text-image",
+          "settings": {
+            "overlap": true
+          }
         }
       },
       "block_order": [
@@ -833,7 +835,7 @@
       "type": "events-calendar",
       "blocks": {
         "event_1": {
-          "type": "event",
+          "type": "_event",
           "settings": {
             "event_date": 12,
             "event_month": "Apr",
@@ -850,7 +852,7 @@
           }
         },
         "event_2": {
-          "type": "event",
+          "type": "_event",
           "settings": {
             "event_date": 12,
             "event_month": "Apr",
@@ -867,7 +869,7 @@
           }
         },
         "event_3": {
-          "type": "event",
+          "type": "_event",
           "settings": {
             "event_date": 18,
             "event_month": "Aug",
@@ -910,7 +912,7 @@
       "type": "featured-collection",
       "blocks": {
         "slide": {
-          "type": "slide",
+          "type": "_featured-collection-promo",
           "settings": {
             "image": "",
             "caption": "20% Sale",
@@ -972,7 +974,7 @@
       "type": "multicolumn",
       "blocks": {
         "column_1": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "hide_image": false,
             "title": "100,000+",
@@ -982,7 +984,7 @@
           }
         },
         "column_2": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "hide_image": false,
             "title": "10+",
@@ -992,7 +994,7 @@
           }
         },
         "column_3": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "hide_image": false,
             "title": "5000+",
@@ -1002,7 +1004,7 @@
           }
         },
         "column_4": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "hide_image": false,
             "title": "56+",
@@ -1012,7 +1014,7 @@
           }
         },
         "column_5": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "hide_image": false,
             "title": "70%",
@@ -1079,14 +1081,14 @@
           }
         },
         "buttons": {
-          "type": "buttons",
+          "type": "button",
           "settings": {
-            "button_label_1": "Explore Now",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_label": "Explore Now",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },

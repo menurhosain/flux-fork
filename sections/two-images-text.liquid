@@ -62,76 +62,7 @@
         id="ImageWithText--{{ section.id }}"
         class="image-with-text-content--desktop-center image-with-text-content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text-content--adapt content-container"
       >
-        {%- for block in section.blocks -%}
-          {% case block.type %}
-            {%- when 'caption' -%}
-              <p
-                class="image-with-text-text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
-                {{ block.shopify_attributes }}
-              >
-                {{ block.settings.caption | escape }}
-              </p>
-            {%- when 'heading' -%}
-              <{{ block.settings.heading_tag }}
-                class="image-with-text-heading heading-bold {{ block.settings.heading_size }} heading-{{ block.settings.heading_style }}"
-                {{ block.shopify_attributes }}
-                richtext
-              >
-                {{ block.settings.heading }}
-              </{{ block.settings.heading_tag }}>
-            {%- when 'text' -%}
-              <div class="image-with-text-text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                {{ block.settings.text }}
-              </div>
-            {%- when 'image' -%}
-              {%- if block.settings.image != blank -%}
-                <div class="image-signature">
-                  <img
-                    src="{{ block.settings.image | image_url: width: 960 }}"
-                    alt="{{ block.settings.image.alt | escape }}"
-                    loading="lazy"
-                    width="{{ block.settings.image.width }}"
-                    height="{{ block.settings.image.height }}"
-                  >
-                </div>
-              {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
-            {%- when 'button' -%}
-              {%- if block.settings.button_label != blank -%}
-                <a
-                  {% if block.settings.button_link == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link }}" {% if block.settings.open_new_tab_1 %} target="_blank" {% endif %}
-                  {% endif %}
-                  class="button-arrow button"
-                  {{ block.shopify_attributes }}
-                >
-                  {{ block.settings.button_label | escape }}
-                  {%- if settings.show_button_arrow -%}{% render 'icon-slider-arrows' %}{% endif %}
-                </a>
-              {%- endif -%}
-
-            {%- when 'image_1' -%}
-              {%- if block.settings.image_1 != blank -%}
-                <div class="image-signature overlap global-media-settings">
-                  <img
-                    src="{{ block.settings.image_1 | image_url: width: 960 }}"
-                    alt="{{ block.settings.image_1.alt | escape }}"
-                    loading="lazy"
-                    width="{{ block.settings.image_1.width }}"
-                    height="{{ block.settings.image_1.height }}"
-                  >
-                </div>
-            {%- else -%}
-              <div class="image-signature overlap global-media-settings">
-                {{ 'product-2' | placeholder_svg_tag: 'placeholder-svg' }}
-              </div>
-            {%- endif -%}
-                
-          {%- endcase -%}
-        {%- endfor -%}
+        {% content_for 'blocks' %}
       </div>
 
    {% comment %} Start Image 2 {% endcomment %}
@@ -170,7 +101,10 @@
   "class": "section section-two-images-text",
   "max_blocks": 6,
   "disabled_on": {
-    "groups": ["header", "footer"]
+    "groups": [
+      "header",
+      "footer"
+    ]
   },
   "settings": [
     {
@@ -288,201 +222,14 @@
   ],
   "blocks": [
     {
-        "type": "heading",
-        "name": "t:sections.two-images-text.blocks.heading.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "textarea",
-            "id": "heading",
-            "default": "Featured Collections",
-            "label": "t:sections.two-images-text.blocks.heading.settings.heading.label"
-          },
-          {
-            "type": "select",
-            "id": "heading_size",
-            "options": [
-              {
-                "value": "extra-large",
-                "label": "t:sections.all.heading_size.options__1.label"
-              },
-              {
-                "value": "large",
-                "label": "t:sections.all.heading_size.options__2.label"
-              },
-              {
-                "value": "medium",
-                "label": "t:sections.all.heading_size.options__3.label"
-              },
-              {
-                "value": "small",
-                "label": "t:sections.all.heading_size.options__4.label"
-              }
-            ],
-            "default": "medium",
-            "label": "t:sections.all.heading_size.label"
-          },
-          {
-            "type": "select",
-            "id": "heading_style",
-            "options": [
-              {
-                "value": "default",
-                "label": "t:sections.all.heading_style.options__1.label"
-              },
-              {
-                "value": "uppercase",
-                "label": "t:sections.all.heading_style.options__2.label"
-              }
-            ],
-            "default": "default",
-            "label": "t:sections.all.heading_style.label"
-          },
-          {
-            "type": "select",
-            "id": "heading_tag",
-            "options": [
-              {
-                "value": "h1",
-                "label": "t:sections.all.heading_tag.options__1.label"
-              },
-              {
-                "value": "h2",
-                "label": "t:sections.all.heading_tag.options__2.label"
-              },
-              {
-                "value": "h3",
-                "label": "t:sections.all.heading_tag.options__3.label"
-              },
-              {
-                "value": "h4",
-                "label": "t:sections.all.heading_tag.options__4.label"
-              },
-              {
-                "value": "h5",
-                "label": "t:sections.all.heading_tag.options__5.label"
-              },
-              {
-                "value": "h6",
-                "label": "t:sections.all.heading_tag.options__6.label"
-              }
-            ],
-            "default": "h2",
-            "label": "t:sections.all.heading_tag.label",
-            "info": "t:sections.all.heading_tag.info"
-          }
-        ]
-      },
-      {
-        "type": "caption",
-        "name": "t:sections.two-images-text.blocks.caption.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "caption",
-            "default": "Add a tagline",
-            "label": "t:sections.two-images-text.blocks.caption.settings.text.label"
-          },
-          {
-            "type": "select",
-            "id": "text_style",
-            "options": [
-              {
-                "value": "subtitle",
-                "label": "t:sections.all.text_style.options__1.label"
-              },
-              {
-                "value": "caption-with-letter-spacing",
-                "label": "t:sections.all.text_style.options__2.label"
-              }
-            ],
-            "default": "caption-with-letter-spacing",
-            "label": "t:sections.all.text_style.label"
-          },
-          {
-            "type": "select",
-            "id": "text_size",
-            "options": [
-              {
-                "value": "small",
-                "label": "t:sections.all.text_size.options__1.label"
-              },
-              {
-                "value": "medium",
-                "label": "t:sections.all.text_size.options__2.label"
-              },
-              {
-                "value": "large",
-                "label": "t:sections.all.text_size.options__3.label"
-              }
-            ],
-            "default": "medium",
-            "label": "t:sections.all.text_size.label"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "name": "t:sections.two-images-text.blocks.text.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "text",
-            "default": "<p>Welcome to our store, where you can find the best selection of organic and cruelty-free cosmetics. All of our products are created with love and care, using only natural ingredients that are safe for your skin and eco-friendly.</p>",
-            "label": "t:sections.two-images-text.blocks.text.settings.text.label"
-          }
-        ]
-      },
-      {
-        "type": "image",
-        "name": "t:sections.two-images-text.blocks.image.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "t:sections.two-images-text.blocks.image.settings.image.label"
-          }
-        ]
-      },
-      {
-        "type": "image_1",
-        "name": "t:sections.two-images-text.blocks.image_1.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image_1",
-            "label": "t:sections.two-images-text.blocks.image_1.settings.image_1.label"
-          }
-        ]
-      },
-      {
-        "type": "button",
-        "name": "t:sections.two-images-text.blocks.button.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_label",
-            "default": "View All",
-            "label": "t:sections.two-images-text.blocks.button.settings.button_label.label"
-          },
-          {
-            "type": "url",
-            "id": "button_link",
-            "label": "t:sections.two-images-text.blocks.button.settings.button_link.label"
-          },
-          {
-            "type": "checkbox",
-            "id": "open_new_tab_1",
-            "default": false,
-            "label": "t:sections.all.open_new_tab.label"
-          }
-        ]
-      }
+      "type": "@theme"
+    },
+    {
+      "type": "_two-images-text-image"
+    },
+    {
+      "type": "@app"
+    }
   ],
   "presets": [
     {
@@ -501,7 +248,10 @@
           "type": "button"
         },
         {
-          "type": "image_1"
+          "type": "_two-images-text-image",
+          "settings": {
+            "overlap": true
+          }
         }
       ]
     }

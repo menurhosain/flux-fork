@@ -1,0 +1,21 @@
+<div class="previous-next-buttons" {{ block.shopify_attributes }}>
+    <a class="link left animate-arrow" href="{{ blog.previous_article }}" class="btn">
+      {%- render 'icon-arrow' %} {{- 'blogs.article.previous_post' | t }}</a
+    >
+    <a class="link right animate-arrow" href="{{ blog.next_article }}" class="btn"
+      >{{- 'blogs.article.next_post' | t }} {% render 'icon-arrow' -%}
+    </a>
+  </div>
+
+{% schema %}
+{
+  "name": "t:sections.main-article.blocks.buttons.name",
+  "tag": null,
+  "settings": [],
+  "presets": [
+    {
+      "name": "t:sections.main-article.blocks.buttons.name"
+    }
+  ]
+}
+{% endschema %}

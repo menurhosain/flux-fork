@@ -1,0 +1,177 @@
+{%- liquid
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+    {{ block.shopify_attributes }}
+  >
+{%- endunless -%}
+{{ 'tabs.css' | asset_url | stylesheet_tag }}
+<div class="tabs tabs-style-2 section-{{ block.id }}-margin centered-tabs-{{ block.settings.centered_tabs }} remove-border-tabs-{{ block.settings.remove_border_tabs }}">
+  <custom-tabs-block>
+    <ul class="tab-nav" data-aos="fade-up">
+      {%- if block.settings.heading_1 != blank -%}
+        <li class="tab-item">
+            <a href="#Tab-{{ block.id }}-1" class="link link--text">
+              {{ block.settings.heading_1 | escape }}
+            </a>
+        </li>
+       {%- endif -%}
+       {%- if block.settings.heading_2 != blank -%}
+        <li class="tab-item">
+            <a href="#Tab-{{ block.id }}-2" class="link link--text">
+              {{ block.settings.heading_2 | escape }}
+            </a>
+        </li>
+       {%- endif -%}
+      {%- if block.settings.heading_3 != blank -%}
+        <li class="tab-item">
+            <a href="#Tab-{{ block.id }}-3" class="link link--text">
+              {{ block.settings.heading_3 | escape }}
+            </a>
+        </li>
+       {%- endif -%}
+    </ul>
+
+    <div class="tab-content-wrapper">
+      {%- if block.settings.row_content_1 != blank -%}
+        <div id="Tab-{{ block.id }}-1" class="tab-content" data-aos="fade-up">
+            {{ block.settings.row_content_1 }}
+        </div>
+      {%- endif -%}
+      {%- if block.settings.row_content_2 != blank -%}
+        <div id="Tab-{{ block.id }}-2" class="tab-content" data-aos="fade-up">
+            {{ block.settings.row_content_2 }}
+        </div>
+      {%- endif -%}
+      {%- if block.settings.row_content_3 != blank -%}
+        <div id="Tab-{{ block.id }}-3" class="tab-content" data-aos="fade-up">
+            {{ block.settings.row_content_3 }}
+        </div>
+      {%- endif -%}
+    </div>
+  </custom-tabs-block>
+</div>
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.tabs.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.tabs.settings.header_item_1.content"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "default": "Tab heading",
+      "label": "t:sections.main-product.blocks.tabs.settings.heading_1.label"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_1",
+      "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+      "label": "t:sections.main-product.blocks.tabs.settings.row_content_1.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.tabs.settings.header_item_2.content"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "default": "Tab heading",
+      "label": "t:sections.main-product.blocks.tabs.settings.heading_2.label"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_2",
+      "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+      "label": "t:sections.main-product.blocks.tabs.settings.row_content_2.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.tabs.settings.header_item_3.content"
+    },
+    {
+      "type": "text",
+      "id": "heading_3",
+      "default": "Tab heading",
+      "label": "t:sections.main-product.blocks.tabs.settings.heading_3.label"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_3",
+      "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+      "label": "t:sections.main-product.blocks.tabs.settings.row_content_3.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "centered_tabs",
+      "default": false,
+      "label": "t:sections.main-product.blocks.tabs.settings.centered_tabs.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_border_tabs",
+      "default": false,
+      "label": "t:sections.main-product.blocks.tabs.settings.remove_border_tabs.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.spacer.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.tabs.name"
+    }
+  ]
+}
+{% endschema %}

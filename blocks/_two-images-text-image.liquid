@@ -1,0 +1,45 @@
+{%- liquid
+  if block.settings.overlap
+    assign placeholder = 'product-2'
+  else
+    assign placeholder = 'image'
+  endif
+-%}
+<div class="image-signature{% if block.settings.overlap %} overlap global-media-settings{% endif %}" {{ block.shopify_attributes }}>
+  {%- if block.settings.image != blank -%}
+    <img
+      src="{{ block.settings.image | image_url: width: 960 }}"
+      alt="{{ block.settings.image.alt | escape }}"
+      loading="lazy"
+      width="{{ block.settings.image.width }}"
+      height="{{ block.settings.image.height }}"
+    >
+  {%- else -%}
+    {{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.two-images-text.blocks.image.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.two-images-text.blocks.image.settings.image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "overlap",
+      "default": false,
+      "label": "t:blocks.two_images_text_image.settings.overlap.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.two-images-text.blocks.image.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,39 @@
+<header {{ block.shopify_attributes }}>
+  {%- if block.settings.blog_show_date -%}
+    <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">
+      {{- article.published_at | time_tag: format: 'date' -}}
+    </span>
+  {%- endif -%}
+  {%- if block.settings.blog_show_author -%}
+    <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">{{ article.author }}</span>
+    </span>
+  {%- endif -%}
+  <h1 class="article-template-title heading-bold" itemprop="headline">{{ article.title | escape }}</h1>
+</header>
+
+{% schema %}
+{
+  "name": "t:sections.main-article.blocks.title.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "default": true,
+      "label": "t:sections.main-article.blocks.title.settings.blog_show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_author",
+      "default": false,
+      "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-article.blocks.title.name"
+    }
+  ]
+}
+{% endschema %}

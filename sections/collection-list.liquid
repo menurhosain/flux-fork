@@ -91,33 +91,7 @@
           role="list"
           aria-label="{{ 'general.slider.name' | t }}"
         >
-          {%- for block in section.blocks -%}
-            <li
-              id="Slide-{{ section.id }}-{{ forloop.index }}"
-              class="grid-item{% if show_mobile_slider or show_desktop_slider %} slider-slide{% endif %}"
-              {{ block.shopify_attributes }}
-            >
-              {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
-              {%- assign placeholder_image = 'collection-' | append: placeholder_image_index -%}
-              {% if section.settings.title_under == true and section.settings.collection_list_style == 'collection-list-two' %}
-                  {% render 'card-collection-two',
-                    card_collection: block.settings.collection,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    placeholder_image: placeholder_image,
-                    columns: section.settings.columns_desktop,
-                    mobile_columns: section.settings.columns_mobile
-                  %}
-                {% else %}
-                  {% render 'card-collection-one',
-                    card_collection: block.settings.collection,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    placeholder_image: placeholder_image,
-                    columns: section.settings.columns_desktop,
-                    mobile_columns: section.settings.columns_mobile
-                  %}
-              {% endif %}
-            </li>
-          {%- endfor -%}
+          {% content_for 'blocks' %}
         </ul>
         {% comment %} End Subcollection {% endcomment %}
       </slider-component>
@@ -131,7 +105,10 @@
   "class": "section section-collection-list",
   "max_blocks": 32,
   "disabled_on": {
-    "groups": ["header", "footer"]
+    "groups": [
+      "header",
+      "footer"
+    ]
   },
   "settings": [
     {
@@ -421,15 +398,7 @@
   ],
   "blocks": [
     {
-      "type": "featured_collection",
-      "name": "t:sections.collection-list.blocks.featured_collection.name",
-      "settings": [
-        {
-          "type": "collection",
-          "id": "collection",
-          "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
-        }
-      ]
+      "type": "_collection-list-item"
     }
   ],
   "presets": [
@@ -437,19 +406,19 @@
       "name": "t:sections.collection-list.presets.name",
       "blocks": [
         {
-          "type": "featured_collection"
+          "type": "_collection-list-item"
         },
         {
-          "type": "featured_collection"
+          "type": "_collection-list-item"
         },
         {
-          "type": "featured_collection"
+          "type": "_collection-list-item"
         },
         {
-          "type": "featured_collection"
+          "type": "_collection-list-item"
         },
         {
-          "type": "featured_collection"
+          "type": "_collection-list-item"
         }
       ]
     }

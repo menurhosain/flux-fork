@@ -8516,5 +8516,65 @@
         "name": "Acerca de"
       }
     }
+  },
+  "blocks": {
+    "heading": {
+      "name": "Encabezado"
+    },
+    "caption": {
+      "name": "Leyenda"
+    },
+    "text": {
+      "name": "Texto"
+    },
+    "button": {
+      "name": "Botones",
+      "settings": {
+        "apply_link_to_image": {
+          "info": "Funciona en secciones de banner con imagen."
+        }
+      }
+    },
+    "image": {
+      "name": "Imagen",
+      "settings": {
+        "image_width": {
+          "label": "Ancho de imagen"
+        },
+        "image_link": {
+          "label": "Enlace"
+        }
+      }
+    },
+    "spacer": {
+      "name": "Espaciador",
+      "settings": {
+        "height": {
+          "label": "Altura en escritorio"
+        },
+        "height_mobile": {
+          "label": "Altura en móvil"
+        }
+      }
+    },
+    "custom_liquid": {
+      "name": "Liquid personalizado"
+    },
+    "countdown_timer": {
+      "name": "Temporizador de cuenta regresiva"
+    },
+    "email_signup": {
+      "name": "Formulario de suscripción"
+    },
+    "two_images_text_image": {
+      "settings": {
+        "overlap": {
+          "label": "Estilo superpuesto (imagen redonda)"
+        }
+      }
+    },
+    "featured_collection_card": {
+      "name": "Tarjeta de colección"
+    }
   }
 }

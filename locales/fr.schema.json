@@ -8515,5 +8515,65 @@
         "name": "À propos"
       }
     }
+  },
+  "blocks": {
+    "heading": {
+      "name": "Titre"
+    },
+    "caption": {
+      "name": "Légende"
+    },
+    "text": {
+      "name": "Texte"
+    },
+    "button": {
+      "name": "Boutons",
+      "settings": {
+        "apply_link_to_image": {
+          "info": "Fonctionne dans les sections de bannière d’image."
+        }
+      }
+    },
+    "image": {
+      "name": "Image",
+      "settings": {
+        "image_width": {
+          "label": "Largeur de l’image"
+        },
+        "image_link": {
+          "label": "Lien"
+        }
+      }
+    },
+    "spacer": {
+      "name": "Espacement",
+      "settings": {
+        "height": {
+          "label": "Hauteur sur ordinateur"
+        },
+        "height_mobile": {
+          "label": "Hauteur sur mobile"
+        }
+      }
+    },
+    "custom_liquid": {
+      "name": "Liquid personnalisé"
+    },
+    "countdown_timer": {
+      "name": "Compte à rebours"
+    },
+    "email_signup": {
+      "name": "Formulaire d’inscription"
+    },
+    "two_images_text_image": {
+      "settings": {
+        "overlap": {
+          "label": "Style superposé (image ronde)"
+        }
+      }
+    },
+    "featured_collection_card": {
+      "name": "Carte de collection"
+    }
   }
 }

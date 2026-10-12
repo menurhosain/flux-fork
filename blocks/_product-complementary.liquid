@@ -1,0 +1,357 @@
+{%- liquid
+  assign product = closest.product
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- capture block_attributes -%}{% if is_featured %}{{ block.shopify_attributes }}{% endif %}{%- endcapture -%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+    {{ block.shopify_attributes }}
+  >
+{%- endunless -%}
+{%- if is_featured -%}
+  <product-recommendations
+    class="section-{{ block.id }}-margin complementary-products quick-add-hidden no-js-hidden{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
+    data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary"
+  >
+    {%- if recommendations.performed and recommendations.products_count > 0 -%}
+      <aside
+        aria-label="{{ 'accessibility.complementary_products' | t }}"
+        {{ block_attributes }}
+      >
+        <div class="complementary-products-container">
+          <slideshow-component class="slider-mobile-gutter">
+            {%- assign number_of_slides = recommendations.products_count
+              | plus: 0.0
+              | divided_by: 1
+              | ceil
+            -%}
+
+            <div class="title-buttons">
+              <div class="complementary-products-title">
+                <h2 class="h3 heading-bold">{{ block.settings.block_heading }}</h2>
+              </div>
+
+              {%- if number_of_slides > 1 -%}
+                <div class="disable-slider-arrows-{{ block.settings.disable_arrow_mobile }} slider-buttons no-js-hidden">
+                  <button
+                    type="button"
+                    class="slider-button slider-button--prev"
+                    name="previous"
+                    aria-label="{{ 'general.slider.previous_slide' | t }}"
+                    aria-controls="Slider-{{ section.id }}"
+                  >
+                    {% render 'icon-slider-arrows' %}
+                  </button>
+                  <button
+                    type="button"
+                    class="slider-button slider-button--next"
+                    name="next"
+                    aria-label="{{ 'general.slider.next_slide' | t }}"
+                    aria-controls="Slider-{{ section.id }}"
+                  >
+                    {% render 'icon-slider-arrows' %}
+                  </button>
+                </div>
+              {%- endif -%}
+            </div>
+
+            <div
+              id="Slider-{{ block.id }}"
+              class="contains-card contains-card--product complementary-slider grid grid--1-col slider slider--everywhere"
+              role="list"
+              {% if number_of_slides > 1 %}
+                aria-label="{{ 'general.slider.name' | t }}"
+              {% endif %}
+            >
+              {%- for i in (1..number_of_slides) -%}
+                <div
+                  id="Slide-{{ block.id }}-{{ forloop.index }}"
+                  class="complementary-slide complementary-slide--standard grid-item slider-slide slideshow-slide"
+                  tabindex="-1"
+                  role="group"
+                  {% if number_of_slides > 1 %}
+                    aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+                    aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                  {% endif %}
+                >
+                  <ul class="list-unstyled" role="list">
+                    {%- for product in recommendations.products limit: 1 offset: continue -%}
+                      <li>
+                        {% render 'card-product-complementary',
+                          card_product: product,
+                          media_aspect_ratio: block.settings.image_ratio,
+                          show_secondary_image: false,
+                          lazy_load: false,
+                          show_quick_add: block.settings.enable_quick_add,
+                          section_id: section.id,
+                          horizontal_class: true,
+                          horizontal_quick_add: true
+                        %}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endfor -%}
+            </div>
+          </slideshow-component>
+        </div>
+      </aside>
+    {%- endif -%}
+    {{ 'component-card.css' | asset_url | stylesheet_tag }}
+    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
+    <link
+      rel="stylesheet"
+      href="{{ 'quick-add.css' | asset_url }}"
+      media="print"
+      onload="this.media='all'"
+    >
+    {%- if block.settings.enable_quick_add -%}
+      <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+  </product-recommendations>
+{%- else -%}
+  <product-recommendations
+    class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %} column-{{ block.settings.columns }}"
+    data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary"
+  >
+    {%- if recommendations.performed and recommendations.products_count > 0 -%}
+      <aside
+        aria-label="{{ 'accessibility.complementary_products' | t }}"
+      >
+        <div class="complementary-products-container section-{{ block.id }}-margin">
+          <slideshow-component class="slider-mobile-gutter">
+            {%- assign number_of_slides = recommendations.products_count
+              | plus: 0.0
+              | divided_by: 1
+              | ceil
+            -%}
+
+            <div class="title-buttons">
+              <div class="complementary-products-title">
+                <h2 class="h3 heading-bold">{{ block.settings.block_heading }}</h2>
+              </div>
+
+              {%- if number_of_slides > 1 -%}
+                <div class="disable-slider-arrows-{{ block.settings.disable_arrow_mobile }} slider-buttons no-js-hidden">
+                  <button
+                    type="button"
+                    class="slider-button slider-button--prev"
+                    name="previous"
+                    aria-label="{{ 'general.slider.previous_slide' | t }}"
+                    aria-controls="Slider-{{ section.id }}"
+                  >
+                    {% render 'icon-slider-arrows' %}
+                  </button>
+                  <button
+                    type="button"
+                    class="slider-button slider-button--next"
+                    name="next"
+                    aria-label="{{ 'general.slider.next_slide' | t }}"
+                    aria-controls="Slider-{{ section.id }}"
+                  >
+                    {% render 'icon-slider-arrows' %}
+                  </button>
+                </div>
+              {%- endif -%}
+            </div>
+
+            <div
+              id="Slider-{{ block.id }}"
+              class="contains-card contains-card--product complementary-slider grid grid--1-col slider slider--everywhere"
+              role="list"
+              {% if number_of_slides > 1 %}
+                aria-label="{{ 'general.slider.name' | t }}"
+              {% endif %}
+            >
+              {%- for i in (1..number_of_slides) -%}
+                <div
+                  id="Slide-{{ block.id }}-{{ forloop.index }}"
+                  class="complementary-slide complementary-slide--standard grid-item slider-slide slideshow-slide"
+                  tabindex="-1"
+                  role="group"
+                  {% if number_of_slides > 1 %}
+                    aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+                    aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                  {% endif %}
+                >
+                  <ul class="list-unstyled" role="list">
+                    {%- for product in recommendations.products limit: 1 offset: continue -%}
+                      <li>
+                        {% render 'card-product-complementary',
+                          card_product: product,
+                          media_aspect_ratio: block.settings.image_ratio,
+                          show_secondary_image: false,
+                          color_scheme: block.settings.color_scheme_1,
+                          lazy_load: false,
+                          show_quick_add: block.settings.enable_quick_add,
+                          section_id: section.id,
+                          horizontal_class: true,
+                          horizontal_quick_add: true
+                        %}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endfor -%}
+            </div>
+          </slideshow-component>
+        </div>
+      </aside>
+    {%- endif -%}
+    {{ 'component-card.css' | asset_url | stylesheet_tag }}
+    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
+    <link
+      rel="stylesheet"
+      href="{{ 'quick-add.css' | asset_url }}"
+      media="print"
+      onload="this.media='all'"
+    >
+    {%- if block.settings.enable_quick_add -%}
+      <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+  </product-recommendations>
+{%- endif -%}
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.complementary_products.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-product.blocks.complementary_products.settings.paragraph.content"
+    },
+    {
+      "type": "text",
+      "id": "block_heading",
+      "default": "Goes well with",
+      "label": "t:sections.main-product.blocks.complementary_products.settings.heading.label"
+    },
+    {
+      "type": "range",
+      "id": "product_list_limit",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 10,
+      "label": "t:sections.main-product.blocks.complementary_products.settings.product_list_limit.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.complementary_products.settings.product_card.heading"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "portrait",
+          "label": "t:sections.main-product.blocks.complementary_products.settings.image_ratio.options.option_1"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-product.blocks.complementary_products.settings.image_ratio.options.option_2"
+        }
+      ],
+      "label": "t:sections.main-product.blocks.complementary_products.settings.image_ratio.label",
+      "default": "square"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "label": "t:sections.main-product.blocks.complementary_products.settings.enable_quick_add.label",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "options": [
+        {
+          "value": "one",
+          "label": "t:sections.main-product.blocks.complementary_products.settings.columns.options.option_1"
+        },
+        {
+          "value": "two",
+          "label": "t:sections.main-product.blocks.complementary_products.settings.columns.options.option_2"
+        }
+      ],
+      "label": "t:sections.main-product.blocks.complementary_products.settings.columns.label",
+      "default": "two"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.settings.header_mobile.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_arrow_mobile",
+      "default": true,
+      "label": "t:sections.all.disable_arrow_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.header_color_box.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme_1",
+      "label": "t:sections.all.colors_box.label",
+      "default": "option-2"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.complementary_products.name"
+    }
+  ]
+}
+{% endschema %}

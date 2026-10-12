@@ -1,0 +1,59 @@
+{%- liquid
+  for item in section.blocks
+    if item.id == block.id
+      assign block_index = forloop.index
+      break
+    endif
+  endfor
+-%}
+<div
+  class="footer-block grid-item footer-block--menu {% if section.settings.swipe_on_mobile %} slider-slide{% endif %}"
+  id="Slide-{{ section.id }}-{{ block_index }}"
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.heading != blank -%}
+    <h2 class="footer-block__heading heading-bold">{{- block.settings.heading | escape -}}</h2>
+  {%- endif -%}
+
+  {%- if block.settings.menu != blank -%}
+    <ul class="footer-block__details-content list-unstyled">
+      {%- for link in block.settings.menu.links -%}
+        <li>
+          <a
+            href="{{ link.url }}"
+            class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+          >
+            {{ link.title }}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.footer.blocks.link_list.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Quick links",
+      "label": "t:sections.footer.blocks.link_list.settings.heading.label"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "footer",
+      "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+      "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.footer.blocks.link_list.name"
+    }
+  ]
+}
+{% endschema %}

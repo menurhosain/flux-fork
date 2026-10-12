@@ -1,0 +1,58 @@
+{%- capture deco_classes -%}
+  mobile-disable-image-{{ block.settings.mobile_disable_image }}
+  {%- if block.settings.mobile_disable_image_animation == true %} no-animation{% endif -%}
+  {%- if block.settings.position_image_relative == true %} image-relative{% endif -%}
+{%- endcapture -%}
+{%- if block.settings.image != blank -%}
+  <div class="deco {{ deco_classes | strip }}" {{ block.shopify_attributes }}>
+    <img
+      src="{{ block.settings.image | image_url: width: 300 }}"
+      alt="{{ block.settings.image.alt | escape }}"
+      loading="lazy"
+      width="300"
+      height="300"
+    >
+  </div>
+{%- else -%}
+  <div class="placeholder deco {{ deco_classes | strip }}" {{ block.shopify_attributes }}>
+    {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.image-with-text.blocks.image.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-with-text.blocks.image.settings.image.label",
+      "info": "t:sections.image-with-text.blocks.image.settings.image.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "position_image_relative",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.image.settings.position_image_relative.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_disable_image_animation",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.image.settings.mobile_disable_image_animation.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_disable_image",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.image.settings.mobile_disable_image.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.image-with-text.blocks.image.name"
+    }
+  ]
+}
+{% endschema %}

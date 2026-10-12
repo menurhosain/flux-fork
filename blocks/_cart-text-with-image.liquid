@@ -1,0 +1,94 @@
+<div {{ block.shopify_attributes }} class="text-with-image-block {% if block.settings.centered_content == true %} centered{% endif %}">
+  {% if block.settings.hide_image != true %}
+    {%- if block.settings.image != blank -%}
+      {%- assign image_height = block.settings.image_width
+        | divided_by: block.settings.image.aspect_ratio
+      -%}
+      <div
+        class="cart__footer__image-wrapper"
+        style="max-width: min(100%, {{ block.settings.image_width }}px);"
+      >
+        {{
+          block.settings.image
+          | image_url: width: 1100
+          | image_tag:
+            loading: 'lazy',
+            widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+            height: image_height,
+            width: block.settings.image_width
+        }}
+      </div>
+    {%- else -%}
+       {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+    {%- endif -%}
+  {%- endif -%}
+
+  <div
+    class="cart__footer__text-wrapper {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+  >
+    {{- block.settings.text -}}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-cart-footer.blocks.text-with-image.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.image.label"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 200,
+      "max": 1000,
+      "step": 50,
+      "default": 1000,
+      "unit": "px",
+      "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.image_width.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_image",
+      "default": false,
+      "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.hide_image.label"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Text block</p>",
+      "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.text.label"
+    },
+    {
+      "type": "select",
+      "id": "text_style",
+      "options": [
+        {
+          "value": "body",
+          "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.text_style.options__1.label"
+        },
+        {
+          "value": "uppercase",
+          "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.text_style.options__2.label"
+        }
+      ],
+      "default": "body",
+      "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.text_style.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "centered_content",
+      "default": false,
+      "label": "t:sections.main-cart-footer.blocks.text-with-image.settings.centered_content.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-cart-footer.blocks.text-with-image.name"
+    }
+  ]
+}
+{% endschema %}

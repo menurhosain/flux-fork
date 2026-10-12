@@ -92,8 +92,6 @@
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {% assign product.price = product.price | money %}
-      {% assign product.compare_at_price = product.compare_at_price | money %}
           {% if badge_discount == true %}
             {% assign discount_amount = product.compare_at_price | minus: product.price %}
             {% assign discount_percentage = discount_amount

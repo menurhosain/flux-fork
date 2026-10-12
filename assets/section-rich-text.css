@@ -30,11 +30,13 @@
   margin-top: 1rem;
 }
 
-.rich-text-blocks > * + a {
+.rich-text-blocks > * + a,
+.rich-text-blocks > * + .block-buttons {
   margin-top: 2rem;
 }
 
-.rich-text-buttons {
+.rich-text-buttons,
+.rich-text-blocks .block-buttons {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -45,24 +47,29 @@
   word-break: break-word;
 }
 
-.rich-text-buttons--multiple > * {
+.rich-text-buttons--multiple > *,
+.rich-text-blocks .block-buttons--multiple > * {
   flex-grow: 1;
   min-width: 22rem;
 }
 
-.rich-text-buttons + .rich-text-buttons {
+.rich-text-buttons + .rich-text-buttons,
+.rich-text-blocks .block-buttons + .block-buttons {
   margin-top: 1rem;
 }
 
-.rich-text-blocks.left .rich-text-buttons {
+.rich-text-blocks.left .rich-text-buttons,
+.rich-text-blocks.left .block-buttons {
   justify-content: flex-start;
 }
 
-.rich-text-blocks.right .rich-text-buttons {
+.rich-text-blocks.right .rich-text-buttons,
+.rich-text-blocks.right .block-buttons {
   justify-content: flex-end;
 }
 
-.rich-text-image img {
+.rich-text-image img,
+.rich-text-blocks .block-image img {
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -130,19 +137,27 @@
   .mobile-center {
     text-align: center;
   }
-  .mobile-center .rich-text-image img{
+  .mobile-center .rich-text-image img,
+  .rich-text-blocks.mobile-center .block-image img {
     margin-bottom: 10px;
   }
-  .mobile-left .rich-text-buttons {
+  .mobile-left .rich-text-buttons,
+  .rich-text-blocks.mobile-left .block-buttons {
     justify-content: flex-start;
   }
-  .mobile-left .rich-text-image img{
+  .mobile-left .rich-text-image img,
+  .rich-text-blocks.mobile-left .block-image img {
     margin: 0 0 10px 0;
   }
-  .mobile-right .rich-text-buttons {
+  .mobile-right .rich-text-buttons,
+  .rich-text-blocks.mobile-right .block-buttons {
     justify-content: flex-end;
   }
-  .mobile-right .rich-text-image img{
+  .mobile-right .rich-text-image img,
+  .rich-text-blocks.mobile-right .block-image img {
     margin: 0 0 10px auto;
   }
+}
+.rich-text-blocks .block-image img {
+  display: inline-block;
 }

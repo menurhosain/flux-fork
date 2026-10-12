@@ -1,0 +1,668 @@
+{%- liquid
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+  >
+{%- endunless -%}
+{% render 'icon-with-text', block: block %}
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.icon_with_text.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "t:sections.main-product.blocks.icon_with_text.settings.layout.options__1.label"
+        },
+        {
+          "value": "vertical",
+          "label": "t:sections.main-product.blocks.icon_with_text.settings.layout.options__2.label"
+        }
+      ],
+      "default": "horizontal",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.layout.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.icon_with_text.settings.content.label",
+      "info": "t:sections.main-product.blocks.icon_with_text.settings.content.info"
+    },
+    {
+      "type": "select",
+      "id": "icon_1",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+        },
+        {
+          "value": "bag_heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+        },
+        {
+          "value": "basket",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+        },
+        {
+          "value": "box",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+        },
+        {
+          "value": "box_heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+        },
+        {
+          "value": "brush",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+        },
+        {
+          "value": "calendar",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+        },
+        {
+          "value": "chat_bubble",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+        },
+        {
+          "value": "check_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+        },
+        {
+          "value": "clipboard",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+        },
+        {
+          "value": "cup",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__27.label"
+        },
+        {
+          "value": "droplet",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+        },
+        {
+          "value": "droplet_half",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+        },
+        {
+          "value": "envelope",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+        },
+        {
+          "value": "exclamation",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+        },
+        {
+          "value": "eye",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+        },
+        {
+          "value": "eye_dropper",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+        },
+        {
+          "value": "fire",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__34.label"
+        },
+        {
+          "value": "gift",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+        },
+        {
+          "value": "globe",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+        },
+        {
+          "value": "heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+        },
+        {
+          "value": "headset",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+        },
+        {
+          "value": "list",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+        },
+        {
+          "value": "lock",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+        },
+        {
+          "value": "magic",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__25.label"
+        },
+        {
+          "value": "map_pin",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__26.label"
+        },
+        {
+          "value": "paw_print",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__28.label"
+        },
+        {
+          "value": "person",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__30.label"
+        },
+        {
+          "value": "plane",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__31.label"
+        },
+        {
+          "value": "plant",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__32.label"
+        },
+        {
+          "value": "price_tag",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__33.label"
+        },
+        {
+          "value": "question_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__44.label"
+        },
+        {
+          "value": "recycle",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__35.label"
+        },
+        {
+          "value": "return",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__36.label"
+        },
+        {
+          "value": "shop",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__29.label"
+        },
+        {
+          "value": "smoothie",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+        },
+        {
+          "value": "snowflake",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__37.label"
+        },
+        {
+          "value": "star",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__38.label"
+        },
+        {
+          "value": "stopwatch",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__39.label"
+        },
+        {
+          "value": "tag",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__40.label"
+        },
+        {
+          "value": "thumb_up",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__42.label"
+        },
+        {
+          "value": "tree",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__41.label"
+        },
+        {
+          "value": "truck",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__43.label"
+        }
+      ],
+      "default": "heart",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_1.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.image_1.label"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "default": "Heading",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_1.label",
+      "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+    },
+    {
+      "type": "select",
+      "id": "icon_2",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+        },
+        {
+          "value": "bag_heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+        },
+        {
+          "value": "basket",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+        },
+        {
+          "value": "box",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+        },
+        {
+          "value": "box_heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+        },
+        {
+          "value": "brush",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+        },
+        {
+          "value": "calendar",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+        },
+        {
+          "value": "chat_bubble",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+        },
+        {
+          "value": "check_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+        },
+        {
+          "value": "clipboard",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+        },
+        {
+          "value": "cup",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__27.label"
+        },
+        {
+          "value": "droplet",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+        },
+        {
+          "value": "droplet_half",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+        },
+        {
+          "value": "envelope",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+        },
+        {
+          "value": "exclamation",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+        },
+        {
+          "value": "eye",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+        },
+        {
+          "value": "eye_dropper",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+        },
+        {
+          "value": "fire",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__34.label"
+        },
+        {
+          "value": "gift",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+        },
+        {
+          "value": "globe",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+        },
+        {
+          "value": "heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+        },
+        {
+          "value": "headset",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+        },
+        {
+          "value": "list",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+        },
+        {
+          "value": "lock",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+        },
+        {
+          "value": "magic",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__25.label"
+        },
+        {
+          "value": "map_pin",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__26.label"
+        },
+        {
+          "value": "paw_print",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__28.label"
+        },
+        {
+          "value": "person",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__30.label"
+        },
+        {
+          "value": "plane",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__31.label"
+        },
+        {
+          "value": "plant",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__32.label"
+        },
+        {
+          "value": "price_tag",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__33.label"
+        },
+        {
+          "value": "question_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__44.label"
+        },
+        {
+          "value": "recycle",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__35.label"
+        },
+        {
+          "value": "return",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__36.label"
+        },
+        {
+          "value": "shop",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__29.label"
+        },
+        {
+          "value": "smoothie",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+        },
+        {
+          "value": "snowflake",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__37.label"
+        },
+        {
+          "value": "star",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__38.label"
+        },
+        {
+          "value": "stopwatch",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__39.label"
+        },
+        {
+          "value": "tag",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__40.label"
+        },
+        {
+          "value": "thumb_up",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__42.label"
+        },
+        {
+          "value": "tree",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__41.label"
+        },
+        {
+          "value": "truck",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__43.label"
+        }
+      ],
+      "default": "return",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_2.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.image_2.label"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "default": "Heading",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_2.label",
+      "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+    },
+    {
+      "type": "select",
+      "id": "icon_3",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+        },
+        {
+          "value": "bag_heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+        },
+        {
+          "value": "basket",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+        },
+        {
+          "value": "box",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+        },
+        {
+          "value": "box_heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+        },
+        {
+          "value": "brush",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+        },
+        {
+          "value": "calendar",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+        },
+        {
+          "value": "chat_bubble",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+        },
+        {
+          "value": "check_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+        },
+        {
+          "value": "clipboard",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+        },
+        {
+          "value": "cup",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__27.label"
+        },
+        {
+          "value": "droplet",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+        },
+        {
+          "value": "droplet_half",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+        },
+        {
+          "value": "envelope",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+        },
+        {
+          "value": "exclamation",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+        },
+        {
+          "value": "eye",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+        },
+        {
+          "value": "eye_dropper",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+        },
+        {
+          "value": "fire",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__34.label"
+        },
+        {
+          "value": "gift",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+        },
+        {
+          "value": "globe",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+        },
+        {
+          "value": "heart",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+        },
+        {
+          "value": "headset",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+        },
+        {
+          "value": "list",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+        },
+        {
+          "value": "lock",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+        },
+        {
+          "value": "magic",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__25.label"
+        },
+        {
+          "value": "map_pin",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__26.label"
+        },
+        {
+          "value": "paw_print",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__28.label"
+        },
+        {
+          "value": "person",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__30.label"
+        },
+        {
+          "value": "plane",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__31.label"
+        },
+        {
+          "value": "plant",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__32.label"
+        },
+        {
+          "value": "price_tag",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__33.label"
+        },
+        {
+          "value": "question_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__44.label"
+        },
+        {
+          "value": "recycle",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__35.label"
+        },
+        {
+          "value": "return",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__36.label"
+        },
+        {
+          "value": "shop",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__29.label"
+        },
+        {
+          "value": "smoothie",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+        },
+        {
+          "value": "snowflake",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__37.label"
+        },
+        {
+          "value": "star",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__38.label"
+        },
+        {
+          "value": "stopwatch",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__39.label"
+        },
+        {
+          "value": "tag",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__40.label"
+        },
+        {
+          "value": "thumb_up",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__42.label"
+        },
+        {
+          "value": "tree",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__41.label"
+        },
+        {
+          "value": "truck",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__43.label"
+        }
+      ],
+      "default": "truck",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_3.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.image_3.label"
+    },
+    {
+      "type": "text",
+      "id": "heading_3",
+      "default": "Heading",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
+      "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.icon_with_text.name"
+    }
+  ]
+}
+{% endschema %}

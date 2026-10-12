@@ -1,0 +1,68 @@
+{%- assign image_sizes = block.settings.image_width | append: 'px' -%}
+<div class="block-image block-image-{{ block.id }}" {{ block.shopify_attributes }}>
+  {%- if block.settings.image != blank -%}
+    {%- if block.settings.image_link != blank -%}<a href="{{ block.settings.image_link }}">{%- endif -%}
+    {{
+      block.settings.image
+      | image_url: width: 1100
+      | image_tag:
+        loading: 'lazy',
+        widths: '130, 260, 400, 550, 750, 1100',
+        sizes: image_sizes
+    }}
+    {%- if block.settings.image_link != blank -%}</a>{%- endif -%}
+  {%- else -%}
+    {{ 'collection-4' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+</div>
+
+{%- style -%}
+  .block-image-{{ block.id }} img { width: {{ block.settings.image_width }}px; }
+{%- endstyle -%}
+
+{% stylesheet %}
+  .block-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .block-image svg.placeholder-svg {
+    height: 200px;
+    width: 200px;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:blocks.image.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.rich-text.blocks.image.settings.image.label"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 50,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "default": 130,
+      "label": "t:blocks.image.settings.image_width.label"
+    },
+    {
+      "type": "url",
+      "id": "image_link",
+      "label": "t:blocks.image.settings.image_link.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:blocks.image.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,53 @@
+{%- liquid
+  for item in section.blocks
+    if item.id == block.id
+      assign block_index = forloop.index
+      break
+    endif
+  endfor
+  assign block_index0 = block_index | minus: 1
+-%}
+<li
+  id="Slide-{{ section.id }}-{{ block_index }}"
+  class="grid-item{% if section.settings.swipe_on_mobile or section.settings.enable_desktop_slider %} slider-slide{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  {%- assign placeholder_image_index = block_index0 | modulo: 4 | plus: 1 -%}
+  {%- assign placeholder_image = 'collection-' | append: placeholder_image_index -%}
+  {% if section.settings.title_under == true and section.settings.collection_list_style == 'collection-list-two' %}
+      {% render 'card-collection-two',
+        card_collection: block.settings.collection,
+        media_aspect_ratio: section.settings.image_ratio,
+        placeholder_image: placeholder_image,
+        columns: section.settings.columns_desktop,
+        mobile_columns: section.settings.columns_mobile
+      %}
+    {% else %}
+      {% render 'card-collection-one',
+        card_collection: block.settings.collection,
+        media_aspect_ratio: section.settings.image_ratio,
+        placeholder_image: placeholder_image,
+        columns: section.settings.columns_desktop,
+        mobile_columns: section.settings.columns_mobile
+      %}
+  {% endif %}
+</li>
+
+{% schema %}
+{
+  "name": "t:sections.collection-list.blocks.featured_collection.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.collection-list.blocks.featured_collection.name"
+    }
+  ]
+}
+{% endschema %}

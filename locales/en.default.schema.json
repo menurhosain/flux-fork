@@ -8515,5 +8515,65 @@
         "name": "About"
       }
     }
+  },
+  "blocks": {
+    "heading": {
+      "name": "Heading"
+    },
+    "caption": {
+      "name": "Caption"
+    },
+    "text": {
+      "name": "Text"
+    },
+    "button": {
+      "name": "Buttons",
+      "settings": {
+        "apply_link_to_image": {
+          "info": "Works in image banner sections."
+        }
+      }
+    },
+    "image": {
+      "name": "Image",
+      "settings": {
+        "image_width": {
+          "label": "Image width"
+        },
+        "image_link": {
+          "label": "Link"
+        }
+      }
+    },
+    "spacer": {
+      "name": "Spacer",
+      "settings": {
+        "height": {
+          "label": "Height on desktop"
+        },
+        "height_mobile": {
+          "label": "Height on mobile"
+        }
+      }
+    },
+    "custom_liquid": {
+      "name": "Custom Liquid"
+    },
+    "countdown_timer": {
+      "name": "Countdown timer"
+    },
+    "email_signup": {
+      "name": "Email signup form"
+    },
+    "two_images_text_image": {
+      "settings": {
+        "overlap": {
+          "label": "Overlap style (round image)"
+        }
+      }
+    },
+    "featured_collection_card": {
+      "name": "Collection card"
+    }
   }
 }

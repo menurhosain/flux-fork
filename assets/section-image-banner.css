@@ -897,3 +897,42 @@
     max-width: 70rem;
   }
 }
+/* Theme blocks */
+.banner-box .block-heading {
+  margin: 0;
+}
+
+.banner-box > * + .block-buttons {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image-banner-with-featured-collection .banner-box .block-heading {
+  color: rgb(var(--color-foreground));
+}
+
+@media only screen and (max-width: 990px) {
+  .image-banner-with-featured-collection h2.block-heading {
+    line-height: 1.1;
+  }
+
+  .banner--content-align-mobile-right .block-buttons--multiple {
+    justify-content: flex-end;
+  }
+
+  .banner--content-align-mobile-center .block-buttons--multiple > * {
+    flex-grow: 1;
+    min-width: 22rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .banner--content-align-center .block-buttons--multiple > * {
+    flex-grow: 1;
+    min-width: 22rem;
+  }
+
+  .banner--content-align-right .block-buttons--multiple {
+    justify-content: flex-end;
+  }
+}

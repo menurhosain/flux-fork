@@ -1,0 +1,137 @@
+{%- liquid
+  for item in section.blocks
+    if item.id == block.id
+      assign block_index = forloop.index
+      break
+    endif
+  endfor
+-%}
+<div
+  class="footer-block grid-item {% if section.settings.swipe_on_mobile %} slider-slide{% endif %}"
+  id="Slide-{{ section.id }}-{{ block_index }}"
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.heading != blank -%}
+    <h2 class="footer-block__heading heading-bold">{{- block.settings.heading | escape -}}</h2>
+  {%- endif -%}
+
+  <div class="footer-block__details-content footer-block-image color-{{ block.settings.color_scheme_1 }}">
+    {%- if block.settings.image != blank -%}
+      {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+      <div
+        class="footer-block__image-wrapper global-media-settings"
+        style="max-width: min(100%, {{ block.settings.image_width }}px);"
+      >
+        <img
+          srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+          src="{{ block.settings.image | image_url: width: 760 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+        >
+      </div>
+    {%- else -%}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+    {%- endif -%}
+
+    <div class="footer-image-caption">
+      {%- if block.settings.image_headline != blank -%}
+        <h2 class="footer-block__heading heading-bold rte">
+          {{ block.settings.image_headline }}
+        </h2>
+      {%- endif -%}
+      {%- if block.settings.image_description != blank -%}
+        <div class="rte">{{ block.settings.image_description }}</div>
+      {%- endif -%}
+
+      {%- if block.settings.button_label != blank -%}
+        <a
+          {% if block.settings.button_link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ block.settings.button_link }}" {% if block.settings.open_new_tab_1 %} target="_blank" {% endif %}
+          {% endif %}
+          class="button-arrow button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+        >
+          {{ block.settings.button_label | escape }}
+          {%- if settings.show_button_arrow -%}{% render 'icon-slider-arrows' %}{% endif %}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+    <div class="footer__follow-on-shop">
+      {{ shop | login_button: action: 'follow' }}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.footer.blocks.image.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.footer.blocks.image.settings.image.label"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 50,
+      "max": 550,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.footer.blocks.image.settings.image_width.label",
+      "default": 100
+    },
+    {
+      "type": "inline_richtext",
+      "id": "image_headline",
+      "label": "t:sections.footer.blocks.image.settings.image_headline.label"
+    },
+    {
+      "type": "richtext",
+      "id": "image_description",
+      "label": "t:sections.footer.blocks.image.settings.image_description.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Shop Now",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_new_tab_1",
+      "default": false,
+      "label": "t:sections.all.open_new_tab.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_1.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme_1",
+      "label": "t:sections.all.colors.label",
+      "default": "option-2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.footer.blocks.image.name"
+    }
+  ]
+}
+{% endschema %}

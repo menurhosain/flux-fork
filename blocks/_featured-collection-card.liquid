@@ -1,0 +1,50 @@
+{%- liquid
+  assign collection_first = false
+  if section.settings.layout == 'collection_first'
+    assign collection_first = true
+  endif
+
+  if block.id == 'collection-2'
+    assign card_class = 'collection-two collection-two-'
+    assign placeholder = 'collection-4'
+    unless collection_first
+      assign placeholder = 'collection-6'
+    endunless
+  else
+    assign card_class = 'collection-one collection-one-'
+    assign placeholder = 'collection-3'
+    unless collection_first
+      assign placeholder = 'collection-5'
+    endunless
+  endif
+-%}
+<div
+  class="grid-item {{ card_class }}{{ section.settings.desktop_collections_alignment }}{% if block.settings.collection == blank %} global-media-settings{% endif %}"
+  {% if collection_first %}
+    data-aos="fade-up"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- if block.settings.collection != blank -%}
+    {% render 'card-collection-one',
+      card_collection: block.settings.collection,
+      media_aspect_ratio: section.settings.image_ratio
+    %}
+  {%- else -%}
+    {{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:blocks.featured_collection_card.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collections.settings.featured_collection_1.label"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,196 @@
+{%- liquid
+  assign product = closest.product
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- capture block_attributes -%}{% if is_featured %}{{ block.shopify_attributes }}{% endif %}{%- endcapture -%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+    {{ block.shopify_attributes }}
+  >
+{%- endunless -%}
+{%- if is_featured -%}
+  <script>
+      var shopifyLang = "{{ request.locale.iso_code }}"; 
+      var shopifyMarket ="{{ localization.country.iso_code }}";
+    </script>
+  <script src="{{ 'dayjs.min.js' | asset_url }}" defer="defer"></script> 
+  {%- if product.selected_or_first_available_variant.inventory_quantity > 0 -%}
+     {%- if block.settings.delivery_estimator_text != blank -%}
+       <delivery-estimator
+         class="section-{{ block.id }}-margin product-delivery-date"
+         {{ block_attributes }}
+       >
+         <p class="caption-with-letter-spacing color-{{ block.settings.color_scheme_1 }}">
+           {% render 'icon-truck' %}
+           {{ block.settings.delivery_estimator_text }}: <span class="earliest-delivery"></span> {%- render 'icon-minus'-%}
+           <span class="latest-delivery"></span>
+         </p>
+
+       {% assign all_tags_string = product.tags | join: '&!spacer!&' %}
+       {% if all_tags_string contains 'earliest delivery' %}
+         {% assign earliest_delivery_split = all_tags_string | split: 'earliest delivery' %}
+         {% assign earliest_delivery_spacer_split = earliest_delivery_split[1] | split: '&!spacer!&'%}
+         {% assign earliest_delivery_value = earliest_delivery_spacer_split[0] | plus: 0 %}
+       {% endif %}
+       {% if all_tags_string contains 'latest delivery' %}
+         {% assign latest_delivery_split = all_tags_string | split: 'latest delivery' %}
+         {% assign latest_delivery_spacer_split = latest_delivery_split[1] | split: '&!spacer!&' %}
+         {% assign latest_delivery_value = latest_delivery_spacer_split[0] | plus: 0 %}
+       {% endif %}
+       {% unless all_tags_string contains 'latest delivery' %}
+         {% assign earliest_delivery_value = block.settings.earliest_delivery %}
+         {% assign latest_delivery_value = block.settings.latest_delivery %}
+       {% endunless %}
+       <input type="hidden" class="earliest-delivery-value" value="{{ earliest_delivery_value }}">
+       <input type="hidden" class="latest-delivery-value" value="{{ latest_delivery_value | default: 0 }}">
+         </delivery-estimator>
+     {% endif %}
+   {% endif %}
+{%- else -%}
+  <script>
+      var shopifyLang = "{{ request.locale.iso_code }}"; 
+      var shopifyMarket ="{{ localization.country.iso_code }}";
+    </script>
+  <script src="{{ 'dayjs.min.js' | asset_url }}" defer="defer"></script>        
+  {%- if product.selected_or_first_available_variant.inventory_quantity > 0 or product.selected_or_first_available_variant.inventory_management == blank -%}
+    {%- if block.settings.delivery_estimator_text != blank -%}
+      <delivery-estimator
+        class="section-{{ block.id }}-margin product-delivery-date"
+      >
+        <p class="caption-with-letter-spacing color-{{ block.settings.color_scheme_1 }}">
+          {% render 'icon-truck' %}
+          {{ block.settings.delivery_estimator_text }}: <span class="earliest-delivery"></span> {%- render 'icon-minus'-%}
+          <span class="latest-delivery"></span>
+        </p>
+
+      {% assign all_tags_string = product.tags | join: '&!spacer!&' %}
+      {% if all_tags_string contains 'earliest delivery' %}
+        {% assign earliest_delivery_split = all_tags_string | split: 'earliest delivery' %}
+        {% assign earliest_delivery_spacer_split = earliest_delivery_split[1] | split: '&!spacer!&'%}
+        {% assign earliest_delivery_value = earliest_delivery_spacer_split[0] | plus: 0 %}
+      {% endif %}
+      {% if all_tags_string contains 'latest delivery' %}
+        {% assign latest_delivery_split = all_tags_string | split: 'latest delivery' %}
+        {% assign latest_delivery_spacer_split = latest_delivery_split[1] | split: '&!spacer!&' %}
+        {% assign latest_delivery_value = latest_delivery_spacer_split[0] | plus: 0 %}
+      {% endif %}
+      {% unless all_tags_string contains 'latest delivery' %}
+        {% assign earliest_delivery_value = block.settings.earliest_delivery %}
+        {% assign latest_delivery_value = block.settings.latest_delivery %}
+      {% endunless %}
+      <input type="hidden" class="earliest-delivery-value" value="{{ earliest_delivery_value }}">
+      <input type="hidden" class="latest-delivery-value" value="{{ latest_delivery_value | default: 0 }}">
+      </delivery-estimator>
+    {% endif %}
+  {% endif %}
+{%- endif -%}
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.delivery_estimator.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-product.blocks.delivery_estimator.settings.info.content"
+    },
+    {
+      "type": "text",
+      "id": "delivery_estimator_text",
+      "label": "t:sections.main-product.blocks.delivery_estimator.settings.delivery_estimator_text.label",
+      "default": "Delivery between"
+    },
+    {
+      "type": "text",
+      "id": "earliest_delivery",
+      "label": "t:sections.main-product.blocks.delivery_estimator.settings.earliest_delivery.label",
+      "info": "t:sections.main-product.blocks.delivery_estimator.settings.earliest_delivery.info",
+      "default": "2"
+    },
+    {
+      "type": "text",
+      "id": "latest_delivery",
+      "label": "t:sections.main-product.blocks.delivery_estimator.settings.latest_delivery.label",
+      "info": "t:sections.main-product.blocks.delivery_estimator.settings.latest_delivery.info",
+      "default": "4"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme_1",
+      "label": "t:sections.all.colors_box.label",
+      "default": "option-2"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_mobile",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_mobile.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_desktop",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_desktop.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.delivery_estimator.name"
+    }
+  ]
+}
+{% endschema %}

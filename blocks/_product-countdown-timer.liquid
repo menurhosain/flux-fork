@@ -1,0 +1,162 @@
+{%- liquid
+  assign product = closest.product
+  assign is_featured = false
+  if section.settings.gallery_layout == blank
+    assign is_featured = true
+  endif
+-%}
+{%- capture block_attributes -%}{% if is_featured %}{{ block.shopify_attributes }}{% endif %}{%- endcapture -%}
+{%- unless is_featured -%}
+  <div
+    class="block{% if block.settings.hide_mobile %} hide-mobile{% endif %}{% if block.settings.hide_desktop %} hide-desktop{% endif %}{% if block.settings.hide_quick_view %} hide-quick-view{% endif %}{% if block.settings.pin_to_top %} pin-to-top__hide{% endif %}"
+    data-column="{{ block.settings.column }}"
+    {{ block.shopify_attributes }}
+  >
+{%- endunless -%}
+{% if block.settings['countdown-date'] != blank
+  and product.tags contains 'timer'
+  and block.settings.countdown_timer_tag
+%}
+  <div class="section-{{ block.id }}-margin countdown-option-1 countdown-text-position-{{ block.settings.countdown-text-position }} {{ block.settings.countdown-date-time-style}}" {{ block_attributes }}>
+    {% render 'countdown-timer',
+      title: block.settings['countdown-text'],
+      end_date: block.settings['countdown-date'],
+      end_time: block.settings['countdown-time'],
+      countdown_finished_message: block.settings.countdown_finished_message
+    %}
+  </div>
+{% elsif block.settings['countdown-date'] != blank
+  and block.settings.countdown_timer_tag == false
+%}
+  <div class="section-{{ block.id }}-margin countdown-option-1 countdown-text-position-{{ block.settings.countdown-text-position }} {{ block.settings.countdown-date-time-style}}" {{ block_attributes }}>
+    {% render 'countdown-timer',
+      title: block.settings['countdown-text'],
+      end_date: block.settings['countdown-date'],
+      end_time: block.settings['countdown-time'],
+      countdown_finished_message: block.settings.countdown_finished_message
+    %}
+  </div>
+{% endif %}
+{%- unless is_featured -%}
+  </div>
+{%- endunless -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-product.blocks.countdown-timer.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "column",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__2.label"
+        },
+        {
+          "value": "under-gallery",
+          "label": "t:sections.main-product.blocks.title.settings.column.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.main-product.blocks.title.settings.column.label"
+    },
+    {
+      "type": "text",
+      "id": "countdown-text",
+      "label": "t:sections.all.countdown-text.label",
+      "default": "Offer Ends In"
+    },
+    {
+      "type": "select",
+      "id": "countdown-text-position",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:sections.all.countdown-text-position.options__1.label"
+        },
+        {
+          "value": "left",
+          "label": "t:sections.all.countdown-text-position.options__2.label"
+        }
+      ],
+      "default": "top",
+      "label": "t:sections.all.countdown-text-position.label"
+    },
+    {
+      "type": "text",
+      "id": "countdown-date",
+      "label": "t:sections.all.countdown-date.label",
+      "info": "t:sections.all.countdown-date.info",
+      "default": "Sep 30, 2025"
+    },
+    {
+      "type": "text",
+      "id": "countdown-time",
+      "label": "t:sections.all.countdown-time.label",
+      "info": "t:sections.all.countdown-time.info",
+      "default": "9:00"
+    },
+    {
+      "type": "select",
+      "id": "countdown-date-time-style",
+      "options": [
+        {
+          "value": "style-one",
+          "label": "t:sections.all.countdown-date-time-style.options__1.label"
+        },
+        {
+          "value": "style-two",
+          "label": "t:sections.all.countdown-date-time-style.options__2.label"
+        }
+      ],
+      "default": "style-one",
+      "label": "t:sections.all.countdown-date-time-style.label"
+    },
+    {
+      "type": "text",
+      "id": "countdown_finished_message",
+      "label": "t:sections.all.countdown_finished_message.label",
+      "info": "t:sections.all.countdown_finished_message.info",
+      "default": "This offer has ended"
+    },
+    {
+      "type": "checkbox",
+      "id": "countdown_timer_tag",
+      "label": "t:sections.all.countdown_timer_tag.label",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.content",
+      "info": "t:sections.main-product.blocks.payment_enable.settings.header_quick_view.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_quick_view",
+      "default": false,
+      "label": "t:sections.main-product.blocks.payment_enable.settings.hide_quick_view.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.main-product.blocks.countdown-timer.name"
+    }
+  ]
+}
+{% endschema %}

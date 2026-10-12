@@ -8516,5 +8516,65 @@
         "name": "Über uns"
       }
     }
+  },
+  "blocks": {
+    "heading": {
+      "name": "Überschrift"
+    },
+    "caption": {
+      "name": "Bildunterschrift"
+    },
+    "text": {
+      "name": "Text"
+    },
+    "button": {
+      "name": "Schaltflächen",
+      "settings": {
+        "apply_link_to_image": {
+          "info": "Funktioniert in Bildbanner-Abschnitten."
+        }
+      }
+    },
+    "image": {
+      "name": "Bild",
+      "settings": {
+        "image_width": {
+          "label": "Bildbreite"
+        },
+        "image_link": {
+          "label": "Link"
+        }
+      }
+    },
+    "spacer": {
+      "name": "Abstandshalter",
+      "settings": {
+        "height": {
+          "label": "Höhe auf Desktop"
+        },
+        "height_mobile": {
+          "label": "Höhe auf Mobilgeräten"
+        }
+      }
+    },
+    "custom_liquid": {
+      "name": "Benutzerdefiniertes Liquid"
+    },
+    "countdown_timer": {
+      "name": "Countdown-Timer"
+    },
+    "email_signup": {
+      "name": "E-Mail-Anmeldeformular"
+    },
+    "two_images_text_image": {
+      "settings": {
+        "overlap": {
+          "label": "Überlappender Stil (rundes Bild)"
+        }
+      }
+    },
+    "featured_collection_card": {
+      "name": "Kollektionskarte"
+    }
   }
 }

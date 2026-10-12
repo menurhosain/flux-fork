@@ -1,0 +1,107 @@
+{%- liquid
+  for item in section.blocks
+    if item.id == block.id
+      assign block_index = forloop.index
+      break
+    endif
+  endfor
+-%}
+<li {{ block.shopify_attributes }}>
+  {%- if block.settings.image -%}
+    {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
+    <div class="slick-image media">
+      {{
+        block.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          height: height,
+          sizes: '100vw',
+          widths: '750, 1100, 1500, 1780, 2000, 3000, 3840'
+      }}
+      {% if section.settings.opacity_mobile == false %}
+        <div class="overlay">&nbsp;</div>
+      {% else %}
+        <div class="overlay-mobile">&nbsp;</div>
+      {% endif %}
+    </div>
+  {%- else -%}
+    <div class="slick-image media">
+      {%- assign placeholder_image = 'collection-' | append: block_index -%}
+      {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+  {%- endif -%}
+
+  <div class="slick-content">
+    {%- if block.settings.heading != blank -%}
+      <{{ section.settings.heading_tag }} class="slick-slider-heading">
+        {{- block.settings.heading | escape -}}
+      </{{ section.settings.heading_tag }}>
+    {%- endif -%}
+    {%- if block.settings.button_label != blank -%}
+    <div class="slick-content-link">
+      <a class="{% if block.settings.show_link_button %}button-arrow button button--primary{% endif %}" href="{{ block.settings.link }}" {% if block.settings.open_new_tab_1 %} target="_blank" {% endif %}>{{ block.settings.button_label }}</a>
+    </div>
+    {% endif %}
+    <div class="slick-caption">
+      {%- if block.settings.caption != blank -%}
+        {{ block.settings.caption | escape }}
+      {%- endif -%}
+    </div>
+  </div>
+</li>
+
+{% schema %}
+{
+  "name": "Slick slide",
+  "tag": null,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.advanced-slideshow.blocks.slide.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Image slide heading",
+      "label": "t:sections.advanced-slideshow.blocks.slide.settings.heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "caption",
+      "default": "Image slide caption",
+      "label": "t:sections.advanced-slideshow.blocks.slide.settings.caption.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "t:sections.advanced-slideshow.blocks.slide.settings.button_label.label",
+      "info": "t:sections.advanced-slideshow.blocks.slide.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "t:sections.advanced-slideshow.blocks.slide.settings.link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_link_button",
+      "label": "t:sections.advanced-slideshow.blocks.slide.settings.show_link_button.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "open_new_tab_1",
+      "default": false,
+      "label": "t:sections.all.open_new_tab.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slick slide"
+    }
+  ]
+}
+{% endschema %}

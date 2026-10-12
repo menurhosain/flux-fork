@@ -150,8 +150,6 @@
               >
                 {{- 'products.product.sold_out' | t -}}
               </span>
-              {% assign card_variant.price = card_variant.price | money %}
-              {% assign card_variant.compare_at_price = card_variant.compare_at_price | money %}
             {% elsif card_variant.compare_at_price > card_variant.price and settings.badge_discount == true and settings.disable_badge_discount == false %}
               {% assign discount_amount = card_variant.compare_at_price | minus: card_variant.price %}
               {% assign discount_percentage = discount_amount

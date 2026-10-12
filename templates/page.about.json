@@ -1,4 +1,3 @@
-
 {
   "sections": {
     "main": {
@@ -13,7 +12,7 @@
       "type": "advanced-slider",
       "blocks": {
         "slide_1": {
-          "type": "slide",
+          "type": "_advanced-slide",
           "settings": {
             "image": "",
             "heading": "Meet our Team",
@@ -24,7 +23,7 @@
           }
         },
         "slide_2": {
-          "type": "slide",
+          "type": "_advanced-slide",
           "settings": {
             "image": "",
             "heading": "Welcome to Flux",
@@ -173,7 +172,7 @@
       "type": "multicolumn",
       "blocks": {
         "column_1": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "image": "",
             "hide_image": false,
@@ -184,7 +183,7 @@
           }
         },
         "column_2": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "image": "",
             "hide_image": false,
@@ -195,7 +194,7 @@
           }
         },
         "column_3": {
-          "type": "column",
+          "type": "_column",
           "settings": {
             "image": "",
             "hide_image": false,
@@ -259,7 +258,7 @@
           }
         },
         "image": {
-          "type": "image",
+          "type": "_image-with-text-decoration",
           "settings": {
             "image": "",
             "mobile_disable_image": false
@@ -310,14 +309,14 @@
           }
         },
         "buttons": {
-          "type": "buttons",
+          "type": "button",
           "settings": {
-            "button_label_1": "Shop the Sale",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_label": "Shop the Sale",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },

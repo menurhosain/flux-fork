@@ -8515,5 +8515,65 @@
         "name": "Informazioni"
       }
     }
+  },
+  "blocks": {
+    "heading": {
+      "name": "Titolo"
+    },
+    "caption": {
+      "name": "Didascalia"
+    },
+    "text": {
+      "name": "Testo"
+    },
+    "button": {
+      "name": "Pulsanti",
+      "settings": {
+        "apply_link_to_image": {
+          "info": "Funziona nelle sezioni banner immagine."
+        }
+      }
+    },
+    "image": {
+      "name": "Immagine",
+      "settings": {
+        "image_width": {
+          "label": "Larghezza immagine"
+        },
+        "image_link": {
+          "label": "Link"
+        }
+      }
+    },
+    "spacer": {
+      "name": "Spaziatore",
+      "settings": {
+        "height": {
+          "label": "Altezza su desktop"
+        },
+        "height_mobile": {
+          "label": "Altezza su dispositivi mobili"
+        }
+      }
+    },
+    "custom_liquid": {
+      "name": "Liquid personalizzato"
+    },
+    "countdown_timer": {
+      "name": "Timer conto alla rovescia"
+    },
+    "email_signup": {
+      "name": "Modulo di iscrizione"
+    },
+    "two_images_text_image": {
+      "settings": {
+        "overlap": {
+          "label": "Stile sovrapposto (immagine rotonda)"
+        }
+      }
+    },
+    "featured_collection_card": {
+      "name": "Scheda collezione"
+    }
   }
 }

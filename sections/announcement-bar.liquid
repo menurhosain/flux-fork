@@ -127,18 +127,7 @@
   <div class="announcement-bar__message">
   {% if section.settings.show_countdown != true %}
   <text-slider>
-  {% for block in section.blocks %} 
-    <a class="announcement-slide"
-      {% if block.settings.slider_link != blank %}
-        href="{{ block.settings.slider_link }}"
-      {% else %}
-        data-disabled="true"
-        role="link"
-        aria-disabled="true"
-      {% endif %}>  
-      <div class="announcement-text">{{ block.settings.slider-text }}</div>
-    </a>   
-  {% endfor %}
+  {% content_for 'blocks' %}
   </text-slider>
 
     {% endif %}
@@ -250,215 +239,202 @@
   "class": "announcement-bar-section",
   "tag": "section",
   "enabled_on": {
-    "groups": ["header", "footer"]
+    "groups": [
+      "header",
+      "footer"
+    ]
   },
   "settings": [
-        {
-          "type": "header",
-          "content": "t:sections.announcement-bar.settings.header_layout.content"
-        },
-        {
-          "type": "select",
-          "id": "announcement_position",
-          "options": [
-            {
-              "value": "position-top",
-              "label": "t:sections.announcement-bar.settings.announcement_position.options__1.label"
-            },
-            {
-              "value": "position-left",
-              "label": "t:sections.announcement-bar.settings.announcement_position.options__2.label"
-            },
-            {
-              "value": "position-right",
-              "label": "t:sections.announcement-bar.settings.announcement_position.options__3.label"
-            }
-          ],
-          "default": "position-right",
-          "label": "t:sections.announcement-bar.settings.announcement_position.label"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.announcement-bar.settings.sticky.content",
-          "visible_if": "{{section.settings.announcement_position =='position-top'}}"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_announcement_bar_desktop_sticky",
-          "label": "t:sections.announcement-bar.settings.enable_announcement_bar_desktop_sticky.label",
-          "default": false,
-          "visible_if": "{{section.settings.announcement_position =='position-top'}}"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_announcement_bar_mobile_sticky",
-          "label": "t:sections.announcement-bar.settings.enable_announcement_bar_mobile_sticky.label",
-          "default": false,
-          "visible_if": "{{section.settings.announcement_position =='position-top'}}"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.announcement-bar.settings.show_social_content.content",
-          "info": "t:sections.announcement-bar.settings.show_social_info.info"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_social",
-          "default": true,
-          "label": "t:sections.announcement-bar.settings.show_social.label"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.announcement-bar.settings.country_selector_content.content",
-          "info": "t:sections.announcement-bar.settings.country_selector_info.info"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_country_selector",
-          "default": true,
-          "label": "t:sections.announcement-bar.settings.enable_country_selector.label"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.announcement-bar.settings.header_vertical_bar.content",
-          "visible_if": "{{section.settings.announcement_position !='position-top'}}"
-        },
-        {
-          "type": "range",
-          "id": "vertical_position",
-          "min": 0,
-          "max": 70,
-          "step": 5,
-          "label": "t:sections.announcement-bar.settings.vertical_position.label",
-          "default": 20,
-          "visible_if": "{{section.settings.announcement_position !='position-top'}}"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.announcement-bar.settings.header_top_bar.content",
-          "visible_if": "{{section.settings.announcement_position =='position-top'}}"
-        },        
-        {
-          "type": "color",
-          "id": "announcement_text_color",
-          "label": "t:sections.all.text_color.label",
-          "default": "#000000",
-          "visible_if": "{{section.settings.announcement_position =='position-top'}}"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_countdown",
-          "default": false,
-          "label": "t:sections.announcement-bar.settings.show_countdown.label",
-          "info": "t:sections.announcement-bar.settings.show_countdown.info",
-          "visible_if": "{{section.settings.announcement_position =='position-top'}}"
-        },
-        {
-          "type": "text",
-          "id": "countdown-text",
-          "label": "t:sections.all.countdown-text.label",
-          "default": "Offer Ends In",
-          "visible_if": "{{section.settings.show_countdown}}"
-        },
-        {
-          "type": "select",
-          "id": "countdown-text-position",
-          "options": [
-            {
-              "value": "top",
-              "label": "t:sections.all.countdown-text-position.options__1.label"
-            },
-            {
-              "value": "left",
-              "label": "t:sections.all.countdown-text-position.options__2.label"
-            }
-          ],
-          "default": "top",
-          "label": "t:sections.all.countdown-text-position.label",
-          "visible_if": "{{section.settings.show_countdown}}"
-        },
-        {
-          "type": "text",
-          "id": "countdown-date",
-          "label": "t:sections.all.countdown-date.label",
-          "info": "t:sections.all.countdown-date.info",
-          "default": "Sep 30, 2024",
-          "visible_if": "{{section.settings.show_countdown}}"
-        },
-        {
-          "type": "text",
-          "id": "countdown-time",
-          "label": "t:sections.all.countdown-time.label",
-          "info": "t:sections.all.countdown-time.info",
-          "default": "9:00",
-          "visible_if": "{{section.settings.show_countdown}}"
-        },
-        {
-          "type": "select",
-          "id": "countdown-date-time-style",
-          "options": [
-            {
-              "value": "style-one",
-              "label": "t:sections.all.countdown-date-time-style.options__1.label"
-            },
-            {
-              "value": "style-two",
-              "label": "t:sections.all.countdown-date-time-style.options__2.label"
-            }
-          ],
-          "default": "style-one",
-          "label": "t:sections.all.countdown-date-time-style.label",
-          "visible_if": "{{section.settings.show_countdown}}"
-        },
-        {
-          "type": "text",
-          "id": "countdown_finished_message",
-          "label": "t:sections.all.countdown_finished_message.label",
-          "info": "t:sections.all.countdown_finished_message.info",
-          "default": "This offer has ended",
-          "visible_if": "{{section.settings.show_countdown}}"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.all.header_color_box.content"
-        },
-        {
-          "type": "color_scheme",
-          "id": "color_scheme",
-          "label": "t:sections.all.colors.label",
-          "default": "option-2"
-        }
-  ],
-    "blocks": [
     {
-      "type": "announcement",
-      "name": "announcement",
-      "limit": 5,
-      "settings": [
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.header_layout.content"
+    },
+    {
+      "type": "select",
+      "id": "announcement_position",
+      "options": [
         {
-          "type": "richtext",
-          "id": "slider-text",
-          "default": "<p>Your Announcement</p>",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.slider-text.label"
+          "value": "position-top",
+          "label": "t:sections.announcement-bar.settings.announcement_position.options__1.label"
         },
         {
-          "type": "url",
-          "id": "slider_link",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.slider-link.label"
+          "value": "position-left",
+          "label": "t:sections.announcement-bar.settings.announcement_position.options__2.label"
+        },
+        {
+          "value": "position-right",
+          "label": "t:sections.announcement-bar.settings.announcement_position.options__3.label"
         }
-
-      ]
+      ],
+      "default": "position-right",
+      "label": "t:sections.announcement-bar.settings.announcement_position.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.sticky.content",
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_announcement_bar_desktop_sticky",
+      "label": "t:sections.announcement-bar.settings.enable_announcement_bar_desktop_sticky.label",
+      "default": false,
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_announcement_bar_mobile_sticky",
+      "label": "t:sections.announcement-bar.settings.enable_announcement_bar_mobile_sticky.label",
+      "default": false,
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.show_social_content.content",
+      "info": "t:sections.announcement-bar.settings.show_social_info.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social",
+      "default": true,
+      "label": "t:sections.announcement-bar.settings.show_social.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.country_selector_content.content",
+      "info": "t:sections.announcement-bar.settings.country_selector_info.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "default": true,
+      "label": "t:sections.announcement-bar.settings.enable_country_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.header_vertical_bar.content",
+      "visible_if": "{{section.settings.announcement_position !='position-top'}}"
+    },
+    {
+      "type": "range",
+      "id": "vertical_position",
+      "min": 0,
+      "max": 70,
+      "step": 5,
+      "label": "t:sections.announcement-bar.settings.vertical_position.label",
+      "default": 20,
+      "visible_if": "{{section.settings.announcement_position !='position-top'}}"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.header_top_bar.content",
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "color",
+      "id": "announcement_text_color",
+      "label": "t:sections.all.text_color.label",
+      "default": "#000000",
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_countdown",
+      "default": false,
+      "label": "t:sections.announcement-bar.settings.show_countdown.label",
+      "info": "t:sections.announcement-bar.settings.show_countdown.info",
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "text",
+      "id": "countdown-text",
+      "label": "t:sections.all.countdown-text.label",
+      "default": "Offer Ends In",
+      "visible_if": "{{section.settings.show_countdown}}"
+    },
+    {
+      "type": "select",
+      "id": "countdown-text-position",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:sections.all.countdown-text-position.options__1.label"
+        },
+        {
+          "value": "left",
+          "label": "t:sections.all.countdown-text-position.options__2.label"
+        }
+      ],
+      "default": "top",
+      "label": "t:sections.all.countdown-text-position.label",
+      "visible_if": "{{section.settings.show_countdown}}"
+    },
+    {
+      "type": "text",
+      "id": "countdown-date",
+      "label": "t:sections.all.countdown-date.label",
+      "info": "t:sections.all.countdown-date.info",
+      "default": "Sep 30, 2024",
+      "visible_if": "{{section.settings.show_countdown}}"
+    },
+    {
+      "type": "text",
+      "id": "countdown-time",
+      "label": "t:sections.all.countdown-time.label",
+      "info": "t:sections.all.countdown-time.info",
+      "default": "9:00",
+      "visible_if": "{{section.settings.show_countdown}}"
+    },
+    {
+      "type": "select",
+      "id": "countdown-date-time-style",
+      "options": [
+        {
+          "value": "style-one",
+          "label": "t:sections.all.countdown-date-time-style.options__1.label"
+        },
+        {
+          "value": "style-two",
+          "label": "t:sections.all.countdown-date-time-style.options__2.label"
+        }
+      ],
+      "default": "style-one",
+      "label": "t:sections.all.countdown-date-time-style.label",
+      "visible_if": "{{section.settings.show_countdown}}"
+    },
+    {
+      "type": "text",
+      "id": "countdown_finished_message",
+      "label": "t:sections.all.countdown_finished_message.label",
+      "info": "t:sections.all.countdown_finished_message.info",
+      "default": "This offer has ended",
+      "visible_if": "{{section.settings.show_countdown}}"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.header_color_box.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "option-2"
     }
   ],
-"presets": [
+  "blocks": [
+    {
+      "type": "_announcement"
+    }
+  ],
+  "presets": [
     {
       "name": "t:sections.announcement-bar.presets.name",
       "blocks": [
         {
-          "type": "announcement"
+          "type": "_announcement"
         },
         {
-          "type": "announcement"
+          "type": "_announcement"
         }
       ]
     }

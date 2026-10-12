@@ -92,14 +92,14 @@
           }
         },
         "paragraph": {
-          "type": "paragraph",
+          "type": "text",
           "settings": {
             "text": "<p>Don't miss out on this opportunity to stay in the loop. Sign up for our newsletter today!</p>",
             "text_style": "body"
           }
         },
         "email_form": {
-          "type": "email_form",
+          "type": "email-signup",
           "settings": {}
         }
       },

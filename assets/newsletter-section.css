@@ -122,3 +122,18 @@
     padding: 0;
   }
 }
+/* Theme blocks */
+.newsletter-banner-box .block-heading,
+.newsletter-banner-box .block-text.body {
+  margin: 0 0 1.5rem 0;
+}
+
+.newsletter-banner-box .block-caption {
+  margin: 0;
+}
+
+@media screen and (min-width: 990px) {
+  .newsletter-banner-box .block-text.body {
+    font-size: calc(var(--font-body-scale) * 1.8rem);
+  }
+}
