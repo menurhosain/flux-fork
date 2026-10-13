@@ -20,7 +20,7 @@
           "settings": {
             "slider-text": "<p>It’s Here! Get The New Perimenopause Now</p>",
             "slider_link": "shopify://pages/about-bacon-health",
-            "icon": "clipboard",
+            "icon": "none",
             "custom_icon": "shopify://shop_images/arrow-icon.svg",
             "icon_size": 18
           },
@@ -36,10 +36,13 @@
         "enable_full_width": false,
         "enable_announcement_bar_desktop_sticky": false,
         "enable_announcement_bar_mobile_sticky": false,
-        "show_social": true,
-        "enable_country_selector": true,
+        "show_social": false,
+        "enable_country_selector": false,
         "vertical_position": 20,
         "announcement_text_color": "#ffffff",
+        "announcement_font_size": 14,
+        "announcement_font_size_mobile": 14,
+        "announcement_font_weight": "600",
         "show_countdown": false,
         "countdown-text": "Offer Ends In",
         "countdown-text-position": "top",
@@ -47,7 +50,7 @@
         "countdown-time": "9:00",
         "countdown-date-time-style": "style-one",
         "countdown_finished_message": "This offer has ended",
-        "color_scheme": "scheme-cca0a261-c6be-481b-9097-1e2524564b1e"
+        "color_scheme": "scheme-d03fc842-4dcf-4641-aa69-83d4f4246a23"
       }
     },
     "scrolling_text_CaktAg": {
@@ -92,6 +95,7 @@
       "settings": {
         "menu": "main-menu",
         "menu_type_desktop": "mega",
+        "menu_item_gap": 36,
         "all_items_mega": false,
         "enable_links": false,
         "desktop_header_layout": "logo-centermenu-icons",
@@ -117,12 +121,12 @@
         "item_highlight_text": "HOT",
         "item_highlight_position": "nth-child(4)",
         "adjust_item_highlight_position": 9,
-        "enable_country_selector": false,
+        "enable_country_selector": true,
         "enable_language_selector": false,
         "header_icons_decoration": "line",
         "color_scheme": "option-1",
-        "item_highlight_background_color": "#d4c4d9",
-        "item_highlight_color": "#1d1d1d",
+        "item_highlight_background_color": "#00A2F8",
+        "item_highlight_color": "#2C2B2B",
         "padding_top": 10,
         "padding_bottom": 10,
         "enable_country_selector_mobile": true,

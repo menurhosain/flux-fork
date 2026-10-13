@@ -49,18 +49,9 @@
             "brand_image": "shopify://shop_images/bacton-health-logo.png",
             "brand_image_width": 180,
             "hide_image": false,
-            "newsletter_enable": true,
+            "newsletter_enable": false,
             "show_social": true,
             "social_icons_size": "small"
-          },
-          "blocks": {}
-        },
-        "footer-0": {
-          "type": "_footer-text",
-          "settings": {
-            "heading": "Our Shop",
-            "subtext": "<p>Find a location nearest you.&nbsp;</p><p>📍 <a href=\"#\" title=\"#\"><strong>See Our Stores</strong></a></p><p>✉️ <a href=\"#\" title=\"#\"><strong>&nbsp;support@bactonhealth.com</strong></a></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>",
-            "custom_liquid": ""
           },
           "blocks": {}
         },
@@ -86,13 +77,22 @@
             "color_scheme_1": "option-2"
           },
           "blocks": {}
+        },
+        "footer-0": {
+          "type": "_footer-text",
+          "settings": {
+            "heading": "Our Shop",
+            "subtext": "<p>Find a location nearest you.&nbsp;</p><p>📍 <a href=\"#\" title=\"#\"><strong>See Our Stores</strong></a></p><p>✉️ <a href=\"#\" title=\"#\"><strong>&nbsp;support@bactonhealth.com</strong></a></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>",
+            "custom_liquid": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "brand_information",
-        "footer-0",
         "footer-1",
-        "footer-2"
+        "footer-2",
+        "footer-0"
       ],
       "settings": {
         "enable_follow_on_shop": true,

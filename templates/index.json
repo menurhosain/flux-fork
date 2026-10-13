@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Your Wellness. Your Balance. Your Best Life&nbsp;",
-            "heading_size": "large",
+            "heading_size": "extra-large",
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline",
@@ -78,6 +78,7 @@
         "full_width_banner": true,
         "adapt_to_image": false,
         "desktop_content_position": "middle-left",
+        "desktop_content_width": 74,
         "desktop_content_alignment": "left",
         "enable_collection": true,
         "collection": "frontpage",
@@ -87,7 +88,7 @@
         "full_width": false,
         "enable_desktop_slider": true,
         "desktop_margin_top": 170,
-        "mobile_margin_top": 110,
+        "mobile_margin_top": 100,
         "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -101,7 +102,7 @@
         "padding_bottom": 8,
         "ignore_spacing": false,
         "image_overlay_opacity_mobile": 40,
-        "image_height_mobile": 56,
+        "image_height_mobile": 84,
         "margin_spacing": "negative",
         "margin_top": 0,
         "mobile_content_alignment": "center",
@@ -117,63 +118,49 @@
         "featured_collection_1": {
           "type": "_collection-list-item",
           "settings": {
-            "collection": ""
+            "collection": "bundles"
           },
           "blocks": {}
         },
         "featured_collection_2": {
           "type": "_collection-list-item",
           "settings": {
-            "collection": ""
+            "collection": "supplements"
           },
           "blocks": {}
         },
         "featured_collection_3": {
           "type": "_collection-list-item",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
+          },
+          "blocks": {}
+        },
+        "collection_list_item_DzXKec": {
+          "type": "_collection-list-item",
+          "settings": {
+            "collection": "bundles"
           },
           "blocks": {}
         },
         "featured_collection_4": {
           "type": "_collection-list-item",
           "settings": {
-            "collection": ""
+            "collection": "supplements"
           },
           "blocks": {}
         },
         "featured_collection_5": {
           "type": "_collection-list-item",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           },
           "blocks": {}
         },
         "featured_collection_6": {
           "type": "_collection-list-item",
           "settings": {
-            "collection": ""
-          },
-          "blocks": {}
-        },
-        "featured_collection_7": {
-          "type": "_collection-list-item",
-          "settings": {
-            "collection": ""
-          },
-          "blocks": {}
-        },
-        "featured_collection_8": {
-          "type": "_collection-list-item",
-          "settings": {
-            "collection": ""
-          },
-          "blocks": {}
-        },
-        "featured_collection_9": {
-          "type": "_collection-list-item",
-          "settings": {
-            "collection": ""
+            "collection": "bundles"
           },
           "blocks": {}
         }
@@ -182,15 +169,13 @@
         "featured_collection_1",
         "featured_collection_2",
         "featured_collection_3",
+        "collection_list_item_DzXKec",
         "featured_collection_4",
         "featured_collection_5",
-        "featured_collection_6",
-        "featured_collection_7",
-        "featured_collection_8",
-        "featured_collection_9"
+        "featured_collection_6"
       ],
       "settings": {
-        "title": "Browse Collections",
+        "title": "Our Products",
         "heading_size": "medium",
         "heading_style": "default",
         "heading_tag": "h2",
@@ -201,7 +186,7 @@
         "collection_list_style": "collection-list-one",
         "title_under": false,
         "image_ratio": "square",
-        "columns_desktop": 6,
+        "columns_desktop": 3,
         "color_scheme": "option-1",
         "color_scheme_1": "option-1",
         "padding_top": 36,

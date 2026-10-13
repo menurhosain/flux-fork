@@ -10,7 +10,7 @@
 {
   "current": {
     "logo": "shopify://shop_images/bacton-health-logo.png",
-    "logo_width": 160,
+    "logo_width": 240,
     "logo_width_mobile": 160,
     "favicon": "shopify://shop_images/fav-icon.png",
     "show_breadcrumb_nav": true,
@@ -18,8 +18,8 @@
     "page_scroll_indicator": true,
     "scroll_indicator_color": "#00A2F8",
     "page_loader_text": "Loading Bacton...",
-    "accent_background_color_1": "#D7F2FF",
-    "accent_color_1": "#2C2B2B",
+    "accent_background_color_1": "#00A2F8",
+    "accent_color_1": "#FFFFFF",
     "accent_color_2": "#F2F2F2",
     "accent_text_color_2": "#2C2B2B",
     "border_color_1": "#D1D1D1",
@@ -33,10 +33,12 @@
     "opacity_color": "#2C2B2B",
     "type_header_font": "marcellus_n4",
     "heading_scale": 100,
-    "type_body_font": "instrument_serif_n4",
+    "type_body_font": "manrope_n4",
     "body_scale": 110,
     "navigation_font": "headings",
-    "navigation_scale": 110,
+    "text_style": "uppercase",
+    "navigation_scale": 100,
+    "subnavigation_scale": 90,
     "page_width": 1620,
     "spacing_sections": 60,
     "spacing_grid_horizontal": 20,
@@ -222,6 +224,17 @@
           "button_primary_text_color": "#ffffff",
           "button_secondary_color": "#ffffff",
           "color_link": "#2c2b2b"
+        }
+      },
+      "scheme-d03fc842-4dcf-4641-aa69-83d4f4246a23": {
+        "settings": {
+          "background_color": "#263842",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "button_primary_background_color": "#2c2b2b",
+          "button_primary_text_color": "#ffffff",
+          "button_secondary_color": "#ffffff",
+          "color_link": "#ffffff"
         }
       }
     }
