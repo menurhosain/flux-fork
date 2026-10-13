@@ -52,6 +52,26 @@
     display: block;  
   }
 
+  .announcement-bar.position-top {
+    --announcement-font-size: {{ section.settings.announcement_font_size }}px;
+  }
+
+  .announcement-bar.position-top .announcement-bar__message {
+    font-size: var(--announcement-font-size);
+  }
+
+  .announcement-bar.position-top .announcement-bar__message:has(text-slider) {
+    min-height: calc(var(--announcement-font-size) * 1.25 + 10px);
+  }
+
+  .announcement-bar .announcement-text,
+  .announcement-bar .announcement-text p {
+    font-size: inherit;
+    {%- if section.settings.announcement_font_weight != 'default' %}
+    font-weight: {{ section.settings.announcement_font_weight }};
+    {%- endif %}
+  }
+
   .announcement-bar a.announcement-slide {
     display: flex;
     align-items: center;
@@ -68,6 +88,23 @@
     width: var(--announcement-icon-size, 1.8rem);
     height: var(--announcement-icon-size, 1.8rem);
     fill: currentColor;
+  }
+
+  .announcement-bar .announcement-icon,
+  .announcement-bar .announcement-icon--image {
+    transition: transform 0.3s ease;
+  }
+
+  .announcement-bar a.announcement-slide[href]:hover .announcement-text,
+  .announcement-bar a.announcement-slide[href]:hover .announcement-text p {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-underline-offset: 0.3rem;
+  }
+
+  .announcement-bar a.announcement-slide[href]:hover .announcement-icon,
+  .announcement-bar a.announcement-slide[href]:hover .announcement-icon--image {
+    transform: translateX(5px);
   }
 
   .announcement-bar .announcement-icon--image {
@@ -96,6 +133,14 @@
 }
 
 @media screen and (max-width: 990px) {
+  .announcement-bar.position-top {
+    --announcement-font-size: {{ section.settings.announcement_font_size_mobile }}px;
+  }
+
+  .announcement-bar.position-top .announcement-bar__message {
+    font-size: var(--announcement-font-size);
+  }
+
   .announcement-bar.position-top.hide-countdown {
     padding: 15px 20px;
   }
@@ -373,6 +418,65 @@
       "id": "announcement_text_color",
       "label": "t:sections.all.text_color.label",
       "default": "#000000",
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "range",
+      "id": "announcement_font_size",
+      "min": 10,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "t:sections.announcement-bar.settings.announcement_font_size.label",
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "range",
+      "id": "announcement_font_size_mobile",
+      "min": 10,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:sections.announcement-bar.settings.announcement_font_size_mobile.label",
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
+    },
+    {
+      "type": "select",
+      "id": "announcement_font_weight",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.announcement-bar.settings.announcement_font_weight.options__default.label"
+        },
+        {
+          "value": "300",
+          "label": "t:sections.announcement-bar.settings.announcement_font_weight.options__300.label"
+        },
+        {
+          "value": "400",
+          "label": "t:sections.announcement-bar.settings.announcement_font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.announcement-bar.settings.announcement_font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.announcement-bar.settings.announcement_font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.announcement-bar.settings.announcement_font_weight.options__700.label"
+        },
+        {
+          "value": "800",
+          "label": "t:sections.announcement-bar.settings.announcement_font_weight.options__800.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.announcement-bar.settings.announcement_font_weight.label",
       "visible_if": "{{section.settings.announcement_position =='position-top'}}"
     },
     {

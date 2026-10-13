@@ -989,6 +989,36 @@
             "label": "Vertical Derecha"
           }
         },
+        "announcement_font_size": {
+          "label": "Tamaño de fuente"
+        },
+        "announcement_font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "announcement_font_weight": {
+          "label": "Grosor de fuente",
+          "options__default": {
+            "label": "Predeterminado del tema"
+          },
+            "options__300": {
+              "label": "Ligera"
+            },
+            "options__400": {
+              "label": "Normal"
+            },
+            "options__500": {
+              "label": "Media"
+            },
+            "options__600": {
+              "label": "Seminegrita"
+            },
+            "options__700": {
+              "label": "Negrita"
+            },
+            "options__800": {
+              "label": "Extranegrita"
+            }
+        },
         "enable_full_width": {
           "label": "Habilitar ancho completo"
         },

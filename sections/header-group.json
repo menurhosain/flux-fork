@@ -11,74 +11,94 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "header": {
-      "type": "header",
+    "announcement_bar_kiG49L": {
+      "type": "announcement-bar",
       "blocks": {
-        "mega-promotion": {
-          "type": "mega_promotion",
+        "announcement_7PjiHK": {
+          "type": "_announcement",
+          "name": "announcement",
           "settings": {
-            "mega_promotion_item": "Home",
-            "mega_promotion_image": "shopify://shop_images/FiberGDX_4_eab005ab-d75c-469f-b04d-eb9f1ba5e78b.webp",
-            "mega_promotion_caption": "20% Sale",
-            "mega_promotion_title": "Product Spotlight",
-            "mega_promotion_link_label": "Explore Now",
-            "mega_promotion_link": ""
-          }
-        },
-        "mega_image_menu": {
-          "type": "mega_image_menu",
-          "settings": {
-            "mega_image_menu_item": "Specials",
-            "mega_image_columns": 2,
-            "mega_image_menu_caption_1": "10-30% Sale",
-            "mega_image_menu_title_1": "Big Savings",
-            "mega_image_menu_link_label_1": "",
-            "mega_image_menu_link_1": "",
-            "mega_image_menu_caption_2": "15% Sale",
-            "mega_image_menu_title_2": "Instant Meals",
-            "mega_image_menu_link_label_2": "",
-            "mega_image_menu_link_2": "",
-            "mega_image_menu_caption_3": "30% Sale",
-            "mega_image_menu_title_3": "Chocolates",
-            "mega_image_menu_link_label_3": "",
-            "mega_image_menu_link_3": "",
-            "mega_image_menu_caption_4": "30% Sale",
-            "mega_image_menu_title_4": "Complete Protein",
-            "mega_image_menu_link_label_4": "",
-            "mega_image_menu_link_4": "",
-            "mega_image_menu_caption_5": "10% Sale",
-            "mega_image_menu_title_5": "Suplements",
-            "mega_image_menu_link_label_5": "",
-            "mega_image_menu_link_5": "",
-            "mega_image_menu_caption_6": "20% Sale",
-            "mega_image_menu_title_6": "Title",
-            "mega_image_menu_link_label_6": "",
-            "mega_image_menu_link_6": "",
-            "mega_image_menu_caption_7": "20% Sale",
-            "mega_image_menu_title_7": "Title",
-            "mega_image_menu_link_label_7": "",
-            "mega_image_menu_link_7": "",
-            "mega_image_menu_caption_8": "20% Sale",
-            "mega_image_menu_title_8": "Title",
-            "mega_image_menu_link_label_8": "",
-            "mega_image_menu_link_8": ""
-          }
+            "slider-text": "<p>It’s Here! Get The New Perimenopause Now</p>",
+            "slider_link": "shopify://pages/about-bacon-health",
+            "icon": "clipboard",
+            "custom_icon": "shopify://shop_images/arrow-icon.svg",
+            "icon_size": 18
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "mega-promotion",
-        "mega_image_menu"
+        "announcement_7PjiHK"
       ],
+      "name": "t:sections.announcement-bar.presets.name",
+      "settings": {
+        "announcement_position": "position-top",
+        "enable_full_width": false,
+        "enable_announcement_bar_desktop_sticky": false,
+        "enable_announcement_bar_mobile_sticky": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "vertical_position": 20,
+        "announcement_text_color": "#ffffff",
+        "show_countdown": false,
+        "countdown-text": "Offer Ends In",
+        "countdown-text-position": "top",
+        "countdown-date": "Sep 30, 2027",
+        "countdown-time": "9:00",
+        "countdown-date-time-style": "style-one",
+        "countdown_finished_message": "This offer has ended",
+        "color_scheme": "scheme-cca0a261-c6be-481b-9097-1e2524564b1e"
+      }
+    },
+    "scrolling_text_CaktAg": {
+      "type": "scrolling-text",
+      "blocks": {
+        "scrolling_text_item_waY9yb": {
+          "type": "_scrolling-text-item",
+          "settings": {
+            "text": "<p>Write about your brand a</p>",
+            "image_link": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "scrolling_text_item_waY9yb"
+      ],
+      "disabled": true,
+      "name": "t:sections.scrolling-text.presets.name",
+      "settings": {
+        "scroll_direction": "ltc",
+        "enable_scroll_decoration": true,
+        "scroll_decoration": "diamond",
+        "scroll_speed": 70,
+        "scroll_height": 40,
+        "scroll_text_size": 2,
+        "padding_block": 4,
+        "enable_stencil_text": false,
+        "hover_stop": true,
+        "keep_small_mobile": true,
+        "border": false,
+        "enable_announcement_bar_desktop_sticky": false,
+        "enable_announcement_bar_mobile_sticky": false,
+        "ignore_spacing": false,
+        "color_scheme": "",
+        "margin_spacing": "negative",
+        "margin_top": 0
+      }
+    },
+    "header": {
+      "type": "header",
       "settings": {
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "all_items_mega": false,
         "enable_links": false,
-        "desktop_header_layout": "menu-logo-icons",
+        "desktop_header_layout": "logo-centermenu-icons",
         "show_search_icon": false,
         "enable_header_full_width": false,
         "sticky_header_type": "on-scroll-up",
-        "enable_fixed_header_type": true,
+        "enable_fixed_header_type": false,
         "enable_fixed_header_type_collection": true,
         "enable_fixed_header_type_all": false,
         "transparent_menu": "",
@@ -93,11 +113,11 @@
         "image_size": "small",
         "disable_additional_links": false,
         "enable_mobile_menu_links": false,
-        "enable_item_highlight": true,
+        "enable_item_highlight": false,
         "item_highlight_text": "HOT",
         "item_highlight_position": "nth-child(4)",
         "adjust_item_highlight_position": 9,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": false,
         "header_icons_decoration": "line",
         "color_scheme": "option-1",
@@ -114,6 +134,8 @@
     }
   },
   "order": [
+    "announcement_bar_kiG49L",
+    "scrolling_text_CaktAg",
     "header"
   ]
 }

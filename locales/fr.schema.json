@@ -989,6 +989,36 @@
             "label": "Vertical Droite"
           }
         },
+        "announcement_font_size": {
+          "label": "Taille de police"
+        },
+        "announcement_font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "announcement_font_weight": {
+          "label": "Graisse de police",
+          "options__default": {
+            "label": "Par défaut du thème"
+          },
+            "options__300": {
+              "label": "Légère"
+            },
+            "options__400": {
+              "label": "Normale"
+            },
+            "options__500": {
+              "label": "Moyenne"
+            },
+            "options__600": {
+              "label": "Demi-gras"
+            },
+            "options__700": {
+              "label": "Gras"
+            },
+            "options__800": {
+              "label": "Extra-gras"
+            }
+        },
         "enable_full_width": {
           "label": "Activer la pleine largeur"
         },

@@ -12,6 +12,7 @@
     "logo": "shopify://shop_images/bacton-health-logo.png",
     "logo_width": 160,
     "logo_width_mobile": 160,
+    "favicon": "shopify://shop_images/fav-icon.png",
     "show_breadcrumb_nav": true,
     "deactivate_animation": false,
     "page_scroll_indicator": true,
@@ -30,10 +31,12 @@
     "countdown_background_bottom": "#D7F2FF",
     "countdown_text_bottom": "#2C2B2B",
     "opacity_color": "#2C2B2B",
-    "type_header_font": "josefin_sans_n7",
+    "type_header_font": "marcellus_n4",
     "heading_scale": 100,
-    "type_body_font": "jost_n4",
-    "body_scale": 100,
+    "type_body_font": "instrument_serif_n4",
+    "body_scale": 110,
+    "navigation_font": "headings",
+    "navigation_scale": 110,
     "page_width": 1620,
     "spacing_sections": 60,
     "spacing_grid_horizontal": 20,
@@ -170,44 +173,55 @@
         "settings": {
           "background_color": "#ffffff",
           "background_gradient": "",
-          "text_color": "#2C2B2B",
-          "button_primary_background_color": "#2C2B2B",
+          "text_color": "#2c2b2b",
+          "button_primary_background_color": "#2c2b2b",
           "button_primary_text_color": "#ffffff",
-          "button_secondary_color": "#2C2B2B",
-          "color_link": "#2C2B2B"
+          "button_secondary_color": "#2c2b2b",
+          "color_link": "#2c2b2b"
         }
       },
       "option-2": {
         "settings": {
           "background_color": "#f2f2f2",
           "background_gradient": "",
-          "text_color": "#2C2B2B",
-          "button_primary_background_color": "#2C2B2B",
+          "text_color": "#2c2b2b",
+          "button_primary_background_color": "#2c2b2b",
           "button_primary_text_color": "#ffffff",
-          "button_secondary_color": "#2C2B2B",
-          "color_link": "#2C2B2B"
+          "button_secondary_color": "#2c2b2b",
+          "color_link": "#2c2b2b"
         }
       },
       "option-3": {
         "settings": {
-          "background_color": "#2C2B2B",
+          "background_color": "#2c2b2b",
           "background_gradient": "",
           "text_color": "#f2f2f2",
           "button_primary_background_color": "#ffffff",
-          "button_primary_text_color": "#2C2B2B",
+          "button_primary_text_color": "#2c2b2b",
           "button_secondary_color": "#ffffff",
           "color_link": "#ffffff"
         }
       },
       "option-4": {
         "settings": {
-          "background_color": "#D7F2FF",
+          "background_color": "#d7f2ff",
           "background_gradient": "",
-          "text_color": "#2C2B2B",
-          "button_primary_background_color": "#2C2B2B",
+          "text_color": "#2c2b2b",
+          "button_primary_background_color": "#2c2b2b",
           "button_primary_text_color": "#ffffff",
-          "button_secondary_color": "#2C2B2B",
-          "color_link": "#2C2B2B"
+          "button_secondary_color": "#2c2b2b",
+          "color_link": "#2c2b2b"
+        }
+      },
+      "scheme-cca0a261-c6be-481b-9097-1e2524564b1e": {
+        "settings": {
+          "background_color": "#00a2f8",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "button_primary_background_color": "#ffffff",
+          "button_primary_text_color": "#ffffff",
+          "button_secondary_color": "#ffffff",
+          "color_link": "#2c2b2b"
         }
       }
     }

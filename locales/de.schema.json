@@ -989,6 +989,36 @@
             "label": "Vertikal rechts"
           }
         },
+        "announcement_font_size": {
+          "label": "Schriftgröße"
+        },
+        "announcement_font_size_mobile": {
+          "label": "Schriftgröße auf Mobilgeräten"
+        },
+        "announcement_font_weight": {
+          "label": "Schriftstärke",
+          "options__default": {
+            "label": "Theme-Standard"
+          },
+            "options__300": {
+              "label": "Leicht"
+            },
+            "options__400": {
+              "label": "Normal"
+            },
+            "options__500": {
+              "label": "Mittel"
+            },
+            "options__600": {
+              "label": "Halbfett"
+            },
+            "options__700": {
+              "label": "Fett"
+            },
+            "options__800": {
+              "label": "Extrafett"
+            }
+        },
         "enable_full_width": {
           "label": "Volle Breite aktivieren"
         },
