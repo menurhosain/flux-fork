@@ -2490,6 +2490,9 @@
             "label": "Drawer"
           }
         },
+        "menu_item_gap": {
+          "label": "Spaziatura tra le voci del menu principale"
+        },
         "all_items_mega": {
           "label": "Applica il mega menu a tutti gli elementi del menu",
           "info": "Se il mega menu è selezionato. Per impostazione predefinita, solo gli elementi di menu con 3 livelli vengono trasformati in mega menu"

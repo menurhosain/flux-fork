@@ -2490,6 +2490,9 @@
             "label": "Drawer"
           }
         },
+        "menu_item_gap": {
+          "label": "Gap between top level menu items"
+        },
         "all_items_mega": {
           "label": "Apply mega menu to all menu items",
           "info": "If mega menu is selected. By default only menu items with 3 levels are turned into mega menu"

@@ -2490,6 +2490,9 @@
             "label": "Cajón"
           }
         },
+        "menu_item_gap": {
+          "label": "Espacio entre elementos del menú de primer nivel"
+        },
         "all_items_mega": {
           "label": "Aplicar mega menú a todos los elementos del menú",
           "info": "Si se selecciona el mega menú. Por defecto, solo los elementos del menú con 3 niveles se convierten en mega menú"

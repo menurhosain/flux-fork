@@ -2490,6 +2490,9 @@
             "label": "Tiroir"
           }
         },
+        "menu_item_gap": {
+          "label": "Espacement entre les éléments du menu principal"
+        },
         "all_items_mega": {
           "label": "Appliquer le méga menu à tous les éléments du menu",
           "info": "Si le méga menu est sélectionné. Par défaut, seuls les éléments de menu avec 3 niveaux sont transformés en méga menu"

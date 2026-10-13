@@ -123,11 +123,17 @@
   }
 
   .navigation-menu {
+    --menu-item-gap: {{ section.settings.menu_item_gap }}px;
     display: inline-flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0 0 0 -1rem;
+    margin: 0 0 0 calc(var(--menu-item-gap) / -2);
+  }
+
+  .navigation-menu > li > .nav-menu-item {
+    padding-left: calc(var(--menu-item-gap) / 2);
+    padding-right: calc(var(--menu-item-gap) / 2);
   }
 
   .navigation-submenu,
@@ -2065,6 +2071,17 @@ document.addEventListener('shopify:section:load', () => {
       "default": "dropdown",
       "label": "t:sections.header.settings.menu_type_desktop.label",
       "info": "t:sections.header.settings.menu_type_desktop.info"
+    },
+    {
+      "type": "range",
+      "id": "menu_item_gap",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 20,
+      "label": "t:sections.header.settings.menu_item_gap.label",
+      "visible_if": "{{ section.settings.menu_type_desktop != 'drawer' }}"
     },
     {
       "type": "checkbox",

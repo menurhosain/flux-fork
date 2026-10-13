@@ -2490,6 +2490,9 @@
             "label": "Schublade"
           }
         },
+        "menu_item_gap": {
+          "label": "Abstand zwischen Menüpunkten der obersten Ebene"
+        },
         "all_items_mega": {
           "label": "Mega-Menü auf alle Menüpunkte anwenden",
           "info": "Wenn das Mega-Menü ausgewählt ist. Standardmäßig werden nur Menüpunkte mit 3 Ebenen in Mega-Menüs umgewandelt"
