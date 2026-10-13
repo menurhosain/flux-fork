@@ -576,3 +576,12 @@ a:hover.list-menu__item--link::after,
       padding-right: 0;
   }
 }
+
+@media screen and (min-width: 990px) {
+  .footer .footer__blocks-wrapper.grid .grid-item.footer-block.footer-block--custom-width {
+    width: calc(var(--footer-col-width) * 1% - var(--grid-desktop-horizontal-spacing) * (100 - var(--footer-col-width)) / 100);
+    max-width: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

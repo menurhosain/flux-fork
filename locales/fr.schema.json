@@ -2184,6 +2184,11 @@
     "footer": {
       "name": "Pied de page",
       "blocks": {
+        "column_width": {
+          "header": "Largeur de colonne",
+          "label": "Largeur de colonne sur ordinateur",
+          "info": "0 % utilise la largeur automatique du thème. S'applique aux écrans de 990 px et plus. Gardez le total de toutes les colonnes à 100 % ou moins pour qu'elles tiennent sur une ligne."
+        },
         "link_list": {
           "name": "Menu",
           "settings": {

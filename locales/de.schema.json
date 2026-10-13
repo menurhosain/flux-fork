@@ -2184,6 +2184,11 @@
     "footer": {
       "name": "Footer",
       "blocks": {
+        "column_width": {
+          "header": "Spaltenbreite",
+          "label": "Spaltenbreite auf dem Desktop",
+          "info": "0 % verwendet die automatische Theme-Breite. Gilt ab 990 px Bildschirmbreite. Halte die Summe aller Spalten bei höchstens 100 %, damit sie in eine Reihe passen."
+        },
         "link_list": {
           "name": "Menü",
           "settings": {

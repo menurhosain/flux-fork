@@ -2184,6 +2184,11 @@
     "footer": {
       "name": "Footer",
       "blocks": {
+        "column_width": {
+          "header": "Column width",
+          "label": "Desktop column width",
+          "info": "0% uses the automatic theme width. Applies on screens 990px and wider. Keep the total of all columns at 100% or less to fit them in one row."
+        },
         "link_list": {
           "name": "Menu",
           "settings": {

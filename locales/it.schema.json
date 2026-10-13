@@ -2184,6 +2184,11 @@
     "footer": {
       "name": "Piè di pagina",
       "blocks": {
+        "column_width": {
+          "header": "Larghezza colonna",
+          "label": "Larghezza colonna su desktop",
+          "info": "0% usa la larghezza automatica del tema. Si applica a schermi da 990 px in su. Mantieni il totale di tutte le colonne al 100% o meno per farle stare in una riga."
+        },
         "link_list": {
           "name": "Menu",
           "settings": {

@@ -2184,6 +2184,11 @@
     "footer": {
       "name": "Pie de página",
       "blocks": {
+        "column_width": {
+          "header": "Ancho de columna",
+          "label": "Ancho de columna en escritorio",
+          "info": "0 % usa el ancho automático del tema. Se aplica en pantallas de 990 px o más. Mantén el total de todas las columnas en 100 % o menos para que quepan en una fila."
+        },
         "link_list": {
           "name": "Menú",
           "settings": {

@@ -7,8 +7,9 @@
   endfor
 -%}
 <div
-  class="footer-block grid-item footer-block--menu {% if section.settings.swipe_on_mobile %} slider-slide{% endif %}"
+  class="footer-block grid-item{% if block.settings.column_width > 0 %} footer-block--custom-width{% endif %} footer-block--menu {% if section.settings.swipe_on_mobile %} slider-slide{% endif %}"
   id="Slide-{{ section.id }}-{{ block_index }}"
+  {%- if block.settings.column_width > 0 %} style="--footer-col-width: {{ block.settings.column_width }};"{% endif %}
   {{ block.shopify_attributes }}
 >
   {%- if block.settings.heading != blank -%}
@@ -36,6 +37,21 @@
   "name": "t:sections.footer.blocks.link_list.name",
   "tag": null,
   "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.footer.blocks.column_width.header"
+    },
+    {
+      "type": "range",
+      "id": "column_width",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 0,
+      "label": "t:sections.footer.blocks.column_width.label",
+      "info": "t:sections.footer.blocks.column_width.info"
+    },
     {
       "type": "text",
       "id": "heading",
