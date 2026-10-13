@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -8,8 +17,8 @@
         "mega-promotion": {
           "type": "mega_promotion",
           "settings": {
-            "mega_promotion_item": "Products",
-            "mega_promotion_image": "",
+            "mega_promotion_item": "Home",
+            "mega_promotion_image": "shopify://shop_images/FiberGDX_4_eab005ab-d75c-469f-b04d-eb9f1ba5e78b.webp",
             "mega_promotion_caption": "20% Sale",
             "mega_promotion_title": "Product Spotlight",
             "mega_promotion_link_label": "Explore Now",
@@ -20,27 +29,23 @@
           "type": "mega_image_menu",
           "settings": {
             "mega_image_menu_item": "Specials",
-            "mega_image_menu_image_1": "",
+            "mega_image_columns": 2,
             "mega_image_menu_caption_1": "10-30% Sale",
             "mega_image_menu_title_1": "Big Savings",
             "mega_image_menu_link_label_1": "",
             "mega_image_menu_link_1": "",
-            "mega_image_menu_image_2": "",
             "mega_image_menu_caption_2": "15% Sale",
             "mega_image_menu_title_2": "Instant Meals",
             "mega_image_menu_link_label_2": "",
             "mega_image_menu_link_2": "",
-            "mega_image_menu_image_3": "",
             "mega_image_menu_caption_3": "30% Sale",
             "mega_image_menu_title_3": "Chocolates",
             "mega_image_menu_link_label_3": "",
             "mega_image_menu_link_3": "",
-            "mega_image_menu_image_4": "",
             "mega_image_menu_caption_4": "30% Sale",
             "mega_image_menu_title_4": "Complete Protein",
             "mega_image_menu_link_label_4": "",
             "mega_image_menu_link_4": "",
-            "mega_image_menu_image_5": "",
             "mega_image_menu_caption_5": "10% Sale",
             "mega_image_menu_title_5": "Suplements",
             "mega_image_menu_link_label_5": "",
@@ -56,8 +61,7 @@
             "mega_image_menu_caption_8": "20% Sale",
             "mega_image_menu_title_8": "Title",
             "mega_image_menu_link_label_8": "",
-            "mega_image_menu_link_8": "",
-            "mega_image_columns": 2
+            "mega_image_menu_link_8": ""
           }
         }
       },
@@ -69,6 +73,7 @@
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "all_items_mega": false,
+        "enable_links": false,
         "desktop_header_layout": "menu-logo-icons",
         "show_search_icon": false,
         "enable_header_full_width": false,
@@ -78,16 +83,16 @@
         "enable_fixed_header_type_all": false,
         "transparent_menu": "",
         "enable_fixed_header_transparent": false,
+        "transparent_text_color": "",
         "fixed_header_type_margin": 2,
         "fixed_header_type_margin_mobile": 2,
         "button_label": "Link label",
         "button_link": "",
-        "image_1": "",
         "button_label_one": "Link label",
         "button_link_one": "",
-        "image_2": "",
         "image_size": "small",
         "disable_additional_links": false,
+        "enable_mobile_menu_links": false,
         "enable_item_highlight": true,
         "item_highlight_text": "HOT",
         "item_highlight_position": "nth-child(4)",

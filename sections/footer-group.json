@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -11,7 +20,6 @@
         "popup_count": 1,
         "trigger_link": true,
         "layout": "style_3",
-        "popup_image": "",
         "image_width": 45,
         "image_alt": "Alt text",
         "popup_title": "Sign up for 20% off your first order!",
@@ -37,41 +45,47 @@
           "type": "_footer-brand",
           "settings": {
             "brand_headline": "",
-            "brand_description": "<p>Indulge in a nutritious and delicious experience with the Flux collection of protein powders and chocolate treats. Each product is thoughtfully crafted to nourish your body while satisfying your taste buds. Whether you're fueling up after a workout or simply looking for a wholesome snack, our protein powders provide the perfect balance of plant-based nutrition. </p>",
-            "brand_image": "",
-            "brand_image_width": 80,
+            "brand_description": "<p>Personalized functional wellness support designed to bring more clarity, confidence, and consistency to your health journey.</p><p><em>*Root-cause focused. Personalized. Practical.</em></p>",
+            "brand_image": "shopify://shop_images/bacton-health-logo.png",
+            "brand_image_width": 180,
             "hide_image": false,
             "newsletter_enable": true,
             "show_social": true,
             "social_icons_size": "small"
-          }
+          },
+          "blocks": {}
         },
         "footer-0": {
           "type": "_footer-text",
           "settings": {
             "heading": "Our Shop",
-            "subtext": "<p>Find a location nearest you. </p><p>📍 <a href=\"#\" title=\"#\"><strong>See Our Stores</strong></a></p><p>✉️ <a href=\"#\" title=\"#\"><strong>info@refuel.com</strong></a></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>"
-          }
+            "subtext": "<p>Find a location nearest you.&nbsp;</p><p>📍 <a href=\"#\" title=\"#\"><strong>See Our Stores</strong></a></p><p>✉️ <a href=\"#\" title=\"#\"><strong>&nbsp;support@bactonhealth.com</strong></a></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>",
+            "custom_liquid": ""
+          },
+          "blocks": {}
         },
         "footer-1": {
           "type": "_footer-menu",
           "settings": {
             "heading": "Quick links",
             "menu": "footer"
-          }
+          },
+          "blocks": {}
         },
         "footer-2": {
           "type": "_footer-image",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/category-suplements.webp",
             "image_width": 550,
-            "image_headline": "Organic & Homemade",
-            "image_description": "<p>Our latest collection of high-protein products. </p>",
+            "image_headline": "Supplements",
+            "image_description": "",
             "button_label": "New Arrivals",
-            "button_link": "",
+            "button_link": "shopify://collections/supplements",
+            "open_new_tab_1": false,
             "button_style_secondary": true,
             "color_scheme_1": "option-2"
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -84,17 +98,18 @@
         "enable_follow_on_shop": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_powered_by_link": true,
-        "show_policy": true,
+        "show_policy": false,
         "enable_terms": false,
         "terms_label": "<p>I agree to receive marketing emails</p>",
         "back_to_top_desktop": true,
-        "back_to_top_bottom": 80,
-        "back_to_top_right": 4,
+        "back_to_top_bottom": 88,
+        "back_to_top_right": 20,
         "back_to_top_mobile": true,
         "centered_content": false,
         "color_scheme": "option-1",
+        "apply_scheme_footer_bottom": false,
         "footer_border": false,
         "swipe_on_mobile": false,
         "disable_arrow_mobile": true,
@@ -102,7 +117,7 @@
         "margin_bottom": 80,
         "make_columns_even": false,
         "padding_top": 48,
-        "padding_bottom": 16,
+        "padding_bottom": 40,
         "ignore_spacing": true
       }
     }

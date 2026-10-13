@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner_with_featured_collection": {
@@ -6,57 +15,92 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Goodness in <em>Every</em> Bite",
-            "heading_size": "extra-large",
+            "heading": "Your Wellness. Your Balance. Your Best Life&nbsp;",
+            "heading_size": "large",
             "heading_style": "default",
             "heading_tag": "h2",
-            "highlight_option": "underline-hand",
-            "word_animation_color": "#D4C4D9"
-          }
+            "highlight_option": "underline",
+            "word_animation_color": "#d4c4d9"
+          },
+          "blocks": {}
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Nourish your body and delight your taste buds with a collection of high quality protein powders and yummy chocolate bars.</p>",
+            "text": "<p>At Bacton Health, we believe every woman deserves to feel confident, balanced, and empowered throughout her wellness journey. Our thoughtfully selected health and wellness products are designed to support women’s changing needs, promote everyday well-being, and inspire a healthier, more vibrant lifestyle.<br/><br/></p>",
             "text_style": "body"
-          }
+          },
+          "blocks": {}
         },
         "buttons": {
           "type": "button",
+          "disabled": true,
           "settings": {
-            "button_label": "Shop Now",
-            "button_link": ""
-          }
+            "button_label": "Shop Our Products",
+            "button_link": "shopify://collections/all",
+            "apply_link_to_image": false,
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_tab_2": false,
+            "button_style_secondary_2": false
+          },
+          "blocks": {}
+        },
+        "button_CKLGmC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Our Products",
+            "button_link": "shopify://collections/all",
+            "apply_link_to_image": false,
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_tab_2": false,
+            "button_style_secondary_2": false
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "heading",
         "text",
-        "buttons"
+        "buttons",
+        "button_CKLGmC"
       ],
       "settings": {
+        "image": "shopify://shop_images/bacton-health-01.jpg",
         "hide_image": false,
-        "image_overlay_opacity": 60,
+        "image_overlay_opacity": 40,
         "image_height": 80,
+        "full_width_banner": true,
+        "adapt_to_image": false,
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
-        "collection": "",
+        "enable_collection": true,
+        "collection": "frontpage",
+        "collection_style": "collection-one",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
         "enable_desktop_slider": true,
+        "desktop_margin_top": 170,
+        "mobile_margin_top": 110,
         "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": false,
         "enable_quick_add": true,
+        "enable_quick_buy": true,
+        "always_use_plus_icon": false,
         "quick_add_position": "overlay",
-        "desktop_margin_top": 230,
-        "mobile_margin_top": 110,
         "color_scheme": "option-3",
         "color_scheme_1": "option-1",
         "padding_top": 0,
         "padding_bottom": 8,
         "ignore_spacing": false,
+        "image_overlay_opacity_mobile": 40,
         "image_height_mobile": 56,
         "margin_spacing": "negative",
         "margin_top": 0,
@@ -74,55 +118,64 @@
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_2": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_3": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_4": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_5": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_6": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_7": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_8": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         },
         "featured_collection_9": {
           "type": "_collection-list-item",
           "settings": {
             "collection": ""
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -146,6 +199,7 @@
         "text_size": "medium",
         "enable_desktop_slider": true,
         "collection_list_style": "collection-list-one",
+        "title_under": false,
         "image_ratio": "square",
         "columns_desktop": 6,
         "color_scheme": "option-1",
@@ -171,14 +225,17 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#D4C4D9"
-          }
+            "word_animation_color": "#d4c4d9"
+          },
+          "blocks": {}
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Nourish your body and delight your taste buds with Fuel collection of plant-based protein powders and chocolate goodies. Crafted with care and made from high-quality, organic ingredients, our products offer a delicious way to boost your nutrition. Treat yourself to goodness in every bite!</p>"
-          }
+            "text": "<p>Nourish your body and delight your taste buds with Fuel collection of plant-based protein powders and chocolate goodies. Crafted with care and made from high-quality, organic ingredients, our products offer a delicious way to boost your nutrition. Treat yourself to goodness in every bite!</p>",
+            "text_style": "body"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -189,6 +246,7 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "full_width": true,
+        "rich_text_width": 78,
         "color_scheme": "option-1",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -207,7 +265,8 @@
             "caption": "Discover a Plant-Powered Paradise",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
-          }
+          },
+          "blocks": {}
         },
         "heading": {
           "type": "heading",
@@ -215,28 +274,43 @@
             "heading": "Organic Delights",
             "heading_size": "large",
             "heading_style": "default",
-            "heading_tag": "h2"
-          }
+            "heading_tag": "h2",
+            "highlight_option": "underline-hand",
+            "word_animation_color": "#272727"
+          },
+          "blocks": {}
         },
         "text": {
           "type": "text",
           "settings": {
             "text": "<p>Indulge guilt-free with our organic delights! Explore protein-rich powders and sumptuous chocolates for a nourishing boost. Elevate your snacking experience with Flux. Crafted with care, our products are the perfect fusion of health and flavor.</p>",
             "text_style": "body"
-          }
+          },
+          "blocks": {}
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "Shop Meals",
-            "button_link": ""
-          }
+            "button_link": "",
+            "apply_link_to_image": false,
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_tab_2": false,
+            "button_style_secondary_2": false
+          },
+          "blocks": {}
         },
         "image": {
           "type": "_image-with-text-decoration",
           "settings": {
+            "position_image_relative": false,
+            "mobile_disable_image_animation": false,
             "mobile_disable_image": false
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -270,21 +344,24 @@
           "settings": {
             "collection": "",
             "tab_heading": "Best Sellers"
-          }
+          },
+          "blocks": {}
         },
         "collection_2": {
           "type": "_collection-tab",
           "settings": {
             "collection": "",
             "tab_heading": "New Arrivals"
-          }
+          },
+          "blocks": {}
         },
         "collection_3": {
           "type": "_collection-tab",
           "settings": {
             "collection": "",
             "tab_heading": "Save Big"
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -312,6 +389,8 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "enable_quick_add": false,
+        "enable_quick_buy": true,
+        "always_use_plus_icon": false,
         "quick_add_position": "default",
         "color_scheme": "option-2",
         "color_scheme_1": "",
@@ -334,8 +413,11 @@
             "heading": "Nutrients for Health",
             "caption": "Elevate your wellness journey with Flux's range of organic vitamin supplements. Nourish your body with premium-quality supplements and embrace a healthier you.",
             "button_label": "Order Now",
-            "link": ""
-          }
+            "link": "",
+            "show_link_button": false,
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "slide_2": {
           "type": "_slick-slide",
@@ -343,8 +425,11 @@
             "heading": "Complete Nutrition",
             "caption": "Crafted with organic ingredients, our complete protein offers the perfect blend of nutrients to support your active lifestyle.",
             "button_label": "Shop Now",
-            "link": ""
-          }
+            "link": "",
+            "show_link_button": false,
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "slide_3": {
           "type": "_slick-slide",
@@ -352,8 +437,11 @@
             "heading": "Snack Smart with Flux",
             "caption": "Indulge guilt-free in Flux Organic's delicious and nutritious snack options. Snack smart and nourish your body with Flux Organic today!",
             "button_label": "Explore Meals",
-            "link": ""
-          }
+            "link": "",
+            "show_link_button": false,
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -367,11 +455,14 @@
         "full_width": false,
         "image_opacity": 0.6,
         "opacity_mobile": true,
+        "hide_slider_desktop": false,
+        "hide_slider_mobile": false,
         "heading_size": 9,
         "heading_tag": "h2",
         "heading_style": "none",
         "caption_size": 1.6,
         "caption_style": "none",
+        "link_size": 1.8,
         "color_scheme": "",
         "margin_spacing": "negative",
         "margin_top": 0,
@@ -386,7 +477,6 @@
         "infocard_1": {
           "type": "_infocard",
           "settings": {
-            "image": "",
             "hide_image": false,
             "product": "",
             "caption": "No Preservatives.",
@@ -396,12 +486,12 @@
             "link": "",
             "infocards_background_color": "#d4c4d9",
             "infocards_color": "#1d1d1d"
-          }
+          },
+          "blocks": {}
         },
         "infocard_2": {
           "type": "_infocard",
           "settings": {
-            "image": "",
             "hide_image": false,
             "product": "",
             "caption": "Eco-Friendly",
@@ -411,12 +501,12 @@
             "link": "",
             "infocards_background_color": "#eae6e6",
             "infocards_color": "#1d1d1d"
-          }
+          },
+          "blocks": {}
         },
         "infocard_3": {
           "type": "_infocard",
           "settings": {
-            "image": "",
             "hide_image": false,
             "product": "",
             "caption": "High Protein",
@@ -426,12 +516,12 @@
             "link": "",
             "infocards_background_color": "#e9daec",
             "infocards_color": "#1d1d1d"
-          }
+          },
+          "blocks": {}
         },
         "infocard_4": {
           "type": "_infocard",
           "settings": {
-            "image": "",
             "hide_image": false,
             "product": "",
             "caption": "Simply Wholesome",
@@ -441,7 +531,8 @@
             "link": "",
             "infocards_background_color": "#f2f2f2",
             "infocards_color": "#1d1d1d"
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -451,11 +542,13 @@
         "infocard_4"
       ],
       "settings": {
+        "full_width": false,
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
         "ignore_spacing": false,
         "cards_style": "style-2",
+        "content_text_size": "medium",
         "margin_spacing": "negative",
         "margin_top": 36
       }
@@ -469,8 +562,10 @@
             "caption": "20% sale",
             "title": "Suplements",
             "link_label": "Shop Here",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_2": {
           "type": "_promotion-card",
@@ -478,8 +573,10 @@
             "caption": "30% sale",
             "title": "Snacks",
             "link_label": "Order Now",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_3": {
           "type": "_promotion-card",
@@ -487,8 +584,10 @@
             "caption": "Complete Protein",
             "title": "15% sale",
             "link_label": "Shop Now",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_4": {
           "type": "_promotion-card",
@@ -496,8 +595,10 @@
             "caption": "20% sale",
             "title": "Powders",
             "link_label": "Order Now",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_5": {
           "type": "_promotion-card",
@@ -505,8 +606,10 @@
             "caption": "15% sale",
             "title": "Instant Meals",
             "link_label": "Shop Now",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_6": {
           "type": "_promotion-card",
@@ -514,8 +617,10 @@
             "caption": "Caption",
             "title": "Title",
             "link_label": "Link Label",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -536,11 +641,13 @@
         "text_size": "medium",
         "promotion_cards_style": "promotion-cards-one",
         "columns_desktop": 4,
+        "enable_desktop_slider": true,
         "color_scheme": "option-1",
         "color_scheme_1": "",
         "padding_top": 0,
         "padding_bottom": 0,
         "ignore_spacing": false,
+        "columns_mobile": "1",
         "margin_spacing": "negative",
         "margin_top": 0,
         "swipe_on_mobile": true,
@@ -557,7 +664,8 @@
             "content": "Made with organic ingredients, this protein powder provides a convenient way to fuel your body.",
             "top": 24,
             "left": 37
-          }
+          },
+          "blocks": {}
         },
         "tooltip_2": {
           "type": "_hotspot",
@@ -566,7 +674,8 @@
             "content": "This decadent treat combines creamy caramel with a hint of sea salt, creating a symphony of flavors.",
             "top": 32,
             "left": 73
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -604,8 +713,11 @@
             "rating_stars": "4-star",
             "text": "<p>Chocolate Cherry is a delightful blend that satisfies both my sweet cravings and my need for. </p>",
             "title": "Rob Doe",
+            "title_one": "",
+            "hide_image": false,
             "product": ""
-          }
+          },
+          "blocks": {}
         },
         "column_2": {
           "type": "_testimonial",
@@ -614,8 +726,11 @@
             "rating_stars": "5-star",
             "text": "<p>Mac and Cheeze is a comforting and delicious plant-based alternative to the classic dish.</p>",
             "title": "John Smith",
+            "title_one": "",
+            "hide_image": false,
             "product": ""
-          }
+          },
+          "blocks": {}
         },
         "column_3": {
           "type": "_testimonial",
@@ -624,8 +739,11 @@
             "rating_stars": "3-star",
             "text": "<p>Mac and Cheeze is a comforting and delicious plant-based alternative to the classic dish. </p>",
             "title": "Esther Love",
+            "title_one": "",
+            "hide_image": false,
             "product": ""
-          }
+          },
+          "blocks": {}
         },
         "column_4": {
           "type": "_testimonial",
@@ -634,8 +752,11 @@
             "rating_stars": "5-star",
             "text": "<p>Lightly seasoned and satisfyingly crunchy, they're a healthier alternative to traditional potato chips.</p>",
             "title": "Brian Kindani",
+            "title_one": "",
+            "hide_image": false,
             "product": ""
-          }
+          },
+          "blocks": {}
         },
         "column_5": {
           "type": "_testimonial",
@@ -644,8 +765,11 @@
             "rating_stars": "5-star",
             "text": "<p>Lightly seasoned and satisfyingly crunchy, they're a healthier alternative to traditional potato chips.</p>",
             "title": "John Kindani",
+            "title_one": "",
+            "hide_image": false,
             "product": ""
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -664,11 +788,13 @@
         "text_size": "medium",
         "button_label": "",
         "button_link": "",
+        "open_new_tab_1": false,
         "testimonials_style": "style-2",
         "columns_desktop": 3,
         "enable_desktop_slider": true,
         "color_scheme": "option-1",
         "color_scheme_1": "option-2",
+        "rating_stars_color": "#1d1d1d",
         "padding_top": 36,
         "padding_bottom": 0,
         "ignore_spacing": true,
@@ -684,39 +810,83 @@
         "title": {
           "type": "_product-title",
           "settings": {
-            "heading_size": "large"
-          }
+            "column": "left",
+            "heading_size": "large",
+            "margin_top": 10,
+            "hide_quick_view": false,
+            "pin_to_top": false
+          },
+          "blocks": {}
         },
         "price": {
           "type": "_product-price",
-          "settings": {}
+          "settings": {
+            "column": "left",
+            "price_size": "small",
+            "badge_discount": false,
+            "margin_top": 10,
+            "hide_quick_view": false
+          },
+          "blocks": {}
         },
         "spacer": {
           "type": "_product-spacer",
           "settings": {
-            "margin_top": 0
-          }
+            "column": "left",
+            "margin_top": 0,
+            "hide_quick_view": false
+          },
+          "blocks": {}
         },
         "description": {
           "type": "_product-description",
-          "settings": {}
+          "settings": {
+            "column": "left",
+            "margin_top": 10,
+            "text_size": "medium",
+            "hide_quick_view": false,
+            "pin_to_top": false
+          },
+          "blocks": {}
         },
         "image": {
           "type": "_product-image",
           "settings": {
-            "image_link": ""
-          }
+            "column": "left",
+            "image_link": "",
+            "margin_top": 10,
+            "hide_quick_view": false
+          },
+          "blocks": {}
         },
         "quantity_selector": {
           "type": "_product-quantity-selector",
-          "settings": {}
+          "settings": {
+            "margin_top": 10
+          },
+          "blocks": {}
         },
         "buy_buttons": {
           "type": "_product-buy-buttons",
           "settings": {
+            "column": "left",
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
+            "force_unbranded_button": false,
+            "show_gift_card_recipient": true,
+            "stack_buttons_desktop": false,
+            "stacked_buttons_width": "default",
+            "picker_type": "button",
+            "swatch_shape": "circle",
+            "margin_top": 10,
+            "margin_bottom": 0,
+            "hide_unavailable": false,
+            "hide_quantity_input": false,
+            "hide_variant_picker": false,
+            "hide_mobile": false,
+            "hide_desktop": false,
+            "hide_quick_view": false
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -734,6 +904,7 @@
         "media_position": "right",
         "media_fit": "contain",
         "image_zoom": "lightbox",
+        "autoplay_video": false,
         "enable_video_looping": false,
         "color_scheme": "option-2",
         "padding_top": 36,
@@ -752,7 +923,8 @@
             "caption": "Organic",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
-          }
+          },
+          "blocks": {}
         },
         "heading": {
           "type": "heading",
@@ -760,27 +932,41 @@
             "heading": "Made with Love",
             "heading_size": "medium",
             "heading_style": "default",
-            "heading_tag": "h2"
-          }
+            "heading_tag": "h2",
+            "highlight_option": "underline-hand",
+            "word_animation_color": "#272727"
+          },
+          "blocks": {}
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Indulge guilt-free with our organic delights! Explore protein-rich powders and sumptuous chocolates for a nourishing boost. Elevate your snacking experience with Flux. Crafted with care, our products are the perfect fusion of health and flavor.</p>"
-          }
+            "text": "<p>Indulge guilt-free with our organic delights! Explore protein-rich powders and sumptuous chocolates for a nourishing boost. Elevate your snacking experience with Flux. Crafted with care, our products are the perfect fusion of health and flavor.</p>",
+            "text_style": "body"
+          },
+          "blocks": {}
         },
         "button": {
           "type": "button",
           "settings": {
             "button_label": "",
-            "button_link": ""
-          }
+            "button_link": "",
+            "apply_link_to_image": false,
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_tab_2": false,
+            "button_style_secondary_2": false
+          },
+          "blocks": {}
         },
         "image_1": {
           "type": "_two-images-text-image",
           "settings": {
             "overlap": true
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -848,8 +1034,13 @@
             "event_description": "<p>Are you ready to embark on a culinary adventure unlike any other?</p>",
             "event_location": "Oxford Street 13, 92746 London",
             "link_label": "Book Now",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false,
+            "show_text_box": false,
+            "image_overlay_opacity": 60,
+            "color_scheme_1": ""
+          },
+          "blocks": {}
         },
         "event_2": {
           "type": "_event",
@@ -865,8 +1056,13 @@
             "event_description": "<p>Effective exercise routines and essential recovery strategies for optimal performance.</p>",
             "event_location": "Oxford Street 13, 92746 London",
             "link_label": "Book Now",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false,
+            "show_text_box": false,
+            "image_overlay_opacity": 60,
+            "color_scheme_1": ""
+          },
+          "blocks": {}
         },
         "event_3": {
           "type": "_event",
@@ -882,8 +1078,13 @@
             "event_description": "<p>Your Fuel journey begins with a commitment to nourishing your body.</p>",
             "event_location": "Maple Grove Farm, USA",
             "link_label": "Book Now",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false,
+            "show_text_box": false,
+            "image_overlay_opacity": 60,
+            "color_scheme_1": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -899,8 +1100,11 @@
         "heading_size": "medium",
         "heading_style": "default",
         "heading_tag": "h2",
-        "color_scheme": "",
         "banner_height": "small",
+        "animate_slider": false,
+        "full_width": false,
+        "disable_animation": false,
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 0,
         "ignore_spacing": false,
@@ -914,7 +1118,7 @@
         "slide": {
           "type": "_featured-collection-promo",
           "settings": {
-            "image": "",
+            "hide_image": false,
             "caption": "20% Sale",
             "text_style": "caption-with-letter-spacing",
             "text_size": "small",
@@ -924,10 +1128,12 @@
             "subheading": "Get amazing deals on your favorite items today!",
             "link_label": "Explore Now",
             "link": "",
+            "open_new_tab_1": false,
             "show_text_box": false,
             "image_overlay_opacity": 80,
             "color_scheme_1": "option-3"
-          }
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -956,6 +1162,8 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "enable_quick_add": true,
+        "enable_quick_buy": true,
+        "always_use_plus_icon": false,
         "quick_add_position": "default",
         "color_scheme": "",
         "color_scheme_1": "option-2",
@@ -977,51 +1185,66 @@
           "type": "_column",
           "settings": {
             "hide_image": false,
+            "disable_autoplay": false,
             "title": "100,000+",
             "text": "<p>Yearly Sales</p>",
             "link_label": "",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_2": {
           "type": "_column",
           "settings": {
             "hide_image": false,
+            "disable_autoplay": false,
             "title": "10+",
             "text": "<p>Years on the market</p>",
             "link_label": "",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_3": {
           "type": "_column",
           "settings": {
             "hide_image": false,
+            "disable_autoplay": false,
             "title": "5000+",
             "text": "<p>5 Stars Rating</p>",
             "link_label": "",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_4": {
           "type": "_column",
           "settings": {
             "hide_image": false,
+            "disable_autoplay": false,
             "title": "56+",
             "text": "<p>Served Countries</p>",
             "link_label": "",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         },
         "column_5": {
           "type": "_column",
           "settings": {
             "hide_image": false,
+            "disable_autoplay": false,
             "title": "70%",
             "text": "<p>Returning customers</p>",
             "link_label": "",
-            "link": ""
-          }
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -1047,6 +1270,7 @@
         "column_alignment": "center",
         "button_label": "",
         "button_link": "",
+        "open_new_tab_2": false,
         "color_scheme": "option-2",
         "color_scheme_1": "",
         "padding_top": 16,
@@ -1070,26 +1294,32 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#FFFFFF"
-          }
+            "word_animation_color": "#ffffff"
+          },
+          "blocks": {}
         },
         "text": {
           "type": "text",
           "settings": {
             "text": "<p>Fuel your body with wholesome, all-natural ingredients designed to energize and satisfy. Our high-protein, nutrient-rich products are crafted for those who value wellness and taste. Embrace a healthier lifestyle with food you can feel good about.</p>",
             "text_style": "body"
-          }
+          },
+          "blocks": {}
         },
         "buttons": {
           "type": "button",
           "settings": {
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
             "button_label": "Explore Now",
             "button_link": "",
-            "button_style_secondary": false
-          }
+            "apply_link_to_image": false,
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_tab_2": false,
+            "button_style_secondary_2": false
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -1099,6 +1329,7 @@
       ],
       "settings": {
         "image_overlay_opacity": 40,
+        "image_border_radius": 50,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
