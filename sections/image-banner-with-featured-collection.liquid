@@ -30,6 +30,12 @@
       }
     }
 
+    @media screen and (min-width: 990px) {
+      #section-{{ section.id }} .image-banner-with-featured-collection .banner-box {
+        max-width: {{ section.settings.desktop_content_width }}rem;
+      }
+    }
+
     .section-{{ section.id }}-desktop-margin {
       margin-top: -{{ section.settings.desktop_margin_top }}px;
       position: relative;
@@ -407,6 +413,16 @@
       ],
       "default": "middle-left",
       "label": "t:sections.image-banner-with-featured-collection.settings.desktop_content_position.label"
+    },
+    {
+      "type": "range",
+      "id": "desktop_content_width",
+      "min": 30,
+      "max": 120,
+      "step": 2,
+      "unit": "rem",
+      "default": 70,
+      "label": "t:sections.image-banner-with-featured-collection.settings.desktop_content_width.label"
     },
     {
       "type": "select",
