@@ -989,6 +989,9 @@
             "label": "Vertical Droite"
           }
         },
+        "enable_full_width": {
+          "label": "Activer la pleine largeur"
+        },
         "sticky": {
           "content": "Barre Fixe",
           "info": "Si vous choisissez l'option barre fixe, veuillez ajuster la marge supérieure dans la section d'en-tête en conséquence."
@@ -1052,6 +1055,16 @@
             },
             "slider-link": {
               "label": "Lien"
+            },
+            "header_icon": {
+              "content": "Icône"
+            },
+            "custom_icon": {
+              "label": "Icône personnalisée",
+              "info": "Remplace l'icône sélectionnée ci-dessus"
+            },
+            "icon_size": {
+              "label": "Taille de l'icône"
             }
           }
         }

@@ -989,6 +989,9 @@
             "label": "Verticale Destra"
           }
         },
+        "enable_full_width": {
+          "label": "Abilita larghezza piena"
+        },
         "sticky": {
           "content": "Barra Fissa",
           "info": "Se scegli l'opzione barra fissa, regola di conseguenza il padding superiore nella sezione dell'intestazione."
@@ -1052,6 +1055,16 @@
             },
             "slider-link": {
               "label": "Link"
+            },
+            "header_icon": {
+              "content": "Icona"
+            },
+            "custom_icon": {
+              "label": "Icona personalizzata",
+              "info": "Sostituisce l'icona selezionata sopra"
+            },
+            "icon_size": {
+              "label": "Dimensione icona"
             }
           }
         }

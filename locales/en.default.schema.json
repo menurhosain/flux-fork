@@ -989,6 +989,9 @@
             "label": "Vertical Right"
           }
         },
+        "enable_full_width": {
+          "label": "Enable full width"
+        },
         "sticky": {
           "content": "Sticky Bar",
           "info": "If you choose the sticky bar option, please adjust the top padding within the header section accordingly."
@@ -1052,6 +1055,16 @@
             },
             "slider-link": {
               "label": " Link"
+            },
+            "header_icon": {
+              "content": "Icon"
+            },
+            "custom_icon": {
+              "label": "Custom icon",
+              "info": "Overrides the icon selected above"
+            },
+            "icon_size": {
+              "label": "Icon size"
             }
           }
         }

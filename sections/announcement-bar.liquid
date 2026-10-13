@@ -52,6 +52,30 @@
     display: block;  
   }
 
+  .announcement-bar a.announcement-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .announcement-bar .announcement-icon {
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  .announcement-bar .announcement-icon svg {
+    width: var(--announcement-icon-size, 1.8rem);
+    height: var(--announcement-icon-size, 1.8rem);
+    fill: currentColor;
+  }
+
+  .announcement-bar .announcement-icon--image {
+    width: var(--announcement-icon-size, 1.8rem);
+    height: var(--announcement-icon-size, 1.8rem);
+    object-fit: contain;
+  }
+
   text-slider a.announcement-slide.active {
     opacity: 1;
     transform: translate(-50%, -50%);
@@ -63,6 +87,13 @@
     pointer-events: none;
   }
 
+
+@media screen and (min-width: 990px) {
+  .announcement-bar.announcement-bar--contained {
+    padding-left: max(5rem, calc((100% - var(--page-width)) / 2 + 5rem));
+    padding-right: max(5rem, calc((100% - var(--page-width)) / 2 + 5rem));
+  }
+}
 
 @media screen and (max-width: 990px) {
   .announcement-bar.position-top.hide-countdown {
@@ -106,7 +137,7 @@
 
 {% comment %} Start Announcement Bar {% endcomment %}
 <div
-  class="announcement-bar {{ section.settings.announcement_position }} color-{{ section.settings.color_scheme }} gradient {% if section.settings.enable_country_selector == false %} disable-localization{% endif %} {% if section.settings.show_countdown != true %}hide-countdown{% endif %}"
+  class="announcement-bar {{ section.settings.announcement_position }}{% if section.settings.announcement_position == 'position-top' and section.settings.enable_full_width == false %} announcement-bar--contained{% endif %} color-{{ section.settings.color_scheme }} gradient {% if section.settings.enable_country_selector == false %} disable-localization{% endif %} {% if section.settings.show_countdown != true %}hide-countdown{% endif %}"
   data-aos="fade-up" data-aos-offset="-200"
 >
   {% comment %} Start Social Icons {% endcomment %}
@@ -268,6 +299,13 @@
       ],
       "default": "position-right",
       "label": "t:sections.announcement-bar.settings.announcement_position.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_full_width",
+      "label": "t:sections.announcement-bar.settings.enable_full_width.label",
+      "default": true,
+      "visible_if": "{{section.settings.announcement_position =='position-top'}}"
     },
     {
       "type": "header",

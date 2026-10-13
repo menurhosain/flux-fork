@@ -989,6 +989,9 @@
             "label": "Vertical Derecha"
           }
         },
+        "enable_full_width": {
+          "label": "Habilitar ancho completo"
+        },
         "sticky": {
           "content": "Barra Fija",
           "info": "Si eliges la opción de barra fija, ajusta el relleno superior dentro de la sección del encabezado en consecuencia."
@@ -1052,6 +1055,16 @@
             },
             "slider-link": {
               "label": "Enlace"
+            },
+            "header_icon": {
+              "content": "Icono"
+            },
+            "custom_icon": {
+              "label": "Icono personalizado",
+              "info": "Reemplaza el icono seleccionado arriba"
+            },
+            "icon_size": {
+              "label": "Tamaño del icono"
             }
           }
         }

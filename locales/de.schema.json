@@ -989,6 +989,9 @@
             "label": "Vertikal rechts"
           }
         },
+        "enable_full_width": {
+          "label": "Volle Breite aktivieren"
+        },
         "sticky": {
           "content": "Klebeleiste",
           "info": "Wenn Sie die Option Klebeleiste wählen, passen Sie bitte den oberen Abstand im Kopfbereich entsprechend an."
@@ -1052,6 +1055,16 @@
             },
             "slider-link": {
               "label": "Link"
+            },
+            "header_icon": {
+              "content": "Symbol"
+            },
+            "custom_icon": {
+              "label": "Benutzerdefiniertes Symbol",
+              "info": "Überschreibt das oben ausgewählte Symbol"
+            },
+            "icon_size": {
+              "label": "Symbolgröße"
             }
           }
         }
