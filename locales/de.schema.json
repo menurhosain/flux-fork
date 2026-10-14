@@ -1440,6 +1440,37 @@
             "label": "Zuerst Text"
           }
         },
+        "image_2_position": {
+          "label": "Position von Bild zwei",
+          "options__1": {
+            "label": "Unter dem Text"
+          },
+          "options__2": {
+            "label": "Über dem Text"
+          }
+        },
+        "image_2_alignment": {
+          "label": "Ausrichtung von Text und Bild zwei",
+          "info": "Vertikale Position der Spalte neben Bild eins auf dem Desktop.",
+          "options__1": {
+            "label": "Oben"
+          },
+          "options__2": {
+            "label": "Mitte"
+          },
+          "options__3": {
+            "label": "Unten"
+          }
+        },
+        "image_2_gap": {
+          "label": "Abstand zwischen Text und Bild zwei"
+        },
+        "images_gap": {
+          "label": "Abstand zwischen Bild eins und Bild zwei auf dem Desktop"
+        },
+        "images_gap_mobile": {
+          "label": "Abstand zwischen Bild eins und Bild zwei auf Mobilgeräten"
+        },
         "header_mobile": {
           "content": "Mobiles Layout"
         },
@@ -3829,6 +3860,15 @@
         },
         "header_mobile": {
           "content": "Mobil-Layout"
+        },
+        "mobile_text_position": {
+          "label": "Textposition auf Mobilgeräten",
+          "options__1": {
+            "label": "Unter dem Bild"
+          },
+          "options__2": {
+            "label": "Über dem Bild"
+          }
         },
         "mobile_content_alignment": {
           "options__1": {

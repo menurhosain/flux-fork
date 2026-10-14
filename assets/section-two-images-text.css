@@ -34,7 +34,7 @@
     background-color: transparent;
 }
 
-.two-images-text-wrapper .image-with-text-content--middle .image-signature img {
+.two-images-text-wrapper .image-with-text-text-item .image-signature img {
   margin: 0 auto;
 }
 
@@ -104,11 +104,11 @@
 }
 
 @media screen and (max-width: 990px) {
-  .two-images-text-wrapper .image-with-text-content--middle .image-signature img {
+  .two-images-text-wrapper .image-with-text-text-item .image-signature img {
     max-width: 200px;
     height: auto;
   }
-  .two-images-text-wrapper .image-with-text-content--middle .image-signature.overlap img {
+  .two-images-text-wrapper .image-with-text-text-item .image-signature.overlap img {
     margin-bottom: -80px;
     max-width: 120px;
     margin-top: 10px;

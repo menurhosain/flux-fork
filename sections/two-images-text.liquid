@@ -24,6 +24,21 @@
     }
   }
 
+  .two-images-text-wrapper.section-{{ section.id }}-padding {
+    --grid-desktop-horizontal-spacing: {{ section.settings.images_gap }}px;
+    --grid-mobile-vertical-spacing: {{ section.settings.images_gap_mobile }}px;
+  }
+  .two-images-text-wrapper.section-{{ section.id }}-padding .image-with-text-text-item .content-container {
+    {%- if section.settings.image_2_position == 'above' %}
+      margin-top: {{ section.settings.image_2_gap }}px;
+      margin-bottom: 0;
+      padding-top: 0;
+    {%- else %}
+      margin-top: 0;
+      margin-bottom: {{ section.settings.image_2_gap }}px;
+      padding-bottom: 0;
+    {%- endif %}
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient ignore-{{ section.settings.ignore_spacing }}">
@@ -56,16 +71,8 @@
     </div>
     {% comment %} End Image 1 {% endcomment %}
 
-    {% comment %} Start Text {% endcomment %}
-    <div class="image-with-text-text-item image-with-text-content--middle grid-item">
-      <div
-        id="ImageWithText--{{ section.id }}"
-        class="image-with-text-content--desktop-center image-with-text-content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text-content--adapt content-container"
-      >
-        {% content_for 'blocks' %}
-      </div>
-
-   {% comment %} Start Image 2 {% endcomment %}
+    {%- capture image_two -%}
+    {% comment %} Start Image 2 {% endcomment %}
     <div class="image-two-even" data-aos="fade-up">
       <div
         class="image-with-text-media image-with-text-media--adapt global-media-settings {% if section.settings.image_2 != blank %}media{% else %}image-with-text-media--placeholder placeholder{% endif %}"
@@ -89,6 +96,22 @@
       </div>
     </div>
     {% comment %} End Image 2 {% endcomment %}
+    {%- endcapture -%}
+
+    {% comment %} Start Text {% endcomment %}
+    <div class="image-with-text-text-item image-with-text-content--{{ section.settings.image_2_alignment }} grid-item{% if section.settings.image_2_position == 'above' %} image-two-above{% endif %}">
+      {%- if section.settings.image_2_position == 'above' -%}
+        {{ image_two }}
+      {%- endif -%}
+      <div
+        id="ImageWithText--{{ section.id }}"
+        class="image-with-text-content--desktop-center image-with-text-content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text-content--adapt content-container"
+      >
+        {% content_for 'blocks' %}
+      </div>
+      {%- if section.settings.image_2_position != 'above' -%}
+        {{ image_two }}
+      {%- endif -%}
     </div>
     {% comment %} End Text {% endcomment %}
   </div>
@@ -132,6 +155,73 @@
       ],
       "default": "image_first",
       "label": "t:sections.two-images-text.settings.layout.label"
+    },
+    {
+      "type": "select",
+      "id": "image_2_position",
+      "options": [
+        {
+          "value": "below",
+          "label": "t:sections.two-images-text.settings.image_2_position.options__1.label"
+        },
+        {
+          "value": "above",
+          "label": "t:sections.two-images-text.settings.image_2_position.options__2.label"
+        }
+      ],
+      "default": "below",
+      "label": "t:sections.two-images-text.settings.image_2_position.label"
+    },
+    {
+      "type": "select",
+      "id": "image_2_alignment",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:sections.two-images-text.settings.image_2_alignment.options__1.label"
+        },
+        {
+          "value": "middle",
+          "label": "t:sections.two-images-text.settings.image_2_alignment.options__2.label"
+        },
+        {
+          "value": "bottom",
+          "label": "t:sections.two-images-text.settings.image_2_alignment.options__3.label"
+        }
+      ],
+      "default": "middle",
+      "label": "t:sections.two-images-text.settings.image_2_alignment.label",
+      "info": "t:sections.two-images-text.settings.image_2_alignment.info"
+    },
+    {
+      "type": "range",
+      "id": "image_2_gap",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 20,
+      "label": "t:sections.two-images-text.settings.image_2_gap.label"
+    },
+    {
+      "type": "range",
+      "id": "images_gap",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 20,
+      "label": "t:sections.two-images-text.settings.images_gap.label"
+    },
+    {
+      "type": "range",
+      "id": "images_gap_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 10,
+      "label": "t:sections.two-images-text.settings.images_gap_mobile.label"
     },
     {
       "type": "header",

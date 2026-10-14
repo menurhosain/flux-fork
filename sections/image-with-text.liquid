@@ -14,6 +14,14 @@
     }
   }
 
+  {%- if section.settings.mobile_text_position == 'above' %}
+    @media screen and (max-width: 749px) {
+      .section-{{ section.id }}-padding .image-with-text-text-item {
+        order: -1;
+      }
+    }
+  {%- endif %}
+
   @media screen and (max-width: 990px) {
     .margin-spacing-negative.section-{{ section.id }}-margin {
       margin-top: -{{ section.settings.margin_top }}px;
@@ -281,6 +289,22 @@
       ],
       "default": "left",
       "label": "t:sections.image-with-text.settings.mobile_content_alignment.label"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_position",
+      "options": [
+        {
+          "value": "below",
+          "label": "t:sections.image-with-text.settings.mobile_text_position.options__1.label"
+        },
+        {
+          "value": "above",
+          "label": "t:sections.image-with-text.settings.mobile_text_position.options__2.label"
+        }
+      ],
+      "default": "below",
+      "label": "t:sections.image-with-text.settings.mobile_text_position.label"
     }
   ],
   "blocks": [

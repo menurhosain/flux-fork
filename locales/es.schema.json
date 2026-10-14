@@ -1440,6 +1440,37 @@
             "label": "Primero texto"
           }
         },
+        "image_2_position": {
+          "label": "Posición de la imagen dos",
+          "options__1": {
+            "label": "Debajo del texto"
+          },
+          "options__2": {
+            "label": "Encima del texto"
+          }
+        },
+        "image_2_alignment": {
+          "label": "Alineación del texto y la imagen dos",
+          "info": "Posición vertical de la columna junto a la imagen uno en escritorio.",
+          "options__1": {
+            "label": "Arriba"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Abajo"
+          }
+        },
+        "image_2_gap": {
+          "label": "Espacio entre el texto y la imagen dos"
+        },
+        "images_gap": {
+          "label": "Espacio entre la imagen uno y la imagen dos en escritorio"
+        },
+        "images_gap_mobile": {
+          "label": "Espacio entre la imagen uno y la imagen dos en móvil"
+        },
         "header_mobile": {
           "content": "Diseño móvil"
         },
@@ -3829,6 +3860,15 @@
         },
         "header_mobile": {
           "content": "Diseño móvil"
+        },
+        "mobile_text_position": {
+          "label": "Posición del texto en móvil",
+          "options__1": {
+            "label": "Debajo de la imagen"
+          },
+          "options__2": {
+            "label": "Encima de la imagen"
+          }
         },
         "mobile_content_alignment": {
           "options__1": {

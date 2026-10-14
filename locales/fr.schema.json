@@ -1440,6 +1440,37 @@
             "label": "Texte en premier"
           }
         },
+        "image_2_position": {
+          "label": "Position de l'image deux",
+          "options__1": {
+            "label": "Sous le texte"
+          },
+          "options__2": {
+            "label": "Au-dessus du texte"
+          }
+        },
+        "image_2_alignment": {
+          "label": "Alignement du texte et de l'image deux",
+          "info": "Position verticale de la colonne à côté de l'image un sur ordinateur.",
+          "options__1": {
+            "label": "Haut"
+          },
+          "options__2": {
+            "label": "Milieu"
+          },
+          "options__3": {
+            "label": "Bas"
+          }
+        },
+        "image_2_gap": {
+          "label": "Espace entre le texte et l'image deux"
+        },
+        "images_gap": {
+          "label": "Espace entre l'image un et l'image deux sur ordinateur"
+        },
+        "images_gap_mobile": {
+          "label": "Espace entre l'image un et l'image deux sur mobile"
+        },
         "header_mobile": {
           "content": "Disposition sur mobile"
         },
@@ -3829,6 +3860,15 @@
         },
         "header_mobile": {
           "content": "Disposition mobile"
+        },
+        "mobile_text_position": {
+          "label": "Position du texte sur mobile",
+          "options__1": {
+            "label": "Sous l'image"
+          },
+          "options__2": {
+            "label": "Au-dessus de l'image"
+          }
         },
         "mobile_content_alignment": {
           "options__1": {

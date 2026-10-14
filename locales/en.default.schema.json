@@ -1440,6 +1440,37 @@
             "label": "Text first"
           }
         },
+        "image_2_position": {
+          "label": "Image two position",
+          "options__1": {
+            "label": "Below text"
+          },
+          "options__2": {
+            "label": "Above text"
+          }
+        },
+        "image_2_alignment": {
+          "label": "Text and image two alignment",
+          "info": "Vertical position of the column next to image one on desktop.",
+          "options__1": {
+            "label": "Top"
+          },
+          "options__2": {
+            "label": "Middle"
+          },
+          "options__3": {
+            "label": "Bottom"
+          }
+        },
+        "image_2_gap": {
+          "label": "Gap between text and image two"
+        },
+        "images_gap": {
+          "label": "Gap between image one and image two on desktop"
+        },
+        "images_gap_mobile": {
+          "label": "Gap between image one and image two on mobile"
+        },
         "header_mobile": {
           "content": "Mobile layout"
         },
@@ -3829,6 +3860,15 @@
         },
         "header_mobile": {
           "content": "Mobile layout"
+        },
+        "mobile_text_position": {
+          "label": "Text position on mobile",
+          "options__1": {
+            "label": "Below image"
+          },
+          "options__2": {
+            "label": "Above image"
+          }
         },
         "mobile_content_alignment": {
           "options__1": {
