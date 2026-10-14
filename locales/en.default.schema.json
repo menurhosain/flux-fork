@@ -8813,8 +8813,92 @@
       }
     },
     "button": {
-      "name": "Buttons",
+      "name": "Button",
       "settings": {
+        "header_border": {
+          "content": "Border"
+        },
+        "custom_border_radius": {
+          "label": "Use custom corner radius",
+          "info": "Overrides the theme's button radius."
+        },
+        "border_radius": {
+          "label": "Corner radius"
+        },
+        "border_width": {
+          "label": "Border thickness"
+        },
+        "border_color": {
+          "label": "Border color",
+          "info": "Leave empty to use the text color."
+        },
+        "header_padding": {
+          "content": "Padding"
+        },
+        "custom_padding": {
+          "label": "Use custom padding",
+          "info": "Overrides the theme's button padding and height."
+        },
+        "padding_vertical": {
+          "label": "Top and bottom padding on desktop"
+        },
+        "padding_horizontal": {
+          "label": "Left and right padding on desktop"
+        },
+        "padding_vertical_mobile": {
+          "label": "Top and bottom padding on mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Left and right padding on mobile"
+        },
+        "header_style": {
+          "content": "Button style"
+        },
+        "text_color": {
+          "label": "Text color",
+          "info": "Leave empty to use the theme's button colors."
+        },
+        "background_color": {
+          "label": "Background color",
+          "info": "Leave empty to use the theme's button colors."
+        },
+        "custom_font_size": {
+          "label": "Use custom font size"
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "button_label": {
+          "label": "Button label",
+          "info": "Leave the label blank to hide the button."
+        },
+        "button_link": {
+          "label": "Button link"
+        },
+        "header_icon": {
+          "content": "Button icon"
+        },
+        "icon": {
+          "label": "Icon"
+        },
+        "icon_size": {
+          "label": "Icon size"
+        },
+        "icon_position": {
+          "label": "Icon position",
+          "options__1": {
+            "label": "Before text"
+          },
+          "options__2": {
+            "label": "After text"
+          }
+        },
+        "icon_spacing": {
+          "label": "Space between icon and text"
+        },
         "apply_link_to_image": {
           "info": "Works in image banner sections."
         }

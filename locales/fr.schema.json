@@ -8813,8 +8813,92 @@
       }
     },
     "button": {
-      "name": "Boutons",
+      "name": "Bouton",
       "settings": {
+        "header_border": {
+          "content": "Bordure"
+        },
+        "custom_border_radius": {
+          "label": "Utiliser un rayon d’angle personnalisé",
+          "info": "Remplace le rayon de bouton du thème."
+        },
+        "border_radius": {
+          "label": "Rayon d’angle"
+        },
+        "border_width": {
+          "label": "Épaisseur de la bordure"
+        },
+        "border_color": {
+          "label": "Couleur de la bordure",
+          "info": "Laissez vide pour utiliser la couleur du texte."
+        },
+        "header_padding": {
+          "content": "Marge intérieure"
+        },
+        "custom_padding": {
+          "label": "Utiliser une marge intérieure personnalisée",
+          "info": "Remplace la marge intérieure et la hauteur du bouton du thème."
+        },
+        "padding_vertical": {
+          "label": "Marge intérieure haut et bas sur ordinateur"
+        },
+        "padding_horizontal": {
+          "label": "Marge intérieure gauche et droite sur ordinateur"
+        },
+        "padding_vertical_mobile": {
+          "label": "Marge intérieure haut et bas sur mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Marge intérieure gauche et droite sur mobile"
+        },
+        "header_style": {
+          "content": "Style du bouton"
+        },
+        "text_color": {
+          "label": "Couleur du texte",
+          "info": "Laissez vide pour utiliser les couleurs de bouton du thème."
+        },
+        "background_color": {
+          "label": "Couleur d’arrière-plan",
+          "info": "Laissez vide pour utiliser les couleurs de bouton du thème."
+        },
+        "custom_font_size": {
+          "label": "Utiliser une taille de police personnalisée"
+        },
+        "font_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "button_label": {
+          "label": "Libellé du bouton",
+          "info": "Laissez le libellé vide pour masquer le bouton."
+        },
+        "button_link": {
+          "label": "Lien du bouton"
+        },
+        "header_icon": {
+          "content": "Icône du bouton"
+        },
+        "icon": {
+          "label": "Icône"
+        },
+        "icon_size": {
+          "label": "Taille de l’icône"
+        },
+        "icon_position": {
+          "label": "Position de l’icône",
+          "options__1": {
+            "label": "Avant le texte"
+          },
+          "options__2": {
+            "label": "Après le texte"
+          }
+        },
+        "icon_spacing": {
+          "label": "Espace entre l’icône et le texte"
+        },
         "apply_link_to_image": {
           "info": "Fonctionne dans les sections de bannière d’image."
         }

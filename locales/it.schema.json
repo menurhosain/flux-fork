@@ -8813,8 +8813,92 @@
       }
     },
     "button": {
-      "name": "Pulsanti",
+      "name": "Pulsante",
       "settings": {
+        "header_border": {
+          "content": "Bordo"
+        },
+        "custom_border_radius": {
+          "label": "Usa raggio angoli personalizzato",
+          "info": "Sostituisce il raggio dei pulsanti del tema."
+        },
+        "border_radius": {
+          "label": "Raggio angoli"
+        },
+        "border_width": {
+          "label": "Spessore bordo"
+        },
+        "border_color": {
+          "label": "Colore bordo",
+          "info": "Lascia vuoto per usare il colore del testo."
+        },
+        "header_padding": {
+          "content": "Spaziatura interna"
+        },
+        "custom_padding": {
+          "label": "Usa spaziatura interna personalizzata",
+          "info": "Sostituisce spaziatura interna e altezza del pulsante del tema."
+        },
+        "padding_vertical": {
+          "label": "Spaziatura interna superiore e inferiore su desktop"
+        },
+        "padding_horizontal": {
+          "label": "Spaziatura interna sinistra e destra su desktop"
+        },
+        "padding_vertical_mobile": {
+          "label": "Spaziatura interna superiore e inferiore su mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Spaziatura interna sinistra e destra su mobile"
+        },
+        "header_style": {
+          "content": "Stile del pulsante"
+        },
+        "text_color": {
+          "label": "Colore del testo",
+          "info": "Lascia vuoto per usare i colori dei pulsanti del tema."
+        },
+        "background_color": {
+          "label": "Colore di sfondo",
+          "info": "Lascia vuoto per usare i colori dei pulsanti del tema."
+        },
+        "custom_font_size": {
+          "label": "Usa dimensione carattere personalizzata"
+        },
+        "font_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "font_size_mobile": {
+          "label": "Dimensione carattere su mobile"
+        },
+        "button_label": {
+          "label": "Etichetta del pulsante",
+          "info": "Lascia vuota l'etichetta per nascondere il pulsante."
+        },
+        "button_link": {
+          "label": "Link del pulsante"
+        },
+        "header_icon": {
+          "content": "Icona del pulsante"
+        },
+        "icon": {
+          "label": "Icona"
+        },
+        "icon_size": {
+          "label": "Dimensione icona"
+        },
+        "icon_position": {
+          "label": "Posizione icona",
+          "options__1": {
+            "label": "Prima del testo"
+          },
+          "options__2": {
+            "label": "Dopo il testo"
+          }
+        },
+        "icon_spacing": {
+          "label": "Spazio tra icona e testo"
+        },
         "apply_link_to_image": {
           "info": "Funziona nelle sezioni banner immagine."
         }

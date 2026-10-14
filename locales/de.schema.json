@@ -8814,8 +8814,92 @@
       }
     },
     "button": {
-      "name": "Schaltflächen",
+      "name": "Schaltfläche",
       "settings": {
+        "header_border": {
+          "content": "Rahmen"
+        },
+        "custom_border_radius": {
+          "label": "Benutzerdefinierten Eckenradius verwenden",
+          "info": "Überschreibt den Schaltflächenradius des Themes."
+        },
+        "border_radius": {
+          "label": "Eckenradius"
+        },
+        "border_width": {
+          "label": "Rahmenstärke"
+        },
+        "border_color": {
+          "label": "Rahmenfarbe",
+          "info": "Leer lassen, um die Textfarbe zu verwenden."
+        },
+        "header_padding": {
+          "content": "Innenabstand"
+        },
+        "custom_padding": {
+          "label": "Benutzerdefinierten Innenabstand verwenden",
+          "info": "Überschreibt Innenabstand und Höhe der Schaltfläche aus dem Theme."
+        },
+        "padding_vertical": {
+          "label": "Innenabstand oben und unten auf dem Desktop"
+        },
+        "padding_horizontal": {
+          "label": "Innenabstand links und rechts auf dem Desktop"
+        },
+        "padding_vertical_mobile": {
+          "label": "Innenabstand oben und unten auf Mobilgeräten"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Innenabstand links und rechts auf Mobilgeräten"
+        },
+        "header_style": {
+          "content": "Schaltflächenstil"
+        },
+        "text_color": {
+          "label": "Textfarbe",
+          "info": "Leer lassen, um die Schaltflächenfarben des Themes zu verwenden."
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe",
+          "info": "Leer lassen, um die Schaltflächenfarben des Themes zu verwenden."
+        },
+        "custom_font_size": {
+          "label": "Benutzerdefinierte Schriftgröße verwenden"
+        },
+        "font_size": {
+          "label": "Schriftgröße auf dem Desktop"
+        },
+        "font_size_mobile": {
+          "label": "Schriftgröße auf Mobilgeräten"
+        },
+        "button_label": {
+          "label": "Label der Schaltfläche",
+          "info": "Lassen Sie das Label leer, um die Schaltfläche auszublenden."
+        },
+        "button_link": {
+          "label": "Link der Schaltfläche"
+        },
+        "header_icon": {
+          "content": "Schaltflächensymbol"
+        },
+        "icon": {
+          "label": "Symbol"
+        },
+        "icon_size": {
+          "label": "Symbolgröße"
+        },
+        "icon_position": {
+          "label": "Symbolposition",
+          "options__1": {
+            "label": "Vor dem Text"
+          },
+          "options__2": {
+            "label": "Nach dem Text"
+          }
+        },
+        "icon_spacing": {
+          "label": "Abstand zwischen Symbol und Text"
+        },
         "apply_link_to_image": {
           "info": "Funktioniert in Bildbanner-Abschnitten."
         }

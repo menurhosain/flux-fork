@@ -8814,8 +8814,92 @@
       }
     },
     "button": {
-      "name": "Botones",
+      "name": "Botón",
       "settings": {
+        "header_border": {
+          "content": "Borde"
+        },
+        "custom_border_radius": {
+          "label": "Usar radio de esquina personalizado",
+          "info": "Reemplaza el radio de botón del tema."
+        },
+        "border_radius": {
+          "label": "Radio de esquina"
+        },
+        "border_width": {
+          "label": "Grosor del borde"
+        },
+        "border_color": {
+          "label": "Color del borde",
+          "info": "Déjalo vacío para usar el color del texto."
+        },
+        "header_padding": {
+          "content": "Relleno"
+        },
+        "custom_padding": {
+          "label": "Usar relleno personalizado",
+          "info": "Reemplaza el relleno y la altura del botón del tema."
+        },
+        "padding_vertical": {
+          "label": "Relleno superior e inferior en escritorio"
+        },
+        "padding_horizontal": {
+          "label": "Relleno izquierdo y derecho en escritorio"
+        },
+        "padding_vertical_mobile": {
+          "label": "Relleno superior e inferior en móvil"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Relleno izquierdo y derecho en móvil"
+        },
+        "header_style": {
+          "content": "Estilo del botón"
+        },
+        "text_color": {
+          "label": "Color del texto",
+          "info": "Déjalo vacío para usar los colores de botón del tema."
+        },
+        "background_color": {
+          "label": "Color de fondo",
+          "info": "Déjalo vacío para usar los colores de botón del tema."
+        },
+        "custom_font_size": {
+          "label": "Usar tamaño de fuente personalizado"
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "button_label": {
+          "label": "Etiqueta del botón",
+          "info": "Deja la etiqueta en blanco para ocultar el botón."
+        },
+        "button_link": {
+          "label": "Enlace del botón"
+        },
+        "header_icon": {
+          "content": "Icono del botón"
+        },
+        "icon": {
+          "label": "Icono"
+        },
+        "icon_size": {
+          "label": "Tamaño del icono"
+        },
+        "icon_position": {
+          "label": "Posición del icono",
+          "options__1": {
+            "label": "Antes del texto"
+          },
+          "options__2": {
+            "label": "Después del texto"
+          }
+        },
+        "icon_spacing": {
+          "label": "Espacio entre icono y texto"
+        },
         "apply_link_to_image": {
           "info": "Funciona en secciones de banner con imagen."
         }
