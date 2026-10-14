@@ -8722,6 +8722,53 @@
         }
       }
     },
+    "container": {
+      "name": "Container",
+      "settings": {
+        "background_color": {
+          "label": "Background color"
+        },
+        "border_radius": {
+          "label": "Corner radius"
+        },
+        "header_border": {
+          "content": "Border"
+        },
+        "border_width": {
+          "label": "Border thickness"
+        },
+        "border_color": {
+          "label": "Border color"
+        },
+        "border_top": {
+          "label": "Top border"
+        },
+        "border_right": {
+          "label": "Right border"
+        },
+        "border_bottom": {
+          "label": "Bottom border"
+        },
+        "border_left": {
+          "label": "Left border"
+        },
+        "header_padding": {
+          "content": "Padding"
+        },
+        "padding_vertical": {
+          "label": "Top and bottom padding on desktop"
+        },
+        "padding_horizontal": {
+          "label": "Left and right padding on desktop"
+        },
+        "padding_vertical_mobile": {
+          "label": "Top and bottom padding on mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Left and right padding on mobile"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Custom Liquid"
     },

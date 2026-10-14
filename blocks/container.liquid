@@ -1,0 +1,168 @@
+<div class="block-container block-container-{{ block.id }}" {{ block.shopify_attributes }}>
+  {% content_for 'blocks' %}
+</div>
+
+{%- style -%}
+  .block-container-{{ block.id }} {
+    padding: {{ block.settings.padding_vertical_mobile }}px {{ block.settings.padding_horizontal_mobile }}px;
+    border-radius: {{ block.settings.border_radius }}px;
+    {%- if block.settings.background_color != blank and block.settings.background_color.alpha != 0 %}
+      background: {{ block.settings.background_color }};
+    {%- endif %}
+    width: 100%;
+    {%- if block.settings.border_width > 0 %}
+      border-color: {{ block.settings.border_color }};
+      border-style: solid;
+      border-width: {% if block.settings.border_top %}{{ block.settings.border_width }}px{% else %}0{% endif %}
+        {% if block.settings.border_right %}{{ block.settings.border_width }}px{% else %}0{% endif %}
+        {% if block.settings.border_bottom %}{{ block.settings.border_width }}px{% else %}0{% endif %}
+        {% if block.settings.border_left %}{{ block.settings.border_width }}px{% else %}0{% endif %};
+    {%- endif %}
+  }
+  .block-container-{{ block.id }} > :first-child {
+    margin-top: 0;
+  }
+  .block-container-{{ block.id }} > :last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 750px) {
+    .block-container-{{ block.id }} {
+      padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "t:blocks.container.name",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "#f5f5f5",
+      "label": "t:blocks.container.settings.background_color.label"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 12,
+      "label": "t:blocks.container.settings.border_radius.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.container.settings.header_border.content"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.container.settings.border_width.label"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "default": "#e5e5e5",
+      "label": "t:blocks.container.settings.border_color.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_top",
+      "default": true,
+      "label": "t:blocks.container.settings.border_top.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_right",
+      "default": true,
+      "label": "t:blocks.container.settings.border_right.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_bottom",
+      "default": true,
+      "label": "t:blocks.container.settings.border_bottom.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_left",
+      "default": true,
+      "label": "t:blocks.container.settings.border_left.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.container.settings.header_padding.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 32,
+      "label": "t:blocks.container.settings.padding_vertical.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 32,
+      "label": "t:blocks.container.settings.padding_horizontal.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 20,
+      "label": "t:blocks.container.settings.padding_vertical_mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 20,
+      "label": "t:blocks.container.settings.padding_horizontal_mobile.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:blocks.container.name",
+      "blocks": {
+        "heading": {
+          "type": "heading"
+        },
+        "text": {
+          "type": "text"
+        }
+      },
+      "block_order": ["heading", "text"]
+    }
+  ]
+}
+{% endschema %}

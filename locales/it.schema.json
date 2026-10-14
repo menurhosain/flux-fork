@@ -8722,6 +8722,53 @@
         }
       }
     },
+    "container": {
+      "name": "Contenitore",
+      "settings": {
+        "background_color": {
+          "label": "Colore di sfondo"
+        },
+        "border_radius": {
+          "label": "Raggio degli angoli"
+        },
+        "header_border": {
+          "content": "Bordo"
+        },
+        "border_width": {
+          "label": "Spessore del bordo"
+        },
+        "border_color": {
+          "label": "Colore del bordo"
+        },
+        "border_top": {
+          "label": "Bordo superiore"
+        },
+        "border_right": {
+          "label": "Bordo destro"
+        },
+        "border_bottom": {
+          "label": "Bordo inferiore"
+        },
+        "border_left": {
+          "label": "Bordo sinistro"
+        },
+        "header_padding": {
+          "content": "Spaziatura interna"
+        },
+        "padding_vertical": {
+          "label": "Spaziatura sopra e sotto su desktop"
+        },
+        "padding_horizontal": {
+          "label": "Spaziatura a sinistra e a destra su desktop"
+        },
+        "padding_vertical_mobile": {
+          "label": "Spaziatura sopra e sotto su mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Spaziatura a sinistra e a destra su mobile"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Liquid personalizzato"
     },

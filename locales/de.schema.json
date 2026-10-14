@@ -8723,6 +8723,53 @@
         }
       }
     },
+    "container": {
+      "name": "Container",
+      "settings": {
+        "background_color": {
+          "label": "Hintergrundfarbe"
+        },
+        "border_radius": {
+          "label": "Eckenradius"
+        },
+        "header_border": {
+          "content": "Rand"
+        },
+        "border_width": {
+          "label": "Randstärke"
+        },
+        "border_color": {
+          "label": "Randfarbe"
+        },
+        "border_top": {
+          "label": "Rand oben"
+        },
+        "border_right": {
+          "label": "Rand rechts"
+        },
+        "border_bottom": {
+          "label": "Rand unten"
+        },
+        "border_left": {
+          "label": "Rand links"
+        },
+        "header_padding": {
+          "content": "Innenabstand"
+        },
+        "padding_vertical": {
+          "label": "Innenabstand oben und unten (Desktop)"
+        },
+        "padding_horizontal": {
+          "label": "Innenabstand links und rechts (Desktop)"
+        },
+        "padding_vertical_mobile": {
+          "label": "Innenabstand oben und unten (Mobil)"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Innenabstand links und rechts (Mobil)"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Benutzerdefiniertes Liquid"
     },
