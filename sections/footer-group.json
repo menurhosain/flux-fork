@@ -44,13 +44,14 @@
         "brand_information": {
           "type": "_footer-brand",
           "settings": {
+            "column_width": 30,
             "brand_headline": "",
             "brand_description": "<p>Personalized functional wellness support designed to bring more clarity, confidence, and consistency to your health journey.</p><p><em>*Root-cause focused. Personalized. Practical.</em></p>",
             "brand_image": "shopify://shop_images/bacton-health-logo.png",
             "brand_image_width": 180,
             "hide_image": false,
             "newsletter_enable": false,
-            "show_social": true,
+            "show_social": false,
             "social_icons_size": "small"
           },
           "blocks": {}
@@ -58,32 +59,33 @@
         "footer-1": {
           "type": "_footer-menu",
           "settings": {
+            "column_width": 18,
             "heading": "Quick links",
             "menu": "footer"
-          },
-          "blocks": {}
-        },
-        "footer-2": {
-          "type": "_footer-image",
-          "settings": {
-            "image": "shopify://shop_images/category-suplements.webp",
-            "image_width": 550,
-            "image_headline": "Supplements",
-            "image_description": "",
-            "button_label": "New Arrivals",
-            "button_link": "shopify://collections/supplements",
-            "open_new_tab_1": false,
-            "button_style_secondary": true,
-            "color_scheme_1": "option-2"
           },
           "blocks": {}
         },
         "footer-0": {
           "type": "_footer-text",
           "settings": {
+            "column_width": 25,
             "heading": "Our Shop",
-            "subtext": "<p>Find a location nearest you.&nbsp;</p><p>📍 <a href=\"#\" title=\"#\"><strong>See Our Stores</strong></a></p><p>✉️ <a href=\"#\" title=\"#\"><strong>&nbsp;support@bactonhealth.com</strong></a></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>",
+            "subtext": "<p>✉️ <a href=\"mailto:support@bactonhealth.com\" title=\"mailto:support@bactonhealth.com\"><strong>&nbsp;support@bactonhealth.com</strong></a><br/>📞 <a href=\"tel:888-251-1518\" title=\"tel:888-251-1518\"><strong>888-251-1518</strong></a><br/>📍 <a href=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\" target=\"_blank\" title=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\"><strong>2108 N St. Ste. N, Sacramento, CA 95816</strong></a></p><p></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>",
             "custom_liquid": ""
+          },
+          "blocks": {}
+        },
+        "footer_brand_CULVFG": {
+          "type": "_footer-brand",
+          "settings": {
+            "column_width": 27,
+            "brand_headline": "Sign Up For Our Newsletter&nbsp;",
+            "brand_description": "<p>Subscribe for regular updates</p>",
+            "brand_image_width": 50,
+            "hide_image": true,
+            "newsletter_enable": true,
+            "show_social": true,
+            "social_icons_size": "small"
           },
           "blocks": {}
         }
@@ -91,8 +93,8 @@
       "block_order": [
         "brand_information",
         "footer-1",
-        "footer-2",
-        "footer-0"
+        "footer-0",
+        "footer_brand_CULVFG"
       ],
       "settings": {
         "enable_follow_on_shop": true,

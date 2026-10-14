@@ -109,7 +109,11 @@
         "columns_mobile": "1",
         "disable_quick_add": true,
         "swipe_on_mobile": true,
-        "disable_arrow_mobile": true
+        "disable_arrow_mobile": true,
+        "slider_icon_width": 22,
+        "slider_icon_height": 22,
+        "slider_button_width": 34,
+        "slider_button_height": 34
       }
     },
     "collection_list": {
