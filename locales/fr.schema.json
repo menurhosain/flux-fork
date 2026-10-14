@@ -8815,6 +8815,25 @@
     "button": {
       "name": "Bouton",
       "settings": {
+        "header_margin": {
+          "content": "Marge extérieure"
+        },
+        "custom_margin": {
+          "label": "Utiliser une marge extérieure personnalisée",
+          "info": "Remplace l’espacement de la section autour du bouton."
+        },
+        "margin_vertical": {
+          "label": "Marge haut et bas sur ordinateur"
+        },
+        "margin_horizontal": {
+          "label": "Marge gauche et droite sur ordinateur"
+        },
+        "margin_vertical_mobile": {
+          "label": "Marge haut et bas sur mobile"
+        },
+        "margin_horizontal_mobile": {
+          "label": "Marge gauche et droite sur mobile"
+        },
         "header_border": {
           "content": "Bordure"
         },

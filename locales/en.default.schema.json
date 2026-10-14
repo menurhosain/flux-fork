@@ -8815,6 +8815,25 @@
     "button": {
       "name": "Button",
       "settings": {
+        "header_margin": {
+          "content": "Margin"
+        },
+        "custom_margin": {
+          "label": "Use custom margin",
+          "info": "Overrides the section's spacing around the button."
+        },
+        "margin_vertical": {
+          "label": "Top and bottom margin on desktop"
+        },
+        "margin_horizontal": {
+          "label": "Left and right margin on desktop"
+        },
+        "margin_vertical_mobile": {
+          "label": "Top and bottom margin on mobile"
+        },
+        "margin_horizontal_mobile": {
+          "label": "Left and right margin on mobile"
+        },
         "header_border": {
           "content": "Border"
         },

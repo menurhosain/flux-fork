@@ -8815,6 +8815,25 @@
     "button": {
       "name": "Pulsante",
       "settings": {
+        "header_margin": {
+          "content": "Margine"
+        },
+        "custom_margin": {
+          "label": "Usa margine personalizzato",
+          "info": "Sostituisce la spaziatura della sezione attorno al pulsante."
+        },
+        "margin_vertical": {
+          "label": "Margine superiore e inferiore su desktop"
+        },
+        "margin_horizontal": {
+          "label": "Margine sinistro e destro su desktop"
+        },
+        "margin_vertical_mobile": {
+          "label": "Margine superiore e inferiore su mobile"
+        },
+        "margin_horizontal_mobile": {
+          "label": "Margine sinistro e destro su mobile"
+        },
         "header_border": {
           "content": "Bordo"
         },

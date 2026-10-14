@@ -18,7 +18,7 @@
   endif
 -%}
 
-<div class="block-buttons block-buttons-{{ block.id }}" {{ block.shopify_attributes }}>
+<div id="Buttons-{{ block.id }}" class="block-buttons block-buttons-{{ block.id }}" {{ block.shopify_attributes }}>
   {%- if block.settings.button_label != blank -%}
     <a
       id="Button-{{ block.id }}"
@@ -40,7 +40,7 @@
   {%- endif -%}
 </div>
 
-{%- if block.settings.icon != blank or has_text_color or has_background_color or has_border_color or block.settings.custom_font_size or block.settings.custom_border_radius or block.settings.border_width > 0 or block.settings.custom_padding -%}
+{%- if block.settings.icon != blank or has_text_color or has_background_color or has_border_color or block.settings.custom_font_size or block.settings.custom_border_radius or block.settings.border_width > 0 or block.settings.custom_padding or block.settings.custom_margin -%}
   {%- style -%}
     #Button-{{ block.id }} {
       {%- if block.settings.icon != blank %}
@@ -93,6 +93,16 @@
       #Button-{{ block.id }} .block-buttons__icon {
         width: {{ icon_size }}px;
         height: {{ icon_size }}px;
+      }
+    {%- endif %}
+    {%- if block.settings.custom_margin %}
+      #Buttons-{{ block.id }} {
+        margin: {{ block.settings.margin_vertical_mobile }}px {{ block.settings.margin_horizontal_mobile }}px;
+      }
+      @media screen and (min-width: 750px) {
+        #Buttons-{{ block.id }} {
+          margin: {{ block.settings.margin_vertical }}px {{ block.settings.margin_horizontal }}px;
+        }
       }
     {%- endif %}
   {%- endstyle -%}
@@ -287,6 +297,61 @@
       "default": 20,
       "label": "t:blocks.button.settings.padding_horizontal_mobile.label",
       "visible_if": "{{ block.settings.custom_padding }}"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.button.settings.header_margin.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_margin",
+      "default": false,
+      "label": "t:blocks.button.settings.custom_margin.label",
+      "info": "t:blocks.button.settings.custom_margin.info"
+    },
+    {
+      "type": "range",
+      "id": "margin_vertical",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_vertical.label",
+      "visible_if": "{{ block.settings.custom_margin }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_horizontal.label",
+      "visible_if": "{{ block.settings.custom_margin }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_vertical_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_vertical_mobile.label",
+      "visible_if": "{{ block.settings.custom_margin }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_horizontal_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_horizontal_mobile.label",
+      "visible_if": "{{ block.settings.custom_margin }}"
     },
     {
       "type": "header",
