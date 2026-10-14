@@ -17,6 +17,67 @@
         "padding_bottom": 36
       }
     },
+    "image_banner_xBkyGN": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pVMMBT": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Bacon Health",
+            "heading_size": "large",
+            "heading_style": "default",
+            "heading_tag": "h1",
+            "highlight_option": "underline-hand",
+            "word_animation_color": "#272727",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        },
+        "breadcrumbs_iR6EQG": {
+          "type": "breadcrumbs",
+          "name": "t:blocks.breadcrumbs.name",
+          "settings": {
+            "show_border": false,
+            "border_color": "#e5e5e5",
+            "background_color": "",
+            "text_color": "",
+            "alignment": "left",
+            "font_size": 16,
+            "show_on_mobile": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_pVMMBT",
+        "breadcrumbs_iR6EQG"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/three-surgeons-in-scrubs.jpg",
+        "image_overlay_opacity": 20,
+        "image_border_radius": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "ignore_spacing": false,
+        "color_scheme_1": "",
+        "margin_spacing": "negative",
+        "margin_top": 0,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -37,15 +98,35 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#00a2f8"
+            "word_animation_color": "#bee9ff",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><br/>At <strong>Bacton Health</strong>, we believe every woman deserves to feel confident, supported, and empowered throughout her health and wellness journey. As women move through different stages of life, particularly perimenopause and menopause, their bodies experience changes that can affect everyday comfort, energy, sleep, and overall well-being. We understand these challenges and are committed to helping women make informed choices about their health.<br/><br/></p>",
-            "text_style": "body"
+            "text": "<p>At <strong>Bacton Health</strong>, we believe every woman deserves to feel confident, supported, and empowered throughout her health and wellness journey. As women move through different stages of life, particularly perimenopause and menopause, their bodies experience changes that can affect everyday comfort, energy, sleep, and overall well-being. We understand these challenges and are committed to helping women make informed choices about their health.</p>",
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         }
@@ -54,6 +135,9 @@
         "image",
         "heading",
         "text"
+      ],
+      "custom_css": [
+        ".rich-text-blocks .block-image img {margin-bottom: 0;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -69,55 +153,179 @@
         "mobile_content_alignment": "left"
       }
     },
-    "two_images_text": {
-      "type": "two-images-text",
+    "rich_text_VLrFtW": {
+      "type": "rich-text",
       "blocks": {
-        "caption": {
+        "caption_Rj8G9m": {
           "type": "caption",
+          "name": "t:blocks.caption.name",
           "settings": {
             "caption": "Support That Fits Real Life",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_size": "medium",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 14,
+            "font_size_mobile": 13,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
-        "heading": {
+        "heading_qtEWGK": {
           "type": "heading",
           "settings": {
-            "heading": "Discover a healthier, more balanced you with Bacton Health.&nbsp;",
-            "heading_size": "medium",
+            "heading": "Discover a healthier, more balanced you with Bacton Health.",
+            "heading_size": "large",
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#272727"
+            "word_animation_color": "#272727",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
-        "text": {
+        "text_EkgDrd": {
           "type": "text",
           "settings": {
             "text": "<p>Explore our thoughtfully selected wellness products designed to support women’s changing needs through menopause and beyond. Whether you’re looking to enhance your daily well-being, support your body’s natural changes, or embrace a healthier lifestyle, we’re here to help you take the next step toward feeling your best.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "caption",
-        "heading",
-        "text"
+        "caption_Rj8G9m",
+        "heading_qtEWGK",
+        "text_EkgDrd"
       ],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/bacton-health-03.jpg",
-        "image_2": "shopify://shop_images/bacton-health-05.jpg",
-        "layout": "text_first",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "rich_text_width": 78,
         "color_scheme": "option-2",
-        "padding_top": 96,
-        "padding_bottom": 96,
+        "padding_top": 80,
+        "padding_bottom": 0,
         "ignore_spacing": false,
         "margin_spacing": "negative",
         "margin_top": 0,
-        "layout_mobile": "image_first"
+        "mobile_content_alignment": "left"
+      }
+    },
+    "two_images_text": {
+      "type": "two-images-text",
+      "blocks": {
+        "container_xhhN8c": {
+          "type": "container",
+          "name": "t:blocks.container.name",
+          "settings": {
+            "background_color": "#ffffff",
+            "border_radius": 12,
+            "border_width": 4,
+            "border_color": "#00a2f8",
+            "border_top": false,
+            "border_right": false,
+            "border_bottom": false,
+            "border_left": true,
+            "padding_vertical": 32,
+            "padding_horizontal": 32,
+            "padding_vertical_mobile": 20,
+            "padding_horizontal_mobile": 20
+          },
+          "blocks": {
+            "heading_4DPbbb": {
+              "type": "heading",
+              "settings": {
+                "heading": "“The goal is not to give you more rules. It is to help you understand what matters most and build changes you can realistically maintain.”",
+                "heading_size": "medium",
+                "heading_style": "default",
+                "heading_tag": "h3",
+                "highlight_option": "underline-hand",
+                "word_animation_color": "#272727",
+                "alignment": "left",
+                "text_color": "",
+                "custom_font_size": true,
+                "font_size": 26,
+                "font_size_mobile": 40,
+                "custom_spacing": false,
+                "margin_top": 0,
+                "margin_bottom": 16,
+                "margin_left": 0,
+                "margin_right": 0
+              },
+              "blocks": {}
+            },
+            "text_mLPz3q": {
+              "type": "text",
+              "name": "t:blocks.text.name",
+              "settings": {
+                "text": "<p><strong>Tricia Bennett, OB-GYN & Menopause Specialist</strong></p>",
+                "text_style": "body",
+                "alignment": "left",
+                "text_color": "#00A2F8",
+                "custom_font_size": true,
+                "font_size": 16,
+                "font_size_mobile": 15,
+                "custom_spacing": false,
+                "margin_top": 0,
+                "margin_bottom": 16,
+                "margin_left": 0,
+                "margin_right": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_4DPbbb",
+            "text_mLPz3q"
+          ]
+        }
+      },
+      "block_order": [
+        "container_xhhN8c"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/bacton-health-03_716e75dc-3656-4794-83e9-ef6e400398fc.png",
+        "image_2": "shopify://shop_images/bacton-health-05.jpg",
+        "layout": "image_first",
+        "image_2_position": "above",
+        "image_2_alignment": "top",
+        "image_2_gap": 28,
+        "images_gap": 28,
+        "images_gap_mobile": 20,
+        "color_scheme": "option-2",
+        "padding_top": 40,
+        "padding_bottom": 96,
+        "ignore_spacing": true,
+        "margin_spacing": "positive",
+        "margin_top": 0,
+        "layout_mobile": "text_first"
       }
     },
     "multicolumn": {
@@ -126,10 +334,10 @@
         "column_1": {
           "type": "_column",
           "settings": {
-            "hide_image": false,
+            "hide_image": true,
             "disable_autoplay": false,
-            "title": "Locally Made",
-            "text": "<p>Proudly crafted in Europe, our products embody quality, innovation, and timeless beauty.</p>",
+            "title": "Women's Wellness Focused",
+            "text": "<p>Supporting women’s changing health and wellness needs through menopause and beyond.</p>",
             "link_label": "",
             "link": "",
             "open_new_tab_1": false
@@ -139,10 +347,10 @@
         "column_2": {
           "type": "_column",
           "settings": {
-            "hide_image": false,
+            "hide_image": true,
             "disable_autoplay": false,
-            "title": "Top Quality",
-            "text": "<p>Exemplifying European Craftsmanship: Quality, Innovation, Beauty.</p>",
+            "title": "Thoughtfully Selected Products",
+            "text": "<p>Offering quality wellness solutions designed to complement a healthier, more balanced lifestyle.</p>",
             "link_label": "",
             "link": "",
             "open_new_tab_1": false
@@ -152,10 +360,10 @@
         "column_3": {
           "type": "_column",
           "settings": {
-            "hide_image": false,
+            "hide_image": true,
             "disable_autoplay": false,
-            "title": "5 Star Rating",
-            "text": "<p>Five-Star Flair: Discover Flux Vegan's Exquisite Quality and Innovation.</p>",
+            "title": "Empowering Healthier Living",
+            "text": "<p>Helping women feel informed, confident, and supported throughout every stage of life.</p>",
             "link_label": "",
             "link": "",
             "open_new_tab_1": false
@@ -208,7 +416,17 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#272727"
+            "word_animation_color": "#272727",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -216,16 +434,27 @@
           "type": "text",
           "settings": {
             "text": "<p>At Flux, we take great pride in introducing you to the incredible team that fuels our vision for a healthier, more sustainable world. Our story is not just about the products we offer, but also about the people who make it all possible.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
         "image": {
           "type": "_image-with-text-decoration",
           "settings": {
+            "image": "shopify://shop_images/Fiber_NF_front_neutral_web_64f675fd-5f08-4c05-9a6b-c0a7a90490a6.webp",
             "position_image_relative": false,
             "mobile_disable_image_animation": false,
-            "mobile_disable_image": false
+            "mobile_disable_image": true
           },
           "blocks": {}
         }
@@ -248,7 +477,8 @@
         "ignore_spacing": true,
         "margin_spacing": "negative",
         "margin_top": 0,
-        "mobile_content_alignment": "left"
+        "mobile_content_alignment": "left",
+        "mobile_text_position": "below"
       }
     },
     "image_banner": {
@@ -262,7 +492,17 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#ffffff"
+            "word_animation_color": "#ffffff",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -270,7 +510,17 @@
           "type": "text",
           "settings": {
             "text": "<p>Get ready to stock up on your favorite organic and protein-rich goodies with our sizzling summer discounts. From protein bars to supplements and everything in between, fuel your body and nourish your soul while saving big.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -297,7 +547,7 @@
       ],
       "settings": {
         "image_overlay_opacity": 50,
-        "image_border_radius": 50,
+        "image_border_radius": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
@@ -313,7 +563,9 @@
   },
   "order": [
     "main",
+    "image_banner_xBkyGN",
     "rich_text",
+    "rich_text_VLrFtW",
     "two_images_text",
     "multicolumn",
     "image_with_text",

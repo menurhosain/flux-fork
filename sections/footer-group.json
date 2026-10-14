@@ -60,7 +60,7 @@
           "type": "_footer-menu",
           "settings": {
             "column_width": 18,
-            "heading": "Quick links",
+            "heading": "Collections",
             "menu": "footer"
           },
           "blocks": {}
@@ -69,8 +69,8 @@
           "type": "_footer-text",
           "settings": {
             "column_width": 25,
-            "heading": "Our Shop",
-            "subtext": "<p>✉️ <a href=\"mailto:support@bactonhealth.com\" title=\"mailto:support@bactonhealth.com\"><strong>&nbsp;support@bactonhealth.com</strong></a><br/>📞 <a href=\"tel:888-251-1518\" title=\"tel:888-251-1518\"><strong>888-251-1518</strong></a><br/>📍 <a href=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\" target=\"_blank\" title=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\"><strong>2108 N St. Ste. N, Sacramento, CA 95816</strong></a></p><p></p><p>─</p><p><a href=\"/pages/privacy-policy\" title=\"Privacy policy\">Privacy policy</a></p><p><a href=\"/pages/refund-policy\" title=\"Refund policy\">Refund policy</a></p><p><a href=\"/pages/terms-and-conditions\" title=\"Terms and conditions\">Terms & Condition</a></p>",
+            "heading": "Contact Info",
+            "subtext": "<p>✉️ <a href=\"mailto:support@bactonhealth.com\" title=\"mailto:support@bactonhealth.com\"><strong>&nbsp;support@bactonhealth.com</strong></a><br/>📞 <a href=\"tel:888-251-1518\" title=\"tel:888-251-1518\"><strong>888-251-1518</strong></a><br/>📍 <a href=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\" target=\"_blank\" title=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\"><strong>2108 N St. Ste. N, Sacramento, CA 95816</strong></a></p>",
             "custom_liquid": ""
           },
           "blocks": {}
@@ -101,8 +101,8 @@
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": false,
-        "show_powered_by_link": true,
-        "show_policy": false,
+        "show_powered_by_link": false,
+        "show_policy": true,
         "enable_terms": false,
         "terms_label": "<p>I agree to receive marketing emails</p>",
         "back_to_top_desktop": true,

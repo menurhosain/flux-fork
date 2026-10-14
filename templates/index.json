@@ -20,7 +20,17 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline",
-            "word_animation_color": "#d4c4d9"
+            "word_animation_color": "#d4c4d9",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -28,7 +38,17 @@
           "type": "text",
           "settings": {
             "text": "<p>At Bacton Health, we believe every woman deserves to feel confident, balanced, and empowered throughout her wellness journey. Our thoughtfully selected health and wellness products are designed to support women’s changing needs, promote everyday well-being, and inspire a healthier, more vibrant lifestyle.<br/><br/></p>",
-            "text_style": "body"
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -340,7 +360,17 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#d4c4d9"
+            "word_animation_color": "#d4c4d9",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -348,7 +378,17 @@
           "type": "text",
           "settings": {
             "text": "<p>Nourish your body and delight your taste buds with Fuel collection of plant-based protein powders and chocolate goodies. Crafted with care and made from high-quality, organic ingredients, our products offer a delicious way to boost your nutrition. Treat yourself to goodness in every bite!</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         }
@@ -379,7 +419,17 @@
           "settings": {
             "caption": "Discover a Plant-Powered Paradise",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_size": "medium",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 14,
+            "font_size_mobile": 13,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -391,7 +441,17 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#272727"
+            "word_animation_color": "#272727",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -399,7 +459,17 @@
           "type": "text",
           "settings": {
             "text": "<p>Indulge guilt-free with our organic delights! Explore protein-rich powders and sumptuous chocolates for a nourishing boost. Elevate your snacking experience with Flux. Crafted with care, our products are the perfect fusion of health and flavor.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -448,374 +518,8 @@
         "ignore_spacing": false,
         "margin_spacing": "negative",
         "margin_top": 0,
-        "mobile_content_alignment": "left"
-      }
-    },
-    "collection_tabs": {
-      "type": "collection-tabs",
-      "blocks": {
-        "collection_1": {
-          "type": "_collection-tab",
-          "settings": {
-            "collection": "",
-            "tab_heading": "Best Sellers"
-          },
-          "blocks": {}
-        },
-        "collection_2": {
-          "type": "_collection-tab",
-          "settings": {
-            "collection": "",
-            "tab_heading": "New Arrivals"
-          },
-          "blocks": {}
-        },
-        "collection_3": {
-          "type": "_collection-tab",
-          "settings": {
-            "collection": "",
-            "tab_heading": "Save Big"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "collection_1",
-        "collection_2",
-        "collection_3"
-      ],
-      "settings": {
-        "caption": "Image Caption",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "small",
-        "title": "Featured collection",
-        "heading_size": "medium",
-        "heading_style": "default",
-        "heading_tag": "h2",
-        "description": "",
-        "description_style": "body",
-        "collection_style": "collection-three",
-        "content_alignment": "center",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "enable_desktop_slider": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "enable_quick_add": false,
-        "enable_quick_buy": true,
-        "always_use_plus_icon": false,
-        "quick_add_position": "default",
-        "color_scheme": "option-2",
-        "color_scheme_1": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "columns_mobile": "1",
-        "disable_quick_add": false,
-        "swipe_on_mobile": false
-      }
-    },
-    "slick_slider": {
-      "type": "slick-slider",
-      "blocks": {
-        "slide_1": {
-          "type": "_slick-slide",
-          "settings": {
-            "heading": "Nutrients for Health",
-            "caption": "Elevate your wellness journey with Flux's range of organic vitamin supplements. Nourish your body with premium-quality supplements and embrace a healthier you.",
-            "button_label": "Order Now",
-            "link": "",
-            "show_link_button": false,
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "slide_2": {
-          "type": "_slick-slide",
-          "settings": {
-            "heading": "Complete Nutrition",
-            "caption": "Crafted with organic ingredients, our complete protein offers the perfect blend of nutrients to support your active lifestyle.",
-            "button_label": "Shop Now",
-            "link": "",
-            "show_link_button": false,
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "slide_3": {
-          "type": "_slick-slide",
-          "settings": {
-            "heading": "Snack Smart with Flux",
-            "caption": "Indulge guilt-free in Flux Organic's delicious and nutritious snack options. Snack smart and nourish your body with Flux Organic today!",
-            "button_label": "Explore Meals",
-            "link": "",
-            "show_link_button": false,
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "slide_1",
-        "slide_2",
-        "slide_3"
-      ],
-      "settings": {
-        "auto_rotate": true,
-        "slider_interval": 4,
-        "full_width": false,
-        "image_opacity": 0.6,
-        "opacity_mobile": true,
-        "hide_slider_desktop": false,
-        "hide_slider_mobile": false,
-        "heading_size": 9,
-        "heading_tag": "h2",
-        "heading_style": "none",
-        "caption_size": 1.6,
-        "caption_style": "none",
-        "link_size": 1.8,
-        "color_scheme": "",
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "ignore_spacing": false
-      }
-    },
-    "info_cards": {
-      "type": "info-cards",
-      "blocks": {
-        "infocard_1": {
-          "type": "_infocard",
-          "settings": {
-            "hide_image": false,
-            "product": "",
-            "caption": "No Preservatives.",
-            "title": "Organic. All-Natural. Non-Allergenic.",
-            "text": "<p>At Flux, we’re committed to providing food that nourishes you without compromise. Our products are made from <strong>organic ingredients</strong>, sourced directly from trusted farmers who care as much about quality and the environment as we do. Every ingredient we use is carefully selected, free from artificial additives, and produced with sustainability in mind, so you can enjoy clean, wholesome food.</p><p>We believe that everyone deserves to feel good about what they eat, which is why Refuel products are all-natural and crafted to the highest standards. Free from preservatives, dyes, and artificial flavors, our food reflects the purity of nature with each bite, giving you authentic taste and peace of mind.</p><p>For those with dietary restrictions or sensitivities, our products are rigorously tested to be non-allergenic, ensuring that they are safe and enjoyable for a wide range of dietary needs. Whether you’re choosing a quick snack, a meal, or a healthy treat, Flux has options that are not only delicious but also thoughtfully prepared for every lifestyle.</p><p><strong>What Makes Refuel Different?</strong></p><ul><li>100% Certified Organic Ingredients</li><li>Zero Artificial Additives or Preservatives</li><li>Allergy-Safe for a Wide Range of Dietary Needs</li><li>Sustainably Sourced for a Healthier Planet</li></ul><p><strong>Refuel your body </strong>with food you can trust—pure, clean, and always nourishi</p>",
-            "link_label": "",
-            "link": "",
-            "infocards_background_color": "#d4c4d9",
-            "infocards_color": "#1d1d1d"
-          },
-          "blocks": {}
-        },
-        "infocard_2": {
-          "type": "_infocard",
-          "settings": {
-            "hide_image": false,
-            "product": "",
-            "caption": "Eco-Friendly",
-            "title": "Plant-Based. Clean Ingredients. No Additives.",
-            "text": "<p>Flux is dedicated to offering food that is as close to nature as possible, embracing the power of plants to fuel your body with the purest nutrients. Our plant-based products are crafted with thoughtfully chosen ingredients that are both sustainable and packed with natural goodness, making them better for you and for the planet.</p><p>We prioritize <strong>clean ingredients</strong>, avoiding processed fillers and refined sugars, so you get only what your body needs—and nothing more. Every product is free from additives, ensuring that what you’re enjoying is wholesome, fresh, and minimally processed. With Flux, you can trust that each bite is made with quality and integrity in mind.</p><p>Whether you're looking for energy-boosting snacks or a nourishing meal, our food delivers balanced nutrition without unnecessary extras, keeping it simple, clean, and purely plant-powered.</p><p><strong>Why Choose Refuel?</strong></p><ul><li>100% Plant-Based for Optimal Nutrition</li><li>No Artificial Additives or Preservatives</li><li>Carefully Sourced, Minimal Ingredients</li><li>Pure, Simple, and Naturally Delicious</li></ul><p>Choose Refuel for <strong>plant-based goodness </strong>you can feel good about—honest, wholesome, and always additive-free.</p>",
-            "link_label": "",
-            "link": "",
-            "infocards_background_color": "#eae6e6",
-            "infocards_color": "#1d1d1d"
-          },
-          "blocks": {}
-        },
-        "infocard_3": {
-          "type": "_infocard",
-          "settings": {
-            "hide_image": false,
-            "product": "",
-            "caption": "High Protein",
-            "title": "Vegan. Soy Free. Low Sugar.",
-            "text": "<p>At Flux, we’re redefining what it means to eat well, making delicious foods that meet the highest standards of nutrition and taste. Our entire line is 100% vegan, crafted without any animal products, so you can enjoy wholesome, plant-powered food that’s good for you and kind to the planet.</p><p>For those with dietary sensitivities or preferences, we keep our products <strong>soy-free </strong>and carefully formulated to be gentle on digestion without sacrificing flavor. With only a touch of natural sweetness, each product is low in sugar, helping you to maintain balanced energy and avoid unwanted spikes.</p><p>From quick bites to meal solutions, Flux offers a range of options that fit seamlessly into a healthy lifestyle. Our commitment is to give you delicious, nutrient-rich food that’s mindful of your needs and supports your wellness goals.</p><p><strong>Refuel with Confidence:</strong></p><ul><li>100% Vegan with No Animal Products</li><li>Soy-Free for Gentle Digestion</li><li>Low in Sugar for Balanced Energy</li><li>Carefully Crafted for Health-Conscious Eating</li></ul><p>Discover Flux’s deliciously simple approach to food—<strong>vegan, soy-free,</strong> and lightly sweetened for your best health.</p>",
-            "link_label": "",
-            "link": "",
-            "infocards_background_color": "#e9daec",
-            "infocards_color": "#1d1d1d"
-          },
-          "blocks": {}
-        },
-        "infocard_4": {
-          "type": "_infocard",
-          "settings": {
-            "hide_image": false,
-            "product": "",
-            "caption": "Simply Wholesome",
-            "title": "Naturally Delicious. Pure Ingredients.",
-            "text": "<p>Flux is all about providing food that honors simplicity and quality. Our products are crafted to offer clean, honest nutrition that you can feel good about eating every day. Made with a commitment to pure, minimally processed ingredients, each recipe is thoughtfully balanced to give you natural energy and real, wholesome flavor.</p><p>By focusing on nature’s best, we’ve created foods that deliver essential nutrients without the extra additives. Lightly sweetened and free from unnecessary fillers,Flux’s options are designed to keep you fueled and satisfied—whether you’re grabbing a quick snack or enjoying a nourishing meal.</p><p><strong>Refuel’s Commitment to Quality:</strong></p><ul><li><strong>Wholesome Ingredients:</strong> Pure and simple, with no artificial additives.</li><li><strong>Balanced Flavor:</strong> Just the right amount of natural sweetness.</li><li><strong>Everyday Goodness:</strong> Made for real life, with nutrition you can trust.</li></ul><p>With Flux, enjoy food that’s as genuine as it is delicious—crafted to be simply <strong>wholesome</strong>, naturally delicious, and purely satisfying.</p>",
-            "link_label": "",
-            "link": "",
-            "infocards_background_color": "#f2f2f2",
-            "infocards_color": "#1d1d1d"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "infocard_1",
-        "infocard_2",
-        "infocard_3",
-        "infocard_4"
-      ],
-      "settings": {
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "ignore_spacing": false,
-        "cards_style": "style-2",
-        "content_text_size": "medium",
-        "margin_spacing": "negative",
-        "margin_top": 36
-      }
-    },
-    "promotion_cards": {
-      "type": "promotion-cards",
-      "blocks": {
-        "column_1": {
-          "type": "_promotion-card",
-          "settings": {
-            "caption": "20% sale",
-            "title": "Suplements",
-            "link_label": "Shop Here",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_2": {
-          "type": "_promotion-card",
-          "settings": {
-            "caption": "30% sale",
-            "title": "Snacks",
-            "link_label": "Order Now",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_3": {
-          "type": "_promotion-card",
-          "settings": {
-            "caption": "Complete Protein",
-            "title": "15% sale",
-            "link_label": "Shop Now",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_4": {
-          "type": "_promotion-card",
-          "settings": {
-            "caption": "20% sale",
-            "title": "Powders",
-            "link_label": "Order Now",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_5": {
-          "type": "_promotion-card",
-          "settings": {
-            "caption": "15% sale",
-            "title": "Instant Meals",
-            "link_label": "Shop Now",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_6": {
-          "type": "_promotion-card",
-          "settings": {
-            "caption": "Caption",
-            "title": "Title",
-            "link_label": "Link Label",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "column_1",
-        "column_2",
-        "column_3",
-        "column_4",
-        "column_5",
-        "column_6"
-      ],
-      "settings": {
-        "title": "Our Top Picks",
-        "heading_size": "medium",
-        "heading_style": "default",
-        "heading_tag": "h2",
-        "caption": "",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "medium",
-        "promotion_cards_style": "promotion-cards-one",
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "color_scheme": "option-1",
-        "color_scheme_1": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "ignore_spacing": false,
-        "columns_mobile": "1",
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "swipe_on_mobile": true,
-        "disable_arrow_mobile": true
-      }
-    },
-    "image_hotspots": {
-      "type": "image-hotspots",
-      "blocks": {
-        "tooltip_1": {
-          "type": "_hotspot",
-          "settings": {
-            "product": "",
-            "content": "Made with organic ingredients, this protein powder provides a convenient way to fuel your body.",
-            "top": 24,
-            "left": 37
-          },
-          "blocks": {}
-        },
-        "tooltip_2": {
-          "type": "_hotspot",
-          "settings": {
-            "product": "",
-            "content": "This decadent treat combines creamy caramel with a hint of sea salt, creating a symphony of flavors.",
-            "top": 32,
-            "left": 73
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "tooltip_1",
-        "tooltip_2"
-      ],
-      "settings": {
-        "image_size": "default",
-        "caption": "Limited Time",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "medium",
-        "heading": "Lowest Price Deal",
-        "heading_size": "small",
-        "heading_style": "default",
-        "heading_tag": "h2",
-        "layout": "image_first",
-        "full_width": false,
-        "color_scheme": "option-1",
-        "tooltip_background_color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "layout_mobile": "image_first"
+        "mobile_content_alignment": "left",
+        "mobile_text_position": "below"
       }
     },
     "testimonials": {
@@ -919,189 +623,6 @@
         "disable_arrow_mobile": true
       }
     },
-    "featured_product": {
-      "type": "featured-product",
-      "blocks": {
-        "title": {
-          "type": "_product-title",
-          "settings": {
-            "column": "left",
-            "heading_size": "large",
-            "margin_top": 10,
-            "hide_quick_view": false,
-            "pin_to_top": false
-          },
-          "blocks": {}
-        },
-        "price": {
-          "type": "_product-price",
-          "settings": {
-            "column": "left",
-            "price_size": "small",
-            "badge_discount": false,
-            "margin_top": 10,
-            "hide_quick_view": false
-          },
-          "blocks": {}
-        },
-        "spacer": {
-          "type": "_product-spacer",
-          "settings": {
-            "column": "left",
-            "margin_top": 0,
-            "hide_quick_view": false
-          },
-          "blocks": {}
-        },
-        "description": {
-          "type": "_product-description",
-          "settings": {
-            "column": "left",
-            "margin_top": 10,
-            "text_size": "medium",
-            "hide_quick_view": false,
-            "pin_to_top": false
-          },
-          "blocks": {}
-        },
-        "image": {
-          "type": "_product-image",
-          "settings": {
-            "column": "left",
-            "image_link": "",
-            "margin_top": 10,
-            "hide_quick_view": false
-          },
-          "blocks": {}
-        },
-        "quantity_selector": {
-          "type": "_product-quantity-selector",
-          "settings": {
-            "margin_top": 10
-          },
-          "blocks": {}
-        },
-        "buy_buttons": {
-          "type": "_product-buy-buttons",
-          "settings": {
-            "column": "left",
-            "show_dynamic_checkout": true,
-            "force_unbranded_button": false,
-            "show_gift_card_recipient": true,
-            "stack_buttons_desktop": false,
-            "stacked_buttons_width": "default",
-            "picker_type": "button",
-            "swatch_shape": "circle",
-            "margin_top": 10,
-            "margin_bottom": 0,
-            "hide_unavailable": false,
-            "hide_quantity_input": false,
-            "hide_variant_picker": false,
-            "hide_mobile": false,
-            "hide_desktop": false,
-            "hide_quick_view": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "title",
-        "price",
-        "spacer",
-        "description",
-        "image",
-        "quantity_selector",
-        "buy_buttons"
-      ],
-      "settings": {
-        "product": "",
-        "product_gallery_width": 55,
-        "media_position": "right",
-        "media_fit": "contain",
-        "image_zoom": "lightbox",
-        "autoplay_video": false,
-        "enable_video_looping": false,
-        "color_scheme": "option-2",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 0
-      }
-    },
-    "two_images_text": {
-      "type": "two-images-text",
-      "blocks": {
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "Organic",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          },
-          "blocks": {}
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Made with Love",
-            "heading_size": "medium",
-            "heading_style": "default",
-            "heading_tag": "h2",
-            "highlight_option": "underline-hand",
-            "word_animation_color": "#272727"
-          },
-          "blocks": {}
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Indulge guilt-free with our organic delights! Explore protein-rich powders and sumptuous chocolates for a nourishing boost. Elevate your snacking experience with Flux. Crafted with care, our products are the perfect fusion of health and flavor.</p>",
-            "text_style": "body"
-          },
-          "blocks": {}
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "apply_link_to_image": false,
-            "open_new_tab_1": false,
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "open_new_tab_2": false,
-            "button_style_secondary_2": false
-          },
-          "blocks": {}
-        },
-        "image_1": {
-          "type": "_two-images-text-image",
-          "settings": {
-            "overlap": true
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "caption",
-        "heading",
-        "text",
-        "button",
-        "image_1"
-      ],
-      "settings": {
-        "layout": "image_first",
-        "color_scheme": "option-1",
-        "padding_top": 0,
-        "padding_bottom": 64,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "layout_mobile": "image_first"
-      }
-    },
     "featured_blog": {
       "type": "featured-blog",
       "settings": {
@@ -1124,277 +645,11 @@
         "color_scheme": "option-1",
         "color_scheme_1": "option-3",
         "padding_top": 44,
-        "padding_bottom": 60,
+        "padding_bottom": 100,
         "ignore_spacing": false,
         "margin_spacing": "negative",
         "margin_top": 0,
         "swipe_on_mobile": false,
-        "disable_arrow_mobile": true
-      }
-    },
-    "events_calendar": {
-      "type": "events-calendar",
-      "blocks": {
-        "event_1": {
-          "type": "_event",
-          "settings": {
-            "event_date": 12,
-            "event_month": "Apr",
-            "hide_date": false,
-            "event_time": "Saturday, 7:30pm",
-            "event_price": "$10",
-            "event_heading": "Cook with Flux Team",
-            "heading_size": "medium",
-            "heading_tag": "h2",
-            "event_description": "<p>Are you ready to embark on a culinary adventure unlike any other?</p>",
-            "event_location": "Oxford Street 13, 92746 London",
-            "link_label": "Book Now",
-            "link": "",
-            "open_new_tab_1": false,
-            "show_text_box": false,
-            "image_overlay_opacity": 60,
-            "color_scheme_1": ""
-          },
-          "blocks": {}
-        },
-        "event_2": {
-          "type": "_event",
-          "settings": {
-            "event_date": 12,
-            "event_month": "Apr",
-            "hide_date": false,
-            "event_time": "Sunday, 8:30pm",
-            "event_price": "$20",
-            "event_heading": "Fueling Your Fitness",
-            "heading_size": "medium",
-            "heading_tag": "h2",
-            "event_description": "<p>Effective exercise routines and essential recovery strategies for optimal performance.</p>",
-            "event_location": "Oxford Street 13, 92746 London",
-            "link_label": "Book Now",
-            "link": "",
-            "open_new_tab_1": false,
-            "show_text_box": false,
-            "image_overlay_opacity": 60,
-            "color_scheme_1": ""
-          },
-          "blocks": {}
-        },
-        "event_3": {
-          "type": "_event",
-          "settings": {
-            "event_date": 18,
-            "event_month": "Aug",
-            "hide_date": false,
-            "event_time": "Monday, 9:30pm",
-            "event_price": "$10",
-            "event_heading": "Wellness with Flux",
-            "heading_size": "medium",
-            "heading_tag": "h2",
-            "event_description": "<p>Your Fuel journey begins with a commitment to nourishing your body.</p>",
-            "event_location": "Maple Grove Farm, USA",
-            "link_label": "Book Now",
-            "link": "",
-            "open_new_tab_1": false,
-            "show_text_box": false,
-            "image_overlay_opacity": 60,
-            "color_scheme_1": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "event_1",
-        "event_2",
-        "event_3"
-      ],
-      "settings": {
-        "caption": "",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "medium",
-        "heading": "Our Events: Stay Energized and Inspired",
-        "heading_size": "medium",
-        "heading_style": "default",
-        "heading_tag": "h2",
-        "banner_height": "small",
-        "animate_slider": false,
-        "full_width": false,
-        "disable_animation": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "blocks": {
-        "slide": {
-          "type": "_featured-collection-promo",
-          "settings": {
-            "hide_image": false,
-            "caption": "20% Sale",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "small",
-            "heading": "Save Big",
-            "heading_size": "medium",
-            "heading_tag": "h2",
-            "subheading": "Get amazing deals on your favorite items today!",
-            "link_label": "Explore Now",
-            "link": "",
-            "open_new_tab_1": false,
-            "show_text_box": false,
-            "image_overlay_opacity": 80,
-            "color_scheme_1": "option-3"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "slide"
-      ],
-      "settings": {
-        "collection": "",
-        "caption": "",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "small",
-        "title": "Exclusive Deals Await",
-        "heading_size": "medium",
-        "heading_style": "default",
-        "heading_tag": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection_style": "collection-three",
-        "products_to_show": 3,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "enable_quick_add": true,
-        "enable_quick_buy": true,
-        "always_use_plus_icon": false,
-        "quick_add_position": "default",
-        "color_scheme": "",
-        "color_scheme_1": "option-2",
-        "padding_top": 36,
-        "padding_bottom": 0,
-        "ignore_spacing": true,
-        "margin_spacing": "positive",
-        "margin_top": 72,
-        "columns_mobile": "1",
-        "disable_quick_add": false,
-        "swipe_on_mobile": true,
-        "disable_arrow_mobile": true
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_1": {
-          "type": "_column",
-          "settings": {
-            "hide_image": false,
-            "disable_autoplay": false,
-            "title": "100,000+",
-            "text": "<p>Yearly Sales</p>",
-            "link_label": "",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_2": {
-          "type": "_column",
-          "settings": {
-            "hide_image": false,
-            "disable_autoplay": false,
-            "title": "10+",
-            "text": "<p>Years on the market</p>",
-            "link_label": "",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_3": {
-          "type": "_column",
-          "settings": {
-            "hide_image": false,
-            "disable_autoplay": false,
-            "title": "5000+",
-            "text": "<p>5 Stars Rating</p>",
-            "link_label": "",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_4": {
-          "type": "_column",
-          "settings": {
-            "hide_image": false,
-            "disable_autoplay": false,
-            "title": "56+",
-            "text": "<p>Served Countries</p>",
-            "link_label": "",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        },
-        "column_5": {
-          "type": "_column",
-          "settings": {
-            "hide_image": false,
-            "disable_autoplay": false,
-            "title": "70%",
-            "text": "<p>Returning customers</p>",
-            "link_label": "",
-            "link": "",
-            "open_new_tab_1": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "column_1",
-        "column_2",
-        "column_3",
-        "column_4",
-        "column_5"
-      ],
-      "settings": {
-        "multicolumn_style": "style-one",
-        "enable_card_background": true,
-        "caption": "",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "medium",
-        "title": "",
-        "heading_size": "medium",
-        "heading_style": "default",
-        "heading_tag": "h2",
-        "image_width": "third",
-        "image_ratio": "circle",
-        "columns_desktop": 5,
-        "column_alignment": "center",
-        "button_label": "",
-        "button_link": "",
-        "open_new_tab_2": false,
-        "color_scheme": "option-2",
-        "color_scheme_1": "",
-        "padding_top": 16,
-        "padding_bottom": 16,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 24,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
         "disable_arrow_mobile": true
       }
     },
@@ -1409,7 +664,17 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#ffffff"
+            "word_animation_color": "#ffffff",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 52,
+            "font_size_mobile": 40,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -1417,7 +682,17 @@
           "type": "text",
           "settings": {
             "text": "<p>Fuel your body with wholesome, all-natural ingredients designed to energize and satisfy. Our high-protein, nutrient-rich products are crafted for those who value wellness and taste. Embrace a healthier lifestyle with food you can feel good about.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
           },
           "blocks": {}
         },
@@ -1444,12 +719,12 @@
       ],
       "settings": {
         "image_overlay_opacity": 40,
-        "image_border_radius": 50,
+        "image_border_radius": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "ignore_spacing": true,
+        "ignore_spacing": false,
         "color_scheme_1": "",
         "margin_spacing": "positive",
         "margin_top": 56,
@@ -1464,18 +739,8 @@
     "multicolumn_AefCzX",
     "rich-text",
     "image_with_text",
-    "collection_tabs",
-    "slick_slider",
-    "info_cards",
-    "promotion_cards",
-    "image_hotspots",
     "testimonials",
-    "featured_product",
-    "two_images_text",
     "featured_blog",
-    "events_calendar",
-    "featured_collection",
-    "multicolumn",
     "image_banner"
   ]
 }
