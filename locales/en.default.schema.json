@@ -6236,6 +6236,15 @@
               "label": "Corner radius",
               "info": "Enter a value from 0 to 200 px."
             },
+            "title_width": {
+              "label": "Width (px)"
+            },
+            "title_height": {
+              "label": "Height (px)"
+            },
+            "title_size": {
+              "info": "Use 0 to fit the text. Text is centered when a size is set."
+            },
             "subheading_position": {
               "label": "Subheading position",
               "options__1": {

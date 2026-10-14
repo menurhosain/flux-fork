@@ -6236,6 +6236,15 @@
               "label": "Rayon d’angle",
               "info": "Saisissez une valeur de 0 à 200 px."
             },
+            "title_width": {
+              "label": "Largeur (px)"
+            },
+            "title_height": {
+              "label": "Hauteur (px)"
+            },
+            "title_size": {
+              "info": "Utilisez 0 pour s’adapter au texte. Le texte est centré lorsqu’une taille est définie."
+            },
             "subheading_position": {
               "label": "Position du sous-titre",
               "options__1": {

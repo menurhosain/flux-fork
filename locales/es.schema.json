@@ -6237,6 +6237,15 @@
               "label": "Radio de esquina",
               "info": "Introduce un valor de 0 a 200 px."
             },
+            "title_width": {
+              "label": "Ancho (px)"
+            },
+            "title_height": {
+              "label": "Alto (px)"
+            },
+            "title_size": {
+              "info": "Usa 0 para ajustarse al texto. El texto se centra cuando se define un tamaño."
+            },
             "subheading_position": {
               "label": "Posición del subtítulo",
               "options__1": {

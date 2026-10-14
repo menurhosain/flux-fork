@@ -6236,6 +6236,15 @@
               "label": "Raggio angoli",
               "info": "Inserisci un valore da 0 a 200 px."
             },
+            "title_width": {
+              "label": "Larghezza (px)"
+            },
+            "title_height": {
+              "label": "Altezza (px)"
+            },
+            "title_size": {
+              "info": "Usa 0 per adattarsi al testo. Il testo viene centrato quando è impostata una dimensione."
+            },
             "subheading_position": {
               "label": "Posizione del sottotitolo",
               "options__1": {

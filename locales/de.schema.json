@@ -6237,6 +6237,15 @@
               "label": "Eckenradius",
               "info": "Geben Sie einen Wert von 0 bis 200 px ein."
             },
+            "title_width": {
+              "label": "Breite (px)"
+            },
+            "title_height": {
+              "label": "Höhe (px)"
+            },
+            "title_size": {
+              "info": "0 verwenden, um sich dem Text anzupassen. Bei fester Größe wird der Text zentriert."
+            },
             "subheading_position": {
               "label": "Position der Unterüberschrift",
               "options__1": {

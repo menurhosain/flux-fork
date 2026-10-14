@@ -139,7 +139,23 @@
     -%}
     {%- liquid
       assign title_radius = block.settings.title_border_radius | default: 0 | at_least: 0 | at_most: 200
+      assign title_width = block.settings.title_width | default: 0 | at_least: 0
+      assign title_height = block.settings.title_height | default: 0 | at_least: 0
     -%}
+    {%- if title_width > 0 or title_height > 0 %}
+      #ColumnInfo-{{ block.id }} .multicolumn-card__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        {%- if title_width > 0 %}
+          width: {{ title_width }}px;
+        {%- endif %}
+        {%- if title_height > 0 %}
+          height: {{ title_height }}px;
+        {%- endif %}
+      }
+    {%- endif %}
     {%- if el_has_bg or title_radius > 0 or block.settings.title_custom_padding %}
       #ColumnInfo-{{ block.id }} .multicolumn-card__title {
         {%- if el_has_bg %}
@@ -454,6 +470,20 @@
       "default": 0,
       "label": "t:sections.multicolumn.blocks.column.settings.title_border_radius.label",
       "info": "t:sections.multicolumn.blocks.column.settings.title_border_radius.info"
+    },
+    {
+      "type": "number",
+      "id": "title_width",
+      "default": 0,
+      "label": "t:sections.multicolumn.blocks.column.settings.title_width.label",
+      "info": "t:sections.multicolumn.blocks.column.settings.title_size.info"
+    },
+    {
+      "type": "number",
+      "id": "title_height",
+      "default": 0,
+      "label": "t:sections.multicolumn.blocks.column.settings.title_height.label",
+      "info": "t:sections.multicolumn.blocks.column.settings.title_size.info"
     },
     {
       "type": "checkbox",
