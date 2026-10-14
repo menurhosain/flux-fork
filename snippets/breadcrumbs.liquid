@@ -1,7 +1,18 @@
+{% comment %}
+  Renders breadcrumbs navigation.
+
+  Accepts:
+  - style: {String} Optional. 'border', 'no-border' or 'background'. Defaults to settings.breadcrumbs_style
+  - wrapper_class: {String} Optional. Wrapper class. Defaults to 'page-width'
+{% endcomment %}
 {{ 'component-breadcrumbs.css' | asset_url | stylesheet_tag }}
 {%- unless template == 'index' or template == 'cart' or template == '404' -%}
   {% assign t = template | split: '.' | first %}
-  <div class="page-width {{ settings.breadcrumbs_style }}">
+  {%- liquid
+    assign breadcrumbs_style = style | default: settings.breadcrumbs_style
+    assign breadcrumbs_wrapper = wrapper_class | default: 'page-width'
+  -%}
+  <div class="{{ breadcrumbs_wrapper }} {{ breadcrumbs_style }}">
     <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
       <ol>
         <li>

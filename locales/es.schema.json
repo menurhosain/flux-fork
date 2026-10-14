@@ -8644,6 +8644,45 @@
         }
       }
     },
+    "breadcrumbs": {
+      "name": "Ruta de navegación",
+      "settings": {
+        "info": {
+          "content": "La ruta de navegación se oculta en la página de inicio, el carrito y la página 404."
+        },
+        "show_border": {
+          "label": "Mostrar borde"
+        },
+        "border_color": {
+          "label": "Color del borde"
+        },
+        "background_color": {
+          "label": "Color de fondo"
+        },
+        "text_color": {
+          "label": "Color del texto",
+          "info": "Déjalo vacío para usar el esquema de colores. La página actual usa un 70 % de opacidad."
+        },
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "font_size": {
+          "label": "Tamaño de fuente"
+        },
+        "show_on_mobile": {
+          "label": "Mostrar en móvil"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Liquid personalizado"
     },

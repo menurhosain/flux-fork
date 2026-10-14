@@ -8643,6 +8643,45 @@
         }
       }
     },
+    "breadcrumbs": {
+      "name": "Fil d'Ariane",
+      "settings": {
+        "info": {
+          "content": "Le fil d'Ariane est masqué sur la page d'accueil, le panier et la page 404."
+        },
+        "show_border": {
+          "label": "Afficher la bordure"
+        },
+        "border_color": {
+          "label": "Couleur de la bordure"
+        },
+        "background_color": {
+          "label": "Couleur d'arrière-plan"
+        },
+        "text_color": {
+          "label": "Couleur du texte",
+          "info": "Laissez vide pour utiliser le schéma de couleurs. La page actuelle utilise 70 % d'opacité."
+        },
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Gauche"
+          },
+          "options__2": {
+            "label": "Centre"
+          },
+          "options__3": {
+            "label": "Droite"
+          }
+        },
+        "font_size": {
+          "label": "Taille de police"
+        },
+        "show_on_mobile": {
+          "label": "Afficher sur mobile"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Liquid personnalisé"
     },

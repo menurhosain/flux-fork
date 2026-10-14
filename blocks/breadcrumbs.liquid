@@ -1,0 +1,158 @@
+{%- liquid
+  assign text_color = block.settings.text_color
+  assign background_color = block.settings.background_color
+  assign has_background = false
+  if background_color != blank and background_color.alpha != 0
+    assign has_background = true
+  endif
+  assign no_breadcrumbs = false
+  if template == 'index' or template == 'cart' or template == '404'
+    assign no_breadcrumbs = true
+  endif
+-%}
+
+<div
+  class="block-breadcrumbs block-breadcrumbs-{{ block.id }} block-breadcrumbs--{{ block.settings.alignment }}{% if block.settings.show_on_mobile == false %} block-breadcrumbs--hide-mobile{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  {%- if no_breadcrumbs -%}
+    {%- if request.design_mode -%}
+      {{ 'component-breadcrumbs.css' | asset_url | stylesheet_tag }}
+      <div class="no-border">
+        <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+          <ol>
+            <li>
+              <a class="link" href="{{ shop.url }}">{{ 'general.breadcrumbs.shop_url' | t }}</a>
+            </li>
+            <li>
+              <a class="link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    {%- endif -%}
+  {%- else -%}
+    {%- render 'breadcrumbs', style: 'no-border', wrapper_class: 'block-breadcrumbs__inner' -%}
+  {%- endif -%}
+</div>
+
+{%- style -%}
+  .block-breadcrumbs-{{ block.id }} .breadcrumbs {
+    margin: 0;
+  }
+  .block-breadcrumbs-{{ block.id }} .breadcrumbs a {
+    font-size: {{ block.settings.font_size | divided_by: 10.0 }}rem;
+  }
+  .block-breadcrumbs-{{ block.id }} .breadcrumbs ol {
+    border-bottom: none;
+  }
+  {%- if block.settings.show_border or has_background %}
+    .block-breadcrumbs-{{ block.id }} .breadcrumbs {
+      {%- if block.settings.show_border %}
+        border: 1px solid {{ block.settings.border_color }};
+      {%- endif %}
+      {%- if has_background %}
+        background: {{ background_color }};
+      {%- endif %}
+      border-radius: var(--media-radius);
+      display: inline-block;
+    }
+    .block-breadcrumbs-{{ block.id }} .breadcrumbs ol {
+      padding: 0 10px;
+    }
+  {%- endif %}
+  {%- if text_color != blank and text_color.alpha != 0 %}
+    .block-breadcrumbs-{{ block.id }} .breadcrumbs a,
+    .block-breadcrumbs-{{ block.id }} .breadcrumbs li:not(:last-child):after {
+      color: {{ text_color }};
+    }
+    .block-breadcrumbs-{{ block.id }} .breadcrumbs [aria-current="page"] {
+      color: {{ text_color | color_modify: 'alpha', 0.7 }};
+    }
+  {%- endif %}
+  .block-breadcrumbs--left { text-align: left; }
+  .block-breadcrumbs--center { text-align: center; }
+  .block-breadcrumbs--right { text-align: right; }
+  @media screen and (max-width: 749px) {
+    .block-breadcrumbs--hide-mobile {
+      display: none;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "t:blocks.breadcrumbs.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:blocks.breadcrumbs.settings.info.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_border",
+      "default": true,
+      "label": "t:blocks.breadcrumbs.settings.show_border.label"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "default": "#e5e5e5",
+      "label": "t:blocks.breadcrumbs.settings.border_color.label"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:blocks.breadcrumbs.settings.background_color.label"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:blocks.breadcrumbs.settings.text_color.label",
+      "info": "t:blocks.breadcrumbs.settings.text_color.info"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:blocks.breadcrumbs.settings.alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:blocks.breadcrumbs.settings.alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:blocks.breadcrumbs.settings.alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:blocks.breadcrumbs.settings.alignment.label"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:blocks.breadcrumbs.settings.font_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_mobile",
+      "default": true,
+      "label": "t:blocks.breadcrumbs.settings.show_on_mobile.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:blocks.breadcrumbs.name"
+    }
+  ]
+}
+{% endschema %}

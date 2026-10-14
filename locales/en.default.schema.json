@@ -8643,6 +8643,45 @@
         }
       }
     },
+    "breadcrumbs": {
+      "name": "Breadcrumbs",
+      "settings": {
+        "info": {
+          "content": "Breadcrumbs are hidden on the home, cart and 404 pages."
+        },
+        "show_border": {
+          "label": "Show border"
+        },
+        "border_color": {
+          "label": "Border color"
+        },
+        "background_color": {
+          "label": "Background color"
+        },
+        "text_color": {
+          "label": "Text color",
+          "info": "Leave empty to use the color scheme. Current page uses 70% opacity."
+        },
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        },
+        "font_size": {
+          "label": "Font size"
+        },
+        "show_on_mobile": {
+          "label": "Show on mobile"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Custom Liquid"
     },

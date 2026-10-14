@@ -8644,6 +8644,45 @@
         }
       }
     },
+    "breadcrumbs": {
+      "name": "Breadcrumbs",
+      "settings": {
+        "info": {
+          "content": "Breadcrumbs werden auf der Startseite, im Warenkorb und auf der 404-Seite ausgeblendet."
+        },
+        "show_border": {
+          "label": "Rand anzeigen"
+        },
+        "border_color": {
+          "label": "Randfarbe"
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe"
+        },
+        "text_color": {
+          "label": "Textfarbe",
+          "info": "Leer lassen, um das Farbschema zu verwenden. Die aktuelle Seite nutzt 70 % Deckkraft."
+        },
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Mittig"
+          },
+          "options__3": {
+            "label": "Rechts"
+          }
+        },
+        "font_size": {
+          "label": "Schriftgröße"
+        },
+        "show_on_mobile": {
+          "label": "Auf Mobilgeräten anzeigen"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Benutzerdefiniertes Liquid"
     },

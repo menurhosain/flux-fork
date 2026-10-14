@@ -8643,6 +8643,45 @@
         }
       }
     },
+    "breadcrumbs": {
+      "name": "Breadcrumb",
+      "settings": {
+        "info": {
+          "content": "I breadcrumb sono nascosti nella home page, nel carrello e nella pagina 404."
+        },
+        "show_border": {
+          "label": "Mostra bordo"
+        },
+        "border_color": {
+          "label": "Colore bordo"
+        },
+        "background_color": {
+          "label": "Colore di sfondo"
+        },
+        "text_color": {
+          "label": "Colore testo",
+          "info": "Lascia vuoto per usare lo schema di colori. La pagina corrente usa il 70% di opacità."
+        },
+        "alignment": {
+          "label": "Allineamento",
+          "options__1": {
+            "label": "Sinistra"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Destra"
+          }
+        },
+        "font_size": {
+          "label": "Dimensione carattere"
+        },
+        "show_on_mobile": {
+          "label": "Mostra su dispositivi mobili"
+        }
+      }
+    },
     "custom_liquid": {
       "name": "Liquid personalizzato"
     },
