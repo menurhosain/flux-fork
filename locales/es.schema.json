@@ -3778,6 +3778,25 @@
     "image-with-text": {
       "name": "Imagen con texto",
       "settings": {
+        "header_content_padding": {
+          "content": "Relleno del cuadro de texto"
+        },
+        "content_custom_padding": {
+          "label": "Usar relleno personalizado del cuadro de texto",
+          "info": "Se aplica en escritorio (990px o más). Reemplaza el relleno predeterminado del tema alrededor del texto."
+        },
+        "content_padding_top": {
+          "label": "Relleno superior (px)"
+        },
+        "content_padding_right": {
+          "label": "Relleno derecho (px)"
+        },
+        "content_padding_bottom": {
+          "label": "Relleno inferior (px)"
+        },
+        "content_padding_left": {
+          "label": "Relleno izquierdo (px)"
+        },
         "image": {
           "label": "Imagen"
         },

@@ -3778,6 +3778,25 @@
     "image-with-text": {
       "name": "Bild mit Text",
       "settings": {
+        "header_content_padding": {
+          "content": "Innenabstand des Textfelds"
+        },
+        "content_custom_padding": {
+          "label": "Benutzerdefinierten Innenabstand für das Textfeld verwenden",
+          "info": "Gilt auf dem Desktop (ab 990px). Ersetzt den Standard-Innenabstand des Themes um den Text."
+        },
+        "content_padding_top": {
+          "label": "Innenabstand oben (px)"
+        },
+        "content_padding_right": {
+          "label": "Innenabstand rechts (px)"
+        },
+        "content_padding_bottom": {
+          "label": "Innenabstand unten (px)"
+        },
+        "content_padding_left": {
+          "label": "Innenabstand links (px)"
+        },
         "image": {
           "label": "Bild"
         },

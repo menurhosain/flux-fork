@@ -3778,6 +3778,25 @@
     "image-with-text": {
       "name": "Immagine con testo",
       "settings": {
+        "header_content_padding": {
+          "content": "Spaziatura interna del riquadro di testo"
+        },
+        "content_custom_padding": {
+          "label": "Usa spaziatura interna personalizzata per il riquadro di testo",
+          "info": "Si applica su desktop (990px e oltre). Sostituisce la spaziatura interna predefinita del tema attorno al testo."
+        },
+        "content_padding_top": {
+          "label": "Spaziatura interna superiore (px)"
+        },
+        "content_padding_right": {
+          "label": "Spaziatura interna destra (px)"
+        },
+        "content_padding_bottom": {
+          "label": "Spaziatura interna inferiore (px)"
+        },
+        "content_padding_left": {
+          "label": "Spaziatura interna sinistra (px)"
+        },
         "image": {
           "label": "Immagine"
         },

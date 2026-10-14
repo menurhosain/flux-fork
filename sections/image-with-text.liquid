@@ -22,6 +22,14 @@
     }
   {%- endif %}
 
+  {%- if section.settings.content_custom_padding %}
+    @media screen and (min-width: 990px) {
+      #ImageWithText--{{ section.id }} {
+        padding: {{ section.settings.content_padding_top | default: 0 | at_least: 0 }}px {{ section.settings.content_padding_right | default: 0 | at_least: 0 }}px {{ section.settings.content_padding_bottom | default: 0 | at_least: 0 }}px {{ section.settings.content_padding_left | default: 0 | at_least: 0 }}px;
+      }
+    }
+  {%- endif %}
+
   @media screen and (max-width: 990px) {
     .margin-spacing-negative.section-{{ section.id }}-margin {
       margin-top: -{{ section.settings.margin_top }}px;
@@ -239,6 +247,45 @@
       "id": "ignore_spacing",
       "default": false,
       "label": "t:sections.all.ignore_spacing.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.image-with-text.settings.header_content_padding.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "content_custom_padding",
+      "default": false,
+      "label": "t:sections.image-with-text.settings.content_custom_padding.label",
+      "info": "t:sections.image-with-text.settings.content_custom_padding.info"
+    },
+    {
+      "type": "number",
+      "id": "content_padding_top",
+      "default": 0,
+      "label": "t:sections.image-with-text.settings.content_padding_top.label",
+      "visible_if": "{{ section.settings.content_custom_padding }}"
+    },
+    {
+      "type": "number",
+      "id": "content_padding_right",
+      "default": 70,
+      "label": "t:sections.image-with-text.settings.content_padding_right.label",
+      "visible_if": "{{ section.settings.content_custom_padding }}"
+    },
+    {
+      "type": "number",
+      "id": "content_padding_bottom",
+      "default": 200,
+      "label": "t:sections.image-with-text.settings.content_padding_bottom.label",
+      "visible_if": "{{ section.settings.content_custom_padding }}"
+    },
+    {
+      "type": "number",
+      "id": "content_padding_left",
+      "default": 70,
+      "label": "t:sections.image-with-text.settings.content_padding_left.label",
+      "visible_if": "{{ section.settings.content_custom_padding }}"
     },
     {
       "type": "header",

@@ -3778,6 +3778,25 @@
     "image-with-text": {
       "name": "Image with text",
       "settings": {
+        "header_content_padding": {
+          "content": "Text box padding"
+        },
+        "content_custom_padding": {
+          "label": "Use custom text box padding",
+          "info": "Applies on desktop (990px and wider). Replaces the theme's default padding around the text."
+        },
+        "content_padding_top": {
+          "label": "Top padding (px)"
+        },
+        "content_padding_right": {
+          "label": "Right padding (px)"
+        },
+        "content_padding_bottom": {
+          "label": "Bottom padding (px)"
+        },
+        "content_padding_left": {
+          "label": "Left padding (px)"
+        },
         "image": {
           "label": "Image"
         },

@@ -3778,6 +3778,25 @@
     "image-with-text": {
       "name": "Image avec texte",
       "settings": {
+        "header_content_padding": {
+          "content": "Marge intérieure de la zone de texte"
+        },
+        "content_custom_padding": {
+          "label": "Utiliser une marge intérieure personnalisée pour la zone de texte",
+          "info": "S’applique sur ordinateur (990px et plus). Remplace la marge intérieure par défaut du thème autour du texte."
+        },
+        "content_padding_top": {
+          "label": "Marge intérieure haut (px)"
+        },
+        "content_padding_right": {
+          "label": "Marge intérieure droite (px)"
+        },
+        "content_padding_bottom": {
+          "label": "Marge intérieure bas (px)"
+        },
+        "content_padding_left": {
+          "label": "Marge intérieure gauche (px)"
+        },
         "image": {
           "label": "Image"
         },
