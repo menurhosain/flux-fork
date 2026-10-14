@@ -69,17 +69,59 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<{{ block.settings.heading_tag }}
-  class="block-heading animated-highlight block-heading-{{ block.id }} highlight-{{ block.settings.highlight_option }} heading-bold {{ block.settings.heading_size }} heading-{{ block.settings.heading_style }}"
-  {{ block.shopify_attributes }}
->
-  {{ block.settings.heading | replace: 'p>', 'span>' }}
-</{{ block.settings.heading_tag }}>
+{%- if block.settings.heading != blank -%}
+  <{{ block.settings.heading_tag }}
+    id="Heading-{{ block.id }}"
+    class="block-heading animated-highlight block-heading-{{ block.id }} highlight-{{ block.settings.highlight_option }} heading-bold {{ block.settings.heading_size }} heading-{{ block.settings.heading_style }}"
+    {{ block.shopify_attributes }}
+  >
+    {{ block.settings.heading }}
+  </{{ block.settings.heading_tag }}>
+{%- endif -%}
+
+{%- liquid
+  assign text_color = block.settings.text_color
+  assign has_text_color = false
+  if text_color != blank and text_color.alpha != 0
+    assign has_text_color = true
+  endif
+-%}
+{%- if block.settings.custom_font_size or has_text_color or block.settings.custom_spacing or block.settings.alignment != 'inherit' -%}
+  {%- style -%}
+    {%- if block.settings.alignment != 'inherit' %}
+      #Heading-{{ block.id }} {
+        text-align: {{ block.settings.alignment }};
+      }
+    {%- endif %}
+    #Heading-{{ block.id }} {
+      {%- if block.settings.custom_font_size %}
+        font-size: {{ block.settings.font_size_mobile | divided_by: 10.0 }}rem;
+      {%- endif %}
+      {%- if has_text_color %}
+        color: {{ text_color }};
+      {%- endif %}
+      {%- if block.settings.custom_spacing %}
+        margin-top: {{ block.settings.margin_top }}px;
+        margin-bottom: {{ block.settings.margin_bottom }}px;
+        margin-left: {{ block.settings.margin_left }}px;
+        margin-right: {{ block.settings.margin_right }}px;
+      {%- endif %}
+    }
+    {%- if block.settings.custom_font_size %}
+      @media screen and (min-width: 750px) {
+        #Heading-{{ block.id }} {
+          font-size: {{ block.settings.font_size | divided_by: 10.0 }}rem;
+        }
+      }
+    {%- endif %}
+  {%- endstyle -%}
+{%- endif -%}
 
 {% stylesheet %}
   .block-heading em {
     font-style: normal;
     position: relative;
+    z-index: 0;
     opacity: 0;
     animation: fadeInText 1s ease forwards;
     animation-delay: 0.3s;
@@ -89,13 +131,9 @@
     font-style: italic;
   }
 
-  .block-heading em:hover::after {
+  .block-heading.highlight-underline em:hover::after,
+  .block-heading.highlight-underline-hand em:hover::after {
     animation: underlineGrow 0.5s ease forwards;
-  }
-
-  .block-heading p {
-    margin: 0;
-    z-index: 1;
   }
 {% endstylesheet %}
 
@@ -217,6 +255,124 @@
       "id": "word_animation_color",
       "label": "t:sections.image-banner.blocks.heading.settings.word_animation_color.label",
       "default": "#272727"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.heading.settings.header_typography.content"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "t:blocks.heading.settings.alignment.options__1.label"
+        },
+        {
+          "value": "left",
+          "label": "t:blocks.heading.settings.alignment.options__2.label"
+        },
+        {
+          "value": "center",
+          "label": "t:blocks.heading.settings.alignment.options__3.label"
+        },
+        {
+          "value": "right",
+          "label": "t:blocks.heading.settings.alignment.options__4.label"
+        }
+      ],
+      "default": "inherit",
+      "label": "t:blocks.heading.settings.alignment.label"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:blocks.heading.settings.text_color.label",
+      "info": "t:blocks.heading.settings.text_color.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_font_size",
+      "default": false,
+      "label": "t:blocks.heading.settings.custom_font_size.label",
+      "info": "t:blocks.heading.settings.custom_font_size.info"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 52,
+      "label": "t:blocks.heading.settings.font_size.label",
+      "visible_if": "{{ block.settings.custom_font_size }}"
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "default": 40,
+      "label": "t:blocks.heading.settings.font_size_mobile.label",
+      "visible_if": "{{ block.settings.custom_font_size }}"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.heading.settings.header_spacing.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_spacing",
+      "default": false,
+      "label": "t:blocks.heading.settings.custom_spacing.label",
+      "info": "t:blocks.heading.settings.custom_spacing.info"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.heading.settings.margin_top.label",
+      "visible_if": "{{ block.settings.custom_spacing }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 16,
+      "label": "t:blocks.heading.settings.margin_bottom.label",
+      "visible_if": "{{ block.settings.custom_spacing }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_left",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.heading.settings.margin_left.label",
+      "visible_if": "{{ block.settings.custom_spacing }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_right",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.heading.settings.margin_right.label",
+      "visible_if": "{{ block.settings.custom_spacing }}"
     }
   ],
   "presets": [

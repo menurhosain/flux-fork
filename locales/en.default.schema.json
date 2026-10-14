@@ -4783,7 +4783,7 @@
           "info": "Optimal with popup or drawer cart type."
         },
         "enable_quick_add": {
-          "label": "Enable quick add to cart",
+          "label": "Enable quick add to cart"
         },
         "list_color_variants_in_collection": {
           "label": "Show product color variants in collection",
@@ -7880,7 +7880,7 @@
         },
         "adapt_to_image": {
           "label": "Adapt height to first image",
-          "info": "When enabled it overrides slider height settings on desktop and mobile",
+          "info": "When enabled it overrides slider height settings on desktop and mobile"
         },
         "full_width": {
           "label": "Make slider full width"
@@ -8458,7 +8458,7 @@
             "label": "Outline button"
           },
           "label": "Button style"
-        },
+        }
       },
       "presets": {
         "name": "Sticky add to cart"
@@ -8645,13 +8645,172 @@
   },
   "blocks": {
     "heading": {
-      "name": "Heading"
+      "name": "Heading",
+      "settings": {
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Section default"
+          },
+          "options__2": {
+            "label": "Left"
+          },
+          "options__3": {
+            "label": "Center"
+          },
+          "options__4": {
+            "label": "Right"
+          }
+        },
+        "header_typography": {
+          "content": "Typography"
+        },
+        "text_color": {
+          "label": "Text color",
+          "info": "Leave empty to use the section's color scheme."
+        },
+        "custom_font_size": {
+          "label": "Use custom font size",
+          "info": "Overrides the size preset."
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "header_spacing": {
+          "content": "Spacing"
+        },
+        "custom_spacing": {
+          "label": "Use custom spacing",
+          "info": "Overrides the section's default spacing."
+        },
+        "margin_top": {
+          "label": "Top margin"
+        },
+        "margin_bottom": {
+          "label": "Bottom margin"
+        },
+        "margin_left": {
+          "label": "Left margin"
+        },
+        "margin_right": {
+          "label": "Right margin"
+        }
+      }
     },
     "caption": {
-      "name": "Caption"
+      "name": "Caption",
+      "settings": {
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Section default"
+          },
+          "options__2": {
+            "label": "Left"
+          },
+          "options__3": {
+            "label": "Center"
+          },
+          "options__4": {
+            "label": "Right"
+          }
+        },
+        "header_typography": {
+          "content": "Typography"
+        },
+        "text_color": {
+          "label": "Text color",
+          "info": "Leave empty to use the section's color scheme."
+        },
+        "custom_font_size": {
+          "label": "Use custom font size",
+          "info": "Overrides the size preset."
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "header_spacing": {
+          "content": "Spacing"
+        },
+        "custom_spacing": {
+          "label": "Use custom spacing",
+          "info": "Overrides the section's default spacing."
+        },
+        "margin_top": {
+          "label": "Top margin"
+        },
+        "margin_bottom": {
+          "label": "Bottom margin"
+        },
+        "margin_left": {
+          "label": "Left margin"
+        },
+        "margin_right": {
+          "label": "Right margin"
+        }
+      }
     },
     "text": {
-      "name": "Text"
+      "name": "Text",
+      "settings": {
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Section default"
+          },
+          "options__2": {
+            "label": "Left"
+          },
+          "options__3": {
+            "label": "Center"
+          },
+          "options__4": {
+            "label": "Right"
+          }
+        },
+        "header_typography": {
+          "content": "Typography"
+        },
+        "text_color": {
+          "label": "Text color",
+          "info": "Leave empty to use the section's color scheme."
+        },
+        "custom_font_size": {
+          "label": "Use custom font size",
+          "info": "Overrides the size preset."
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "header_spacing": {
+          "content": "Spacing"
+        },
+        "custom_spacing": {
+          "label": "Use custom spacing",
+          "info": "Overrides the section's default spacing."
+        },
+        "margin_top": {
+          "label": "Top margin"
+        },
+        "margin_bottom": {
+          "label": "Bottom margin"
+        },
+        "margin_left": {
+          "label": "Left margin"
+        },
+        "margin_right": {
+          "label": "Right margin"
+        }
+      }
     },
     "button": {
       "name": "Buttons",

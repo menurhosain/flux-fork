@@ -8645,13 +8645,172 @@
   },
   "blocks": {
     "heading": {
-      "name": "Titre"
+      "name": "Titre",
+      "settings": {
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Par défaut de la section"
+          },
+          "options__2": {
+            "label": "Gauche"
+          },
+          "options__3": {
+            "label": "Centre"
+          },
+          "options__4": {
+            "label": "Droite"
+          }
+        },
+        "header_typography": {
+          "content": "Typographie"
+        },
+        "text_color": {
+          "label": "Couleur du texte",
+          "info": "Laissez vide pour utiliser le schéma de couleurs de la section."
+        },
+        "custom_font_size": {
+          "label": "Utiliser une taille de police personnalisée",
+          "info": "Remplace la taille prédéfinie."
+        },
+        "font_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "header_spacing": {
+          "content": "Espacement"
+        },
+        "custom_spacing": {
+          "label": "Utiliser un espacement personnalisé",
+          "info": "Remplace l’espacement par défaut de la section."
+        },
+        "margin_top": {
+          "label": "Marge supérieure"
+        },
+        "margin_bottom": {
+          "label": "Marge inférieure"
+        },
+        "margin_left": {
+          "label": "Marge gauche"
+        },
+        "margin_right": {
+          "label": "Marge droite"
+        }
+      }
     },
     "caption": {
-      "name": "Légende"
+      "name": "Légende",
+      "settings": {
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Par défaut de la section"
+          },
+          "options__2": {
+            "label": "Gauche"
+          },
+          "options__3": {
+            "label": "Centre"
+          },
+          "options__4": {
+            "label": "Droite"
+          }
+        },
+        "header_typography": {
+          "content": "Typographie"
+        },
+        "text_color": {
+          "label": "Couleur du texte",
+          "info": "Laissez vide pour utiliser le schéma de couleurs de la section."
+        },
+        "custom_font_size": {
+          "label": "Utiliser une taille de police personnalisée",
+          "info": "Remplace la taille prédéfinie."
+        },
+        "font_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "header_spacing": {
+          "content": "Espacement"
+        },
+        "custom_spacing": {
+          "label": "Utiliser un espacement personnalisé",
+          "info": "Remplace l’espacement par défaut de la section."
+        },
+        "margin_top": {
+          "label": "Marge supérieure"
+        },
+        "margin_bottom": {
+          "label": "Marge inférieure"
+        },
+        "margin_left": {
+          "label": "Marge gauche"
+        },
+        "margin_right": {
+          "label": "Marge droite"
+        }
+      }
     },
     "text": {
-      "name": "Texte"
+      "name": "Texte",
+      "settings": {
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Par défaut de la section"
+          },
+          "options__2": {
+            "label": "Gauche"
+          },
+          "options__3": {
+            "label": "Centre"
+          },
+          "options__4": {
+            "label": "Droite"
+          }
+        },
+        "header_typography": {
+          "content": "Typographie"
+        },
+        "text_color": {
+          "label": "Couleur du texte",
+          "info": "Laissez vide pour utiliser le schéma de couleurs de la section."
+        },
+        "custom_font_size": {
+          "label": "Utiliser une taille de police personnalisée",
+          "info": "Remplace la taille prédéfinie."
+        },
+        "font_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "header_spacing": {
+          "content": "Espacement"
+        },
+        "custom_spacing": {
+          "label": "Utiliser un espacement personnalisé",
+          "info": "Remplace l’espacement par défaut de la section."
+        },
+        "margin_top": {
+          "label": "Marge supérieure"
+        },
+        "margin_bottom": {
+          "label": "Marge inférieure"
+        },
+        "margin_left": {
+          "label": "Marge gauche"
+        },
+        "margin_right": {
+          "label": "Marge droite"
+        }
+      }
     },
     "button": {
       "name": "Boutons",

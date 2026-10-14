@@ -8646,13 +8646,172 @@
   },
   "blocks": {
     "heading": {
-      "name": "Überschrift"
+      "name": "Überschrift",
+      "settings": {
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Abschnittsstandard"
+          },
+          "options__2": {
+            "label": "Links"
+          },
+          "options__3": {
+            "label": "Mittig"
+          },
+          "options__4": {
+            "label": "Rechts"
+          }
+        },
+        "header_typography": {
+          "content": "Typografie"
+        },
+        "text_color": {
+          "label": "Textfarbe",
+          "info": "Leer lassen, um das Farbschema des Abschnitts zu verwenden."
+        },
+        "custom_font_size": {
+          "label": "Benutzerdefinierte Schriftgröße verwenden",
+          "info": "Überschreibt die voreingestellte Größe."
+        },
+        "font_size": {
+          "label": "Schriftgröße auf dem Desktop"
+        },
+        "font_size_mobile": {
+          "label": "Schriftgröße auf Mobilgeräten"
+        },
+        "header_spacing": {
+          "content": "Abstand"
+        },
+        "custom_spacing": {
+          "label": "Benutzerdefinierten Abstand verwenden",
+          "info": "Überschreibt den Standardabstand des Abschnitts."
+        },
+        "margin_top": {
+          "label": "Oberer Abstand"
+        },
+        "margin_bottom": {
+          "label": "Unterer Abstand"
+        },
+        "margin_left": {
+          "label": "Linker Abstand"
+        },
+        "margin_right": {
+          "label": "Rechter Abstand"
+        }
+      }
     },
     "caption": {
-      "name": "Bildunterschrift"
+      "name": "Bildunterschrift",
+      "settings": {
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Abschnittsstandard"
+          },
+          "options__2": {
+            "label": "Links"
+          },
+          "options__3": {
+            "label": "Mittig"
+          },
+          "options__4": {
+            "label": "Rechts"
+          }
+        },
+        "header_typography": {
+          "content": "Typografie"
+        },
+        "text_color": {
+          "label": "Textfarbe",
+          "info": "Leer lassen, um das Farbschema des Abschnitts zu verwenden."
+        },
+        "custom_font_size": {
+          "label": "Benutzerdefinierte Schriftgröße verwenden",
+          "info": "Überschreibt die voreingestellte Größe."
+        },
+        "font_size": {
+          "label": "Schriftgröße auf dem Desktop"
+        },
+        "font_size_mobile": {
+          "label": "Schriftgröße auf Mobilgeräten"
+        },
+        "header_spacing": {
+          "content": "Abstand"
+        },
+        "custom_spacing": {
+          "label": "Benutzerdefinierten Abstand verwenden",
+          "info": "Überschreibt den Standardabstand des Abschnitts."
+        },
+        "margin_top": {
+          "label": "Oberer Abstand"
+        },
+        "margin_bottom": {
+          "label": "Unterer Abstand"
+        },
+        "margin_left": {
+          "label": "Linker Abstand"
+        },
+        "margin_right": {
+          "label": "Rechter Abstand"
+        }
+      }
     },
     "text": {
-      "name": "Text"
+      "name": "Text",
+      "settings": {
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Abschnittsstandard"
+          },
+          "options__2": {
+            "label": "Links"
+          },
+          "options__3": {
+            "label": "Mittig"
+          },
+          "options__4": {
+            "label": "Rechts"
+          }
+        },
+        "header_typography": {
+          "content": "Typografie"
+        },
+        "text_color": {
+          "label": "Textfarbe",
+          "info": "Leer lassen, um das Farbschema des Abschnitts zu verwenden."
+        },
+        "custom_font_size": {
+          "label": "Benutzerdefinierte Schriftgröße verwenden",
+          "info": "Überschreibt die voreingestellte Größe."
+        },
+        "font_size": {
+          "label": "Schriftgröße auf dem Desktop"
+        },
+        "font_size_mobile": {
+          "label": "Schriftgröße auf Mobilgeräten"
+        },
+        "header_spacing": {
+          "content": "Abstand"
+        },
+        "custom_spacing": {
+          "label": "Benutzerdefinierten Abstand verwenden",
+          "info": "Überschreibt den Standardabstand des Abschnitts."
+        },
+        "margin_top": {
+          "label": "Oberer Abstand"
+        },
+        "margin_bottom": {
+          "label": "Unterer Abstand"
+        },
+        "margin_left": {
+          "label": "Linker Abstand"
+        },
+        "margin_right": {
+          "label": "Rechter Abstand"
+        }
+      }
     },
     "button": {
       "name": "Schaltflächen",

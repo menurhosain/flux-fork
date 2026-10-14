@@ -8645,13 +8645,172 @@
   },
   "blocks": {
     "heading": {
-      "name": "Titolo"
+      "name": "Titolo",
+      "settings": {
+        "alignment": {
+          "label": "Allineamento",
+          "options__1": {
+            "label": "Predefinito della sezione"
+          },
+          "options__2": {
+            "label": "Sinistra"
+          },
+          "options__3": {
+            "label": "Centro"
+          },
+          "options__4": {
+            "label": "Destra"
+          }
+        },
+        "header_typography": {
+          "content": "Tipografia"
+        },
+        "text_color": {
+          "label": "Colore del testo",
+          "info": "Lascia vuoto per usare lo schema di colori della sezione."
+        },
+        "custom_font_size": {
+          "label": "Usa dimensione carattere personalizzata",
+          "info": "Sostituisce la dimensione predefinita."
+        },
+        "font_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "font_size_mobile": {
+          "label": "Dimensione carattere su mobile"
+        },
+        "header_spacing": {
+          "content": "Spaziatura"
+        },
+        "custom_spacing": {
+          "label": "Usa spaziatura personalizzata",
+          "info": "Sostituisce la spaziatura predefinita della sezione."
+        },
+        "margin_top": {
+          "label": "Margine superiore"
+        },
+        "margin_bottom": {
+          "label": "Margine inferiore"
+        },
+        "margin_left": {
+          "label": "Margine sinistro"
+        },
+        "margin_right": {
+          "label": "Margine destro"
+        }
+      }
     },
     "caption": {
-      "name": "Didascalia"
+      "name": "Didascalia",
+      "settings": {
+        "alignment": {
+          "label": "Allineamento",
+          "options__1": {
+            "label": "Predefinito della sezione"
+          },
+          "options__2": {
+            "label": "Sinistra"
+          },
+          "options__3": {
+            "label": "Centro"
+          },
+          "options__4": {
+            "label": "Destra"
+          }
+        },
+        "header_typography": {
+          "content": "Tipografia"
+        },
+        "text_color": {
+          "label": "Colore del testo",
+          "info": "Lascia vuoto per usare lo schema di colori della sezione."
+        },
+        "custom_font_size": {
+          "label": "Usa dimensione carattere personalizzata",
+          "info": "Sostituisce la dimensione predefinita."
+        },
+        "font_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "font_size_mobile": {
+          "label": "Dimensione carattere su mobile"
+        },
+        "header_spacing": {
+          "content": "Spaziatura"
+        },
+        "custom_spacing": {
+          "label": "Usa spaziatura personalizzata",
+          "info": "Sostituisce la spaziatura predefinita della sezione."
+        },
+        "margin_top": {
+          "label": "Margine superiore"
+        },
+        "margin_bottom": {
+          "label": "Margine inferiore"
+        },
+        "margin_left": {
+          "label": "Margine sinistro"
+        },
+        "margin_right": {
+          "label": "Margine destro"
+        }
+      }
     },
     "text": {
-      "name": "Testo"
+      "name": "Testo",
+      "settings": {
+        "alignment": {
+          "label": "Allineamento",
+          "options__1": {
+            "label": "Predefinito della sezione"
+          },
+          "options__2": {
+            "label": "Sinistra"
+          },
+          "options__3": {
+            "label": "Centro"
+          },
+          "options__4": {
+            "label": "Destra"
+          }
+        },
+        "header_typography": {
+          "content": "Tipografia"
+        },
+        "text_color": {
+          "label": "Colore del testo",
+          "info": "Lascia vuoto per usare lo schema di colori della sezione."
+        },
+        "custom_font_size": {
+          "label": "Usa dimensione carattere personalizzata",
+          "info": "Sostituisce la dimensione predefinita."
+        },
+        "font_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "font_size_mobile": {
+          "label": "Dimensione carattere su mobile"
+        },
+        "header_spacing": {
+          "content": "Spaziatura"
+        },
+        "custom_spacing": {
+          "label": "Usa spaziatura personalizzata",
+          "info": "Sostituisce la spaziatura predefinita della sezione."
+        },
+        "margin_top": {
+          "label": "Margine superiore"
+        },
+        "margin_bottom": {
+          "label": "Margine inferiore"
+        },
+        "margin_left": {
+          "label": "Margine sinistro"
+        },
+        "margin_right": {
+          "label": "Margine destro"
+        }
+      }
     },
     "button": {
       "name": "Pulsanti",

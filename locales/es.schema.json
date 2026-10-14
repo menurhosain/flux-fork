@@ -8646,13 +8646,172 @@
   },
   "blocks": {
     "heading": {
-      "name": "Encabezado"
+      "name": "Encabezado",
+      "settings": {
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Predeterminado de la sección"
+          },
+          "options__2": {
+            "label": "Izquierda"
+          },
+          "options__3": {
+            "label": "Centro"
+          },
+          "options__4": {
+            "label": "Derecha"
+          }
+        },
+        "header_typography": {
+          "content": "Tipografía"
+        },
+        "text_color": {
+          "label": "Color del texto",
+          "info": "Déjalo vacío para usar el esquema de colores de la sección."
+        },
+        "custom_font_size": {
+          "label": "Usar tamaño de fuente personalizado",
+          "info": "Reemplaza el tamaño predefinido."
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "header_spacing": {
+          "content": "Espaciado"
+        },
+        "custom_spacing": {
+          "label": "Usar espaciado personalizado",
+          "info": "Reemplaza el espaciado predeterminado de la sección."
+        },
+        "margin_top": {
+          "label": "Margen superior"
+        },
+        "margin_bottom": {
+          "label": "Margen inferior"
+        },
+        "margin_left": {
+          "label": "Margen izquierdo"
+        },
+        "margin_right": {
+          "label": "Margen derecho"
+        }
+      }
     },
     "caption": {
-      "name": "Leyenda"
+      "name": "Leyenda",
+      "settings": {
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Predeterminado de la sección"
+          },
+          "options__2": {
+            "label": "Izquierda"
+          },
+          "options__3": {
+            "label": "Centro"
+          },
+          "options__4": {
+            "label": "Derecha"
+          }
+        },
+        "header_typography": {
+          "content": "Tipografía"
+        },
+        "text_color": {
+          "label": "Color del texto",
+          "info": "Déjalo vacío para usar el esquema de colores de la sección."
+        },
+        "custom_font_size": {
+          "label": "Usar tamaño de fuente personalizado",
+          "info": "Reemplaza el tamaño predefinido."
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "header_spacing": {
+          "content": "Espaciado"
+        },
+        "custom_spacing": {
+          "label": "Usar espaciado personalizado",
+          "info": "Reemplaza el espaciado predeterminado de la sección."
+        },
+        "margin_top": {
+          "label": "Margen superior"
+        },
+        "margin_bottom": {
+          "label": "Margen inferior"
+        },
+        "margin_left": {
+          "label": "Margen izquierdo"
+        },
+        "margin_right": {
+          "label": "Margen derecho"
+        }
+      }
     },
     "text": {
-      "name": "Texto"
+      "name": "Texto",
+      "settings": {
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Predeterminado de la sección"
+          },
+          "options__2": {
+            "label": "Izquierda"
+          },
+          "options__3": {
+            "label": "Centro"
+          },
+          "options__4": {
+            "label": "Derecha"
+          }
+        },
+        "header_typography": {
+          "content": "Tipografía"
+        },
+        "text_color": {
+          "label": "Color del texto",
+          "info": "Déjalo vacío para usar el esquema de colores de la sección."
+        },
+        "custom_font_size": {
+          "label": "Usar tamaño de fuente personalizado",
+          "info": "Reemplaza el tamaño predefinido."
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "header_spacing": {
+          "content": "Espaciado"
+        },
+        "custom_spacing": {
+          "label": "Usar espaciado personalizado",
+          "info": "Reemplaza el espaciado predeterminado de la sección."
+        },
+        "margin_top": {
+          "label": "Margen superior"
+        },
+        "margin_bottom": {
+          "label": "Margen inferior"
+        },
+        "margin_left": {
+          "label": "Margen izquierdo"
+        },
+        "margin_right": {
+          "label": "Margen derecho"
+        }
+      }
     },
     "button": {
       "name": "Botones",
