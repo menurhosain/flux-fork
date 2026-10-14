@@ -347,6 +347,51 @@
       "default": 0,
       "label": "t:blocks.button.settings.margin_right.label",
       "visible_if": "{{ block.settings.custom_margin }}"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.button.settings.header_icon.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "t:blocks.button.settings.icon.label"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 20,
+      "label": "t:blocks.button.settings.icon_size.label"
+    },
+    {
+      "type": "select",
+      "id": "icon_position",
+      "options": [
+        {
+          "value": "first",
+          "label": "t:blocks.button.settings.icon_position.options__1.label"
+        },
+        {
+          "value": "last",
+          "label": "t:blocks.button.settings.icon_position.options__2.label"
+        }
+      ],
+      "default": "last",
+      "label": "t:blocks.button.settings.icon_position.label"
+    },
+    {
+      "type": "range",
+      "id": "icon_spacing",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 8,
+      "label": "t:blocks.button.settings.icon_spacing.label"
     }
   ],
   "presets": [
