@@ -6170,6 +6170,81 @@
             "title": {
               "label": "Titre"
             },
+            "subheading": {
+              "label": "Sous-titre",
+              "info": "Affiché au-dessus ou en dessous du titre de la colonne."
+            },
+            "header_title_style": {
+              "content": "Style du titre"
+            },
+            "header_subheading_style": {
+              "content": "Style du sous-titre"
+            },
+            "header_text_style": {
+              "content": "Style du contenu"
+            },
+            "color": {
+              "label": "Couleur",
+              "info": "Laissez vide pour utiliser le schéma de couleurs de la section."
+            },
+            "custom_font_size": {
+              "label": "Utiliser une taille de police personnalisée"
+            },
+            "font_size": {
+              "label": "Taille de police sur ordinateur"
+            },
+            "font_size_mobile": {
+              "label": "Taille de police sur mobile"
+            },
+            "custom_margin": {
+              "label": "Utiliser une marge personnalisée"
+            },
+            "margin_top": {
+              "label": "Marge supérieure (px)"
+            },
+            "margin_bottom": {
+              "label": "Marge inférieure (px)"
+            },
+            "margin_left": {
+              "label": "Marge gauche (px)"
+            },
+            "margin_right": {
+              "label": "Marge droite (px)"
+            },
+            "background_color": {
+              "label": "Couleur d’arrière-plan"
+            },
+            "border_radius": {
+              "label": "Rayon d’angle"
+            },
+            "custom_padding": {
+              "label": "Utiliser une marge intérieure personnalisée"
+            },
+            "padding_top": {
+              "label": "Marge intérieure haut (px)"
+            },
+            "padding_bottom": {
+              "label": "Marge intérieure bas (px)"
+            },
+            "padding_left": {
+              "label": "Marge intérieure gauche (px)"
+            },
+            "padding_right": {
+              "label": "Marge intérieure droite (px)"
+            },
+            "title_border_radius": {
+              "label": "Rayon d’angle",
+              "info": "Saisissez une valeur de 0 à 200 px."
+            },
+            "subheading_position": {
+              "label": "Position du sous-titre",
+              "options__1": {
+                "label": "Avant le titre"
+              },
+              "options__2": {
+                "label": "Après le titre"
+              }
+            },
             "text": {
               "label": "Description"
             },

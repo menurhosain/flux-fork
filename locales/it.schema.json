@@ -6170,6 +6170,81 @@
             "title": {
               "label": "Intestazione"
             },
+            "subheading": {
+              "label": "Sottotitolo",
+              "info": "Mostrato sopra o sotto il titolo della colonna."
+            },
+            "header_title_style": {
+              "content": "Stile del titolo"
+            },
+            "header_subheading_style": {
+              "content": "Stile del sottotitolo"
+            },
+            "header_text_style": {
+              "content": "Stile del contenuto"
+            },
+            "color": {
+              "label": "Colore",
+              "info": "Lascia vuoto per usare lo schema di colori della sezione."
+            },
+            "custom_font_size": {
+              "label": "Usa dimensione carattere personalizzata"
+            },
+            "font_size": {
+              "label": "Dimensione carattere su desktop"
+            },
+            "font_size_mobile": {
+              "label": "Dimensione carattere su mobile"
+            },
+            "custom_margin": {
+              "label": "Usa margine personalizzato"
+            },
+            "margin_top": {
+              "label": "Margine superiore (px)"
+            },
+            "margin_bottom": {
+              "label": "Margine inferiore (px)"
+            },
+            "margin_left": {
+              "label": "Margine sinistro (px)"
+            },
+            "margin_right": {
+              "label": "Margine destro (px)"
+            },
+            "background_color": {
+              "label": "Colore di sfondo"
+            },
+            "border_radius": {
+              "label": "Raggio angoli"
+            },
+            "custom_padding": {
+              "label": "Usa spaziatura interna personalizzata"
+            },
+            "padding_top": {
+              "label": "Spaziatura interna superiore (px)"
+            },
+            "padding_bottom": {
+              "label": "Spaziatura interna inferiore (px)"
+            },
+            "padding_left": {
+              "label": "Spaziatura interna sinistra (px)"
+            },
+            "padding_right": {
+              "label": "Spaziatura interna destra (px)"
+            },
+            "title_border_radius": {
+              "label": "Raggio angoli",
+              "info": "Inserisci un valore da 0 a 200 px."
+            },
+            "subheading_position": {
+              "label": "Posizione del sottotitolo",
+              "options__1": {
+                "label": "Prima del titolo"
+              },
+              "options__2": {
+                "label": "Dopo il titolo"
+              }
+            },
             "text": {
               "label": "Descrizione"
             },

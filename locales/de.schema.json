@@ -6171,6 +6171,81 @@
             "title": {
               "label": "Überschrift"
             },
+            "subheading": {
+              "label": "Unterüberschrift",
+              "info": "Wird über oder unter der Spaltenüberschrift angezeigt."
+            },
+            "header_title_style": {
+              "content": "Stil der Überschrift"
+            },
+            "header_subheading_style": {
+              "content": "Stil der Unterüberschrift"
+            },
+            "header_text_style": {
+              "content": "Stil des Inhalts"
+            },
+            "color": {
+              "label": "Farbe",
+              "info": "Leer lassen, um das Farbschema des Abschnitts zu verwenden."
+            },
+            "custom_font_size": {
+              "label": "Benutzerdefinierte Schriftgröße verwenden"
+            },
+            "font_size": {
+              "label": "Schriftgröße auf dem Desktop"
+            },
+            "font_size_mobile": {
+              "label": "Schriftgröße auf Mobilgeräten"
+            },
+            "custom_margin": {
+              "label": "Benutzerdefinierten Außenabstand verwenden"
+            },
+            "margin_top": {
+              "label": "Oberer Abstand (px)"
+            },
+            "margin_bottom": {
+              "label": "Unterer Abstand (px)"
+            },
+            "margin_left": {
+              "label": "Linker Abstand (px)"
+            },
+            "margin_right": {
+              "label": "Rechter Abstand (px)"
+            },
+            "background_color": {
+              "label": "Hintergrundfarbe"
+            },
+            "border_radius": {
+              "label": "Eckenradius"
+            },
+            "custom_padding": {
+              "label": "Benutzerdefinierten Innenabstand verwenden"
+            },
+            "padding_top": {
+              "label": "Innenabstand oben (px)"
+            },
+            "padding_bottom": {
+              "label": "Innenabstand unten (px)"
+            },
+            "padding_left": {
+              "label": "Innenabstand links (px)"
+            },
+            "padding_right": {
+              "label": "Innenabstand rechts (px)"
+            },
+            "title_border_radius": {
+              "label": "Eckenradius",
+              "info": "Geben Sie einen Wert von 0 bis 200 px ein."
+            },
+            "subheading_position": {
+              "label": "Position der Unterüberschrift",
+              "options__1": {
+                "label": "Vor der Überschrift"
+              },
+              "options__2": {
+                "label": "Nach der Überschrift"
+              }
+            },
             "text": {
               "label": "Beschreibung"
             },

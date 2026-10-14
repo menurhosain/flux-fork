@@ -6171,6 +6171,81 @@
             "title": {
               "label": "Encabezado"
             },
+            "subheading": {
+              "label": "Subtítulo",
+              "info": "Se muestra encima o debajo del encabezado de la columna."
+            },
+            "header_title_style": {
+              "content": "Estilo del encabezado"
+            },
+            "header_subheading_style": {
+              "content": "Estilo del subtítulo"
+            },
+            "header_text_style": {
+              "content": "Estilo del contenido"
+            },
+            "color": {
+              "label": "Color",
+              "info": "Déjalo vacío para usar el esquema de colores de la sección."
+            },
+            "custom_font_size": {
+              "label": "Usar tamaño de fuente personalizado"
+            },
+            "font_size": {
+              "label": "Tamaño de fuente en escritorio"
+            },
+            "font_size_mobile": {
+              "label": "Tamaño de fuente en móvil"
+            },
+            "custom_margin": {
+              "label": "Usar margen personalizado"
+            },
+            "margin_top": {
+              "label": "Margen superior (px)"
+            },
+            "margin_bottom": {
+              "label": "Margen inferior (px)"
+            },
+            "margin_left": {
+              "label": "Margen izquierdo (px)"
+            },
+            "margin_right": {
+              "label": "Margen derecho (px)"
+            },
+            "background_color": {
+              "label": "Color de fondo"
+            },
+            "border_radius": {
+              "label": "Radio de esquina"
+            },
+            "custom_padding": {
+              "label": "Usar relleno personalizado"
+            },
+            "padding_top": {
+              "label": "Relleno superior (px)"
+            },
+            "padding_bottom": {
+              "label": "Relleno inferior (px)"
+            },
+            "padding_left": {
+              "label": "Relleno izquierdo (px)"
+            },
+            "padding_right": {
+              "label": "Relleno derecho (px)"
+            },
+            "title_border_radius": {
+              "label": "Radio de esquina",
+              "info": "Introduce un valor de 0 a 200 px."
+            },
+            "subheading_position": {
+              "label": "Posición del subtítulo",
+              "options__1": {
+                "label": "Antes del encabezado"
+              },
+              "options__2": {
+                "label": "Después del encabezado"
+              }
+            },
             "text": {
               "label": "Descripción"
             },

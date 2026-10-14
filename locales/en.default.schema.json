@@ -6170,6 +6170,81 @@
             "title": {
               "label": "Heading"
             },
+            "subheading": {
+              "label": "Subheading",
+              "info": "Shown above or below the column heading."
+            },
+            "header_title_style": {
+              "content": "Heading style"
+            },
+            "header_subheading_style": {
+              "content": "Subheading style"
+            },
+            "header_text_style": {
+              "content": "Content style"
+            },
+            "color": {
+              "label": "Color",
+              "info": "Leave empty to use the section's color scheme."
+            },
+            "custom_font_size": {
+              "label": "Use custom font size"
+            },
+            "font_size": {
+              "label": "Font size on desktop"
+            },
+            "font_size_mobile": {
+              "label": "Font size on mobile"
+            },
+            "custom_margin": {
+              "label": "Use custom margin"
+            },
+            "margin_top": {
+              "label": "Top margin (px)"
+            },
+            "margin_bottom": {
+              "label": "Bottom margin (px)"
+            },
+            "margin_left": {
+              "label": "Left margin (px)"
+            },
+            "margin_right": {
+              "label": "Right margin (px)"
+            },
+            "background_color": {
+              "label": "Background color"
+            },
+            "border_radius": {
+              "label": "Corner radius"
+            },
+            "custom_padding": {
+              "label": "Use custom padding"
+            },
+            "padding_top": {
+              "label": "Top padding (px)"
+            },
+            "padding_bottom": {
+              "label": "Bottom padding (px)"
+            },
+            "padding_left": {
+              "label": "Left padding (px)"
+            },
+            "padding_right": {
+              "label": "Right padding (px)"
+            },
+            "title_border_radius": {
+              "label": "Corner radius",
+              "info": "Enter a value from 0 to 200 px."
+            },
+            "subheading_position": {
+              "label": "Subheading position",
+              "options__1": {
+                "label": "Before heading"
+              },
+              "options__2": {
+                "label": "After heading"
+              }
+            },
             "text": {
               "label": "Description"
             },
