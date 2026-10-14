@@ -8823,17 +8823,17 @@
           "label": "Benutzerdefinierten Außenabstand verwenden",
           "info": "Überschreibt den Abstand des Abschnitts um die Schaltfläche."
         },
-        "margin_vertical": {
-          "label": "Außenabstand oben und unten auf dem Desktop"
+        "margin_top": {
+          "label": "Oberer Abstand"
         },
-        "margin_horizontal": {
-          "label": "Außenabstand links und rechts auf dem Desktop"
+        "margin_bottom": {
+          "label": "Unterer Abstand"
         },
-        "margin_vertical_mobile": {
-          "label": "Außenabstand oben und unten auf Mobilgeräten"
+        "margin_left": {
+          "label": "Linker Abstand"
         },
-        "margin_horizontal_mobile": {
-          "label": "Außenabstand links und rechts auf Mobilgeräten"
+        "margin_right": {
+          "label": "Rechter Abstand"
         },
         "header_border": {
           "content": "Rahmen"

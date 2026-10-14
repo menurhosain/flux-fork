@@ -8822,17 +8822,17 @@
           "label": "Usa margine personalizzato",
           "info": "Sostituisce la spaziatura della sezione attorno al pulsante."
         },
-        "margin_vertical": {
-          "label": "Margine superiore e inferiore su desktop"
+        "margin_top": {
+          "label": "Margine superiore"
         },
-        "margin_horizontal": {
-          "label": "Margine sinistro e destro su desktop"
+        "margin_bottom": {
+          "label": "Margine inferiore"
         },
-        "margin_vertical_mobile": {
-          "label": "Margine superiore e inferiore su mobile"
+        "margin_left": {
+          "label": "Margine sinistro"
         },
-        "margin_horizontal_mobile": {
-          "label": "Margine sinistro e destro su mobile"
+        "margin_right": {
+          "label": "Margine destro"
         },
         "header_border": {
           "content": "Bordo"

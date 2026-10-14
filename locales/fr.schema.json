@@ -8822,17 +8822,17 @@
           "label": "Utiliser une marge extérieure personnalisée",
           "info": "Remplace l’espacement de la section autour du bouton."
         },
-        "margin_vertical": {
-          "label": "Marge haut et bas sur ordinateur"
+        "margin_top": {
+          "label": "Marge supérieure"
         },
-        "margin_horizontal": {
-          "label": "Marge gauche et droite sur ordinateur"
+        "margin_bottom": {
+          "label": "Marge inférieure"
         },
-        "margin_vertical_mobile": {
-          "label": "Marge haut et bas sur mobile"
+        "margin_left": {
+          "label": "Marge gauche"
         },
-        "margin_horizontal_mobile": {
-          "label": "Marge gauche et droite sur mobile"
+        "margin_right": {
+          "label": "Marge droite"
         },
         "header_border": {
           "content": "Bordure"
