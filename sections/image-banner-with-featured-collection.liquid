@@ -9,6 +9,61 @@
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
+    #shopify-section-{{ section.id }} .collection .slider-button {
+      width: {{ section.settings.slider_button_width }}px;
+      height: {{ section.settings.slider_button_height }}px;
+    }
+
+    #shopify-section-{{ section.id }} .collection .slider-button.slider-button--custom {
+      padding: 0;
+    }
+
+    {%- liquid
+      assign slider_icon_width = section.settings.slider_icon_width
+      if slider_icon_width == 0
+        assign slider_icon_width = 24
+      endif
+      assign slider_icon_height = section.settings.slider_icon_height
+      if slider_icon_height == 0
+        assign slider_icon_height = 24
+      endif
+    -%}
+    #shopify-section-{{ section.id }} .collection .slider-button svg.icon.icon-slider-arrows {
+      {%- if section.settings.slider_icon_width > 0 %}
+      width: {{ section.settings.slider_icon_width }}px;
+      {%- endif %}
+      {%- if section.settings.slider_icon_height > 0 %}
+      height: {{ section.settings.slider_icon_height }}px;
+      {%- endif %}
+      flex-shrink: 0;
+    }
+
+    #shopify-section-{{ section.id }} .slider-button__custom-icon {
+      display: block;
+      flex-shrink: 0;
+      max-width: none;
+      width: {{ slider_icon_width }}px;
+      height: {{ slider_icon_height }}px;
+      object-fit: contain;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    #shopify-section-{{ section.id }} .slider-button__custom-icon--mirrored {
+      transform: scaleX(-1);
+    }
+
+    #shopify-section-{{ section.id }} .slider-button:not([disabled]):hover .slider-button__custom-icon {
+      transform: scale(1.1);
+    }
+
+    #shopify-section-{{ section.id }} .slider-button:not([disabled]):hover .slider-button__custom-icon--mirrored {
+      transform: scaleX(-1) scale(1.1);
+    }
+
+    #shopify-section-{{ section.id }} .slider-button[disabled] .slider-button__custom-icon {
+      opacity: 0.3;
+    }
+
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -261,23 +316,65 @@
           
           {%- if show_mobile_slider or show_desktop_slider -%}
             <div class="color-{{ section.settings.color_scheme_1 }} gradient disable-slider-arrows-{{ section.settings.disable_arrow_mobile }} slider-buttons no-js-hidden">
+              {%- liquid
+                assign prev_arrow = section.settings.slider_prev_icon
+                assign next_arrow = section.settings.slider_next_icon
+                assign prev_arrow_mirrored = false
+                assign next_arrow_mirrored = false
+                if prev_arrow == blank and next_arrow != blank
+                  assign prev_arrow = next_arrow
+                  assign prev_arrow_mirrored = true
+                endif
+                if next_arrow == blank and prev_arrow != blank
+                  assign next_arrow = prev_arrow
+                  assign next_arrow_mirrored = true
+                endif
+              -%}
               <button
                 type="button"
-                class="slider-button slider-button--prev"
+                class="slider-button slider-button--prev{% if prev_arrow != blank %} slider-button--custom{% endif %}"
                 name="previous"
                 aria-label="{{ 'general.slider.previous_slide' | t }}"
                 aria-controls="Slider-{{ section.id }}"
               >
-                {% render 'icon-slider-arrows' %}
+                {%- if prev_arrow != blank -%}
+                  {%- capture prev_arrow_class -%}slider-button__custom-icon{% if prev_arrow_mirrored %} slider-button__custom-icon--mirrored{% endif %}{%- endcapture -%}
+                  {{
+                    prev_arrow
+                    | image_url: width: 200
+                    | image_tag:
+                      class: prev_arrow_class,
+                      width: slider_icon_width,
+                      height: slider_icon_height,
+                      alt: '',
+                      loading: 'lazy'
+                  }}
+                {%- else -%}
+                  {% render 'icon-slider-arrows' %}
+                {%- endif -%}
               </button>
               <button
                 type="button"
-                class="slider-button slider-button--next"
+                class="slider-button slider-button--next{% if next_arrow != blank %} slider-button--custom{% endif %}"
                 name="next"
                 aria-label="{{ 'general.slider.next_slide' | t }}"
                 aria-controls="Slider-{{ section.id }}"
               >
-                {% render 'icon-slider-arrows' %}
+                {%- if next_arrow != blank -%}
+                  {%- capture next_arrow_class -%}slider-button__custom-icon{% if next_arrow_mirrored %} slider-button__custom-icon--mirrored{% endif %}{%- endcapture -%}
+                  {{
+                    next_arrow
+                    | image_url: width: 200
+                    | image_tag:
+                      class: next_arrow_class,
+                      width: slider_icon_width,
+                      height: slider_icon_height,
+                      alt: '',
+                      loading: 'lazy'
+                  }}
+                {%- else -%}
+                  {% render 'icon-slider-arrows' %}
+                {%- endif -%}
               </button>
             </div>
           {%- endif -%}
@@ -755,6 +852,64 @@
       "id": "disable_arrow_mobile",
       "default": true,
       "label": "t:sections.all.disable_arrow_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.image-banner-with-featured-collection.settings.slider_navigation.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "slider_prev_icon",
+      "label": "t:sections.image-banner-with-featured-collection.settings.slider_prev_icon.label",
+      "info": "t:sections.image-banner-with-featured-collection.settings.slider_prev_icon.info"
+    },
+    {
+      "type": "image_picker",
+      "id": "slider_next_icon",
+      "label": "t:sections.image-banner-with-featured-collection.settings.slider_next_icon.label",
+      "info": "t:sections.image-banner-with-featured-collection.settings.slider_next_icon.info"
+    },
+    {
+      "type": "range",
+      "id": "slider_icon_width",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "t:sections.image-banner-with-featured-collection.settings.slider_icon_width.label",
+      "info": "t:sections.image-banner-with-featured-collection.settings.slider_icon_width.info"
+    },
+    {
+      "type": "range",
+      "id": "slider_icon_height",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "t:sections.image-banner-with-featured-collection.settings.slider_icon_height.label",
+      "info": "t:sections.image-banner-with-featured-collection.settings.slider_icon_width.info"
+    },
+    {
+      "type": "range",
+      "id": "slider_button_width",
+      "min": 20,
+      "max": 120,
+      "step": 1,
+      "unit": "px",
+      "default": 34,
+      "label": "t:sections.image-banner-with-featured-collection.settings.slider_button_width.label"
+    },
+    {
+      "type": "range",
+      "id": "slider_button_height",
+      "min": 20,
+      "max": 120,
+      "step": 1,
+      "unit": "px",
+      "default": 34,
+      "label": "t:sections.image-banner-with-featured-collection.settings.slider_button_height.label"
     }
   ],
   "blocks": [

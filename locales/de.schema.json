@@ -2925,6 +2925,30 @@
     "image-banner-with-featured-collection": {
       "name": "Bildbanner-Kollektion",
       "settings": {
+        "slider_navigation": {
+          "content": "Slider-Navigation"
+        },
+        "slider_prev_icon": {
+          "label": "Symbol für Pfeil zurück",
+          "info": "Lade eine SVG hoch. Wenn leer, wird das Symbol für Pfeil weiter gespiegelt."
+        },
+        "slider_next_icon": {
+          "label": "Symbol für Pfeil weiter",
+          "info": "Lade eine SVG hoch. Wenn leer, wird das Symbol für Pfeil zurück gespiegelt."
+        },
+        "slider_icon_width": {
+          "label": "Breite des Pfeilsymbols",
+          "info": "0 px behält die Standardgröße bei (24 px für hochgeladene Symbole). Gilt für Standard- und hochgeladene Pfeilsymbole."
+        },
+        "slider_button_width": {
+          "label": "Breite der Pfeilschaltfläche"
+        },
+        "slider_button_height": {
+          "label": "Höhe der Pfeilschaltfläche"
+        },
+        "slider_icon_height": {
+          "label": "Höhe des Pfeilsymbols"
+        },
         "image": {
           "label": "Bild"
         },

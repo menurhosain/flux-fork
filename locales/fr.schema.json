@@ -2925,6 +2925,30 @@
     "image-banner-with-featured-collection": {
       "name": "Bannière d'image avec collection en vedette",
       "settings": {
+        "slider_navigation": {
+          "content": "Navigation du slider"
+        },
+        "slider_prev_icon": {
+          "label": "Icône de flèche précédente",
+          "info": "Importez un SVG. Si vide, l'icône de flèche suivante est inversée."
+        },
+        "slider_next_icon": {
+          "label": "Icône de flèche suivante",
+          "info": "Importez un SVG. Si vide, l'icône de flèche précédente est inversée."
+        },
+        "slider_icon_width": {
+          "label": "Largeur de l'icône de flèche",
+          "info": "0 px conserve la taille par défaut (24 px pour les icônes importées). S'applique aux icônes de flèche par défaut et importées."
+        },
+        "slider_button_width": {
+          "label": "Largeur du bouton de flèche"
+        },
+        "slider_button_height": {
+          "label": "Hauteur du bouton de flèche"
+        },
+        "slider_icon_height": {
+          "label": "Hauteur de l'icône de flèche"
+        },
         "image": {
           "label": "Image"
         },

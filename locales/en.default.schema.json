@@ -2925,6 +2925,30 @@
     "image-banner-with-featured-collection": {
       "name": "Image banner collection",
       "settings": {
+        "slider_navigation": {
+          "content": "Slider navigation"
+        },
+        "slider_prev_icon": {
+          "label": "Previous arrow icon",
+          "info": "Upload an SVG. If empty, the next arrow icon is mirrored."
+        },
+        "slider_next_icon": {
+          "label": "Next arrow icon",
+          "info": "Upload an SVG. If empty, the previous arrow icon is mirrored."
+        },
+        "slider_icon_width": {
+          "label": "Arrow icon width",
+          "info": "0px keeps the default size (24px for uploaded icons). Applies to the default and uploaded arrow icons."
+        },
+        "slider_button_width": {
+          "label": "Arrow button width"
+        },
+        "slider_button_height": {
+          "label": "Arrow button height"
+        },
+        "slider_icon_height": {
+          "label": "Arrow icon height"
+        },
         "image": {
           "label": "Image"
         },

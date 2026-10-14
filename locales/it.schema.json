@@ -2925,6 +2925,30 @@
     "image-banner-with-featured-collection": {
       "name": "Banner immagine con collezione in evidenza",
       "settings": {
+        "slider_navigation": {
+          "content": "Navigazione slider"
+        },
+        "slider_prev_icon": {
+          "label": "Icona freccia precedente",
+          "info": "Carica un SVG. Se vuoto, l'icona della freccia successiva viene specchiata."
+        },
+        "slider_next_icon": {
+          "label": "Icona freccia successiva",
+          "info": "Carica un SVG. Se vuoto, l'icona della freccia precedente viene specchiata."
+        },
+        "slider_icon_width": {
+          "label": "Larghezza icona freccia",
+          "info": "0 px mantiene la dimensione predefinita (24 px per le icone caricate). Si applica alle icone freccia predefinite e caricate."
+        },
+        "slider_button_width": {
+          "label": "Larghezza pulsante freccia"
+        },
+        "slider_button_height": {
+          "label": "Altezza pulsante freccia"
+        },
+        "slider_icon_height": {
+          "label": "Altezza icona freccia"
+        },
         "image": {
           "label": "Immagine"
         },

@@ -2925,6 +2925,30 @@
     "image-banner-with-featured-collection": {
       "name": "Banner de imagen con colección destacada",
       "settings": {
+        "slider_navigation": {
+          "content": "Navegación del slider"
+        },
+        "slider_prev_icon": {
+          "label": "Icono de flecha anterior",
+          "info": "Sube un SVG. Si está vacío, se refleja el icono de flecha siguiente."
+        },
+        "slider_next_icon": {
+          "label": "Icono de flecha siguiente",
+          "info": "Sube un SVG. Si está vacío, se refleja el icono de flecha anterior."
+        },
+        "slider_icon_width": {
+          "label": "Ancho del icono de flecha",
+          "info": "0 px mantiene el tamaño predeterminado (24 px para iconos subidos). Se aplica a los iconos de flecha predeterminados y subidos."
+        },
+        "slider_button_width": {
+          "label": "Ancho del botón de flecha"
+        },
+        "slider_button_height": {
+          "label": "Alto del botón de flecha"
+        },
+        "slider_icon_height": {
+          "label": "Alto del icono de flecha"
+        },
         "image": {
           "label": "Imagen"
         },
