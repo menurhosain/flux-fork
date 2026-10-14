@@ -75,7 +75,7 @@
         "caption": {
           "type": "caption",
           "settings": {
-            "caption": "Crafting Organic Delights",
+            "caption": "Support That Fits Real Life",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           },
@@ -84,7 +84,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Get to Know the Passionate Minds",
+            "heading": "Discover a healthier, more balanced you with Bacton Health.&nbsp;",
             "heading_size": "medium",
             "heading_style": "default",
             "heading_tag": "h2",
@@ -96,23 +96,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Step behind the scenes and meet the diverse team driving the mission at Flux. From dedicated nutritionists to creative culinary experts, each member brings a unique blend of expertise and passion to the table. </p>",
+            "text": "<p>Explore our thoughtfully selected wellness products designed to support women’s changing needs through menopause and beyond. Whether you’re looking to enhance your daily well-being, support your body’s natural changes, or embrace a healthier lifestyle, we’re here to help you take the next step toward feeling your best.</p>",
             "text_style": "body"
-          },
-          "blocks": {}
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Meet Our Team",
-            "button_link": "",
-            "apply_link_to_image": false,
-            "open_new_tab_1": false,
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "open_new_tab_2": false,
-            "button_style_secondary_2": false
           },
           "blocks": {}
         }
@@ -120,11 +105,12 @@
       "block_order": [
         "caption",
         "heading",
-        "text",
-        "button"
+        "text"
       ],
       "settings": {
-        "layout": "image_first",
+        "image": "shopify://shop_images/bacton-health-03.jpg",
+        "image_2": "shopify://shop_images/bacton-health-05.jpg",
+        "layout": "text_first",
         "color_scheme": "option-2",
         "padding_top": 96,
         "padding_bottom": 96,

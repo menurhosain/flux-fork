@@ -31,10 +31,25 @@
             "word_animation_color": "#272727"
           },
           "blocks": {}
+        },
+        "breadcrumbs_iJBVej": {
+          "type": "breadcrumbs",
+          "name": "t:blocks.breadcrumbs.name",
+          "settings": {
+            "show_border": false,
+            "border_color": "#e5e5e5",
+            "background_color": "",
+            "text_color": "",
+            "alignment": "left",
+            "font_size": 16,
+            "show_on_mobile": true
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "heading_xhVfgX"
+        "heading_xhVfgX",
+        "breadcrumbs_iJBVej"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {

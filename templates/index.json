@@ -203,6 +203,132 @@
         "disable_arrow_mobile": true
       }
     },
+    "multicolumn_AefCzX": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_UrCd6Y": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/icon-3.webp",
+            "hide_image": true,
+            "disable_autoplay": false,
+            "title": "01",
+            "text": "<p>Hot Flashes – Sudden feelings of warmth, often accompanied by sweating and flushing.</p>",
+            "link_label": "",
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
+        },
+        "column_VEYwp8": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/icon-3.webp",
+            "hide_image": true,
+            "disable_autoplay": false,
+            "title": "01",
+            "text": "<p>Hot Flashes – Sudden feelings of warmth, often accompanied by sweating and flushing.</p>",
+            "link_label": "",
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
+        },
+        "column_4ETzzh": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/icon-3.webp",
+            "hide_image": true,
+            "disable_autoplay": false,
+            "title": "01",
+            "text": "<p>Hot Flashes – Sudden feelings of warmth, often accompanied by sweating and flushing.</p>",
+            "link_label": "",
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
+        },
+        "column_exnLjW": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/icon-3.webp",
+            "hide_image": true,
+            "disable_autoplay": false,
+            "title": "01",
+            "text": "<p>Hot Flashes – Sudden feelings of warmth, often accompanied by sweating and flushing.</p>",
+            "link_label": "",
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
+        },
+        "column_fb6tdn": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/icon-3.webp",
+            "hide_image": true,
+            "disable_autoplay": false,
+            "title": "01",
+            "text": "<p>Hot Flashes – Sudden feelings of warmth, often accompanied by sweating and flushing.</p>",
+            "link_label": "",
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
+        },
+        "column_J7Ygkp": {
+          "type": "_column",
+          "settings": {
+            "image": "shopify://shop_images/icon-3.webp",
+            "hide_image": true,
+            "disable_autoplay": false,
+            "title": "01",
+            "text": "<p>Hot Flashes – Sudden feelings of warmth, often accompanied by sweating and flushing.</p>",
+            "link_label": "",
+            "link": "",
+            "open_new_tab_1": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "column_UrCd6Y",
+        "column_VEYwp8",
+        "column_4ETzzh",
+        "column_exnLjW",
+        "column_fb6tdn",
+        "column_J7Ygkp"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "multicolumn_style": "style-two",
+        "enable_card_background": true,
+        "caption": "Start with what you are noticing",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "small",
+        "title": "Have you been feeling stuck with any of these?",
+        "heading_size": "medium",
+        "heading_style": "default",
+        "heading_tag": "h2",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "button_label": "",
+        "button_link": "",
+        "open_new_tab_2": false,
+        "color_scheme": "option-2",
+        "color_scheme_1": "",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "ignore_spacing": false,
+        "margin_spacing": "negative",
+        "margin_top": 0,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "disable_arrow_mobile": true
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -1335,6 +1461,7 @@
   "order": [
     "image_banner_with_featured_collection",
     "collection_list",
+    "multicolumn_AefCzX",
     "rich-text",
     "image_with_text",
     "collection_tabs",
