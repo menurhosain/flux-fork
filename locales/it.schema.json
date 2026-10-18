@@ -1899,6 +1899,15 @@
         "show_excerpt": {
           "label": "Mostra estratto"
         },
+        "custom_post_title_size": {
+          "label": "Usa dimensione personalizzata per i titoli"
+        },
+        "post_title_size": {
+          "label": "Dimensione dei titoli su desktop"
+        },
+        "post_title_size_mobile": {
+          "label": "Dimensione dei titoli su mobile"
+        },
         "blog_style": {
           "label": "Stile del blog",
           "options__1": {
