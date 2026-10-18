@@ -745,7 +745,8 @@
     "blocks-section": {
       "name": "Blocks section",
       "presets": {
-        "name": "Feature cards"
+        "name": "Feature cards",
+      "blank_name": "Blocks section"
       },
       "settings": {
         "full_width": {

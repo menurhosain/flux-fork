@@ -745,7 +745,8 @@
     "blocks-section": {
       "name": "Sezione a blocchi",
       "presets": {
-        "name": "Schede in evidenza"
+        "name": "Schede in evidenza",
+      "blank_name": "Sezione a blocchi"
       },
       "settings": {
         "full_width": {

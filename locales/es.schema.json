@@ -745,7 +745,8 @@
     "blocks-section": {
       "name": "Sección de bloques",
       "presets": {
-        "name": "Tarjetas destacadas"
+        "name": "Tarjetas destacadas",
+      "blank_name": "Sección de bloques"
       },
       "settings": {
         "full_width": {

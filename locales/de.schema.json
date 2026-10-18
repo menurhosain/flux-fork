@@ -745,7 +745,8 @@
     "blocks-section": {
       "name": "Block-Abschnitt",
       "presets": {
-        "name": "Feature-Karten"
+        "name": "Feature-Karten",
+      "blank_name": "Block-Abschnitt"
       },
       "settings": {
         "full_width": {

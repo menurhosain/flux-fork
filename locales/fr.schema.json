@@ -745,7 +745,8 @@
     "blocks-section": {
       "name": "Section de blocs",
       "presets": {
-        "name": "Cartes de fonctionnalités"
+        "name": "Cartes de fonctionnalités",
+      "blank_name": "Section de blocs"
       },
       "settings": {
         "full_width": {
