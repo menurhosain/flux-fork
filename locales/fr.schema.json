@@ -3778,6 +3778,10 @@
     "image-with-text": {
       "name": "Image avec texte",
       "settings": {
+        "contain_content": {
+          "label": "Arrière-plan pleine largeur, contenu dans le conteneur",
+          "info": "L'arrière-plan occupe toute la largeur de l'écran, l'image et le texte restent dans la largeur de la page."
+        },
         "header_content_padding": {
           "content": "Marge intérieure de la zone de texte"
         },

@@ -42,7 +42,8 @@
 
 {% comment %} Start Image with Text {% endcomment %}
 <div class="ignore-{{ section.settings.ignore_spacing }}">
-<div class="image-with-text-section {% if section.settings.layout == 'text_first' %} image-with-text-background--reverse{% endif %} image-with-text section-{{ section.id }}-padding {% if section.settings.full_width %}image-with-text--full-width{% endif %} {% if section.settings.full_width != false %}full-width-border-radius{% endif %} color-{{ section.settings.color_scheme }} gradient margin-spacing-{{ section.settings.margin_spacing }} section-{{ section.id }}-margin">
+<div class="image-with-text-section {% if section.settings.layout == 'text_first' %} image-with-text-background--reverse{% endif %} image-with-text section-{{ section.id }}-padding {% if section.settings.full_width and section.settings.contain_content == false %}image-with-text--full-width{% endif %}{% if section.settings.contain_content %} image-with-text--contained{% endif %} {% if section.settings.full_width != false %}full-width-border-radius{% endif %} color-{{ section.settings.color_scheme }} gradient margin-spacing-{{ section.settings.margin_spacing }} section-{{ section.id }}-margin">
+  {%- if section.settings.contain_content -%}<div class="page-width">{%- endif -%}
   <div class="image-with-text-grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text-grid--reverse{% endif %} {%- if section.settings.caption != blank -%}image-caption{%- endif -%}">
     {% comment %} Start Image {% endcomment %}
     <div
@@ -93,6 +94,7 @@
     </div>
     {% comment %} End Text {% endcomment %}
   </div>
+  {%- if section.settings.contain_content -%}</div>{%- endif -%}
 </div>
 </div>
 {% comment %} End Image with Text {% endcomment %}
@@ -206,6 +208,13 @@
       "type": "checkbox",
       "id": "full_width",
       "label": "t:sections.image-with-text.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "contain_content",
+      "label": "t:sections.image-with-text.settings.contain_content.label",
+      "info": "t:sections.image-with-text.settings.contain_content.info",
       "default": false
     },
     {

@@ -3778,6 +3778,10 @@
     "image-with-text": {
       "name": "Bild mit Text",
       "settings": {
+        "contain_content": {
+          "label": "Hintergrund in voller Breite, Inhalt im Container",
+          "info": "Der Hintergrund nimmt die volle Bildschirmbreite ein, Bild und Text bleiben innerhalb der Seitenbreite."
+        },
         "header_content_padding": {
           "content": "Innenabstand des Textfelds"
         },

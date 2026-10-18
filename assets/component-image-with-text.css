@@ -270,7 +270,8 @@
     width: 70%;
   }
 
-  .image-with-text--full-width .image-with-text-content {
+  .image-with-text--full-width .image-with-text-content,
+  .image-with-text--contained .image-with-text-content {
     width: 100%;
   }
 }

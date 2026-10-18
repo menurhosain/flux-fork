@@ -3778,6 +3778,10 @@
     "image-with-text": {
       "name": "Immagine con testo",
       "settings": {
+        "contain_content": {
+          "label": "Sfondo a tutta larghezza, contenuto nel contenitore",
+          "info": "Lo sfondo occupa tutta la larghezza dello schermo, mentre immagine e testo restano entro la larghezza della pagina."
+        },
         "header_content_padding": {
           "content": "Spaziatura interna del riquadro di testo"
         },

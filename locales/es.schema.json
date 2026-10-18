@@ -3778,6 +3778,10 @@
     "image-with-text": {
       "name": "Imagen con texto",
       "settings": {
+        "contain_content": {
+          "label": "Fondo de ancho completo, contenido en contenedor",
+          "info": "El fondo ocupa todo el ancho de la pantalla, mientras la imagen y el texto se mantienen dentro del ancho de página."
+        },
         "header_content_padding": {
           "content": "Relleno del cuadro de texto"
         },

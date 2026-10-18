@@ -3778,6 +3778,10 @@
     "image-with-text": {
       "name": "Image with text",
       "settings": {
+        "contain_content": {
+          "label": "Full width background, content in container",
+          "info": "Background spans the full screen width while the image and text stay inside the page width."
+        },
         "header_content_padding": {
           "content": "Text box padding"
         },
