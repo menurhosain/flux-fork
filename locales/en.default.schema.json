@@ -8751,6 +8751,183 @@
     }
   },
   "blocks": {
+    "pills": {
+      "name": "Pills",
+      "settings": {
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        },
+        "column_gap": {
+          "label": "Space between pills"
+        },
+        "row_gap": {
+          "label": "Space between rows"
+        },
+        "column_gap_mobile": {
+          "label": "Space between pills on mobile"
+        },
+        "row_gap_mobile": {
+          "label": "Space between rows on mobile"
+        },
+        "header_pill": {
+          "content": "Pill style"
+        },
+        "text_color": {
+          "label": "Text color",
+          "info": "Leave empty to use the section's color scheme."
+        },
+        "background_color": {
+          "label": "Background color",
+          "info": "Leave empty to use the section's background."
+        },
+        "border_color": {
+          "label": "Border color",
+          "info": "Leave empty for a light border based on the text color."
+        },
+        "border_width": {
+          "label": "Border width"
+        },
+        "border_radius": {
+          "label": "Corner radius"
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "font_weight": {
+          "label": "Font weight",
+          "options__1": {
+            "label": "Default"
+          },
+          "options__2": {
+            "label": "Light"
+          },
+          "options__3": {
+            "label": "Regular"
+          },
+          "options__4": {
+            "label": "Medium"
+          },
+          "options__5": {
+            "label": "Semibold"
+          },
+          "options__6": {
+            "label": "Bold"
+          }
+        },
+        "padding_vertical": {
+          "label": "Vertical padding on desktop"
+        },
+        "padding_horizontal": {
+          "label": "Horizontal padding on desktop"
+        },
+        "padding_vertical_mobile": {
+          "label": "Vertical padding on mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Horizontal padding on mobile"
+        },
+        "header_hover": {
+          "content": "Hover"
+        },
+        "hover_text_color": {
+          "label": "Hover text color"
+        },
+        "hover_background_color": {
+          "label": "Hover background color"
+        },
+        "hover_border_color": {
+          "label": "Hover border color",
+          "info": "Leave empty for a slightly darker border."
+        },
+        "header_spacing": {
+          "content": "Spacing"
+        },
+        "custom_spacing": {
+          "label": "Use custom spacing"
+        },
+        "margin_top": {
+          "label": "Top margin"
+        },
+        "margin_bottom": {
+          "label": "Bottom margin"
+        }
+      }
+    },
+    "pill": {
+      "name": "Pill",
+      "settings": {
+        "label": {
+          "label": "Label"
+        },
+        "link": {
+          "label": "Link"
+        },
+        "open_new_tab": {
+          "label": "Open link in a new tab"
+        },
+        "header_style": {
+          "content": "Pill style",
+          "info": "Leave empty to use the style set on the Pills block."
+        },
+        "text_color": {
+          "label": "Text color"
+        },
+        "background_color": {
+          "label": "Background color"
+        },
+        "border_color": {
+          "label": "Border color"
+        },
+        "custom_border_width": {
+          "label": "Use custom border width"
+        },
+        "border_width": {
+          "label": "Border width"
+        },
+        "font_weight": {
+          "label": "Font weight",
+          "options__1": {
+            "label": "Pills default"
+          },
+          "options__2": {
+            "label": "Light"
+          },
+          "options__3": {
+            "label": "Regular"
+          },
+          "options__4": {
+            "label": "Medium"
+          },
+          "options__5": {
+            "label": "Semibold"
+          },
+          "options__6": {
+            "label": "Bold"
+          }
+        },
+        "custom_font_size": {
+          "label": "Use custom font size"
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        }
+      }
+    },
     "heading": {
       "name": "Heading",
       "settings": {
@@ -9088,6 +9265,67 @@
         "icon_color": {
           "label": "Icon color",
           "info": "Leave empty to match the button text color, including on hover."
+        },
+        "link_style": {
+          "label": "Show as text link",
+          "info": "Removes the button background and shows the label as an underlined link."
+        },
+        "underline_color": {
+          "label": "Underline color",
+          "info": "Leave empty to match the text color."
+        },
+        "underline_thickness": {
+          "label": "Underline thickness"
+        },
+        "header_hover": {
+          "content": "Hover"
+        },
+        "hover_text_color": {
+          "label": "Hover text color",
+          "info": "Leave a hover color empty to keep the theme default."
+        },
+        "hover_background_color": {
+          "label": "Hover background color"
+        },
+        "hover_border_color": {
+          "label": "Hover border color"
+        },
+        "hover_icon_color": {
+          "label": "Hover icon color",
+          "info": "Leave empty to match the hover text color."
+        },
+        "hover_underline_color": {
+          "label": "Hover underline color"
+        },
+        "font_weight": {
+          "label": "Font weight",
+          "options__1": {
+            "label": "Default"
+          },
+          "options__2": {
+            "label": "Light"
+          },
+          "options__3": {
+            "label": "Regular"
+          },
+          "options__4": {
+            "label": "Medium"
+          },
+          "options__5": {
+            "label": "Semibold"
+          },
+          "options__6": {
+            "label": "Bold"
+          },
+          "options__7": {
+            "label": "Extra bold"
+          }
+        },
+        "custom_letter_spacing": {
+          "label": "Use custom letter spacing"
+        },
+        "letter_spacing": {
+          "label": "Letter spacing"
         },
         "apply_link_to_image": {
           "info": "Works in image banner sections."

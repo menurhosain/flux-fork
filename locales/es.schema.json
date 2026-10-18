@@ -8752,6 +8752,183 @@
     }
   },
   "blocks": {
+    "pills": {
+      "name": "Etiquetas",
+      "settings": {
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "column_gap": {
+          "label": "Espacio entre etiquetas"
+        },
+        "row_gap": {
+          "label": "Espacio entre filas"
+        },
+        "column_gap_mobile": {
+          "label": "Espacio entre etiquetas en móvil"
+        },
+        "row_gap_mobile": {
+          "label": "Espacio entre filas en móvil"
+        },
+        "header_pill": {
+          "content": "Estilo de etiqueta"
+        },
+        "text_color": {
+          "label": "Color del texto",
+          "info": "Déjalo vacío para usar el esquema de color de la sección."
+        },
+        "background_color": {
+          "label": "Color de fondo",
+          "info": "Déjalo vacío para usar el fondo de la sección."
+        },
+        "border_color": {
+          "label": "Color del borde",
+          "info": "Déjalo vacío para un borde claro basado en el color del texto."
+        },
+        "border_width": {
+          "label": "Grosor del borde"
+        },
+        "border_radius": {
+          "label": "Radio de esquina"
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "font_weight": {
+          "label": "Grosor de fuente",
+          "options__1": {
+            "label": "Predeterminado"
+          },
+          "options__2": {
+            "label": "Ligera"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Media"
+          },
+          "options__5": {
+            "label": "Seminegrita"
+          },
+          "options__6": {
+            "label": "Negrita"
+          }
+        },
+        "padding_vertical": {
+          "label": "Relleno vertical en escritorio"
+        },
+        "padding_horizontal": {
+          "label": "Relleno horizontal en escritorio"
+        },
+        "padding_vertical_mobile": {
+          "label": "Relleno vertical en móvil"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Relleno horizontal en móvil"
+        },
+        "header_hover": {
+          "content": "Al pasar el cursor"
+        },
+        "hover_text_color": {
+          "label": "Color del texto al pasar el cursor"
+        },
+        "hover_background_color": {
+          "label": "Color de fondo al pasar el cursor"
+        },
+        "hover_border_color": {
+          "label": "Color del borde al pasar el cursor",
+          "info": "Déjalo vacío para un borde algo más oscuro."
+        },
+        "header_spacing": {
+          "content": "Espaciado"
+        },
+        "custom_spacing": {
+          "label": "Usar espaciado personalizado"
+        },
+        "margin_top": {
+          "label": "Margen superior"
+        },
+        "margin_bottom": {
+          "label": "Margen inferior"
+        }
+      }
+    },
+    "pill": {
+      "name": "Etiqueta",
+      "settings": {
+        "label": {
+          "label": "Texto"
+        },
+        "link": {
+          "label": "Enlace"
+        },
+        "open_new_tab": {
+          "label": "Abrir enlace en una pestaña nueva"
+        },
+        "header_style": {
+          "content": "Estilo de etiqueta",
+          "info": "Déjalo vacío para usar el estilo del bloque Etiquetas."
+        },
+        "text_color": {
+          "label": "Color del texto"
+        },
+        "background_color": {
+          "label": "Color de fondo"
+        },
+        "border_color": {
+          "label": "Color del borde"
+        },
+        "custom_border_width": {
+          "label": "Usar grosor de borde personalizado"
+        },
+        "border_width": {
+          "label": "Grosor del borde"
+        },
+        "font_weight": {
+          "label": "Grosor de fuente",
+          "options__1": {
+            "label": "Predeterminado del grupo"
+          },
+          "options__2": {
+            "label": "Ligera"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Media"
+          },
+          "options__5": {
+            "label": "Seminegrita"
+          },
+          "options__6": {
+            "label": "Negrita"
+          }
+        },
+        "custom_font_size": {
+          "label": "Usar tamaño de fuente personalizado"
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        }
+      }
+    },
     "heading": {
       "name": "Encabezado",
       "settings": {
@@ -9089,6 +9266,67 @@
         "icon_color": {
           "label": "Color del icono",
           "info": "Déjalo vacío para usar el color del texto del botón, también al pasar el cursor."
+        },
+        "link_style": {
+          "label": "Mostrar como enlace de texto",
+          "info": "Quita el fondo del botón y muestra el texto como un enlace subrayado."
+        },
+        "underline_color": {
+          "label": "Color del subrayado",
+          "info": "Déjalo vacío para usar el color del texto."
+        },
+        "underline_thickness": {
+          "label": "Grosor del subrayado"
+        },
+        "header_hover": {
+          "content": "Al pasar el cursor"
+        },
+        "hover_text_color": {
+          "label": "Color del texto al pasar el cursor",
+          "info": "Deja un color vacío para mantener el valor predeterminado del tema."
+        },
+        "hover_background_color": {
+          "label": "Color de fondo al pasar el cursor"
+        },
+        "hover_border_color": {
+          "label": "Color del borde al pasar el cursor"
+        },
+        "hover_icon_color": {
+          "label": "Color del icono al pasar el cursor",
+          "info": "Déjalo vacío para usar el color del texto al pasar el cursor."
+        },
+        "hover_underline_color": {
+          "label": "Color del subrayado al pasar el cursor"
+        },
+        "font_weight": {
+          "label": "Grosor de fuente",
+          "options__1": {
+            "label": "Predeterminado"
+          },
+          "options__2": {
+            "label": "Ligera"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Media"
+          },
+          "options__5": {
+            "label": "Seminegrita"
+          },
+          "options__6": {
+            "label": "Negrita"
+          },
+          "options__7": {
+            "label": "Extranegrita"
+          }
+        },
+        "custom_letter_spacing": {
+          "label": "Usar espaciado entre letras personalizado"
+        },
+        "letter_spacing": {
+          "label": "Espaciado entre letras"
         },
         "apply_link_to_image": {
           "info": "Funciona en secciones de banner con imagen."

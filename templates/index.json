@@ -1364,6 +1364,259 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
+    },
+    "rich_text_wellness": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_wellness": {
+          "type": "caption",
+          "settings": {
+            "caption": "Common wellness concerns",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium",
+            "alignment": "inherit",
+            "text_color": "#222222",
+            "font_weight": "600",
+            "custom_font_size": true,
+            "font_size": 13,
+            "font_size_mobile": 12,
+            "custom_letter_spacing": true,
+            "letter_spacing": 1,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "margin_left": 0,
+            "margin_right": 0,
+            "background_color": "#E4E4E4",
+            "border_radius": 20,
+            "custom_padding": true,
+            "padding_top": 6,
+            "padding_right": 12,
+            "padding_bottom": 6,
+            "padding_left": 12
+          },
+          "blocks": {}
+        },
+        "heading_wellness": {
+          "type": "heading",
+          "settings": {
+            "heading": "Support for the patterns that keep getting in the way",
+            "heading_size": "medium",
+            "heading_style": "default",
+            "heading_tag": "h2",
+            "highlight_option": "none",
+            "word_animation_color": "#00a2f8",
+            "alignment": "inherit",
+            "text_color": "#0007C6",
+            "custom_font_size": true,
+            "font_size": 64,
+            "font_size_mobile": 38,
+            "custom_spacing": true,
+            "margin_top": 20,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        },
+        "pills_wellness": {
+          "type": "pills",
+          "settings": {
+            "alignment": "center",
+            "column_gap": 12,
+            "row_gap": 12,
+            "column_gap_mobile": 8,
+            "row_gap_mobile": 8,
+            "text_color": "#222222",
+            "background_color": "#FFFFFF",
+            "border_color": "#E8E8E8",
+            "border_width": 1,
+            "border_radius": 40,
+            "font_size": 15,
+            "font_size_mobile": 14,
+            "font_weight": "500",
+            "padding_vertical": 14,
+            "padding_horizontal": 16,
+            "padding_vertical_mobile": 10,
+            "padding_horizontal_mobile": 14,
+            "hover_text_color": "",
+            "hover_background_color": "",
+            "hover_border_color": "",
+            "custom_spacing": true,
+            "margin_top": 44,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "pill_01": {
+              "type": "_pill",
+              "settings": {
+                "label": "Low energy",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_02": {
+              "type": "_pill",
+              "settings": {
+                "label": "Digestive discomfort",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_03": {
+              "type": "_pill",
+              "settings": {
+                "label": "Hormone changes",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_04": {
+              "type": "_pill",
+              "settings": {
+                "label": "Stress overload",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_05": {
+              "type": "_pill",
+              "settings": {
+                "label": "Brain fog",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_06": {
+              "type": "_pill",
+              "settings": {
+                "label": "Immune resilience",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_07": {
+              "type": "_pill",
+              "settings": {
+                "label": "Metabolic challenges",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_08": {
+              "type": "_pill",
+              "settings": {
+                "label": "Perimenopause support",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_09": {
+              "type": "_pill",
+              "settings": {
+                "label": "Poor sleep",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_10": {
+              "type": "_pill",
+              "settings": {
+                "label": "Recovery & resilience",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_11": {
+              "type": "_pill",
+              "settings": {
+                "label": "Recurring headaches",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            },
+            "pill_12": {
+              "type": "_pill",
+              "settings": {
+                "label": "Skin concerns",
+                "link": "",
+                "open_new_tab": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "pill_01",
+            "pill_02",
+            "pill_03",
+            "pill_04",
+            "pill_05",
+            "pill_06",
+            "pill_07",
+            "pill_08",
+            "pill_09",
+            "pill_10",
+            "pill_11",
+            "pill_12"
+          ]
+        },
+        "button_wellness": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore wellness support",
+            "button_link": "shopify://collections/all",
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "link_style": true,
+            "underline_color": "#107AF8",
+            "underline_thickness": 2,
+            "text_color": "#222222",
+            "custom_margin": true,
+            "margin_top": 50,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0,
+            "icon": "shopify://shop_images/arrow-icon.svg",
+            "icon_size": 18,
+            "icon_position": "last",
+            "icon_spacing": 8,
+            "recolor_icon": true,
+            "icon_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "caption_wellness",
+        "heading_wellness",
+        "pills_wellness",
+        "button_wellness"
+      ],
+      "name": "Wellness concerns",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": false,
+        "rich_text_width": 116,
+        "color_scheme": "option-1",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "ignore_spacing": false,
+        "margin_spacing": "negative",
+        "margin_top": 0,
+        "mobile_content_alignment": "center"
+      }
     }
   },
   "order": [
@@ -1372,6 +1625,7 @@
     "collection_list",
     "multicolumn_AefCzX",
     "image_with_text",
+    "rich_text_wellness",
     "testimonials",
     "featured_blog",
     "image_banner"

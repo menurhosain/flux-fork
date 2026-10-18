@@ -1,0 +1,198 @@
+{%- if block.settings.label != blank -%}
+  {%- if block.settings.link != blank -%}
+    <a
+      id="Pill-{{ block.id }}"
+      href="{{ block.settings.link }}"
+      class="block-pills__pill"
+      {% if block.settings.open_new_tab %}
+        target="_blank" rel="noopener"
+      {% endif %}
+      {{ block.shopify_attributes }}
+    >
+      {{- block.settings.label | escape -}}
+    </a>
+  {%- else -%}
+    <span id="Pill-{{ block.id }}" class="block-pills__pill" {{ block.shopify_attributes }}>
+      {{- block.settings.label | escape -}}
+    </span>
+  {%- endif -%}
+{%- endif -%}
+
+{%- liquid
+  assign text_color = block.settings.text_color
+  assign has_text_color = false
+  if text_color != blank and text_color.alpha != 0
+    assign has_text_color = true
+  endif
+  assign background_color = block.settings.background_color
+  assign has_background_color = false
+  if background_color != blank and background_color.alpha != 0
+    assign has_background_color = true
+  endif
+  assign border_color = block.settings.border_color
+  assign has_border_color = false
+  if border_color != blank and border_color.alpha != 0
+    assign has_border_color = true
+  endif
+-%}
+{%- if block.settings.label != blank -%}
+  {%- if has_text_color or has_background_color or has_border_color or block.settings.font_weight != 'inherit' or block.settings.custom_font_size or block.settings.custom_border_width -%}
+    {%- style -%}
+      .block-pills #Pill-{{ block.id }}.block-pills__pill {
+        {%- if has_text_color %}
+          color: {{ text_color }};
+        {%- endif %}
+        {%- if has_background_color %}
+          background-color: {{ background_color }};
+        {%- endif %}
+        {%- if has_border_color %}
+          border-color: {{ border_color }};
+        {%- endif %}
+        {%- if block.settings.custom_border_width %}
+          border-width: {{ block.settings.border_width }}px;
+        {%- endif %}
+        {%- if block.settings.font_weight != 'inherit' %}
+          font-weight: {{ block.settings.font_weight }};
+        {%- endif %}
+        {%- if block.settings.custom_font_size %}
+          font-size: {{ block.settings.font_size_mobile | divided_by: 10.0 }}rem;
+        {%- endif %}
+      }
+      {%- if block.settings.custom_font_size %}
+        @media screen and (min-width: 750px) {
+          .block-pills #Pill-{{ block.id }}.block-pills__pill {
+            font-size: {{ block.settings.font_size | divided_by: 10.0 }}rem;
+          }
+        }
+      {%- endif %}
+    {%- endstyle -%}
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:blocks.pill.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "default": "Pill label",
+      "label": "t:blocks.pill.settings.label.label"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "t:blocks.pill.settings.link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_new_tab",
+      "default": false,
+      "label": "t:blocks.pill.settings.open_new_tab.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.pill.settings.header_style.content",
+      "info": "t:blocks.pill.settings.header_style.info"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:blocks.pill.settings.text_color.label"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:blocks.pill.settings.background_color.label"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "t:blocks.pill.settings.border_color.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_border_width",
+      "default": false,
+      "label": "t:blocks.pill.settings.custom_border_width.label"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1,
+      "label": "t:blocks.pill.settings.border_width.label",
+      "visible_if": "{{ block.settings.custom_border_width }}"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "t:blocks.pill.settings.font_weight.options__1.label"
+        },
+        {
+          "value": "300",
+          "label": "t:blocks.pill.settings.font_weight.options__2.label"
+        },
+        {
+          "value": "400",
+          "label": "t:blocks.pill.settings.font_weight.options__3.label"
+        },
+        {
+          "value": "500",
+          "label": "t:blocks.pill.settings.font_weight.options__4.label"
+        },
+        {
+          "value": "600",
+          "label": "t:blocks.pill.settings.font_weight.options__5.label"
+        },
+        {
+          "value": "700",
+          "label": "t:blocks.pill.settings.font_weight.options__6.label"
+        }
+      ],
+      "default": "inherit",
+      "label": "t:blocks.pill.settings.font_weight.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_font_size",
+      "default": false,
+      "label": "t:blocks.pill.settings.custom_font_size.label"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 15,
+      "label": "t:blocks.pill.settings.font_size.label",
+      "visible_if": "{{ block.settings.custom_font_size }}"
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:blocks.pill.settings.font_size_mobile.label",
+      "visible_if": "{{ block.settings.custom_font_size }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:blocks.pill.name"
+    }
+  ]
+}
+{% endschema %}

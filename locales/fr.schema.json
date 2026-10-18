@@ -8751,6 +8751,183 @@
     }
   },
   "blocks": {
+    "pills": {
+      "name": "Pastilles",
+      "settings": {
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Gauche"
+          },
+          "options__2": {
+            "label": "Centre"
+          },
+          "options__3": {
+            "label": "Droite"
+          }
+        },
+        "column_gap": {
+          "label": "Espace entre les pastilles"
+        },
+        "row_gap": {
+          "label": "Espace entre les lignes"
+        },
+        "column_gap_mobile": {
+          "label": "Espace entre les pastilles sur mobile"
+        },
+        "row_gap_mobile": {
+          "label": "Espace entre les lignes sur mobile"
+        },
+        "header_pill": {
+          "content": "Style des pastilles"
+        },
+        "text_color": {
+          "label": "Couleur du texte",
+          "info": "Laisser vide pour utiliser le jeu de couleurs de la section."
+        },
+        "background_color": {
+          "label": "Couleur d'arrière-plan",
+          "info": "Laisser vide pour utiliser l'arrière-plan de la section."
+        },
+        "border_color": {
+          "label": "Couleur de la bordure",
+          "info": "Laisser vide pour une bordure claire basée sur la couleur du texte."
+        },
+        "border_width": {
+          "label": "Épaisseur de la bordure"
+        },
+        "border_radius": {
+          "label": "Rayon des coins"
+        },
+        "font_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "font_weight": {
+          "label": "Graisse de police",
+          "options__1": {
+            "label": "Par défaut"
+          },
+          "options__2": {
+            "label": "Léger"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Moyen"
+          },
+          "options__5": {
+            "label": "Demi-gras"
+          },
+          "options__6": {
+            "label": "Gras"
+          }
+        },
+        "padding_vertical": {
+          "label": "Marge intérieure verticale sur ordinateur"
+        },
+        "padding_horizontal": {
+          "label": "Marge intérieure horizontale sur ordinateur"
+        },
+        "padding_vertical_mobile": {
+          "label": "Marge intérieure verticale sur mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Marge intérieure horizontale sur mobile"
+        },
+        "header_hover": {
+          "content": "Survol"
+        },
+        "hover_text_color": {
+          "label": "Couleur du texte au survol"
+        },
+        "hover_background_color": {
+          "label": "Couleur d'arrière-plan au survol"
+        },
+        "hover_border_color": {
+          "label": "Couleur de la bordure au survol",
+          "info": "Laisser vide pour une bordure un peu plus foncée."
+        },
+        "header_spacing": {
+          "content": "Espacement"
+        },
+        "custom_spacing": {
+          "label": "Utiliser un espacement personnalisé"
+        },
+        "margin_top": {
+          "label": "Marge supérieure"
+        },
+        "margin_bottom": {
+          "label": "Marge inférieure"
+        }
+      }
+    },
+    "pill": {
+      "name": "Pastille",
+      "settings": {
+        "label": {
+          "label": "Libellé"
+        },
+        "link": {
+          "label": "Lien"
+        },
+        "open_new_tab": {
+          "label": "Ouvrir le lien dans un nouvel onglet"
+        },
+        "header_style": {
+          "content": "Style de la pastille",
+          "info": "Laisser vide pour utiliser le style du bloc Pastilles."
+        },
+        "text_color": {
+          "label": "Couleur du texte"
+        },
+        "background_color": {
+          "label": "Couleur d'arrière-plan"
+        },
+        "border_color": {
+          "label": "Couleur de la bordure"
+        },
+        "custom_border_width": {
+          "label": "Utiliser une épaisseur de bordure personnalisée"
+        },
+        "border_width": {
+          "label": "Épaisseur de la bordure"
+        },
+        "font_weight": {
+          "label": "Graisse de police",
+          "options__1": {
+            "label": "Par défaut du groupe"
+          },
+          "options__2": {
+            "label": "Léger"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Moyen"
+          },
+          "options__5": {
+            "label": "Demi-gras"
+          },
+          "options__6": {
+            "label": "Gras"
+          }
+        },
+        "custom_font_size": {
+          "label": "Utiliser une taille de police personnalisée"
+        },
+        "font_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        }
+      }
+    },
     "heading": {
       "name": "Titre",
       "settings": {
@@ -9088,6 +9265,67 @@
         "icon_color": {
           "label": "Couleur de l'icône",
           "info": "Laisser vide pour reprendre la couleur du texte du bouton, y compris au survol."
+        },
+        "link_style": {
+          "label": "Afficher comme lien texte",
+          "info": "Supprime l'arrière-plan du bouton et affiche le libellé comme un lien souligné."
+        },
+        "underline_color": {
+          "label": "Couleur du soulignement",
+          "info": "Laisser vide pour reprendre la couleur du texte."
+        },
+        "underline_thickness": {
+          "label": "Épaisseur du soulignement"
+        },
+        "header_hover": {
+          "content": "Survol"
+        },
+        "hover_text_color": {
+          "label": "Couleur du texte au survol",
+          "info": "Laisser une couleur vide pour garder le style par défaut du thème."
+        },
+        "hover_background_color": {
+          "label": "Couleur d'arrière-plan au survol"
+        },
+        "hover_border_color": {
+          "label": "Couleur de la bordure au survol"
+        },
+        "hover_icon_color": {
+          "label": "Couleur de l'icône au survol",
+          "info": "Laisser vide pour reprendre la couleur du texte au survol."
+        },
+        "hover_underline_color": {
+          "label": "Couleur du soulignement au survol"
+        },
+        "font_weight": {
+          "label": "Graisse de police",
+          "options__1": {
+            "label": "Par défaut"
+          },
+          "options__2": {
+            "label": "Léger"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Moyen"
+          },
+          "options__5": {
+            "label": "Demi-gras"
+          },
+          "options__6": {
+            "label": "Gras"
+          },
+          "options__7": {
+            "label": "Extra-gras"
+          }
+        },
+        "custom_letter_spacing": {
+          "label": "Utiliser un espacement des lettres personnalisé"
+        },
+        "letter_spacing": {
+          "label": "Espacement des lettres"
         },
         "apply_link_to_image": {
           "info": "Fonctionne dans les sections de bannière d’image."

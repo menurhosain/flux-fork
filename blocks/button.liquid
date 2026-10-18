@@ -21,6 +21,40 @@
   if icon_color != blank and icon_color.alpha != 0
     assign has_icon_color = true
   endif
+  assign underline_color = block.settings.underline_color
+  assign has_underline_color = false
+  if underline_color != blank and underline_color.alpha != 0
+    assign has_underline_color = true
+  endif
+  assign hover_text_color = block.settings.hover_text_color
+  assign has_hover_text_color = false
+  if hover_text_color != blank and hover_text_color.alpha != 0
+    assign has_hover_text_color = true
+  endif
+  assign hover_background_color = block.settings.hover_background_color
+  assign has_hover_background_color = false
+  if hover_background_color != blank and hover_background_color.alpha != 0
+    assign has_hover_background_color = true
+  endif
+  assign hover_border_color = block.settings.hover_border_color
+  assign has_hover_border_color = false
+  if hover_border_color != blank and hover_border_color.alpha != 0
+    assign has_hover_border_color = true
+  endif
+  assign hover_icon_color = block.settings.hover_icon_color
+  assign has_hover_icon_color = false
+  if hover_icon_color != blank and hover_icon_color.alpha != 0
+    assign has_hover_icon_color = true
+  endif
+  assign hover_underline_color = block.settings.hover_underline_color
+  assign has_hover_underline_color = false
+  if hover_underline_color != blank and hover_underline_color.alpha != 0
+    assign has_hover_underline_color = true
+  endif
+  assign has_hover = false
+  if has_hover_text_color or has_hover_background_color or has_hover_border_color or has_hover_icon_color or has_hover_underline_color
+    assign has_hover = true
+  endif
 -%}
 
 {%- capture icon_markup -%}
@@ -44,7 +78,11 @@
       {% else %}
         href="{{ block.settings.button_link }}" {% if block.settings.open_new_tab_1 %} target="_blank" {% endif %}
       {% endif %}
-      class="button-arrow button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+      {% if block.settings.link_style %}
+        class="block-buttons__link"
+      {% else %}
+        class="button-arrow button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+      {% endif %}
     >
       {%- if block.settings.icon != blank and block.settings.icon_position == 'first' -%}
         {{- icon_markup -}}
@@ -57,7 +95,7 @@
   {%- endif -%}
 </div>
 
-{%- if block.settings.icon != blank or has_text_color or has_background_color or has_border_color or block.settings.custom_font_size or block.settings.custom_border_radius or block.settings.border_width > 0 or block.settings.custom_padding or block.settings.custom_margin -%}
+{%- if block.settings.icon != blank or has_text_color or has_background_color or has_border_color or block.settings.custom_font_size or block.settings.custom_border_radius or block.settings.border_width > 0 or block.settings.custom_padding or block.settings.custom_margin or block.settings.link_style or has_hover or block.settings.font_weight != 'inherit' or block.settings.custom_letter_spacing -%}
   {%- style -%}
     #Button-{{ block.id }} {
       {%- if block.settings.icon != blank %}
@@ -71,6 +109,12 @@
       {%- endif %}
       {%- if block.settings.custom_font_size %}
         font-size: {{ block.settings.font_size_mobile | divided_by: 10.0 }}rem;
+      {%- endif %}
+      {%- if block.settings.font_weight != 'inherit' %}
+        font-weight: {{ block.settings.font_weight }};
+      {%- endif %}
+      {%- if block.settings.custom_letter_spacing %}
+        letter-spacing: {{ block.settings.letter_spacing }}px;
       {%- endif %}
       {%- if block.settings.custom_border_radius %}
         border-radius: {{ block.settings.border_radius }}px;
@@ -117,6 +161,38 @@
         }
       {%- endif %}
     {%- endif %}
+    {%- if block.settings.link_style %}
+      #Button-{{ block.id }}.block-buttons__link {
+        border-bottom-width: {{ block.settings.underline_thickness }}px;
+        {%- if has_underline_color %}
+          border-bottom-color: {{ underline_color }};
+        {%- endif %}
+      }
+    {%- endif %}
+    {%- if has_hover %}
+      #Button-{{ block.id }}:hover {
+        {%- if has_hover_text_color %}
+          color: {{ hover_text_color }};
+        {%- endif %}
+        {%- if has_hover_background_color %}
+          background-color: {{ hover_background_color }};
+        {%- endif %}
+        {%- if has_hover_border_color %}
+          border-color: {{ hover_border_color }};
+        {%- endif %}
+        {%- if block.settings.link_style %}
+          opacity: 1;
+          {%- if has_hover_underline_color %}
+            border-bottom-color: {{ hover_underline_color }};
+          {%- endif %}
+        {%- endif %}
+      }
+      {%- if block.settings.recolor_icon and has_hover_icon_color %}
+        #Button-{{ block.id }}:hover .block-buttons__icon--mask {
+          background-color: {{ hover_icon_color }};
+        }
+      {%- endif %}
+    {%- endif %}
     {%- if block.settings.custom_margin %}
       #Buttons-{{ block.id }} {
         margin: {{ block.settings.margin_top }}px {{ block.settings.margin_right }}px {{ block.settings.margin_bottom }}px {{ block.settings.margin_left }}px;
@@ -141,11 +217,30 @@
     object-fit: contain;
   }
 
+  .block-buttons__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0 0 0.4rem;
+    border: 0 solid currentColor;
+    color: rgb(var(--color-foreground));
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+  }
+
+  .block-buttons__link:hover {
+    opacity: 0.75;
+  }
+
   .block-buttons__icon--mask {
     display: inline-block;
     background-color: currentColor;
     -webkit-mask: var(--icon-url) center / contain no-repeat;
     mask: var(--icon-url) center / contain no-repeat;
+    transition: background-color 0.3s ease;
   }
 {% endstylesheet %}
 
@@ -186,6 +281,31 @@
       "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_1.label"
     },
     {
+      "type": "checkbox",
+      "id": "link_style",
+      "default": false,
+      "label": "t:blocks.button.settings.link_style.label",
+      "info": "t:blocks.button.settings.link_style.info"
+    },
+    {
+      "type": "color",
+      "id": "underline_color",
+      "label": "t:blocks.button.settings.underline_color.label",
+      "info": "t:blocks.button.settings.underline_color.info",
+      "visible_if": "{{ block.settings.link_style }}"
+    },
+    {
+      "type": "range",
+      "id": "underline_thickness",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 2,
+      "label": "t:blocks.button.settings.underline_thickness.label",
+      "visible_if": "{{ block.settings.link_style }}"
+    },
+    {
       "type": "header",
       "content": "t:blocks.button.settings.header_style.content"
     },
@@ -200,6 +320,39 @@
       "id": "background_color",
       "label": "t:blocks.button.settings.background_color.label",
       "info": "t:blocks.button.settings.background_color.info"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.button.settings.header_hover.content"
+    },
+    {
+      "type": "color",
+      "id": "hover_text_color",
+      "label": "t:blocks.button.settings.hover_text_color.label",
+      "info": "t:blocks.button.settings.hover_text_color.info"
+    },
+    {
+      "type": "color",
+      "id": "hover_background_color",
+      "label": "t:blocks.button.settings.hover_background_color.label"
+    },
+    {
+      "type": "color",
+      "id": "hover_border_color",
+      "label": "t:blocks.button.settings.hover_border_color.label"
+    },
+    {
+      "type": "color",
+      "id": "hover_icon_color",
+      "label": "t:blocks.button.settings.hover_icon_color.label",
+      "info": "t:blocks.button.settings.hover_icon_color.info",
+      "visible_if": "{{ block.settings.recolor_icon }}"
+    },
+    {
+      "type": "color",
+      "id": "hover_underline_color",
+      "label": "t:blocks.button.settings.hover_underline_color.label",
+      "visible_if": "{{ block.settings.link_style }}"
     },
     {
       "type": "checkbox",
@@ -228,6 +381,59 @@
       "default": 16,
       "label": "t:blocks.button.settings.font_size_mobile.label",
       "visible_if": "{{ block.settings.custom_font_size }}"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "t:blocks.button.settings.font_weight.options__1.label"
+        },
+        {
+          "value": "300",
+          "label": "t:blocks.button.settings.font_weight.options__2.label"
+        },
+        {
+          "value": "400",
+          "label": "t:blocks.button.settings.font_weight.options__3.label"
+        },
+        {
+          "value": "500",
+          "label": "t:blocks.button.settings.font_weight.options__4.label"
+        },
+        {
+          "value": "600",
+          "label": "t:blocks.button.settings.font_weight.options__5.label"
+        },
+        {
+          "value": "700",
+          "label": "t:blocks.button.settings.font_weight.options__6.label"
+        },
+        {
+          "value": "800",
+          "label": "t:blocks.button.settings.font_weight.options__7.label"
+        }
+      ],
+      "default": "inherit",
+      "label": "t:blocks.button.settings.font_weight.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_letter_spacing",
+      "default": false,
+      "label": "t:blocks.button.settings.custom_letter_spacing.label"
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "min": -2,
+      "max": 10,
+      "step": 0.5,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.letter_spacing.label",
+      "visible_if": "{{ block.settings.custom_letter_spacing }}"
     },
     {
       "type": "header",

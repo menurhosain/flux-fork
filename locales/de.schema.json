@@ -8752,6 +8752,183 @@
     }
   },
   "blocks": {
+    "pills": {
+      "name": "Pillen",
+      "settings": {
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Mittig"
+          },
+          "options__3": {
+            "label": "Rechts"
+          }
+        },
+        "column_gap": {
+          "label": "Abstand zwischen Pillen"
+        },
+        "row_gap": {
+          "label": "Abstand zwischen Zeilen"
+        },
+        "column_gap_mobile": {
+          "label": "Abstand zwischen Pillen (mobil)"
+        },
+        "row_gap_mobile": {
+          "label": "Abstand zwischen Zeilen (mobil)"
+        },
+        "header_pill": {
+          "content": "Pillen-Stil"
+        },
+        "text_color": {
+          "label": "Textfarbe",
+          "info": "Leer lassen, um das Farbschema des Abschnitts zu verwenden."
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe",
+          "info": "Leer lassen, um den Hintergrund des Abschnitts zu verwenden."
+        },
+        "border_color": {
+          "label": "Rahmenfarbe",
+          "info": "Leer lassen für einen hellen Rahmen auf Basis der Textfarbe."
+        },
+        "border_width": {
+          "label": "Rahmenbreite"
+        },
+        "border_radius": {
+          "label": "Eckenradius"
+        },
+        "font_size": {
+          "label": "Schriftgröße auf dem Desktop"
+        },
+        "font_size_mobile": {
+          "label": "Schriftgröße auf Mobilgeräten"
+        },
+        "font_weight": {
+          "label": "Schriftstärke",
+          "options__1": {
+            "label": "Standard"
+          },
+          "options__2": {
+            "label": "Leicht"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Mittel"
+          },
+          "options__5": {
+            "label": "Halbfett"
+          },
+          "options__6": {
+            "label": "Fett"
+          }
+        },
+        "padding_vertical": {
+          "label": "Vertikaler Innenabstand (Desktop)"
+        },
+        "padding_horizontal": {
+          "label": "Horizontaler Innenabstand (Desktop)"
+        },
+        "padding_vertical_mobile": {
+          "label": "Vertikaler Innenabstand (mobil)"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Horizontaler Innenabstand (mobil)"
+        },
+        "header_hover": {
+          "content": "Hover"
+        },
+        "hover_text_color": {
+          "label": "Textfarbe beim Hover"
+        },
+        "hover_background_color": {
+          "label": "Hintergrundfarbe beim Hover"
+        },
+        "hover_border_color": {
+          "label": "Rahmenfarbe beim Hover",
+          "info": "Leer lassen für einen etwas dunkleren Rahmen."
+        },
+        "header_spacing": {
+          "content": "Abstand"
+        },
+        "custom_spacing": {
+          "label": "Benutzerdefinierten Abstand verwenden"
+        },
+        "margin_top": {
+          "label": "Oberer Abstand"
+        },
+        "margin_bottom": {
+          "label": "Unterer Abstand"
+        }
+      }
+    },
+    "pill": {
+      "name": "Pille",
+      "settings": {
+        "label": {
+          "label": "Beschriftung"
+        },
+        "link": {
+          "label": "Link"
+        },
+        "open_new_tab": {
+          "label": "Link in neuem Tab öffnen"
+        },
+        "header_style": {
+          "content": "Pillen-Stil",
+          "info": "Leer lassen, um den Stil des Pillen-Blocks zu verwenden."
+        },
+        "text_color": {
+          "label": "Textfarbe"
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe"
+        },
+        "border_color": {
+          "label": "Rahmenfarbe"
+        },
+        "custom_border_width": {
+          "label": "Benutzerdefinierte Rahmenbreite verwenden"
+        },
+        "border_width": {
+          "label": "Rahmenbreite"
+        },
+        "font_weight": {
+          "label": "Schriftstärke",
+          "options__1": {
+            "label": "Pillen-Standard"
+          },
+          "options__2": {
+            "label": "Leicht"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Mittel"
+          },
+          "options__5": {
+            "label": "Halbfett"
+          },
+          "options__6": {
+            "label": "Fett"
+          }
+        },
+        "custom_font_size": {
+          "label": "Benutzerdefinierte Schriftgröße verwenden"
+        },
+        "font_size": {
+          "label": "Schriftgröße auf dem Desktop"
+        },
+        "font_size_mobile": {
+          "label": "Schriftgröße auf Mobilgeräten"
+        }
+      }
+    },
     "heading": {
       "name": "Überschrift",
       "settings": {
@@ -9089,6 +9266,67 @@
         "icon_color": {
           "label": "Symbolfarbe",
           "info": "Leer lassen, um die Textfarbe des Buttons zu übernehmen, auch beim Hover."
+        },
+        "link_style": {
+          "label": "Als Textlink anzeigen",
+          "info": "Entfernt den Button-Hintergrund und zeigt die Beschriftung als unterstrichenen Link."
+        },
+        "underline_color": {
+          "label": "Farbe der Unterstreichung",
+          "info": "Leer lassen, um die Textfarbe zu übernehmen."
+        },
+        "underline_thickness": {
+          "label": "Stärke der Unterstreichung"
+        },
+        "header_hover": {
+          "content": "Hover"
+        },
+        "hover_text_color": {
+          "label": "Textfarbe beim Hover",
+          "info": "Eine Hover-Farbe leer lassen, um den Theme-Standard zu behalten."
+        },
+        "hover_background_color": {
+          "label": "Hintergrundfarbe beim Hover"
+        },
+        "hover_border_color": {
+          "label": "Rahmenfarbe beim Hover"
+        },
+        "hover_icon_color": {
+          "label": "Symbolfarbe beim Hover",
+          "info": "Leer lassen, um die Hover-Textfarbe zu übernehmen."
+        },
+        "hover_underline_color": {
+          "label": "Farbe der Unterstreichung beim Hover"
+        },
+        "font_weight": {
+          "label": "Schriftstärke",
+          "options__1": {
+            "label": "Standard"
+          },
+          "options__2": {
+            "label": "Leicht"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Mittel"
+          },
+          "options__5": {
+            "label": "Halbfett"
+          },
+          "options__6": {
+            "label": "Fett"
+          },
+          "options__7": {
+            "label": "Extrafett"
+          }
+        },
+        "custom_letter_spacing": {
+          "label": "Benutzerdefinierten Zeichenabstand verwenden"
+        },
+        "letter_spacing": {
+          "label": "Zeichenabstand"
         },
         "apply_link_to_image": {
           "info": "Funktioniert in Bildbanner-Abschnitten."

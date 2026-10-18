@@ -48,8 +48,12 @@
       {%- endif %}
       {%- if has_background %}
         background-color: {{ background_color }};
-        width: fit-content;
         max-width: 100%;
+        {%- if block.settings.alignment == 'inherit' %}
+          display: inline-block;
+        {%- else %}
+          width: fit-content;
+        {%- endif %}
         {%- unless block.settings.custom_spacing %}
           {%- case block.settings.alignment %}
             {%- when 'center' %}

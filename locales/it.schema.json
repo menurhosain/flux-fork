@@ -8751,6 +8751,183 @@
     }
   },
   "blocks": {
+    "pills": {
+      "name": "Etichette",
+      "settings": {
+        "alignment": {
+          "label": "Allineamento",
+          "options__1": {
+            "label": "Sinistra"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Destra"
+          }
+        },
+        "column_gap": {
+          "label": "Spazio tra le etichette"
+        },
+        "row_gap": {
+          "label": "Spazio tra le righe"
+        },
+        "column_gap_mobile": {
+          "label": "Spazio tra le etichette su mobile"
+        },
+        "row_gap_mobile": {
+          "label": "Spazio tra le righe su mobile"
+        },
+        "header_pill": {
+          "content": "Stile etichetta"
+        },
+        "text_color": {
+          "label": "Colore del testo",
+          "info": "Lascia vuoto per usare lo schema colori della sezione."
+        },
+        "background_color": {
+          "label": "Colore di sfondo",
+          "info": "Lascia vuoto per usare lo sfondo della sezione."
+        },
+        "border_color": {
+          "label": "Colore del bordo",
+          "info": "Lascia vuoto per un bordo chiaro basato sul colore del testo."
+        },
+        "border_width": {
+          "label": "Spessore del bordo"
+        },
+        "border_radius": {
+          "label": "Raggio degli angoli"
+        },
+        "font_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "font_size_mobile": {
+          "label": "Dimensione carattere su mobile"
+        },
+        "font_weight": {
+          "label": "Spessore del carattere",
+          "options__1": {
+            "label": "Predefinito"
+          },
+          "options__2": {
+            "label": "Leggero"
+          },
+          "options__3": {
+            "label": "Normale"
+          },
+          "options__4": {
+            "label": "Medio"
+          },
+          "options__5": {
+            "label": "Semigrassetto"
+          },
+          "options__6": {
+            "label": "Grassetto"
+          }
+        },
+        "padding_vertical": {
+          "label": "Spaziatura interna verticale su desktop"
+        },
+        "padding_horizontal": {
+          "label": "Spaziatura interna orizzontale su desktop"
+        },
+        "padding_vertical_mobile": {
+          "label": "Spaziatura interna verticale su mobile"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Spaziatura interna orizzontale su mobile"
+        },
+        "header_hover": {
+          "content": "Al passaggio del mouse"
+        },
+        "hover_text_color": {
+          "label": "Colore del testo al passaggio del mouse"
+        },
+        "hover_background_color": {
+          "label": "Colore di sfondo al passaggio del mouse"
+        },
+        "hover_border_color": {
+          "label": "Colore del bordo al passaggio del mouse",
+          "info": "Lascia vuoto per un bordo leggermente più scuro."
+        },
+        "header_spacing": {
+          "content": "Spaziatura"
+        },
+        "custom_spacing": {
+          "label": "Usa spaziatura personalizzata"
+        },
+        "margin_top": {
+          "label": "Margine superiore"
+        },
+        "margin_bottom": {
+          "label": "Margine inferiore"
+        }
+      }
+    },
+    "pill": {
+      "name": "Etichetta",
+      "settings": {
+        "label": {
+          "label": "Testo"
+        },
+        "link": {
+          "label": "Link"
+        },
+        "open_new_tab": {
+          "label": "Apri il link in una nuova scheda"
+        },
+        "header_style": {
+          "content": "Stile etichetta",
+          "info": "Lascia vuoto per usare lo stile del blocco Etichette."
+        },
+        "text_color": {
+          "label": "Colore del testo"
+        },
+        "background_color": {
+          "label": "Colore di sfondo"
+        },
+        "border_color": {
+          "label": "Colore del bordo"
+        },
+        "custom_border_width": {
+          "label": "Usa spessore del bordo personalizzato"
+        },
+        "border_width": {
+          "label": "Spessore del bordo"
+        },
+        "font_weight": {
+          "label": "Spessore del carattere",
+          "options__1": {
+            "label": "Predefinito del gruppo"
+          },
+          "options__2": {
+            "label": "Leggero"
+          },
+          "options__3": {
+            "label": "Normale"
+          },
+          "options__4": {
+            "label": "Medio"
+          },
+          "options__5": {
+            "label": "Semigrassetto"
+          },
+          "options__6": {
+            "label": "Grassetto"
+          }
+        },
+        "custom_font_size": {
+          "label": "Usa dimensione carattere personalizzata"
+        },
+        "font_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "font_size_mobile": {
+          "label": "Dimensione carattere su mobile"
+        }
+      }
+    },
     "heading": {
       "name": "Titolo",
       "settings": {
@@ -9088,6 +9265,67 @@
         "icon_color": {
           "label": "Colore icona",
           "info": "Lascia vuoto per usare il colore del testo del pulsante, anche al passaggio del mouse."
+        },
+        "link_style": {
+          "label": "Mostra come link di testo",
+          "info": "Rimuove lo sfondo del pulsante e mostra il testo come link sottolineato."
+        },
+        "underline_color": {
+          "label": "Colore della sottolineatura",
+          "info": "Lascia vuoto per usare il colore del testo."
+        },
+        "underline_thickness": {
+          "label": "Spessore della sottolineatura"
+        },
+        "header_hover": {
+          "content": "Al passaggio del mouse"
+        },
+        "hover_text_color": {
+          "label": "Colore del testo al passaggio del mouse",
+          "info": "Lascia vuoto un colore per mantenere il valore predefinito del tema."
+        },
+        "hover_background_color": {
+          "label": "Colore di sfondo al passaggio del mouse"
+        },
+        "hover_border_color": {
+          "label": "Colore del bordo al passaggio del mouse"
+        },
+        "hover_icon_color": {
+          "label": "Colore dell'icona al passaggio del mouse",
+          "info": "Lascia vuoto per usare il colore del testo al passaggio del mouse."
+        },
+        "hover_underline_color": {
+          "label": "Colore della sottolineatura al passaggio del mouse"
+        },
+        "font_weight": {
+          "label": "Spessore del carattere",
+          "options__1": {
+            "label": "Predefinito"
+          },
+          "options__2": {
+            "label": "Leggero"
+          },
+          "options__3": {
+            "label": "Normale"
+          },
+          "options__4": {
+            "label": "Medio"
+          },
+          "options__5": {
+            "label": "Semigrassetto"
+          },
+          "options__6": {
+            "label": "Grassetto"
+          },
+          "options__7": {
+            "label": "Extra grassetto"
+          }
+        },
+        "custom_letter_spacing": {
+          "label": "Usa spaziatura delle lettere personalizzata"
+        },
+        "letter_spacing": {
+          "label": "Spaziatura delle lettere"
         },
         "apply_link_to_image": {
           "info": "Funziona nelle sezioni banner immagine."
