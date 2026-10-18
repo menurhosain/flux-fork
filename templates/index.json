@@ -842,6 +842,124 @@
         "disable_arrow_mobile": true
       }
     },
+    "blocks_section_a6dx6f": {
+      "type": "blocks-section",
+      "blocks": {
+        "container_6HMyhF": {
+          "type": "container",
+          "name": "t:blocks.container.name",
+          "settings": {
+            "background_color": "#f5f5f5",
+            "border_radius": 12,
+            "border_width": 0,
+            "border_color": "#e5e5e5",
+            "border_top": false,
+            "border_right": false,
+            "border_bottom": false,
+            "border_left": false,
+            "padding_vertical": 32,
+            "padding_horizontal": 32,
+            "padding_vertical_mobile": 20,
+            "padding_horizontal_mobile": 20
+          },
+          "blocks": {
+            "caption_wf8G7c": {
+              "type": "caption",
+              "name": "t:blocks.caption.name",
+              "settings": {
+                "caption": "Start with what you are noticing",
+                "text_style": "caption-with-letter-spacing",
+                "text_size": "medium",
+                "alignment": "center",
+                "text_color": "#0007C6",
+                "font_weight": "600",
+                "custom_font_size": false,
+                "font_size": 14,
+                "font_size_mobile": 13,
+                "custom_letter_spacing": true,
+                "letter_spacing": 1,
+                "custom_spacing": false,
+                "margin_top": 8,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0,
+                "background_color": "#E9E9E9",
+                "border_radius": 15,
+                "custom_padding": true,
+                "padding_top": 8,
+                "padding_right": 12,
+                "padding_bottom": 8,
+                "padding_left": 12
+              },
+              "blocks": {}
+            },
+            "heading_8QpDYG": {
+              "type": "heading",
+              "settings": {
+                "heading": "Have you been feeling stuck",
+                "heading_size": "large",
+                "heading_style": "default",
+                "heading_tag": "h2",
+                "highlight_option": "underline-hand",
+                "word_animation_color": "#272727",
+                "alignment": "center",
+                "text_color": "#0007C6",
+                "custom_font_size": false,
+                "font_size": 52,
+                "font_size_mobile": 40,
+                "custom_spacing": true,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0
+              },
+              "blocks": {}
+            },
+            "heading_kwfbbA": {
+              "type": "heading",
+              "settings": {
+                "heading": "with any of these?",
+                "heading_size": "large",
+                "heading_style": "default",
+                "heading_tag": "h2",
+                "highlight_option": "underline-hand",
+                "word_animation_color": "#272727",
+                "alignment": "center",
+                "text_color": "#0007C6",
+                "custom_font_size": false,
+                "font_size": 52,
+                "font_size_mobile": 40,
+                "custom_spacing": true,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "caption_wf8G7c",
+            "heading_8QpDYG",
+            "heading_kwfbbA"
+          ]
+        }
+      },
+      "block_order": [
+        "container_6HMyhF"
+      ],
+      "name": "t:sections.blocks-section.presets.blank_name",
+      "settings": {
+        "full_width": true,
+        "content_alignment": "center",
+        "blocks_gap": 48,
+        "blocks_gap_mobile": 32,
+        "color_scheme": "",
+        "background_color": "#F2F2F2",
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
     "multicolumn_AefCzX": {
       "type": "multicolumn",
       "blocks": {
@@ -1404,9 +1522,9 @@
         "open_new_tab_2": false,
         "color_scheme": "option-2",
         "color_scheme_1": "",
-        "padding_top": 80,
+        "padding_top": 0,
         "padding_bottom": 80,
-        "ignore_spacing": false,
+        "ignore_spacing": true,
         "margin_spacing": "negative",
         "margin_top": 0,
         "columns_mobile": "1",
@@ -2551,6 +2669,7 @@
     "blocks_section_how_it_works",
     "image_banner_with_featured_collection",
     "collection_list",
+    "blocks_section_a6dx6f",
     "multicolumn_AefCzX",
     "image_with_text",
     "rich_text_wellness",
