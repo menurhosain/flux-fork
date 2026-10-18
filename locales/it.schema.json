@@ -9718,6 +9718,34 @@
         "letter_spacing": {
           "label": "Spaziatura delle lettere"
         },
+        "hover_effect": {
+          "label": "Effetto al passaggio del mouse",
+          "options__1": {
+            "label": "Nessuno"
+          },
+          "options__2": {
+            "label": "Solleva"
+          },
+          "options__3": {
+            "label": "Ingrandisci"
+          },
+          "options__4": {
+            "label": "Ombra"
+          },
+          "options__5": {
+            "label": "Solleva e ombra"
+          },
+          "options__6": {
+            "label": "Scorrimento (da sinistra a destra)"
+          }
+        },
+        "hover_duration": {
+          "label": "Velocità della transizione"
+        },
+        "sweep_color": {
+          "label": "Colore dello scorrimento",
+          "info": "Lascia vuoto per un grigio chiaro."
+        },
         "apply_link_to_image": {
           "info": "Funziona nelle sezioni banner immagine."
         }

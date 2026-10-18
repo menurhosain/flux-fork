@@ -9719,6 +9719,34 @@
         "letter_spacing": {
           "label": "Espaciado entre letras"
         },
+        "hover_effect": {
+          "label": "Efecto al pasar el cursor",
+          "options__1": {
+            "label": "Ninguno"
+          },
+          "options__2": {
+            "label": "Elevar"
+          },
+          "options__3": {
+            "label": "Agrandar"
+          },
+          "options__4": {
+            "label": "Sombra"
+          },
+          "options__5": {
+            "label": "Elevar y sombra"
+          },
+          "options__6": {
+            "label": "Barrido (izquierda a derecha)"
+          }
+        },
+        "hover_duration": {
+          "label": "Velocidad de la transición"
+        },
+        "sweep_color": {
+          "label": "Color del barrido",
+          "info": "Déjalo vacío para un gris claro."
+        },
         "apply_link_to_image": {
           "info": "Funciona en secciones de banner con imagen."
         }

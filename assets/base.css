@@ -848,9 +848,9 @@ a.menu-button-primary {
   box-shadow: 5px 5px 0 rgba(var(--color-button-shadow-opacity),.7);
 }
 
-.button--style-2 .button.button--primary:hover,
-.button--style-2 .button.button--secondary:hover,
-.button--style-2 .button:hover, 
+.button--style-2 .button.button--primary:not(.block-buttons__button):hover,
+.button--style-2 .button.button--secondary:not(.block-buttons__button):hover,
+.button--style-2 .button:not(.block-buttons__button):hover, 
 .button--style-2 .shopify-challenge__button:hover, 
 .button--style-2 .customer button:hover, 
 .button--style-2 button.shopify-payment-button__button--unbranded:hover {
@@ -948,7 +948,7 @@ a.menu-button-primary {
   }
 }
 
-.button:not([disabled]):hover,
+.button:not([disabled]):not(.block-buttons__button):hover,
 .shopify-challenge__button:hover,
 .customer button:hover,
 .shopify-payment-button__button--unbranded:hover {

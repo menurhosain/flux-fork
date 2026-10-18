@@ -9718,6 +9718,34 @@
         "letter_spacing": {
           "label": "Letter spacing"
         },
+        "hover_effect": {
+          "label": "Hover effect",
+          "options__1": {
+            "label": "None"
+          },
+          "options__2": {
+            "label": "Lift"
+          },
+          "options__3": {
+            "label": "Grow"
+          },
+          "options__4": {
+            "label": "Shadow"
+          },
+          "options__5": {
+            "label": "Lift and shadow"
+          },
+          "options__6": {
+            "label": "Sweep (left to right)"
+          }
+        },
+        "hover_duration": {
+          "label": "Hover transition speed"
+        },
+        "sweep_color": {
+          "label": "Sweep color",
+          "info": "Leave empty for a light grey sweep."
+        },
         "apply_link_to_image": {
           "info": "Works in image banner sections."
         }

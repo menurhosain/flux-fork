@@ -9718,6 +9718,34 @@
         "letter_spacing": {
           "label": "Espacement des lettres"
         },
+        "hover_effect": {
+          "label": "Effet au survol",
+          "options__1": {
+            "label": "Aucun"
+          },
+          "options__2": {
+            "label": "Soulever"
+          },
+          "options__3": {
+            "label": "Agrandir"
+          },
+          "options__4": {
+            "label": "Ombre"
+          },
+          "options__5": {
+            "label": "Soulever et ombre"
+          },
+          "options__6": {
+            "label": "Balayage (gauche à droite)"
+          }
+        },
+        "hover_duration": {
+          "label": "Vitesse de la transition au survol"
+        },
+        "sweep_color": {
+          "label": "Couleur du balayage",
+          "info": "Laisser vide pour un gris clair."
+        },
         "apply_link_to_image": {
           "info": "Fonctionne dans les sections de bannière d’image."
         }

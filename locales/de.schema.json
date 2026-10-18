@@ -9719,6 +9719,34 @@
         "letter_spacing": {
           "label": "Zeichenabstand"
         },
+        "hover_effect": {
+          "label": "Hover-Effekt",
+          "options__1": {
+            "label": "Keiner"
+          },
+          "options__2": {
+            "label": "Anheben"
+          },
+          "options__3": {
+            "label": "Vergrößern"
+          },
+          "options__4": {
+            "label": "Schatten"
+          },
+          "options__5": {
+            "label": "Anheben und Schatten"
+          },
+          "options__6": {
+            "label": "Wischen (links nach rechts)"
+          }
+        },
+        "hover_duration": {
+          "label": "Geschwindigkeit des Hover-Übergangs"
+        },
+        "sweep_color": {
+          "label": "Wischfarbe",
+          "info": "Leer lassen für ein helles Grau."
+        },
         "apply_link_to_image": {
           "info": "Funktioniert in Bildbanner-Abschnitten."
         }

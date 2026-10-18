@@ -51,6 +51,11 @@
   if hover_underline_color != blank and hover_underline_color.alpha != 0
     assign has_hover_underline_color = true
   endif
+  assign sweep_color = block.settings.sweep_color
+  assign has_sweep_color = false
+  if sweep_color != blank and sweep_color.alpha != 0
+    assign has_sweep_color = true
+  endif
   assign has_hover = false
   if has_hover_text_color or has_hover_background_color or has_hover_border_color or has_hover_icon_color or has_hover_underline_color
     assign has_hover = true
@@ -79,9 +84,9 @@
         href="{{ block.settings.button_link }}" {% if block.settings.open_new_tab_1 %} target="_blank" {% endif %}
       {% endif %}
       {% if block.settings.link_style %}
-        class="block-buttons__link"
+        class="block-buttons__button block-buttons__link block-buttons__button--hover-{{ block.settings.hover_effect }}"
       {% else %}
-        class="button-arrow button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+        class="block-buttons__button block-buttons__button--hover-{{ block.settings.hover_effect }} button-arrow button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
       {% endif %}
     >
       {%- if block.settings.icon != blank and block.settings.icon_position == 'first' -%}
@@ -95,9 +100,27 @@
   {%- endif -%}
 </div>
 
-{%- if block.settings.icon != blank or has_text_color or has_background_color or has_border_color or block.settings.custom_font_size or block.settings.custom_border_radius or block.settings.border_width > 0 or block.settings.custom_padding or block.settings.custom_margin or block.settings.link_style or has_hover or block.settings.font_weight != 'inherit' or block.settings.custom_letter_spacing -%}
-  {%- style -%}
+{%- style -%}
+    #Button-{{ block.id }}::after {
+      content: none;
+    }
+    {%- if block.settings.hover_effect == 'sweep' %}
+      #Button-{{ block.id }}::before {
+        content: '';
+        width: 0;
+        transition: width {{ block.settings.hover_duration }}ms ease;
+        background-color: {% if has_sweep_color %}{{ sweep_color }}{% else %}rgba(159, 159, 159, 0.2){% endif %};
+      }
+      #Button-{{ block.id }}:hover::before {
+        width: 100%;
+      }
+    {%- else %}
+      #Button-{{ block.id }}::before {
+        content: none;
+      }
+    {%- endif %}
     #Button-{{ block.id }} {
+      transition: color {{ block.settings.hover_duration }}ms ease, background-color {{ block.settings.hover_duration }}ms ease, border-color {{ block.settings.hover_duration }}ms ease, box-shadow {{ block.settings.hover_duration }}ms ease, transform {{ block.settings.hover_duration }}ms ease, opacity {{ block.settings.hover_duration }}ms ease;
       {%- if block.settings.icon != blank %}
         gap: {{ block.settings.icon_spacing }}px;
       {%- endif %}
@@ -198,8 +221,7 @@
         margin: {{ block.settings.margin_top }}px {{ block.settings.margin_right }}px {{ block.settings.margin_bottom }}px {{ block.settings.margin_left }}px;
       }
     {%- endif %}
-  {%- endstyle -%}
-{%- endif -%}
+{%- endstyle -%}
 
 {% stylesheet %}
   .block-buttons {
@@ -217,6 +239,29 @@
     object-fit: contain;
   }
 
+  .block-buttons__button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  .block-buttons__button--hover-lift:hover,
+  .block-buttons__button--hover-lift_shadow:hover {
+    transform: translateY(-3px);
+  }
+
+  .block-buttons__button--hover-scale:hover {
+    transform: scale(1.04);
+  }
+
+  .block-buttons__button--hover-shadow:hover,
+  .block-buttons__button--hover-lift_shadow:hover {
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.35);
+  }
+
   .block-buttons__link {
     display: inline-flex;
     align-items: center;
@@ -228,7 +273,6 @@
     font-weight: 500;
     line-height: 1.3;
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
   }
 
   .block-buttons__link:hover {
@@ -324,6 +368,37 @@
     {
       "type": "header",
       "content": "t:blocks.button.settings.header_hover.content"
+    },
+    {
+      "type": "select",
+      "id": "hover_effect",
+      "options": [
+        { "value": "none", "label": "t:blocks.button.settings.hover_effect.options__1.label" },
+        { "value": "lift", "label": "t:blocks.button.settings.hover_effect.options__2.label" },
+        { "value": "scale", "label": "t:blocks.button.settings.hover_effect.options__3.label" },
+        { "value": "shadow", "label": "t:blocks.button.settings.hover_effect.options__4.label" },
+        { "value": "lift_shadow", "label": "t:blocks.button.settings.hover_effect.options__5.label" },
+        { "value": "sweep", "label": "t:blocks.button.settings.hover_effect.options__6.label" }
+      ],
+      "default": "none",
+      "label": "t:blocks.button.settings.hover_effect.label"
+    },
+    {
+      "type": "color",
+      "id": "sweep_color",
+      "label": "t:blocks.button.settings.sweep_color.label",
+      "info": "t:blocks.button.settings.sweep_color.info",
+      "visible_if": "{{ block.settings.hover_effect == 'sweep' }}"
+    },
+    {
+      "type": "range",
+      "id": "hover_duration",
+      "min": 0,
+      "max": 1000,
+      "step": 50,
+      "unit": "ms",
+      "default": 300,
+      "label": "t:blocks.button.settings.hover_duration.label"
     },
     {
       "type": "color",
