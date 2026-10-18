@@ -8860,6 +8860,62 @@
         },
         "margin_right": {
           "label": "Right margin"
+        },
+        "header_background": {
+          "content": "Background"
+        },
+        "background_color": {
+          "label": "Background color",
+          "info": "Leave empty for no background. The caption shrinks to fit its text."
+        },
+        "border_radius": {
+          "label": "Corner radius"
+        },
+        "custom_padding": {
+          "label": "Use custom padding"
+        },
+        "padding_top": {
+          "label": "Top padding"
+        },
+        "padding_right": {
+          "label": "Right padding"
+        },
+        "padding_bottom": {
+          "label": "Bottom padding"
+        },
+        "padding_left": {
+          "label": "Left padding"
+        },
+        "custom_letter_spacing": {
+          "label": "Use custom letter spacing",
+          "info": "Overrides the letter spacing from the text style."
+        },
+        "letter_spacing": {
+          "label": "Letter spacing"
+        },
+        "font_weight": {
+          "label": "Font weight",
+          "options__1": {
+            "label": "Default"
+          },
+          "options__2": {
+            "label": "Light"
+          },
+          "options__3": {
+            "label": "Regular"
+          },
+          "options__4": {
+            "label": "Medium"
+          },
+          "options__5": {
+            "label": "Semibold"
+          },
+          "options__6": {
+            "label": "Bold"
+          },
+          "options__7": {
+            "label": "Extra bold"
+          }
         }
       }
     },

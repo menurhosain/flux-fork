@@ -14,8 +14,13 @@
   if text_color != blank and text_color.alpha != 0
     assign has_text_color = true
   endif
+  assign background_color = block.settings.background_color
+  assign has_background = false
+  if background_color != blank and background_color.alpha != 0
+    assign has_background = true
+  endif
 -%}
-{%- if block.settings.custom_font_size or has_text_color or block.settings.custom_spacing or block.settings.alignment != 'inherit' -%}
+{%- if block.settings.custom_font_size or has_text_color or block.settings.custom_spacing or block.settings.alignment != 'inherit' or has_background or block.settings.border_radius > 0 or block.settings.custom_padding or block.settings.font_weight != 'inherit' or block.settings.custom_letter_spacing -%}
   {%- style -%}
     {%- if block.settings.alignment != 'inherit' %}
       #Caption-{{ block.id }} {
@@ -29,11 +34,37 @@
       {%- if has_text_color %}
         color: {{ text_color }};
       {%- endif %}
+      {%- if block.settings.font_weight != 'inherit' %}
+        font-weight: {{ block.settings.font_weight }};
+      {%- endif %}
+      {%- if block.settings.custom_letter_spacing %}
+        letter-spacing: {{ block.settings.letter_spacing }}px;
+      {%- endif %}
       {%- if block.settings.custom_spacing %}
         margin-top: {{ block.settings.margin_top }}px;
         margin-bottom: {{ block.settings.margin_bottom }}px;
         margin-left: {{ block.settings.margin_left }}px;
         margin-right: {{ block.settings.margin_right }}px;
+      {%- endif %}
+      {%- if has_background %}
+        background-color: {{ background_color }};
+        width: fit-content;
+        max-width: 100%;
+        {%- unless block.settings.custom_spacing %}
+          {%- case block.settings.alignment %}
+            {%- when 'center' %}
+              margin-left: auto;
+              margin-right: auto;
+            {%- when 'right' %}
+              margin-left: auto;
+          {%- endcase %}
+        {%- endunless %}
+      {%- endif %}
+      {%- if block.settings.border_radius > 0 %}
+        border-radius: {{ block.settings.border_radius }}px;
+      {%- endif %}
+      {%- if block.settings.custom_padding %}
+        padding: {{ block.settings.padding_top }}px {{ block.settings.padding_right }}px {{ block.settings.padding_bottom }}px {{ block.settings.padding_left }}px;
       {%- endif %}
     }
     {%- if block.settings.custom_font_size %}
@@ -128,6 +159,42 @@
       "info": "t:blocks.caption.settings.text_color.info"
     },
     {
+      "type": "select",
+      "id": "font_weight",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "t:blocks.caption.settings.font_weight.options__1.label"
+        },
+        {
+          "value": "300",
+          "label": "t:blocks.caption.settings.font_weight.options__2.label"
+        },
+        {
+          "value": "400",
+          "label": "t:blocks.caption.settings.font_weight.options__3.label"
+        },
+        {
+          "value": "500",
+          "label": "t:blocks.caption.settings.font_weight.options__4.label"
+        },
+        {
+          "value": "600",
+          "label": "t:blocks.caption.settings.font_weight.options__5.label"
+        },
+        {
+          "value": "700",
+          "label": "t:blocks.caption.settings.font_weight.options__6.label"
+        },
+        {
+          "value": "800",
+          "label": "t:blocks.caption.settings.font_weight.options__7.label"
+        }
+      ],
+      "default": "inherit",
+      "label": "t:blocks.caption.settings.font_weight.label"
+    },
+    {
       "type": "checkbox",
       "id": "custom_font_size",
       "default": false,
@@ -155,6 +222,24 @@
       "default": 13,
       "label": "t:blocks.caption.settings.font_size_mobile.label",
       "visible_if": "{{ block.settings.custom_font_size }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_letter_spacing",
+      "default": false,
+      "label": "t:blocks.caption.settings.custom_letter_spacing.label",
+      "info": "t:blocks.caption.settings.custom_letter_spacing.info"
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "min": -2,
+      "max": 10,
+      "step": 0.5,
+      "unit": "px",
+      "default": 1,
+      "label": "t:blocks.caption.settings.letter_spacing.label",
+      "visible_if": "{{ block.settings.custom_letter_spacing }}"
     },
     {
       "type": "header",
@@ -210,6 +295,76 @@
       "default": 0,
       "label": "t:blocks.caption.settings.margin_right.label",
       "visible_if": "{{ block.settings.custom_spacing }}"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.caption.settings.header_background.content"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:blocks.caption.settings.background_color.label",
+      "info": "t:blocks.caption.settings.background_color.info"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.caption.settings.border_radius.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_padding",
+      "default": false,
+      "label": "t:blocks.caption.settings.custom_padding.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 6,
+      "label": "t:blocks.caption.settings.padding_top.label",
+      "visible_if": "{{ block.settings.custom_padding }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 12,
+      "label": "t:blocks.caption.settings.padding_right.label",
+      "visible_if": "{{ block.settings.custom_padding }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 6,
+      "label": "t:blocks.caption.settings.padding_bottom.label",
+      "visible_if": "{{ block.settings.custom_padding }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 12,
+      "label": "t:blocks.caption.settings.padding_left.label",
+      "visible_if": "{{ block.settings.custom_padding }}"
     }
   ],
   "presets": [

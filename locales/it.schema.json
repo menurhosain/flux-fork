@@ -8860,6 +8860,62 @@
         },
         "margin_right": {
           "label": "Margine destro"
+        },
+        "header_background": {
+          "content": "Sfondo"
+        },
+        "background_color": {
+          "label": "Colore di sfondo",
+          "info": "Lascia vuoto per nessuno sfondo. La didascalia si adatta alla larghezza del testo."
+        },
+        "border_radius": {
+          "label": "Raggio degli angoli"
+        },
+        "custom_padding": {
+          "label": "Usa spaziatura interna personalizzata"
+        },
+        "padding_top": {
+          "label": "Spaziatura interna superiore"
+        },
+        "padding_right": {
+          "label": "Spaziatura interna destra"
+        },
+        "padding_bottom": {
+          "label": "Spaziatura interna inferiore"
+        },
+        "padding_left": {
+          "label": "Spaziatura interna sinistra"
+        },
+        "custom_letter_spacing": {
+          "label": "Usa spaziatura delle lettere personalizzata",
+          "info": "Sostituisce la spaziatura delle lettere dello stile di testo."
+        },
+        "letter_spacing": {
+          "label": "Spaziatura delle lettere"
+        },
+        "font_weight": {
+          "label": "Spessore del carattere",
+          "options__1": {
+            "label": "Predefinito"
+          },
+          "options__2": {
+            "label": "Leggero"
+          },
+          "options__3": {
+            "label": "Normale"
+          },
+          "options__4": {
+            "label": "Medio"
+          },
+          "options__5": {
+            "label": "Semigrassetto"
+          },
+          "options__6": {
+            "label": "Grassetto"
+          },
+          "options__7": {
+            "label": "Extra grassetto"
+          }
         }
       }
     },

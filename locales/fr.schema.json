@@ -8860,6 +8860,62 @@
         },
         "margin_right": {
           "label": "Marge droite"
+        },
+        "header_background": {
+          "content": "Arrière-plan"
+        },
+        "background_color": {
+          "label": "Couleur d'arrière-plan",
+          "info": "Laisser vide pour aucun arrière-plan. La légende s'ajuste à la largeur du texte."
+        },
+        "border_radius": {
+          "label": "Rayon des coins"
+        },
+        "custom_padding": {
+          "label": "Utiliser une marge intérieure personnalisée"
+        },
+        "padding_top": {
+          "label": "Marge intérieure haute"
+        },
+        "padding_right": {
+          "label": "Marge intérieure droite"
+        },
+        "padding_bottom": {
+          "label": "Marge intérieure basse"
+        },
+        "padding_left": {
+          "label": "Marge intérieure gauche"
+        },
+        "custom_letter_spacing": {
+          "label": "Utiliser un espacement des lettres personnalisé",
+          "info": "Remplace l'espacement des lettres du style de texte."
+        },
+        "letter_spacing": {
+          "label": "Espacement des lettres"
+        },
+        "font_weight": {
+          "label": "Graisse de police",
+          "options__1": {
+            "label": "Par défaut"
+          },
+          "options__2": {
+            "label": "Léger"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Moyen"
+          },
+          "options__5": {
+            "label": "Demi-gras"
+          },
+          "options__6": {
+            "label": "Gras"
+          },
+          "options__7": {
+            "label": "Extra-gras"
+          }
         }
       }
     },

@@ -8861,6 +8861,62 @@
         },
         "margin_right": {
           "label": "Rechter Abstand"
+        },
+        "header_background": {
+          "content": "Hintergrund"
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe",
+          "info": "Leer lassen für keinen Hintergrund. Die Bildunterschrift passt sich der Textbreite an."
+        },
+        "border_radius": {
+          "label": "Eckenradius"
+        },
+        "custom_padding": {
+          "label": "Benutzerdefinierten Innenabstand verwenden"
+        },
+        "padding_top": {
+          "label": "Innenabstand oben"
+        },
+        "padding_right": {
+          "label": "Innenabstand rechts"
+        },
+        "padding_bottom": {
+          "label": "Innenabstand unten"
+        },
+        "padding_left": {
+          "label": "Innenabstand links"
+        },
+        "custom_letter_spacing": {
+          "label": "Benutzerdefinierten Zeichenabstand verwenden",
+          "info": "Überschreibt den Zeichenabstand des Textstils."
+        },
+        "letter_spacing": {
+          "label": "Zeichenabstand"
+        },
+        "font_weight": {
+          "label": "Schriftstärke",
+          "options__1": {
+            "label": "Standard"
+          },
+          "options__2": {
+            "label": "Leicht"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Mittel"
+          },
+          "options__5": {
+            "label": "Halbfett"
+          },
+          "options__6": {
+            "label": "Fett"
+          },
+          "options__7": {
+            "label": "Extrafett"
+          }
         }
       }
     },

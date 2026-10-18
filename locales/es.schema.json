@@ -8861,6 +8861,62 @@
         },
         "margin_right": {
           "label": "Margen derecho"
+        },
+        "header_background": {
+          "content": "Fondo"
+        },
+        "background_color": {
+          "label": "Color de fondo",
+          "info": "Déjalo vacío para no tener fondo. El subtítulo se ajusta al ancho del texto."
+        },
+        "border_radius": {
+          "label": "Radio de esquina"
+        },
+        "custom_padding": {
+          "label": "Usar relleno personalizado"
+        },
+        "padding_top": {
+          "label": "Relleno superior"
+        },
+        "padding_right": {
+          "label": "Relleno derecho"
+        },
+        "padding_bottom": {
+          "label": "Relleno inferior"
+        },
+        "padding_left": {
+          "label": "Relleno izquierdo"
+        },
+        "custom_letter_spacing": {
+          "label": "Usar espaciado entre letras personalizado",
+          "info": "Reemplaza el espaciado entre letras del estilo de texto."
+        },
+        "letter_spacing": {
+          "label": "Espaciado entre letras"
+        },
+        "font_weight": {
+          "label": "Grosor de fuente",
+          "options__1": {
+            "label": "Predeterminado"
+          },
+          "options__2": {
+            "label": "Ligera"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Media"
+          },
+          "options__5": {
+            "label": "Seminegrita"
+          },
+          "options__6": {
+            "label": "Negrita"
+          },
+          "options__7": {
+            "label": "Extranegrita"
+          }
         }
       }
     },
