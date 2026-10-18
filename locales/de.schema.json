@@ -1909,6 +1909,15 @@
         "post_title_size_mobile": {
           "label": "Größe der Beitragstitel (mobil)"
         },
+        "custom_excerpt_size": {
+          "label": "Benutzerdefinierte Größe für Auszüge"
+        },
+        "excerpt_size": {
+          "label": "Größe des Auszugs (Desktop)"
+        },
+        "excerpt_size_mobile": {
+          "label": "Größe des Auszugs (mobil)"
+        },
         "blog_style": {
           "label": "Blog-Stil",
           "options__1": {

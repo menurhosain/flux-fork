@@ -31,6 +31,17 @@
     }
   {%- endif %}
 
+  {%- if section.settings.custom_excerpt_size %}
+    .section-{{ section.id }}-padding .article-card .article-card-excerpt {
+      font-size: {{ section.settings.excerpt_size_mobile }}px;
+    }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding .article-card .article-card-excerpt {
+        font-size: {{ section.settings.excerpt_size }}px;
+      }
+    }
+  {%- endif %}
+
   @media screen and (max-width: 990px) {
     .margin-spacing-negative.section-{{ section.id }}-margin {
       margin-top: -{{ section.settings.margin_top }}px;
@@ -436,6 +447,34 @@
       "default": 20,
       "label": "t:sections.featured-blog.settings.post_title_size_mobile.label",
       "visible_if": "{{ section.settings.custom_post_title_size }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_excerpt_size",
+      "default": false,
+      "label": "t:sections.featured-blog.settings.custom_excerpt_size.label"
+    },
+    {
+      "type": "range",
+      "id": "excerpt_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 15,
+      "label": "t:sections.featured-blog.settings.excerpt_size.label",
+      "visible_if": "{{ section.settings.custom_excerpt_size }}"
+    },
+    {
+      "type": "range",
+      "id": "excerpt_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:sections.featured-blog.settings.excerpt_size_mobile.label",
+      "visible_if": "{{ section.settings.custom_excerpt_size }}"
     },
     {
       "type": "checkbox",
