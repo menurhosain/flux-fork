@@ -25,7 +25,7 @@
           "name": "t:blocks.breadcrumbs.name",
           "settings": {
             "show_border": false,
-            "border_color": "#2C2B2B",
+            "border_color": "#2c2b2b",
             "background_color": "",
             "text_color": "",
             "alignment": "left",
@@ -57,21 +57,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text": {
-          "type": "_product-text",
-          "settings": {
-            "column": "left",
-            "text": "<p>No GMO. Dairy Free. Gluten Free. Peanut Free</p>",
-            "text_style": "body",
-            "text_block_size": "small",
-            "show_text_background": true,
-            "margin_top": 0,
-            "color_scheme_1": "option-2",
-            "hide_quick_view": true,
-            "pin_to_top": false
-          },
-          "blocks": {}
-        },
         "title": {
           "type": "_product-title",
           "settings": {
@@ -357,7 +342,6 @@
         }
       },
       "block_order": [
-        "text",
         "title",
         "price",
         "spacer",

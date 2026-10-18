@@ -70,7 +70,7 @@
           "settings": {
             "column_width": 25,
             "heading": "Contact Info",
-            "subtext": "<p>✉️ <a href=\"mailto:support@bactonhealth.com\" title=\"mailto:support@bactonhealth.com\"><strong>&nbsp;support@bactonhealth.com</strong></a><br/>📞 <a href=\"tel:888-251-1518\" title=\"tel:888-251-1518\"><strong>888-251-1518</strong></a><br/>📍 <a href=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\" target=\"_blank\" title=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\"><strong>2108 N St. Ste. N, Sacramento, CA 95816</strong></a></p>",
+            "subtext": "<p>E: <a href=\"mailto:support@bactonhealth.com\" title=\"mailto:support@bactonhealth.com\"><strong>&nbsp;</strong>support@bactonhealth.com</a><br/>P: <a href=\"tel:888-251-1518\" title=\"tel:888-251-1518\">888-251-1518</a><br/>A: <a href=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\" target=\"_blank\" title=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\">2108 N St. Ste. N, Sacramento, CA 95816</a></p>",
             "custom_liquid": ""
           },
           "blocks": {}
