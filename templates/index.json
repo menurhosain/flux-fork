@@ -1387,7 +1387,7 @@
             "margin_bottom": 8,
             "margin_left": 0,
             "margin_right": 0,
-            "background_color": "#E4E4E4",
+            "background_color": "#e4e4e4",
             "border_radius": 20,
             "custom_padding": true,
             "padding_top": 6,
@@ -1397,27 +1397,50 @@
           },
           "blocks": {}
         },
-        "heading_wellness": {
-          "type": "heading",
+        "container_EKRFar": {
+          "type": "container",
+          "name": "t:blocks.container.name",
           "settings": {
-            "heading": "Support for the patterns that keep getting in the way",
-            "heading_size": "medium",
-            "heading_style": "default",
-            "heading_tag": "h2",
-            "highlight_option": "none",
-            "word_animation_color": "#00a2f8",
-            "alignment": "inherit",
-            "text_color": "#0007C6",
-            "custom_font_size": true,
-            "font_size": 64,
-            "font_size_mobile": 38,
-            "custom_spacing": true,
-            "margin_top": 20,
-            "margin_bottom": 0,
-            "margin_left": 0,
-            "margin_right": 0
+            "background_color": "rgba(0,0,0,0)",
+            "border_radius": 0,
+            "border_width": 0,
+            "border_color": "rgba(0,0,0,0)",
+            "border_top": false,
+            "border_right": false,
+            "border_bottom": false,
+            "border_left": false,
+            "padding_vertical": 0,
+            "padding_horizontal": 0,
+            "padding_vertical_mobile": 0,
+            "padding_horizontal_mobile": 0
           },
-          "blocks": {}
+          "blocks": {
+            "heading_GaebD6": {
+              "type": "heading",
+              "settings": {
+                "heading": "Support for the patterns that keep getting in the way",
+                "heading_size": "medium",
+                "heading_style": "default",
+                "heading_tag": "h2",
+                "highlight_option": "none",
+                "word_animation_color": "#00a2f8",
+                "alignment": "inherit",
+                "text_color": "#0007c6",
+                "custom_font_size": true,
+                "font_size": 72,
+                "font_size_mobile": 30,
+                "custom_spacing": true,
+                "margin_top": 20,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_GaebD6"
+          ]
         },
         "pills_wellness": {
           "type": "pills",
@@ -1428,19 +1451,19 @@
             "column_gap_mobile": 8,
             "row_gap_mobile": 8,
             "text_color": "#222222",
-            "background_color": "#FFFFFF",
-            "border_color": "#E8E8E8",
+            "background_color": "#ffffff",
+            "border_color": "#e8e8e8",
             "border_width": 1,
             "border_radius": 40,
             "font_size": 15,
             "font_size_mobile": 14,
-            "font_weight": "500",
+            "font_weight": "600",
             "padding_vertical": 14,
             "padding_horizontal": 16,
             "padding_vertical_mobile": 10,
             "padding_horizontal_mobile": 14,
-            "hover_text_color": "",
-            "hover_background_color": "",
+            "hover_text_color": "#ffffff",
+            "hover_background_color": "#00a2f8",
             "hover_border_color": "",
             "custom_spacing": true,
             "margin_top": 44,
@@ -1452,7 +1475,16 @@
               "settings": {
                 "label": "Low energy",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1461,7 +1493,16 @@
               "settings": {
                 "label": "Digestive discomfort",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1470,7 +1511,16 @@
               "settings": {
                 "label": "Hormone changes",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1479,7 +1529,16 @@
               "settings": {
                 "label": "Stress overload",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1488,7 +1547,16 @@
               "settings": {
                 "label": "Brain fog",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1497,7 +1565,16 @@
               "settings": {
                 "label": "Immune resilience",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1506,7 +1583,16 @@
               "settings": {
                 "label": "Metabolic challenges",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1515,7 +1601,16 @@
               "settings": {
                 "label": "Perimenopause support",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1524,7 +1619,16 @@
               "settings": {
                 "label": "Poor sleep",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1533,7 +1637,16 @@
               "settings": {
                 "label": "Recovery & resilience",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1542,7 +1655,16 @@
               "settings": {
                 "label": "Recurring headaches",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             },
@@ -1551,7 +1673,16 @@
               "settings": {
                 "label": "Skin concerns",
                 "link": "",
-                "open_new_tab": false
+                "open_new_tab": false,
+                "text_color": "",
+                "background_color": "",
+                "border_color": "",
+                "custom_border_width": false,
+                "border_width": 1,
+                "font_weight": "inherit",
+                "custom_font_size": false,
+                "font_size": 15,
+                "font_size_mobile": 14
               },
               "blocks": {}
             }
@@ -1575,13 +1706,35 @@
           "type": "button",
           "settings": {
             "button_label": "Explore wellness support",
-            "button_link": "shopify://collections/all",
+            "button_link": "shopify://pages/contact",
+            "apply_link_to_image": false,
             "open_new_tab_1": false,
             "button_style_secondary": false,
             "link_style": true,
-            "underline_color": "#107AF8",
+            "underline_color": "#107af8",
             "underline_thickness": 2,
             "text_color": "#222222",
+            "background_color": "",
+            "hover_text_color": "#00a2f8",
+            "hover_background_color": "",
+            "hover_border_color": "",
+            "hover_icon_color": "",
+            "hover_underline_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 16,
+            "font_weight": "600",
+            "custom_letter_spacing": false,
+            "letter_spacing": 0,
+            "custom_border_radius": false,
+            "border_radius": 6,
+            "border_width": 0,
+            "border_color": "",
+            "custom_padding": false,
+            "padding_vertical": 12,
+            "padding_horizontal": 24,
+            "padding_vertical_mobile": 10,
+            "padding_horizontal_mobile": 20,
             "custom_margin": true,
             "margin_top": 50,
             "margin_bottom": 0,
@@ -1599,7 +1752,7 @@
       },
       "block_order": [
         "caption_wellness",
-        "heading_wellness",
+        "container_EKRFar",
         "pills_wellness",
         "button_wellness"
       ],
