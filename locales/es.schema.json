@@ -9082,6 +9082,14 @@
         "icon_spacing": {
           "label": "Espacio entre icono y texto"
         },
+        "recolor_icon": {
+          "label": "Recolorear icono",
+          "info": "Rellena el icono con un solo color. Funciona mejor con iconos SVG de un color o PNG transparentes."
+        },
+        "icon_color": {
+          "label": "Color del icono",
+          "info": "Déjalo vacío para usar el color del texto del botón, también al pasar el cursor."
+        },
         "apply_link_to_image": {
           "info": "Funciona en secciones de banner con imagen."
         }

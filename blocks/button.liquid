@@ -16,7 +16,24 @@
   if background_color != blank and background_color.alpha != 0
     assign has_background_color = true
   endif
+  assign icon_color = block.settings.icon_color
+  assign has_icon_color = false
+  if icon_color != blank and icon_color.alpha != 0
+    assign has_icon_color = true
+  endif
 -%}
+
+{%- capture icon_markup -%}
+  {%- if block.settings.recolor_icon -%}
+    <span
+      class="block-buttons__icon block-buttons__icon--mask"
+      style="--icon-url: url('{{ block.settings.icon | image_url: width: icon_width }}');"
+      aria-hidden="true"
+    ></span>
+  {%- else -%}
+    {{- block.settings.icon | image_url: width: icon_width | image_tag: class: 'block-buttons__icon', alt: '', loading: 'lazy' -}}
+  {%- endif -%}
+{%- endcapture -%}
 
 <div id="Buttons-{{ block.id }}" class="block-buttons block-buttons-{{ block.id }}" {{ block.shopify_attributes }}>
   {%- if block.settings.button_label != blank -%}
@@ -30,11 +47,11 @@
       class="button-arrow button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
     >
       {%- if block.settings.icon != blank and block.settings.icon_position == 'first' -%}
-        {{- block.settings.icon | image_url: width: icon_width | image_tag: class: 'block-buttons__icon', alt: '', loading: 'lazy' -}}
+        {{- icon_markup -}}
       {%- endif -%}
       <span>{{- block.settings.button_label | escape -}}</span>
       {%- if block.settings.icon != blank and block.settings.icon_position == 'last' -%}
-        {{- block.settings.icon | image_url: width: icon_width | image_tag: class: 'block-buttons__icon', alt: '', loading: 'lazy' -}}
+        {{- icon_markup -}}
       {%- endif -%}
     </a>
   {%- endif -%}
@@ -94,6 +111,11 @@
         width: {{ icon_size }}px;
         height: {{ icon_size }}px;
       }
+      {%- if block.settings.recolor_icon and has_icon_color %}
+        #Button-{{ block.id }} .block-buttons__icon--mask {
+          background-color: {{ icon_color }};
+        }
+      {%- endif %}
     {%- endif %}
     {%- if block.settings.custom_margin %}
       #Buttons-{{ block.id }} {
@@ -117,6 +139,13 @@
   .block-buttons__icon {
     flex-shrink: 0;
     object-fit: contain;
+  }
+
+  .block-buttons__icon--mask {
+    display: inline-block;
+    background-color: currentColor;
+    -webkit-mask: var(--icon-url) center / contain no-repeat;
+    mask: var(--icon-url) center / contain no-repeat;
   }
 {% endstylesheet %}
 
@@ -392,6 +421,20 @@
       "unit": "px",
       "default": 8,
       "label": "t:blocks.button.settings.icon_spacing.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "recolor_icon",
+      "default": false,
+      "label": "t:blocks.button.settings.recolor_icon.label",
+      "info": "t:blocks.button.settings.recolor_icon.info"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "t:blocks.button.settings.icon_color.label",
+      "info": "t:blocks.button.settings.icon_color.info",
+      "visible_if": "{{ block.settings.recolor_icon }}"
     }
   ],
   "presets": [

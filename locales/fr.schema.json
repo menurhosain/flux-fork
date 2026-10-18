@@ -9081,6 +9081,14 @@
         "icon_spacing": {
           "label": "Espace entre l’icône et le texte"
         },
+        "recolor_icon": {
+          "label": "Recolorer l'icône",
+          "info": "Remplit l'icône d'une seule couleur. Idéal pour les icônes SVG unicolores ou PNG transparentes."
+        },
+        "icon_color": {
+          "label": "Couleur de l'icône",
+          "info": "Laisser vide pour reprendre la couleur du texte du bouton, y compris au survol."
+        },
         "apply_link_to_image": {
           "info": "Fonctionne dans les sections de bannière d’image."
         }

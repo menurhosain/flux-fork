@@ -9082,6 +9082,14 @@
         "icon_spacing": {
           "label": "Abstand zwischen Symbol und Text"
         },
+        "recolor_icon": {
+          "label": "Symbol einfärben",
+          "info": "Füllt das Symbol mit einer einzigen Farbe. Am besten für einfarbige SVG- oder transparente PNG-Symbole."
+        },
+        "icon_color": {
+          "label": "Symbolfarbe",
+          "info": "Leer lassen, um die Textfarbe des Buttons zu übernehmen, auch beim Hover."
+        },
         "apply_link_to_image": {
           "info": "Funktioniert in Bildbanner-Abschnitten."
         }

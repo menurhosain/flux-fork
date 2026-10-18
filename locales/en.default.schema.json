@@ -9081,6 +9081,14 @@
         "icon_spacing": {
           "label": "Space between icon and text"
         },
+        "recolor_icon": {
+          "label": "Recolor icon",
+          "info": "Fills the icon with a single color. Works best with one-color SVG or transparent PNG icons."
+        },
+        "icon_color": {
+          "label": "Icon color",
+          "info": "Leave empty to match the button text color, including on hover."
+        },
         "apply_link_to_image": {
           "info": "Works in image banner sections."
         }

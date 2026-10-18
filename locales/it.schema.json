@@ -9081,6 +9081,14 @@
         "icon_spacing": {
           "label": "Spazio tra icona e testo"
         },
+        "recolor_icon": {
+          "label": "Ricolora icona",
+          "info": "Riempie l'icona con un solo colore. Ideale per icone SVG monocolore o PNG trasparenti."
+        },
+        "icon_color": {
+          "label": "Colore icona",
+          "info": "Lascia vuoto per usare il colore del testo del pulsante, anche al passaggio del mouse."
+        },
         "apply_link_to_image": {
           "info": "Funziona nelle sezioni banner immagine."
         }
