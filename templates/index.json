@@ -23,9 +23,9 @@
             "custom_font_size": false,
             "font_size": 14,
             "font_size_mobile": 13,
-            "custom_spacing": false,
+            "custom_spacing": true,
             "margin_top": 0,
-            "margin_bottom": 8,
+            "margin_bottom": 20,
             "margin_left": 0,
             "margin_right": 0
           },
@@ -39,9 +39,9 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#272727",
+            "word_animation_color": "#00A2F8",
             "alignment": "inherit",
-            "text_color": "",
+            "text_color": "#107AF8",
             "custom_font_size": true,
             "font_size": 44,
             "font_size_mobile": 40,
@@ -60,8 +60,8 @@
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
-            "custom_font_size": false,
-            "font_size": 16,
+            "custom_font_size": true,
+            "font_size": 15,
             "font_size_mobile": 15,
             "custom_spacing": false,
             "margin_top": 0,
@@ -70,12 +70,48 @@
             "margin_right": 0
           },
           "blocks": {}
+        },
+        "button_BBgwqK": {
+          "type": "button",
+          "name": "t:blocks.button.name",
+          "settings": {
+            "button_label": "Call Us for details",
+            "button_link": "shopify://pages/contact",
+            "apply_link_to_image": false,
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "text_color": "",
+            "background_color": "#0007C6",
+            "custom_font_size": true,
+            "font_size": 14,
+            "font_size_mobile": 16,
+            "custom_border_radius": true,
+            "border_radius": 30,
+            "border_width": 0,
+            "border_color": "",
+            "custom_padding": true,
+            "padding_vertical": 12,
+            "padding_horizontal": 24,
+            "padding_vertical_mobile": 10,
+            "padding_horizontal_mobile": 20,
+            "custom_margin": false,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0,
+            "icon": "shopify://shop_images/arrow-icon.svg",
+            "icon_size": 20,
+            "icon_position": "last",
+            "icon_spacing": 8
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "caption_w6Gm7W",
         "heading_4G7UGY",
-        "text_cqRANa"
+        "text_cqRANa",
+        "button_BBgwqK"
       ],
       "settings": {
         "image": "shopify://shop_images/Wellora-IMG-2-1.jpg",
@@ -219,6 +255,7 @@
         "button_CKLGmC",
         "button_fLbJh7"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/banner.jpg",
         "hide_image": false,
