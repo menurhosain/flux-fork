@@ -8906,6 +8906,15 @@
           },
           "options__star": {
             "label": "Étoile"
+          },
+          "options__clipboard": {
+            "label": "Presse-papiers"
+          },
+          "options__flask": {
+            "label": "Fiole"
+          },
+          "options__user_check": {
+            "label": "Utilisateur vérifié"
           }
         },
         "icon": {
@@ -9051,6 +9060,75 @@
           "options__2": {
             "label": "Police du corps"
           }
+        },
+        "layout": {
+          "label": "Mise en page",
+          "options__1": {
+            "label": "Icône en haut, numéro dans le coin"
+          },
+          "options__2": {
+            "label": "Numéro et icône en haut"
+          }
+        },
+        "round_icon": {
+          "label": "Cadre d'icône rond"
+        },
+        "header_link": {
+          "content": "Lien"
+        },
+        "link_label": {
+          "label": "Libellé du lien",
+          "info": "Affiche une ligne en bas de la carte. Laisser vide pour masquer."
+        },
+        "link": {
+          "label": "Lien"
+        },
+        "open_new_tab": {
+          "label": "Ouvrir le lien dans un nouvel onglet"
+        },
+        "card_link": {
+          "label": "Rendre toute la carte cliquable"
+        },
+        "link_color": {
+          "label": "Couleur du texte du lien"
+        },
+        "link_size": {
+          "label": "Taille du texte du lien"
+        },
+        "arrow": {
+          "label": "Flèche",
+          "options__1": {
+            "label": "En haut à droite"
+          },
+          "options__2": {
+            "label": "Droite"
+          },
+          "options__3": {
+            "label": "Aucune"
+          }
+        },
+        "arrow_image": {
+          "label": "Flèche personnalisée",
+          "info": "Remplace la flèche intégrée et utilise la couleur de la flèche."
+        },
+        "arrow_color": {
+          "label": "Couleur de la flèche"
+        },
+        "arrow_size": {
+          "label": "Taille de la flèche"
+        },
+        "show_divider": {
+          "label": "Afficher un séparateur au-dessus du lien"
+        },
+        "divider_color": {
+          "label": "Couleur du séparateur",
+          "info": "Laisser vide pour une ligne claire basée sur la couleur du texte."
+        },
+        "footer_spacing": {
+          "label": "Espace au-dessus du séparateur"
+        },
+        "footer_padding": {
+          "label": "Espace sous le séparateur"
         }
       }
     },

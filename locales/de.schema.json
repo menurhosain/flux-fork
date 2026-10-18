@@ -8907,6 +8907,15 @@
           },
           "options__star": {
             "label": "Stern"
+          },
+          "options__clipboard": {
+            "label": "Klemmbrett"
+          },
+          "options__flask": {
+            "label": "Kolben"
+          },
+          "options__user_check": {
+            "label": "Benutzer mit Häkchen"
           }
         },
         "icon": {
@@ -9052,6 +9061,75 @@
           "options__2": {
             "label": "Fließtext-Schrift"
           }
+        },
+        "layout": {
+          "label": "Layout",
+          "options__1": {
+            "label": "Symbol oben, Nummer in der Ecke"
+          },
+          "options__2": {
+            "label": "Nummer und Symbol oben"
+          }
+        },
+        "round_icon": {
+          "label": "Rundes Symbolfeld"
+        },
+        "header_link": {
+          "content": "Link"
+        },
+        "link_label": {
+          "label": "Link-Beschriftung",
+          "info": "Zeigt eine Fußzeile unten auf der Karte. Leer lassen zum Ausblenden."
+        },
+        "link": {
+          "label": "Link"
+        },
+        "open_new_tab": {
+          "label": "Link in neuem Tab öffnen"
+        },
+        "card_link": {
+          "label": "Ganze Karte klickbar machen"
+        },
+        "link_color": {
+          "label": "Textfarbe des Links"
+        },
+        "link_size": {
+          "label": "Textgröße des Links"
+        },
+        "arrow": {
+          "label": "Pfeil",
+          "options__1": {
+            "label": "Nach rechts oben"
+          },
+          "options__2": {
+            "label": "Nach rechts"
+          },
+          "options__3": {
+            "label": "Keiner"
+          }
+        },
+        "arrow_image": {
+          "label": "Eigener Pfeil",
+          "info": "Ersetzt den integrierten Pfeil und nutzt die Pfeilfarbe."
+        },
+        "arrow_color": {
+          "label": "Pfeilfarbe"
+        },
+        "arrow_size": {
+          "label": "Pfeilgröße"
+        },
+        "show_divider": {
+          "label": "Trennlinie über dem Link anzeigen"
+        },
+        "divider_color": {
+          "label": "Farbe der Trennlinie",
+          "info": "Leer lassen für eine helle Linie auf Basis der Textfarbe."
+        },
+        "footer_spacing": {
+          "label": "Abstand über der Trennlinie"
+        },
+        "footer_padding": {
+          "label": "Abstand unter der Trennlinie"
         }
       }
     },

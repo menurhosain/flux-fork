@@ -41,15 +41,35 @@
   if number_color != blank and number_color.alpha != 0
     assign has_number_color = true
   endif
+  assign link_color = block.settings.link_color
+  assign has_link_color = false
+  if link_color != blank and link_color.alpha != 0
+    assign has_link_color = true
+  endif
+  assign arrow_color = block.settings.arrow_color
+  assign has_arrow_color = false
+  if arrow_color != blank and arrow_color.alpha != 0
+    assign has_arrow_color = true
+  endif
+  assign divider_color = block.settings.divider_color
+  assign has_divider_color = false
+  if divider_color != blank and divider_color.alpha != 0
+    assign has_divider_color = true
+  endif
+
+  assign is_numbered = false
+  if block.settings.layout == 'numbered'
+    assign is_numbered = true
+  endif
+  assign card_is_link = false
+  if block.settings.card_link and block.settings.link != blank
+    assign card_is_link = true
+  endif
 -%}
 
-<div
-  id="FeatureCard-{{ block.id }}"
-  class="feature-card{% if block.settings.hover_effect %} feature-card--hover{% endif %}"
-  {{ block.shopify_attributes }}
->
+{%- capture icon_markup -%}
   {%- if has_icon -%}
-    <div class="feature-card__icon">
+    <div class="feature-card__icon{% if block.settings.round_icon %} feature-card__icon--round{% endif %}">
       {%- if block.settings.icon != blank -%}
         {%- if block.settings.recolor_icon -%}
           <span
@@ -69,6 +89,40 @@
       {%- endif -%}
     </div>
   {%- endif -%}
+{%- endcapture -%}
+
+<div
+  id="FeatureCard-{{ block.id }}"
+  class="feature-card feature-card--{{ block.settings.layout }}{% if block.settings.hover_effect %} feature-card--hover{% endif %}{% if card_is_link %} feature-card--linked{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  {%- if card_is_link -%}
+    <a
+      href="{{ block.settings.link }}"
+      class="feature-card__overlay-link"
+      {% if block.settings.open_new_tab %}
+        target="_blank" rel="noopener"
+      {% endif %}
+    >
+      <span class="visually-hidden">
+        {{- block.settings.link_label | default: block.settings.title | escape -}}
+        {%- if block.settings.link_label != blank and block.settings.title != blank %}: {{ block.settings.title | escape }}{% endif -%}
+      </span>
+    </a>
+  {%- endif -%}
+
+  {%- if is_numbered -%}
+    {%- if block.settings.number != blank or has_icon -%}
+      <div class="feature-card__top">
+        {%- if block.settings.number != blank -%}
+          <span class="feature-card__number">{{ block.settings.number | escape }}</span>
+        {%- endif -%}
+        {{- icon_markup -}}
+      </div>
+    {%- endif -%}
+  {%- else -%}
+    {{- icon_markup -}}
+  {%- endif -%}
 
   {%- if block.settings.title != blank -%}
     <{{ block.settings.title_tag }} class="feature-card__title">
@@ -80,8 +134,43 @@
     <div class="feature-card__text rte">{{ block.settings.text }}</div>
   {%- endif -%}
 
-  {%- if block.settings.number != blank -%}
+  {%- if is_numbered == false and block.settings.number != blank -%}
     <span class="feature-card__number" aria-hidden="true">{{ block.settings.number | escape }}</span>
+  {%- endif -%}
+
+  {%- if block.settings.link_label != blank -%}
+    <div class="feature-card__footer{% if block.settings.show_divider %} feature-card__footer--divider{% endif %}">
+      {%- capture link_inner -%}
+        <span class="feature-card__link-label">{{ block.settings.link_label | escape }}</span>
+        {%- if block.settings.arrow != 'none' or block.settings.arrow_image != blank -%}
+          <span class="feature-card__arrow" aria-hidden="true">
+            {%- if block.settings.arrow_image != blank -%}
+              <span
+                class="feature-card__icon-mask"
+                style="--icon-url: url('{{ block.settings.arrow_image | image_url: width: 60 }}');"
+              ></span>
+            {%- elsif block.settings.arrow == 'right' -%}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            {%- else -%}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            {%- endif -%}
+          </span>
+        {%- endif -%}
+      {%- endcapture -%}
+      {%- if block.settings.link != blank and card_is_link == false -%}
+        <a
+          href="{{ block.settings.link }}"
+          class="feature-card__link"
+          {% if block.settings.open_new_tab %}
+            target="_blank" rel="noopener"
+          {% endif %}
+        >
+          {{- link_inner -}}
+        </a>
+      {%- else -%}
+        <div class="feature-card__link">{{- link_inner -}}</div>
+      {%- endif -%}
+    </div>
   {%- endif -%}
 </div>
 
@@ -113,6 +202,29 @@
     width: {{ icon_px }}px;
     height: {{ icon_px }}px;
   }
+  #FeatureCard-{{ block.id }} .feature-card__top {
+    margin-bottom: {{ block.settings.icon_spacing_mobile }}px;
+  }
+  #FeatureCard-{{ block.id }} .feature-card__footer {
+    margin-top: {{ block.settings.footer_spacing }}px;
+    padding-top: {{ block.settings.footer_padding }}px;
+    {%- if has_divider_color %}
+      border-top-color: {{ divider_color }};
+    {%- endif %}
+  }
+  #FeatureCard-{{ block.id }} .feature-card__link {
+    font-size: {{ block.settings.link_size }}px;
+    {%- if has_link_color %}
+      color: {{ link_color }};
+    {%- endif %}
+  }
+  #FeatureCard-{{ block.id }} .feature-card__arrow {
+    width: {{ block.settings.arrow_size }}px;
+    height: {{ block.settings.arrow_size }}px;
+    {%- if has_arrow_color %}
+      color: {{ arrow_color }};
+    {%- endif %}
+  }
   #FeatureCard-{{ block.id }} .feature-card__title {
     font-size: {{ block.settings.title_size_mobile }}px;
     {%- if block.settings.title_weight != 'inherit' %}
@@ -141,6 +253,9 @@
       min-height: {{ block.settings.min_height }}px;
     }
     #FeatureCard-{{ block.id }} .feature-card__icon {
+      margin-bottom: {{ block.settings.icon_spacing }}px;
+    }
+    #FeatureCard-{{ block.id }} .feature-card__top {
       margin-bottom: {{ block.settings.icon_spacing }}px;
     }
     #FeatureCard-{{ block.id }} .feature-card__title {
@@ -217,6 +332,77 @@
     margin-bottom: 0;
   }
 
+  .feature-card__icon--round {
+    border-radius: 50% !important;
+  }
+
+  .feature-card__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  .feature-card--numbered .feature-card__icon {
+    margin-bottom: 0 !important;
+    margin-left: auto;
+  }
+
+  .feature-card--numbered .feature-card__number {
+    position: static;
+    line-height: 1;
+    color: rgb(var(--color-foreground));
+    pointer-events: auto;
+    user-select: auto;
+  }
+
+  .feature-card__overlay-link {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+  }
+
+  .feature-card__footer {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    border-top: 0 solid rgba(var(--color-foreground), 0.12);
+  }
+
+  .feature-card__footer--divider {
+    border-top-width: 1px;
+  }
+
+  .feature-card__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(var(--color-foreground));
+    text-decoration: none;
+  }
+
+  .feature-card__arrow {
+    display: inline-flex;
+    flex-shrink: 0;
+    color: #107af8;
+    transition: transform 0.3s ease;
+  }
+
+  .feature-card__arrow > * {
+    width: 100%;
+    height: 100%;
+  }
+
+  .feature-card__link:hover .feature-card__arrow,
+  .feature-card--linked:hover .feature-card__arrow {
+    transform: translate(2px, -2px);
+  }
+
   .feature-card__number {
     position: absolute;
     right: 1.6rem;
@@ -233,6 +419,16 @@
   "name": "t:blocks.feature_card.name",
   "tag": null,
   "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        { "value": "classic", "label": "t:blocks.feature_card.settings.layout.options__1.label" },
+        { "value": "numbered", "label": "t:blocks.feature_card.settings.layout.options__2.label" }
+      ],
+      "default": "classic",
+      "label": "t:blocks.feature_card.settings.layout.label"
+    },
     {
       "type": "header",
       "content": "t:blocks.feature_card.settings.header_content.content"
@@ -253,7 +449,10 @@
         { "value": "shield", "label": "t:blocks.feature_card.settings.builtin_icon.options__shield.label" },
         { "value": "check", "label": "t:blocks.feature_card.settings.builtin_icon.options__check.label" },
         { "value": "chat", "label": "t:blocks.feature_card.settings.builtin_icon.options__chat.label" },
-        { "value": "star", "label": "t:blocks.feature_card.settings.builtin_icon.options__star.label" }
+        { "value": "star", "label": "t:blocks.feature_card.settings.builtin_icon.options__star.label" },
+        { "value": "clipboard", "label": "t:blocks.feature_card.settings.builtin_icon.options__clipboard.label" },
+        { "value": "flask", "label": "t:blocks.feature_card.settings.builtin_icon.options__flask.label" },
+        { "value": "user_check", "label": "t:blocks.feature_card.settings.builtin_icon.options__user_check.label" }
       ],
       "default": "eye",
       "label": "t:blocks.feature_card.settings.builtin_icon.label"
@@ -385,6 +584,113 @@
     },
     {
       "type": "header",
+      "content": "t:blocks.feature_card.settings.header_link.content"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "t:blocks.feature_card.settings.link_label.label",
+      "info": "t:blocks.feature_card.settings.link_label.info"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "t:blocks.feature_card.settings.link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_new_tab",
+      "default": false,
+      "label": "t:blocks.feature_card.settings.open_new_tab.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_link",
+      "default": true,
+      "label": "t:blocks.feature_card.settings.card_link.label"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "t:blocks.feature_card.settings.link_color.label"
+    },
+    {
+      "type": "range",
+      "id": "link_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:blocks.feature_card.settings.link_size.label"
+    },
+    {
+      "type": "select",
+      "id": "arrow",
+      "options": [
+        { "value": "up_right", "label": "t:blocks.feature_card.settings.arrow.options__1.label" },
+        { "value": "right", "label": "t:blocks.feature_card.settings.arrow.options__2.label" },
+        { "value": "none", "label": "t:blocks.feature_card.settings.arrow.options__3.label" }
+      ],
+      "default": "up_right",
+      "label": "t:blocks.feature_card.settings.arrow.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "arrow_image",
+      "label": "t:blocks.feature_card.settings.arrow_image.label",
+      "info": "t:blocks.feature_card.settings.arrow_image.info"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "default": "#107AF8",
+      "label": "t:blocks.feature_card.settings.arrow_color.label"
+    },
+    {
+      "type": "range",
+      "id": "arrow_size",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "t:blocks.feature_card.settings.arrow_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": true,
+      "label": "t:blocks.feature_card.settings.show_divider.label"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "t:blocks.feature_card.settings.divider_color.label",
+      "info": "t:blocks.feature_card.settings.divider_color.info"
+    },
+    {
+      "type": "range",
+      "id": "footer_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 32,
+      "label": "t:blocks.feature_card.settings.footer_spacing.label"
+    },
+    {
+      "type": "range",
+      "id": "footer_padding",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 32,
+      "label": "t:blocks.feature_card.settings.footer_padding.label"
+    },
+    {
+      "type": "header",
       "content": "t:blocks.feature_card.settings.header_icon.content"
     },
     {
@@ -420,8 +726,15 @@
       "label": "t:blocks.feature_card.settings.icon_size.label"
     },
     {
+      "type": "checkbox",
+      "id": "round_icon",
+      "default": false,
+      "label": "t:blocks.feature_card.settings.round_icon.label"
+    },
+    {
       "type": "range",
       "id": "icon_box_radius",
+      "visible_if": "{{ block.settings.round_icon == false }}",
       "min": 0,
       "max": 60,
       "step": 1,

@@ -8906,6 +8906,15 @@
           },
           "options__star": {
             "label": "Star"
+          },
+          "options__clipboard": {
+            "label": "Clipboard"
+          },
+          "options__flask": {
+            "label": "Flask"
+          },
+          "options__user_check": {
+            "label": "User check"
           }
         },
         "icon": {
@@ -9051,6 +9060,75 @@
           "options__2": {
             "label": "Body font"
           }
+        },
+        "layout": {
+          "label": "Layout",
+          "options__1": {
+            "label": "Icon on top, number in corner"
+          },
+          "options__2": {
+            "label": "Number and icon on top"
+          }
+        },
+        "round_icon": {
+          "label": "Round icon box"
+        },
+        "header_link": {
+          "content": "Link"
+        },
+        "link_label": {
+          "label": "Link label",
+          "info": "Shows a footer row at the bottom of the card. Leave empty to hide."
+        },
+        "link": {
+          "label": "Link"
+        },
+        "open_new_tab": {
+          "label": "Open link in a new tab"
+        },
+        "card_link": {
+          "label": "Make whole card clickable"
+        },
+        "link_color": {
+          "label": "Link text color"
+        },
+        "link_size": {
+          "label": "Link text size"
+        },
+        "arrow": {
+          "label": "Arrow",
+          "options__1": {
+            "label": "Up right"
+          },
+          "options__2": {
+            "label": "Right"
+          },
+          "options__3": {
+            "label": "None"
+          }
+        },
+        "arrow_image": {
+          "label": "Custom arrow",
+          "info": "Replaces the built-in arrow and uses the arrow color."
+        },
+        "arrow_color": {
+          "label": "Arrow color"
+        },
+        "arrow_size": {
+          "label": "Arrow size"
+        },
+        "show_divider": {
+          "label": "Show divider above link"
+        },
+        "divider_color": {
+          "label": "Divider color",
+          "info": "Leave empty for a light line based on the text color."
+        },
+        "footer_spacing": {
+          "label": "Space above divider"
+        },
+        "footer_padding": {
+          "label": "Space below divider"
         }
       }
     },

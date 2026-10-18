@@ -8906,6 +8906,15 @@
           },
           "options__star": {
             "label": "Stella"
+          },
+          "options__clipboard": {
+            "label": "Appunti"
+          },
+          "options__flask": {
+            "label": "Provetta"
+          },
+          "options__user_check": {
+            "label": "Utente verificato"
           }
         },
         "icon": {
@@ -9051,6 +9060,75 @@
           "options__2": {
             "label": "Carattere del testo"
           }
+        },
+        "layout": {
+          "label": "Layout",
+          "options__1": {
+            "label": "Icona in alto, numero nell'angolo"
+          },
+          "options__2": {
+            "label": "Numero e icona in alto"
+          }
+        },
+        "round_icon": {
+          "label": "Riquadro dell'icona rotondo"
+        },
+        "header_link": {
+          "content": "Link"
+        },
+        "link_label": {
+          "label": "Testo del link",
+          "info": "Mostra una riga in fondo alla scheda. Lascia vuoto per nasconderla."
+        },
+        "link": {
+          "label": "Link"
+        },
+        "open_new_tab": {
+          "label": "Apri il link in una nuova scheda"
+        },
+        "card_link": {
+          "label": "Rendi cliccabile l'intera scheda"
+        },
+        "link_color": {
+          "label": "Colore del testo del link"
+        },
+        "link_size": {
+          "label": "Dimensione del testo del link"
+        },
+        "arrow": {
+          "label": "Freccia",
+          "options__1": {
+            "label": "In alto a destra"
+          },
+          "options__2": {
+            "label": "Destra"
+          },
+          "options__3": {
+            "label": "Nessuna"
+          }
+        },
+        "arrow_image": {
+          "label": "Freccia personalizzata",
+          "info": "Sostituisce la freccia integrata e usa il colore della freccia."
+        },
+        "arrow_color": {
+          "label": "Colore della freccia"
+        },
+        "arrow_size": {
+          "label": "Dimensione della freccia"
+        },
+        "show_divider": {
+          "label": "Mostra divisore sopra il link"
+        },
+        "divider_color": {
+          "label": "Colore del divisore",
+          "info": "Lascia vuoto per una linea chiara basata sul colore del testo."
+        },
+        "footer_spacing": {
+          "label": "Spazio sopra il divisore"
+        },
+        "footer_padding": {
+          "label": "Spazio sotto il divisore"
         }
       }
     },

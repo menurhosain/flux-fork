@@ -8907,6 +8907,15 @@
           },
           "options__star": {
             "label": "Estrella"
+          },
+          "options__clipboard": {
+            "label": "Portapapeles"
+          },
+          "options__flask": {
+            "label": "Matraz"
+          },
+          "options__user_check": {
+            "label": "Usuario verificado"
           }
         },
         "icon": {
@@ -9052,6 +9061,75 @@
           "options__2": {
             "label": "Fuente del cuerpo"
           }
+        },
+        "layout": {
+          "label": "Diseño",
+          "options__1": {
+            "label": "Icono arriba, número en la esquina"
+          },
+          "options__2": {
+            "label": "Número e icono arriba"
+          }
+        },
+        "round_icon": {
+          "label": "Cuadro de icono redondo"
+        },
+        "header_link": {
+          "content": "Enlace"
+        },
+        "link_label": {
+          "label": "Texto del enlace",
+          "info": "Muestra una fila inferior en la tarjeta. Déjalo vacío para ocultarla."
+        },
+        "link": {
+          "label": "Enlace"
+        },
+        "open_new_tab": {
+          "label": "Abrir enlace en una pestaña nueva"
+        },
+        "card_link": {
+          "label": "Hacer clic en toda la tarjeta"
+        },
+        "link_color": {
+          "label": "Color del texto del enlace"
+        },
+        "link_size": {
+          "label": "Tamaño del texto del enlace"
+        },
+        "arrow": {
+          "label": "Flecha",
+          "options__1": {
+            "label": "Arriba a la derecha"
+          },
+          "options__2": {
+            "label": "Derecha"
+          },
+          "options__3": {
+            "label": "Ninguna"
+          }
+        },
+        "arrow_image": {
+          "label": "Flecha personalizada",
+          "info": "Reemplaza la flecha integrada y usa el color de la flecha."
+        },
+        "arrow_color": {
+          "label": "Color de la flecha"
+        },
+        "arrow_size": {
+          "label": "Tamaño de la flecha"
+        },
+        "show_divider": {
+          "label": "Mostrar separador sobre el enlace"
+        },
+        "divider_color": {
+          "label": "Color del separador",
+          "info": "Déjalo vacío para una línea clara basada en el color del texto."
+        },
+        "footer_spacing": {
+          "label": "Espacio sobre el separador"
+        },
+        "footer_padding": {
+          "label": "Espacio bajo el separador"
         }
       }
     },
