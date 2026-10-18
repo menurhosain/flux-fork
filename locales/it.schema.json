@@ -6187,6 +6187,10 @@
         "columns_desktop": {
           "label": "Numero di colonne su desktop"
         },
+        "max_width": {
+          "label": "Larghezza massima del contenuto",
+          "info": "Il contenuto è centrato e non supera mai questa larghezza. 1620px corrisponde alla larghezza pagina del tema."
+        },
         "column_alignment": {
           "label": "Allineamento colonne",
           "options__1": {

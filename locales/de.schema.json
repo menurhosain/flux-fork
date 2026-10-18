@@ -6188,6 +6188,10 @@
         "columns_desktop": {
           "label": "Anzahl der Spalten auf dem Desktop"
         },
+        "max_width": {
+          "label": "Maximale Inhaltsbreite",
+          "info": "Der Inhalt wird zentriert und nie breiter als dieser Wert. 1620px entspricht der Seitenbreite des Themes."
+        },
         "column_alignment": {
           "label": "Spaltenausrichtung",
           "options__1": {

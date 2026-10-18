@@ -6188,6 +6188,10 @@
         "columns_desktop": {
           "label": "Número de columnas en escritorio"
         },
+        "max_width": {
+          "label": "Ancho máximo del contenido",
+          "info": "El contenido se centra y nunca supera este ancho. 1620px coincide con el ancho de página del tema."
+        },
         "column_alignment": {
           "label": "Alineación de columnas",
           "options__1": {

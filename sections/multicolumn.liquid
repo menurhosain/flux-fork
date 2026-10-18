@@ -8,6 +8,12 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .multicolumn .page-width.section-{{ section.id }}-padding {
+    max-width: {{ section.settings.max_width }}px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .multicolumn video {
     border-radius: var(--media-radius);
     width: 100%;
@@ -409,6 +415,17 @@
       "step": 1,
       "default": 3,
       "label": "t:sections.multicolumn.settings.columns_desktop.label"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1980,
+      "step": 20,
+      "unit": "px",
+      "default": 1620,
+      "label": "t:sections.multicolumn.settings.max_width.label",
+      "info": "t:sections.multicolumn.settings.max_width.info"
     },
     {
       "type": "select",

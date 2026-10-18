@@ -6187,6 +6187,10 @@
         "columns_desktop": {
           "label": "Number of columns on desktop"
         },
+        "max_width": {
+          "label": "Maximum content width",
+          "info": "The section content is centered and never wider than this. 1620px matches the theme page width."
+        },
         "column_alignment": {
           "label": "Column alignment",
           "options__1": {
