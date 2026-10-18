@@ -742,6 +742,40 @@
     }
   },
   "sections": {
+    "blocks-section": {
+      "name": "Section de blocs",
+      "presets": {
+        "name": "Cartes de fonctionnalités"
+      },
+      "settings": {
+        "full_width": {
+          "label": "Contenu pleine largeur",
+          "info": "Désactivé garde le contenu dans la largeur de la page."
+        },
+        "content_alignment": {
+          "label": "Alignement du texte",
+          "options__1": {
+            "label": "Gauche"
+          },
+          "options__2": {
+            "label": "Centre"
+          },
+          "options__3": {
+            "label": "Droite"
+          }
+        },
+        "blocks_gap": {
+          "label": "Espace entre les blocs sur ordinateur"
+        },
+        "blocks_gap_mobile": {
+          "label": "Espace entre les blocs sur mobile"
+        },
+        "background_color": {
+          "label": "Couleur d'arrière-plan",
+          "info": "Remplace l'arrière-plan du jeu de couleurs. Laisser vide pour utiliser le jeu de couleurs."
+        }
+      }
+    },
     "all": {
       "padding": {
         "section_padding_heading": "Disposition de bureau",
@@ -8751,6 +8785,275 @@
     }
   },
   "blocks": {
+    "row": {
+      "name": "Rangée",
+      "settings": {
+        "layout": {
+          "label": "Mise en page",
+          "info": "Colonnes : grille à largeur égale. Partagé : premier bloc à gauche, le reste à droite.",
+          "options__1": {
+            "label": "Colonnes"
+          },
+          "options__2": {
+            "label": "Partagé"
+          }
+        },
+        "columns_desktop": {
+          "label": "Colonnes sur ordinateur"
+        },
+        "columns_tablet": {
+          "label": "Colonnes sur tablette"
+        },
+        "columns_mobile": {
+          "label": "Colonnes sur mobile"
+        },
+        "equal_height": {
+          "label": "Éléments de même hauteur"
+        },
+        "vertical_alignment": {
+          "label": "Alignement vertical",
+          "options__1": {
+            "label": "Haut"
+          },
+          "options__2": {
+            "label": "Milieu"
+          },
+          "options__3": {
+            "label": "Bas"
+          }
+        },
+        "left_width": {
+          "label": "Largeur du côté gauche"
+        },
+        "right_max_width": {
+          "label": "Largeur maximale du côté droit"
+        },
+        "stack_mobile": {
+          "label": "Empiler sur mobile"
+        },
+        "header_gap": {
+          "content": "Espacements"
+        },
+        "column_gap": {
+          "label": "Espace entre colonnes sur ordinateur"
+        },
+        "row_gap": {
+          "label": "Espace entre lignes sur ordinateur"
+        },
+        "column_gap_mobile": {
+          "label": "Espace entre colonnes sur mobile"
+        },
+        "row_gap_mobile": {
+          "label": "Espace entre lignes sur mobile"
+        },
+        "header_spacing": {
+          "content": "Espacement"
+        },
+        "custom_spacing": {
+          "label": "Utiliser un espacement personnalisé"
+        },
+        "margin_top": {
+          "label": "Marge supérieure"
+        },
+        "margin_bottom": {
+          "label": "Marge inférieure"
+        }
+      }
+    },
+    "feature_card": {
+      "name": "Carte de fonctionnalité",
+      "settings": {
+        "header_content": {
+          "content": "Contenu"
+        },
+        "builtin_icon": {
+          "label": "Icône",
+          "options__none": {
+            "label": "Aucune"
+          },
+          "options__eye": {
+            "label": "Œil"
+          },
+          "options__people": {
+            "label": "Personnes"
+          },
+          "options__heart_hand": {
+            "label": "Cœur dans la main"
+          },
+          "options__heart": {
+            "label": "Cœur"
+          },
+          "options__leaf": {
+            "label": "Feuille"
+          },
+          "options__moon": {
+            "label": "Lune"
+          },
+          "options__sun": {
+            "label": "Soleil"
+          },
+          "options__sparkle": {
+            "label": "Étincelle"
+          },
+          "options__shield": {
+            "label": "Bouclier"
+          },
+          "options__check": {
+            "label": "Coche"
+          },
+          "options__chat": {
+            "label": "Discussion"
+          },
+          "options__star": {
+            "label": "Étoile"
+          }
+        },
+        "icon": {
+          "label": "Icône personnalisée",
+          "info": "Remplace l'icône intégrée. Utilisez un SVG unicolore ou un PNG transparent."
+        },
+        "recolor_icon": {
+          "label": "Recolorer l'icône personnalisée",
+          "info": "Remplit l'icône personnalisée avec la couleur de l'icône."
+        },
+        "title": {
+          "label": "Titre"
+        },
+        "title_tag": {
+          "label": "Balise du titre",
+          "options__p": {
+            "label": "Paragraphe"
+          }
+        },
+        "text": {
+          "label": "Texte"
+        },
+        "number": {
+          "label": "Numéro",
+          "info": "Grand numéro estompé dans le coin, par exemple 01. Laisser vide pour masquer."
+        },
+        "header_card": {
+          "content": "Carte"
+        },
+        "background_color": {
+          "label": "Couleur d'arrière-plan"
+        },
+        "border_radius": {
+          "label": "Rayon des coins"
+        },
+        "border_width": {
+          "label": "Épaisseur de la bordure"
+        },
+        "border_color": {
+          "label": "Couleur de la bordure"
+        },
+        "padding": {
+          "label": "Marge intérieure sur ordinateur"
+        },
+        "padding_mobile": {
+          "label": "Marge intérieure sur mobile"
+        },
+        "min_height": {
+          "label": "Hauteur minimale sur ordinateur"
+        },
+        "min_height_mobile": {
+          "label": "Hauteur minimale sur mobile"
+        },
+        "hover_effect": {
+          "label": "Soulever au survol"
+        },
+        "header_icon": {
+          "content": "Icône"
+        },
+        "icon_color": {
+          "label": "Couleur de l'icône"
+        },
+        "icon_background": {
+          "label": "Couleur du cadre de l'icône"
+        },
+        "icon_box_size": {
+          "label": "Taille du cadre de l'icône"
+        },
+        "icon_size": {
+          "label": "Taille de l'icône"
+        },
+        "icon_box_radius": {
+          "label": "Rayon des coins du cadre de l'icône"
+        },
+        "icon_spacing": {
+          "label": "Espace sous l'icône sur ordinateur"
+        },
+        "icon_spacing_mobile": {
+          "label": "Espace sous l'icône sur mobile"
+        },
+        "header_title": {
+          "content": "Titre"
+        },
+        "title_color": {
+          "label": "Couleur du titre"
+        },
+        "title_size": {
+          "label": "Taille du titre sur ordinateur"
+        },
+        "title_size_mobile": {
+          "label": "Taille du titre sur mobile"
+        },
+        "title_weight": {
+          "label": "Graisse du titre",
+          "options__1": {
+            "label": "Par défaut"
+          },
+          "options__2": {
+            "label": "Léger"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Moyen"
+          },
+          "options__5": {
+            "label": "Demi-gras"
+          },
+          "options__6": {
+            "label": "Gras"
+          }
+        },
+        "header_text": {
+          "content": "Texte"
+        },
+        "text_color": {
+          "label": "Couleur du texte"
+        },
+        "text_size": {
+          "label": "Taille du texte sur ordinateur"
+        },
+        "text_size_mobile": {
+          "label": "Taille du texte sur mobile"
+        },
+        "header_number": {
+          "content": "Numéro"
+        },
+        "number_color": {
+          "label": "Couleur du numéro"
+        },
+        "number_size": {
+          "label": "Taille du numéro sur ordinateur"
+        },
+        "number_size_mobile": {
+          "label": "Taille du numéro sur mobile"
+        },
+        "number_font": {
+          "label": "Police du numéro",
+          "options__1": {
+            "label": "Police des titres"
+          },
+          "options__2": {
+            "label": "Police du corps"
+          }
+        }
+      }
+    },
     "pills": {
       "name": "Pastilles",
       "settings": {

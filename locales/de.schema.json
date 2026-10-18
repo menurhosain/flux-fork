@@ -742,6 +742,40 @@
     }
   },
   "sections": {
+    "blocks-section": {
+      "name": "Block-Abschnitt",
+      "presets": {
+        "name": "Feature-Karten"
+      },
+      "settings": {
+        "full_width": {
+          "label": "Inhalt in voller Breite",
+          "info": "Aus hält den Inhalt innerhalb der Seitenbreite."
+        },
+        "content_alignment": {
+          "label": "Textausrichtung",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Mittig"
+          },
+          "options__3": {
+            "label": "Rechts"
+          }
+        },
+        "blocks_gap": {
+          "label": "Abstand zwischen Blöcken (Desktop)"
+        },
+        "blocks_gap_mobile": {
+          "label": "Abstand zwischen Blöcken (mobil)"
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe",
+          "info": "Überschreibt den Hintergrund des Farbschemas. Leer lassen, um das Farbschema zu verwenden."
+        }
+      }
+    },
     "all": {
       "padding": {
         "section_padding_heading": "Desktop-Layout",
@@ -8752,6 +8786,275 @@
     }
   },
   "blocks": {
+    "row": {
+      "name": "Zeile",
+      "settings": {
+        "layout": {
+          "label": "Layout",
+          "info": "Spalten: Raster mit gleicher Breite. Geteilt: erster Block links, der Rest rechts.",
+          "options__1": {
+            "label": "Spalten"
+          },
+          "options__2": {
+            "label": "Geteilt"
+          }
+        },
+        "columns_desktop": {
+          "label": "Spalten auf dem Desktop"
+        },
+        "columns_tablet": {
+          "label": "Spalten auf Tablets"
+        },
+        "columns_mobile": {
+          "label": "Spalten auf Mobilgeräten"
+        },
+        "equal_height": {
+          "label": "Elemente mit gleicher Höhe"
+        },
+        "vertical_alignment": {
+          "label": "Vertikale Ausrichtung",
+          "options__1": {
+            "label": "Oben"
+          },
+          "options__2": {
+            "label": "Mitte"
+          },
+          "options__3": {
+            "label": "Unten"
+          }
+        },
+        "left_width": {
+          "label": "Breite der linken Seite"
+        },
+        "right_max_width": {
+          "label": "Maximale Breite der rechten Seite"
+        },
+        "stack_mobile": {
+          "label": "Auf Mobilgeräten stapeln"
+        },
+        "header_gap": {
+          "content": "Abstände"
+        },
+        "column_gap": {
+          "label": "Spaltenabstand (Desktop)"
+        },
+        "row_gap": {
+          "label": "Zeilenabstand (Desktop)"
+        },
+        "column_gap_mobile": {
+          "label": "Spaltenabstand (mobil)"
+        },
+        "row_gap_mobile": {
+          "label": "Zeilenabstand (mobil)"
+        },
+        "header_spacing": {
+          "content": "Abstand"
+        },
+        "custom_spacing": {
+          "label": "Benutzerdefinierten Abstand verwenden"
+        },
+        "margin_top": {
+          "label": "Oberer Abstand"
+        },
+        "margin_bottom": {
+          "label": "Unterer Abstand"
+        }
+      }
+    },
+    "feature_card": {
+      "name": "Feature-Karte",
+      "settings": {
+        "header_content": {
+          "content": "Inhalt"
+        },
+        "builtin_icon": {
+          "label": "Symbol",
+          "options__none": {
+            "label": "Keins"
+          },
+          "options__eye": {
+            "label": "Auge"
+          },
+          "options__people": {
+            "label": "Personen"
+          },
+          "options__heart_hand": {
+            "label": "Herz in der Hand"
+          },
+          "options__heart": {
+            "label": "Herz"
+          },
+          "options__leaf": {
+            "label": "Blatt"
+          },
+          "options__moon": {
+            "label": "Mond"
+          },
+          "options__sun": {
+            "label": "Sonne"
+          },
+          "options__sparkle": {
+            "label": "Funkeln"
+          },
+          "options__shield": {
+            "label": "Schild"
+          },
+          "options__check": {
+            "label": "Häkchen"
+          },
+          "options__chat": {
+            "label": "Chat"
+          },
+          "options__star": {
+            "label": "Stern"
+          }
+        },
+        "icon": {
+          "label": "Eigenes Symbol",
+          "info": "Ersetzt das integrierte Symbol. Ein einfarbiges SVG oder transparentes PNG verwenden."
+        },
+        "recolor_icon": {
+          "label": "Eigenes Symbol einfärben",
+          "info": "Füllt das eigene Symbol mit der Symbolfarbe."
+        },
+        "title": {
+          "label": "Titel"
+        },
+        "title_tag": {
+          "label": "Titel-Tag",
+          "options__p": {
+            "label": "Absatz"
+          }
+        },
+        "text": {
+          "label": "Text"
+        },
+        "number": {
+          "label": "Nummer",
+          "info": "Große, blasse Nummer in der Ecke, z. B. 01. Leer lassen zum Ausblenden."
+        },
+        "header_card": {
+          "content": "Karte"
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe"
+        },
+        "border_radius": {
+          "label": "Eckenradius"
+        },
+        "border_width": {
+          "label": "Rahmenbreite"
+        },
+        "border_color": {
+          "label": "Rahmenfarbe"
+        },
+        "padding": {
+          "label": "Innenabstand (Desktop)"
+        },
+        "padding_mobile": {
+          "label": "Innenabstand (mobil)"
+        },
+        "min_height": {
+          "label": "Mindesthöhe (Desktop)"
+        },
+        "min_height_mobile": {
+          "label": "Mindesthöhe (mobil)"
+        },
+        "hover_effect": {
+          "label": "Beim Hover anheben"
+        },
+        "header_icon": {
+          "content": "Symbol"
+        },
+        "icon_color": {
+          "label": "Symbolfarbe"
+        },
+        "icon_background": {
+          "label": "Farbe des Symbolfelds"
+        },
+        "icon_box_size": {
+          "label": "Größe des Symbolfelds"
+        },
+        "icon_size": {
+          "label": "Symbolgröße"
+        },
+        "icon_box_radius": {
+          "label": "Eckenradius des Symbolfelds"
+        },
+        "icon_spacing": {
+          "label": "Abstand unter dem Symbol (Desktop)"
+        },
+        "icon_spacing_mobile": {
+          "label": "Abstand unter dem Symbol (mobil)"
+        },
+        "header_title": {
+          "content": "Titel"
+        },
+        "title_color": {
+          "label": "Titelfarbe"
+        },
+        "title_size": {
+          "label": "Titelgröße (Desktop)"
+        },
+        "title_size_mobile": {
+          "label": "Titelgröße (mobil)"
+        },
+        "title_weight": {
+          "label": "Schriftstärke des Titels",
+          "options__1": {
+            "label": "Standard"
+          },
+          "options__2": {
+            "label": "Leicht"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Mittel"
+          },
+          "options__5": {
+            "label": "Halbfett"
+          },
+          "options__6": {
+            "label": "Fett"
+          }
+        },
+        "header_text": {
+          "content": "Text"
+        },
+        "text_color": {
+          "label": "Textfarbe"
+        },
+        "text_size": {
+          "label": "Textgröße (Desktop)"
+        },
+        "text_size_mobile": {
+          "label": "Textgröße (mobil)"
+        },
+        "header_number": {
+          "content": "Nummer"
+        },
+        "number_color": {
+          "label": "Nummernfarbe"
+        },
+        "number_size": {
+          "label": "Nummerngröße (Desktop)"
+        },
+        "number_size_mobile": {
+          "label": "Nummerngröße (mobil)"
+        },
+        "number_font": {
+          "label": "Schriftart der Nummer",
+          "options__1": {
+            "label": "Überschrift-Schrift"
+          },
+          "options__2": {
+            "label": "Fließtext-Schrift"
+          }
+        }
+      }
+    },
     "pills": {
       "name": "Pillen",
       "settings": {

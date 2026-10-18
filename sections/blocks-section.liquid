@@ -1,0 +1,288 @@
+{%- liquid
+  assign background_color = section.settings.background_color
+  assign has_background_color = false
+  if background_color != blank and background_color.alpha != 0
+    assign has_background_color = true
+  endif
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    {%- if has_background_color %}
+      background: {{ background_color }};
+    {%- endif %}
+  }
+
+  #BlocksSection-{{ section.id }} .blocks-section__inner > * + * {
+    margin-top: {{ section.settings.blocks_gap_mobile }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    #BlocksSection-{{ section.id }} .blocks-section__inner > * + * {
+      margin-top: {{ section.settings.blocks_gap }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="BlocksSection-{{ section.id }}"
+  class="blocks-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
+>
+  <div class="{% unless section.settings.full_width %}page-width{% else %}blocks-section--full-width{% endunless %}">
+    <div class="blocks-section__inner blocks-section__inner--{{ section.settings.content_alignment }}">
+      {% content_for 'blocks' %}
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .blocks-section--full-width {
+    padding: 0 1.5rem;
+  }
+
+  .blocks-section__inner--left {
+    text-align: left;
+  }
+
+  .blocks-section__inner--center {
+    text-align: center;
+  }
+
+  .blocks-section__inner--right {
+    text-align: right;
+  }
+
+  .blocks-section__inner > :is(h1, h2, h3, h4, h5, h6, p) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 990px) {
+    .blocks-section--full-width {
+      padding: 0 5rem;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:sections.blocks-section.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "t:sections.blocks-section.settings.full_width.label",
+      "info": "t:sections.blocks-section.settings.full_width.info"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.blocks-section.settings.content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.blocks-section.settings.content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.blocks-section.settings.content_alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.blocks-section.settings.content_alignment.label"
+    },
+    {
+      "type": "range",
+      "id": "blocks_gap",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48,
+      "label": "t:sections.blocks-section.settings.blocks_gap.label"
+    },
+    {
+      "type": "range",
+      "id": "blocks_gap_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 32,
+      "label": "t:sections.blocks-section.settings.blocks_gap_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.header_color_box.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "option-1"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:sections.blocks-section.settings.background_color.label",
+      "info": "t:sections.blocks-section.settings.background_color.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 80
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.blocks-section.presets.name",
+      "settings": {
+        "background_color": "#E3F4FD"
+      },
+      "blocks": {
+        "header_row": {
+          "type": "row",
+          "settings": {
+            "layout": "split",
+            "vertical_alignment": "flex-end"
+          },
+          "blocks": {
+            "header_left": {
+              "type": "container",
+              "settings": {
+                "background_color": "rgba(0,0,0,0)",
+                "border_radius": 0,
+                "padding_vertical": 0,
+                "padding_horizontal": 0,
+                "padding_vertical_mobile": 0,
+                "padding_horizontal_mobile": 0
+              },
+              "blocks": {
+                "header_caption": {
+                  "type": "caption",
+                  "settings": {
+                    "caption": "What shapes the experience",
+                    "background_color": "#FFFFFF",
+                    "border_radius": 20,
+                    "custom_padding": true,
+                    "padding_top": 6,
+                    "padding_right": 12,
+                    "padding_bottom": 6,
+                    "padding_left": 12
+                  }
+                },
+                "header_heading": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Rediscover your balance. Reclaim your confidence."
+                  }
+                }
+              },
+              "block_order": [
+                "header_caption",
+                "header_heading"
+              ]
+            },
+            "header_text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Three simple principles guide every conversation, recommendation, and next step.</p>"
+              }
+            }
+          },
+          "block_order": [
+            "header_left",
+            "header_text"
+          ]
+        },
+        "cards_row": {
+          "type": "row",
+          "settings": {
+            "layout": "columns"
+          },
+          "blocks": {
+            "card_1": {
+              "type": "feature-card",
+              "settings": {
+                "builtin_icon": "eye",
+                "title": "Greater everyday comfort",
+                "number": "01"
+              }
+            },
+            "card_2": {
+              "type": "feature-card",
+              "settings": {
+                "builtin_icon": "people",
+                "title": "Better sleep & daily balance",
+                "number": "02"
+              }
+            },
+            "card_3": {
+              "type": "feature-card",
+              "settings": {
+                "builtin_icon": "heart_hand",
+                "title": "Renewed confidence & quality of life",
+                "number": "03"
+              }
+            }
+          },
+          "block_order": [
+            "card_1",
+            "card_2",
+            "card_3"
+          ]
+        }
+      },
+      "block_order": [
+        "header_row",
+        "cards_row"
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -742,6 +742,40 @@
     }
   },
   "sections": {
+    "blocks-section": {
+      "name": "Blocks section",
+      "presets": {
+        "name": "Feature cards"
+      },
+      "settings": {
+        "full_width": {
+          "label": "Full width content",
+          "info": "Off keeps content inside the page width."
+        },
+        "content_alignment": {
+          "label": "Text alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        },
+        "blocks_gap": {
+          "label": "Space between blocks on desktop"
+        },
+        "blocks_gap_mobile": {
+          "label": "Space between blocks on mobile"
+        },
+        "background_color": {
+          "label": "Background color",
+          "info": "Overrides the color scheme background. Leave empty to use the color scheme."
+        }
+      }
+    },
     "all": {
       "padding": {
         "section_padding_heading": "Desktop layout",
@@ -8751,6 +8785,275 @@
     }
   },
   "blocks": {
+    "row": {
+      "name": "Row",
+      "settings": {
+        "layout": {
+          "label": "Layout",
+          "info": "Columns: equal-width grid. Split: first block on the left, the rest pushed to the right.",
+          "options__1": {
+            "label": "Columns"
+          },
+          "options__2": {
+            "label": "Split"
+          }
+        },
+        "columns_desktop": {
+          "label": "Columns on desktop"
+        },
+        "columns_tablet": {
+          "label": "Columns on tablet"
+        },
+        "columns_mobile": {
+          "label": "Columns on mobile"
+        },
+        "equal_height": {
+          "label": "Equal height items"
+        },
+        "vertical_alignment": {
+          "label": "Vertical alignment",
+          "options__1": {
+            "label": "Top"
+          },
+          "options__2": {
+            "label": "Middle"
+          },
+          "options__3": {
+            "label": "Bottom"
+          }
+        },
+        "left_width": {
+          "label": "Left side width"
+        },
+        "right_max_width": {
+          "label": "Right side max width"
+        },
+        "stack_mobile": {
+          "label": "Stack on mobile"
+        },
+        "header_gap": {
+          "content": "Gaps"
+        },
+        "column_gap": {
+          "label": "Column gap on desktop"
+        },
+        "row_gap": {
+          "label": "Row gap on desktop"
+        },
+        "column_gap_mobile": {
+          "label": "Column gap on mobile"
+        },
+        "row_gap_mobile": {
+          "label": "Row gap on mobile"
+        },
+        "header_spacing": {
+          "content": "Spacing"
+        },
+        "custom_spacing": {
+          "label": "Use custom spacing"
+        },
+        "margin_top": {
+          "label": "Top margin"
+        },
+        "margin_bottom": {
+          "label": "Bottom margin"
+        }
+      }
+    },
+    "feature_card": {
+      "name": "Feature card",
+      "settings": {
+        "header_content": {
+          "content": "Content"
+        },
+        "builtin_icon": {
+          "label": "Icon",
+          "options__none": {
+            "label": "None"
+          },
+          "options__eye": {
+            "label": "Eye"
+          },
+          "options__people": {
+            "label": "People"
+          },
+          "options__heart_hand": {
+            "label": "Heart in hand"
+          },
+          "options__heart": {
+            "label": "Heart"
+          },
+          "options__leaf": {
+            "label": "Leaf"
+          },
+          "options__moon": {
+            "label": "Moon"
+          },
+          "options__sun": {
+            "label": "Sun"
+          },
+          "options__sparkle": {
+            "label": "Sparkle"
+          },
+          "options__shield": {
+            "label": "Shield"
+          },
+          "options__check": {
+            "label": "Check"
+          },
+          "options__chat": {
+            "label": "Chat"
+          },
+          "options__star": {
+            "label": "Star"
+          }
+        },
+        "icon": {
+          "label": "Custom icon",
+          "info": "Replaces the built-in icon. Use a one-color SVG or transparent PNG."
+        },
+        "recolor_icon": {
+          "label": "Recolor custom icon",
+          "info": "Fills the custom icon with the icon color."
+        },
+        "title": {
+          "label": "Title"
+        },
+        "title_tag": {
+          "label": "Title tag",
+          "options__p": {
+            "label": "Paragraph"
+          }
+        },
+        "text": {
+          "label": "Text"
+        },
+        "number": {
+          "label": "Number",
+          "info": "Large faded number in the corner, for example 01. Leave empty to hide."
+        },
+        "header_card": {
+          "content": "Card"
+        },
+        "background_color": {
+          "label": "Background color"
+        },
+        "border_radius": {
+          "label": "Corner radius"
+        },
+        "border_width": {
+          "label": "Border width"
+        },
+        "border_color": {
+          "label": "Border color"
+        },
+        "padding": {
+          "label": "Padding on desktop"
+        },
+        "padding_mobile": {
+          "label": "Padding on mobile"
+        },
+        "min_height": {
+          "label": "Minimum height on desktop"
+        },
+        "min_height_mobile": {
+          "label": "Minimum height on mobile"
+        },
+        "hover_effect": {
+          "label": "Lift on hover"
+        },
+        "header_icon": {
+          "content": "Icon"
+        },
+        "icon_color": {
+          "label": "Icon color"
+        },
+        "icon_background": {
+          "label": "Icon box color"
+        },
+        "icon_box_size": {
+          "label": "Icon box size"
+        },
+        "icon_size": {
+          "label": "Icon size"
+        },
+        "icon_box_radius": {
+          "label": "Icon box corner radius"
+        },
+        "icon_spacing": {
+          "label": "Space below icon on desktop"
+        },
+        "icon_spacing_mobile": {
+          "label": "Space below icon on mobile"
+        },
+        "header_title": {
+          "content": "Title"
+        },
+        "title_color": {
+          "label": "Title color"
+        },
+        "title_size": {
+          "label": "Title size on desktop"
+        },
+        "title_size_mobile": {
+          "label": "Title size on mobile"
+        },
+        "title_weight": {
+          "label": "Title font weight",
+          "options__1": {
+            "label": "Default"
+          },
+          "options__2": {
+            "label": "Light"
+          },
+          "options__3": {
+            "label": "Regular"
+          },
+          "options__4": {
+            "label": "Medium"
+          },
+          "options__5": {
+            "label": "Semibold"
+          },
+          "options__6": {
+            "label": "Bold"
+          }
+        },
+        "header_text": {
+          "content": "Text"
+        },
+        "text_color": {
+          "label": "Text color"
+        },
+        "text_size": {
+          "label": "Text size on desktop"
+        },
+        "text_size_mobile": {
+          "label": "Text size on mobile"
+        },
+        "header_number": {
+          "content": "Number"
+        },
+        "number_color": {
+          "label": "Number color"
+        },
+        "number_size": {
+          "label": "Number size on desktop"
+        },
+        "number_size_mobile": {
+          "label": "Number size on mobile"
+        },
+        "number_font": {
+          "label": "Number font",
+          "options__1": {
+            "label": "Heading font"
+          },
+          "options__2": {
+            "label": "Body font"
+          }
+        }
+      }
+    },
     "pills": {
       "name": "Pills",
       "settings": {

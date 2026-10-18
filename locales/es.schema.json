@@ -742,6 +742,40 @@
     }
   },
   "sections": {
+    "blocks-section": {
+      "name": "Sección de bloques",
+      "presets": {
+        "name": "Tarjetas destacadas"
+      },
+      "settings": {
+        "full_width": {
+          "label": "Contenido de ancho completo",
+          "info": "Desactivado mantiene el contenido dentro del ancho de página."
+        },
+        "content_alignment": {
+          "label": "Alineación del texto",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "blocks_gap": {
+          "label": "Espacio entre bloques en escritorio"
+        },
+        "blocks_gap_mobile": {
+          "label": "Espacio entre bloques en móvil"
+        },
+        "background_color": {
+          "label": "Color de fondo",
+          "info": "Reemplaza el fondo del esquema de color. Déjalo vacío para usar el esquema."
+        }
+      }
+    },
     "all": {
       "padding": {
         "section_padding_heading": "Diseño de escritorio",
@@ -8752,6 +8786,275 @@
     }
   },
   "blocks": {
+    "row": {
+      "name": "Fila",
+      "settings": {
+        "layout": {
+          "label": "Diseño",
+          "info": "Columnas: cuadrícula de ancho igual. Dividido: primer bloque a la izquierda, el resto a la derecha.",
+          "options__1": {
+            "label": "Columnas"
+          },
+          "options__2": {
+            "label": "Dividido"
+          }
+        },
+        "columns_desktop": {
+          "label": "Columnas en escritorio"
+        },
+        "columns_tablet": {
+          "label": "Columnas en tableta"
+        },
+        "columns_mobile": {
+          "label": "Columnas en móvil"
+        },
+        "equal_height": {
+          "label": "Elementos de igual altura"
+        },
+        "vertical_alignment": {
+          "label": "Alineación vertical",
+          "options__1": {
+            "label": "Arriba"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Abajo"
+          }
+        },
+        "left_width": {
+          "label": "Ancho del lado izquierdo"
+        },
+        "right_max_width": {
+          "label": "Ancho máximo del lado derecho"
+        },
+        "stack_mobile": {
+          "label": "Apilar en móvil"
+        },
+        "header_gap": {
+          "content": "Espaciado"
+        },
+        "column_gap": {
+          "label": "Espacio entre columnas en escritorio"
+        },
+        "row_gap": {
+          "label": "Espacio entre filas en escritorio"
+        },
+        "column_gap_mobile": {
+          "label": "Espacio entre columnas en móvil"
+        },
+        "row_gap_mobile": {
+          "label": "Espacio entre filas en móvil"
+        },
+        "header_spacing": {
+          "content": "Espaciado"
+        },
+        "custom_spacing": {
+          "label": "Usar espaciado personalizado"
+        },
+        "margin_top": {
+          "label": "Margen superior"
+        },
+        "margin_bottom": {
+          "label": "Margen inferior"
+        }
+      }
+    },
+    "feature_card": {
+      "name": "Tarjeta destacada",
+      "settings": {
+        "header_content": {
+          "content": "Contenido"
+        },
+        "builtin_icon": {
+          "label": "Icono",
+          "options__none": {
+            "label": "Ninguno"
+          },
+          "options__eye": {
+            "label": "Ojo"
+          },
+          "options__people": {
+            "label": "Personas"
+          },
+          "options__heart_hand": {
+            "label": "Corazón en la mano"
+          },
+          "options__heart": {
+            "label": "Corazón"
+          },
+          "options__leaf": {
+            "label": "Hoja"
+          },
+          "options__moon": {
+            "label": "Luna"
+          },
+          "options__sun": {
+            "label": "Sol"
+          },
+          "options__sparkle": {
+            "label": "Destello"
+          },
+          "options__shield": {
+            "label": "Escudo"
+          },
+          "options__check": {
+            "label": "Verificación"
+          },
+          "options__chat": {
+            "label": "Chat"
+          },
+          "options__star": {
+            "label": "Estrella"
+          }
+        },
+        "icon": {
+          "label": "Icono personalizado",
+          "info": "Reemplaza el icono integrado. Usa un SVG de un color o un PNG transparente."
+        },
+        "recolor_icon": {
+          "label": "Recolorear icono personalizado",
+          "info": "Rellena el icono personalizado con el color del icono."
+        },
+        "title": {
+          "label": "Título"
+        },
+        "title_tag": {
+          "label": "Etiqueta del título",
+          "options__p": {
+            "label": "Párrafo"
+          }
+        },
+        "text": {
+          "label": "Texto"
+        },
+        "number": {
+          "label": "Número",
+          "info": "Número grande y tenue en la esquina, por ejemplo 01. Déjalo vacío para ocultarlo."
+        },
+        "header_card": {
+          "content": "Tarjeta"
+        },
+        "background_color": {
+          "label": "Color de fondo"
+        },
+        "border_radius": {
+          "label": "Radio de esquina"
+        },
+        "border_width": {
+          "label": "Grosor del borde"
+        },
+        "border_color": {
+          "label": "Color del borde"
+        },
+        "padding": {
+          "label": "Relleno en escritorio"
+        },
+        "padding_mobile": {
+          "label": "Relleno en móvil"
+        },
+        "min_height": {
+          "label": "Altura mínima en escritorio"
+        },
+        "min_height_mobile": {
+          "label": "Altura mínima en móvil"
+        },
+        "hover_effect": {
+          "label": "Elevar al pasar el cursor"
+        },
+        "header_icon": {
+          "content": "Icono"
+        },
+        "icon_color": {
+          "label": "Color del icono"
+        },
+        "icon_background": {
+          "label": "Color del cuadro del icono"
+        },
+        "icon_box_size": {
+          "label": "Tamaño del cuadro del icono"
+        },
+        "icon_size": {
+          "label": "Tamaño del icono"
+        },
+        "icon_box_radius": {
+          "label": "Radio de esquina del cuadro del icono"
+        },
+        "icon_spacing": {
+          "label": "Espacio bajo el icono en escritorio"
+        },
+        "icon_spacing_mobile": {
+          "label": "Espacio bajo el icono en móvil"
+        },
+        "header_title": {
+          "content": "Título"
+        },
+        "title_color": {
+          "label": "Color del título"
+        },
+        "title_size": {
+          "label": "Tamaño del título en escritorio"
+        },
+        "title_size_mobile": {
+          "label": "Tamaño del título en móvil"
+        },
+        "title_weight": {
+          "label": "Grosor de fuente del título",
+          "options__1": {
+            "label": "Predeterminado"
+          },
+          "options__2": {
+            "label": "Ligera"
+          },
+          "options__3": {
+            "label": "Normal"
+          },
+          "options__4": {
+            "label": "Media"
+          },
+          "options__5": {
+            "label": "Seminegrita"
+          },
+          "options__6": {
+            "label": "Negrita"
+          }
+        },
+        "header_text": {
+          "content": "Texto"
+        },
+        "text_color": {
+          "label": "Color del texto"
+        },
+        "text_size": {
+          "label": "Tamaño del texto en escritorio"
+        },
+        "text_size_mobile": {
+          "label": "Tamaño del texto en móvil"
+        },
+        "header_number": {
+          "content": "Número"
+        },
+        "number_color": {
+          "label": "Color del número"
+        },
+        "number_size": {
+          "label": "Tamaño del número en escritorio"
+        },
+        "number_size_mobile": {
+          "label": "Tamaño del número en móvil"
+        },
+        "number_font": {
+          "label": "Fuente del número",
+          "options__1": {
+            "label": "Fuente de títulos"
+          },
+          "options__2": {
+            "label": "Fuente del cuerpo"
+          }
+        }
+      }
+    },
     "pills": {
       "name": "Etiquetas",
       "settings": {
