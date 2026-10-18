@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/bacton-health-logo.png",
+    "logo": "shopify://shop_images/bacton-health-new-logo.jpg",
     "logo_width": 240,
     "logo_width_mobile": 160,
     "favicon": "shopify://shop_images/fav-icon.png",
@@ -207,7 +207,7 @@
       },
       "option-4": {
         "settings": {
-          "background_color": "#E8F2FF",
+          "background_color": "#e8f2ff",
           "background_gradient": "",
           "text_color": "#2c2b2b",
           "button_primary_background_color": "#2c2b2b",
