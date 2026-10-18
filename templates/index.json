@@ -2606,7 +2606,7 @@
               "type": "button",
               "name": "t:blocks.button.name",
               "settings": {
-                "button_label": "Call Us",
+                "button_label": "CALL US",
                 "button_link": "shopify://pages/contact",
                 "apply_link_to_image": false,
                 "open_new_tab_1": false,
@@ -2657,7 +2657,7 @@
               "type": "button",
               "name": "t:blocks.button.name",
               "settings": {
-                "button_label": "Call Us for details",
+                "button_label": "EXPLORE OUR PRODUCTS",
                 "button_link": "shopify://pages/contact",
                 "apply_link_to_image": false,
                 "open_new_tab_1": false,
