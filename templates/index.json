@@ -114,6 +114,7 @@
                 "text_color": "",
                 "background_color": "#0007c6",
                 "hover_effect": "lift",
+                "sweep_color": "",
                 "hover_duration": 300,
                 "hover_text_color": "",
                 "hover_background_color": "",
@@ -164,11 +165,12 @@
                 "text_color": "#0610a7",
                 "background_color": "#e7f1fb",
                 "hover_effect": "lift",
+                "sweep_color": "",
                 "hover_duration": 300,
-                "hover_text_color": "#FFFFFF",
+                "hover_text_color": "#ffffff",
                 "hover_background_color": "#000000",
                 "hover_border_color": "#000000",
-                "hover_icon_color": "#FFFFFF",
+                "hover_icon_color": "#ffffff",
                 "hover_underline_color": "",
                 "custom_font_size": true,
                 "font_size": 14,
@@ -621,6 +623,9 @@
             "underline_thickness": 2,
             "text_color": "#ffffff",
             "background_color": "#00a2f8",
+            "hover_effect": "none",
+            "sweep_color": "",
+            "hover_duration": 300,
             "hover_text_color": "",
             "hover_background_color": "",
             "hover_border_color": "",
@@ -669,6 +674,9 @@
             "underline_thickness": 2,
             "text_color": "",
             "background_color": "",
+            "hover_effect": "none",
+            "sweep_color": "",
+            "hover_duration": 300,
             "hover_text_color": "",
             "hover_background_color": "",
             "hover_border_color": "",
@@ -844,6 +852,124 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "disable_arrow_mobile": true
+      }
+    },
+    "blocks_section_a6dx6f": {
+      "type": "blocks-section",
+      "blocks": {
+        "container_6HMyhF": {
+          "type": "container",
+          "name": "t:blocks.container.name",
+          "settings": {
+            "background_color": "#f5f5f5",
+            "border_radius": 12,
+            "border_width": 0,
+            "border_color": "#e5e5e5",
+            "border_top": false,
+            "border_right": false,
+            "border_bottom": false,
+            "border_left": false,
+            "padding_vertical": 32,
+            "padding_horizontal": 32,
+            "padding_vertical_mobile": 20,
+            "padding_horizontal_mobile": 20
+          },
+          "blocks": {
+            "caption_wf8G7c": {
+              "type": "caption",
+              "name": "t:blocks.caption.name",
+              "settings": {
+                "caption": "Start with what you are noticing",
+                "text_style": "caption-with-letter-spacing",
+                "text_size": "medium",
+                "alignment": "center",
+                "text_color": "#0007c6",
+                "font_weight": "600",
+                "custom_font_size": false,
+                "font_size": 14,
+                "font_size_mobile": 13,
+                "custom_letter_spacing": true,
+                "letter_spacing": 1,
+                "custom_spacing": false,
+                "margin_top": 8,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0,
+                "background_color": "#e9e9e9",
+                "border_radius": 15,
+                "custom_padding": true,
+                "padding_top": 8,
+                "padding_right": 12,
+                "padding_bottom": 8,
+                "padding_left": 12
+              },
+              "blocks": {}
+            },
+            "heading_8QpDYG": {
+              "type": "heading",
+              "settings": {
+                "heading": "Have you been feeling stuck",
+                "heading_size": "large",
+                "heading_style": "default",
+                "heading_tag": "h2",
+                "highlight_option": "underline-hand",
+                "word_animation_color": "#272727",
+                "alignment": "center",
+                "text_color": "#0007c6",
+                "custom_font_size": false,
+                "font_size": 52,
+                "font_size_mobile": 40,
+                "custom_spacing": true,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0
+              },
+              "blocks": {}
+            },
+            "heading_kwfbbA": {
+              "type": "heading",
+              "settings": {
+                "heading": "with any of these?",
+                "heading_size": "large",
+                "heading_style": "default",
+                "heading_tag": "h2",
+                "highlight_option": "underline-hand",
+                "word_animation_color": "#272727",
+                "alignment": "center",
+                "text_color": "#0007c6",
+                "custom_font_size": false,
+                "font_size": 52,
+                "font_size_mobile": 40,
+                "custom_spacing": true,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "caption_wf8G7c",
+            "heading_8QpDYG",
+            "heading_kwfbbA"
+          ]
+        }
+      },
+      "block_order": [
+        "container_6HMyhF"
+      ],
+      "name": "t:sections.blocks-section.presets.blank_name",
+      "settings": {
+        "full_width": true,
+        "content_alignment": "center",
+        "blocks_gap": 48,
+        "blocks_gap_mobile": 32,
+        "color_scheme": "",
+        "background_color": "#f2f2f2",
+        "padding_top": 24,
+        "padding_bottom": 0
       }
     },
     "multicolumn_AefCzX": {
@@ -1916,6 +2042,9 @@
             "underline_thickness": 2,
             "text_color": "#222222",
             "background_color": "",
+            "hover_effect": "none",
+            "sweep_color": "",
+            "hover_duration": 300,
             "hover_text_color": "#00a2f8",
             "hover_background_color": "",
             "hover_border_color": "",
@@ -2393,25 +2522,25 @@
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium",
             "alignment": "center",
-            "text_color": "",
-            "font_weight": "inherit",
+            "text_color": "#000000",
+            "font_weight": "600",
             "custom_font_size": false,
             "font_size": 14,
             "font_size_mobile": 13,
-            "custom_letter_spacing": false,
-            "letter_spacing": 1,
+            "custom_letter_spacing": true,
+            "letter_spacing": 1.5,
             "custom_spacing": false,
             "margin_top": 0,
             "margin_bottom": 8,
             "margin_left": 0,
             "margin_right": 0,
-            "background_color": "",
-            "border_radius": 0,
-            "custom_padding": false,
+            "background_color": "#FFFFFF",
+            "border_radius": 15,
+            "custom_padding": true,
             "padding_top": 6,
-            "padding_right": 12,
+            "padding_right": 10,
             "padding_bottom": 6,
-            "padding_left": 12
+            "padding_left": 10
           },
           "blocks": {}
         },
@@ -2477,7 +2606,7 @@
               "type": "button",
               "name": "t:blocks.button.name",
               "settings": {
-                "button_label": "Call Us for details",
+                "button_label": "Call Us",
                 "button_link": "shopify://pages/contact",
                 "apply_link_to_image": false,
                 "open_new_tab_1": false,
@@ -2485,12 +2614,15 @@
                 "link_style": false,
                 "underline_color": "",
                 "underline_thickness": 2,
-                "text_color": "",
-                "background_color": "#0007c6",
-                "hover_text_color": "",
-                "hover_background_color": "",
+                "text_color": "#000000",
+                "background_color": "#F6DE89",
+                "hover_effect": "lift",
+                "sweep_color": "",
+                "hover_duration": 300,
+                "hover_text_color": "#FFFFFF",
+                "hover_background_color": "#E0531A",
                 "hover_border_color": "",
-                "hover_icon_color": "",
+                "hover_icon_color": "#FFFFFF",
                 "hover_underline_color": "",
                 "custom_font_size": true,
                 "font_size": 14,
@@ -2516,14 +2648,66 @@
                 "icon_size": 20,
                 "icon_position": "last",
                 "icon_spacing": 8,
-                "recolor_icon": false,
+                "recolor_icon": true,
+                "icon_color": "#000000"
+              },
+              "blocks": {}
+            },
+            "button_mjNmBn": {
+              "type": "button",
+              "name": "t:blocks.button.name",
+              "settings": {
+                "button_label": "Call Us for details",
+                "button_link": "shopify://pages/contact",
+                "apply_link_to_image": false,
+                "open_new_tab_1": false,
+                "button_style_secondary": false,
+                "link_style": false,
+                "underline_color": "",
+                "underline_thickness": 2,
+                "text_color": "#FFFFFF",
+                "background_color": "#000000",
+                "hover_effect": "lift",
+                "sweep_color": "",
+                "hover_duration": 300,
+                "hover_text_color": "#000000",
+                "hover_background_color": "#FFFFFF",
+                "hover_border_color": "",
+                "hover_icon_color": "#000000",
+                "hover_underline_color": "",
+                "custom_font_size": true,
+                "font_size": 14,
+                "font_size_mobile": 16,
+                "font_weight": "inherit",
+                "custom_letter_spacing": false,
+                "letter_spacing": 0,
+                "custom_border_radius": true,
+                "border_radius": 30,
+                "border_width": 0,
+                "border_color": "",
+                "custom_padding": true,
+                "padding_vertical": 12,
+                "padding_horizontal": 24,
+                "padding_vertical_mobile": 10,
+                "padding_horizontal_mobile": 20,
+                "custom_margin": true,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_left": 10,
+                "margin_right": 0,
+                "icon": "shopify://shop_images/arrow-icon.svg",
+                "icon_size": 20,
+                "icon_position": "last",
+                "icon_spacing": 8,
+                "recolor_icon": true,
                 "icon_color": ""
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "button_Fyg93e"
+            "button_Fyg93e",
+            "button_mjNmBn"
           ]
         }
       },
@@ -2540,131 +2724,13 @@
         "image_height": "medium",
         "desktop_content_position": "top-center",
         "show_text_box": false,
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "ignore_spacing": true,
         "color_scheme_1": "",
         "margin_spacing": "positive",
         "margin_top": 56,
         "mobile_content_alignment": "center",
         "show_text_below": false
-      }
-    },
-    "blocks_section_a6dx6f": {
-      "type": "blocks-section",
-      "blocks": {
-        "container_6HMyhF": {
-          "type": "container",
-          "name": "t:blocks.container.name",
-          "settings": {
-            "background_color": "#f5f5f5",
-            "border_radius": 12,
-            "border_width": 0,
-            "border_color": "#e5e5e5",
-            "border_top": false,
-            "border_right": false,
-            "border_bottom": false,
-            "border_left": false,
-            "padding_vertical": 32,
-            "padding_horizontal": 32,
-            "padding_vertical_mobile": 20,
-            "padding_horizontal_mobile": 20
-          },
-          "blocks": {
-            "caption_wf8G7c": {
-              "type": "caption",
-              "name": "t:blocks.caption.name",
-              "settings": {
-                "caption": "Start with what you are noticing",
-                "text_style": "caption-with-letter-spacing",
-                "text_size": "medium",
-                "alignment": "center",
-                "text_color": "#0007C6",
-                "font_weight": "600",
-                "custom_font_size": false,
-                "font_size": 14,
-                "font_size_mobile": 13,
-                "custom_letter_spacing": true,
-                "letter_spacing": 1,
-                "custom_spacing": false,
-                "margin_top": 8,
-                "margin_bottom": 0,
-                "margin_left": 0,
-                "margin_right": 0,
-                "background_color": "#E9E9E9",
-                "border_radius": 15,
-                "custom_padding": true,
-                "padding_top": 8,
-                "padding_right": 12,
-                "padding_bottom": 8,
-                "padding_left": 12
-              },
-              "blocks": {}
-            },
-            "heading_8QpDYG": {
-              "type": "heading",
-              "settings": {
-                "heading": "Have you been feeling stuck",
-                "heading_size": "large",
-                "heading_style": "default",
-                "heading_tag": "h2",
-                "highlight_option": "underline-hand",
-                "word_animation_color": "#272727",
-                "alignment": "center",
-                "text_color": "#0007C6",
-                "custom_font_size": false,
-                "font_size": 52,
-                "font_size_mobile": 40,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "heading_kwfbbA": {
-              "type": "heading",
-              "settings": {
-                "heading": "with any of these?",
-                "heading_size": "large",
-                "heading_style": "default",
-                "heading_tag": "h2",
-                "highlight_option": "underline-hand",
-                "word_animation_color": "#272727",
-                "alignment": "center",
-                "text_color": "#0007C6",
-                "custom_font_size": false,
-                "font_size": 52,
-                "font_size_mobile": 40,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "caption_wf8G7c",
-            "heading_8QpDYG",
-            "heading_kwfbbA"
-          ]
-        }
-      },
-      "block_order": [
-        "container_6HMyhF"
-      ],
-      "name": "t:sections.blocks-section.presets.blank_name",
-      "settings": {
-        "full_width": true,
-        "content_alignment": "center",
-        "blocks_gap": 48,
-        "blocks_gap_mobile": 32,
-        "color_scheme": "",
-        "background_color": "#F2F2F2",
-        "padding_top": 24,
-        "padding_bottom": 0
       }
     }
   },
