@@ -8985,6 +8985,9 @@
     }
   },
   "blocks": {
+    "section-heading": {
+      "name": "Abschnittsüberschrift"
+    },
     "product-card": {
       "name": "Produktkarte",
       "settings": {

@@ -1,0 +1,64 @@
+{% comment %}
+  Renders the subheading, heading and description group used by the
+  section-heading section and block.
+
+  Accepts:
+  - settings: {Object} section.settings or block.settings
+  - id: {String} Unique ID for scoping styles
+
+  Usage:
+  {% render 'section-heading-content', settings: section.settings, id: section.id %}
+{% endcomment %}
+
+{{ 'component-section-heading.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #SectionHeading-{{ id }} {
+    --sh-max-width: {{ settings.max_width }}px;
+    --sh-subheading-size: {{ settings.subheading_size_mobile }}px;
+    --sh-heading-size: {{ settings.heading_size_mobile }}px;
+    --sh-description-size: {{ settings.description_size_mobile }}px;
+    --sh-gap-subheading: {{ settings.gap_subheading_mobile }}px;
+    --sh-gap-heading: {{ settings.gap_heading_mobile }}px;
+    {%- if settings.subheading_color != blank %}
+      --sh-subheading-color: {{ settings.subheading_color }};
+    {%- endif %}
+    {%- if settings.heading_color != blank %}
+      --sh-heading-color: {{ settings.heading_color }};
+    {%- endif %}
+    {%- if settings.description_color != blank %}
+      --sh-description-color: {{ settings.description_color }};
+    {%- endif %}
+  }
+
+  @media screen and (min-width: 750px) {
+    #SectionHeading-{{ id }} {
+      --sh-subheading-size: {{ settings.subheading_size }}px;
+      --sh-heading-size: {{ settings.heading_size }}px;
+      --sh-description-size: {{ settings.description_size }}px;
+      --sh-gap-subheading: {{ settings.gap_subheading }}px;
+      --sh-gap-heading: {{ settings.gap_heading }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="SectionHeading-{{ id }}"
+  class="section-heading__inner section-heading__inner--{{ settings.alignment }}"
+>
+  {%- if settings.subheading != blank -%}
+    <p class="section-heading__subheading{% if settings.subheading_uppercase %} section-heading__subheading--uppercase{% endif %}">
+      {{- settings.subheading | escape -}}
+    </p>
+  {%- endif -%}
+
+  {%- if settings.heading != blank -%}
+    <{{ settings.heading_tag }} class="section-heading__heading{% if settings.heading_font == 'body' %} section-heading__heading--body-font{% endif %}">
+      {{- settings.heading -}}
+    </{{ settings.heading_tag }}>
+  {%- endif -%}
+
+  {%- if settings.description != blank -%}
+    <div class="section-heading__description rte">{{ settings.description }}</div>
+  {%- endif -%}
+</div>

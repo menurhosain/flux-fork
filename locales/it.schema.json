@@ -8984,6 +8984,9 @@
     }
   },
   "blocks": {
+    "section-heading": {
+      "name": "Intestazione sezione"
+    },
     "product-card": {
       "name": "Scheda prodotto",
       "settings": {

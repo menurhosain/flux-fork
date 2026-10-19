@@ -7,142 +7,19 @@
     {%- endif %}
   }
 
-  #SectionHeading-{{ section.id }} {
-    --sh-max-width: {{ section.settings.max_width }}px;
-    --sh-subheading-size: {{ section.settings.subheading_size_mobile }}px;
-    --sh-heading-size: {{ section.settings.heading_size_mobile }}px;
-    --sh-description-size: {{ section.settings.description_size_mobile }}px;
-    --sh-gap-subheading: {{ section.settings.gap_subheading_mobile }}px;
-    --sh-gap-heading: {{ section.settings.gap_heading_mobile }}px;
-    {%- if section.settings.subheading_color != blank %}
-      --sh-subheading-color: {{ section.settings.subheading_color }};
-    {%- endif %}
-    {%- if section.settings.heading_color != blank %}
-      --sh-heading-color: {{ section.settings.heading_color }};
-    {%- endif %}
-    {%- if section.settings.description_color != blank %}
-      --sh-description-color: {{ section.settings.description_color }};
-    {%- endif %}
-  }
-
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-
-    #SectionHeading-{{ section.id }} {
-      --sh-subheading-size: {{ section.settings.subheading_size }}px;
-      --sh-heading-size: {{ section.settings.heading_size }}px;
-      --sh-description-size: {{ section.settings.description_size }}px;
-      --sh-gap-subheading: {{ section.settings.gap_subheading }}px;
-      --sh-gap-heading: {{ section.settings.gap_heading }}px;
     }
   }
 {%- endstyle -%}
 
 <div class="section-heading color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   <div class="page-width">
-    <div
-      id="SectionHeading-{{ section.id }}"
-      class="section-heading__inner section-heading__inner--{{ section.settings.alignment }}"
-    >
-      {%- if section.settings.subheading != blank -%}
-        <p class="section-heading__subheading{% if section.settings.subheading_uppercase %} section-heading__subheading--uppercase{% endif %}">
-          {{- section.settings.subheading | escape -}}
-        </p>
-      {%- endif -%}
-
-      {%- if section.settings.heading != blank -%}
-        <{{ section.settings.heading_tag }} class="section-heading__heading{% if section.settings.heading_font == 'body' %} section-heading__heading--body-font{% endif %}">
-          {{- section.settings.heading -}}
-        </{{ section.settings.heading_tag }}>
-      {%- endif -%}
-
-      {%- if section.settings.description != blank -%}
-        <div class="section-heading__description rte">{{ section.settings.description }}</div>
-      {%- endif -%}
-    </div>
+    {% render 'section-heading-content', settings: section.settings, id: section.id %}
   </div>
 </div>
-
-{% stylesheet %}
-  .section-heading__inner {
-    display: flex;
-    flex-direction: column;
-    max-width: var(--sh-max-width);
-  }
-
-  .section-heading__inner--left {
-    align-items: flex-start;
-    margin-right: auto;
-    text-align: left;
-  }
-
-  .section-heading__inner--center {
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .section-heading__inner--right {
-    align-items: flex-end;
-    margin-left: auto;
-    text-align: right;
-  }
-
-  .section-heading__subheading {
-    margin: 0;
-    color: var(--sh-subheading-color, rgb(var(--color-foreground)));
-    font-family: var(--font-body-family);
-    font-size: var(--sh-subheading-size);
-    font-weight: var(--font-body-weight-bold);
-    letter-spacing: 0.04em;
-    line-height: 1.4;
-  }
-
-  .section-heading__subheading--uppercase {
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .section-heading__subheading + * {
-    margin-top: var(--sh-gap-subheading);
-  }
-
-  .section-heading__heading {
-    margin: 0;
-    color: var(--sh-heading-color, rgb(var(--color-foreground)));
-    font-size: var(--sh-heading-size);
-    line-height: 1.2;
-  }
-
-  .section-heading__heading--body-font {
-    font-family: var(--font-body-family);
-    font-style: var(--font-body-style);
-    font-weight: var(--font-body-weight-bold);
-  }
-
-  .section-heading__heading + .section-heading__description {
-    margin-top: var(--sh-gap-heading);
-  }
-
-  .section-heading__description,
-  .section-heading__description p {
-    color: var(--sh-description-color, rgba(var(--color-foreground), 0.75));
-    font-size: var(--sh-description-size);
-    line-height: 1.6;
-  }
-
-  .section-heading__description p {
-    margin: 0;
-  }
-
-  .section-heading__description p + p {
-    margin-top: 1em;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
