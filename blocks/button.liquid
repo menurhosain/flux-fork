@@ -13,7 +13,7 @@
     assign has_border_color = true
   endif
   assign has_background_color = false
-  if background_color != blank and background_color.alpha != 0
+  if background_color != blank
     assign has_background_color = true
   endif
   assign icon_color = block.settings.icon_color
@@ -33,7 +33,7 @@
   endif
   assign hover_background_color = block.settings.hover_background_color
   assign has_hover_background_color = false
-  if hover_background_color != blank and hover_background_color.alpha != 0
+  if hover_background_color != blank
     assign has_hover_background_color = true
   endif
   assign hover_border_color = block.settings.hover_border_color
@@ -129,6 +129,9 @@
       {%- endif %}
       {%- if has_background_color %}
         background-color: {{ background_color }};
+        {%- if background_color.alpha == 0 %}
+          box-shadow: none;
+        {%- endif %}
       {%- endif %}
       {%- if block.settings.custom_font_size %}
         font-size: {{ block.settings.font_size_mobile | divided_by: 10.0 }}rem;
