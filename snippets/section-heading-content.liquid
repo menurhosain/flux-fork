@@ -34,9 +34,6 @@
     {%- if settings.subheading_weight != 'default' %}
       --sh-subheading-weight: {{ settings.subheading_weight }};
     {%- endif %}
-    {%- if settings.subheading_max_width > 0 %}
-      --sh-subheading-max-width: {{ settings.subheading_max_width }}px;
-    {%- endif %}
     {%- if settings.heading_weight != 'default' %}
       --sh-heading-weight: {{ settings.heading_weight }};
     {%- endif %}
@@ -45,9 +42,6 @@
     {%- endif %}
     {%- if settings.description_weight != 'default' %}
       --sh-description-weight: {{ settings.description_weight }};
-    {%- endif %}
-    {%- if settings.description_max_width > 0 %}
-      --sh-description-max-width: {{ settings.description_max_width }}px;
     {%- endif %}
   }
 
