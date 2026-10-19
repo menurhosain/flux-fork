@@ -667,6 +667,25 @@ document.addEventListener('shopify:section:select', attachCheckboxListener);
       "default": true,
       "label": "t:sections.all.ignore_spacing.label"
     }
+  ],
+  "enabled_on": {
+    "groups": ["footer"]
+  },
+  "presets": [
+    {
+      "name": "t:sections.footer.name",
+      "blocks": [
+        {
+          "type": "_footer-brand"
+        },
+        {
+          "type": "_footer-menu"
+        },
+        {
+          "type": "_footer-text"
+        }
+      ]
+    }
   ]
 }
 {% endschema %}
