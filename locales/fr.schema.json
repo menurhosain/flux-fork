@@ -2298,6 +2298,12 @@
         },
         "corner_radius": {
           "label": "Rayon des coins supérieurs"
+        },
+        "background_color": {
+          "label": "Couleur de fond"
+        },
+        "text_color": {
+          "label": "Couleur du texte"
         }
       },
       "presets": {

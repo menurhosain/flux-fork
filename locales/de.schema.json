@@ -2298,6 +2298,12 @@
         },
         "corner_radius": {
           "label": "Eckenradius oben"
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe"
+        },
+        "text_color": {
+          "label": "Textfarbe"
         }
       },
       "presets": {

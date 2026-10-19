@@ -2298,6 +2298,12 @@
         },
         "corner_radius": {
           "label": "Radio de esquinas superiores"
+        },
+        "background_color": {
+          "label": "Color de fondo"
+        },
+        "text_color": {
+          "label": "Color del texto"
         }
       },
       "presets": {

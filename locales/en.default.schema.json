@@ -2298,6 +2298,12 @@
         },
         "corner_radius": {
           "label": "Top corner radius"
+        },
+        "background_color": {
+          "label": "Background color"
+        },
+        "text_color": {
+          "label": "Text color"
         }
       },
       "presets": {

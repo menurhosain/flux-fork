@@ -2298,6 +2298,12 @@
         },
         "corner_radius": {
           "label": "Raggio angoli superiori"
+        },
+        "background_color": {
+          "label": "Colore di sfondo"
+        },
+        "text_color": {
+          "label": "Colore del testo"
         }
       },
       "presets": {

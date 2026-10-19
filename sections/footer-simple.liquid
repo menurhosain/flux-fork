@@ -11,6 +11,9 @@
     --footer-simple-logo-width: {{ section.settings.logo_width }}px;
     --footer-simple-menu-size: {{ section.settings.menu_font_size }}px;
     --footer-simple-text-size: {{ section.settings.text_font_size }}px;
+    --footer-simple-background: {{ section.settings.background_color }};
+    --footer-simple-color: {{ section.settings.text_color }};
+    --footer-simple-divider: {{ section.settings.text_color | color_modify: 'alpha', 0.25 }};
   }
 
   @media screen and (min-width: 750px) {
@@ -29,7 +32,7 @@
   id="FooterSimple-{{ section.id }}"
   class="footer-simple{% unless section.settings.full_width %} page-width{% endunless %}"
 >
-  <div class="footer-simple__inner color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="footer-simple__inner section-{{ section.id }}-padding">
     <div class="footer-simple__top">
       <a href="{{ routes.root_url }}" class="footer-simple__logo link">
         {%- if logo != blank -%}
@@ -146,10 +149,16 @@
       "content": "t:sections.footer-simple.settings.header_layout.content"
     },
     {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "option-1"
+      "type": "color",
+      "id": "background_color",
+      "default": "#160081",
+      "label": "t:sections.footer-simple.settings.background_color.label"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "default": "#ffffff",
+      "label": "t:sections.footer-simple.settings.text_color.label"
     },
     {
       "type": "checkbox",
@@ -164,7 +173,7 @@
       "max": 40,
       "step": 1,
       "unit": "px",
-      "default": 16,
+      "default": 14,
       "label": "t:sections.footer-simple.settings.corner_radius.label"
     },
     {
@@ -179,7 +188,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 20
+      "default": 16
     },
     {
       "type": "range",
