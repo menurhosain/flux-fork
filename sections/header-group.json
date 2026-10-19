@@ -121,7 +121,7 @@
         "item_highlight_text": "HOT",
         "item_highlight_position": "nth-child(4)",
         "adjust_item_highlight_position": 9,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": false,
         "header_icons_decoration": "line",
         "color_scheme": "option-1",

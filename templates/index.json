@@ -861,7 +861,7 @@
           "type": "container",
           "name": "t:blocks.container.name",
           "settings": {
-            "background_color": "#f5f5f5",
+            "background_color": "#F2F2F2",
             "border_radius": 12,
             "border_width": 0,
             "border_color": "#e5e5e5",
@@ -1528,7 +1528,7 @@
         "image_width": "third",
         "image_ratio": "square",
         "columns_desktop": 4,
-        "max_width": 1200,
+        "max_width": 1400,
         "column_alignment": "left",
         "button_label": "",
         "button_link": "",
@@ -2442,11 +2442,11 @@
           "settings": {
             "rating": true,
             "rating_stars": "4-star",
-            "text": "<p><em>Holistic Health for Every Chapter: Supporting Women Through Life’s Transitions\"</em> is an inspiring and insightful piece that beautifully captures the essence of women’s wellness across different stages of life. The article emphasizes that health is not just physical—it’s a balance of emotional, mental, and social well‑being.<br/><br/></p>",
+            "text": "<h2><em>Holistic Health for Every Chapter: Supporting Women Through Life’s Transitions\"</em> is an inspiring and insightful piece that beautifully captures the essence of women’s wellness across different stages of life. The article emphasizes that health is not just physical—it’s a balance of emotional, mental, and social well‑being.<br/><br/></h2>",
             "title": "Elena Karim",
             "title_one": "",
             "hide_image": true,
-            "product": "creatine-creavitalis®"
+            "product": ""
           },
           "blocks": {}
         }
@@ -2662,7 +2662,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "button_label": "EXPLORE OUR PRODUCTS",
-                "button_link": "shopify://pages/contact",
+                "button_link": "shopify://collections",
                 "apply_link_to_image": false,
                 "open_new_tab_1": false,
                 "button_style_secondary": false,
