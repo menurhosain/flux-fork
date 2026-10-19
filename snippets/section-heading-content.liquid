@@ -22,6 +22,8 @@
     --sh-description-size: {{ settings.description_size_mobile }}px;
     --sh-gap-subheading: {{ settings.gap_subheading_mobile }}px;
     --sh-gap-heading: {{ settings.gap_heading_mobile }}px;
+    --sh-margin-top: {{ settings.margin_top_mobile }}px;
+    --sh-margin-bottom: {{ settings.margin_bottom_mobile }}px;
     {%- if settings.subheading_color != blank %}
       --sh-subheading-color: {{ settings.subheading_color }};
     {%- endif %}
@@ -52,6 +54,8 @@
       --sh-description-size: {{ settings.description_size }}px;
       --sh-gap-subheading: {{ settings.gap_subheading }}px;
       --sh-gap-heading: {{ settings.gap_heading }}px;
+      --sh-margin-top: {{ settings.margin_top }}px;
+      --sh-margin-bottom: {{ settings.margin_bottom }}px;
     }
   }
 {%- endstyle -%}

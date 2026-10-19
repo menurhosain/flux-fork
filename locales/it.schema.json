@@ -773,6 +773,18 @@
           "label": "Larghezza massima contenuto",
           "info": "Lascia vuoto per nessun limite. Larghezza in px."
         },
+        "margin_top": {
+          "label": "Margine superiore su desktop"
+        },
+        "margin_top_mobile": {
+          "label": "Margine superiore su dispositivo mobile"
+        },
+        "margin_bottom": {
+          "label": "Margine inferiore su desktop"
+        },
+        "margin_bottom_mobile": {
+          "label": "Margine inferiore su dispositivo mobile"
+        },
         "gap_subheading": {
           "label": "Spazio sotto il sottotitolo su desktop"
         },

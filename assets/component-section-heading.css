@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   max-width: var(--sh-max-width, none);
+  margin-top: var(--sh-margin-top, 0);
+  margin-bottom: var(--sh-margin-bottom, 0);
 }
 
 .section-heading__inner--left {
