@@ -387,7 +387,7 @@
                     "link_style": false,
                     "underline_color": "",
                     "underline_thickness": 2,
-                    "text_color": "#0261D1",
+                    "text_color": "#0261d1",
                     "background_color": "rgba(0,0,0,0)",
                     "hover_effect": "none",
                     "sweep_color": "",
@@ -413,7 +413,7 @@
                     "padding_vertical_mobile": 0,
                     "padding_horizontal_mobile": 0,
                     "custom_margin": true,
-                    "margin_top": 6,
+                    "margin_top": 10,
                     "margin_bottom": 0,
                     "margin_left": 0,
                     "margin_right": 0,
@@ -422,7 +422,7 @@
                     "icon_position": "last",
                     "icon_spacing": 8,
                     "recolor_icon": true,
-                    "icon_color": "#0261D1"
+                    "icon_color": "#0261d1"
                   },
                   "blocks": {}
                 }
@@ -500,11 +500,63 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_EXExVA": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/night-sweats",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_nUdait",
-                "text_pAaM8y"
+                "text_pAaM8y",
+                "button_EXExVA"
               ]
             },
             "container_Em9xKq": {
@@ -574,11 +626,63 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_4hGjiT": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/irregular-periods",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_teBiXr",
-                "text_PyyBtc"
+                "text_PyyBtc",
+                "button_4hGjiT"
               ]
             },
             "container_GCeT8n": {
@@ -648,11 +752,63 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_MhNDEm": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/sleep",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_zJQMiA",
-                "text_4ffqLt"
+                "text_4ffqLt",
+                "button_MhNDEm"
               ]
             },
             "container_CFnzET": {
@@ -722,11 +878,63 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_mV6gYP": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/mood",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_gQciFW",
-                "text_WeENtb"
+                "text_WeENtb",
+                "button_mV6gYP"
               ]
             },
             "container_7LhJUM": {
@@ -796,11 +1004,63 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_YhYFrz": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/brain-fog",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_dYmYBx",
-                "text_Dbfbn4"
+                "text_Dbfbn4",
+                "button_YhYFrz"
               ]
             },
             "container_aNAitH": {
@@ -870,11 +1130,63 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_EKPrNt": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/fatigue",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_i4b3UV",
-                "text_J6epjE"
+                "text_J6epjE",
+                "button_EKPrNt"
               ]
             },
             "container_TgTAXP": {
@@ -944,11 +1256,63 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_UL4pkR": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/weight",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "heading_bj6p3E",
-                "text_eWXNMk"
+                "text_eWXNMk",
+                "button_UL4pkR"
               ]
             }
           },
