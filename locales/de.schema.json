@@ -7636,6 +7636,62 @@
     },
     "featured_collection_card": {
       "name": "Kollektionskarte"
+    },
+    "icon": {
+      "name": "Symbol",
+      "settings": {
+        "header_icon": {
+          "content": "Symbol"
+        },
+        "icon_size": {
+          "label": "Symbolgröße (Desktop)"
+        },
+        "icon_size_mobile": {
+          "label": "Symbolgröße (mobil)"
+        },
+        "header_box": {
+          "content": "Container"
+        },
+        "width": {
+          "label": "Breite (Desktop)"
+        },
+        "height": {
+          "label": "Höhe (Desktop)"
+        },
+        "width_mobile": {
+          "label": "Breite (mobil)"
+        },
+        "height_mobile": {
+          "label": "Höhe (mobil)"
+        },
+        "shape": {
+          "label": "Form",
+          "options__1": {
+            "label": "Kreis"
+          },
+          "options__2": {
+            "label": "Abgerundet"
+          },
+          "options__3": {
+            "label": "Quadrat"
+          }
+        },
+        "border_width": {
+          "label": "Rahmenbreite"
+        },
+        "border_color": {
+          "label": "Rahmenfarbe"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "margin_bottom": {
+          "label": "Abstand unten (Desktop)"
+        },
+        "margin_bottom_mobile": {
+          "label": "Abstand unten (mobil)"
+        }
+      }
     }
   }
 }

@@ -7636,6 +7636,62 @@
     },
     "featured_collection_card": {
       "name": "Tarjeta de colección"
+    },
+    "icon": {
+      "name": "Icono",
+      "settings": {
+        "header_icon": {
+          "content": "Icono"
+        },
+        "icon_size": {
+          "label": "Tamaño del icono en escritorio"
+        },
+        "icon_size_mobile": {
+          "label": "Tamaño del icono en móvil"
+        },
+        "header_box": {
+          "content": "Contenedor"
+        },
+        "width": {
+          "label": "Ancho en escritorio"
+        },
+        "height": {
+          "label": "Alto en escritorio"
+        },
+        "width_mobile": {
+          "label": "Ancho en móvil"
+        },
+        "height_mobile": {
+          "label": "Alto en móvil"
+        },
+        "shape": {
+          "label": "Forma",
+          "options__1": {
+            "label": "Círculo"
+          },
+          "options__2": {
+            "label": "Redondeado"
+          },
+          "options__3": {
+            "label": "Cuadrado"
+          }
+        },
+        "border_width": {
+          "label": "Ancho del borde"
+        },
+        "border_color": {
+          "label": "Color del borde"
+        },
+        "header_layout": {
+          "content": "Diseño"
+        },
+        "margin_bottom": {
+          "label": "Espacio inferior en escritorio"
+        },
+        "margin_bottom_mobile": {
+          "label": "Espacio inferior en móvil"
+        }
+      }
     }
   }
 }

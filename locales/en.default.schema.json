@@ -7636,6 +7636,62 @@
     },
     "featured_collection_card": {
       "name": "Collection card"
+    },
+    "icon": {
+      "name": "Icon",
+      "settings": {
+        "header_icon": {
+          "content": "Icon"
+        },
+        "icon_size": {
+          "label": "Icon size on desktop"
+        },
+        "icon_size_mobile": {
+          "label": "Icon size on mobile"
+        },
+        "header_box": {
+          "content": "Container"
+        },
+        "width": {
+          "label": "Width on desktop"
+        },
+        "height": {
+          "label": "Height on desktop"
+        },
+        "width_mobile": {
+          "label": "Width on mobile"
+        },
+        "height_mobile": {
+          "label": "Height on mobile"
+        },
+        "shape": {
+          "label": "Shape",
+          "options__1": {
+            "label": "Circle"
+          },
+          "options__2": {
+            "label": "Rounded"
+          },
+          "options__3": {
+            "label": "Square"
+          }
+        },
+        "border_width": {
+          "label": "Border width"
+        },
+        "border_color": {
+          "label": "Border color"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "margin_bottom": {
+          "label": "Space below on desktop"
+        },
+        "margin_bottom_mobile": {
+          "label": "Space below on mobile"
+        }
+      }
     }
   }
 }
