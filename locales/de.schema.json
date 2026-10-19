@@ -9478,6 +9478,15 @@
         "line_height_mobile": {
           "label": "Zeilenhöhe (mobil)"
         },
+        "font_family": {
+          "label": "Schriftart",
+          "options__1": {
+            "label": "Überschriftenschrift"
+          },
+          "options__2": {
+            "label": "Textschrift"
+          }
+        },
         "header_spacing": {
           "content": "Abstand"
         },

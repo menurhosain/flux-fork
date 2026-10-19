@@ -9478,6 +9478,15 @@
         "line_height_mobile": {
           "label": "Altura de línea en móvil"
         },
+        "font_family": {
+          "label": "Fuente",
+          "options__1": {
+            "label": "Fuente de títulos"
+          },
+          "options__2": {
+            "label": "Fuente del cuerpo"
+          }
+        },
         "header_spacing": {
           "content": "Espaciado"
         },

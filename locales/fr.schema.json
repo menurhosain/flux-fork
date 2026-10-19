@@ -9477,6 +9477,15 @@
         "line_height_mobile": {
           "label": "Hauteur de ligne sur mobile"
         },
+        "font_family": {
+          "label": "Police",
+          "options__1": {
+            "label": "Police des titres"
+          },
+          "options__2": {
+            "label": "Police du corps de texte"
+          }
+        },
         "header_spacing": {
           "content": "Espacement"
         },

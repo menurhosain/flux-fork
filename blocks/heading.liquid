@@ -72,7 +72,7 @@
 {%- if block.settings.heading != blank -%}
   <{{ block.settings.heading_tag }}
     id="Heading-{{ block.id }}"
-    class="block-heading animated-highlight block-heading-{{ block.id }} highlight-{{ block.settings.highlight_option }} heading-bold {{ block.settings.heading_size }} heading-{{ block.settings.heading_style }}"
+    class="block-heading animated-highlight block-heading-{{ block.id }} highlight-{{ block.settings.highlight_option }} heading-bold {{ block.settings.heading_size }} heading-{{ block.settings.heading_style }}{% if block.settings.font_family == 'body' %} block-heading--body-font{% endif %}"
     {{ block.shopify_attributes }}
   >
     {{ block.settings.heading }}
@@ -126,6 +126,12 @@
 {%- endif -%}
 
 {% stylesheet %}
+  .block-heading.block-heading--body-font {
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight-bold);
+  }
+
   .block-heading em {
     font-style: normal;
     position: relative;
@@ -267,6 +273,22 @@
     {
       "type": "header",
       "content": "t:blocks.heading.settings.header_typography.content"
+    },
+    {
+      "type": "select",
+      "id": "font_family",
+      "options": [
+        {
+          "value": "heading",
+          "label": "t:blocks.heading.settings.font_family.options__1.label"
+        },
+        {
+          "value": "body",
+          "label": "t:blocks.heading.settings.font_family.options__2.label"
+        }
+      ],
+      "default": "heading",
+      "label": "t:blocks.heading.settings.font_family.label"
     },
     {
       "type": "select",

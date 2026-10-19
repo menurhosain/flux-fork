@@ -9477,6 +9477,15 @@
         "line_height_mobile": {
           "label": "Line height on mobile"
         },
+        "font_family": {
+          "label": "Font",
+          "options__1": {
+            "label": "Heading font"
+          },
+          "options__2": {
+            "label": "Body font"
+          }
+        },
         "header_spacing": {
           "content": "Spacing"
         },
