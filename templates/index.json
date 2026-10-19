@@ -3440,6 +3440,32 @@
         "padding_top": 32,
         "padding_bottom": 40
       }
+    },
+    "section_heading_main": {
+      "type": "section-heading",
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Section heading",
+        "heading_tag": "h2",
+        "description": "<p>Use this area to introduce the content that follows.</p>",
+        "alignment": "center",
+        "max_width": 720,
+        "gap_subheading": 12,
+        "gap_subheading_mobile": 8,
+        "gap_heading": 16,
+        "gap_heading_mobile": 12,
+        "subheading_size": 13,
+        "subheading_size_mobile": 12,
+        "subheading_uppercase": true,
+        "heading_size": 40,
+        "heading_size_mobile": 30,
+        "heading_font": "heading",
+        "description_size": 16,
+        "description_size_mobile": 15,
+        "color_scheme": "option-1",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -3457,6 +3483,7 @@
     "featured_blog",
     "image_banner",
     "blocks_section_NpG3E8",
-    "blocks_section_chosen_stage"
+    "blocks_section_chosen_stage",
+    "section_heading_main"
   ]
 }
