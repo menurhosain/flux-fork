@@ -112,7 +112,7 @@
         "centered_content": false,
         "color_scheme": "option-1",
         "apply_scheme_footer_bottom": false,
-        "footer_border": false,
+        "footer_border": true,
         "swipe_on_mobile": false,
         "disable_arrow_mobile": true,
         "margin_top": 0,

@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/bacton-logo.png",
+    "logo": "shopify://shop_images/logo-backon_5983dc9f-2d71-4ffa-80d0-5aaee88a7b67.png",
     "logo_width": 240,
     "logo_width_mobile": 160,
     "favicon": "shopify://shop_images/fav-icon.png",
@@ -40,7 +40,7 @@
     "text_style": "uppercase",
     "navigation_scale": 100,
     "subnavigation_scale": 90,
-    "page_width": 1620,
+    "page_width": 1300,
     "spacing_sections": 60,
     "spacing_grid_horizontal": 20,
     "spacing_grid_vertical": 20,
