@@ -1,0 +1,201 @@
+{{ 'section-footer-simple.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  #FooterSimple-{{ section.id }} {
+    --footer-simple-radius: {{ section.settings.corner_radius }}px;
+    --footer-simple-logo-width: {{ section.settings.logo_width }}px;
+    --footer-simple-menu-size: {{ section.settings.menu_font_size }}px;
+    --footer-simple-text-size: {{ section.settings.text_font_size }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign logo = section.settings.logo | default: settings.logo
+-%}
+
+<footer
+  id="FooterSimple-{{ section.id }}"
+  class="footer-simple{% unless section.settings.full_width %} page-width{% endunless %}"
+>
+  <div class="footer-simple__inner color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+    <div class="footer-simple__top">
+      <a href="{{ routes.root_url }}" class="footer-simple__logo link">
+        {%- if logo != blank -%}
+          {%- assign logo_alt = logo.alt | default: shop.name | escape -%}
+          {%- assign logo_height = section.settings.logo_width | divided_by: logo.aspect_ratio -%}
+          {{
+            logo
+            | image_url: width: 600
+            | image_tag:
+              widths: '100, 150, 200, 300, 400, 600',
+              width: section.settings.logo_width,
+              height: logo_height,
+              loading: 'lazy',
+              alt: logo_alt
+          }}
+        {%- else -%}
+          <span class="h3">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+
+      {%- if section.settings.menu != blank -%}
+        <nav class="footer-simple__nav" aria-label="{{ section.settings.menu.title | escape }}">
+          <ul class="footer-simple__menu list-unstyled" role="list">
+            {%- for link in section.settings.menu.links -%}
+              <li>
+                <a
+                  href="{{ link.url }}"
+                  class="footer-simple__link link{% if link.active %} footer-simple__link--active{% endif %}"
+                  {% if link.active %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  {{- link.title | escape -}}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.text != blank -%}
+      <div class="footer-simple__bottom{% if section.settings.show_divider %} footer-simple__bottom--divider{% endif %}">
+        <div class="footer-simple__text rte">{{ section.settings.text }}</div>
+      </div>
+    {%- endif -%}
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "t:sections.footer-simple.name",
+  "class": "section-footer-simple",
+  "enabled_on": {
+    "groups": ["footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:sections.footer-simple.settings.logo.label",
+      "info": "t:sections.footer-simple.settings.logo.info"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 40,
+      "max": 240,
+      "step": 2,
+      "unit": "px",
+      "default": 80,
+      "label": "t:sections.footer-simple.settings.logo_width.label"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "footer",
+      "label": "t:sections.footer-simple.settings.menu.label"
+    },
+    {
+      "type": "range",
+      "id": "menu_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:sections.footer-simple.settings.menu_font_size.label"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Bacton Health Services is a wellness products and information company, not a medical practice. Content on this site is information, not medical advice, and is not a substitute for care from your own clinician. These statements have not been evaluated by the Food and Drug Administration. Products on this site are not intended to diagnose, treat, cure, or prevent any disease.</p>",
+      "label": "t:sections.footer-simple.settings.text.label"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 13,
+      "label": "t:sections.footer-simple.settings.text_font_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": true,
+      "label": "t:sections.footer-simple.settings.show_divider.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer-simple.settings.header_layout.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "option-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "t:sections.footer-simple.settings.full_width.label"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "t:sections.footer-simple.settings.corner_radius.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.footer-simple.presets.name"
+    }
+  ]
+}
+{% endschema %}

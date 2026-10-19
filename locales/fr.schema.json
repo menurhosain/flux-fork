@@ -2265,6 +2265,45 @@
         "name": "Produit vedette"
       }
     },
+    "footer-simple": {
+      "name": "Pied de page simple",
+      "settings": {
+        "logo": {
+          "label": "Logo",
+          "info": "Laisser vide pour utiliser le logo de la boutique"
+        },
+        "logo_width": {
+          "label": "Largeur du logo"
+        },
+        "menu": {
+          "label": "Menu"
+        },
+        "menu_font_size": {
+          "label": "Taille de police du menu"
+        },
+        "text": {
+          "label": "Texte"
+        },
+        "text_font_size": {
+          "label": "Taille de police du texte"
+        },
+        "show_divider": {
+          "label": "Afficher la ligne de séparation"
+        },
+        "header_layout": {
+          "content": "Mise en page"
+        },
+        "full_width": {
+          "label": "Pleine largeur"
+        },
+        "corner_radius": {
+          "label": "Rayon des coins supérieurs"
+        }
+      },
+      "presets": {
+        "name": "Pied de page simple"
+      }
+    },
     "footer": {
       "name": "Pied de page",
       "blocks": {

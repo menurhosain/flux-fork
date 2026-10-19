@@ -2265,6 +2265,45 @@
         "name": "Featured product"
       }
     },
+    "footer-simple": {
+      "name": "Simple footer",
+      "settings": {
+        "logo": {
+          "label": "Logo",
+          "info": "Leave empty to use the store logo"
+        },
+        "logo_width": {
+          "label": "Logo width"
+        },
+        "menu": {
+          "label": "Menu"
+        },
+        "menu_font_size": {
+          "label": "Menu font size"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "text_font_size": {
+          "label": "Text font size"
+        },
+        "show_divider": {
+          "label": "Show divider line"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "full_width": {
+          "label": "Full width"
+        },
+        "corner_radius": {
+          "label": "Top corner radius"
+        }
+      },
+      "presets": {
+        "name": "Simple footer"
+      }
+    },
     "footer": {
       "name": "Footer",
       "blocks": {

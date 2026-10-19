@@ -2265,6 +2265,45 @@
         "name": "Prodotto in evidenza"
       }
     },
+    "footer-simple": {
+      "name": "Footer semplice",
+      "settings": {
+        "logo": {
+          "label": "Logo",
+          "info": "Lascia vuoto per usare il logo del negozio"
+        },
+        "logo_width": {
+          "label": "Larghezza logo"
+        },
+        "menu": {
+          "label": "Menu"
+        },
+        "menu_font_size": {
+          "label": "Dimensione carattere menu"
+        },
+        "text": {
+          "label": "Testo"
+        },
+        "text_font_size": {
+          "label": "Dimensione carattere testo"
+        },
+        "show_divider": {
+          "label": "Mostra linea divisoria"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "full_width": {
+          "label": "Larghezza piena"
+        },
+        "corner_radius": {
+          "label": "Raggio angoli superiori"
+        }
+      },
+      "presets": {
+        "name": "Footer semplice"
+      }
+    },
     "footer": {
       "name": "Piè di pagina",
       "blocks": {

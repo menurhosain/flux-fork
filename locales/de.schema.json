@@ -2265,6 +2265,45 @@
         "name": "Hervorgehobenes Produkt"
       }
     },
+    "footer-simple": {
+      "name": "Einfache Fußzeile",
+      "settings": {
+        "logo": {
+          "label": "Logo",
+          "info": "Leer lassen, um das Shop-Logo zu verwenden"
+        },
+        "logo_width": {
+          "label": "Logobreite"
+        },
+        "menu": {
+          "label": "Menü"
+        },
+        "menu_font_size": {
+          "label": "Schriftgröße des Menüs"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "text_font_size": {
+          "label": "Schriftgröße des Textes"
+        },
+        "show_divider": {
+          "label": "Trennlinie anzeigen"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "full_width": {
+          "label": "Volle Breite"
+        },
+        "corner_radius": {
+          "label": "Eckenradius oben"
+        }
+      },
+      "presets": {
+        "name": "Einfache Fußzeile"
+      }
+    },
     "footer": {
       "name": "Footer",
       "blocks": {

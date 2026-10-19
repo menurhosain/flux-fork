@@ -2265,6 +2265,45 @@
         "name": "Producto destacado"
       }
     },
+    "footer-simple": {
+      "name": "Pie de página simple",
+      "settings": {
+        "logo": {
+          "label": "Logo",
+          "info": "Déjalo vacío para usar el logo de la tienda"
+        },
+        "logo_width": {
+          "label": "Ancho del logo"
+        },
+        "menu": {
+          "label": "Menú"
+        },
+        "menu_font_size": {
+          "label": "Tamaño de fuente del menú"
+        },
+        "text": {
+          "label": "Texto"
+        },
+        "text_font_size": {
+          "label": "Tamaño de fuente del texto"
+        },
+        "show_divider": {
+          "label": "Mostrar línea divisoria"
+        },
+        "header_layout": {
+          "content": "Diseño"
+        },
+        "full_width": {
+          "label": "Ancho completo"
+        },
+        "corner_radius": {
+          "label": "Radio de esquinas superiores"
+        }
+      },
+      "presets": {
+        "name": "Pie de página simple"
+      }
+    },
     "footer": {
       "name": "Pie de página",
       "blocks": {
