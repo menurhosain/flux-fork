@@ -27,6 +27,81 @@
   #Testimonial-{{ section.id }} .testimonials .rating {
     color: {{ section.settings.rating_stars_color }};
   }
+
+  {%- if section.settings.column_background_color != blank %}
+    {%- if section.settings.testimonials_style == 'style-2' %}
+      #Testimonial-{{ section.id }} .testimonials.content-container .grid-item.left {
+        background: {{ section.settings.column_background_color }};
+      }
+      #Testimonial-{{ section.id }} .testimonials-image:before {
+        border-top-color: {{ section.settings.column_background_color }};
+      }
+    {%- else %}
+      #Testimonial-{{ section.id }} .testimonials.content-container {
+        background: {{ section.settings.column_background_color }};
+      }
+    {%- endif %}
+  {%- endif %}
+
+  {%- liquid
+    assign column_heading = '#Testimonial-' | append: section.id | append: ' .testimonial-text h3'
+    assign column_subheading = '#Testimonial-' | append: section.id | append: ' .testimonial-text h4.subtitle'
+    assign column_text = '#Testimonial-' | append: section.id | append: ' .testimonial-text .rte, #Testimonial-' | append: section.id | append: ' .testimonial-text .rte p'
+  -%}
+
+  {{ column_heading }} {
+    {%- if section.settings.custom_column_heading_size %}
+    font-size: {{ section.settings.column_heading_size_mobile }}px;
+    {%- endif %}
+    {%- if section.settings.column_heading_weight != 'default' %}
+    font-weight: {{ section.settings.column_heading_weight }};
+    {%- endif %}
+    {%- if section.settings.column_heading_color != blank %}
+    color: {{ section.settings.column_heading_color }};
+    {%- endif %}
+  }
+
+  {{ column_subheading }} {
+    {%- if section.settings.custom_column_subheading_size %}
+    font-size: {{ section.settings.column_subheading_size_mobile }}px;
+    {%- endif %}
+    {%- if section.settings.column_subheading_weight != 'default' %}
+    font-weight: {{ section.settings.column_subheading_weight }};
+    {%- endif %}
+    {%- if section.settings.column_subheading_color != blank %}
+    color: {{ section.settings.column_subheading_color }};
+    {%- endif %}
+  }
+
+  {{ column_text }} {
+    {%- if section.settings.custom_column_text_size %}
+    font-size: {{ section.settings.column_text_size_mobile }}px;
+    {%- endif %}
+    {%- if section.settings.column_text_weight != 'default' %}
+    font-weight: {{ section.settings.column_text_weight }};
+    {%- endif %}
+    {%- if section.settings.column_text_color != blank %}
+    color: {{ section.settings.column_text_color }};
+    {%- endif %}
+  }
+
+  @media screen and (min-width: 750px) {
+    {%- if section.settings.custom_column_heading_size %}
+    {{ column_heading }} {
+      font-size: {{ section.settings.column_heading_size }}px;
+    }
+    {%- endif %}
+    {%- if section.settings.custom_column_subheading_size %}
+    {{ column_subheading }} {
+      font-size: {{ section.settings.column_subheading_size }}px;
+    }
+    {%- endif %}
+    {%- if section.settings.custom_column_text_size %}
+    {{ column_text }} {
+      font-size: {{ section.settings.column_text_size }}px;
+    }
+    {%- endif %}
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -290,6 +365,228 @@
     },
     {
       "type": "header",
+      "content": "t:sections.testimonials.settings.header_column_heading.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_column_heading_size",
+      "default": false,
+      "label": "t:sections.testimonials.settings.custom_font_size.label"
+    },
+    {
+      "type": "range",
+      "id": "column_heading_size",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 18,
+      "label": "t:sections.testimonials.settings.font_size.label",
+      "visible_if": "{{ section.settings.custom_column_heading_size }}"
+    },
+    {
+      "type": "range",
+      "id": "column_heading_size_mobile",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "t:sections.testimonials.settings.font_size_mobile.label",
+      "visible_if": "{{ section.settings.custom_column_heading_size }}"
+    },
+    {
+      "type": "select",
+      "id": "column_heading_weight",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.testimonials.settings.font_weight.options__default.label"
+        },
+        {
+          "value": "300",
+          "label": "t:sections.testimonials.settings.font_weight.options__300.label"
+        },
+        {
+          "value": "400",
+          "label": "t:sections.testimonials.settings.font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.testimonials.settings.font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.testimonials.settings.font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.testimonials.settings.font_weight.options__700.label"
+        },
+        {
+          "value": "800",
+          "label": "t:sections.testimonials.settings.font_weight.options__800.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.testimonials.settings.font_weight.label"
+    },
+    {
+      "type": "color",
+      "id": "column_heading_color",
+      "label": "t:sections.testimonials.settings.font_color.label",
+      "info": "t:sections.testimonials.settings.font_color.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.testimonials.settings.header_column_subheading.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_column_subheading_size",
+      "default": false,
+      "label": "t:sections.testimonials.settings.custom_font_size.label"
+    },
+    {
+      "type": "range",
+      "id": "column_subheading_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:sections.testimonials.settings.font_size.label",
+      "visible_if": "{{ section.settings.custom_column_subheading_size }}"
+    },
+    {
+      "type": "range",
+      "id": "column_subheading_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 13,
+      "label": "t:sections.testimonials.settings.font_size_mobile.label",
+      "visible_if": "{{ section.settings.custom_column_subheading_size }}"
+    },
+    {
+      "type": "select",
+      "id": "column_subheading_weight",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.testimonials.settings.font_weight.options__default.label"
+        },
+        {
+          "value": "300",
+          "label": "t:sections.testimonials.settings.font_weight.options__300.label"
+        },
+        {
+          "value": "400",
+          "label": "t:sections.testimonials.settings.font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.testimonials.settings.font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.testimonials.settings.font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.testimonials.settings.font_weight.options__700.label"
+        },
+        {
+          "value": "800",
+          "label": "t:sections.testimonials.settings.font_weight.options__800.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.testimonials.settings.font_weight.label"
+    },
+    {
+      "type": "color",
+      "id": "column_subheading_color",
+      "label": "t:sections.testimonials.settings.font_color.label",
+      "info": "t:sections.testimonials.settings.font_color.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.testimonials.settings.header_column_text.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_column_text_size",
+      "default": false,
+      "label": "t:sections.testimonials.settings.custom_font_size.label"
+    },
+    {
+      "type": "range",
+      "id": "column_text_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "t:sections.testimonials.settings.font_size.label",
+      "visible_if": "{{ section.settings.custom_column_text_size }}"
+    },
+    {
+      "type": "range",
+      "id": "column_text_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:sections.testimonials.settings.font_size_mobile.label",
+      "visible_if": "{{ section.settings.custom_column_text_size }}"
+    },
+    {
+      "type": "select",
+      "id": "column_text_weight",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.testimonials.settings.font_weight.options__default.label"
+        },
+        {
+          "value": "300",
+          "label": "t:sections.testimonials.settings.font_weight.options__300.label"
+        },
+        {
+          "value": "400",
+          "label": "t:sections.testimonials.settings.font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.testimonials.settings.font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.testimonials.settings.font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.testimonials.settings.font_weight.options__700.label"
+        },
+        {
+          "value": "800",
+          "label": "t:sections.testimonials.settings.font_weight.options__800.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.testimonials.settings.font_weight.label"
+    },
+    {
+      "type": "color",
+      "id": "column_text_color",
+      "label": "t:sections.testimonials.settings.font_color.label",
+      "info": "t:sections.testimonials.settings.font_color.info"
+    },
+    {
+      "type": "header",
       "content": "t:sections.all.header_color_box.content"
     },
     {
@@ -303,6 +600,12 @@
       "id": "color_scheme_1",
       "label": "t:sections.all.colors_box.label",
       "default": "option-1"
+    },
+    {
+      "type": "color",
+      "id": "column_background_color",
+      "label": "t:sections.testimonials.settings.column_background_color.label",
+      "info": "t:sections.testimonials.settings.font_color.info"
     },
     {
       "type": "color",

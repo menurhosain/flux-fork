@@ -6845,6 +6845,55 @@
         },
         "rating_stars_color": {
           "label": "Rating stars color"
+        },
+        "column_background_color": {
+          "label": "Column background color"
+        },
+        "header_column_heading": {
+          "content": "Column heading"
+        },
+        "header_column_subheading": {
+          "content": "Column subheading"
+        },
+        "header_column_text": {
+          "content": "Column description"
+        },
+        "custom_font_size": {
+          "label": "Use custom font size"
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "font_weight": {
+          "label": "Font weight",
+          "options__default": {
+            "label": "Theme default"
+          },
+          "options__300": {
+            "label": "Light (300)"
+          },
+          "options__400": {
+            "label": "Regular (400)"
+          },
+          "options__500": {
+            "label": "Medium (500)"
+          },
+          "options__600": {
+            "label": "Semibold (600)"
+          },
+          "options__700": {
+            "label": "Bold (700)"
+          },
+          "options__800": {
+            "label": "Extra bold (800)"
+          }
+        },
+        "font_color": {
+          "label": "Text color",
+          "info": "Leave empty to use the color scheme"
         }
       },
       "blocks": {

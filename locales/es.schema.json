@@ -6846,6 +6846,55 @@
         },
         "rating_stars_color": {
           "label": "Color de las estrellas de valoración"
+        },
+        "column_background_color": {
+          "label": "Color de fondo de columna"
+        },
+        "header_column_heading": {
+          "content": "Encabezado de columna"
+        },
+        "header_column_subheading": {
+          "content": "Subtítulo de columna"
+        },
+        "header_column_text": {
+          "content": "Descripción de columna"
+        },
+        "custom_font_size": {
+          "label": "Usar tamaño de fuente personalizado"
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "font_weight": {
+          "label": "Grosor de fuente",
+          "options__default": {
+            "label": "Predeterminado del tema"
+          },
+          "options__300": {
+            "label": "Ligera (300)"
+          },
+          "options__400": {
+            "label": "Normal (400)"
+          },
+          "options__500": {
+            "label": "Media (500)"
+          },
+          "options__600": {
+            "label": "Seminegrita (600)"
+          },
+          "options__700": {
+            "label": "Negrita (700)"
+          },
+          "options__800": {
+            "label": "Extranegrita (800)"
+          }
+        },
+        "font_color": {
+          "label": "Color del texto",
+          "info": "Déjalo vacío para usar el esquema de colores"
         }
       },
       "blocks": {
