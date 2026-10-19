@@ -742,6 +742,81 @@
     }
   },
   "sections": {
+    "section-heading": {
+      "name": "Intestazione sezione",
+      "settings": {
+        "subheading": {
+          "label": "Sottotitolo"
+        },
+        "heading": {
+          "label": "Titolo"
+        },
+        "description": {
+          "label": "Descrizione"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "alignment": {
+          "label": "Allineamento",
+          "options__1": {
+            "label": "Sinistra"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Destra"
+          }
+        },
+        "max_width": {
+          "label": "Larghezza massima contenuto"
+        },
+        "gap_subheading": {
+          "label": "Spazio sotto il sottotitolo su desktop"
+        },
+        "gap_subheading_mobile": {
+          "label": "Spazio sotto il sottotitolo su dispositivo mobile"
+        },
+        "gap_heading": {
+          "label": "Spazio sotto il titolo su desktop"
+        },
+        "gap_heading_mobile": {
+          "label": "Spazio sotto il titolo su dispositivo mobile"
+        },
+        "header_subheading": {
+          "content": "Sottotitolo"
+        },
+        "header_heading": {
+          "content": "Titolo"
+        },
+        "header_description": {
+          "content": "Descrizione"
+        },
+        "header_section": {
+          "content": "Sezione"
+        },
+        "font_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "font_size_mobile": {
+          "label": "Dimensione carattere su dispositivo mobile"
+        },
+        "color": {
+          "label": "Colore",
+          "info": "Lascia vuoto per usare lo schema di colori"
+        },
+        "subheading_uppercase": {
+          "label": "Maiuscolo"
+        },
+        "background_color": {
+          "label": "Colore di sfondo"
+        }
+      },
+      "presets": {
+        "name": "Intestazione sezione"
+      }
+    },
     "blocks-section": {
       "name": "Sezione a blocchi",
       "presets": {

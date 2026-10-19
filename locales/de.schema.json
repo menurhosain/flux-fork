@@ -742,6 +742,81 @@
     }
   },
   "sections": {
+    "section-heading": {
+      "name": "Abschnittsüberschrift",
+      "settings": {
+        "subheading": {
+          "label": "Unterüberschrift"
+        },
+        "heading": {
+          "label": "Überschrift"
+        },
+        "description": {
+          "label": "Beschreibung"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Zentriert"
+          },
+          "options__3": {
+            "label": "Rechts"
+          }
+        },
+        "max_width": {
+          "label": "Maximale Inhaltsbreite"
+        },
+        "gap_subheading": {
+          "label": "Abstand unter der Unterüberschrift (Desktop)"
+        },
+        "gap_subheading_mobile": {
+          "label": "Abstand unter der Unterüberschrift (mobil)"
+        },
+        "gap_heading": {
+          "label": "Abstand unter der Überschrift (Desktop)"
+        },
+        "gap_heading_mobile": {
+          "label": "Abstand unter der Überschrift (mobil)"
+        },
+        "header_subheading": {
+          "content": "Unterüberschrift"
+        },
+        "header_heading": {
+          "content": "Überschrift"
+        },
+        "header_description": {
+          "content": "Beschreibung"
+        },
+        "header_section": {
+          "content": "Abschnitt"
+        },
+        "font_size": {
+          "label": "Schriftgröße (Desktop)"
+        },
+        "font_size_mobile": {
+          "label": "Schriftgröße (mobil)"
+        },
+        "color": {
+          "label": "Farbe",
+          "info": "Leer lassen, um das Farbschema zu verwenden"
+        },
+        "subheading_uppercase": {
+          "label": "Großbuchstaben"
+        },
+        "background_color": {
+          "label": "Hintergrundfarbe"
+        }
+      },
+      "presets": {
+        "name": "Abschnittsüberschrift"
+      }
+    },
     "blocks-section": {
       "name": "Block-Abschnitt",
       "presets": {

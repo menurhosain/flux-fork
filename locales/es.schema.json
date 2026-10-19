@@ -742,6 +742,81 @@
     }
   },
   "sections": {
+    "section-heading": {
+      "name": "Encabezado de sección",
+      "settings": {
+        "subheading": {
+          "label": "Subtítulo"
+        },
+        "heading": {
+          "label": "Título"
+        },
+        "description": {
+          "label": "Descripción"
+        },
+        "header_layout": {
+          "content": "Diseño"
+        },
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "max_width": {
+          "label": "Ancho máximo del contenido"
+        },
+        "gap_subheading": {
+          "label": "Espacio bajo el subtítulo en escritorio"
+        },
+        "gap_subheading_mobile": {
+          "label": "Espacio bajo el subtítulo en móvil"
+        },
+        "gap_heading": {
+          "label": "Espacio bajo el título en escritorio"
+        },
+        "gap_heading_mobile": {
+          "label": "Espacio bajo el título en móvil"
+        },
+        "header_subheading": {
+          "content": "Subtítulo"
+        },
+        "header_heading": {
+          "content": "Título"
+        },
+        "header_description": {
+          "content": "Descripción"
+        },
+        "header_section": {
+          "content": "Sección"
+        },
+        "font_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "font_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "color": {
+          "label": "Color",
+          "info": "Déjalo vacío para usar el esquema de colores"
+        },
+        "subheading_uppercase": {
+          "label": "Mayúsculas"
+        },
+        "background_color": {
+          "label": "Color de fondo"
+        }
+      },
+      "presets": {
+        "name": "Encabezado de sección"
+      }
+    },
     "blocks-section": {
       "name": "Sección de bloques",
       "presets": {

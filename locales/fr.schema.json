@@ -742,6 +742,81 @@
     }
   },
   "sections": {
+    "section-heading": {
+      "name": "En-tête de section",
+      "settings": {
+        "subheading": {
+          "label": "Sous-titre"
+        },
+        "heading": {
+          "label": "Titre"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "header_layout": {
+          "content": "Mise en page"
+        },
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Gauche"
+          },
+          "options__2": {
+            "label": "Centre"
+          },
+          "options__3": {
+            "label": "Droite"
+          }
+        },
+        "max_width": {
+          "label": "Largeur maximale du contenu"
+        },
+        "gap_subheading": {
+          "label": "Espace sous le sous-titre sur ordinateur"
+        },
+        "gap_subheading_mobile": {
+          "label": "Espace sous le sous-titre sur mobile"
+        },
+        "gap_heading": {
+          "label": "Espace sous le titre sur ordinateur"
+        },
+        "gap_heading_mobile": {
+          "label": "Espace sous le titre sur mobile"
+        },
+        "header_subheading": {
+          "content": "Sous-titre"
+        },
+        "header_heading": {
+          "content": "Titre"
+        },
+        "header_description": {
+          "content": "Description"
+        },
+        "header_section": {
+          "content": "Section"
+        },
+        "font_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "font_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "color": {
+          "label": "Couleur",
+          "info": "Laisser vide pour utiliser le schéma de couleurs"
+        },
+        "subheading_uppercase": {
+          "label": "Majuscules"
+        },
+        "background_color": {
+          "label": "Couleur de fond"
+        }
+      },
+      "presets": {
+        "name": "En-tête de section"
+      }
+    },
     "blocks-section": {
       "name": "Section de blocs",
       "presets": {

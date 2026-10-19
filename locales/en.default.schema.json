@@ -742,6 +742,81 @@
     }
   },
   "sections": {
+    "section-heading": {
+      "name": "Section heading",
+      "settings": {
+        "subheading": {
+          "label": "Subheading"
+        },
+        "heading": {
+          "label": "Heading"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        },
+        "max_width": {
+          "label": "Content max width"
+        },
+        "gap_subheading": {
+          "label": "Gap below subheading on desktop"
+        },
+        "gap_subheading_mobile": {
+          "label": "Gap below subheading on mobile"
+        },
+        "gap_heading": {
+          "label": "Gap below heading on desktop"
+        },
+        "gap_heading_mobile": {
+          "label": "Gap below heading on mobile"
+        },
+        "header_subheading": {
+          "content": "Subheading"
+        },
+        "header_heading": {
+          "content": "Heading"
+        },
+        "header_description": {
+          "content": "Description"
+        },
+        "header_section": {
+          "content": "Section"
+        },
+        "font_size": {
+          "label": "Font size on desktop"
+        },
+        "font_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "color": {
+          "label": "Color",
+          "info": "Leave empty to use the color scheme"
+        },
+        "subheading_uppercase": {
+          "label": "Uppercase"
+        },
+        "background_color": {
+          "label": "Background color"
+        }
+      },
+      "presets": {
+        "name": "Section heading"
+      }
+    },
     "blocks-section": {
       "name": "Blocks section",
       "presets": {
