@@ -8910,6 +8910,93 @@
     }
   },
   "blocks": {
+    "product-card": {
+      "name": "Produktkarte",
+      "settings": {
+        "product": {
+          "label": "Produkt"
+        },
+        "symptom_label": {
+          "label": "Symptom-Label",
+          "info": "Leer lassen, um das Produkt-Metafeld custom.symptom zu verwenden"
+        },
+        "description": {
+          "label": "Kurzbeschreibung",
+          "info": "Leer lassen, um das Produkt-Metafeld custom.short_description zu verwenden"
+        },
+        "show_price": {
+          "label": "Preis anzeigen"
+        },
+        "header_button": {
+          "content": "Schaltfläche"
+        },
+        "button_label": {
+          "label": "Schaltflächentext"
+        },
+        "options_label": {
+          "label": "Schaltflächentext für Produkte mit Optionen",
+          "info": "Produkte mit mehreren Varianten verlinken auf die Produktseite"
+        },
+        "custom_link": {
+          "label": "Benutzerdefinierter Link",
+          "info": "Wenn gesetzt, führen Schaltfläche und Produktlinks hierhin statt in den Warenkorb"
+        },
+        "open_new_tab": {
+          "label": "Link in neuem Tab öffnen"
+        },
+        "header_image": {
+          "content": "Bild"
+        },
+        "image_ratio": {
+          "label": "Bildverhältnis",
+          "options__1": {
+            "label": "Querformat"
+          },
+          "options__2": {
+            "label": "Quadrat"
+          },
+          "options__3": {
+            "label": "Hochformat"
+          }
+        },
+        "image_background": {
+          "label": "Bildhintergrund"
+        },
+        "header_style": {
+          "content": "Stil"
+        },
+        "background_color": {
+          "label": "Kartenhintergrund"
+        },
+        "border_color": {
+          "label": "Rahmenfarbe"
+        },
+        "border_radius": {
+          "label": "Eckenradius"
+        },
+        "label_color": {
+          "label": "Label-Farbe"
+        },
+        "title_color": {
+          "label": "Titelfarbe"
+        },
+        "text_color": {
+          "label": "Textfarbe"
+        },
+        "price_color": {
+          "label": "Preisfarbe"
+        },
+        "button_background": {
+          "label": "Schaltflächenhintergrund"
+        },
+        "button_color": {
+          "label": "Schaltflächen-Textfarbe"
+        },
+        "button_radius": {
+          "label": "Eckenradius der Schaltfläche"
+        }
+      }
+    },
     "row": {
       "name": "Zeile",
       "settings": {

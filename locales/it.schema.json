@@ -8909,6 +8909,93 @@
     }
   },
   "blocks": {
+    "product-card": {
+      "name": "Scheda prodotto",
+      "settings": {
+        "product": {
+          "label": "Prodotto"
+        },
+        "symptom_label": {
+          "label": "Etichetta sintomo",
+          "info": "Lascia vuoto per usare il metacampo prodotto custom.symptom"
+        },
+        "description": {
+          "label": "Descrizione breve",
+          "info": "Lascia vuoto per usare il metacampo prodotto custom.short_description"
+        },
+        "show_price": {
+          "label": "Mostra prezzo"
+        },
+        "header_button": {
+          "content": "Pulsante"
+        },
+        "button_label": {
+          "label": "Testo del pulsante"
+        },
+        "options_label": {
+          "label": "Testo del pulsante per prodotti con opzioni",
+          "info": "I prodotti con più varianti rimandano alla pagina prodotto"
+        },
+        "custom_link": {
+          "label": "Link personalizzato",
+          "info": "Se impostato, il pulsante e i link del prodotto portano qui invece di aggiungere al carrello"
+        },
+        "open_new_tab": {
+          "label": "Apri link in una nuova scheda"
+        },
+        "header_image": {
+          "content": "Immagine"
+        },
+        "image_ratio": {
+          "label": "Proporzioni immagine",
+          "options__1": {
+            "label": "Orizzontale"
+          },
+          "options__2": {
+            "label": "Quadrata"
+          },
+          "options__3": {
+            "label": "Verticale"
+          }
+        },
+        "image_background": {
+          "label": "Sfondo immagine"
+        },
+        "header_style": {
+          "content": "Stile"
+        },
+        "background_color": {
+          "label": "Sfondo scheda"
+        },
+        "border_color": {
+          "label": "Colore bordo"
+        },
+        "border_radius": {
+          "label": "Raggio angoli"
+        },
+        "label_color": {
+          "label": "Colore etichetta"
+        },
+        "title_color": {
+          "label": "Colore titolo"
+        },
+        "text_color": {
+          "label": "Colore testo"
+        },
+        "price_color": {
+          "label": "Colore prezzo"
+        },
+        "button_background": {
+          "label": "Sfondo pulsante"
+        },
+        "button_color": {
+          "label": "Colore testo pulsante"
+        },
+        "button_radius": {
+          "label": "Raggio angoli pulsante"
+        }
+      }
+    },
     "row": {
       "name": "Riga",
       "settings": {

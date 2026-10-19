@@ -8910,6 +8910,93 @@
     }
   },
   "blocks": {
+    "product-card": {
+      "name": "Tarjeta de producto",
+      "settings": {
+        "product": {
+          "label": "Producto"
+        },
+        "symptom_label": {
+          "label": "Etiqueta de síntoma",
+          "info": "Déjalo vacío para usar el metacampo del producto custom.symptom"
+        },
+        "description": {
+          "label": "Descripción breve",
+          "info": "Déjalo vacío para usar el metacampo del producto custom.short_description"
+        },
+        "show_price": {
+          "label": "Mostrar precio"
+        },
+        "header_button": {
+          "content": "Botón"
+        },
+        "button_label": {
+          "label": "Texto del botón"
+        },
+        "options_label": {
+          "label": "Texto del botón para productos con opciones",
+          "info": "Los productos con varias variantes enlazan a la página del producto"
+        },
+        "custom_link": {
+          "label": "Enlace personalizado",
+          "info": "Si se define, el botón y los enlaces del producto van aquí en lugar de añadir al carrito"
+        },
+        "open_new_tab": {
+          "label": "Abrir enlace en una pestaña nueva"
+        },
+        "header_image": {
+          "content": "Imagen"
+        },
+        "image_ratio": {
+          "label": "Proporción de imagen",
+          "options__1": {
+            "label": "Horizontal"
+          },
+          "options__2": {
+            "label": "Cuadrada"
+          },
+          "options__3": {
+            "label": "Vertical"
+          }
+        },
+        "image_background": {
+          "label": "Fondo de la imagen"
+        },
+        "header_style": {
+          "content": "Estilo"
+        },
+        "background_color": {
+          "label": "Fondo de la tarjeta"
+        },
+        "border_color": {
+          "label": "Color del borde"
+        },
+        "border_radius": {
+          "label": "Radio de esquinas"
+        },
+        "label_color": {
+          "label": "Color de la etiqueta"
+        },
+        "title_color": {
+          "label": "Color del título"
+        },
+        "text_color": {
+          "label": "Color del texto"
+        },
+        "price_color": {
+          "label": "Color del precio"
+        },
+        "button_background": {
+          "label": "Fondo del botón"
+        },
+        "button_color": {
+          "label": "Color del texto del botón"
+        },
+        "button_radius": {
+          "label": "Radio de esquinas del botón"
+        }
+      }
+    },
     "row": {
       "name": "Fila",
       "settings": {

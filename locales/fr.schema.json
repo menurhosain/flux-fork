@@ -8909,6 +8909,93 @@
     }
   },
   "blocks": {
+    "product-card": {
+      "name": "Carte produit",
+      "settings": {
+        "product": {
+          "label": "Produit"
+        },
+        "symptom_label": {
+          "label": "Libellé du symptôme",
+          "info": "Laisser vide pour utiliser le métachamp produit custom.symptom"
+        },
+        "description": {
+          "label": "Description courte",
+          "info": "Laisser vide pour utiliser le métachamp produit custom.short_description"
+        },
+        "show_price": {
+          "label": "Afficher le prix"
+        },
+        "header_button": {
+          "content": "Bouton"
+        },
+        "button_label": {
+          "label": "Texte du bouton"
+        },
+        "options_label": {
+          "label": "Texte du bouton pour les produits avec options",
+          "info": "Les produits avec plusieurs variantes renvoient vers la page produit"
+        },
+        "custom_link": {
+          "label": "Lien personnalisé",
+          "info": "Si défini, le bouton et les liens du produit mènent ici au lieu d'ajouter au panier"
+        },
+        "open_new_tab": {
+          "label": "Ouvrir le lien dans un nouvel onglet"
+        },
+        "header_image": {
+          "content": "Image"
+        },
+        "image_ratio": {
+          "label": "Format de l'image",
+          "options__1": {
+            "label": "Paysage"
+          },
+          "options__2": {
+            "label": "Carré"
+          },
+          "options__3": {
+            "label": "Portrait"
+          }
+        },
+        "image_background": {
+          "label": "Fond de l'image"
+        },
+        "header_style": {
+          "content": "Style"
+        },
+        "background_color": {
+          "label": "Fond de la carte"
+        },
+        "border_color": {
+          "label": "Couleur de la bordure"
+        },
+        "border_radius": {
+          "label": "Rayon des coins"
+        },
+        "label_color": {
+          "label": "Couleur du libellé"
+        },
+        "title_color": {
+          "label": "Couleur du titre"
+        },
+        "text_color": {
+          "label": "Couleur du texte"
+        },
+        "price_color": {
+          "label": "Couleur du prix"
+        },
+        "button_background": {
+          "label": "Fond du bouton"
+        },
+        "button_color": {
+          "label": "Couleur du texte du bouton"
+        },
+        "button_radius": {
+          "label": "Rayon des coins du bouton"
+        }
+      }
+    },
     "row": {
       "name": "Rangée",
       "settings": {
