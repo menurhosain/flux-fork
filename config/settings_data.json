@@ -34,6 +34,8 @@
     "opacity_color": "#2C2B2B",
     "type_header_font": "marcellus_n4",
     "type_body_font": "manrope_n4",
+    "body_size": 17,
+    "body_line_height": 27,
     "navigation_font": "headings",
     "text_style": "uppercase",
     "navigation_scale": 100,

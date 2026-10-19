@@ -101,7 +101,7 @@
         "enable_links": false,
         "desktop_header_layout": "logo-rightmenu-icons",
         "show_search_icon": false,
-        "hide_header_icons": true,
+        "hide_header_icons": false,
         "enable_header_full_width": false,
         "sticky_header_type": "on-scroll-up",
         "enable_fixed_header_type": false,

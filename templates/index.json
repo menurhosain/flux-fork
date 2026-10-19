@@ -57,7 +57,7 @@
             "alignment": "inherit",
             "text_color": "#000485",
             "custom_font_size": true,
-            "font_size": 90,
+            "font_size": 100,
             "font_size_mobile": 40,
             "custom_line_height": true,
             "line_height": 90,
@@ -77,7 +77,7 @@
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
-            "custom_font_size": true,
+            "custom_font_size": false,
             "font_size": 17,
             "font_size_mobile": 14,
             "custom_line_height": false,
@@ -87,7 +87,7 @@
             "margin_top": 0,
             "margin_bottom": 6,
             "margin_left": 0,
-            "margin_right": 0
+            "margin_right": 78
           },
           "blocks": {}
         },
@@ -234,8 +234,8 @@
         "full_width": true,
         "contain_content": true,
         "color_scheme": "option-4",
-        "padding_top": 80,
-        "padding_bottom": 80,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "ignore_spacing": false,
         "content_custom_padding": true,
         "content_padding_top": 0,
@@ -343,9 +343,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -469,9 +469,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -595,9 +595,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -721,9 +721,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -847,9 +847,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -973,9 +973,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -1099,9 +1099,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -1225,9 +1225,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -1425,7 +1425,7 @@
                     "heading": "Comfort",
                     "heading_size": "medium",
                     "heading_style": "default",
-                    "heading_tag": "h5",
+                    "heading_tag": "h3",
                     "enable_link": false,
                     "link": "",
                     "open_new_tab": false,
@@ -1437,7 +1437,7 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
+                    "custom_line_height": true,
                     "line_height": 22,
                     "line_height_mobile": 22,
                     "custom_spacing": true,
@@ -1642,6 +1642,231 @@
         "background_color": "#eaf2fd",
         "padding_top": 92,
         "padding_bottom": 100
+      }
+    },
+    "blocks_section_chosen_stage": {
+      "type": "blocks-section",
+      "blocks": {
+        "shelf_heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Chosen for this stage",
+            "heading_size": "medium",
+            "heading_style": "default",
+            "heading_tag": "h2",
+            "enable_link": false,
+            "link": "",
+            "open_new_tab": false,
+            "highlight_option": "italic",
+            "word_animation_color": "#160081",
+            "font_family": "body",
+            "alignment": "center",
+            "text_color": "#160081",
+            "custom_font_size": true,
+            "font_size": 52,
+            "font_size_mobile": 20,
+            "custom_line_height": false,
+            "line_height": 30,
+            "line_height_mobile": 28,
+            "custom_spacing": true,
+            "margin_top": 0,
+            "margin_bottom": 8,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        },
+        "shelf_intro": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A small, careful shelf. Every product is tied to a symptom, with the wording kept to what the evidence supports.</p>",
+            "text_style": "body",
+            "alignment": "center",
+            "text_color": "#4a4f63",
+            "custom_font_size": true,
+            "font_size": 16,
+            "font_size_mobile": 14,
+            "custom_line_height": true,
+            "line_height": 22,
+            "line_height_mobile": 22,
+            "custom_spacing": true,
+            "margin_top": 0,
+            "margin_bottom": 40,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        },
+        "shelf_row": {
+          "type": "row",
+          "settings": {
+            "layout": "columns",
+            "columns_desktop": 4,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "equal_height": true,
+            "vertical_alignment": "flex-start",
+            "left_width": 60,
+            "right_max_width": 400,
+            "stack_mobile": true,
+            "column_gap": 16,
+            "row_gap": 16,
+            "column_gap_mobile": 12,
+            "row_gap_mobile": 12,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "shelf_card_1": {
+              "type": "product-card",
+              "settings": {
+                "product": "creatine-creavitalis®",
+                "symptom_label": "",
+                "description": "",
+                "show_price": true,
+                "button_label": "Add to cart",
+                "options_label": "Choose options",
+                "custom_link": "",
+                "open_new_tab": false,
+                "image_ratio": "landscape",
+                "image_background": "#f5f8fd",
+                "background_color": "#ffffff",
+                "border_color": "#dbe5f3",
+                "border_radius": 10,
+                "label_color": "#0b63ce",
+                "title_color": "#1b1b2f",
+                "text_color": "#4a4f63",
+                "price_color": "#160081",
+                "button_background": "#0b63ce",
+                "button_color": "#ffffff",
+                "button_radius": 6
+              },
+              "blocks": {}
+            },
+            "shelf_card_2": {
+              "type": "product-card",
+              "settings": {
+                "product": "fiber-gdx",
+                "symptom_label": "",
+                "description": "",
+                "show_price": true,
+                "button_label": "Add to cart",
+                "options_label": "Choose options",
+                "custom_link": "",
+                "open_new_tab": false,
+                "image_ratio": "landscape",
+                "image_background": "#f5f8fd",
+                "background_color": "#ffffff",
+                "border_color": "#dbe5f3",
+                "border_radius": 10,
+                "label_color": "#0b63ce",
+                "title_color": "#1b1b2f",
+                "text_color": "#4a4f63",
+                "price_color": "#160081",
+                "button_background": "#0b63ce",
+                "button_color": "#ffffff",
+                "button_radius": 6
+              },
+              "blocks": {}
+            },
+            "shelf_card_3": {
+              "type": "product-card",
+              "settings": {
+                "product": "menomulti",
+                "symptom_label": "",
+                "description": "",
+                "show_price": true,
+                "button_label": "Add to cart",
+                "options_label": "Choose options",
+                "custom_link": "",
+                "open_new_tab": false,
+                "image_ratio": "landscape",
+                "image_background": "#f5f8fd",
+                "background_color": "#ffffff",
+                "border_color": "#dbe5f3",
+                "border_radius": 10,
+                "label_color": "#0b63ce",
+                "title_color": "#1b1b2f",
+                "text_color": "#4a4f63",
+                "price_color": "#160081",
+                "button_background": "#0b63ce",
+                "button_color": "#ffffff",
+                "button_radius": 6
+              },
+              "blocks": {}
+            },
+            "shelf_card_4": {
+              "type": "product-card",
+              "settings": {
+                "product": "omega-3-vitamin-d3-k2",
+                "symptom_label": "",
+                "description": "",
+                "show_price": true,
+                "button_label": "Add to cart",
+                "options_label": "Choose options",
+                "custom_link": "",
+                "open_new_tab": false,
+                "image_ratio": "landscape",
+                "image_background": "#f5f8fd",
+                "background_color": "#ffffff",
+                "border_color": "#dbe5f3",
+                "border_radius": 10,
+                "label_color": "#0b63ce",
+                "title_color": "#1b1b2f",
+                "text_color": "#4a4f63",
+                "price_color": "#160081",
+                "button_background": "#0b63ce",
+                "button_color": "#ffffff",
+                "button_radius": 6
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "shelf_card_1",
+            "shelf_card_2",
+            "shelf_card_3",
+            "shelf_card_4"
+          ]
+        },
+        "shelf_footnote": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Prices checked October 17, 2026 from the brands' own stores and retailers. Products go live only after supplier confirmation and a claims review.</p>",
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "#4a4f63",
+            "custom_font_size": true,
+            "font_size": 14,
+            "font_size_mobile": 12,
+            "custom_line_height": true,
+            "line_height": 20,
+            "line_height_mobile": 20,
+            "custom_spacing": true,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "shelf_heading",
+        "shelf_intro",
+        "shelf_row",
+        "shelf_footnote"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 16,
+        "blocks_gap_mobile": 16,
+        "color_scheme": "option-1",
+        "background_color": "#ffffff",
+        "padding_top": 32,
+        "padding_bottom": 40
       }
     },
     "blocks_section_how_it_works": {
@@ -2256,6 +2481,7 @@
         "featured_collection_5",
         "featured_collection_6"
       ],
+      "disabled": true,
       "settings": {
         "title": "Our Products",
         "heading_size": "medium",
@@ -2401,6 +2627,7 @@
       "block_order": [
         "container_6HMyhF"
       ],
+      "disabled": true,
       "name": "t:sections.blocks-section.presets.blank_name",
       "settings": {
         "full_width": true,
@@ -2955,6 +3182,7 @@
         "column_9nWLiV",
         "column_8NBziJ"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "multicolumn_style": "style-two",
@@ -3127,6 +3355,7 @@
         "text",
         "container_tVj8ei"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Wellora-IMG-5.webp",
         "caption": "OB-GYN & Menopause Specialist",
@@ -3552,6 +3781,7 @@
         "pills_wellness",
         "button_wellness"
       ],
+      "disabled": true,
       "name": "Wellness concerns",
       "settings": {
         "desktop_content_position": "center",
@@ -3897,6 +4127,7 @@
         "header_row",
         "cards_row"
       ],
+      "disabled": true,
       "name": "What shapes the experience",
       "settings": {
         "full_width": false,
@@ -3929,6 +4160,7 @@
       "block_order": [
         "column_1"
       ],
+      "disabled": true,
       "settings": {
         "title": "Testimonials",
         "heading_size": "medium",
@@ -4237,237 +4469,13 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
-    },
-    "blocks_section_chosen_stage": {
-      "type": "blocks-section",
-      "blocks": {
-        "shelf_heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Chosen for this stage",
-            "heading_size": "medium",
-            "heading_style": "default",
-            "heading_tag": "h2",
-            "enable_link": false,
-            "link": "",
-            "open_new_tab": false,
-            "highlight_option": "italic",
-            "word_animation_color": "#160081",
-            "font_family": "body",
-            "alignment": "inherit",
-            "text_color": "#160081",
-            "custom_font_size": true,
-            "font_size": 22,
-            "font_size_mobile": 20,
-            "custom_line_height": true,
-            "line_height": 30,
-            "line_height_mobile": 28,
-            "custom_spacing": true,
-            "margin_top": 0,
-            "margin_bottom": 8,
-            "margin_left": 0,
-            "margin_right": 0
-          },
-          "blocks": {}
-        },
-        "shelf_intro": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A small, careful shelf. Every product is tied to a symptom, with the wording kept to what the evidence supports.</p>",
-            "text_style": "body",
-            "alignment": "inherit",
-            "text_color": "#4a4f63",
-            "custom_font_size": true,
-            "font_size": 14,
-            "font_size_mobile": 14,
-            "custom_line_height": true,
-            "line_height": 22,
-            "line_height_mobile": 22,
-            "custom_spacing": true,
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_left": 0,
-            "margin_right": 0
-          },
-          "blocks": {}
-        },
-        "shelf_row": {
-          "type": "row",
-          "settings": {
-            "layout": "columns",
-            "columns_desktop": 4,
-            "columns_tablet": 2,
-            "columns_mobile": 1,
-            "equal_height": true,
-            "vertical_alignment": "flex-start",
-            "left_width": 60,
-            "right_max_width": 400,
-            "stack_mobile": true,
-            "column_gap": 16,
-            "row_gap": 16,
-            "column_gap_mobile": 12,
-            "row_gap_mobile": 12,
-            "custom_spacing": false,
-            "margin_top": 0,
-            "margin_bottom": 0
-          },
-          "blocks": {
-            "shelf_card_1": {
-              "type": "product-card",
-              "settings": {
-                "product": "creatine-creavitalis®",
-                "symptom_label": "",
-                "description": "",
-                "show_price": true,
-                "button_label": "Add to cart",
-                "options_label": "Choose options",
-                "custom_link": "",
-                "open_new_tab": false,
-                "image_ratio": "landscape",
-                "image_background": "#f5f8fd",
-                "background_color": "#ffffff",
-                "border_color": "#dbe5f3",
-                "border_radius": 10,
-                "label_color": "#0b63ce",
-                "title_color": "#1b1b2f",
-                "text_color": "#4a4f63",
-                "price_color": "#160081",
-                "button_background": "#0b63ce",
-                "button_color": "#ffffff",
-                "button_radius": 6
-              },
-              "blocks": {}
-            },
-            "shelf_card_2": {
-              "type": "product-card",
-              "settings": {
-                "product": "fiber-gdx",
-                "symptom_label": "",
-                "description": "",
-                "show_price": true,
-                "button_label": "Add to cart",
-                "options_label": "Choose options",
-                "custom_link": "",
-                "open_new_tab": false,
-                "image_ratio": "landscape",
-                "image_background": "#f5f8fd",
-                "background_color": "#ffffff",
-                "border_color": "#dbe5f3",
-                "border_radius": 10,
-                "label_color": "#0b63ce",
-                "title_color": "#1b1b2f",
-                "text_color": "#4a4f63",
-                "price_color": "#160081",
-                "button_background": "#0b63ce",
-                "button_color": "#ffffff",
-                "button_radius": 6
-              },
-              "blocks": {}
-            },
-            "shelf_card_3": {
-              "type": "product-card",
-              "settings": {
-                "product": "menomulti",
-                "symptom_label": "",
-                "description": "",
-                "show_price": true,
-                "button_label": "Add to cart",
-                "options_label": "Choose options",
-                "custom_link": "",
-                "open_new_tab": false,
-                "image_ratio": "landscape",
-                "image_background": "#f5f8fd",
-                "background_color": "#ffffff",
-                "border_color": "#dbe5f3",
-                "border_radius": 10,
-                "label_color": "#0b63ce",
-                "title_color": "#1b1b2f",
-                "text_color": "#4a4f63",
-                "price_color": "#160081",
-                "button_background": "#0b63ce",
-                "button_color": "#ffffff",
-                "button_radius": 6
-              },
-              "blocks": {}
-            },
-            "shelf_card_4": {
-              "type": "product-card",
-              "settings": {
-                "product": "omega-3-vitamin-d3-k2",
-                "symptom_label": "",
-                "description": "",
-                "show_price": true,
-                "button_label": "Add to cart",
-                "options_label": "Choose options",
-                "custom_link": "",
-                "open_new_tab": false,
-                "image_ratio": "landscape",
-                "image_background": "#f5f8fd",
-                "background_color": "#ffffff",
-                "border_color": "#dbe5f3",
-                "border_radius": 10,
-                "label_color": "#0b63ce",
-                "title_color": "#1b1b2f",
-                "text_color": "#4a4f63",
-                "price_color": "#160081",
-                "button_background": "#0b63ce",
-                "button_color": "#ffffff",
-                "button_radius": 6
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "shelf_card_1",
-            "shelf_card_2",
-            "shelf_card_3",
-            "shelf_card_4"
-          ]
-        },
-        "shelf_footnote": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Prices checked October 17, 2026 from the brands' own stores and retailers. Products go live only after supplier confirmation and a claims review.</p>",
-            "text_style": "body",
-            "alignment": "inherit",
-            "text_color": "#4a4f63",
-            "custom_font_size": true,
-            "font_size": 14,
-            "font_size_mobile": 12,
-            "custom_line_height": true,
-            "line_height": 20,
-            "line_height_mobile": 20,
-            "custom_spacing": true,
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_left": 0,
-            "margin_right": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "shelf_heading",
-        "shelf_intro",
-        "shelf_row",
-        "shelf_footnote"
-      ],
-      "settings": {
-        "full_width": false,
-        "content_alignment": "left",
-        "blocks_gap": 16,
-        "blocks_gap_mobile": 16,
-        "color_scheme": "option-1",
-        "background_color": "#ffffff",
-        "padding_top": 32,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
     "image_with_text_3e8NBC",
     "blocks_section_PM7C9t",
     "blocks_section_built_around",
+    "blocks_section_chosen_stage",
     "blocks_section_how_it_works",
     "image_banner_with_featured_collection",
     "collection_list",
@@ -4478,7 +4486,6 @@
     "blocks_section_experience",
     "testimonials",
     "featured_blog",
-    "image_banner",
-    "blocks_section_chosen_stage"
+    "image_banner"
   ]
 }
