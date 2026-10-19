@@ -347,10 +347,8 @@
           "options__2": {
             "label": "Bold"
           },
-          "label": "Font weight"
-        },
-        "heading_scale": {
-          "label": "Font size scale"
+          "label": "Bold heading weight",
+          "info": "Weight for section headings shown in bold. Choose Default to use the H1–H6 weights below."
         },
         "header__1": {
           "content": "Headings"
@@ -361,9 +359,6 @@
         "type_body_font": {
           "label": "Font",
           "info": "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
-        },
-        "body_scale": {
-          "label": "Font size scale"
         },
         "header__3": {
           "content": "Navigation menu"
@@ -391,6 +386,123 @@
         },
         "subnavigation_scale": {
           "label": "Submenu font scale"
+        },
+        "header_body": {
+          "content": "Body text"
+        },
+        "header_h1": {
+          "content": "Heading 1 (H1)"
+        },
+        "header_h2": {
+          "content": "Heading 2 (H2)"
+        },
+        "header_h3": {
+          "content": "Heading 3 (H3)"
+        },
+        "header_h4": {
+          "content": "Heading 4 (H4)"
+        },
+        "header_h5": {
+          "content": "Heading 5 (H5)"
+        },
+        "header_h6": {
+          "content": "Heading 6 (H6)"
+        },
+        "level_font": {
+          "label": "Font",
+          "options__1": {
+            "label": "Heading font"
+          },
+          "options__2": {
+            "label": "Body font"
+          }
+        },
+        "level_size": {
+          "label": "Font size on desktop"
+        },
+        "level_size_mobile": {
+          "label": "Font size on mobile"
+        },
+        "level_weight": {
+          "label": "Font weight",
+          "options__100": {
+            "label": "Thin (100)"
+          },
+          "options__200": {
+            "label": "Extra light (200)"
+          },
+          "options__300": {
+            "label": "Light (300)"
+          },
+          "options__400": {
+            "label": "Regular (400)"
+          },
+          "options__500": {
+            "label": "Medium (500)"
+          },
+          "options__600": {
+            "label": "Semibold (600)"
+          },
+          "options__700": {
+            "label": "Bold (700)"
+          },
+          "options__800": {
+            "label": "Extra bold (800)"
+          },
+          "options__900": {
+            "label": "Black (900)"
+          }
+        },
+        "level_line_height": {
+          "label": "Line height on desktop"
+        },
+        "level_letter_spacing": {
+          "label": "Letter spacing"
+        },
+        "header_section_sizes": {
+          "content": "Section heading sizes"
+        },
+        "section_sizes_info": {
+          "content": "Sizes used by the \"Heading size\" setting in sections (Medium, Large, Extra large)."
+        },
+        "heading_xl_size": {
+          "label": "Extra large on desktop"
+        },
+        "heading_xl_size_mobile": {
+          "label": "Extra large on mobile"
+        },
+        "heading_lg_size": {
+          "label": "Large on desktop"
+        },
+        "heading_lg_size_mobile": {
+          "label": "Large on mobile"
+        },
+        "heading_md_size": {
+          "label": "Medium on desktop"
+        },
+        "heading_md_size_mobile": {
+          "label": "Medium on mobile"
+        },
+        "level_line_height_mobile": {
+          "label": "Line height on mobile"
+        },
+        "heading_xl_line_height": {
+          "label": "Extra large line height on desktop"
+        },
+        "heading_xl_line_height_mobile": {
+          "label": "Extra large line height on mobile"
+        },
+        "heading_lg_line_height": {
+          "label": "Large line height on desktop"
+        },
+        "heading_lg_line_height_mobile": {
+          "label": "Large line height on mobile"
+        },
+        "heading_md_line_height": {
+          "label": "Medium line height on desktop"
+        },
+        "heading_md_line_height_mobile": {
+          "label": "Medium line height on mobile"
         }
       }
     },

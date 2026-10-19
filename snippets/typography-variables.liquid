@@ -1,0 +1,88 @@
+{% comment %}
+  Outputs the global typography settings (body and H1–H6) as CSS variables,
+  and loads any extra font weights they use.
+
+  Usage:
+  {% render 'typography-variables' %}
+{% endcomment %}
+
+{%- liquid
+  assign levels = 'body,h1,h2,h3,h4,h5,h6' | split: ','
+  assign loaded_faces = ','
+-%}
+
+{% style %}
+  {%- for level in levels -%}
+    {%- liquid
+      assign font_key = level | append: '_font'
+      assign weight_key = level | append: '_weight'
+      assign font_choice = settings[font_key]
+      assign weight = settings[weight_key]
+
+      if font_choice == 'body'
+        assign base_font = settings.type_body_font
+      else
+        assign base_font = settings.type_header_font
+      endif
+
+      assign face_key = ',' | append: font_choice | append: weight | append: ','
+      unless loaded_faces contains face_key
+        assign loaded_faces = loaded_faces | append: face_key
+        assign weighted_font = base_font | font_modify: 'weight', weight
+        if weighted_font
+          echo weighted_font | font_face: font_display: 'swap'
+        endif
+      endunless
+    -%}
+  {%- endfor %}
+
+  :root {
+    {%- for level in levels %}
+      {%- liquid
+        assign font_key = level | append: '_font'
+        assign weight_key = level | append: '_weight'
+        assign size_mobile_key = level | append: '_size_mobile'
+        assign line_height_key = level | append: '_line_height_mobile'
+        assign letter_spacing_key = level | append: '_letter_spacing'
+      %}
+      --type-{{ level }}-family: var(--font-{{ settings[font_key] }}-family);
+      --type-{{ level }}-style: var(--font-{{ settings[font_key] }}-style);
+      --type-{{ level }}-weight: {{ settings[weight_key] }};
+      --type-{{ level }}-line-height: {{ settings[line_height_key] }}px;
+      --type-{{ level }}-letter-spacing: {{ settings[letter_spacing_key] }}px;
+      --type-{{ level }}-size: {{ settings[size_mobile_key] }}px;
+    {%- endfor %}
+    --type-heading-xl-size: {{ settings.heading_xl_size_mobile }}px;
+    --type-heading-lg-size: {{ settings.heading_lg_size_mobile }}px;
+    --type-heading-md-size: {{ settings.heading_md_size_mobile }}px;
+    --type-heading-xl-line-height: {{ settings.heading_xl_line_height_mobile }}px;
+    --type-heading-lg-line-height: {{ settings.heading_lg_line_height_mobile }}px;
+    --type-heading-md-line-height: {{ settings.heading_md_line_height_mobile }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    :root {
+      {%- for level in levels %}
+        {%- unless level == 'body' %}
+          {%- assign size_key = level | append: '_size' %}
+          {%- assign line_height_key = level | append: '_line_height' %}
+          --type-{{ level }}-size: {{ settings[size_key] }}px;
+          --type-{{ level }}-line-height: {{ settings[line_height_key] }}px;
+        {%- endunless %}
+      {%- endfor %}
+      --type-heading-xl-size: {{ settings.heading_xl_size }}px;
+      --type-heading-lg-size: {{ settings.heading_lg_size }}px;
+      --type-heading-md-size: {{ settings.heading_md_size }}px;
+      --type-heading-xl-line-height: {{ settings.heading_xl_line_height }}px;
+      --type-heading-lg-line-height: {{ settings.heading_lg_line_height }}px;
+      --type-heading-md-line-height: {{ settings.heading_md_line_height }}px;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    :root {
+      --type-body-size: {{ settings.body_size }}px;
+      --type-body-line-height: {{ settings.body_line_height }}px;
+    }
+  }
+{% endstyle %}

@@ -347,10 +347,8 @@
           "options__2": {
             "label": "Gras"
           },
-          "label": "Poids de la police"
-        },
-        "heading_scale": {
-          "label": "Échelle de taille de police"
+          "label": "Graisse des titres en gras",
+          "info": "Graisse des titres de section affichés en gras. Choisissez Par défaut pour utiliser les graisses H1–H6 ci-dessous."
         },
         "header__1": {
           "content": "En-têtes"
@@ -361,9 +359,6 @@
         "type_body_font": {
           "label": "Police de caractères",
           "info": "Sélectionner une police différente peut affecter la vitesse de votre magasin. [En savoir plus sur les polices système.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
-        },
-        "body_scale": {
-          "label": "Échelle de taille de police"
         },
         "header__3": {
           "content": "Menu de navigation"
@@ -391,6 +386,123 @@
         },
         "subnavigation_scale": {
           "label": "Échelle de police du sous-menu"
+        },
+        "header_body": {
+          "content": "Texte du corps"
+        },
+        "header_h1": {
+          "content": "Titre 1 (H1)"
+        },
+        "header_h2": {
+          "content": "Titre 2 (H2)"
+        },
+        "header_h3": {
+          "content": "Titre 3 (H3)"
+        },
+        "header_h4": {
+          "content": "Titre 4 (H4)"
+        },
+        "header_h5": {
+          "content": "Titre 5 (H5)"
+        },
+        "header_h6": {
+          "content": "Titre 6 (H6)"
+        },
+        "level_font": {
+          "label": "Police",
+          "options__1": {
+            "label": "Police des titres"
+          },
+          "options__2": {
+            "label": "Police du corps de texte"
+          }
+        },
+        "level_size": {
+          "label": "Taille de police sur ordinateur"
+        },
+        "level_size_mobile": {
+          "label": "Taille de police sur mobile"
+        },
+        "level_weight": {
+          "label": "Graisse de police",
+          "options__100": {
+            "label": "Fin (100)"
+          },
+          "options__200": {
+            "label": "Extra-léger (200)"
+          },
+          "options__300": {
+            "label": "Léger (300)"
+          },
+          "options__400": {
+            "label": "Normal (400)"
+          },
+          "options__500": {
+            "label": "Moyen (500)"
+          },
+          "options__600": {
+            "label": "Demi-gras (600)"
+          },
+          "options__700": {
+            "label": "Gras (700)"
+          },
+          "options__800": {
+            "label": "Extra-gras (800)"
+          },
+          "options__900": {
+            "label": "Noir (900)"
+          }
+        },
+        "level_line_height": {
+          "label": "Hauteur de ligne sur ordinateur"
+        },
+        "level_letter_spacing": {
+          "label": "Espacement des lettres"
+        },
+        "header_section_sizes": {
+          "content": "Tailles des titres de section"
+        },
+        "section_sizes_info": {
+          "content": "Tailles utilisées par le réglage « Taille du titre » des sections (Moyen, Grand, Très grand)."
+        },
+        "heading_xl_size": {
+          "label": "Très grand sur ordinateur"
+        },
+        "heading_xl_size_mobile": {
+          "label": "Très grand sur mobile"
+        },
+        "heading_lg_size": {
+          "label": "Grand sur ordinateur"
+        },
+        "heading_lg_size_mobile": {
+          "label": "Grand sur mobile"
+        },
+        "heading_md_size": {
+          "label": "Moyen sur ordinateur"
+        },
+        "heading_md_size_mobile": {
+          "label": "Moyen sur mobile"
+        },
+        "level_line_height_mobile": {
+          "label": "Hauteur de ligne sur mobile"
+        },
+        "heading_xl_line_height": {
+          "label": "Hauteur de ligne très grand sur ordinateur"
+        },
+        "heading_xl_line_height_mobile": {
+          "label": "Hauteur de ligne très grand sur mobile"
+        },
+        "heading_lg_line_height": {
+          "label": "Hauteur de ligne grand sur ordinateur"
+        },
+        "heading_lg_line_height_mobile": {
+          "label": "Hauteur de ligne grand sur mobile"
+        },
+        "heading_md_line_height": {
+          "label": "Hauteur de ligne moyen sur ordinateur"
+        },
+        "heading_md_line_height_mobile": {
+          "label": "Hauteur de ligne moyen sur mobile"
         }
       }
     },

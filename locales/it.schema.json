@@ -347,10 +347,8 @@
           "options__2": {
             "label": "Grassetto"
           },
-          "label": "Peso del carattere"
-        },
-        "heading_scale": {
-          "label": "Scala delle dimensioni dei caratteri"
+          "label": "Spessore titoli in grassetto",
+          "info": "Spessore dei titoli di sezione in grassetto. Scegli Predefinito per usare gli spessori H1–H6 qui sotto."
         },
         "header__1": {
           "content": "Intestazioni"
@@ -361,9 +359,6 @@
         "type_body_font": {
           "label": "Font",
           "info": "La scelta di un font diverso può influire sulla velocità del tuo negozio. [Scopri di più sui font di sistema.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
-        },
-        "body_scale": {
-          "label": "Scala delle dimensioni dei caratteri"
         },
         "header__3": {
           "content": "Menu di navigazione"
@@ -391,6 +386,123 @@
         },
         "subnavigation_scale": {
           "label": "Scala del carattere del sottomenu"
+        },
+        "header_body": {
+          "content": "Testo del corpo"
+        },
+        "header_h1": {
+          "content": "Titolo 1 (H1)"
+        },
+        "header_h2": {
+          "content": "Titolo 2 (H2)"
+        },
+        "header_h3": {
+          "content": "Titolo 3 (H3)"
+        },
+        "header_h4": {
+          "content": "Titolo 4 (H4)"
+        },
+        "header_h5": {
+          "content": "Titolo 5 (H5)"
+        },
+        "header_h6": {
+          "content": "Titolo 6 (H6)"
+        },
+        "level_font": {
+          "label": "Carattere",
+          "options__1": {
+            "label": "Carattere titoli"
+          },
+          "options__2": {
+            "label": "Carattere testo"
+          }
+        },
+        "level_size": {
+          "label": "Dimensione carattere su desktop"
+        },
+        "level_size_mobile": {
+          "label": "Dimensione carattere su dispositivo mobile"
+        },
+        "level_weight": {
+          "label": "Spessore carattere",
+          "options__100": {
+            "label": "Sottile (100)"
+          },
+          "options__200": {
+            "label": "Extra leggero (200)"
+          },
+          "options__300": {
+            "label": "Leggero (300)"
+          },
+          "options__400": {
+            "label": "Normale (400)"
+          },
+          "options__500": {
+            "label": "Medio (500)"
+          },
+          "options__600": {
+            "label": "Semigrassetto (600)"
+          },
+          "options__700": {
+            "label": "Grassetto (700)"
+          },
+          "options__800": {
+            "label": "Extra grassetto (800)"
+          },
+          "options__900": {
+            "label": "Nero (900)"
+          }
+        },
+        "level_line_height": {
+          "label": "Altezza riga su desktop"
+        },
+        "level_letter_spacing": {
+          "label": "Spaziatura lettere"
+        },
+        "header_section_sizes": {
+          "content": "Dimensioni titoli di sezione"
+        },
+        "section_sizes_info": {
+          "content": "Dimensioni usate dall'impostazione \"Dimensione titolo\" nelle sezioni (Media, Grande, Extra grande)."
+        },
+        "heading_xl_size": {
+          "label": "Extra grande su desktop"
+        },
+        "heading_xl_size_mobile": {
+          "label": "Extra grande su dispositivo mobile"
+        },
+        "heading_lg_size": {
+          "label": "Grande su desktop"
+        },
+        "heading_lg_size_mobile": {
+          "label": "Grande su dispositivo mobile"
+        },
+        "heading_md_size": {
+          "label": "Media su desktop"
+        },
+        "heading_md_size_mobile": {
+          "label": "Media su dispositivo mobile"
+        },
+        "level_line_height_mobile": {
+          "label": "Altezza riga su dispositivo mobile"
+        },
+        "heading_xl_line_height": {
+          "label": "Altezza riga extra grande su desktop"
+        },
+        "heading_xl_line_height_mobile": {
+          "label": "Altezza riga extra grande su dispositivo mobile"
+        },
+        "heading_lg_line_height": {
+          "label": "Altezza riga grande su desktop"
+        },
+        "heading_lg_line_height_mobile": {
+          "label": "Altezza riga grande su dispositivo mobile"
+        },
+        "heading_md_line_height": {
+          "label": "Altezza riga media su desktop"
+        },
+        "heading_md_line_height_mobile": {
+          "label": "Altezza riga media su dispositivo mobile"
         }
       }
     },

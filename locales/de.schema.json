@@ -347,10 +347,8 @@
           "options__2": {
             "label": "Fett"
           },
-          "label": "Schriftstärke"
-        },
-        "heading_scale": {
-          "label": "Schriftgrößenskala"
+          "label": "Stärke fetter Überschriften",
+          "info": "Stärke für fett dargestellte Abschnittsüberschriften. „Standard“ verwendet die H1–H6-Stärken unten."
         },
         "header__1": {
           "content": "Überschriften"
@@ -361,9 +359,6 @@
         "type_body_font": {
           "label": "Schriftart",
           "info": "Die Auswahl einer anderen Schriftart kann sich auf die Geschwindigkeit Ihres Geschäfts auswirken. [Erfahren Sie mehr über Systemschriftarten.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
-        },
-        "body_scale": {
-          "label": "Schriftgrößenskala"
         },
         "header__3": {
           "content": "Navigationsmenü"
@@ -391,6 +386,123 @@
         },
         "subnavigation_scale": {
           "label": "Untermenü-Schriftgröße"
+        },
+        "header_body": {
+          "content": "Fließtext"
+        },
+        "header_h1": {
+          "content": "Überschrift 1 (H1)"
+        },
+        "header_h2": {
+          "content": "Überschrift 2 (H2)"
+        },
+        "header_h3": {
+          "content": "Überschrift 3 (H3)"
+        },
+        "header_h4": {
+          "content": "Überschrift 4 (H4)"
+        },
+        "header_h5": {
+          "content": "Überschrift 5 (H5)"
+        },
+        "header_h6": {
+          "content": "Überschrift 6 (H6)"
+        },
+        "level_font": {
+          "label": "Schriftart",
+          "options__1": {
+            "label": "Überschriftenschrift"
+          },
+          "options__2": {
+            "label": "Textschrift"
+          }
+        },
+        "level_size": {
+          "label": "Schriftgröße (Desktop)"
+        },
+        "level_size_mobile": {
+          "label": "Schriftgröße (mobil)"
+        },
+        "level_weight": {
+          "label": "Schriftstärke",
+          "options__100": {
+            "label": "Dünn (100)"
+          },
+          "options__200": {
+            "label": "Extraleicht (200)"
+          },
+          "options__300": {
+            "label": "Leicht (300)"
+          },
+          "options__400": {
+            "label": "Normal (400)"
+          },
+          "options__500": {
+            "label": "Mittel (500)"
+          },
+          "options__600": {
+            "label": "Halbfett (600)"
+          },
+          "options__700": {
+            "label": "Fett (700)"
+          },
+          "options__800": {
+            "label": "Extrafett (800)"
+          },
+          "options__900": {
+            "label": "Schwarz (900)"
+          }
+        },
+        "level_line_height": {
+          "label": "Zeilenhöhe (Desktop)"
+        },
+        "level_letter_spacing": {
+          "label": "Zeichenabstand"
+        },
+        "header_section_sizes": {
+          "content": "Größen der Abschnittsüberschriften"
+        },
+        "section_sizes_info": {
+          "content": "Größen für die Einstellung „Überschriftengröße“ in Abschnitten (Mittel, Groß, Extragroß)."
+        },
+        "heading_xl_size": {
+          "label": "Extragroß (Desktop)"
+        },
+        "heading_xl_size_mobile": {
+          "label": "Extragroß (mobil)"
+        },
+        "heading_lg_size": {
+          "label": "Groß (Desktop)"
+        },
+        "heading_lg_size_mobile": {
+          "label": "Groß (mobil)"
+        },
+        "heading_md_size": {
+          "label": "Mittel (Desktop)"
+        },
+        "heading_md_size_mobile": {
+          "label": "Mittel (mobil)"
+        },
+        "level_line_height_mobile": {
+          "label": "Zeilenhöhe (mobil)"
+        },
+        "heading_xl_line_height": {
+          "label": "Zeilenhöhe Extragroß (Desktop)"
+        },
+        "heading_xl_line_height_mobile": {
+          "label": "Zeilenhöhe Extragroß (mobil)"
+        },
+        "heading_lg_line_height": {
+          "label": "Zeilenhöhe Groß (Desktop)"
+        },
+        "heading_lg_line_height_mobile": {
+          "label": "Zeilenhöhe Groß (mobil)"
+        },
+        "heading_md_line_height": {
+          "label": "Zeilenhöhe Mittel (Desktop)"
+        },
+        "heading_md_line_height_mobile": {
+          "label": "Zeilenhöhe Mittel (mobil)"
         }
       }
     },

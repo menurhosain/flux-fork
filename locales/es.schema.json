@@ -347,10 +347,8 @@
           "options__2": {
             "label": "Negrita"
           },
-          "label": "Peso de la fuente"
-        },
-        "heading_scale": {
-          "label": "Escala de tamaño de fuente"
+          "label": "Grosor de títulos en negrita",
+          "info": "Grosor de los títulos de sección en negrita. Elige Predeterminado para usar los grosores H1–H6 de abajo."
         },
         "header__1": {
           "content": "Encabezados"
@@ -361,9 +359,6 @@
         "type_body_font": {
           "label": "Fuente",
           "info": "Seleccionar una fuente diferente puede afectar la velocidad de tu tienda. [Más información sobre fuentes del sistema.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
-        },
-        "body_scale": {
-          "label": "Escala de tamaño de fuente"
         },
         "header__3": {
           "content": "Menú de navegación"
@@ -391,6 +386,123 @@
         },
         "subnavigation_scale": {
           "label": "Escala de fuente del submenú"
+        },
+        "header_body": {
+          "content": "Texto del cuerpo"
+        },
+        "header_h1": {
+          "content": "Título 1 (H1)"
+        },
+        "header_h2": {
+          "content": "Título 2 (H2)"
+        },
+        "header_h3": {
+          "content": "Título 3 (H3)"
+        },
+        "header_h4": {
+          "content": "Título 4 (H4)"
+        },
+        "header_h5": {
+          "content": "Título 5 (H5)"
+        },
+        "header_h6": {
+          "content": "Título 6 (H6)"
+        },
+        "level_font": {
+          "label": "Fuente",
+          "options__1": {
+            "label": "Fuente de títulos"
+          },
+          "options__2": {
+            "label": "Fuente del cuerpo"
+          }
+        },
+        "level_size": {
+          "label": "Tamaño de fuente en escritorio"
+        },
+        "level_size_mobile": {
+          "label": "Tamaño de fuente en móvil"
+        },
+        "level_weight": {
+          "label": "Grosor de fuente",
+          "options__100": {
+            "label": "Fina (100)"
+          },
+          "options__200": {
+            "label": "Extraligera (200)"
+          },
+          "options__300": {
+            "label": "Ligera (300)"
+          },
+          "options__400": {
+            "label": "Normal (400)"
+          },
+          "options__500": {
+            "label": "Media (500)"
+          },
+          "options__600": {
+            "label": "Seminegrita (600)"
+          },
+          "options__700": {
+            "label": "Negrita (700)"
+          },
+          "options__800": {
+            "label": "Extranegrita (800)"
+          },
+          "options__900": {
+            "label": "Black (900)"
+          }
+        },
+        "level_line_height": {
+          "label": "Altura de línea en escritorio"
+        },
+        "level_letter_spacing": {
+          "label": "Espaciado entre letras"
+        },
+        "header_section_sizes": {
+          "content": "Tamaños de títulos de sección"
+        },
+        "section_sizes_info": {
+          "content": "Tamaños usados por el ajuste \"Tamaño del título\" en las secciones (Mediano, Grande, Extragrande)."
+        },
+        "heading_xl_size": {
+          "label": "Extragrande en escritorio"
+        },
+        "heading_xl_size_mobile": {
+          "label": "Extragrande en móvil"
+        },
+        "heading_lg_size": {
+          "label": "Grande en escritorio"
+        },
+        "heading_lg_size_mobile": {
+          "label": "Grande en móvil"
+        },
+        "heading_md_size": {
+          "label": "Mediano en escritorio"
+        },
+        "heading_md_size_mobile": {
+          "label": "Mediano en móvil"
+        },
+        "level_line_height_mobile": {
+          "label": "Altura de línea en móvil"
+        },
+        "heading_xl_line_height": {
+          "label": "Altura de línea extragrande en escritorio"
+        },
+        "heading_xl_line_height_mobile": {
+          "label": "Altura de línea extragrande en móvil"
+        },
+        "heading_lg_line_height": {
+          "label": "Altura de línea grande en escritorio"
+        },
+        "heading_lg_line_height_mobile": {
+          "label": "Altura de línea grande en móvil"
+        },
+        "heading_md_line_height": {
+          "label": "Altura de línea mediana en escritorio"
+        },
+        "heading_md_line_height_mobile": {
+          "label": "Altura de línea mediana en móvil"
         }
       }
     },
