@@ -38,94 +38,15 @@
         "color_scheme": "option-1"
       }
     },
-    "footer": {
-      "type": "footer",
-      "blocks": {
-        "brand_information": {
-          "type": "_footer-brand",
-          "settings": {
-            "column_width": 30,
-            "brand_headline": "",
-            "brand_description": "<p>Personalized functional wellness support designed to bring more clarity, confidence, and consistency to your health journey.</p><p><em>*Root-cause focused. Personalized. Practical.</em></p>",
-            "brand_image": "shopify://shop_images/bacton-health-new-logo.jpg",
-            "brand_image_width": 180,
-            "hide_image": false,
-            "newsletter_enable": false,
-            "show_social": false,
-            "social_icons_size": "small"
-          },
-          "blocks": {}
-        },
-        "footer-1": {
-          "type": "_footer-menu",
-          "settings": {
-            "column_width": 18,
-            "heading": "Collections",
-            "menu": "footer"
-          },
-          "blocks": {}
-        },
-        "footer-0": {
-          "type": "_footer-text",
-          "settings": {
-            "column_width": 25,
-            "heading": "Contact Info",
-            "subtext": "<p>E: <a href=\"mailto:support@bactonhealth.com\" title=\"mailto:support@bactonhealth.com\"><strong>&nbsp;</strong>support@bactonhealth.com</a><br/>P: <a href=\"tel:888-251-1518\" title=\"tel:888-251-1518\">888-251-1518</a><br/>A: <a href=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\" target=\"_blank\" title=\"https://maps.app.goo.gl/KTcM1LQco86v6T56A\">2108 N St. Ste. N, Sacramento, CA 95816</a></p>",
-            "custom_liquid": ""
-          },
-          "blocks": {}
-        },
-        "footer_brand_CULVFG": {
-          "type": "_footer-brand",
-          "settings": {
-            "column_width": 27,
-            "brand_headline": "Sign Up For Our Newsletter&nbsp;",
-            "brand_description": "<p>Subscribe for regular updates</p>",
-            "brand_image_width": 50,
-            "hide_image": true,
-            "newsletter_enable": true,
-            "show_social": true,
-            "social_icons_size": "small"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "brand_information",
-        "footer-1",
-        "footer-0",
-        "footer_brand_CULVFG"
-      ],
+    "footer_simple": {
+      "type": "footer-simple",
       "settings": {
-        "enable_follow_on_shop": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": false,
-        "show_powered_by_link": false,
-        "show_policy": true,
-        "enable_terms": false,
-        "terms_label": "<p>I agree to receive marketing emails</p>",
-        "back_to_top_desktop": true,
-        "back_to_top_bottom": 88,
-        "back_to_top_right": 20,
-        "back_to_top_mobile": true,
-        "centered_content": false,
-        "color_scheme": "option-1",
-        "apply_scheme_footer_bottom": false,
-        "footer_border": true,
-        "swipe_on_mobile": false,
-        "disable_arrow_mobile": true,
-        "margin_top": 0,
-        "margin_bottom": 80,
-        "make_columns_even": false,
-        "padding_top": 48,
-        "padding_bottom": 40,
-        "ignore_spacing": true
+        "menu": "footer"
       }
     }
   },
   "order": [
     "popup",
-    "footer"
+    "footer_simple"
   ]
 }
