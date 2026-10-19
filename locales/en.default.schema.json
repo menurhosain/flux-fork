@@ -810,6 +810,15 @@
         "element_max_width": {
           "label": "Max width",
           "info": "0 uses the full available width"
+        },
+        "subheading_lines": {
+          "label": "Show lines beside subheading"
+        },
+        "subheading_line_width": {
+          "label": "Line width"
+        },
+        "subheading_line_color": {
+          "label": "Line color"
         }
       },
       "presets": {
@@ -6609,6 +6618,9 @@
           },
           "options__user_check": {
             "label": "User check"
+          },
+          "options__compass": {
+            "label": "Compass"
           }
         },
         "icon": {
@@ -6823,6 +6835,33 @@
         },
         "footer_padding": {
           "label": "Space below divider"
+        },
+        "alignment": {
+          "label": "Content alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          }
+        },
+        "header_accent": {
+          "content": "Accent line"
+        },
+        "show_accent_line": {
+          "label": "Show accent line"
+        },
+        "accent_width": {
+          "label": "Line width"
+        },
+        "accent_thickness": {
+          "label": "Line thickness"
+        },
+        "accent_spacing": {
+          "label": "Space above line"
+        },
+        "accent_color": {
+          "label": "Line color"
         }
       }
     },

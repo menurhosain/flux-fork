@@ -247,6 +247,30 @@
       "label": "t:sections.section-heading.settings.subheading_uppercase.label"
     },
     {
+      "type": "checkbox",
+      "id": "subheading_lines",
+      "default": false,
+      "label": "t:sections.section-heading.settings.subheading_lines.label"
+    },
+    {
+      "type": "range",
+      "id": "subheading_line_width",
+      "min": 10,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 80,
+      "label": "t:sections.section-heading.settings.subheading_line_width.label",
+      "visible_if": "{{ section.settings.subheading_lines }}"
+    },
+    {
+      "type": "color",
+      "id": "subheading_line_color",
+      "label": "t:sections.section-heading.settings.subheading_line_color.label",
+      "info": "t:sections.section-heading.settings.color.info",
+      "visible_if": "{{ section.settings.subheading_lines }}"
+    },
+    {
       "type": "header",
       "content": "t:sections.section-heading.settings.header_heading.content"
     },

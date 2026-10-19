@@ -39,6 +39,22 @@
   text-transform: uppercase;
 }
 
+.section-heading__subheading--lines {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.section-heading__subheading--lines::before,
+.section-heading__subheading--lines::after {
+  content: '';
+  flex-shrink: 0;
+  width: var(--sh-subheading-line-width);
+  height: 1px;
+  background-color: var(--sh-subheading-line-color, currentColor);
+  opacity: var(--sh-subheading-line-opacity, 0.5);
+}
+
 .section-heading__subheading + * {
   margin-top: var(--sh-gap-subheading);
 }

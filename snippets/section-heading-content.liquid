@@ -41,6 +41,11 @@
     {%- if settings.heading_max_width > 0 %}
       --sh-heading-max-width: {{ settings.heading_max_width }}px;
     {%- endif %}
+    --sh-subheading-line-width: {{ settings.subheading_line_width }}px;
+    {%- if settings.subheading_line_color != blank %}
+      --sh-subheading-line-color: {{ settings.subheading_line_color }};
+      --sh-subheading-line-opacity: 1;
+    {%- endif %}
     {%- if settings.description_weight != 'default' %}
       --sh-description-weight: {{ settings.description_weight }};
     {%- endif %}
@@ -63,7 +68,7 @@
   class="section-heading__inner section-heading__inner--{{ settings.alignment }}"
 >
   {%- if settings.subheading != blank -%}
-    <p class="section-heading__subheading{% if settings.subheading_uppercase %} section-heading__subheading--uppercase{% endif %}">
+    <p class="section-heading__subheading{% if settings.subheading_uppercase %} section-heading__subheading--uppercase{% endif %}{% if settings.subheading_lines %} section-heading__subheading--lines{% endif %}">
       {{- settings.subheading | escape -}}
     </p>
   {%- endif -%}

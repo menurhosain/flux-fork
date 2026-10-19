@@ -93,7 +93,7 @@
 
 <div
   id="FeatureCard-{{ block.id }}"
-  class="feature-card feature-card--{{ block.settings.layout }}{% if block.settings.hover_effect %} feature-card--hover{% endif %}{% if card_is_link %} feature-card--linked{% endif %}"
+  class="feature-card feature-card--{{ block.settings.layout }}{% if block.settings.alignment == 'center' %} feature-card--center{% endif %}{% if block.settings.hover_effect %} feature-card--hover{% endif %}{% if card_is_link %} feature-card--linked{% endif %}"
   {{ block.shopify_attributes }}
 >
   {%- if card_is_link -%}
@@ -172,6 +172,10 @@
       {%- endif -%}
     </div>
   {%- endif -%}
+
+  {%- if block.settings.show_accent_line -%}
+    <div class="feature-card__accent" aria-hidden="true"><span></span></div>
+  {%- endif -%}
 </div>
 
 {%- style -%}
@@ -210,6 +214,16 @@
     padding-top: {{ block.settings.footer_padding }}px;
     {%- if has_divider_color %}
       border-top-color: {{ divider_color }};
+    {%- endif %}
+  }
+  #FeatureCard-{{ block.id }} .feature-card__accent {
+    padding-top: {{ block.settings.accent_spacing }}px;
+  }
+  #FeatureCard-{{ block.id }} .feature-card__accent span {
+    width: {{ block.settings.accent_width }}px;
+    height: {{ block.settings.accent_thickness }}px;
+    {%- if block.settings.accent_color != blank %}
+      background-color: {{ block.settings.accent_color }};
     {%- endif %}
   }
   #FeatureCard-{{ block.id }} .feature-card__link {
@@ -403,6 +417,31 @@
     transform: translate(2px, -2px);
   }
 
+  .feature-card--center {
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-card--center .feature-card__footer {
+    align-self: stretch;
+  }
+
+  .feature-card__accent {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+  }
+
+  .feature-card__footer ~ .feature-card__accent {
+    margin-top: 0;
+  }
+
+  .feature-card__accent span {
+    display: block;
+    border-radius: 999px;
+    background-color: rgba(var(--color-foreground), 0.3);
+  }
+
   .feature-card__number {
     position: absolute;
     right: 1.6rem;
@@ -423,11 +462,33 @@
       "type": "select",
       "id": "layout",
       "options": [
-        { "value": "classic", "label": "t:blocks.feature_card.settings.layout.options__1.label" },
-        { "value": "numbered", "label": "t:blocks.feature_card.settings.layout.options__2.label" }
+        {
+          "value": "classic",
+          "label": "t:blocks.feature_card.settings.layout.options__1.label"
+        },
+        {
+          "value": "numbered",
+          "label": "t:blocks.feature_card.settings.layout.options__2.label"
+        }
       ],
       "default": "classic",
       "label": "t:blocks.feature_card.settings.layout.label"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:blocks.feature_card.settings.alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:blocks.feature_card.settings.alignment.options__2.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:blocks.feature_card.settings.alignment.label"
     },
     {
       "type": "header",
@@ -437,22 +498,74 @@
       "type": "select",
       "id": "builtin_icon",
       "options": [
-        { "value": "none", "label": "t:blocks.feature_card.settings.builtin_icon.options__none.label" },
-        { "value": "eye", "label": "t:blocks.feature_card.settings.builtin_icon.options__eye.label" },
-        { "value": "people", "label": "t:blocks.feature_card.settings.builtin_icon.options__people.label" },
-        { "value": "heart_hand", "label": "t:blocks.feature_card.settings.builtin_icon.options__heart_hand.label" },
-        { "value": "heart", "label": "t:blocks.feature_card.settings.builtin_icon.options__heart.label" },
-        { "value": "leaf", "label": "t:blocks.feature_card.settings.builtin_icon.options__leaf.label" },
-        { "value": "moon", "label": "t:blocks.feature_card.settings.builtin_icon.options__moon.label" },
-        { "value": "sun", "label": "t:blocks.feature_card.settings.builtin_icon.options__sun.label" },
-        { "value": "sparkle", "label": "t:blocks.feature_card.settings.builtin_icon.options__sparkle.label" },
-        { "value": "shield", "label": "t:blocks.feature_card.settings.builtin_icon.options__shield.label" },
-        { "value": "check", "label": "t:blocks.feature_card.settings.builtin_icon.options__check.label" },
-        { "value": "chat", "label": "t:blocks.feature_card.settings.builtin_icon.options__chat.label" },
-        { "value": "star", "label": "t:blocks.feature_card.settings.builtin_icon.options__star.label" },
-        { "value": "clipboard", "label": "t:blocks.feature_card.settings.builtin_icon.options__clipboard.label" },
-        { "value": "flask", "label": "t:blocks.feature_card.settings.builtin_icon.options__flask.label" },
-        { "value": "user_check", "label": "t:blocks.feature_card.settings.builtin_icon.options__user_check.label" }
+        {
+          "value": "none",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__none.label"
+        },
+        {
+          "value": "eye",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__eye.label"
+        },
+        {
+          "value": "people",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__people.label"
+        },
+        {
+          "value": "heart_hand",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__heart_hand.label"
+        },
+        {
+          "value": "heart",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__heart.label"
+        },
+        {
+          "value": "leaf",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__leaf.label"
+        },
+        {
+          "value": "moon",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__moon.label"
+        },
+        {
+          "value": "sun",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__sun.label"
+        },
+        {
+          "value": "compass",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__compass.label"
+        },
+        {
+          "value": "sparkle",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__sparkle.label"
+        },
+        {
+          "value": "shield",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__shield.label"
+        },
+        {
+          "value": "check",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__check.label"
+        },
+        {
+          "value": "chat",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__chat.label"
+        },
+        {
+          "value": "star",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__star.label"
+        },
+        {
+          "value": "clipboard",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__clipboard.label"
+        },
+        {
+          "value": "flask",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__flask.label"
+        },
+        {
+          "value": "user_check",
+          "label": "t:blocks.feature_card.settings.builtin_icon.options__user_check.label"
+        }
       ],
       "default": "eye",
       "label": "t:blocks.feature_card.settings.builtin_icon.label"
@@ -480,10 +593,22 @@
       "type": "select",
       "id": "title_tag",
       "options": [
-        { "value": "h2", "label": "H2" },
-        { "value": "h3", "label": "H3" },
-        { "value": "h4", "label": "H4" },
-        { "value": "p", "label": "t:blocks.feature_card.settings.title_tag.options__p.label" }
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "p",
+          "label": "t:blocks.feature_card.settings.title_tag.options__p.label"
+        }
       ],
       "default": "h3",
       "label": "t:blocks.feature_card.settings.title_tag.label"
@@ -628,9 +753,18 @@
       "type": "select",
       "id": "arrow",
       "options": [
-        { "value": "up_right", "label": "t:blocks.feature_card.settings.arrow.options__1.label" },
-        { "value": "right", "label": "t:blocks.feature_card.settings.arrow.options__2.label" },
-        { "value": "none", "label": "t:blocks.feature_card.settings.arrow.options__3.label" }
+        {
+          "value": "up_right",
+          "label": "t:blocks.feature_card.settings.arrow.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:blocks.feature_card.settings.arrow.options__2.label"
+        },
+        {
+          "value": "none",
+          "label": "t:blocks.feature_card.settings.arrow.options__3.label"
+        }
       ],
       "default": "up_right",
       "label": "t:blocks.feature_card.settings.arrow.label"
@@ -688,6 +822,55 @@
       "unit": "px",
       "default": 32,
       "label": "t:blocks.feature_card.settings.footer_padding.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.feature_card.settings.header_accent.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_accent_line",
+      "default": false,
+      "label": "t:blocks.feature_card.settings.show_accent_line.label"
+    },
+    {
+      "type": "range",
+      "id": "accent_width",
+      "min": 10,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 48,
+      "label": "t:blocks.feature_card.settings.accent_width.label",
+      "visible_if": "{{ block.settings.show_accent_line }}"
+    },
+    {
+      "type": "range",
+      "id": "accent_thickness",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "unit": "px",
+      "default": 2,
+      "label": "t:blocks.feature_card.settings.accent_thickness.label",
+      "visible_if": "{{ block.settings.show_accent_line }}"
+    },
+    {
+      "type": "range",
+      "id": "accent_spacing",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 28,
+      "label": "t:blocks.feature_card.settings.accent_spacing.label",
+      "visible_if": "{{ block.settings.show_accent_line }}"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "t:blocks.feature_card.settings.accent_color.label",
+      "visible_if": "{{ block.settings.show_accent_line }}"
     },
     {
       "type": "header",
@@ -795,12 +978,30 @@
       "type": "select",
       "id": "title_weight",
       "options": [
-        { "value": "inherit", "label": "t:blocks.feature_card.settings.title_weight.options__1.label" },
-        { "value": "300", "label": "t:blocks.feature_card.settings.title_weight.options__2.label" },
-        { "value": "400", "label": "t:blocks.feature_card.settings.title_weight.options__3.label" },
-        { "value": "500", "label": "t:blocks.feature_card.settings.title_weight.options__4.label" },
-        { "value": "600", "label": "t:blocks.feature_card.settings.title_weight.options__5.label" },
-        { "value": "700", "label": "t:blocks.feature_card.settings.title_weight.options__6.label" }
+        {
+          "value": "inherit",
+          "label": "t:blocks.feature_card.settings.title_weight.options__1.label"
+        },
+        {
+          "value": "300",
+          "label": "t:blocks.feature_card.settings.title_weight.options__2.label"
+        },
+        {
+          "value": "400",
+          "label": "t:blocks.feature_card.settings.title_weight.options__3.label"
+        },
+        {
+          "value": "500",
+          "label": "t:blocks.feature_card.settings.title_weight.options__4.label"
+        },
+        {
+          "value": "600",
+          "label": "t:blocks.feature_card.settings.title_weight.options__5.label"
+        },
+        {
+          "value": "700",
+          "label": "t:blocks.feature_card.settings.title_weight.options__6.label"
+        }
       ],
       "default": "inherit",
       "label": "t:blocks.feature_card.settings.title_weight.label"
@@ -868,8 +1069,14 @@
       "type": "select",
       "id": "number_font",
       "options": [
-        { "value": "heading", "label": "t:blocks.feature_card.settings.number_font.options__1.label" },
-        { "value": "body", "label": "t:blocks.feature_card.settings.number_font.options__2.label" }
+        {
+          "value": "heading",
+          "label": "t:blocks.feature_card.settings.number_font.options__1.label"
+        },
+        {
+          "value": "body",
+          "label": "t:blocks.feature_card.settings.number_font.options__2.label"
+        }
       ],
       "default": "heading",
       "label": "t:blocks.feature_card.settings.number_font.label"

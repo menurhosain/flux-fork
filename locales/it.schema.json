@@ -810,6 +810,15 @@
         "element_max_width": {
           "label": "Larghezza massima",
           "info": "0 usa tutta la larghezza disponibile"
+        },
+        "subheading_lines": {
+          "label": "Mostra linee accanto al sottotitolo"
+        },
+        "subheading_line_width": {
+          "label": "Larghezza linee"
+        },
+        "subheading_line_color": {
+          "label": "Colore linee"
         }
       },
       "presets": {
@@ -6609,6 +6618,9 @@
           },
           "options__user_check": {
             "label": "Utente verificato"
+          },
+          "options__compass": {
+            "label": "Bussola"
           }
         },
         "icon": {
@@ -6823,6 +6835,33 @@
         },
         "footer_padding": {
           "label": "Spazio sotto il divisore"
+        },
+        "alignment": {
+          "label": "Allineamento contenuto",
+          "options__1": {
+            "label": "Sinistra"
+          },
+          "options__2": {
+            "label": "Centro"
+          }
+        },
+        "header_accent": {
+          "content": "Linea di accento"
+        },
+        "show_accent_line": {
+          "label": "Mostra linea di accento"
+        },
+        "accent_width": {
+          "label": "Larghezza linea"
+        },
+        "accent_thickness": {
+          "label": "Spessore linea"
+        },
+        "accent_spacing": {
+          "label": "Spazio sopra la linea"
+        },
+        "accent_color": {
+          "label": "Colore linea"
         }
       }
     },
