@@ -4469,6 +4469,68 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
+    },
+    "trust_bar_main": {
+      "type": "trust-bar",
+      "blocks": {
+        "trust_item_1": {
+          "type": "_trust-bar-item",
+          "settings": {
+            "icon": "truck",
+            "title": "Secure checkout",
+            "description": "Your payment information is safe and encrypted."
+          }
+        },
+        "trust_item_2": {
+          "type": "_trust-bar-item",
+          "settings": {
+            "icon": "shield",
+            "title": "Your privacy, protected",
+            "description": "We keep your personal information safe."
+          }
+        },
+        "trust_item_3": {
+          "type": "_trust-bar-item",
+          "settings": {
+            "icon": "stethoscope",
+            "title": "Information, not medical advice",
+            "description": "Our content is for educational purposes only."
+          }
+        }
+      },
+      "block_order": [
+        "trust_item_1",
+        "trust_item_2",
+        "trust_item_3"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_dividers": true,
+        "divider_color": "#e1e6ef",
+        "item_gap": 40,
+        "item_gap_mobile": 20,
+        "stack_mobile": true,
+        "circle_size": 64,
+        "circle_size_mobile": 56,
+        "icon_size": 32,
+        "icon_size_mobile": 28,
+        "circle_color": "#eaf2fd",
+        "icon_color": "#2152d9",
+        "icon_gap": 24,
+        "icon_gap_mobile": 16,
+        "title_size": 18,
+        "title_size_mobile": 16,
+        "title_weight": "600",
+        "title_color": "#0f1b4d",
+        "text_size": 15,
+        "text_size_mobile": 14,
+        "text_line_height": 24,
+        "text_line_height_mobile": 22,
+        "text_color": "#6b7280",
+        "background_color": "#fbfbfd",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
     }
   },
   "order": [
@@ -4486,6 +4548,7 @@
     "blocks_section_experience",
     "testimonials",
     "featured_blog",
-    "image_banner"
+    "image_banner",
+    "trust_bar_main"
   ]
 }
