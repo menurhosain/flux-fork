@@ -1,4 +1,4 @@
-.footer-simple__inner {
+.footer-simple {
   background-color: var(--footer-simple-background);
   color: var(--footer-simple-color);
   font-family: var(--font-body-family);
@@ -6,6 +6,9 @@
   font-weight: var(--font-body-weight);
   letter-spacing: 0;
   border-radius: var(--footer-simple-radius) var(--footer-simple-radius) 0 0;
+}
+
+.footer-simple__inner--full {
   padding-left: 1.8rem;
   padding-right: 1.8rem;
 }
@@ -77,11 +80,4 @@
 
 .footer-simple__text a {
   color: var(--footer-simple-color);
-}
-
-@media screen and (min-width: 750px) {
-  .footer-simple__inner {
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-  }
 }

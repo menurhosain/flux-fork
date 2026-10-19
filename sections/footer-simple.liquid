@@ -30,9 +30,9 @@
 
 <footer
   id="FooterSimple-{{ section.id }}"
-  class="footer-simple{% unless section.settings.full_width %} page-width{% endunless %}"
+  class="footer-simple section-{{ section.id }}-padding"
 >
-  <div class="footer-simple__inner section-{{ section.id }}-padding">
+  <div class="footer-simple__inner{% if section.settings.full_width %} footer-simple__inner--full{% else %} page-width{% endif %}">
     <div class="footer-simple__top">
       <a href="{{ routes.root_url }}" class="footer-simple__logo link">
         {%- if logo != blank -%}
