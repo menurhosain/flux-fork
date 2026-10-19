@@ -19,7 +19,7 @@
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium",
             "alignment": "inherit",
-            "text_color": "#0007c6",
+            "text_color": "#0261D1",
             "font_weight": "600",
             "custom_font_size": false,
             "font_size": 14,
@@ -31,9 +31,9 @@
             "margin_bottom": 20,
             "margin_left": 0,
             "margin_right": 0,
-            "background_color": "#ffffff",
+            "background_color": "",
             "border_radius": 20,
-            "custom_padding": true,
+            "custom_padding": false,
             "padding_top": 9,
             "padding_right": 20,
             "padding_bottom": 9,
@@ -555,6 +555,7 @@
         "header_row",
         "cards_row"
       ],
+      "disabled": true,
       "name": "How it works",
       "settings": {
         "full_width": false,

@@ -30,6 +30,7 @@
       "block_order": [
         "announcement_7PjiHK"
       ],
+      "disabled": true,
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
         "announcement_position": "position-top",
@@ -98,8 +99,9 @@
         "menu_item_gap": 36,
         "all_items_mega": false,
         "enable_links": false,
-        "desktop_header_layout": "logo-centermenu-icons",
+        "desktop_header_layout": "logo-rightmenu-icons",
         "show_search_icon": false,
+        "hide_header_icons": true,
         "enable_header_full_width": false,
         "sticky_header_type": "on-scroll-up",
         "enable_fixed_header_type": false,
@@ -124,7 +126,7 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "header_icons_decoration": "line",
-        "color_scheme": "option-1",
+        "color_scheme": "scheme-d03fc842-4dcf-4641-aa69-83d4f4246a23",
         "item_highlight_background_color": "#00a2f8",
         "item_highlight_color": "#2c2b2b",
         "padding_top": 10,

@@ -229,10 +229,10 @@
       },
       "scheme-d03fc842-4dcf-4641-aa69-83d4f4246a23": {
         "settings": {
-          "background_color": "#263842",
+          "background_color": "#160081",
           "background_gradient": "",
           "text_color": "#ffffff",
-          "button_primary_background_color": "#2c2b2b",
+          "button_primary_background_color": "rgba(0,0,0,0)",
           "button_primary_text_color": "#ffffff",
           "button_secondary_color": "#ffffff",
           "color_link": "#ffffff"
