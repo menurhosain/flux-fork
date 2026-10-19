@@ -773,12 +773,6 @@
           "label": "Content max width",
           "info": "Leave empty for no limit. Width in px."
         },
-        "margin_top": {
-          "label": "Margin top on desktop"
-        },
-        "margin_top_mobile": {
-          "label": "Margin top on mobile"
-        },
         "margin_bottom": {
           "label": "Margin bottom on desktop"
         },

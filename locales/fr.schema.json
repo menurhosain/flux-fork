@@ -773,12 +773,6 @@
           "label": "Largeur maximale du contenu",
           "info": "Laisser vide pour aucune limite. Largeur en px."
         },
-        "margin_top": {
-          "label": "Marge supérieure sur ordinateur"
-        },
-        "margin_top_mobile": {
-          "label": "Marge supérieure sur mobile"
-        },
         "margin_bottom": {
           "label": "Marge inférieure sur ordinateur"
         },

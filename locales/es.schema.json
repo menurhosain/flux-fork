@@ -773,12 +773,6 @@
           "label": "Ancho máximo del contenido",
           "info": "Déjalo vacío para no limitar. Ancho en px."
         },
-        "margin_top": {
-          "label": "Margen superior en escritorio"
-        },
-        "margin_top_mobile": {
-          "label": "Margen superior en móvil"
-        },
         "margin_bottom": {
           "label": "Margen inferior en escritorio"
         },

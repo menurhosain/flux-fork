@@ -773,12 +773,6 @@
           "label": "Maximale Inhaltsbreite",
           "info": "Leer lassen für keine Begrenzung. Breite in px."
         },
-        "margin_top": {
-          "label": "Abstand oben (Desktop)"
-        },
-        "margin_top_mobile": {
-          "label": "Abstand oben (mobil)"
-        },
         "margin_bottom": {
           "label": "Abstand unten (Desktop)"
         },
