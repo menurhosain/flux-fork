@@ -50,6 +50,7 @@
             "heading_tag": "h1",
             "highlight_option": "underline-hand",
             "word_animation_color": "#010609",
+            "font_family": "heading",
             "alignment": "inherit",
             "text_color": "#000485",
             "custom_font_size": true,
@@ -118,7 +119,7 @@
                 "underline_color": "",
                 "underline_thickness": 2,
                 "text_color": "",
-                "background_color": "#0068D6",
+                "background_color": "#0068d6",
                 "hover_effect": "lift",
                 "sweep_color": "",
                 "hover_duration": 300,
@@ -136,7 +137,7 @@
                 "custom_border_radius": true,
                 "border_radius": 6,
                 "border_width": 0,
-                "border_color": "#0068D6",
+                "border_color": "#0068d6",
                 "custom_padding": true,
                 "padding_vertical": 16,
                 "padding_horizontal": 24,
@@ -168,8 +169,8 @@
                 "link_style": false,
                 "underline_color": "",
                 "underline_thickness": 2,
-                "text_color": "#0068D6",
-                "background_color": "#FFFFFF",
+                "text_color": "#0068d6",
+                "background_color": "#ffffff",
                 "hover_effect": "lift",
                 "sweep_color": "",
                 "hover_duration": 300,
@@ -187,7 +188,7 @@
                 "custom_border_radius": true,
                 "border_radius": 6,
                 "border_width": 1,
-                "border_color": "#0068D6",
+                "border_color": "#0068d6",
                 "custom_padding": true,
                 "padding_vertical": 16,
                 "padding_horizontal": 24,
@@ -242,6 +243,289 @@
         "margin_top": 0,
         "mobile_content_alignment": "left",
         "mobile_text_position": "above"
+      }
+    },
+    "blocks_section_built_around": {
+      "type": "blocks-section",
+      "blocks": {
+        "built_around_heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Bacton is built around",
+            "heading_size": "medium",
+            "heading_style": "default",
+            "heading_tag": "h2",
+            "highlight_option": "italic",
+            "word_animation_color": "#160081",
+            "font_family": "body",
+            "alignment": "center",
+            "text_color": "#160081",
+            "custom_font_size": false,
+            "font_size": 22,
+            "font_size_mobile": 20,
+            "custom_line_height": false,
+            "line_height": 30,
+            "line_height_mobile": 28,
+            "custom_spacing": true,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        },
+        "built_around_row": {
+          "type": "row",
+          "settings": {
+            "layout": "columns",
+            "columns_desktop": 3,
+            "columns_tablet": 3,
+            "columns_mobile": 1,
+            "equal_height": true,
+            "vertical_alignment": "flex-start",
+            "left_width": 60,
+            "right_max_width": 400,
+            "stack_mobile": true,
+            "column_gap": 30,
+            "row_gap": 12,
+            "column_gap_mobile": 12,
+            "row_gap_mobile": 12,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "card_comfort": {
+              "type": "container",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 10,
+                "border_width": 1,
+                "border_color": "#dbe5f3",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "card_comfort_title": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Comfort",
+                    "heading_size": "medium",
+                    "heading_style": "default",
+                    "heading_tag": "h5",
+                    "highlight_option": "italic",
+                    "word_animation_color": "#160081",
+                    "font_family": "heading",
+                    "alignment": "inherit",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 24,
+                    "font_size_mobile": 20,
+                    "custom_line_height": false,
+                    "line_height": 22,
+                    "line_height_mobile": 22,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 10,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "card_comfort_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Products chosen for the symptoms women actually report, with the evidence level shown.</p>",
+                    "text_style": "body",
+                    "alignment": "inherit",
+                    "text_color": "#4a4f63",
+                    "custom_font_size": true,
+                    "font_size": 17,
+                    "font_size_mobile": 14,
+                    "custom_line_height": false,
+                    "line_height": 20,
+                    "line_height_mobile": 20,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "card_comfort_title",
+                "card_comfort_text"
+              ]
+            },
+            "card_sleep": {
+              "type": "container",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 10,
+                "border_width": 1,
+                "border_color": "#dbe5f3",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "card_sleep_title": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Sleep and balance",
+                    "heading_size": "medium",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "highlight_option": "italic",
+                    "word_animation_color": "#160081",
+                    "font_family": "heading",
+                    "alignment": "inherit",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 24,
+                    "font_size_mobile": 20,
+                    "custom_line_height": true,
+                    "line_height": 22,
+                    "line_height_mobile": 22,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 10,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "card_sleep_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Because everything is harder when you are running on broken sleep.</p>",
+                    "text_style": "body",
+                    "alignment": "inherit",
+                    "text_color": "#4a4f63",
+                    "custom_font_size": true,
+                    "font_size": 17,
+                    "font_size_mobile": 14,
+                    "custom_line_height": false,
+                    "line_height": 20,
+                    "line_height_mobile": 20,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "card_sleep_title",
+                "card_sleep_text"
+              ]
+            },
+            "card_confidence": {
+              "type": "container",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 10,
+                "border_width": 1,
+                "border_color": "#dbe5f3",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "card_confidence_title": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "Confidence",
+                    "heading_size": "medium",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "highlight_option": "italic",
+                    "word_animation_color": "#160081",
+                    "font_family": "heading",
+                    "alignment": "inherit",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 24,
+                    "font_size_mobile": 20,
+                    "custom_line_height": true,
+                    "line_height": 22,
+                    "line_height_mobile": 22,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 10,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "card_confidence_text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Clear, current information so you can make your own decisions. Never pressure.</p>",
+                    "text_style": "body",
+                    "alignment": "inherit",
+                    "text_color": "#4a4f63",
+                    "custom_font_size": true,
+                    "font_size": 17,
+                    "font_size_mobile": 14,
+                    "custom_line_height": false,
+                    "line_height": 20,
+                    "line_height_mobile": 20,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "card_confidence_title",
+                "card_confidence_text"
+              ]
+            }
+          },
+          "block_order": [
+            "card_comfort",
+            "card_sleep",
+            "card_confidence"
+          ]
+        }
+      },
+      "block_order": [
+        "built_around_heading",
+        "built_around_row"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 20,
+        "blocks_gap_mobile": 16,
+        "color_scheme": "option-1",
+        "background_color": "#eaf2fd",
+        "padding_top": 32,
+        "padding_bottom": 40
       }
     },
     "blocks_section_how_it_works": {
@@ -323,6 +607,7 @@
                     "heading_tag": "h2",
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#00a2f8",
+                    "font_family": "heading",
                     "alignment": "inherit",
                     "text_color": "#0007c6",
                     "custom_font_size": true,
@@ -592,6 +877,7 @@
             "heading_tag": "h2",
             "highlight_option": "underline",
             "word_animation_color": "#d4c4d9",
+            "font_family": "heading",
             "alignment": "inherit",
             "text_color": "",
             "custom_font_size": false,
@@ -933,6 +1219,7 @@
                 "heading_tag": "h2",
                 "highlight_option": "underline-hand",
                 "word_animation_color": "#272727",
+                "font_family": "heading",
                 "alignment": "center",
                 "text_color": "#0007c6",
                 "custom_font_size": false,
@@ -958,6 +1245,7 @@
                 "heading_tag": "h2",
                 "highlight_option": "underline-hand",
                 "word_animation_color": "#272727",
+                "font_family": "heading",
                 "alignment": "center",
                 "text_color": "#0007c6",
                 "custom_font_size": false,
@@ -1611,6 +1899,7 @@
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
             "word_animation_color": "#00a2f8",
+            "font_family": "heading",
             "alignment": "inherit",
             "text_color": "#0610a7",
             "custom_font_size": true,
@@ -1675,6 +1964,7 @@
                 "heading_tag": "h5",
                 "highlight_option": "underline-hand",
                 "word_animation_color": "#272727",
+                "font_family": "heading",
                 "alignment": "left",
                 "text_color": "",
                 "custom_font_size": true,
@@ -1786,6 +2076,7 @@
                 "heading_tag": "h2",
                 "highlight_option": "underline-hand",
                 "word_animation_color": "#00a2f8",
+                "font_family": "heading",
                 "alignment": "inherit",
                 "text_color": "#0007c6",
                 "custom_font_size": true,
@@ -2218,6 +2509,7 @@
                     "heading_tag": "h2",
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#00a2f8",
+                    "font_family": "heading",
                     "alignment": "inherit",
                     "text_color": "#0007c6",
                     "custom_font_size": true,
@@ -2616,6 +2908,7 @@
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
             "word_animation_color": "#ffffff",
+            "font_family": "heading",
             "alignment": "center",
             "text_color": "",
             "custom_font_size": true,
@@ -2802,439 +3095,6 @@
         "show_text_below": false
       }
     },
-    "blocks_section_NpG3E8": {
-      "type": "blocks-section",
-      "blocks": {
-        "row_kDj9FU": {
-          "type": "row",
-          "name": "t:blocks.row.name",
-          "settings": {
-            "layout": "split",
-            "columns_desktop": 2,
-            "columns_tablet": 2,
-            "columns_mobile": 1,
-            "equal_height": true,
-            "vertical_alignment": "flex-end",
-            "left_width": 60,
-            "right_max_width": 540,
-            "stack_mobile": true,
-            "column_gap": 24,
-            "row_gap": 24,
-            "column_gap_mobile": 16,
-            "row_gap_mobile": 16,
-            "custom_spacing": false,
-            "margin_top": 0,
-            "margin_bottom": 0
-          },
-          "blocks": {
-            "container_AHBxji": {
-              "type": "container",
-              "name": "t:blocks.container.name",
-              "settings": {
-                "background_color": "#f5f5f5",
-                "border_radius": 12,
-                "border_width": 0,
-                "border_color": "#e5e5e5",
-                "border_top": true,
-                "border_right": true,
-                "border_bottom": true,
-                "border_left": true,
-                "padding_vertical": 32,
-                "padding_horizontal": 32,
-                "padding_vertical_mobile": 20,
-                "padding_horizontal_mobile": 20
-              },
-              "blocks": {
-                "heading_7jR4HE": {
-                  "type": "heading",
-                  "settings": {
-                    "heading": "Heading",
-                    "heading_size": "large",
-                    "heading_style": "default",
-                    "heading_tag": "h2",
-                    "highlight_option": "underline-hand",
-                    "word_animation_color": "#272727",
-                    "alignment": "inherit",
-                    "text_color": "",
-                    "custom_font_size": false,
-                    "font_size": 52,
-                    "font_size_mobile": 40,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
-                    "custom_spacing": false,
-                    "margin_top": 0,
-                    "margin_bottom": 16,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                },
-                "text_rdjQEj": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-                    "text_style": "body",
-                    "alignment": "inherit",
-                    "text_color": "",
-                    "custom_font_size": false,
-                    "font_size": 16,
-                    "font_size_mobile": 15,
-                    "custom_line_height": false,
-                    "line_height": 26,
-                    "line_height_mobile": 24,
-                    "custom_spacing": false,
-                    "margin_top": 0,
-                    "margin_bottom": 16,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "heading_7jR4HE",
-                "text_rdjQEj"
-              ]
-            },
-            "container_JRfGf4": {
-              "type": "container",
-              "name": "t:blocks.container.name",
-              "settings": {
-                "background_color": "#f5f5f5",
-                "border_radius": 12,
-                "border_width": 0,
-                "border_color": "#e5e5e5",
-                "border_top": true,
-                "border_right": true,
-                "border_bottom": true,
-                "border_left": true,
-                "padding_vertical": 32,
-                "padding_horizontal": 32,
-                "padding_vertical_mobile": 20,
-                "padding_horizontal_mobile": 20
-              },
-              "blocks": {
-                "image_xaEWHc": {
-                  "type": "image",
-                  "name": "t:blocks.image.name",
-                  "settings": {
-                    "image": "shopify://shop_images/Wellora-IMG-2-1.jpg",
-                    "image_width": 600,
-                    "image_link": ""
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "image_xaEWHc"
-              ]
-            }
-          },
-          "block_order": [
-            "container_AHBxji",
-            "container_JRfGf4"
-          ]
-        }
-      },
-      "block_order": [
-        "row_kDj9FU"
-      ],
-      "name": "t:sections.blocks-section.presets.blank_name",
-      "settings": {
-        "full_width": false,
-        "content_alignment": "left",
-        "blocks_gap": 48,
-        "blocks_gap_mobile": 32,
-        "color_scheme": "",
-        "background_color": "",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "blocks_section_built_around": {
-      "type": "blocks-section",
-      "blocks": {
-        "built_around_heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "What Bacton is built around",
-            "heading_size": "medium",
-            "heading_style": "default",
-            "heading_tag": "h2",
-            "highlight_option": "italic",
-            "word_animation_color": "#160081",
-            "font_family": "body",
-            "alignment": "inherit",
-            "text_color": "#160081",
-            "custom_font_size": true,
-            "font_size": 22,
-            "font_size_mobile": 20,
-            "custom_line_height": true,
-            "line_height": 30,
-            "line_height_mobile": 28,
-            "custom_spacing": true,
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_left": 0,
-            "margin_right": 0
-          },
-          "blocks": {}
-        },
-        "built_around_row": {
-          "type": "row",
-          "settings": {
-            "layout": "columns",
-            "columns_desktop": 3,
-            "columns_tablet": 3,
-            "columns_mobile": 1,
-            "equal_height": true,
-            "vertical_alignment": "flex-start",
-            "left_width": 60,
-            "right_max_width": 400,
-            "stack_mobile": true,
-            "column_gap": 12,
-            "row_gap": 12,
-            "column_gap_mobile": 12,
-            "row_gap_mobile": 12,
-            "custom_spacing": false,
-            "margin_top": 0,
-            "margin_bottom": 0
-          },
-          "blocks": {
-            "card_comfort": {
-              "type": "container",
-              "settings": {
-                "background_color": "#ffffff",
-                "border_radius": 10,
-                "border_width": 1,
-                "border_color": "#dbe5f3",
-                "border_top": true,
-                "border_right": true,
-                "border_bottom": true,
-                "border_left": true,
-                "padding_vertical": 20,
-                "padding_horizontal": 16,
-                "padding_vertical_mobile": 16,
-                "padding_horizontal_mobile": 16
-              },
-              "blocks": {
-                "card_comfort_title": {
-                  "type": "heading",
-                  "settings": {
-                    "heading": "Comfort",
-                    "heading_size": "medium",
-                    "heading_style": "default",
-                    "heading_tag": "h3",
-                    "highlight_option": "italic",
-                    "word_animation_color": "#160081",
-                    "font_family": "heading",
-                    "alignment": "inherit",
-                    "text_color": "#160081",
-                    "custom_font_size": true,
-                    "font_size": 15,
-                    "font_size_mobile": 15,
-                    "custom_line_height": true,
-                    "line_height": 22,
-                    "line_height_mobile": 22,
-                    "custom_spacing": true,
-                    "margin_top": 0,
-                    "margin_bottom": 10,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                },
-                "card_comfort_text": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Products chosen for the symptoms women actually report, with the evidence level shown.</p>",
-                    "text_style": "body",
-                    "alignment": "inherit",
-                    "text_color": "#4a4f63",
-                    "custom_font_size": true,
-                    "font_size": 13,
-                    "font_size_mobile": 13,
-                    "custom_line_height": true,
-                    "line_height": 20,
-                    "line_height_mobile": 20,
-                    "custom_spacing": true,
-                    "margin_top": 0,
-                    "margin_bottom": 0,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "card_comfort_title",
-                "card_comfort_text"
-              ]
-            },
-            "card_sleep": {
-              "type": "container",
-              "settings": {
-                "background_color": "#ffffff",
-                "border_radius": 10,
-                "border_width": 1,
-                "border_color": "#dbe5f3",
-                "border_top": true,
-                "border_right": true,
-                "border_bottom": true,
-                "border_left": true,
-                "padding_vertical": 20,
-                "padding_horizontal": 16,
-                "padding_vertical_mobile": 16,
-                "padding_horizontal_mobile": 16
-              },
-              "blocks": {
-                "card_sleep_title": {
-                  "type": "heading",
-                  "settings": {
-                    "heading": "Sleep and balance",
-                    "heading_size": "medium",
-                    "heading_style": "default",
-                    "heading_tag": "h3",
-                    "highlight_option": "italic",
-                    "word_animation_color": "#160081",
-                    "font_family": "heading",
-                    "alignment": "inherit",
-                    "text_color": "#160081",
-                    "custom_font_size": true,
-                    "font_size": 15,
-                    "font_size_mobile": 15,
-                    "custom_line_height": true,
-                    "line_height": 22,
-                    "line_height_mobile": 22,
-                    "custom_spacing": true,
-                    "margin_top": 0,
-                    "margin_bottom": 10,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                },
-                "card_sleep_text": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Because everything is harder when you are running on broken sleep.</p>",
-                    "text_style": "body",
-                    "alignment": "inherit",
-                    "text_color": "#4a4f63",
-                    "custom_font_size": true,
-                    "font_size": 13,
-                    "font_size_mobile": 13,
-                    "custom_line_height": true,
-                    "line_height": 20,
-                    "line_height_mobile": 20,
-                    "custom_spacing": true,
-                    "margin_top": 0,
-                    "margin_bottom": 0,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "card_sleep_title",
-                "card_sleep_text"
-              ]
-            },
-            "card_confidence": {
-              "type": "container",
-              "settings": {
-                "background_color": "#ffffff",
-                "border_radius": 10,
-                "border_width": 1,
-                "border_color": "#dbe5f3",
-                "border_top": true,
-                "border_right": true,
-                "border_bottom": true,
-                "border_left": true,
-                "padding_vertical": 20,
-                "padding_horizontal": 16,
-                "padding_vertical_mobile": 16,
-                "padding_horizontal_mobile": 16
-              },
-              "blocks": {
-                "card_confidence_title": {
-                  "type": "heading",
-                  "settings": {
-                    "heading": "Confidence",
-                    "heading_size": "medium",
-                    "heading_style": "default",
-                    "heading_tag": "h3",
-                    "highlight_option": "italic",
-                    "word_animation_color": "#160081",
-                    "font_family": "heading",
-                    "alignment": "inherit",
-                    "text_color": "#160081",
-                    "custom_font_size": true,
-                    "font_size": 15,
-                    "font_size_mobile": 15,
-                    "custom_line_height": true,
-                    "line_height": 22,
-                    "line_height_mobile": 22,
-                    "custom_spacing": true,
-                    "margin_top": 0,
-                    "margin_bottom": 10,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                },
-                "card_confidence_text": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Clear, current information so you can make your own decisions. Never pressure.</p>",
-                    "text_style": "body",
-                    "alignment": "inherit",
-                    "text_color": "#4a4f63",
-                    "custom_font_size": true,
-                    "font_size": 13,
-                    "font_size_mobile": 13,
-                    "custom_line_height": true,
-                    "line_height": 20,
-                    "line_height_mobile": 20,
-                    "custom_spacing": true,
-                    "margin_top": 0,
-                    "margin_bottom": 0,
-                    "margin_left": 0,
-                    "margin_right": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "card_confidence_title",
-                "card_confidence_text"
-              ]
-            }
-          },
-          "block_order": [
-            "card_comfort",
-            "card_sleep",
-            "card_confidence"
-          ]
-        }
-      },
-      "block_order": [
-        "built_around_heading",
-        "built_around_row"
-      ],
-      "settings": {
-        "full_width": false,
-        "content_alignment": "left",
-        "blocks_gap": 20,
-        "blocks_gap_mobile": 16,
-        "color_scheme": "option-1",
-        "background_color": "#eaf2fd",
-        "padding_top": 32,
-        "padding_bottom": 40
-      }
-    },
     "blocks_section_chosen_stage": {
       "type": "blocks-section",
       "blocks": {
@@ -3309,9 +3169,13 @@
             "shelf_card_1": {
               "type": "product-card",
               "settings": {
+                "product": "creatine-creavitalis®",
+                "symptom_label": "",
+                "description": "",
                 "show_price": true,
                 "button_label": "Add to cart",
                 "options_label": "Choose options",
+                "custom_link": "",
                 "open_new_tab": false,
                 "image_ratio": "landscape",
                 "image_background": "#f5f8fd",
@@ -3331,9 +3195,13 @@
             "shelf_card_2": {
               "type": "product-card",
               "settings": {
+                "product": "fiber-gdx",
+                "symptom_label": "",
+                "description": "",
                 "show_price": true,
                 "button_label": "Add to cart",
                 "options_label": "Choose options",
+                "custom_link": "",
                 "open_new_tab": false,
                 "image_ratio": "landscape",
                 "image_background": "#f5f8fd",
@@ -3353,9 +3221,13 @@
             "shelf_card_3": {
               "type": "product-card",
               "settings": {
+                "product": "menomulti",
+                "symptom_label": "",
+                "description": "",
                 "show_price": true,
                 "button_label": "Add to cart",
                 "options_label": "Choose options",
+                "custom_link": "",
                 "open_new_tab": false,
                 "image_ratio": "landscape",
                 "image_background": "#f5f8fd",
@@ -3375,9 +3247,13 @@
             "shelf_card_4": {
               "type": "product-card",
               "settings": {
+                "product": "omega-3-vitamin-d3-k2",
+                "symptom_label": "",
+                "description": "",
                 "show_price": true,
                 "button_label": "Add to cart",
                 "options_label": "Choose options",
+                "custom_link": "",
                 "open_new_tab": false,
                 "image_ratio": "landscape",
                 "image_background": "#f5f8fd",
@@ -3410,7 +3286,7 @@
             "alignment": "inherit",
             "text_color": "#4a4f63",
             "custom_font_size": true,
-            "font_size": 12,
+            "font_size": 14,
             "font_size_mobile": 12,
             "custom_line_height": true,
             "line_height": 20,
@@ -3440,32 +3316,6 @@
         "padding_top": 32,
         "padding_bottom": 40
       }
-    },
-    "section_heading_main": {
-      "type": "section-heading",
-      "settings": {
-        "subheading": "Subheading",
-        "heading": "Section heading",
-        "heading_tag": "h2",
-        "description": "<p>Use this area to introduce the content that follows.</p>",
-        "alignment": "center",
-        "max_width": 720,
-        "gap_subheading": 12,
-        "gap_subheading_mobile": 8,
-        "gap_heading": 16,
-        "gap_heading_mobile": 12,
-        "subheading_size": 13,
-        "subheading_size_mobile": 12,
-        "subheading_uppercase": true,
-        "heading_size": 40,
-        "heading_size_mobile": 30,
-        "heading_font": "heading",
-        "description_size": 16,
-        "description_size_mobile": 15,
-        "color_scheme": "option-1",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
     }
   },
   "order": [
@@ -3482,8 +3332,6 @@
     "testimonials",
     "featured_blog",
     "image_banner",
-    "blocks_section_NpG3E8",
-    "blocks_section_chosen_stage",
-    "section_heading_main"
+    "blocks_section_chosen_stage"
   ]
 }
