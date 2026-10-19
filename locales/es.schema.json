@@ -770,7 +770,8 @@
           }
         },
         "max_width": {
-          "label": "Ancho máximo del contenido"
+          "label": "Ancho máximo del contenido",
+          "info": "Déjalo vacío para no limitar. Ancho en px."
         },
         "gap_subheading": {
           "label": "Espacio bajo el subtítulo en escritorio"
@@ -811,6 +812,10 @@
         },
         "background_color": {
           "label": "Color de fondo"
+        },
+        "element_max_width": {
+          "label": "Ancho máximo",
+          "info": "0 usa todo el ancho disponible"
         }
       },
       "presets": {

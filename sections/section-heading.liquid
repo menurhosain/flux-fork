@@ -27,7 +27,10 @@
   "tag": "section",
   "class": "section",
   "disabled_on": {
-    "groups": ["header", "footer"]
+    "groups": [
+      "header",
+      "footer"
+    ]
   },
   "settings": [
     {
@@ -106,14 +109,10 @@
       "label": "t:sections.section-heading.settings.alignment.label"
     },
     {
-      "type": "range",
+      "type": "number",
       "id": "max_width",
-      "min": 300,
-      "max": 1300,
-      "step": 10,
-      "unit": "px",
-      "default": 720,
-      "label": "t:sections.section-heading.settings.max_width.label"
+      "label": "t:sections.section-heading.settings.max_width.label",
+      "info": "t:sections.section-heading.settings.max_width.info"
     },
     {
       "type": "range",
@@ -186,6 +185,53 @@
       "info": "t:sections.section-heading.settings.color.info"
     },
     {
+      "type": "select",
+      "id": "subheading_weight",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.testimonials.settings.font_weight.options__default.label"
+        },
+        {
+          "value": "300",
+          "label": "t:sections.testimonials.settings.font_weight.options__300.label"
+        },
+        {
+          "value": "400",
+          "label": "t:sections.testimonials.settings.font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.testimonials.settings.font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.testimonials.settings.font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.testimonials.settings.font_weight.options__700.label"
+        },
+        {
+          "value": "800",
+          "label": "t:sections.testimonials.settings.font_weight.options__800.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.testimonials.settings.font_weight.label"
+    },
+    {
+      "type": "range",
+      "id": "subheading_max_width",
+      "min": 0,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 0,
+      "label": "t:sections.section-heading.settings.element_max_width.label",
+      "info": "t:sections.section-heading.settings.element_max_width.info"
+    },
+    {
       "type": "checkbox",
       "id": "subheading_uppercase",
       "default": true,
@@ -220,6 +266,53 @@
       "id": "heading_color",
       "label": "t:sections.section-heading.settings.color.label",
       "info": "t:sections.section-heading.settings.color.info"
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.testimonials.settings.font_weight.options__default.label"
+        },
+        {
+          "value": "300",
+          "label": "t:sections.testimonials.settings.font_weight.options__300.label"
+        },
+        {
+          "value": "400",
+          "label": "t:sections.testimonials.settings.font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.testimonials.settings.font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.testimonials.settings.font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.testimonials.settings.font_weight.options__700.label"
+        },
+        {
+          "value": "800",
+          "label": "t:sections.testimonials.settings.font_weight.options__800.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.testimonials.settings.font_weight.label"
+    },
+    {
+      "type": "range",
+      "id": "heading_max_width",
+      "min": 0,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 0,
+      "label": "t:sections.section-heading.settings.element_max_width.label",
+      "info": "t:sections.section-heading.settings.element_max_width.info"
     },
     {
       "type": "select",
@@ -266,6 +359,53 @@
       "id": "description_color",
       "label": "t:sections.section-heading.settings.color.label",
       "info": "t:sections.section-heading.settings.color.info"
+    },
+    {
+      "type": "select",
+      "id": "description_weight",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.testimonials.settings.font_weight.options__default.label"
+        },
+        {
+          "value": "300",
+          "label": "t:sections.testimonials.settings.font_weight.options__300.label"
+        },
+        {
+          "value": "400",
+          "label": "t:sections.testimonials.settings.font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.testimonials.settings.font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.testimonials.settings.font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.testimonials.settings.font_weight.options__700.label"
+        },
+        {
+          "value": "800",
+          "label": "t:sections.testimonials.settings.font_weight.options__800.label"
+        }
+      ],
+      "default": "default",
+      "label": "t:sections.testimonials.settings.font_weight.label"
+    },
+    {
+      "type": "range",
+      "id": "description_max_width",
+      "min": 0,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 0,
+      "label": "t:sections.section-heading.settings.element_max_width.label",
+      "info": "t:sections.section-heading.settings.element_max_width.info"
     },
     {
       "type": "header",

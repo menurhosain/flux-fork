@@ -770,7 +770,8 @@
           }
         },
         "max_width": {
-          "label": "Larghezza massima contenuto"
+          "label": "Larghezza massima contenuto",
+          "info": "Lascia vuoto per nessun limite. Larghezza in px."
         },
         "gap_subheading": {
           "label": "Spazio sotto il sottotitolo su desktop"
@@ -811,6 +812,10 @@
         },
         "background_color": {
           "label": "Colore di sfondo"
+        },
+        "element_max_width": {
+          "label": "Larghezza massima",
+          "info": "0 usa tutta la larghezza disponibile"
         }
       },
       "presets": {

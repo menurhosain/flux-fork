@@ -770,7 +770,8 @@
           }
         },
         "max_width": {
-          "label": "Content max width"
+          "label": "Content max width",
+          "info": "Leave empty for no limit. Width in px."
         },
         "gap_subheading": {
           "label": "Gap below subheading on desktop"
@@ -811,6 +812,10 @@
         },
         "background_color": {
           "label": "Background color"
+        },
+        "element_max_width": {
+          "label": "Max width",
+          "info": "0 uses the full available width"
         }
       },
       "presets": {

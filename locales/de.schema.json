@@ -770,7 +770,8 @@
           }
         },
         "max_width": {
-          "label": "Maximale Inhaltsbreite"
+          "label": "Maximale Inhaltsbreite",
+          "info": "Leer lassen für keine Begrenzung. Breite in px."
         },
         "gap_subheading": {
           "label": "Abstand unter der Unterüberschrift (Desktop)"
@@ -811,6 +812,10 @@
         },
         "background_color": {
           "label": "Hintergrundfarbe"
+        },
+        "element_max_width": {
+          "label": "Maximale Breite",
+          "info": "0 nutzt die gesamte verfügbare Breite"
         }
       },
       "presets": {

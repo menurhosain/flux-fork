@@ -14,7 +14,9 @@
 
 {%- style -%}
   #SectionHeading-{{ id }} {
-    --sh-max-width: {{ settings.max_width }}px;
+    {%- if settings.max_width > 0 %}
+      --sh-max-width: {{ settings.max_width }}px;
+    {%- endif %}
     --sh-subheading-size: {{ settings.subheading_size_mobile }}px;
     --sh-heading-size: {{ settings.heading_size_mobile }}px;
     --sh-description-size: {{ settings.description_size_mobile }}px;
@@ -28,6 +30,24 @@
     {%- endif %}
     {%- if settings.description_color != blank %}
       --sh-description-color: {{ settings.description_color }};
+    {%- endif %}
+    {%- if settings.subheading_weight != 'default' %}
+      --sh-subheading-weight: {{ settings.subheading_weight }};
+    {%- endif %}
+    {%- if settings.subheading_max_width > 0 %}
+      --sh-subheading-max-width: {{ settings.subheading_max_width }}px;
+    {%- endif %}
+    {%- if settings.heading_weight != 'default' %}
+      --sh-heading-weight: {{ settings.heading_weight }};
+    {%- endif %}
+    {%- if settings.heading_max_width > 0 %}
+      --sh-heading-max-width: {{ settings.heading_max_width }}px;
+    {%- endif %}
+    {%- if settings.description_weight != 'default' %}
+      --sh-description-weight: {{ settings.description_weight }};
+    {%- endif %}
+    {%- if settings.description_max_width > 0 %}
+      --sh-description-max-width: {{ settings.description_max_width }}px;
     {%- endif %}
   }
 
@@ -53,7 +73,7 @@
   {%- endif -%}
 
   {%- if settings.heading != blank -%}
-    <{{ settings.heading_tag }} class="section-heading__heading{% if settings.heading_font == 'body' %} section-heading__heading--body-font{% endif %}">
+    <{{ settings.heading_tag }} class="section-heading__heading{% if settings.heading_font == 'body' %} section-heading__heading--body-font{% endif %}{% if settings.heading_weight != 'default' %} section-heading__heading--weight{% endif %}">
       {{- settings.heading -}}
     </{{ settings.heading_tag }}>
   {%- endif -%}

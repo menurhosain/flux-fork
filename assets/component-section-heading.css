@@ -1,7 +1,7 @@
 .section-heading__inner {
   display: flex;
   flex-direction: column;
-  max-width: var(--sh-max-width);
+  max-width: var(--sh-max-width, none);
 }
 
 .section-heading__inner--left {
@@ -28,7 +28,8 @@
   color: var(--sh-subheading-color, rgb(var(--color-foreground)));
   font-family: var(--font-body-family);
   font-size: var(--sh-subheading-size);
-  font-weight: var(--font-body-weight-bold);
+  font-weight: var(--sh-subheading-weight, var(--font-body-weight-bold));
+  max-width: var(--sh-subheading-max-width, 100%);
   letter-spacing: 0.04em;
   line-height: 1.4;
 }
@@ -47,6 +48,7 @@
   color: var(--sh-heading-color, rgb(var(--color-foreground)));
   font-size: var(--sh-heading-size);
   line-height: 1.2;
+  max-width: var(--sh-heading-max-width, 100%);
 }
 
 .section-heading__heading--body-font {
@@ -55,14 +57,23 @@
   font-weight: var(--font-body-weight-bold);
 }
 
+.section-heading__heading.section-heading__heading--weight {
+  font-weight: var(--sh-heading-weight);
+}
+
 .section-heading__heading + .section-heading__description {
   margin-top: var(--sh-gap-heading);
+}
+
+.section-heading__description {
+  max-width: var(--sh-description-max-width, 100%);
 }
 
 .section-heading__description,
 .section-heading__description p {
   color: var(--sh-description-color, rgba(var(--color-foreground), 0.75));
   font-size: var(--sh-description-size);
+  font-weight: var(--sh-description-weight, inherit);
   line-height: 1.6;
 }
 
