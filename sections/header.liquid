@@ -322,7 +322,7 @@
     enable-fixed-header-part--true {% if section.settings.enable_fixed_header_transparent == true %}transparent-fixed-header{% endif %}
   {% endif %}
 {% endif %} {%- if section.settings.enable_fixed_header_type_all == true -%}enable-fixed-header-part--true {% if section.settings.enable_fixed_header_transparent == true %} transparent-fixed-header{% endif %}{% endif %}" data-aos="fade-up" data-aos-delay="350">
-    <header class="header additional_links--{{ section.settings.disable_additional_links }} header--{{ section.settings.desktop_header_layout }} header--mobile-{{ section.settings.mobile_desktop_header_layout }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} enable-item-highlight--{{ section.settings.enable_item_highlight }} {% if section.settings.header_icons_decoration == 'circle' %} header--icons-circle{% endif %} {% if section.settings.header_icons_decoration == 'line' %} header--icons-line{% endif %} {%- if section.settings.menu_type_desktop == 'drawer' -%}desktop-header-drawer{% endif %} {% if section.settings.show_search_icon == true %} header-two-row-alternative{% endif %} {%- if section.settings.menu_type_desktop == 'dropdown' -%}desktop-header-dropdown{% endif %}">
+    <header class="header additional_links--{{ section.settings.disable_additional_links }} header--{{ section.settings.desktop_header_layout }} header--mobile-{{ section.settings.mobile_desktop_header_layout }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} enable-item-highlight--{{ section.settings.enable_item_highlight }} {% if section.settings.header_icons_decoration == 'circle' %} header--icons-circle{% endif %} {% if section.settings.header_icons_decoration == 'line' %} header--icons-line{% endif %} {%- if section.settings.menu_type_desktop == 'drawer' -%}desktop-header-drawer{% endif %} {% if section.settings.show_search_icon == true %} header-two-row-alternative{% endif %} {%- if section.settings.menu_type_desktop == 'dropdown' -%}desktop-header-dropdown{% endif %}{% if section.settings.hide_header_icons %} header--hide-icons{% endif %}">
     {% comment %} Start Mobile Menu {% endcomment %}
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
@@ -1197,7 +1197,7 @@
 
     {% comment %} Start Search {% endcomment %}
     <div class="header__icons">
-      {%- if section.settings.desktop_header_layout == 'menu-logo-icons' or section.settings.desktop_header_layout == 'logo-centermenu-icons'  -%}
+      {%- if section.settings.desktop_header_layout == 'menu-logo-icons' or section.settings.desktop_header_layout == 'logo-centermenu-icons' or section.settings.desktop_header_layout == 'logo-rightmenu-icons' -%}
         <div class="right-block-buttons menu-icon-{{ section.settings.image_size }}">
         {%- if section.settings.button_label != blank -%}
           <a
@@ -2115,6 +2115,10 @@ document.addEventListener('shopify:section:load', () => {
         {
           "value": "logo-centermenu-icons",
           "label": "t:sections.header.settings.desktop_header_layout.options__4.label"
+        },
+        {
+          "value": "logo-rightmenu-icons",
+          "label": "t:sections.header.settings.desktop_header_layout.options__5.label"
         }
       ],
       "default": "menu-logo-icons",
@@ -2127,6 +2131,13 @@ document.addEventListener('shopify:section:load', () => {
       "info": "t:sections.header.settings.show_search_icon.info",
       "default": false,
       "visible_if": "{{ section.settings.desktop_header_layout == 'centered-two-row' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_header_icons",
+      "default": false,
+      "label": "t:sections.header.settings.hide_header_icons.label",
+      "info": "t:sections.header.settings.hide_header_icons.info"
     },
     {
       "type": "checkbox",

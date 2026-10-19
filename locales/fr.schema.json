@@ -2581,7 +2581,14 @@
           },
           "options__4": {
             "label": "Logo-Centre-Menü-Icones"
+          },
+          "options__5": {
+            "label": "Logo à gauche, menu à droite"
           }
+        },
+        "hide_header_icons": {
+          "label": "Masquer les icônes de l'en-tête",
+          "info": "Masque les icônes de recherche, de compte et de panier. Sur ordinateur, l'en-tête utilise deux colonnes : logo et menu."
         },
         "show_search_icon": {
           "label": "Style alternatif",

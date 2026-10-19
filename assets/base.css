@@ -827,6 +827,7 @@ a.menu-button-primary {
 }
 
 .header--logo-centermenu-icons a.menu-button-primary,
+.header--logo-rightmenu-icons a.menu-button-primary,
 .header--menu-logo-icons a.menu-button-primary{
     margin-right: 1.5rem;
 }
@@ -2778,6 +2779,19 @@ localization-form {
     text-align: center;
   }
 
+  .header--logo-rightmenu-icons,
+  .additional_links--false.header--logo-rightmenu-icons {
+    grid-template-areas: 'heading navigation icons';
+    grid-template-columns: auto 1fr auto;
+    column-gap: 2rem;
+  }
+
+  .header--logo-rightmenu-icons .main-navigation,
+  .header--logo-rightmenu-icons .main-navigation-mega {
+    justify-self: end;
+    text-align: right;
+  }
+
   .header--menu-logo-icons {
     grid-template-areas: 'navigation heading icons';
     grid-template-columns: 1fr auto 1fr;
@@ -2822,8 +2836,19 @@ localization-form {
       'navigation-buttons navigation-buttons navigation-buttons';
   }
 
-  .header:not(.header--logo-centermenu-icons, .header--menu-logo-icons) .main-navigation {
+  .header:not(.header--logo-centermenu-icons, .header--logo-rightmenu-icons, .header--menu-logo-icons) .main-navigation {
     margin-top: 1.05rem;
+  }
+
+  .header--hide-icons.header--logo-centermenu-icons,
+  .header--hide-icons.header--logo-rightmenu-icons {
+    grid-template-areas: 'heading navigation';
+    grid-template-columns: auto 1fr;
+  }
+
+  .header--hide-icons.header--menu-logo-icons {
+    grid-template-areas: 'navigation heading';
+    grid-template-columns: 1fr auto;
   }
 }
 
@@ -2962,12 +2987,17 @@ localization-form {
 }
 
 .header--logo-centermenu-icons .right-block-buttons,
+.header--logo-rightmenu-icons .right-block-buttons,
 .header--menu-logo-icons .right-block-buttons {
   margin-top: 1rem;
   margin-right: 1rem;
 }
 
 .header__icons.centered-hide {
+  display: none;
+}
+
+.header--hide-icons .header__icons {
   display: none;
 }
 
@@ -3256,7 +3286,9 @@ details[open] > .navigation-submenu {
   }
 
   .header--logo-centermenu-icons .main-navigation,
-  .header--logo-centermenu-icons .main-navigation-mega {
+  .header--logo-centermenu-icons .main-navigation-mega,
+  .header--logo-rightmenu-icons .main-navigation,
+  .header--logo-rightmenu-icons .main-navigation-mega {
     margin-left: 0;
   }
 }

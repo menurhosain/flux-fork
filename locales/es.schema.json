@@ -2581,7 +2581,14 @@
           },
           "options__4": {
             "label": "Logo-Centro-Menú-Iconos"
+          },
+          "options__5": {
+            "label": "Logo a la izquierda, menú a la derecha"
           }
+        },
+        "hide_header_icons": {
+          "label": "Ocultar iconos del encabezado",
+          "info": "Oculta los iconos de búsqueda, cuenta y carrito. En escritorio el encabezado usa dos columnas: logo y menú."
         },
         "show_search_icon": {
           "label": "Estilo alternativo",

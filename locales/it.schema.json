@@ -2581,7 +2581,14 @@
           },
           "options__4": {
             "label": "Logo-Centro-Menù-Icone"
+          },
+          "options__5": {
+            "label": "Logo a sinistra, menu a destra"
           }
+        },
+        "hide_header_icons": {
+          "label": "Nascondi icone dell'header",
+          "info": "Nasconde le icone di ricerca, account e carrello. Su desktop l'header usa due colonne: logo e menu."
         },
         "show_search_icon": {
           "label": "Stile alternativo",

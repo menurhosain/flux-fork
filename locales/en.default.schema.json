@@ -2581,7 +2581,14 @@
           },
           "options__4": {
             "label": "Logo-Menu-Icons"
+          },
+          "options__5": {
+            "label": "Logo left, Menu right"
           }
+        },
+        "hide_header_icons": {
+          "label": "Hide header icons",
+          "info": "Hides search, account and cart icons. On desktop the header uses two columns: logo and menu."
         },
         "show_search_icon": {
           "label": "Alternative style",

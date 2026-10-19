@@ -2581,7 +2581,14 @@
           },
           "options__4": {
             "label": "Logo-Zentrum-Menü-Icons"
+          },
+          "options__5": {
+            "label": "Logo links, Menü rechts"
           }
+        },
+        "hide_header_icons": {
+          "label": "Header-Symbole ausblenden",
+          "info": "Blendet Such-, Konto- und Warenkorbsymbole aus. Auf dem Desktop nutzt der Header zwei Spalten: Logo und Menü."
         },
         "show_search_icon": {
           "label": "Alternative Stil",
