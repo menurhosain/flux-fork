@@ -6283,6 +6283,109 @@
       "presets": {
         "name": "Añadir al carrito fijo"
       }
+    },
+    "trust-bar": {
+      "name": "Barra de confianza",
+      "settings": {
+        "gap": {
+          "label": "Espacio alrededor de los divisores en escritorio"
+        },
+        "gap_mobile": {
+          "label": "Espacio entre elementos en móvil"
+        },
+        "stack_mobile": {
+          "label": "Apilar elementos en móvil"
+        },
+        "show_dividers": {
+          "label": "Mostrar divisores"
+        },
+        "divider_color": {
+          "label": "Color de los divisores"
+        },
+        "header_icon": {
+          "content": "Icono"
+        },
+        "circle_size": {
+          "label": "Tamaño del círculo en escritorio"
+        },
+        "circle_size_mobile": {
+          "label": "Tamaño del círculo en móvil"
+        },
+        "icon_size": {
+          "label": "Tamaño del icono en escritorio"
+        },
+        "icon_size_mobile": {
+          "label": "Tamaño del icono en móvil"
+        },
+        "circle_color": {
+          "label": "Color del círculo"
+        },
+        "icon_color": {
+          "label": "Color del icono"
+        },
+        "icon_gap": {
+          "label": "Espacio entre icono y texto en escritorio"
+        },
+        "icon_gap_mobile": {
+          "label": "Espacio entre icono y texto en móvil"
+        },
+        "header_title": {
+          "content": "Título"
+        },
+        "header_description": {
+          "content": "Descripción"
+        }
+      },
+      "blocks": {
+        "item": {
+          "name": "Elemento",
+          "settings": {
+            "icon": {
+              "label": "Icono",
+              "options__none": {
+                "label": "Ninguno"
+              },
+              "options__truck": {
+                "label": "Camión de reparto"
+              },
+              "options__shield": {
+                "label": "Escudo"
+              },
+              "options__lock": {
+                "label": "Candado"
+              },
+              "options__stethoscope": {
+                "label": "Estetoscopio"
+              },
+              "options__card": {
+                "label": "Tarjeta"
+              },
+              "options__check": {
+                "label": "Marca de verificación"
+              },
+              "options__heart": {
+                "label": "Corazón"
+              },
+              "options__leaf": {
+                "label": "Hoja"
+              }
+            },
+            "icon_image": {
+              "label": "Imagen de icono personalizada",
+              "info": "Sustituye al icono de arriba"
+            },
+            "title": {
+              "label": "Título"
+            },
+            "description": {
+              "label": "Descripción"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Barra de confianza"
+      }
     }
   },
   "blocks": {

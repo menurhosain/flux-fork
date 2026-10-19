@@ -6283,6 +6283,109 @@
       "presets": {
         "name": "Ajouter au panier fixe"
       }
+    },
+    "trust-bar": {
+      "name": "Barre de confiance",
+      "settings": {
+        "gap": {
+          "label": "Espace autour des séparateurs sur ordinateur"
+        },
+        "gap_mobile": {
+          "label": "Espace entre les éléments sur mobile"
+        },
+        "stack_mobile": {
+          "label": "Empiler les éléments sur mobile"
+        },
+        "show_dividers": {
+          "label": "Afficher les séparateurs"
+        },
+        "divider_color": {
+          "label": "Couleur des séparateurs"
+        },
+        "header_icon": {
+          "content": "Icône"
+        },
+        "circle_size": {
+          "label": "Taille du cercle sur ordinateur"
+        },
+        "circle_size_mobile": {
+          "label": "Taille du cercle sur mobile"
+        },
+        "icon_size": {
+          "label": "Taille de l'icône sur ordinateur"
+        },
+        "icon_size_mobile": {
+          "label": "Taille de l'icône sur mobile"
+        },
+        "circle_color": {
+          "label": "Couleur du cercle"
+        },
+        "icon_color": {
+          "label": "Couleur de l'icône"
+        },
+        "icon_gap": {
+          "label": "Espace entre l'icône et le texte sur ordinateur"
+        },
+        "icon_gap_mobile": {
+          "label": "Espace entre l'icône et le texte sur mobile"
+        },
+        "header_title": {
+          "content": "Titre"
+        },
+        "header_description": {
+          "content": "Description"
+        }
+      },
+      "blocks": {
+        "item": {
+          "name": "Élément",
+          "settings": {
+            "icon": {
+              "label": "Icône",
+              "options__none": {
+                "label": "Aucune"
+              },
+              "options__truck": {
+                "label": "Camion de livraison"
+              },
+              "options__shield": {
+                "label": "Bouclier"
+              },
+              "options__lock": {
+                "label": "Cadenas"
+              },
+              "options__stethoscope": {
+                "label": "Stéthoscope"
+              },
+              "options__card": {
+                "label": "Carte"
+              },
+              "options__check": {
+                "label": "Coche"
+              },
+              "options__heart": {
+                "label": "Cœur"
+              },
+              "options__leaf": {
+                "label": "Feuille"
+              }
+            },
+            "icon_image": {
+              "label": "Image d'icône personnalisée",
+              "info": "Remplace l'icône ci-dessus"
+            },
+            "title": {
+              "label": "Titre"
+            },
+            "description": {
+              "label": "Description"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Barre de confiance"
+      }
     }
   },
   "blocks": {

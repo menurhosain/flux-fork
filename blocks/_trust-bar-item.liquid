@@ -1,0 +1,134 @@
+{%- liquid
+  assign has_icon = false
+  if block.settings.icon_image != blank or block.settings.icon != 'none'
+    assign has_icon = true
+  endif
+-%}
+
+<li class="trust-bar__item" {{ block.shopify_attributes }}>
+  {%- if has_icon -%}
+    <div class="trust-bar__icon">
+      {%- if block.settings.icon_image != blank -%}
+        {{
+          block.settings.icon_image
+          | image_url: width: 160
+          | image_tag: loading: 'lazy', class: 'trust-bar__icon-image', alt: ''
+        }}
+      {%- else -%}
+        {% render 'icon-trust', icon: block.settings.icon %}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="trust-bar__content">
+    {%- if block.settings.title != blank -%}
+      <p class="trust-bar__title">
+        {%- if block.settings.link != blank -%}
+          <a
+            href="{{ block.settings.link }}"
+            class="trust-bar__link"
+            {% if block.settings.open_new_tab %}
+              target="_blank" rel="noopener"
+            {% endif %}
+          >
+            {{- block.settings.title | escape -}}
+          </a>
+        {%- else -%}
+          {{- block.settings.title | escape -}}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+
+    {%- if block.settings.description != blank -%}
+      <p class="trust-bar__description">{{ block.settings.description | escape }}</p>
+    {%- endif -%}
+  </div>
+</li>
+
+{% schema %}
+{
+  "name": "t:sections.trust-bar.blocks.item.name",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "icon",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__none.label"
+        },
+        {
+          "value": "truck",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__truck.label"
+        },
+        {
+          "value": "shield",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__shield.label"
+        },
+        {
+          "value": "lock",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__lock.label"
+        },
+        {
+          "value": "stethoscope",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__stethoscope.label"
+        },
+        {
+          "value": "card",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__card.label"
+        },
+        {
+          "value": "check",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__check.label"
+        },
+        {
+          "value": "heart",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__heart.label"
+        },
+        {
+          "value": "leaf",
+          "label": "t:sections.trust-bar.blocks.item.settings.icon.options__leaf.label"
+        }
+      ],
+      "default": "shield",
+      "label": "t:sections.trust-bar.blocks.item.settings.icon.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_image",
+      "label": "t:sections.trust-bar.blocks.item.settings.icon_image.label",
+      "info": "t:sections.trust-bar.blocks.item.settings.icon_image.info"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Trust message",
+      "label": "t:sections.trust-bar.blocks.item.settings.title.label"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "default": "Add a short line that supports the title.",
+      "label": "t:sections.trust-bar.blocks.item.settings.description.label"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "t:blocks.heading.settings.link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_new_tab",
+      "default": false,
+      "label": "t:blocks.heading.settings.open_new_tab.label",
+      "visible_if": "{{ block.settings.link != blank }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.trust-bar.blocks.item.name"
+    }
+  ]
+}
+{% endschema %}

@@ -6283,6 +6283,109 @@
       "presets": {
         "name": "Sticky add to cart"
       }
+    },
+    "trust-bar": {
+      "name": "Trust bar",
+      "settings": {
+        "gap": {
+          "label": "Space around dividers on desktop"
+        },
+        "gap_mobile": {
+          "label": "Space between items on mobile"
+        },
+        "stack_mobile": {
+          "label": "Stack items on mobile"
+        },
+        "show_dividers": {
+          "label": "Show dividers"
+        },
+        "divider_color": {
+          "label": "Divider color"
+        },
+        "header_icon": {
+          "content": "Icon"
+        },
+        "circle_size": {
+          "label": "Circle size on desktop"
+        },
+        "circle_size_mobile": {
+          "label": "Circle size on mobile"
+        },
+        "icon_size": {
+          "label": "Icon size on desktop"
+        },
+        "icon_size_mobile": {
+          "label": "Icon size on mobile"
+        },
+        "circle_color": {
+          "label": "Circle color"
+        },
+        "icon_color": {
+          "label": "Icon color"
+        },
+        "icon_gap": {
+          "label": "Space between icon and text on desktop"
+        },
+        "icon_gap_mobile": {
+          "label": "Space between icon and text on mobile"
+        },
+        "header_title": {
+          "content": "Title"
+        },
+        "header_description": {
+          "content": "Description"
+        }
+      },
+      "blocks": {
+        "item": {
+          "name": "Item",
+          "settings": {
+            "icon": {
+              "label": "Icon",
+              "options__none": {
+                "label": "None"
+              },
+              "options__truck": {
+                "label": "Delivery truck"
+              },
+              "options__shield": {
+                "label": "Shield"
+              },
+              "options__lock": {
+                "label": "Lock"
+              },
+              "options__stethoscope": {
+                "label": "Stethoscope"
+              },
+              "options__card": {
+                "label": "Card"
+              },
+              "options__check": {
+                "label": "Check mark"
+              },
+              "options__heart": {
+                "label": "Heart"
+              },
+              "options__leaf": {
+                "label": "Leaf"
+              }
+            },
+            "icon_image": {
+              "label": "Custom icon image",
+              "info": "Replaces the icon above"
+            },
+            "title": {
+              "label": "Title"
+            },
+            "description": {
+              "label": "Description"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Trust bar"
+      }
     }
   },
   "blocks": {

@@ -1,0 +1,466 @@
+{%- style -%}
+  #TrustBar-{{ section.id }} {
+    --tb-background: {{ section.settings.background_color }};
+    --tb-padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    --tb-padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    --tb-item-gap: {{ section.settings.item_gap_mobile }}px;
+    --tb-divider-color: {{ section.settings.divider_color }};
+    --tb-circle-size: {{ section.settings.circle_size_mobile }}px;
+    --tb-circle-color: {{ section.settings.circle_color }};
+    --tb-icon-size: {{ section.settings.icon_size_mobile }}px;
+    --tb-icon-color: {{ section.settings.icon_color }};
+    --tb-icon-gap: {{ section.settings.icon_gap_mobile }}px;
+    --tb-title-size: {{ section.settings.title_size_mobile }}px;
+    --tb-title-weight: {{ section.settings.title_weight }};
+    --tb-title-color: {{ section.settings.title_color }};
+    --tb-text-size: {{ section.settings.text_size_mobile }}px;
+    --tb-text-line-height: {{ section.settings.text_line_height_mobile }}px;
+    --tb-text-color: {{ section.settings.text_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    #TrustBar-{{ section.id }} {
+      --tb-padding-top: {{ section.settings.padding_top }}px;
+      --tb-padding-bottom: {{ section.settings.padding_bottom }}px;
+      --tb-item-gap: {{ section.settings.item_gap }}px;
+      --tb-circle-size: {{ section.settings.circle_size }}px;
+      --tb-icon-size: {{ section.settings.icon_size }}px;
+      --tb-icon-gap: {{ section.settings.icon_gap }}px;
+      --tb-title-size: {{ section.settings.title_size }}px;
+      --tb-text-size: {{ section.settings.text_size }}px;
+      --tb-text-line-height: {{ section.settings.text_line_height }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div id="TrustBar-{{ section.id }}" class="trust-bar">
+  <div class="{% if section.settings.full_width %}trust-bar__container--full{% else %}page-width{% endif %}">
+    <ul
+      class="trust-bar__list{% if section.settings.show_dividers %} trust-bar__list--dividers{% endif %}{% if section.settings.stack_mobile %} trust-bar__list--stack-mobile{% endif %}"
+      role="list"
+    >
+      {% content_for 'blocks' %}
+    </ul>
+  </div>
+</div>
+
+{% stylesheet %}
+  .trust-bar {
+    background: var(--tb-background);
+    padding-top: var(--tb-padding-top);
+    padding-bottom: var(--tb-padding-bottom);
+  }
+
+  .trust-bar__container--full {
+    padding: 0 1.5rem;
+  }
+
+  .trust-bar__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .trust-bar__item {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    gap: var(--tb-icon-gap);
+    min-width: 0;
+    padding: 0 var(--tb-item-gap);
+  }
+
+  .trust-bar__item:first-child {
+    padding-left: 0;
+  }
+
+  .trust-bar__item:last-child {
+    padding-right: 0;
+  }
+
+  .trust-bar__list--dividers .trust-bar__item + .trust-bar__item {
+    border-left: 1px solid var(--tb-divider-color);
+  }
+
+  .trust-bar__icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: var(--tb-circle-size);
+    height: var(--tb-circle-size);
+    border-radius: 50%;
+    background: var(--tb-circle-color);
+    color: var(--tb-icon-color);
+  }
+
+  .trust-bar__svg,
+  .trust-bar__icon-image {
+    width: var(--tb-icon-size);
+    height: var(--tb-icon-size);
+    object-fit: contain;
+  }
+
+  .trust-bar__content {
+    min-width: 0;
+  }
+
+  .trust-bar__title {
+    margin: 0;
+    color: var(--tb-title-color);
+    font-family: var(--font-body-family);
+    font-size: var(--tb-title-size);
+    font-weight: var(--tb-title-weight);
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+
+  .trust-bar__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .trust-bar__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
+
+  .trust-bar__description {
+    margin: 0.6rem 0 0;
+    color: var(--tb-text-color);
+    font-family: var(--font-body-family);
+    font-size: var(--tb-text-size);
+    letter-spacing: 0;
+    line-height: var(--tb-text-line-height);
+  }
+
+  @media screen and (max-width: 749px) {
+    .trust-bar__list--stack-mobile {
+      flex-direction: column;
+    }
+
+    .trust-bar__list--stack-mobile .trust-bar__item {
+      padding: var(--tb-item-gap) 0;
+    }
+
+    .trust-bar__list--stack-mobile .trust-bar__item:first-child {
+      padding-top: 0;
+    }
+
+    .trust-bar__list--stack-mobile .trust-bar__item:last-child {
+      padding-bottom: 0;
+    }
+
+    .trust-bar__list--stack-mobile.trust-bar__list--dividers .trust-bar__item + .trust-bar__item {
+      border-left: 0;
+      border-top: 1px solid var(--tb-divider-color);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:sections.trust-bar.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "_trust-bar-item"
+    }
+  ],
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "t:sections.footer-simple.settings.full_width.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dividers",
+      "default": true,
+      "label": "t:sections.trust-bar.settings.show_dividers.label"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "default": "#e1e6ef",
+      "label": "t:sections.trust-bar.settings.divider_color.label",
+      "visible_if": "{{ section.settings.show_dividers }}"
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 40,
+      "label": "t:sections.trust-bar.settings.gap.label"
+    },
+    {
+      "type": "range",
+      "id": "item_gap_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 20,
+      "label": "t:sections.trust-bar.settings.gap_mobile.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_mobile",
+      "default": true,
+      "label": "t:sections.trust-bar.settings.stack_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.trust-bar.settings.header_icon.content"
+    },
+    {
+      "type": "range",
+      "id": "circle_size",
+      "min": 24,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 64,
+      "label": "t:sections.trust-bar.settings.circle_size.label"
+    },
+    {
+      "type": "range",
+      "id": "circle_size_mobile",
+      "min": 24,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 56,
+      "label": "t:sections.trust-bar.settings.circle_size_mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "default": 32,
+      "label": "t:sections.trust-bar.settings.icon_size.label"
+    },
+    {
+      "type": "range",
+      "id": "icon_size_mobile",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "default": 28,
+      "label": "t:sections.trust-bar.settings.icon_size_mobile.label"
+    },
+    {
+      "type": "color",
+      "id": "circle_color",
+      "default": "#eaf2fd",
+      "label": "t:sections.trust-bar.settings.circle_color.label"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "default": "#2152d9",
+      "label": "t:sections.trust-bar.settings.icon_color.label"
+    },
+    {
+      "type": "range",
+      "id": "icon_gap",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 24,
+      "label": "t:sections.trust-bar.settings.icon_gap.label"
+    },
+    {
+      "type": "range",
+      "id": "icon_gap_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 16,
+      "label": "t:sections.trust-bar.settings.icon_gap_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.trust-bar.settings.header_title.content"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 18,
+      "label": "t:sections.section-heading.settings.font_size.label"
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "t:sections.section-heading.settings.font_size_mobile.label"
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "t:sections.testimonials.settings.font_weight.options__400.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.testimonials.settings.font_weight.options__500.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.testimonials.settings.font_weight.options__600.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.testimonials.settings.font_weight.options__700.label"
+        }
+      ],
+      "default": "600",
+      "label": "t:sections.testimonials.settings.font_weight.label"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "default": "#0f1b4d",
+      "label": "t:sections.section-heading.settings.color.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.trust-bar.settings.header_description.content"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 15,
+      "label": "t:sections.section-heading.settings.font_size.label"
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:sections.section-heading.settings.font_size_mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "text_line_height",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 24,
+      "label": "t:blocks.heading.settings.line_height.label"
+    },
+    {
+      "type": "range",
+      "id": "text_line_height_mobile",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 22,
+      "label": "t:blocks.heading.settings.line_height_mobile.label"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "default": "#6b7280",
+      "label": "t:sections.section-heading.settings.color.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.section-heading.settings.header_section.content"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "#fbfbfd",
+      "label": "t:sections.footer-simple.settings.background_color.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48,
+      "label": "t:sections.all.padding.padding_top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48,
+      "label": "t:sections.all.padding.padding_bottom"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.trust-bar.presets.name",
+      "blocks": [
+        {
+          "type": "_trust-bar-item",
+          "settings": {
+            "icon": "truck",
+            "title": "Secure checkout",
+            "description": "Your payment information is safe and encrypted."
+          }
+        },
+        {
+          "type": "_trust-bar-item",
+          "settings": {
+            "icon": "shield",
+            "title": "Your privacy, protected",
+            "description": "We keep your personal information safe."
+          }
+        },
+        {
+          "type": "_trust-bar-item",
+          "settings": {
+            "icon": "stethoscope",
+            "title": "Information, not medical advice",
+            "description": "Our content is for educational purposes only."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

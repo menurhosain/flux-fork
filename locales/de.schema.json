@@ -6283,6 +6283,109 @@
       "presets": {
         "name": "Sticky in den Warenkorb"
       }
+    },
+    "trust-bar": {
+      "name": "Vertrauensleiste",
+      "settings": {
+        "gap": {
+          "label": "Abstand um Trennlinien (Desktop)"
+        },
+        "gap_mobile": {
+          "label": "Abstand zwischen Elementen (mobil)"
+        },
+        "stack_mobile": {
+          "label": "Elemente auf Mobilgeräten stapeln"
+        },
+        "show_dividers": {
+          "label": "Trennlinien anzeigen"
+        },
+        "divider_color": {
+          "label": "Farbe der Trennlinien"
+        },
+        "header_icon": {
+          "content": "Symbol"
+        },
+        "circle_size": {
+          "label": "Kreisgröße (Desktop)"
+        },
+        "circle_size_mobile": {
+          "label": "Kreisgröße (mobil)"
+        },
+        "icon_size": {
+          "label": "Symbolgröße (Desktop)"
+        },
+        "icon_size_mobile": {
+          "label": "Symbolgröße (mobil)"
+        },
+        "circle_color": {
+          "label": "Kreisfarbe"
+        },
+        "icon_color": {
+          "label": "Symbolfarbe"
+        },
+        "icon_gap": {
+          "label": "Abstand zwischen Symbol und Text (Desktop)"
+        },
+        "icon_gap_mobile": {
+          "label": "Abstand zwischen Symbol und Text (mobil)"
+        },
+        "header_title": {
+          "content": "Titel"
+        },
+        "header_description": {
+          "content": "Beschreibung"
+        }
+      },
+      "blocks": {
+        "item": {
+          "name": "Element",
+          "settings": {
+            "icon": {
+              "label": "Symbol",
+              "options__none": {
+                "label": "Keins"
+              },
+              "options__truck": {
+                "label": "Lieferwagen"
+              },
+              "options__shield": {
+                "label": "Schild"
+              },
+              "options__lock": {
+                "label": "Schloss"
+              },
+              "options__stethoscope": {
+                "label": "Stethoskop"
+              },
+              "options__card": {
+                "label": "Karte"
+              },
+              "options__check": {
+                "label": "Häkchen"
+              },
+              "options__heart": {
+                "label": "Herz"
+              },
+              "options__leaf": {
+                "label": "Blatt"
+              }
+            },
+            "icon_image": {
+              "label": "Eigenes Symbolbild",
+              "info": "Ersetzt das Symbol oben"
+            },
+            "title": {
+              "label": "Titel"
+            },
+            "description": {
+              "label": "Beschreibung"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Vertrauensleiste"
+      }
     }
   },
   "blocks": {

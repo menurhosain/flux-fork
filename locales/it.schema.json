@@ -6283,6 +6283,109 @@
       "presets": {
         "name": "Aggiungi al carrello fisso"
       }
+    },
+    "trust-bar": {
+      "name": "Barra di fiducia",
+      "settings": {
+        "gap": {
+          "label": "Spazio attorno ai divisori su desktop"
+        },
+        "gap_mobile": {
+          "label": "Spazio tra gli elementi su dispositivo mobile"
+        },
+        "stack_mobile": {
+          "label": "Impila gli elementi su dispositivo mobile"
+        },
+        "show_dividers": {
+          "label": "Mostra divisori"
+        },
+        "divider_color": {
+          "label": "Colore divisori"
+        },
+        "header_icon": {
+          "content": "Icona"
+        },
+        "circle_size": {
+          "label": "Dimensione cerchio su desktop"
+        },
+        "circle_size_mobile": {
+          "label": "Dimensione cerchio su dispositivo mobile"
+        },
+        "icon_size": {
+          "label": "Dimensione icona su desktop"
+        },
+        "icon_size_mobile": {
+          "label": "Dimensione icona su dispositivo mobile"
+        },
+        "circle_color": {
+          "label": "Colore cerchio"
+        },
+        "icon_color": {
+          "label": "Colore icona"
+        },
+        "icon_gap": {
+          "label": "Spazio tra icona e testo su desktop"
+        },
+        "icon_gap_mobile": {
+          "label": "Spazio tra icona e testo su dispositivo mobile"
+        },
+        "header_title": {
+          "content": "Titolo"
+        },
+        "header_description": {
+          "content": "Descrizione"
+        }
+      },
+      "blocks": {
+        "item": {
+          "name": "Elemento",
+          "settings": {
+            "icon": {
+              "label": "Icona",
+              "options__none": {
+                "label": "Nessuna"
+              },
+              "options__truck": {
+                "label": "Furgone"
+              },
+              "options__shield": {
+                "label": "Scudo"
+              },
+              "options__lock": {
+                "label": "Lucchetto"
+              },
+              "options__stethoscope": {
+                "label": "Stetoscopio"
+              },
+              "options__card": {
+                "label": "Carta"
+              },
+              "options__check": {
+                "label": "Spunta"
+              },
+              "options__heart": {
+                "label": "Cuore"
+              },
+              "options__leaf": {
+                "label": "Foglia"
+              }
+            },
+            "icon_image": {
+              "label": "Immagine icona personalizzata",
+              "info": "Sostituisce l'icona sopra"
+            },
+            "title": {
+              "label": "Titolo"
+            },
+            "description": {
+              "label": "Descrizione"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Barra di fiducia"
+      }
     }
   },
   "blocks": {
