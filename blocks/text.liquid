@@ -15,7 +15,7 @@
     assign has_text_color = true
   endif
 -%}
-{%- if block.settings.custom_font_size or has_text_color or block.settings.custom_spacing or block.settings.alignment != 'inherit' -%}
+{%- if block.settings.custom_font_size or has_text_color or block.settings.custom_spacing or block.settings.custom_line_height or block.settings.alignment != 'inherit' -%}
   {%- style -%}
     {%- if block.settings.alignment != 'inherit' %}
       #Text-{{ block.id }}, #Text-{{ block.id }} :is(p, ul, ol) {
@@ -39,6 +39,18 @@
     {%- if has_text_color %}
       #Text-{{ block.id }} :is(p, li, a, strong, em) {
         color: {{ text_color }};
+      }
+    {%- endif %}
+    {%- if block.settings.custom_line_height %}
+      #Text-{{ block.id }},
+      #Text-{{ block.id }} :is(p, ul, ol, li) {
+        line-height: {{ block.settings.line_height_mobile }}px;
+      }
+      @media screen and (min-width: 750px) {
+        #Text-{{ block.id }},
+        #Text-{{ block.id }} :is(p, ul, ol, li) {
+          line-height: {{ block.settings.line_height }}px;
+        }
       }
     {%- endif %}
     {%- if block.settings.custom_font_size %}
@@ -149,6 +161,34 @@
       "default": 15,
       "label": "t:blocks.text.settings.font_size_mobile.label",
       "visible_if": "{{ block.settings.custom_font_size }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_line_height",
+      "default": false,
+      "label": "t:blocks.text.settings.custom_line_height.label"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 26,
+      "label": "t:blocks.text.settings.line_height.label",
+      "visible_if": "{{ block.settings.custom_line_height }}"
+    },
+    {
+      "type": "range",
+      "id": "line_height_mobile",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 24,
+      "label": "t:blocks.text.settings.line_height_mobile.label",
+      "visible_if": "{{ block.settings.custom_line_height }}"
     },
     {
       "type": "header",

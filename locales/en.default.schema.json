@@ -9468,6 +9468,15 @@
         "font_size_mobile": {
           "label": "Font size on mobile"
         },
+        "custom_line_height": {
+          "label": "Use custom line height"
+        },
+        "line_height": {
+          "label": "Line height on desktop"
+        },
+        "line_height_mobile": {
+          "label": "Line height on mobile"
+        },
         "header_spacing": {
           "content": "Spacing"
         },
@@ -9635,6 +9644,15 @@
         },
         "font_size_mobile": {
           "label": "Font size on mobile"
+        },
+        "custom_line_height": {
+          "label": "Use custom line height"
+        },
+        "line_height": {
+          "label": "Line height on desktop"
+        },
+        "line_height_mobile": {
+          "label": "Line height on mobile"
         },
         "header_spacing": {
           "content": "Spacing"

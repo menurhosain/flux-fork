@@ -9469,6 +9469,15 @@
         "font_size_mobile": {
           "label": "Schriftgröße auf Mobilgeräten"
         },
+        "custom_line_height": {
+          "label": "Benutzerdefinierte Zeilenhöhe verwenden"
+        },
+        "line_height": {
+          "label": "Zeilenhöhe (Desktop)"
+        },
+        "line_height_mobile": {
+          "label": "Zeilenhöhe (mobil)"
+        },
         "header_spacing": {
           "content": "Abstand"
         },
@@ -9636,6 +9645,15 @@
         },
         "font_size_mobile": {
           "label": "Schriftgröße auf Mobilgeräten"
+        },
+        "custom_line_height": {
+          "label": "Benutzerdefinierte Zeilenhöhe verwenden"
+        },
+        "line_height": {
+          "label": "Zeilenhöhe (Desktop)"
+        },
+        "line_height_mobile": {
+          "label": "Zeilenhöhe (mobil)"
         },
         "header_spacing": {
           "content": "Abstand"
