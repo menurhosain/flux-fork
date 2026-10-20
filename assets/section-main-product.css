@@ -432,6 +432,7 @@ variant-selects .select__select {
   justify-content: flex-start;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 
