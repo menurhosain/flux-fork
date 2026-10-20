@@ -26,7 +26,7 @@
             "subheading": "Symptom",
             "heading": "Brain fog",
             "heading_tag": "h2",
-            "description": "<p>Plain-language guides to the eight symptoms women ask about most. What is happening, what may help, and when it is worth seeing a clinician.</p>",
+            "description": "<p>Losing words mid-sentence, walking into a room and forgetting why. Unsettling, but usually temporary.</p>",
             "alignment": "center",
             "max_width": 840,
             "margin_bottom": 60,
@@ -93,56 +93,6 @@
             "padding_horizontal_mobile": 52
           },
           "blocks": {
-            "heading_ebLhrq": {
-              "type": "heading",
-              "settings": {
-                "heading": "Brain fog&nbsp;",
-                "heading_size": "medium",
-                "heading_style": "default",
-                "heading_tag": "h3",
-                "enable_link": false,
-                "link": "",
-                "open_new_tab": false,
-                "highlight_option": "underline-hand",
-                "word_animation_color": "#272727",
-                "font_family": "heading",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 52,
-                "font_size_mobile": 40,
-                "custom_line_height": false,
-                "line_height": 60,
-                "line_height_mobile": 48,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 10,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "text_ieea4i": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Losing words mid-sentence, walking into a room and forgetting why. Unsettling, but usually temporary.</p>",
-                "text_style": "body",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 16,
-                "font_size_mobile": 15,
-                "custom_line_height": false,
-                "line_height": 26,
-                "line_height_mobile": 24,
-                "custom_spacing": false,
-                "margin_top": 0,
-                "margin_bottom": 16,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
             "heading_YAnAJa": {
               "type": "heading",
               "settings": {
@@ -165,7 +115,7 @@
                 "line_height": 60,
                 "line_height_mobile": 48,
                 "custom_spacing": true,
-                "margin_top": 40,
+                "margin_top": 0,
                 "margin_bottom": 20,
                 "margin_left": 0,
                 "margin_right": 0
@@ -308,8 +258,6 @@
             }
           },
           "block_order": [
-            "heading_ebLhrq",
-            "text_ieea4i",
             "heading_YAnAJa",
             "text_89QDy6",
             "heading_GBDyVV",
