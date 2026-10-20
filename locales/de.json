@@ -114,6 +114,7 @@
   },
   "products": {
     "product": {
+      "metafield_accordion_empty": "Keine Akkordeon-Einträge für dieses Produkt. Füge Einträge zum Produkt-Metafeld „{{ metafield }}“ hinzu.",
       "add_to_cart": "In den Warenkorb",
       "choose_options": "Schnellansicht",
       "select_variant": "Optionen auswählen",

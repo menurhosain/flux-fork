@@ -1,0 +1,48 @@
+{%- comment -%}
+  Renders one collapsible row from a metaobject entry.
+
+  Accepts:
+  - entry: {Object} Metaobject entry
+  - index: {Number} Row position, used for unique ids
+  - title_key: {String} Metaobject field used as the row title
+  - content_key: {String} Metaobject field used as the row content
+  - block: {Object} The _product-metafield-accordion block
+  - section_id: {String} Parent section id
+{%- endcomment -%}
+{%- liquid
+  assign entry_title = entry[title_key].value | default: entry[title_key]
+  assign entry_content = entry[content_key]
+-%}
+{%- if entry_title != blank and entry_content != blank -%}
+  <div class="metafield-accordion__row product-accordion accordion">
+    <collapsible-row class="product__accordion accordion">
+      <details
+        id="Details-{{ block.id }}-{{ index }}-{{ section_id }}"
+        {% if block.settings.open_first_collapsible_row and index == 1 %}
+          open
+        {% endif %}
+      >
+        <summary
+          class="color-{{ block.settings.color_scheme_1 }} gradient"
+          id="Summary-{{ block.id }}-{{ index }}-{{ section_id }}"
+        >
+          <div class="summary-title">
+            {% render 'icon-accordion', icon: block.settings.icon %}
+            <{{ block.settings.heading_tag }} class="accordion__title {{ block.settings.heading_size }}">
+              {{ entry_title | escape }}
+            </{{ block.settings.heading_tag }}>
+          </div>
+          {% render 'icon-caret' %}
+        </summary>
+        <div
+          class="collapsible__content accordion__content rte"
+          id="CollapsibleAccordion-{{ block.id }}-{{ index }}-{{ section_id }}"
+          role="region"
+          aria-labelledby="Summary-{{ block.id }}-{{ index }}-{{ section_id }}"
+        >
+          {{ entry_content | metafield_tag }}
+        </div>
+      </details>
+    </collapsible-row>
+  </div>
+{%- endif -%}

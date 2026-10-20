@@ -3826,6 +3826,117 @@
     "main-product": {
       "name": "Product information",
       "blocks": {
+        "metafield_accordion": {
+          "name": "Metafield accordion",
+          "settings": {
+            "header_source": {
+              "content": "Source"
+            },
+            "metafield": {
+              "label": "Product metafield",
+              "info": "Namespace and key of a product metafield of type metaobject (single or list), e.g. custom.accordion."
+            },
+            "title_field": {
+              "label": "Title field key"
+            },
+            "content_field": {
+              "label": "Content field key"
+            },
+            "header_style": {
+              "content": "Style"
+            },
+            "header_label": {
+              "content": "Label"
+            },
+            "label_font_size": {
+              "label": "Label font size on desktop"
+            },
+            "label_font_size_mobile": {
+              "label": "Label font size on mobile"
+            },
+            "label_font_weight": {
+              "label": "Label font weight",
+              "options__1": {
+                "label": "Regular"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Semibold"
+              },
+              "options__4": {
+                "label": "Bold"
+              }
+            },
+            "label_color": {
+              "label": "Label text color"
+            },
+            "label_background": {
+              "label": "Label background"
+            },
+            "label_padding_vertical": {
+              "label": "Label vertical padding"
+            },
+            "label_padding_horizontal": {
+              "label": "Label horizontal padding"
+            },
+            "header_content": {
+              "content": "Content"
+            },
+            "content_font_size": {
+              "label": "Content font size on desktop"
+            },
+            "content_font_size_mobile": {
+              "label": "Content font size on mobile"
+            },
+            "content_line_height": {
+              "label": "Content line height"
+            },
+            "content_color": {
+              "label": "Content text color"
+            },
+            "content_background": {
+              "label": "Content background"
+            },
+            "content_padding_vertical": {
+              "label": "Content vertical padding"
+            },
+            "content_padding_horizontal": {
+              "label": "Content horizontal padding"
+            },
+            "header_border": {
+              "content": "Border"
+            },
+            "border_style": {
+              "label": "Border style",
+              "options__1": {
+                "label": "None"
+              },
+              "options__2": {
+                "label": "Lines between rows"
+              },
+              "options__3": {
+                "label": "Boxed rows"
+              }
+            },
+            "border_width": {
+              "label": "Border width"
+            },
+            "border_color": {
+              "label": "Border color"
+            },
+            "border_radius": {
+              "label": "Corner radius"
+            },
+            "row_gap": {
+              "label": "Space between rows"
+            },
+            "content_font_weight": {
+              "label": "Content font weight"
+            }
+          }
+        },
         "spacer": {
           "name": "Separator",
           "settings": {

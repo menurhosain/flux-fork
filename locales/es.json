@@ -114,6 +114,7 @@
   },
   "products": {
     "product": {
+      "metafield_accordion_empty": "No hay entradas de acordeón para este producto. Añade entradas al metacampo del producto \"{{ metafield }}\".",
       "add_to_cart": "Añadir al carrito",
       "choose_options": "Vista rápida",
       "select_variant": "Seleccionar opciones",

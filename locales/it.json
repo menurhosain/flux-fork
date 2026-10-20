@@ -114,6 +114,7 @@
   },
   "products": {
     "product": {
+      "metafield_accordion_empty": "Nessuna voce a fisarmonica per questo prodotto. Aggiungi voci al metacampo prodotto \"{{ metafield }}\".",
       "add_to_cart": "Aggiungi al carrello",
       "choose_options": "Anteprima rapida",
       "select_variant": "Seleziona opzioni",

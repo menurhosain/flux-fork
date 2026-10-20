@@ -339,6 +339,22 @@
             "hide_quick_view": true
           },
           "blocks": {}
+        },
+        "metafield_accordion": {
+          "type": "_product-metafield-accordion",
+          "settings": {
+            "column": "left",
+            "metafield": "custom.accordion",
+            "title_field": "label",
+            "content_field": "content",
+            "heading_size": "medium",
+            "heading_tag": "h4",
+            "icon": "none",
+            "open_first_collapsible_row": false,
+            "margin_top": 10,
+            "color_scheme_1": "option-1",
+            "hide_quick_view": false
+          }
         }
       },
       "block_order": [
@@ -347,6 +363,7 @@
         "spacer",
         "inventory",
         "description",
+        "metafield_accordion",
         "dynamic_card_icons",
         "payment_enable_1",
         "complementary",

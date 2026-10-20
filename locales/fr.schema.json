@@ -3826,6 +3826,117 @@
     "main-product": {
       "name": "Informations sur le produit",
       "blocks": {
+        "metafield_accordion": {
+          "name": "Accordéon de métachamp",
+          "settings": {
+            "header_source": {
+              "content": "Source"
+            },
+            "metafield": {
+              "label": "Métachamp produit",
+              "info": "Espace de noms et clé d’un métachamp produit de type métaobjet (unique ou liste), par ex. custom.accordion."
+            },
+            "title_field": {
+              "label": "Clé du champ titre"
+            },
+            "content_field": {
+              "label": "Clé du champ contenu"
+            },
+            "header_style": {
+              "content": "Style"
+            },
+            "header_label": {
+              "content": "Libellé"
+            },
+            "label_font_size": {
+              "label": "Taille du libellé (ordinateur)"
+            },
+            "label_font_size_mobile": {
+              "label": "Taille du libellé (mobile)"
+            },
+            "label_font_weight": {
+              "label": "Graisse du libellé",
+              "options__1": {
+                "label": "Normal"
+              },
+              "options__2": {
+                "label": "Moyen"
+              },
+              "options__3": {
+                "label": "Demi-gras"
+              },
+              "options__4": {
+                "label": "Gras"
+              }
+            },
+            "label_color": {
+              "label": "Couleur du libellé"
+            },
+            "label_background": {
+              "label": "Arrière-plan du libellé"
+            },
+            "label_padding_vertical": {
+              "label": "Marge intérieure verticale du libellé"
+            },
+            "label_padding_horizontal": {
+              "label": "Marge intérieure horizontale du libellé"
+            },
+            "header_content": {
+              "content": "Contenu"
+            },
+            "content_font_size": {
+              "label": "Taille du contenu (ordinateur)"
+            },
+            "content_font_size_mobile": {
+              "label": "Taille du contenu (mobile)"
+            },
+            "content_line_height": {
+              "label": "Hauteur de ligne du contenu"
+            },
+            "content_color": {
+              "label": "Couleur du contenu"
+            },
+            "content_background": {
+              "label": "Arrière-plan du contenu"
+            },
+            "content_padding_vertical": {
+              "label": "Marge intérieure verticale du contenu"
+            },
+            "content_padding_horizontal": {
+              "label": "Marge intérieure horizontale du contenu"
+            },
+            "header_border": {
+              "content": "Bordure"
+            },
+            "border_style": {
+              "label": "Style de bordure",
+              "options__1": {
+                "label": "Aucune"
+              },
+              "options__2": {
+                "label": "Lignes entre les rangées"
+              },
+              "options__3": {
+                "label": "Rangées encadrées"
+              }
+            },
+            "border_width": {
+              "label": "Épaisseur de bordure"
+            },
+            "border_color": {
+              "label": "Couleur de bordure"
+            },
+            "border_radius": {
+              "label": "Rayon des coins"
+            },
+            "row_gap": {
+              "label": "Espace entre les rangées"
+            },
+            "content_font_weight": {
+              "label": "Graisse du contenu"
+            }
+          }
+        },
         "spacer": {
           "name": "Séparateur",
           "settings": {

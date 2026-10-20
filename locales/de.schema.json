@@ -3826,6 +3826,117 @@
     "main-product": {
       "name": "Produktinformationen",
       "blocks": {
+        "metafield_accordion": {
+          "name": "Metafeld-Akkordeon",
+          "settings": {
+            "header_source": {
+              "content": "Quelle"
+            },
+            "metafield": {
+              "label": "Produkt-Metafeld",
+              "info": "Namespace und Schlüssel eines Produkt-Metafelds vom Typ Metaobjekt (einzeln oder Liste), z. B. custom.accordion."
+            },
+            "title_field": {
+              "label": "Schlüssel des Titelfelds"
+            },
+            "content_field": {
+              "label": "Schlüssel des Inhaltsfelds"
+            },
+            "header_style": {
+              "content": "Stil"
+            },
+            "header_label": {
+              "content": "Beschriftung"
+            },
+            "label_font_size": {
+              "label": "Schriftgröße Beschriftung (Desktop)"
+            },
+            "label_font_size_mobile": {
+              "label": "Schriftgröße Beschriftung (mobil)"
+            },
+            "label_font_weight": {
+              "label": "Schriftstärke Beschriftung",
+              "options__1": {
+                "label": "Normal"
+              },
+              "options__2": {
+                "label": "Mittel"
+              },
+              "options__3": {
+                "label": "Halbfett"
+              },
+              "options__4": {
+                "label": "Fett"
+              }
+            },
+            "label_color": {
+              "label": "Textfarbe Beschriftung"
+            },
+            "label_background": {
+              "label": "Hintergrund Beschriftung"
+            },
+            "label_padding_vertical": {
+              "label": "Vertikaler Innenabstand Beschriftung"
+            },
+            "label_padding_horizontal": {
+              "label": "Horizontaler Innenabstand Beschriftung"
+            },
+            "header_content": {
+              "content": "Inhalt"
+            },
+            "content_font_size": {
+              "label": "Schriftgröße Inhalt (Desktop)"
+            },
+            "content_font_size_mobile": {
+              "label": "Schriftgröße Inhalt (mobil)"
+            },
+            "content_line_height": {
+              "label": "Zeilenhöhe Inhalt"
+            },
+            "content_color": {
+              "label": "Textfarbe Inhalt"
+            },
+            "content_background": {
+              "label": "Hintergrund Inhalt"
+            },
+            "content_padding_vertical": {
+              "label": "Vertikaler Innenabstand Inhalt"
+            },
+            "content_padding_horizontal": {
+              "label": "Horizontaler Innenabstand Inhalt"
+            },
+            "header_border": {
+              "content": "Rahmen"
+            },
+            "border_style": {
+              "label": "Rahmenstil",
+              "options__1": {
+                "label": "Keiner"
+              },
+              "options__2": {
+                "label": "Linien zwischen Zeilen"
+              },
+              "options__3": {
+                "label": "Umrahmte Zeilen"
+              }
+            },
+            "border_width": {
+              "label": "Rahmenbreite"
+            },
+            "border_color": {
+              "label": "Rahmenfarbe"
+            },
+            "border_radius": {
+              "label": "Eckenradius"
+            },
+            "row_gap": {
+              "label": "Abstand zwischen Zeilen"
+            },
+            "content_font_weight": {
+              "label": "Schriftstärke Inhalt"
+            }
+          }
+        },
         "spacer": {
           "name": "Trennzeichen",
           "settings": {

@@ -3826,6 +3826,117 @@
     "main-product": {
       "name": "Informazioni prodotto",
       "blocks": {
+        "metafield_accordion": {
+          "name": "Fisarmonica metacampo",
+          "settings": {
+            "header_source": {
+              "content": "Origine"
+            },
+            "metafield": {
+              "label": "Metacampo prodotto",
+              "info": "Namespace e chiave di un metacampo prodotto di tipo metaoggetto (singolo o elenco), ad es. custom.accordion."
+            },
+            "title_field": {
+              "label": "Chiave campo titolo"
+            },
+            "content_field": {
+              "label": "Chiave campo contenuto"
+            },
+            "header_style": {
+              "content": "Stile"
+            },
+            "header_label": {
+              "content": "Etichetta"
+            },
+            "label_font_size": {
+              "label": "Dimensione etichetta (desktop)"
+            },
+            "label_font_size_mobile": {
+              "label": "Dimensione etichetta (mobile)"
+            },
+            "label_font_weight": {
+              "label": "Spessore etichetta",
+              "options__1": {
+                "label": "Normale"
+              },
+              "options__2": {
+                "label": "Medio"
+              },
+              "options__3": {
+                "label": "Semigrassetto"
+              },
+              "options__4": {
+                "label": "Grassetto"
+              }
+            },
+            "label_color": {
+              "label": "Colore testo etichetta"
+            },
+            "label_background": {
+              "label": "Sfondo etichetta"
+            },
+            "label_padding_vertical": {
+              "label": "Spaziatura interna verticale etichetta"
+            },
+            "label_padding_horizontal": {
+              "label": "Spaziatura interna orizzontale etichetta"
+            },
+            "header_content": {
+              "content": "Contenuto"
+            },
+            "content_font_size": {
+              "label": "Dimensione contenuto (desktop)"
+            },
+            "content_font_size_mobile": {
+              "label": "Dimensione contenuto (mobile)"
+            },
+            "content_line_height": {
+              "label": "Altezza riga contenuto"
+            },
+            "content_color": {
+              "label": "Colore testo contenuto"
+            },
+            "content_background": {
+              "label": "Sfondo contenuto"
+            },
+            "content_padding_vertical": {
+              "label": "Spaziatura interna verticale contenuto"
+            },
+            "content_padding_horizontal": {
+              "label": "Spaziatura interna orizzontale contenuto"
+            },
+            "header_border": {
+              "content": "Bordo"
+            },
+            "border_style": {
+              "label": "Stile bordo",
+              "options__1": {
+                "label": "Nessuno"
+              },
+              "options__2": {
+                "label": "Linee tra le righe"
+              },
+              "options__3": {
+                "label": "Righe incorniciate"
+              }
+            },
+            "border_width": {
+              "label": "Spessore bordo"
+            },
+            "border_color": {
+              "label": "Colore bordo"
+            },
+            "border_radius": {
+              "label": "Raggio angoli"
+            },
+            "row_gap": {
+              "label": "Spazio tra le righe"
+            },
+            "content_font_weight": {
+              "label": "Spessore contenuto"
+            }
+          }
+        },
         "spacer": {
           "name": "Separatore",
           "settings": {

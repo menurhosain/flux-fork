@@ -114,6 +114,7 @@
   },
   "products": {
     "product": {
+      "metafield_accordion_empty": "No accordion entries for this product. Add entries to the product metafield \"{{ metafield }}\".",
       "add_to_cart": "Add to cart",
       "choose_options": "Quick View",
       "select_variant": "Select options",

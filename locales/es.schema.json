@@ -3826,6 +3826,117 @@
     "main-product": {
       "name": "Product information",
       "blocks": {
+        "metafield_accordion": {
+          "name": "Acordeón de metacampo",
+          "settings": {
+            "header_source": {
+              "content": "Origen"
+            },
+            "metafield": {
+              "label": "Metacampo del producto",
+              "info": "Espacio de nombres y clave de un metacampo del producto de tipo metaobjeto (único o lista), p. ej. custom.accordion."
+            },
+            "title_field": {
+              "label": "Clave del campo de título"
+            },
+            "content_field": {
+              "label": "Clave del campo de contenido"
+            },
+            "header_style": {
+              "content": "Estilo"
+            },
+            "header_label": {
+              "content": "Etiqueta"
+            },
+            "label_font_size": {
+              "label": "Tamaño de etiqueta (escritorio)"
+            },
+            "label_font_size_mobile": {
+              "label": "Tamaño de etiqueta (móvil)"
+            },
+            "label_font_weight": {
+              "label": "Grosor de etiqueta",
+              "options__1": {
+                "label": "Normal"
+              },
+              "options__2": {
+                "label": "Medio"
+              },
+              "options__3": {
+                "label": "Seminegrita"
+              },
+              "options__4": {
+                "label": "Negrita"
+              }
+            },
+            "label_color": {
+              "label": "Color de texto de etiqueta"
+            },
+            "label_background": {
+              "label": "Fondo de etiqueta"
+            },
+            "label_padding_vertical": {
+              "label": "Relleno vertical de etiqueta"
+            },
+            "label_padding_horizontal": {
+              "label": "Relleno horizontal de etiqueta"
+            },
+            "header_content": {
+              "content": "Contenido"
+            },
+            "content_font_size": {
+              "label": "Tamaño del contenido (escritorio)"
+            },
+            "content_font_size_mobile": {
+              "label": "Tamaño del contenido (móvil)"
+            },
+            "content_line_height": {
+              "label": "Altura de línea del contenido"
+            },
+            "content_color": {
+              "label": "Color de texto del contenido"
+            },
+            "content_background": {
+              "label": "Fondo del contenido"
+            },
+            "content_padding_vertical": {
+              "label": "Relleno vertical del contenido"
+            },
+            "content_padding_horizontal": {
+              "label": "Relleno horizontal del contenido"
+            },
+            "header_border": {
+              "content": "Borde"
+            },
+            "border_style": {
+              "label": "Estilo de borde",
+              "options__1": {
+                "label": "Ninguno"
+              },
+              "options__2": {
+                "label": "Líneas entre filas"
+              },
+              "options__3": {
+                "label": "Filas enmarcadas"
+              }
+            },
+            "border_width": {
+              "label": "Grosor del borde"
+            },
+            "border_color": {
+              "label": "Color del borde"
+            },
+            "border_radius": {
+              "label": "Radio de esquinas"
+            },
+            "row_gap": {
+              "label": "Espacio entre filas"
+            },
+            "content_font_weight": {
+              "label": "Grosor del contenido"
+            }
+          }
+        },
         "spacer": {
           "name": "Separador",
           "settings": {
