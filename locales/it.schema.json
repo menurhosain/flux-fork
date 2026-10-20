@@ -5236,6 +5236,10 @@
         "font_color": {
           "label": "Colore del testo",
           "info": "Lascia vuoto per usare lo schema di colori"
+        },
+        "section_background_color": {
+          "label": "Colore di sfondo della sezione",
+          "info": "Sostituisce lo sfondo dello schema di colori per l’intera sezione. Lascia vuoto per usare lo schema di colori."
         }
       },
       "blocks": {

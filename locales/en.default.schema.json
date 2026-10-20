@@ -5236,6 +5236,10 @@
         "font_color": {
           "label": "Text color",
           "info": "Leave empty to use the color scheme"
+        },
+        "section_background_color": {
+          "label": "Section background color",
+          "info": "Overrides the color scheme background for the full section. Leave empty to use the color scheme."
         }
       },
       "blocks": {

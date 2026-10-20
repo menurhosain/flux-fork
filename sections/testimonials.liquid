@@ -24,6 +24,12 @@
     }
   }
 
+  {%- if section.settings.section_background_color != blank and section.settings.section_background_color.alpha != 0 %}
+    #TestimonialWrapper-{{ section.id }} {
+      background: {{ section.settings.section_background_color }};
+    }
+  {%- endif %}
+
   #Testimonial-{{ section.id }} .testimonials .rating {
     color: {{ section.settings.rating_stars_color }};
   }
@@ -117,7 +123,7 @@
   endif
 -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient ignore-{{ section.settings.ignore_spacing }}">
+<div id="TestimonialWrapper-{{ section.id }}" class="color-{{ section.settings.color_scheme }} gradient ignore-{{ section.settings.ignore_spacing }}">
   <div class="{% if section.settings.title == blank %} no-heading{% endif %} testimonials-{{ section.settings.testimonials_style }} section-{{ section.id }}-padding {% if section.settings.swipe_on_mobile == false %}swipe-mobile-false{% endif %} margin-spacing-{{ section.settings.margin_spacing }} section-{{ section.id }}-margin">
     <div id="Testimonial-{{ section.id }}"
       class="testimonial-section page-width extract"
@@ -600,6 +606,12 @@
       "id": "color_scheme_1",
       "label": "t:sections.all.colors_box.label",
       "default": "option-1"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "t:sections.testimonials.settings.section_background_color.label",
+      "info": "t:sections.testimonials.settings.section_background_color.info"
     },
     {
       "type": "color",

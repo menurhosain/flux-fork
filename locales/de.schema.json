@@ -5236,6 +5236,10 @@
         "font_color": {
           "label": "Textfarbe",
           "info": "Leer lassen, um das Farbschema zu verwenden"
+        },
+        "section_background_color": {
+          "label": "Hintergrundfarbe des Abschnitts",
+          "info": "Überschreibt den Hintergrund des Farbschemas für den gesamten Abschnitt. Leer lassen, um das Farbschema zu verwenden."
         }
       },
       "blocks": {

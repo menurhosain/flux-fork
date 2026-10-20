@@ -5236,6 +5236,10 @@
         "font_color": {
           "label": "Couleur du texte",
           "info": "Laisser vide pour utiliser le schéma de couleurs"
+        },
+        "section_background_color": {
+          "label": "Couleur d’arrière-plan de la section",
+          "info": "Remplace l’arrière-plan du schéma de couleurs pour toute la section. Laissez vide pour utiliser le schéma de couleurs."
         }
       },
       "blocks": {
