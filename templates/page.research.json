@@ -14,10 +14,964 @@
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
+      },
+      "disabled": true
+    },
+    "blocks_section_research_banner": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_research": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Research tracker",
+            "heading": "What is in development",
+            "heading_tag": "h2",
+            "description": "<p>Menopause treatments moving through trials and approval. Every entry lists its source and the date we checked it, and timing is always uncertain until the FDA decides.</p>",
+            "alignment": "center",
+            "max_width": 840,
+            "margin_bottom": 28,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_research"
+      ],
+      "name": "Research tracker banner",
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 0,
+        "color_scheme": "option-4",
+        "background_color": "",
+        "padding_top": 80,
+        "padding_bottom": 60
+      }
+    },
+    "blocks_section_tracker": {
+      "type": "blocks-section",
+      "name": "Treatments to watch",
+      "blocks": {
+        "section_heading_tracker": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Pipeline",
+            "heading": "Treatments to watch",
+            "heading_tag": "h2",
+            "description": "<p>Hand-picked entries from FDA, ClinicalTrials.gov and company announcements, each with a source and a checked-on date.</p>",
+            "alignment": "center",
+            "max_width": 0,
+            "margin_bottom": 40,
+            "margin_bottom_mobile": 8,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 30,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 13,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "row_tracker_cards": {
+          "type": "row",
+          "name": "t:blocks.row.name",
+          "settings": {
+            "layout": "columns",
+            "columns_desktop": 3,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "equal_height": true,
+            "vertical_alignment": "flex-end",
+            "left_width": 55,
+            "right_max_width": 440,
+            "stack_mobile": true,
+            "column_gap": 20,
+            "row_gap": 12,
+            "column_gap_mobile": 12,
+            "row_gap_mobile": 12,
+            "custom_spacing": true,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "card_fezolinetant": {
+              "type": "container",
+              "name": "t:blocks.container.name",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 8,
+                "max_width": 0,
+                "alignment": "left",
+                "layout": "flex",
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "align_items": "flex-start",
+                "justify_content": "flex-start",
+                "gap": 0,
+                "flex_wrap": false,
+                "border_width": 1,
+                "border_color": "#d6e4f5",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "icon_fezolinetant": {
+                  "type": "icon",
+                  "settings": {
+                    "builtin_icon": "check",
+                    "recolor_icon": true,
+                    "icon_color": "#0066d6",
+                    "icon_size": 22,
+                    "icon_size_mobile": 20,
+                    "background_color": "#e8f1fc",
+                    "width": 44,
+                    "height": 44,
+                    "width_mobile": 40,
+                    "height_mobile": 40,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "left",
+                    "margin_bottom": 14,
+                    "margin_bottom_mobile": 12
+                  },
+                  "blocks": {}
+                },
+                "title_fezolinetant": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.name",
+                  "settings": {
+                    "heading": "Fezolinetant (Veozah)",
+                    "heading_size": "small",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
+                    "highlight_option": "underline-hand",
+                    "word_animation_color": "#272727",
+                    "font_family": "heading",
+                    "alignment": "left",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 22,
+                    "font_size_mobile": 15,
+                    "custom_line_height": false,
+                    "line_height": 60,
+                    "line_height_mobile": 48,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 8,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "text_fezolinetant": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text": "<p>For hot flashes; hormone-free. Astellas. FDA-approved in 2023, on the market now. Source: FDA approval notice.</p>",
+                    "text_style": "body",
+                    "alignment": "left",
+                    "text_color": "#4b5563",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 13,
+                    "custom_line_height": false,
+                    "line_height": 26,
+                    "line_height_mobile": 24,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_fezolinetant",
+                "title_fezolinetant",
+                "text_fezolinetant"
+              ]
+            },
+            "card_elinzanetant": {
+              "type": "container",
+              "name": "t:blocks.container.name",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 8,
+                "max_width": 0,
+                "alignment": "left",
+                "layout": "flex",
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "align_items": "flex-start",
+                "justify_content": "flex-start",
+                "gap": 0,
+                "flex_wrap": false,
+                "border_width": 1,
+                "border_color": "#d6e4f5",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "icon_elinzanetant": {
+                  "type": "icon",
+                  "settings": {
+                    "builtin_icon": "flask",
+                    "recolor_icon": true,
+                    "icon_color": "#0066d6",
+                    "icon_size": 22,
+                    "icon_size_mobile": 20,
+                    "background_color": "#e8f1fc",
+                    "width": 44,
+                    "height": 44,
+                    "width_mobile": 40,
+                    "height_mobile": 40,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "left",
+                    "margin_bottom": 14,
+                    "margin_bottom_mobile": 12
+                  },
+                  "blocks": {}
+                },
+                "title_elinzanetant": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.name",
+                  "settings": {
+                    "heading": "Elinzanetant",
+                    "heading_size": "small",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
+                    "highlight_option": "underline-hand",
+                    "word_animation_color": "#272727",
+                    "font_family": "heading",
+                    "alignment": "left",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 22,
+                    "font_size_mobile": 15,
+                    "custom_line_height": false,
+                    "line_height": 60,
+                    "line_height_mobile": 48,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 8,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "text_elinzanetant": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text": "<p>For hot flashes and sleep disturbance. Bayer. FDA-approved, newly launched. Source: FDA / company announcement.</p>",
+                    "text_style": "body",
+                    "alignment": "left",
+                    "text_color": "#4b5563",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 13,
+                    "custom_line_height": false,
+                    "line_height": 26,
+                    "line_height_mobile": 24,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_elinzanetant",
+                "title_elinzanetant",
+                "text_elinzanetant"
+              ]
+            },
+            "card_next": {
+              "type": "container",
+              "name": "t:blocks.container.name",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 8,
+                "max_width": 0,
+                "alignment": "left",
+                "layout": "flex",
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "align_items": "flex-start",
+                "justify_content": "flex-start",
+                "gap": 0,
+                "flex_wrap": false,
+                "border_width": 1,
+                "border_color": "#d6e4f5",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "icon_next": {
+                  "type": "icon",
+                  "settings": {
+                    "builtin_icon": "sparkle",
+                    "recolor_icon": true,
+                    "icon_color": "#0066d6",
+                    "icon_size": 22,
+                    "icon_size_mobile": 20,
+                    "background_color": "#e8f1fc",
+                    "width": 44,
+                    "height": 44,
+                    "width_mobile": 40,
+                    "height_mobile": 40,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "left",
+                    "margin_bottom": 14,
+                    "margin_bottom_mobile": 12
+                  },
+                  "blocks": {}
+                },
+                "title_next": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.name",
+                  "settings": {
+                    "heading": "Next investigational treatment",
+                    "heading_size": "small",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
+                    "highlight_option": "underline-hand",
+                    "word_animation_color": "#272727",
+                    "font_family": "heading",
+                    "alignment": "left",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 22,
+                    "font_size_mobile": 15,
+                    "custom_line_height": false,
+                    "line_height": 60,
+                    "line_height_mobile": 48,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 8,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "text_next": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text": "<p>Example card: trial phase, expected timing, source and date checked, from ClinicalTrials.gov.</p>",
+                    "text_style": "body",
+                    "alignment": "left",
+                    "text_color": "#4b5563",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 13,
+                    "custom_line_height": false,
+                    "line_height": 26,
+                    "line_height_mobile": 24,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_next",
+                "title_next",
+                "text_next"
+              ]
+            }
+          },
+          "block_order": [
+            "card_fezolinetant",
+            "card_elinzanetant",
+            "card_next"
+          ]
+        },
+        "text_tracker_note": {
+          "type": "text",
+          "name": "t:blocks.text.name",
+          "settings": {
+            "text": "<p>Sample layout. The live tracker is hand-curated from FDA, ClinicalTrials.gov and company announcements, every entry with a source link and a checked-on date. Entries get verified before launch.</p>",
+            "text_style": "body",
+            "alignment": "center",
+            "text_color": "#6b7280",
+            "custom_font_size": true,
+            "font_size": 13,
+            "font_size_mobile": 12,
+            "custom_line_height": false,
+            "line_height": 26,
+            "line_height_mobile": 24,
+            "custom_spacing": true,
+            "margin_top": 4,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        },
+        "email_signup_tracker": {
+          "type": "email-signup",
+          "settings": {
+            "placeholder": "Your email address",
+            "button_label": "Notify me about a topic",
+            "alignment": "center",
+            "max_width": 940,
+            "field_height": 46,
+            "field_height_mobile": 46,
+            "gap": 10,
+            "radius": 4,
+            "margin_top": 8,
+            "margin_bottom": 0,
+            "field_background": "#ffffff",
+            "field_text_color": "#1f2937",
+            "placeholder_color": "#8a94a6",
+            "field_border_color": "#c9dde9",
+            "field_focus_color": "#0066d6",
+            "button_background": "#0066d6",
+            "button_hover_background": "#0052ab",
+            "button_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_tracker",
+        "row_tracker_cards",
+        "text_tracker_note",
+        "email_signup_tracker"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_alignment": "center",
+        "blocks_gap": 20,
+        "blocks_gap_mobile": 16,
+        "color_scheme": "",
+        "background_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "blocks_section_insurance": {
+      "type": "blocks-section",
+      "name": "What insurance commonly covers",
+      "blocks": {
+        "section_heading_insurance": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Insurance",
+            "heading": "What insurance commonly covers",
+            "heading_tag": "h2",
+            "description": "<p>A plain-language guide. \"Commonly\" is never a promise; your plan documents are the only final answer.</p>",
+            "alignment": "center",
+            "max_width": 0,
+            "margin_bottom": 40,
+            "margin_bottom_mobile": 8,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 30,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 13,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "row_insurance_cards": {
+          "type": "row",
+          "name": "t:blocks.row.name",
+          "settings": {
+            "layout": "columns",
+            "columns_desktop": 3,
+            "columns_tablet": 2,
+            "columns_mobile": 1,
+            "equal_height": true,
+            "vertical_alignment": "flex-end",
+            "left_width": 55,
+            "right_max_width": 440,
+            "stack_mobile": true,
+            "column_gap": 20,
+            "row_gap": 12,
+            "column_gap_mobile": 12,
+            "row_gap_mobile": 12,
+            "custom_spacing": true,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "card_covered": {
+              "type": "container",
+              "name": "t:blocks.container.name",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 8,
+                "max_width": 0,
+                "alignment": "left",
+                "layout": "flex",
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "align_items": "flex-start",
+                "justify_content": "flex-start",
+                "gap": 0,
+                "flex_wrap": false,
+                "border_width": 1,
+                "border_color": "#d6e4f5",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "icon_covered": {
+                  "type": "icon",
+                  "settings": {
+                    "builtin_icon": "check",
+                    "recolor_icon": true,
+                    "icon_color": "#0066d6",
+                    "icon_size": 22,
+                    "icon_size_mobile": 20,
+                    "background_color": "#e8f1fc",
+                    "width": 44,
+                    "height": 44,
+                    "width_mobile": 40,
+                    "height_mobile": 40,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "left",
+                    "margin_bottom": 14,
+                    "margin_bottom_mobile": 12
+                  },
+                  "blocks": {}
+                },
+                "title_covered": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.name",
+                  "settings": {
+                    "heading": "Commonly covered",
+                    "heading_size": "small",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
+                    "highlight_option": "underline-hand",
+                    "word_animation_color": "#272727",
+                    "font_family": "heading",
+                    "alignment": "left",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 22,
+                    "font_size_mobile": 15,
+                    "custom_line_height": false,
+                    "line_height": 60,
+                    "line_height_mobile": 48,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 8,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "text_covered": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text": "<p>Annual well-woman visits, many lab tests, and some prescription menopause treatments, depending on your plan's formulary.</p>",
+                    "text_style": "body",
+                    "alignment": "left",
+                    "text_color": "#4b5563",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 13,
+                    "custom_line_height": false,
+                    "line_height": 26,
+                    "line_height_mobile": 24,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_covered",
+                "title_covered",
+                "text_covered"
+              ]
+            },
+            "card_not_covered": {
+              "type": "container",
+              "name": "t:blocks.container.name",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 8,
+                "max_width": 0,
+                "alignment": "left",
+                "layout": "flex",
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "align_items": "flex-start",
+                "justify_content": "flex-start",
+                "gap": 0,
+                "flex_wrap": false,
+                "border_width": 1,
+                "border_color": "#d6e4f5",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "icon_not_covered": {
+                  "type": "icon",
+                  "settings": {
+                    "builtin_icon": "shield",
+                    "recolor_icon": true,
+                    "icon_color": "#0066d6",
+                    "icon_size": 22,
+                    "icon_size_mobile": 20,
+                    "background_color": "#e8f1fc",
+                    "width": 44,
+                    "height": 44,
+                    "width_mobile": 40,
+                    "height_mobile": 40,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "left",
+                    "margin_bottom": 14,
+                    "margin_bottom_mobile": 12
+                  },
+                  "blocks": {}
+                },
+                "title_not_covered": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.name",
+                  "settings": {
+                    "heading": "Often not covered",
+                    "heading_size": "small",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
+                    "highlight_option": "underline-hand",
+                    "word_animation_color": "#272727",
+                    "font_family": "heading",
+                    "alignment": "left",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 22,
+                    "font_size_mobile": 15,
+                    "custom_line_height": false,
+                    "line_height": 60,
+                    "line_height_mobile": 48,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 8,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "text_not_covered": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text": "<p>Supplements, cooling devices and other wellness products. Some may be FSA/HSA eligible, which is different from insurance coverage.</p>",
+                    "text_style": "body",
+                    "alignment": "left",
+                    "text_color": "#4b5563",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 13,
+                    "custom_line_height": false,
+                    "line_height": 26,
+                    "line_height_mobile": 24,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_not_covered",
+                "title_not_covered",
+                "text_not_covered"
+              ]
+            },
+            "card_check_plan": {
+              "type": "container",
+              "name": "t:blocks.container.name",
+              "settings": {
+                "background_color": "#ffffff",
+                "border_radius": 8,
+                "max_width": 0,
+                "alignment": "left",
+                "layout": "flex",
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "align_items": "flex-start",
+                "justify_content": "flex-start",
+                "gap": 0,
+                "flex_wrap": false,
+                "border_width": 1,
+                "border_color": "#d6e4f5",
+                "border_top": true,
+                "border_right": true,
+                "border_bottom": true,
+                "border_left": true,
+                "padding_vertical": 20,
+                "padding_horizontal": 16,
+                "padding_vertical_mobile": 16,
+                "padding_horizontal_mobile": 16
+              },
+              "blocks": {
+                "icon_check_plan": {
+                  "type": "icon",
+                  "settings": {
+                    "builtin_icon": "clipboard",
+                    "recolor_icon": true,
+                    "icon_color": "#0066d6",
+                    "icon_size": 22,
+                    "icon_size_mobile": 20,
+                    "background_color": "#e8f1fc",
+                    "width": 44,
+                    "height": 44,
+                    "width_mobile": 40,
+                    "height_mobile": 40,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "left",
+                    "margin_bottom": 14,
+                    "margin_bottom_mobile": 12
+                  },
+                  "blocks": {}
+                },
+                "title_check_plan": {
+                  "type": "heading",
+                  "name": "t:blocks.heading.name",
+                  "settings": {
+                    "heading": "How to check your plan",
+                    "heading_size": "small",
+                    "heading_style": "default",
+                    "heading_tag": "h3",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
+                    "highlight_option": "underline-hand",
+                    "word_animation_color": "#272727",
+                    "font_family": "heading",
+                    "alignment": "left",
+                    "text_color": "#160081",
+                    "custom_font_size": true,
+                    "font_size": 22,
+                    "font_size_mobile": 15,
+                    "custom_line_height": false,
+                    "line_height": 60,
+                    "line_height_mobile": 48,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 8,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                },
+                "text_check_plan": {
+                  "type": "text",
+                  "name": "t:blocks.text.name",
+                  "settings": {
+                    "text": "<p>Call the number on your card, ask if the specific treatment or visit type is covered, in-network, and what your out-of-pocket cost would be. Get the reference number.</p>",
+                    "text_style": "body",
+                    "alignment": "left",
+                    "text_color": "#4b5563",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 13,
+                    "custom_line_height": false,
+                    "line_height": 26,
+                    "line_height_mobile": 24,
+                    "custom_spacing": true,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_check_plan",
+                "title_check_plan",
+                "text_check_plan"
+              ]
+            }
+          },
+          "block_order": [
+            "card_covered",
+            "card_not_covered",
+            "card_check_plan"
+          ]
+        },
+        "text_insurance_note": {
+          "type": "text",
+          "name": "t:blocks.text.name",
+          "settings": {
+            "text": "<p>This guide says what is commonly or often covered, never what your plan will pay. The AI answers insurance questions the same careful way in a later release.</p>",
+            "text_style": "body",
+            "alignment": "center",
+            "text_color": "#6b7280",
+            "custom_font_size": true,
+            "font_size": 13,
+            "font_size_mobile": 12,
+            "custom_line_height": false,
+            "line_height": 26,
+            "line_height_mobile": 24,
+            "custom_spacing": true,
+            "margin_top": 4,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_insurance",
+        "row_insurance_cards",
+        "text_insurance_note"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_alignment": "center",
+        "blocks_gap": 20,
+        "blocks_gap_mobile": 16,
+        "color_scheme": "option-4",
+        "background_color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "blocks_section_research_banner",
+    "blocks_section_tracker",
+    "blocks_section_insurance"
   ]
 }
