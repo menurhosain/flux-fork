@@ -2097,6 +2097,40 @@
         "padding_bottom": 48
       }
     },
+    "video_background_fFW3YG": {
+      "type": "video-background",
+      "name": "t:sections.video-background.presets.name",
+      "settings": {
+        "caption": "Caption",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "heading": "Video",
+        "heading_size": "large",
+        "heading_tag": "h2",
+        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+        "button_label": "Button label",
+        "link": "",
+        "open_new_tab_1": false,
+        "video_style": "background",
+        "full_width_background": true,
+        "background_height": "medium",
+        "box_align": "middle-center",
+        "box_vertical_align": "middle",
+        "text_align": "center",
+        "ignore_box": false,
+        "content_opacity": 1,
+        "blur": 0,
+        "opacity": 0.5,
+        "color_scheme": "",
+        "color_scheme_1": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "ignore_spacing": true,
+        "background_height_mobile": "small",
+        "margin_spacing": "negative",
+        "margin_top": 0
+      }
+    },
     "blocks_section_how_it_works": {
       "type": "blocks-section",
       "blocks": {
@@ -4424,9 +4458,7 @@
       "block_order": [
         "column_1"
       ],
-      "custom_css": [
-        "h3 {font-size: 24px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "",
         "heading_size": "medium",
@@ -4440,11 +4472,11 @@
         "testimonials_style": "style-2",
         "columns_desktop": 1,
         "enable_desktop_slider": false,
-        "custom_column_heading_size": false,
-        "column_heading_size": 18,
+        "custom_column_heading_size": true,
+        "column_heading_size": 24,
         "column_heading_size_mobile": 16,
         "column_heading_weight": "default",
-        "column_heading_color": "",
+        "column_heading_color": "#ED2121",
         "custom_column_subheading_size": false,
         "column_subheading_size": 14,
         "column_subheading_size_mobile": 13,
@@ -4823,6 +4855,7 @@
     "blocks_section_principles",
     "blocks_section_chosen_stage",
     "trust_bar_PKnhEE",
+    "video_background_fFW3YG",
     "blocks_section_how_it_works",
     "image_banner_with_featured_collection",
     "collection_list",

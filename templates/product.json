@@ -774,9 +774,9 @@
         "collapsible_row_1": {
           "type": "_collapsible-row",
           "settings": {
-            "heading": "Are Fuel products organic?",
+            "heading": "What makes this product special?",
             "icon": "question_mark",
-            "row_content": "<p>Yes, all our products are crafted with organic ingredients, ensuring the highest quality and purity in every bite or scoop.</p>",
+            "row_content": "<p>Our product is designed to deliver quality, value, and convenience to help meet your needs.</p>",
             "page": ""
           },
           "blocks": {}
@@ -784,9 +784,9 @@
         "collapsible_row_2": {
           "type": "_collapsible-row",
           "settings": {
-            "heading": "Are Fuel products high in protein?",
+            "heading": "How do I use this product?",
             "icon": "question_mark",
-            "row_content": "<p>Absolutely! Our vegan offerings are rich in plant-based proteins, carefully formulated to support muscle growth and recovery.</p>",
+            "row_content": "<p>Please follow the instructions provided on the product page or packaging for the best experience.</p>",
             "page": ""
           },
           "blocks": {}
@@ -794,9 +794,9 @@
         "collapsible_row_3": {
           "type": "_collapsible-row",
           "settings": {
-            "heading": "Do you offer a variety of vegan options?",
+            "heading": "What payment methods do you accept?",
             "icon": "question_mark",
-            "row_content": "<p>Certainly! From protein powders to bars, chocolates, and supplements, our diverse range of vegan products caters to all your nutritional needs.</p>",
+            "row_content": "<p>We accept the payment methods available at checkout. You can review your options before completing your order.</p>",
             "page": ""
           },
           "blocks": {}
@@ -804,9 +804,9 @@
         "collapsible_row_4": {
           "type": "_collapsible-row",
           "settings": {
-            "heading": "Are Fuel products suitable for athletes?",
+            "heading": "How long does shipping take?",
             "icon": "question_mark",
-            "row_content": "<p>Absolutely! Our vegan products are designed to provide the essential nutrients and energy levels needed for athletes to perform at their best.</p>",
+            "row_content": "<p>Delivery times vary depending on your location and selected shipping method. Check our shipping information for estimated delivery times.</p>",
             "page": ""
           },
           "blocks": {}
@@ -814,9 +814,39 @@
         "collapsible_row_5": {
           "type": "_collapsible-row",
           "settings": {
-            "heading": "Are there any artificial additives or preservatives in Fuel products?",
+            "heading": "Can I track my order?",
             "icon": "question_mark",
-            "row_content": "<p>No, we pride ourselves on creating clean, wholesome products. You won't find any artificial additives or preservatives in our vegan offerings, ensuring a pure and nourishing experience.</p>",
+            "row_content": "<p>Yes, if tracking is available for your shipment, you will receive tracking details once your order has been dispatched.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "collapsible_row_JxVdhC": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "question_mark",
+            "row_content": "<p>Returns and exchanges are subject to our store's return policy. Please review the policy before requesting a return.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "collapsible_row_E6c8dA": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "How can I contact customer support?",
+            "icon": "question_mark",
+            "row_content": "<p>If you have questions or need assistance, contact our customer support team through the contact page on our website.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "collapsible_row_iURgcw": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "Is this product right for me?",
+            "icon": "question_mark",
+            "row_content": "<p>Review the product description, specifications, ingredients, or other relevant details before purchasing. Contact our team if you need more information.</p>",
             "page": ""
           },
           "blocks": {}
@@ -827,23 +857,26 @@
         "collapsible_row_2",
         "collapsible_row_3",
         "collapsible_row_4",
-        "collapsible_row_5"
+        "collapsible_row_5",
+        "collapsible_row_JxVdhC",
+        "collapsible_row_E6c8dA",
+        "collapsible_row_iURgcw"
       ],
       "settings": {
         "caption": "",
-        "text_style": "caption-with-letter-spacing",
+        "text_style": "subtitle",
         "text_size": "medium",
-        "heading": "faq",
+        "heading": "Frequently Asked Questions",
         "heading_size": "medium",
-        "heading_style": "uppercase",
+        "heading_style": "default",
         "heading_tag": "h2",
         "heading_alignment": "center",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "open_all_collapsible_row": false,
         "color_scheme": "option-1",
-        "color_scheme_1": "option-2",
+        "color_scheme_1": "option-4",
         "padding_top": 48,
-        "padding_bottom": 48,
+        "padding_bottom": 0,
         "ignore_spacing": true,
         "margin_spacing": "negative",
         "margin_top": 0
