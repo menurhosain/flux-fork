@@ -5269,6 +5269,12 @@
         "section_background_color": {
           "label": "Couleur d’arrière-plan de la section",
           "info": "Remplace l’arrière-plan du schéma de couleurs pour toute la section. Laissez vide pour utiliser le schéma de couleurs."
+        },
+        "rating_stars_width": {
+          "label": "Taille des étoiles de notation sur ordinateur"
+        },
+        "rating_stars_width_mobile": {
+          "label": "Taille des étoiles de notation sur mobile"
         }
       },
       "blocks": {
@@ -7759,6 +7765,103 @@
         },
         "padding_horizontal_mobile": {
           "label": "Marge intérieure gauche et droite sur mobile"
+        },
+        "header_layout": {
+          "content": "Mise en page"
+        },
+        "max_width": {
+          "label": "Largeur maximale",
+          "info": "Définir sur 0 pour la pleine largeur."
+        },
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Gauche"
+          },
+          "options__2": {
+            "label": "Centre"
+          },
+          "options__3": {
+            "label": "Droite"
+          }
+        },
+        "layout": {
+          "label": "Affichage",
+          "options__1": {
+            "label": "Empilé"
+          },
+          "options__2": {
+            "label": "Flex"
+          }
+        },
+        "flex_direction": {
+          "label": "Direction sur ordinateur",
+          "options__1": {
+            "label": "Ligne"
+          },
+          "options__2": {
+            "label": "Colonne"
+          },
+          "options__3": {
+            "label": "Ligne inversée"
+          },
+          "options__4": {
+            "label": "Colonne inversée"
+          }
+        },
+        "flex_direction_mobile": {
+          "label": "Direction sur mobile",
+          "options__1": {
+            "label": "Ligne"
+          },
+          "options__2": {
+            "label": "Colonne"
+          },
+          "options__3": {
+            "label": "Ligne inversée"
+          },
+          "options__4": {
+            "label": "Colonne inversée"
+          }
+        },
+        "align_items": {
+          "label": "Aligner les éléments",
+          "options__1": {
+            "label": "Étirer"
+          },
+          "options__2": {
+            "label": "Début"
+          },
+          "options__3": {
+            "label": "Centre"
+          },
+          "options__4": {
+            "label": "Fin"
+          }
+        },
+        "justify_content": {
+          "label": "Justifier le contenu",
+          "options__1": {
+            "label": "Début"
+          },
+          "options__2": {
+            "label": "Centre"
+          },
+          "options__3": {
+            "label": "Fin"
+          },
+          "options__4": {
+            "label": "Espace entre"
+          },
+          "options__5": {
+            "label": "Espace autour"
+          }
+        },
+        "gap": {
+          "label": "Espacement"
+        },
+        "flex_wrap": {
+          "label": "Retour à la ligne"
         }
       }
     },

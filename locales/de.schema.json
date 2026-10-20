@@ -5269,6 +5269,12 @@
         "section_background_color": {
           "label": "Hintergrundfarbe des Abschnitts",
           "info": "Überschreibt den Hintergrund des Farbschemas für den gesamten Abschnitt. Leer lassen, um das Farbschema zu verwenden."
+        },
+        "rating_stars_width": {
+          "label": "Größe der Bewertungssterne auf Desktop"
+        },
+        "rating_stars_width_mobile": {
+          "label": "Größe der Bewertungssterne auf Mobilgeräten"
         }
       },
       "blocks": {
@@ -7759,6 +7765,103 @@
         },
         "padding_horizontal_mobile": {
           "label": "Innenabstand links und rechts (Mobil)"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "max_width": {
+          "label": "Maximale Breite",
+          "info": "Auf 0 setzen für volle Breite."
+        },
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Mitte"
+          },
+          "options__3": {
+            "label": "Rechts"
+          }
+        },
+        "layout": {
+          "label": "Anzeige",
+          "options__1": {
+            "label": "Gestapelt"
+          },
+          "options__2": {
+            "label": "Flex"
+          }
+        },
+        "flex_direction": {
+          "label": "Richtung auf Desktop",
+          "options__1": {
+            "label": "Zeile"
+          },
+          "options__2": {
+            "label": "Spalte"
+          },
+          "options__3": {
+            "label": "Zeile umgekehrt"
+          },
+          "options__4": {
+            "label": "Spalte umgekehrt"
+          }
+        },
+        "flex_direction_mobile": {
+          "label": "Richtung auf Mobilgeräten",
+          "options__1": {
+            "label": "Zeile"
+          },
+          "options__2": {
+            "label": "Spalte"
+          },
+          "options__3": {
+            "label": "Zeile umgekehrt"
+          },
+          "options__4": {
+            "label": "Spalte umgekehrt"
+          }
+        },
+        "align_items": {
+          "label": "Elemente ausrichten",
+          "options__1": {
+            "label": "Strecken"
+          },
+          "options__2": {
+            "label": "Anfang"
+          },
+          "options__3": {
+            "label": "Mitte"
+          },
+          "options__4": {
+            "label": "Ende"
+          }
+        },
+        "justify_content": {
+          "label": "Inhalt verteilen",
+          "options__1": {
+            "label": "Anfang"
+          },
+          "options__2": {
+            "label": "Mitte"
+          },
+          "options__3": {
+            "label": "Ende"
+          },
+          "options__4": {
+            "label": "Abstand zwischen"
+          },
+          "options__5": {
+            "label": "Abstand um"
+          }
+        },
+        "gap": {
+          "label": "Abstand"
+        },
+        "flex_wrap": {
+          "label": "Elemente umbrechen"
         }
       }
     },

@@ -5269,6 +5269,12 @@
         "section_background_color": {
           "label": "Section background color",
           "info": "Overrides the color scheme background for the full section. Leave empty to use the color scheme."
+        },
+        "rating_stars_width": {
+          "label": "Rating stars size on desktop"
+        },
+        "rating_stars_width_mobile": {
+          "label": "Rating stars size on mobile"
         }
       },
       "blocks": {
@@ -7759,6 +7765,103 @@
         },
         "padding_horizontal_mobile": {
           "label": "Left and right padding on mobile"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "max_width": {
+          "label": "Maximum width",
+          "info": "Set to 0 for full width."
+        },
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        },
+        "layout": {
+          "label": "Display",
+          "options__1": {
+            "label": "Stack"
+          },
+          "options__2": {
+            "label": "Flex"
+          }
+        },
+        "flex_direction": {
+          "label": "Direction on desktop",
+          "options__1": {
+            "label": "Row"
+          },
+          "options__2": {
+            "label": "Column"
+          },
+          "options__3": {
+            "label": "Row reversed"
+          },
+          "options__4": {
+            "label": "Column reversed"
+          }
+        },
+        "flex_direction_mobile": {
+          "label": "Direction on mobile",
+          "options__1": {
+            "label": "Row"
+          },
+          "options__2": {
+            "label": "Column"
+          },
+          "options__3": {
+            "label": "Row reversed"
+          },
+          "options__4": {
+            "label": "Column reversed"
+          }
+        },
+        "align_items": {
+          "label": "Align items",
+          "options__1": {
+            "label": "Stretch"
+          },
+          "options__2": {
+            "label": "Start"
+          },
+          "options__3": {
+            "label": "Center"
+          },
+          "options__4": {
+            "label": "End"
+          }
+        },
+        "justify_content": {
+          "label": "Justify content",
+          "options__1": {
+            "label": "Start"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "End"
+          },
+          "options__4": {
+            "label": "Space between"
+          },
+          "options__5": {
+            "label": "Space around"
+          }
+        },
+        "gap": {
+          "label": "Gap"
+        },
+        "flex_wrap": {
+          "label": "Wrap items"
         }
       }
     },

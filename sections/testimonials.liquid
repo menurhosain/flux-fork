@@ -34,6 +34,15 @@
     color: {{ section.settings.rating_stars_color }};
   }
 
+  #Testimonial-{{ section.id }} .testimonials svg.five-stars {
+    width: {{ section.settings.rating_stars_width_mobile }}px;
+  }
+  @media screen and (min-width: 750px) {
+    #Testimonial-{{ section.id }} .testimonials svg.five-stars {
+      width: {{ section.settings.rating_stars_width }}px;
+    }
+  }
+
   {%- if section.settings.column_background_color != blank %}
     {%- if section.settings.testimonials_style == 'style-2' %}
       #Testimonial-{{ section.id }} .testimonials.content-container .grid-item.left {
@@ -624,6 +633,26 @@
       "id": "rating_stars_color",
       "label": "t:sections.testimonials.settings.rating_stars_color.label",
       "default": "#1D1D1D"
+    },
+    {
+      "type": "range",
+      "id": "rating_stars_width",
+      "min": 40,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "default": 70,
+      "label": "t:sections.testimonials.settings.rating_stars_width.label"
+    },
+    {
+      "type": "range",
+      "id": "rating_stars_width_mobile",
+      "min": 40,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "default": 70,
+      "label": "t:sections.testimonials.settings.rating_stars_width_mobile.label"
     },
     {
       "type": "header",

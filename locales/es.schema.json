@@ -5269,6 +5269,12 @@
         "section_background_color": {
           "label": "Color de fondo de la sección",
           "info": "Reemplaza el fondo del esquema de colores para toda la sección. Déjalo vacío para usar el esquema de colores."
+        },
+        "rating_stars_width": {
+          "label": "Tamaño de las estrellas de valoración en escritorio"
+        },
+        "rating_stars_width_mobile": {
+          "label": "Tamaño de las estrellas de valoración en móvil"
         }
       },
       "blocks": {
@@ -7759,6 +7765,103 @@
         },
         "padding_horizontal_mobile": {
           "label": "Relleno izquierdo y derecho en móvil"
+        },
+        "header_layout": {
+          "content": "Diseño"
+        },
+        "max_width": {
+          "label": "Ancho máximo",
+          "info": "Usa 0 para ancho completo."
+        },
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "layout": {
+          "label": "Visualización",
+          "options__1": {
+            "label": "Apilado"
+          },
+          "options__2": {
+            "label": "Flex"
+          }
+        },
+        "flex_direction": {
+          "label": "Dirección en escritorio",
+          "options__1": {
+            "label": "Fila"
+          },
+          "options__2": {
+            "label": "Columna"
+          },
+          "options__3": {
+            "label": "Fila invertida"
+          },
+          "options__4": {
+            "label": "Columna invertida"
+          }
+        },
+        "flex_direction_mobile": {
+          "label": "Dirección en móvil",
+          "options__1": {
+            "label": "Fila"
+          },
+          "options__2": {
+            "label": "Columna"
+          },
+          "options__3": {
+            "label": "Fila invertida"
+          },
+          "options__4": {
+            "label": "Columna invertida"
+          }
+        },
+        "align_items": {
+          "label": "Alinear elementos",
+          "options__1": {
+            "label": "Estirar"
+          },
+          "options__2": {
+            "label": "Inicio"
+          },
+          "options__3": {
+            "label": "Centro"
+          },
+          "options__4": {
+            "label": "Fin"
+          }
+        },
+        "justify_content": {
+          "label": "Justificar contenido",
+          "options__1": {
+            "label": "Inicio"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Fin"
+          },
+          "options__4": {
+            "label": "Espacio entre"
+          },
+          "options__5": {
+            "label": "Espacio alrededor"
+          }
+        },
+        "gap": {
+          "label": "Espacio"
+        },
+        "flex_wrap": {
+          "label": "Ajustar elementos"
         }
       }
     },
