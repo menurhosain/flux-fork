@@ -1904,7 +1904,7 @@
             "shelf_card_2": {
               "type": "product-card",
               "settings": {
-                "product": "fiber-gdx",
+                "product": "bonafide-relizen",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -2079,8 +2079,8 @@
         "circle_size_mobile": 56,
         "icon_size": 40,
         "icon_size_mobile": 28,
-        "circle_color": "#ffffff",
-        "icon_color": "#2152d9",
+        "circle_color": "#0261D1",
+        "icon_color": "#FFFFFF",
         "icon_gap": 24,
         "icon_gap_mobile": 16,
         "title_size": 18,
@@ -2130,60 +2130,6 @@
         "background_height_mobile": "small",
         "margin_spacing": "negative",
         "margin_top": 0
-      }
-    },
-    "blocks_section_xpmGQE": {
-      "type": "blocks-section",
-      "blocks": {
-        "section_heading_ctr9Xi": {
-          "type": "section-heading",
-          "settings": {
-            "subheading": "Testimonials",
-            "heading": "Customer Reviews",
-            "heading_tag": "h2",
-            "description": "",
-            "alignment": "center",
-            "margin_bottom": 0,
-            "margin_bottom_mobile": 0,
-            "gap_subheading": 16,
-            "gap_subheading_mobile": 12,
-            "gap_heading": 16,
-            "gap_heading_mobile": 12,
-            "subheading_size": 15,
-            "subheading_size_mobile": 12,
-            "subheading_color": "#0261d1",
-            "subheading_weight": "600",
-            "subheading_uppercase": true,
-            "subheading_lines": true,
-            "subheading_line_width": 80,
-            "subheading_line_color": "#cbd8e7",
-            "heading_size": 56,
-            "heading_size_mobile": 34,
-            "heading_color": "#160081",
-            "heading_weight": "600",
-            "heading_max_width": 0,
-            "heading_font": "heading",
-            "description_size": 16,
-            "description_size_mobile": 15,
-            "description_color": "",
-            "description_weight": "default"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "section_heading_ctr9Xi"
-      ],
-      "name": "t:sections.blocks-section.presets.blank_name",
-      "settings": {
-        "full_width": false,
-        "content_alignment": "left",
-        "blocks_gap": 0,
-        "blocks_gap_mobile": 32,
-        "color_scheme": "",
-        "background_color": "#FFFFFF",
-        "padding_top": 60,
-        "padding_bottom": 0
       }
     },
     "blocks_section_how_it_works": {
@@ -4493,6 +4439,60 @@
         "padding_bottom": 80
       }
     },
+    "blocks_section_xpmGQE": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_ctr9Xi": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Testimonials",
+            "heading": "Customer Reviews",
+            "heading_tag": "h2",
+            "description": "",
+            "alignment": "center",
+            "margin_bottom": 0,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_ctr9Xi"
+      ],
+      "name": "Testimonial Title",
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 32,
+        "color_scheme": "",
+        "background_color": "#FFFFFF",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
     "testimonials": {
       "type": "testimonials",
       "blocks": {
@@ -4590,21 +4590,21 @@
             "gap_heading_mobile": 12,
             "subheading_size": 15,
             "subheading_size_mobile": 12,
-            "subheading_color": "#0261d1",
+            "subheading_color": "#FFFFFF",
             "subheading_weight": "600",
             "subheading_uppercase": true,
             "subheading_lines": true,
             "subheading_line_width": 80,
-            "subheading_line_color": "#cbd8e7",
+            "subheading_line_color": "#4769EF",
             "heading_size": 56,
             "heading_size_mobile": 34,
-            "heading_color": "#160081",
+            "heading_color": "#FFFFFF",
             "heading_weight": "600",
             "heading_max_width": 0,
             "heading_font": "heading",
             "description_size": 16,
             "description_size_mobile": 15,
-            "description_color": "",
+            "description_color": "#EDE5E5",
             "description_weight": "default"
           },
           "blocks": {}
@@ -4623,13 +4623,13 @@
             "margin_top": 12,
             "margin_bottom": 0,
             "field_background": "#ffffff",
-            "field_text_color": "#1f2937",
+            "field_text_color": "#090D13",
             "placeholder_color": "#8a94a6",
             "field_border_color": "#c9dde9",
             "field_focus_color": "#0066d6",
-            "button_background": "#0066d6",
+            "button_background": "#FFFFFF",
             "button_hover_background": "#0052ab",
-            "button_text_color": "#ffffff"
+            "button_text_color": "#0261D1"
           },
           "blocks": {}
         }
@@ -4638,15 +4638,70 @@
         "section_heading_D9dLDd",
         "email_signup_newsletter"
       ],
+      "name": "Newsletter",
       "settings": {
         "full_width": false,
-        "content_alignment": "right",
+        "content_alignment": "center",
         "blocks_gap": 12,
         "blocks_gap_mobile": 8,
         "color_scheme": "option-1",
-        "background_color": "#EAF2FD",
+        "background_color": "#0261D1",
         "padding_top": 80,
         "padding_bottom": 80
+      }
+    },
+    "blocks_section_NpHGgG": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_GbAXhc": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Healthy Tips",
+            "heading": "Latest News & Updates",
+            "heading_tag": "h2",
+            "description": "",
+            "alignment": "center",
+            "margin_bottom": 0,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_GbAXhc"
+      ],
+      "name": "Testimonial Title",
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 32,
+        "color_scheme": "",
+        "background_color": "#FFFFFF",
+        "padding_top": 40,
+        "padding_bottom": 0
       }
     },
     "featured_blog": {
@@ -4655,7 +4710,7 @@
         "caption": "",
         "text_style": "caption-with-letter-spacing",
         "text_size": "medium",
-        "heading": "Featured Blog",
+        "heading": "",
         "heading_size": "medium",
         "heading_style": "default",
         "heading_tag": "h2",
@@ -4926,7 +4981,6 @@
     "blocks_section_chosen_stage",
     "trust_bar_PKnhEE",
     "video_background_fFW3YG",
-    "blocks_section_xpmGQE",
     "blocks_section_how_it_works",
     "image_banner_with_featured_collection",
     "collection_list",
@@ -4935,8 +4989,10 @@
     "image_with_text",
     "rich_text_wellness",
     "blocks_section_experience",
+    "blocks_section_xpmGQE",
     "testimonials",
     "blocks_section_newsletter",
+    "blocks_section_NpHGgG",
     "featured_blog",
     "image_banner"
   ]
