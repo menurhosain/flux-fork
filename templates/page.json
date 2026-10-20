@@ -20,34 +20,34 @@
     "blocks_section_BpXkcP": {
       "type": "blocks-section",
       "blocks": {
-        "section_heading_rFYLAQ": {
+        "section_heading_XgFQDd": {
           "type": "section-heading",
-          "name": "t:blocks.section-heading.name",
           "settings": {
-            "subheading": "",
-            "heading": "&nbsp;Start with what you are feeling&nbsp;",
+            "subheading": "Symptom guides",
+            "heading": "What are you dealing with?",
             "heading_tag": "h2",
-            "description": "<p>Pick the symptom that brought you here. Each guide is plain-language, evidence-based and ends with next steps, not a sales pitch.</p>",
+            "description": "<p>Plain-language guides to the eight symptoms women ask about most. What is happening, what may help, and when it is worth seeing a clinician.</p>",
             "alignment": "center",
-            "max_width": 700,
-            "margin_top": 0,
-            "margin_top_mobile": 0,
-            "margin_bottom": 40,
+            "max_width": 840,
+            "margin_bottom": 60,
             "margin_bottom_mobile": 0,
-            "gap_subheading": 12,
-            "gap_subheading_mobile": 8,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
             "gap_heading": 16,
             "gap_heading_mobile": 12,
-            "subheading_size": 13,
+            "subheading_size": 15,
             "subheading_size_mobile": 12,
-            "subheading_color": "",
-            "subheading_weight": "default",
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
             "subheading_uppercase": true,
-            "heading_size": 52,
-            "heading_size_mobile": 30,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
             "heading_color": "#160081",
-            "heading_weight": "700",
-            "heading_max_width": 500,
+            "heading_weight": "600",
+            "heading_max_width": 0,
             "heading_font": "heading",
             "description_size": 16,
             "description_size_mobile": 15,
@@ -55,8 +55,27 @@
             "description_weight": "default"
           },
           "blocks": {}
-        },
-        "row_9Jxrbr": {
+        }
+      },
+      "block_order": [
+        "section_heading_XgFQDd"
+      ],
+      "name": "t:sections.blocks-section.presets.blank_name",
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 0,
+        "color_scheme": "option-4",
+        "background_color": "",
+        "padding_top": 80,
+        "padding_bottom": 12
+      }
+    },
+    "blocks_section_yQNeH7": {
+      "type": "blocks-section",
+      "blocks": {
+        "row_QnY88z": {
           "type": "row",
           "name": "t:blocks.row.name",
           "settings": {
@@ -74,11 +93,11 @@
             "column_gap_mobile": 16,
             "row_gap_mobile": 16,
             "custom_spacing": true,
-            "margin_top": 60,
+            "margin_top": 0,
             "margin_bottom": 0
           },
           "blocks": {
-            "container_mBwBMV": {
+            "container_xYwKPg": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -96,13 +115,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_mCjN9C": {
+                "icon_ALqzHz": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/termo.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_FpMQzw": {
                   "type": "heading",
                   "settings": {
                     "heading": "Hot flashes",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "rgba(0,0,0,0)",
                     "font_family": "heading",
@@ -111,9 +158,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -122,7 +169,7 @@
                   },
                   "blocks": {}
                 },
-                "text_QMxM6y": {
+                "text_HA79CE": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Sudden heat, flushing and sweating, day or night.</p>",
@@ -142,14 +189,67 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_wLnQmt": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/hot-flashes",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_mCjN9C",
-                "text_QMxM6y"
+                "icon_ALqzHz",
+                "heading_FpMQzw",
+                "text_HA79CE",
+                "button_wLnQmt"
               ]
             },
-            "container_jTWCBy": {
+            "container_HTqLCc": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -167,13 +267,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_WyAyWM": {
+                "icon_LNhQ38": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/moon.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_w8mmyV": {
                   "type": "heading",
                   "settings": {
                     "heading": "Night sweats",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#272727",
                     "font_family": "heading",
@@ -182,9 +310,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -193,7 +321,7 @@
                   },
                   "blocks": {}
                 },
-                "text_3kdYdD": {
+                "text_8Rkcbe": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Waking up overheated, and the broken sleep that follows.</p>",
@@ -213,14 +341,67 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_XBhkkV": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/night-sweats",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_WyAyWM",
-                "text_3kdYdD"
+                "icon_LNhQ38",
+                "heading_w8mmyV",
+                "text_8Rkcbe",
+                "button_XBhkkV"
               ]
             },
-            "container_apKeBe": {
+            "container_YCehFJ": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -238,13 +419,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_dbQAr6": {
+                "icon_4DwqaG": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/p-date.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_nEK8mz": {
                   "type": "heading",
                   "settings": {
                     "heading": "Irregular periods",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#272727",
                     "font_family": "heading",
@@ -253,9 +462,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -264,7 +473,7 @@
                   },
                   "blocks": {}
                 },
-                "text_fFkAmn": {
+                "text_tjMPH7": {
                   "type": "text",
                   "settings": {
                     "text": "<p>A cycle that keeps changing, and what is normal.</p>",
@@ -284,14 +493,67 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_itcEFM": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/irregular-periods",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_dbQAr6",
-                "text_fFkAmn"
+                "icon_4DwqaG",
+                "heading_nEK8mz",
+                "text_tjMPH7",
+                "button_itcEFM"
               ]
             },
-            "container_FchenY": {
+            "container_hXKiMM": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -309,13 +571,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_7U8xcL": {
+                "icon_M6mKkf": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/sleep.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_cPmRnH": {
                   "type": "heading",
                   "settings": {
                     "heading": "Sleep",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#272727",
                     "font_family": "heading",
@@ -324,9 +614,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -335,7 +625,7 @@
                   },
                   "blocks": {}
                 },
-                "text_wQW4pX": {
+                "text_kb67mM": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Trouble falling asleep, staying asleep, or both.</p>",
@@ -355,14 +645,67 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_zxAEzV": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/sleep",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_7U8xcL",
-                "text_wQW4pX"
+                "icon_M6mKkf",
+                "heading_cPmRnH",
+                "text_kb67mM",
+                "button_zxAEzV"
               ]
             },
-            "container_MU7MQ3": {
+            "container_fjqYif": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -380,13 +723,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_mfq7qn": {
+                "icon_dGzANJ": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/mood.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_6Gjw79": {
                   "type": "heading",
                   "settings": {
                     "heading": "Mood",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#272727",
                     "font_family": "heading",
@@ -395,9 +766,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -406,7 +777,7 @@
                   },
                   "blocks": {}
                 },
-                "text_y7bkkB": {
+                "text_Kd8UCT": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Irritability, anxiety and low days that feel new.</p>",
@@ -426,14 +797,67 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_7YrJm6": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/mood",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_mfq7qn",
-                "text_y7bkkB"
+                "icon_dGzANJ",
+                "heading_6Gjw79",
+                "text_Kd8UCT",
+                "button_7YrJm6"
               ]
             },
-            "container_Dnwbpy": {
+            "container_iLbMDt": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -451,13 +875,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_kBzpUh": {
+                "icon_E4Unnq": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/brain.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_Q4b9Xq": {
                   "type": "heading",
                   "settings": {
                     "heading": "Brain fog",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#272727",
                     "font_family": "heading",
@@ -466,9 +918,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -477,7 +929,7 @@
                   },
                   "blocks": {}
                 },
-                "text_niaAEz": {
+                "text_Pj9KkJ": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Words, names and focus slipping more than usual.</p>",
@@ -497,14 +949,67 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_xQHGRt": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/brain-fog",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_kBzpUh",
-                "text_niaAEz"
+                "icon_E4Unnq",
+                "heading_Q4b9Xq",
+                "text_Pj9KkJ",
+                "button_xQHGRt"
               ]
             },
-            "container_M8wmXC": {
+            "container_Pc7GVT": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -522,13 +1027,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_3e8hGR": {
+                "icon_QHkaAK": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/battery.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_NFc9QU": {
                   "type": "heading",
                   "settings": {
                     "heading": "Fatigue",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#272727",
                     "font_family": "heading",
@@ -537,9 +1070,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -548,7 +1081,7 @@
                   },
                   "blocks": {}
                 },
-                "text_tqrG4A": {
+                "text_HcAK8N": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Energy that runs out earlier than it used to.</p>",
@@ -568,14 +1101,67 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_TRFg9W": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/fatigue",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_3e8hGR",
-                "text_tqrG4A"
+                "icon_QHkaAK",
+                "heading_NFc9QU",
+                "text_HcAK8N",
+                "button_TRFg9W"
               ]
             },
-            "container_wrALUB": {
+            "container_zXc78b": {
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
@@ -593,13 +1179,41 @@
                 "padding_horizontal_mobile": 20
               },
               "blocks": {
-                "heading_W7RPJx": {
+                "icon_wfE8ky": {
+                  "type": "icon",
+                  "name": "t:blocks.icon.name",
+                  "settings": {
+                    "builtin_icon": "heart_hand",
+                    "icon": "shopify://shop_images/waist.svg",
+                    "recolor_icon": true,
+                    "icon_color": "#2152d9",
+                    "icon_size": 30,
+                    "icon_size_mobile": 24,
+                    "background_color": "#eaf2fd",
+                    "width": 70,
+                    "height": 70,
+                    "width_mobile": 50,
+                    "height_mobile": 50,
+                    "shape": "circle",
+                    "border_radius": 16,
+                    "border_width": 0,
+                    "border_color": "#d9d6ee",
+                    "alignment": "inherit",
+                    "margin_bottom": 20,
+                    "margin_bottom_mobile": 10
+                  },
+                  "blocks": {}
+                },
+                "heading_39mzQP": {
                   "type": "heading",
                   "settings": {
                     "heading": "Weight",
                     "heading_size": "large",
                     "heading_style": "default",
                     "heading_tag": "h4",
+                    "enable_link": false,
+                    "link": "",
+                    "open_new_tab": false,
                     "highlight_option": "underline-hand",
                     "word_animation_color": "#272727",
                     "font_family": "heading",
@@ -608,9 +1222,9 @@
                     "custom_font_size": true,
                     "font_size": 24,
                     "font_size_mobile": 20,
-                    "custom_line_height": false,
-                    "line_height": 60,
-                    "line_height_mobile": 48,
+                    "custom_line_height": true,
+                    "line_height": 40,
+                    "line_height_mobile": 34,
                     "custom_spacing": true,
                     "margin_top": 0,
                     "margin_bottom": 10,
@@ -619,7 +1233,7 @@
                   },
                   "blocks": {}
                 },
-                "text_7fi6KY": {
+                "text_UjiTgw": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Changes around the middle that resist old habits.</p>",
@@ -639,29 +1253,81 @@
                     "margin_right": 0
                   },
                   "blocks": {}
+                },
+                "button_8n8tR9": {
+                  "type": "button",
+                  "name": "t:blocks.button.name",
+                  "settings": {
+                    "button_label": "Read the guide",
+                    "button_link": "shopify://pages/weight",
+                    "apply_link_to_image": false,
+                    "open_new_tab_1": false,
+                    "button_style_secondary": false,
+                    "link_style": false,
+                    "underline_color": "",
+                    "underline_thickness": 2,
+                    "text_color": "#0261d1",
+                    "background_color": "rgba(0,0,0,0)",
+                    "hover_effect": "none",
+                    "sweep_color": "",
+                    "hover_duration": 300,
+                    "hover_text_color": "#160081",
+                    "hover_background_color": "",
+                    "hover_border_color": "",
+                    "hover_icon_color": "#160081",
+                    "hover_underline_color": "",
+                    "custom_font_size": true,
+                    "font_size": 16,
+                    "font_size_mobile": 16,
+                    "font_weight": "600",
+                    "custom_letter_spacing": false,
+                    "letter_spacing": 0,
+                    "custom_border_radius": false,
+                    "border_radius": 6,
+                    "border_width": 0,
+                    "border_color": "",
+                    "custom_padding": true,
+                    "padding_vertical": 0,
+                    "padding_horizontal": 0,
+                    "padding_vertical_mobile": 0,
+                    "padding_horizontal_mobile": 0,
+                    "custom_margin": true,
+                    "margin_top": 10,
+                    "margin_bottom": 0,
+                    "margin_left": 0,
+                    "margin_right": 0,
+                    "icon": "shopify://shop_images/arrow-icon_73c7b25a-7e82-4f54-b989-6bedd2cb1a16.svg",
+                    "icon_size": 16,
+                    "icon_position": "last",
+                    "icon_spacing": 8,
+                    "recolor_icon": true,
+                    "icon_color": "#0261d1"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "heading_W7RPJx",
-                "text_7fi6KY"
+                "icon_wfE8ky",
+                "heading_39mzQP",
+                "text_UjiTgw",
+                "button_8n8tR9"
               ]
             }
           },
           "block_order": [
-            "container_mBwBMV",
-            "container_jTWCBy",
-            "container_apKeBe",
-            "container_FchenY",
-            "container_MU7MQ3",
-            "container_Dnwbpy",
-            "container_M8wmXC",
-            "container_wrALUB"
+            "container_xYwKPg",
+            "container_HTqLCc",
+            "container_YCehFJ",
+            "container_hXKiMM",
+            "container_fjqYif",
+            "container_iLbMDt",
+            "container_Pc7GVT",
+            "container_zXc78b"
           ]
         }
       },
       "block_order": [
-        "section_heading_rFYLAQ",
-        "row_9Jxrbr"
+        "row_QnY88z"
       ],
       "name": "t:sections.blocks-section.presets.blank_name",
       "settings": {
@@ -671,7 +1337,7 @@
         "blocks_gap_mobile": 0,
         "color_scheme": "",
         "background_color": "",
-        "padding_top": 80,
+        "padding_top": 8,
         "padding_bottom": 100
       }
     },
@@ -915,6 +1581,7 @@
   "order": [
     "main",
     "blocks_section_BpXkcP",
+    "blocks_section_yQNeH7",
     "multicolumn_HQ9PBm"
   ]
 }
