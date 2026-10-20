@@ -2182,7 +2182,7 @@
         "blocks_gap_mobile": 32,
         "color_scheme": "",
         "background_color": "#FFFFFF",
-        "padding_top": 0,
+        "padding_top": 60,
         "padding_bottom": 0
       }
     },
@@ -4508,10 +4508,24 @@
             "product": ""
           },
           "blocks": {}
+        },
+        "testimonial_EgMCaH": {
+          "type": "_testimonial",
+          "settings": {
+            "rating": true,
+            "rating_stars": "4-star",
+            "text": "<h2><em>Holistic Health for Every Chapter: Supporting Women Through Life’s Transitions\"</em> is an inspiring and insightful piece that beautifully captures the essence of women’s wellness across different stages of life. The article emphasizes that health is not just physical—it’s a balance of emotional, mental, and social well‑being.<br/><br/></h2>",
+            "title": "Elena Karim",
+            "title_one": "",
+            "hide_image": true,
+            "product": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "column_1"
+        "column_1",
+        "testimonial_EgMCaH"
       ],
       "custom_css": [],
       "settings": {
@@ -4526,12 +4540,12 @@
         "open_new_tab_1": false,
         "testimonials_style": "style-2",
         "columns_desktop": 1,
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "custom_column_heading_size": true,
         "column_heading_size": 24,
         "column_heading_size_mobile": 16,
         "column_heading_weight": "default",
-        "column_heading_color": "#ed2121",
+        "column_heading_color": "#4769EF",
         "custom_column_subheading_size": false,
         "column_subheading_size": 14,
         "column_subheading_size_mobile": 13,
@@ -4548,12 +4562,12 @@
         "column_background_color": "#FFFFFF",
         "rating_stars_color": "#ca7b30",
         "padding_top": 0,
-        "padding_bottom": 20,
+        "padding_bottom": 0,
         "ignore_spacing": true,
         "margin_spacing": "negative",
         "margin_top": 0,
         "swipe_on_mobile": true,
-        "disable_arrow_mobile": true
+        "disable_arrow_mobile": false
       }
     },
     "blocks_section_newsletter": {
@@ -4567,7 +4581,7 @@
             "heading_tag": "h2",
             "description": "<p>Real answers about perimenopause and menopause. No scare tactics, no daily drip. Unsubscribe any time.</p>",
             "alignment": "center",
-            "max_width": 840,
+            "max_width": 750,
             "margin_bottom": 32,
             "margin_bottom_mobile": 0,
             "gap_subheading": 16,
@@ -4601,7 +4615,7 @@
             "placeholder": "Your email address",
             "button_label": "Join",
             "alignment": "center",
-            "max_width": 660,
+            "max_width": 520,
             "field_height": 46,
             "field_height_mobile": 46,
             "gap": 10,
