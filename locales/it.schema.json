@@ -996,7 +996,8 @@
         "label": "Ignora lo spazio tra le sezioni del modello"
       },
       "disable_arrow_mobile": {
-        "label": "Nascondi frecce dello slider"
+        "label": "Nascondi frecce dello slider su dispositivi mobili e tablet",
+        "info": "Le frecce sono sempre visibili su desktop. Sugli schermi più piccoli si scorre con il dito."
       },
       "animate_slider": {
         "label": "Anima l'immagine"
@@ -5275,6 +5276,44 @@
         },
         "rating_stars_width_mobile": {
           "label": "Dimensione stelle di valutazione su dispositivi mobili"
+        },
+        "arrow_position": {
+          "label": "Posizione frecce",
+          "options__1": {
+            "label": "Sopra le slide, a sinistra"
+          },
+          "options__2": {
+            "label": "A sinistra e a destra delle slide"
+          },
+          "options__3": {
+            "label": "Sopra le slide, a destra"
+          },
+          "options__4": {
+            "label": "Sotto le slide, a sinistra"
+          },
+          "options__5": {
+            "label": "Sotto le slide, a destra"
+          }
+        },
+        "header_arrows": {
+          "content": "Frecce dello slider"
+        },
+        "custom_arrows": {
+          "label": "Stile frecce personalizzato"
+        },
+        "arrow_icon_size": {
+          "label": "Dimensione freccia"
+        },
+        "arrow_color": {
+          "label": "Colore freccia",
+          "info": "Lascia vuoto per usare lo schema di colori."
+        },
+        "arrow_button_size": {
+          "label": "Dimensione cerchio"
+        },
+        "arrow_background": {
+          "label": "Colore cerchio",
+          "info": "Lascia vuoto per nessun cerchio."
         }
       },
       "blocks": {

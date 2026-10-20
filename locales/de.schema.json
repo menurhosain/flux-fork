@@ -996,7 +996,8 @@
         "label": "Abstand zwischen Vorlagenabschnitten ignorieren"
       },
       "disable_arrow_mobile": {
-        "label": "Schaltflächen für den Schieberegler ausblenden"
+        "label": "Slider-Pfeile auf Mobilgeräten und Tablets ausblenden",
+        "info": "Auf dem Desktop werden die Pfeile immer angezeigt. Auf kleineren Bildschirmen wird stattdessen gewischt."
       },
       "animate_slider": {
         "label": "Bild animieren"
@@ -5275,6 +5276,44 @@
         },
         "rating_stars_width_mobile": {
           "label": "Größe der Bewertungssterne auf Mobilgeräten"
+        },
+        "arrow_position": {
+          "label": "Pfeilposition",
+          "options__1": {
+            "label": "Über den Folien, links"
+          },
+          "options__2": {
+            "label": "Links und rechts der Folien"
+          },
+          "options__3": {
+            "label": "Über den Folien, rechts"
+          },
+          "options__4": {
+            "label": "Unter den Folien, links"
+          },
+          "options__5": {
+            "label": "Unter den Folien, rechts"
+          }
+        },
+        "header_arrows": {
+          "content": "Slider-Pfeile"
+        },
+        "custom_arrows": {
+          "label": "Eigener Pfeilstil"
+        },
+        "arrow_icon_size": {
+          "label": "Pfeilgröße"
+        },
+        "arrow_color": {
+          "label": "Pfeilfarbe",
+          "info": "Leer lassen, um das Farbschema zu verwenden."
+        },
+        "arrow_button_size": {
+          "label": "Kreisgröße"
+        },
+        "arrow_background": {
+          "label": "Kreisfarbe",
+          "info": "Leer lassen für keinen Kreis."
         }
       },
       "blocks": {

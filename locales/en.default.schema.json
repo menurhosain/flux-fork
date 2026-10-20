@@ -996,7 +996,8 @@
         "label": "Ignore space between template sections"
       },
       "disable_arrow_mobile": {
-        "label": "Hide slider arrows"
+        "label": "Hide slider arrows on mobile and tablet",
+        "info": "Arrows always show on desktop. Visitors on smaller screens swipe instead."
       },
       "animate_slider": {
         "label": "Animate image"
@@ -5275,6 +5276,44 @@
         },
         "rating_stars_width_mobile": {
           "label": "Rating stars size on mobile"
+        },
+        "arrow_position": {
+          "label": "Arrow position",
+          "options__1": {
+            "label": "Above slides, left"
+          },
+          "options__2": {
+            "label": "Left and right of slides"
+          },
+          "options__3": {
+            "label": "Above slides, right"
+          },
+          "options__4": {
+            "label": "Below slides, left"
+          },
+          "options__5": {
+            "label": "Below slides, right"
+          }
+        },
+        "header_arrows": {
+          "content": "Slider arrows"
+        },
+        "custom_arrows": {
+          "label": "Custom arrow style"
+        },
+        "arrow_icon_size": {
+          "label": "Arrow size"
+        },
+        "arrow_color": {
+          "label": "Arrow color",
+          "info": "Leave empty to use the color scheme."
+        },
+        "arrow_button_size": {
+          "label": "Circle size"
+        },
+        "arrow_background": {
+          "label": "Circle color",
+          "info": "Leave empty for no circle."
         }
       },
       "blocks": {

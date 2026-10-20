@@ -996,7 +996,8 @@
         "label": "Ignorer l'espace entre les sections du modèle"
       },
       "disable_arrow_mobile": {
-        "label": "Masquer les flèches du curseur"
+        "label": "Masquer les flèches du curseur sur mobile et tablette",
+        "info": "Les flèches restent visibles sur ordinateur. Sur les petits écrans, les visiteurs balayent à la place."
       },
       "animate_slider": {
         "label": "Animer l'image"
@@ -5275,6 +5276,44 @@
         },
         "rating_stars_width_mobile": {
           "label": "Taille des étoiles de notation sur mobile"
+        },
+        "arrow_position": {
+          "label": "Position des flèches",
+          "options__1": {
+            "label": "Au-dessus des diapositives, à gauche"
+          },
+          "options__2": {
+            "label": "À gauche et à droite des diapositives"
+          },
+          "options__3": {
+            "label": "Au-dessus des diapositives, à droite"
+          },
+          "options__4": {
+            "label": "Sous les diapositives, à gauche"
+          },
+          "options__5": {
+            "label": "Sous les diapositives, à droite"
+          }
+        },
+        "header_arrows": {
+          "content": "Flèches du curseur"
+        },
+        "custom_arrows": {
+          "label": "Style de flèche personnalisé"
+        },
+        "arrow_icon_size": {
+          "label": "Taille de la flèche"
+        },
+        "arrow_color": {
+          "label": "Couleur de la flèche",
+          "info": "Laisser vide pour utiliser le schéma de couleurs."
+        },
+        "arrow_button_size": {
+          "label": "Taille du cercle"
+        },
+        "arrow_background": {
+          "label": "Couleur du cercle",
+          "info": "Laisser vide pour aucun cercle."
         }
       },
       "blocks": {

@@ -996,7 +996,8 @@
         "label": "Ignorar espacio entre secciones de plantilla"
       },
       "disable_arrow_mobile": {
-        "label": "Ocultar flechas del deslizador"
+        "label": "Ocultar flechas del deslizador en móvil y tableta",
+        "info": "Las flechas siempre se muestran en escritorio. En pantallas pequeñas se desliza con el dedo."
       },
       "animate_slider": {
         "label": "Animar imagen"
@@ -5275,6 +5276,44 @@
         },
         "rating_stars_width_mobile": {
           "label": "Tamaño de las estrellas de valoración en móvil"
+        },
+        "arrow_position": {
+          "label": "Posición de las flechas",
+          "options__1": {
+            "label": "Encima de las diapositivas, a la izquierda"
+          },
+          "options__2": {
+            "label": "A la izquierda y derecha de las diapositivas"
+          },
+          "options__3": {
+            "label": "Encima de las diapositivas, a la derecha"
+          },
+          "options__4": {
+            "label": "Debajo de las diapositivas, a la izquierda"
+          },
+          "options__5": {
+            "label": "Debajo de las diapositivas, a la derecha"
+          }
+        },
+        "header_arrows": {
+          "content": "Flechas del deslizador"
+        },
+        "custom_arrows": {
+          "label": "Estilo de flecha personalizado"
+        },
+        "arrow_icon_size": {
+          "label": "Tamaño de la flecha"
+        },
+        "arrow_color": {
+          "label": "Color de la flecha",
+          "info": "Déjalo vacío para usar el esquema de colores."
+        },
+        "arrow_button_size": {
+          "label": "Tamaño del círculo"
+        },
+        "arrow_background": {
+          "label": "Color del círculo",
+          "info": "Déjalo vacío para no mostrar círculo."
         }
       },
       "blocks": {
