@@ -17,9 +17,9 @@
         "collection_style": "style-three",
         "desktop_content_alignment": "center",
         "image_height": "medium",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 10,
         "color_scheme": "option-3",
-        "image": "shopify://shop_images/three-surgeons-in-scrubs.jpg",
+        "image": "shopify://shop_images/inner2.jpg",
         "image_for_all": false,
         "fallback_heading": "All Products",
         "padding_top": 6,
@@ -153,40 +153,12 @@
         "margin_spacing": "negative",
         "margin_top": 0
       }
-    },
-    "quick_info_bar": {
-      "type": "quick-info-bar",
-      "settings": {
-        "image-1": "shopify://shop_images/icon-3.webp",
-        "heading-1": "Free Shipping",
-        "caption-1": "For orders over $110",
-        "image-2": "shopify://shop_images/icon-1.webp",
-        "heading-2": "Money Guarantee",
-        "caption-2": "30 days for an exchange",
-        "image-3": "shopify://shop_images/icon-2.webp",
-        "heading-3": "Online Support",
-        "caption-3": "24 hours per day",
-        "image-4": "shopify://shop_images/icon-4.webp",
-        "heading-4": "Flexible Payment",
-        "caption-4": "Multiple Credit Cards",
-        "image_size": "small",
-        "add_border": false,
-        "full_width_background": false,
-        "color_scheme": "option-1",
-        "color_scheme_1": "option-2",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "ignore_spacing": true,
-        "margin_spacing": "negative",
-        "margin_top": 0
-      }
     }
   },
   "order": [
     "banner",
     "subcollections",
     "product-grid",
-    "recently_viewed_products",
-    "quick_info_bar"
+    "recently_viewed_products"
   ]
 }
