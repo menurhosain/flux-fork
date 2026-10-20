@@ -110,110 +110,41 @@
           },
           "blocks": {}
         },
-        "product_collapsible_tab_DmAXpV": {
-          "type": "_product-collapsible-tab",
+        "product_metafield_accordion_x7EJBB": {
+          "type": "_product-metafield-accordion",
+          "name": "t:sections.main-product.blocks.metafield_accordion.name",
           "settings": {
             "column": "left",
-            "heading": "Top Highlights",
+            "metafield": "custom.accordion",
+            "title_field": "label",
+            "content_field": "content",
             "heading_size": "medium",
             "heading_tag": "h4",
             "icon": "none",
-            "no_padding": false,
-            "content": "<ul><li><strong>Brand:</strong> Estroven</li><li><strong>Flavor:</strong> Unflavored</li><li><strong>Primary Supplement Type:</strong> Rhapontic Rhubarb Root Extract<br/><br/></li></ul><p><br/><br/></p>",
-            "page": "",
-            "custom_liquid": "",
+            "label_font_size": 16,
+            "label_font_size_mobile": 15,
+            "label_font_weight": "600",
+            "label_color": "",
+            "label_background": "",
+            "label_padding_vertical": 14,
+            "label_padding_horizontal": 0,
+            "content_font_size": 15,
+            "content_font_size_mobile": 14,
+            "content_font_weight": "400",
+            "content_line_height": 1.6,
+            "content_color": "",
+            "content_background": "",
+            "content_padding_vertical": 4,
+            "content_padding_horizontal": 0,
+            "border_style": "divider",
+            "border_width": 1,
+            "border_color": "#dbe5f3",
+            "border_radius": 8,
+            "row_gap": 10,
             "open_first_collapsible_row": false,
-            "show_spacer": false,
-            "margin_top": 0,
-            "color_scheme_1": "option-1",
-            "hide_quick_view": true
-          },
-          "blocks": {}
-        },
-        "product_spacer_ymGTXJ": {
-          "type": "_product-spacer",
-          "settings": {
-            "column": "left",
-            "margin_top": 0,
-            "hide_quick_view": true
-          },
-          "blocks": {}
-        },
-        "product_collapsible_tab_MRphQd": {
-          "type": "_product-collapsible-tab",
-          "settings": {
-            "column": "left",
-            "heading": "About This Item",
-            "heading_size": "medium",
-            "heading_tag": "h4",
-            "icon": "none",
-            "no_padding": false,
-            "content": "<ul><li><strong>Brand:</strong> Estroven</li><li><strong>Flavor:</strong> Unflavored</li><li><strong>Primary Supplement Type:</strong> Rhapontic Rhubarb Root Extract<br/><br/></li></ul><p><br/><br/></p>",
-            "page": "",
-            "custom_liquid": "",
-            "open_first_collapsible_row": false,
-            "show_spacer": false,
-            "margin_top": 0,
-            "color_scheme_1": "option-1",
-            "hide_quick_view": true
-          },
-          "blocks": {}
-        },
-        "product_spacer_hzabYy": {
-          "type": "_product-spacer",
-          "settings": {
-            "column": "left",
-            "margin_top": 0,
-            "hide_quick_view": true
-          },
-          "blocks": {}
-        },
-        "product_collapsible_tab_4NEk7P": {
-          "type": "_product-collapsible-tab",
-          "settings": {
-            "column": "left",
-            "heading": "Item Details",
-            "heading_size": "medium",
-            "heading_tag": "h4",
-            "icon": "none",
-            "no_padding": false,
-            "content": "<ul><li><strong>Brand:</strong> Estroven</li><li><strong>Flavor:</strong> Unflavored</li><li><strong>Primary Supplement Type:</strong> Rhapontic Rhubarb Root Extract<br/><br/></li></ul><p><br/><br/></p>",
-            "page": "",
-            "custom_liquid": "",
-            "open_first_collapsible_row": false,
-            "show_spacer": false,
-            "margin_top": 0,
-            "color_scheme_1": "option-1",
-            "hide_quick_view": true
-          },
-          "blocks": {}
-        },
-        "product_spacer_hDAy49": {
-          "type": "_product-spacer",
-          "settings": {
-            "column": "left",
-            "margin_top": 0,
-            "hide_quick_view": true
-          },
-          "blocks": {}
-        },
-        "product_collapsible_tab_znmrrg": {
-          "type": "_product-collapsible-tab",
-          "settings": {
-            "column": "left",
-            "heading": "Measurements",
-            "heading_size": "medium",
-            "heading_tag": "h4",
-            "icon": "none",
-            "no_padding": false,
-            "content": "<ul><li><strong>Brand:</strong> Estroven</li><li><strong>Flavor:</strong> Unflavored</li><li><strong>Primary Supplement Type:</strong> Rhapontic Rhubarb Root Extract<br/><br/></li></ul><p><br/><br/></p>",
-            "page": "",
-            "custom_liquid": "",
-            "open_first_collapsible_row": false,
-            "show_spacer": false,
-            "margin_top": 0,
-            "color_scheme_1": "option-1",
-            "hide_quick_view": true
+            "margin_top": 10,
+            "color_scheme_1": "",
+            "hide_quick_view": false
           },
           "blocks": {}
         },
@@ -454,13 +385,7 @@
         "spacer",
         "inventory",
         "description",
-        "product_collapsible_tab_DmAXpV",
-        "product_spacer_ymGTXJ",
-        "product_collapsible_tab_MRphQd",
-        "product_spacer_hzabYy",
-        "product_collapsible_tab_4NEk7P",
-        "product_spacer_hDAy49",
-        "product_collapsible_tab_znmrrg",
+        "product_metafield_accordion_x7EJBB",
         "dynamic_card_icons",
         "payment_enable_1",
         "complementary",

@@ -2101,14 +2101,15 @@
       "type": "video-background",
       "name": "t:sections.video-background.presets.name",
       "settings": {
-        "caption": "Caption",
+        "video_url": "shopify://files/videos/emotion.mp4",
+        "caption": "",
         "text_style": "caption-with-letter-spacing",
         "text_size": "medium",
-        "heading": "Video",
+        "heading": "",
         "heading_size": "large",
         "heading_tag": "h2",
-        "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-        "button_label": "Button label",
+        "text": "",
+        "button_label": "",
         "link": "",
         "open_new_tab_1": false,
         "video_style": "background",
@@ -2120,7 +2121,7 @@
         "ignore_box": false,
         "content_opacity": 1,
         "blur": 0,
-        "opacity": 0.5,
+        "opacity": 1,
         "color_scheme": "",
         "color_scheme_1": "",
         "padding_top": 0,
@@ -2129,6 +2130,60 @@
         "background_height_mobile": "small",
         "margin_spacing": "negative",
         "margin_top": 0
+      }
+    },
+    "blocks_section_xpmGQE": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_ctr9Xi": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Testimonials",
+            "heading": "Customer Reviews",
+            "heading_tag": "h2",
+            "description": "",
+            "alignment": "center",
+            "margin_bottom": 0,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_ctr9Xi"
+      ],
+      "name": "t:sections.blocks-section.presets.blank_name",
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 32,
+        "color_scheme": "",
+        "background_color": "#FFFFFF",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "blocks_section_how_it_works": {
@@ -4476,7 +4531,7 @@
         "column_heading_size": 24,
         "column_heading_size_mobile": 16,
         "column_heading_weight": "default",
-        "column_heading_color": "#ED2121",
+        "column_heading_color": "#ed2121",
         "custom_column_subheading_size": false,
         "column_subheading_size": 14,
         "column_subheading_size_mobile": 13,
@@ -4489,15 +4544,95 @@
         "column_text_color": "",
         "color_scheme": "option-1",
         "color_scheme_1": "option-2",
+        "section_background_color": "#FFFFFF",
         "column_background_color": "#FFFFFF",
         "rating_stars_color": "#ca7b30",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 20,
         "ignore_spacing": true,
         "margin_spacing": "negative",
         "margin_top": 0,
         "swipe_on_mobile": true,
         "disable_arrow_mobile": true
+      }
+    },
+    "blocks_section_newsletter": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_D9dLDd": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Be connected",
+            "heading": "One useful email a week",
+            "heading_tag": "h2",
+            "description": "<p>Real answers about perimenopause and menopause. No scare tactics, no daily drip. Unsubscribe any time.</p>",
+            "alignment": "center",
+            "max_width": 840,
+            "margin_bottom": 32,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "email_signup_newsletter": {
+          "type": "email-signup",
+          "settings": {
+            "placeholder": "Your email address",
+            "button_label": "Join",
+            "alignment": "center",
+            "max_width": 660,
+            "field_height": 46,
+            "field_height_mobile": 46,
+            "gap": 10,
+            "radius": 4,
+            "margin_top": 12,
+            "margin_bottom": 0,
+            "field_background": "#ffffff",
+            "field_text_color": "#1f2937",
+            "placeholder_color": "#8a94a6",
+            "field_border_color": "#c9dde9",
+            "field_focus_color": "#0066d6",
+            "button_background": "#0066d6",
+            "button_hover_background": "#0052ab",
+            "button_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_D9dLDd",
+        "email_signup_newsletter"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_alignment": "right",
+        "blocks_gap": 12,
+        "blocks_gap_mobile": 8,
+        "color_scheme": "option-1",
+        "background_color": "#EAF2FD",
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "featured_blog": {
@@ -4768,85 +4903,6 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
-    },
-    "blocks_section_newsletter": {
-      "type": "blocks-section",
-      "blocks": {
-        "section_heading_D9dLDd": {
-          "type": "section-heading",
-          "settings": {
-            "subheading": "Be connected",
-            "heading": "One useful email a week",
-            "heading_tag": "h2",
-            "description": "<p>Real answers about perimenopause and menopause. No scare tactics, no daily drip. Unsubscribe any time.</p>",
-            "alignment": "center",
-            "max_width": 840,
-            "margin_bottom": 32,
-            "margin_bottom_mobile": 0,
-            "gap_subheading": 16,
-            "gap_subheading_mobile": 12,
-            "gap_heading": 16,
-            "gap_heading_mobile": 12,
-            "subheading_size": 15,
-            "subheading_size_mobile": 12,
-            "subheading_color": "#0261d1",
-            "subheading_weight": "600",
-            "subheading_uppercase": true,
-            "subheading_lines": true,
-            "subheading_line_width": 80,
-            "subheading_line_color": "#cbd8e7",
-            "heading_size": 56,
-            "heading_size_mobile": 34,
-            "heading_color": "#160081",
-            "heading_weight": "600",
-            "heading_max_width": 0,
-            "heading_font": "heading",
-            "description_size": 16,
-            "description_size_mobile": 15,
-            "description_color": "",
-            "description_weight": "default"
-          },
-          "blocks": {}
-        },
-        "email_signup_newsletter": {
-          "type": "email-signup",
-          "settings": {
-            "placeholder": "Your email address",
-            "button_label": "Join",
-            "alignment": "center",
-            "max_width": 660,
-            "field_height": 46,
-            "field_height_mobile": 46,
-            "gap": 10,
-            "radius": 4,
-            "margin_top": 12,
-            "margin_bottom": 0,
-            "field_background": "#ffffff",
-            "field_text_color": "#1f2937",
-            "placeholder_color": "#8a94a6",
-            "field_border_color": "#c9dde9",
-            "field_focus_color": "#0066d6",
-            "button_background": "#0066d6",
-            "button_hover_background": "#0052ab",
-            "button_text_color": "#ffffff"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "section_heading_D9dLDd",
-        "email_signup_newsletter"
-      ],
-      "settings": {
-        "full_width": false,
-        "content_alignment": "right",
-        "blocks_gap": 12,
-        "blocks_gap_mobile": 8,
-        "color_scheme": "option-1",
-        "background_color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 48
-      }
     }
   },
   "order": [
@@ -4856,6 +4912,7 @@
     "blocks_section_chosen_stage",
     "trust_bar_PKnhEE",
     "video_background_fFW3YG",
+    "blocks_section_xpmGQE",
     "blocks_section_how_it_works",
     "image_banner_with_featured_collection",
     "collection_list",
@@ -4865,8 +4922,8 @@
     "rich_text_wellness",
     "blocks_section_experience",
     "testimonials",
+    "blocks_section_newsletter",
     "featured_blog",
-    "image_banner",
-    "blocks_section_newsletter"
+    "image_banner"
   ]
 }
