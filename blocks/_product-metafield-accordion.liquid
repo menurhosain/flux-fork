@@ -51,6 +51,7 @@
   </div>
   {%- style -%}
     #MetafieldAccordion-{{ block.id }} {
+      margin-top: {{ block.settings.margin_top }}px;
       --mfa-label-size: {{ block.settings.label_font_size_mobile }}px;
       --mfa-label-weight: {{ block.settings.label_font_weight }};
       --mfa-label-py: {{ block.settings.label_padding_vertical }}px;
@@ -99,7 +100,7 @@
     margin: 0;
   }
 
-  .metafield-accordion .metafield-accordion__row summary {
+  .metafield-accordion .metafield-accordion__row.accordion summary {
     padding: var(--mfa-label-py) var(--mfa-label-px);
     border-radius: 0;
     background: var(--mfa-label-bg, transparent);
@@ -120,7 +121,7 @@
     fill: var(--mfa-label-color, rgb(var(--color-foreground)));
   }
 
-  .metafield-accordion .metafield-accordion__row .accordion__content {
+  .metafield-accordion .metafield-accordion__row.accordion .accordion__content {
     padding: var(--mfa-content-py) var(--mfa-content-px);
     background: var(--mfa-content-bg, transparent);
   }
@@ -142,7 +143,7 @@
     margin-bottom: 0;
   }
 
-  .metafield-accordion .metafield-accordion__row details[open] .accordion__content {
+  .metafield-accordion .metafield-accordion__row.accordion details[open] .accordion__content {
     padding-bottom: calc(var(--mfa-content-py) + var(--mfa-label-py));
   }
 
@@ -551,7 +552,7 @@
       "type": "range",
       "id": "margin_top",
       "min": 0,
-      "max": 40,
+      "max": 100,
       "step": 5,
       "unit": "px",
       "label": "t:sections.main-product.blocks.title.settings.margin_top.label",
