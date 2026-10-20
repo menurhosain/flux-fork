@@ -93,27 +93,6 @@
             "padding_horizontal_mobile": 52
           },
           "blocks": {
-            "text_mYKDTm": {
-              "type": "text",
-              "settings": {
-                "text": "<p>This guide covers mood: what is happening, what may help (everyday steps, products, when to see a clinician), related products, sources with dates, and the medical disclaimer.</p>",
-                "text_style": "body",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 16,
-                "font_size_mobile": 15,
-                "custom_line_height": false,
-                "line_height": 26,
-                "line_height_mobile": 24,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 30,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
             "heading_ebLhrq": {
               "type": "heading",
               "settings": {
@@ -329,7 +308,6 @@
             }
           },
           "block_order": [
-            "text_mYKDTm",
             "heading_ebLhrq",
             "text_ieea4i",
             "heading_YAnAJa",
