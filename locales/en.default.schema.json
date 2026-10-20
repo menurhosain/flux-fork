@@ -857,6 +857,64 @@
         "background_color": {
           "label": "Background color",
           "info": "Overrides the color scheme background. Leave empty to use the color scheme."
+        },
+        "header_background_image": {
+          "content": "Background image"
+        },
+        "background_image": {
+          "label": "Image"
+        },
+        "background_position": {
+          "label": "Image position",
+          "options__center": {
+            "label": "Center"
+          },
+          "options__top": {
+            "label": "Top"
+          },
+          "options__bottom": {
+            "label": "Bottom"
+          },
+          "options__left": {
+            "label": "Left"
+          },
+          "options__right": {
+            "label": "Right"
+          },
+          "options__top_left": {
+            "label": "Top left"
+          },
+          "options__top_right": {
+            "label": "Top right"
+          },
+          "options__bottom_left": {
+            "label": "Bottom left"
+          },
+          "options__bottom_right": {
+            "label": "Bottom right"
+          }
+        },
+        "background_fit": {
+          "label": "Image fit",
+          "info": "Cover fills the section, Contain shows the whole image, Fill stretches it.",
+          "options__cover": {
+            "label": "Cover"
+          },
+          "options__contain": {
+            "label": "Contain"
+          },
+          "options__fill": {
+            "label": "Fill"
+          }
+        },
+        "header_overlay": {
+          "content": "Overlay"
+        },
+        "overlay_color": {
+          "label": "Overlay color"
+        },
+        "overlay_opacity": {
+          "label": "Overlay opacity"
         }
       }
     },

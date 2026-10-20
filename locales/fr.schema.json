@@ -857,6 +857,64 @@
         "background_color": {
           "label": "Couleur d'arrière-plan",
           "info": "Remplace l'arrière-plan du jeu de couleurs. Laisser vide pour utiliser le jeu de couleurs."
+        },
+        "header_background_image": {
+          "content": "Image d'arrière-plan"
+        },
+        "background_image": {
+          "label": "Image"
+        },
+        "background_position": {
+          "label": "Position de l'image",
+          "options__center": {
+            "label": "Centre"
+          },
+          "options__top": {
+            "label": "Haut"
+          },
+          "options__bottom": {
+            "label": "Bas"
+          },
+          "options__left": {
+            "label": "Gauche"
+          },
+          "options__right": {
+            "label": "Droite"
+          },
+          "options__top_left": {
+            "label": "En haut à gauche"
+          },
+          "options__top_right": {
+            "label": "En haut à droite"
+          },
+          "options__bottom_left": {
+            "label": "En bas à gauche"
+          },
+          "options__bottom_right": {
+            "label": "En bas à droite"
+          }
+        },
+        "background_fit": {
+          "label": "Ajustement de l'image",
+          "info": "Couvrir remplit la section, Contenir affiche l'image entière, Étirer la déforme.",
+          "options__cover": {
+            "label": "Couvrir"
+          },
+          "options__contain": {
+            "label": "Contenir"
+          },
+          "options__fill": {
+            "label": "Étirer"
+          }
+        },
+        "header_overlay": {
+          "content": "Superposition"
+        },
+        "overlay_color": {
+          "label": "Couleur de superposition"
+        },
+        "overlay_opacity": {
+          "label": "Opacité de superposition"
         }
       }
     },

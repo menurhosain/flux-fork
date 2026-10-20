@@ -857,6 +857,64 @@
         "background_color": {
           "label": "Colore di sfondo",
           "info": "Sostituisce lo sfondo dello schema colori. Lascia vuoto per usare lo schema."
+        },
+        "header_background_image": {
+          "content": "Immagine di sfondo"
+        },
+        "background_image": {
+          "label": "Immagine"
+        },
+        "background_position": {
+          "label": "Posizione dell'immagine",
+          "options__center": {
+            "label": "Centro"
+          },
+          "options__top": {
+            "label": "In alto"
+          },
+          "options__bottom": {
+            "label": "In basso"
+          },
+          "options__left": {
+            "label": "A sinistra"
+          },
+          "options__right": {
+            "label": "A destra"
+          },
+          "options__top_left": {
+            "label": "In alto a sinistra"
+          },
+          "options__top_right": {
+            "label": "In alto a destra"
+          },
+          "options__bottom_left": {
+            "label": "In basso a sinistra"
+          },
+          "options__bottom_right": {
+            "label": "In basso a destra"
+          }
+        },
+        "background_fit": {
+          "label": "Adattamento dell'immagine",
+          "info": "Copri riempie la sezione, Contieni mostra l'immagine intera, Estendi la deforma.",
+          "options__cover": {
+            "label": "Copri"
+          },
+          "options__contain": {
+            "label": "Contieni"
+          },
+          "options__fill": {
+            "label": "Estendi"
+          }
+        },
+        "header_overlay": {
+          "content": "Sovrapposizione"
+        },
+        "overlay_color": {
+          "label": "Colore sovrapposizione"
+        },
+        "overlay_opacity": {
+          "label": "Opacità sovrapposizione"
         }
       }
     },

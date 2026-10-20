@@ -857,6 +857,64 @@
         "background_color": {
           "label": "Hintergrundfarbe",
           "info": "Überschreibt den Hintergrund des Farbschemas. Leer lassen, um das Farbschema zu verwenden."
+        },
+        "header_background_image": {
+          "content": "Hintergrundbild"
+        },
+        "background_image": {
+          "label": "Bild"
+        },
+        "background_position": {
+          "label": "Bildposition",
+          "options__center": {
+            "label": "Mitte"
+          },
+          "options__top": {
+            "label": "Oben"
+          },
+          "options__bottom": {
+            "label": "Unten"
+          },
+          "options__left": {
+            "label": "Links"
+          },
+          "options__right": {
+            "label": "Rechts"
+          },
+          "options__top_left": {
+            "label": "Oben links"
+          },
+          "options__top_right": {
+            "label": "Oben rechts"
+          },
+          "options__bottom_left": {
+            "label": "Unten links"
+          },
+          "options__bottom_right": {
+            "label": "Unten rechts"
+          }
+        },
+        "background_fit": {
+          "label": "Bildanpassung",
+          "info": "Füllen deckt den Bereich ab, Einpassen zeigt das ganze Bild, Strecken dehnt es.",
+          "options__cover": {
+            "label": "Füllen"
+          },
+          "options__contain": {
+            "label": "Einpassen"
+          },
+          "options__fill": {
+            "label": "Strecken"
+          }
+        },
+        "header_overlay": {
+          "content": "Überlagerung"
+        },
+        "overlay_color": {
+          "label": "Überlagerungsfarbe"
+        },
+        "overlay_opacity": {
+          "label": "Deckkraft der Überlagerung"
         }
       }
     },

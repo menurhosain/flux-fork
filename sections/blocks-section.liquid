@@ -4,6 +4,11 @@
   if background_color != blank and background_color.alpha != 0
     assign has_background_color = true
   endif
+
+  assign background_image = section.settings.background_image
+  assign overlay_opacity = section.settings.overlay_opacity | divided_by: 100.0
+  assign background_position = section.settings.background_position | replace: '_', ' '
+  assign image_style = 'object-fit: ' | append: section.settings.background_fit | append: '; object-position: ' | append: background_position | append: ';'
 -%}
 
 {%- style -%}
@@ -33,8 +38,29 @@
 
 <div
   id="BlocksSection-{{ section.id }}"
-  class="blocks-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
+  class="blocks-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% if background_image != blank %} blocks-section--has-image{% endif %}"
 >
+  {%- if background_image != blank -%}
+    <div class="blocks-section__media" aria-hidden="true">
+      {{
+        background_image
+        | image_url: width: 3840
+        | image_tag:
+          class: 'blocks-section__image',
+          loading: 'lazy',
+          sizes: '100vw',
+          widths: '750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: '',
+          style: image_style
+      }}
+      {%- if overlay_opacity > 0 -%}
+        <span
+          class="blocks-section__overlay"
+          style="background-color: {{ section.settings.overlay_color }}; opacity: {{ overlay_opacity }};"
+        ></span>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
   <div class="{% unless section.settings.full_width %}page-width{% else %}blocks-section--full-width{% endunless %}">
     <div class="blocks-section__inner blocks-section__inner--{{ section.settings.content_alignment }}">
       {% content_for 'blocks' %}
@@ -43,6 +69,30 @@
 </div>
 
 {% stylesheet %}
+  .blocks-section--has-image {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .blocks-section__media {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .blocks-section__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .blocks-section__overlay {
+    position: absolute;
+    inset: 0;
+  }
+
   .blocks-section--full-width {
     padding: 0 1.5rem;
   }
@@ -152,6 +202,105 @@
       "id": "background_color",
       "label": "t:sections.blocks-section.settings.background_color.label",
       "info": "t:sections.blocks-section.settings.background_color.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.blocks-section.settings.header_background_image.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "t:sections.blocks-section.settings.background_image.label"
+    },
+    {
+      "type": "select",
+      "id": "background_position",
+      "options": [
+        {
+          "value": "center",
+          "label": "t:sections.blocks-section.settings.background_position.options__center.label"
+        },
+        {
+          "value": "top",
+          "label": "t:sections.blocks-section.settings.background_position.options__top.label"
+        },
+        {
+          "value": "bottom",
+          "label": "t:sections.blocks-section.settings.background_position.options__bottom.label"
+        },
+        {
+          "value": "left",
+          "label": "t:sections.blocks-section.settings.background_position.options__left.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.blocks-section.settings.background_position.options__right.label"
+        },
+        {
+          "value": "top_left",
+          "label": "t:sections.blocks-section.settings.background_position.options__top_left.label"
+        },
+        {
+          "value": "top_right",
+          "label": "t:sections.blocks-section.settings.background_position.options__top_right.label"
+        },
+        {
+          "value": "bottom_left",
+          "label": "t:sections.blocks-section.settings.background_position.options__bottom_left.label"
+        },
+        {
+          "value": "bottom_right",
+          "label": "t:sections.blocks-section.settings.background_position.options__bottom_right.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.blocks-section.settings.background_position.label",
+      "visible_if": "{{ section.settings.background_image != blank }}"
+    },
+    {
+      "type": "select",
+      "id": "background_fit",
+      "options": [
+        {
+          "value": "cover",
+          "label": "t:sections.blocks-section.settings.background_fit.options__cover.label"
+        },
+        {
+          "value": "contain",
+          "label": "t:sections.blocks-section.settings.background_fit.options__contain.label"
+        },
+        {
+          "value": "fill",
+          "label": "t:sections.blocks-section.settings.background_fit.options__fill.label"
+        }
+      ],
+      "default": "cover",
+      "label": "t:sections.blocks-section.settings.background_fit.label",
+      "info": "t:sections.blocks-section.settings.background_fit.info",
+      "visible_if": "{{ section.settings.background_image != blank }}"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.blocks-section.settings.header_overlay.content",
+      "visible_if": "{{ section.settings.background_image != blank }}"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "default": "#000000",
+      "label": "t:sections.blocks-section.settings.overlay_color.label",
+      "visible_if": "{{ section.settings.background_image != blank }}"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 0,
+      "label": "t:sections.blocks-section.settings.overlay_opacity.label",
+      "visible_if": "{{ section.settings.background_image != blank }}"
     },
     {
       "type": "header",
