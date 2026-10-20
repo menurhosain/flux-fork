@@ -7051,6 +7051,19 @@
         },
         "accent_color": {
           "label": "Color de línea"
+        },
+        "number_badge": {
+          "label": "Mostrar el número en un círculo",
+          "info": "Funciona mejor con el diseño numerado. El número usa el color del número."
+        },
+        "number_badge_size": {
+          "label": "Tamaño del círculo"
+        },
+        "number_badge_font_size": {
+          "label": "Tamaño del número en el círculo"
+        },
+        "number_badge_background": {
+          "label": "Color del círculo"
         }
       }
     },

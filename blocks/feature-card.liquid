@@ -282,6 +282,21 @@
       font-size: {{ block.settings.number_size | divided_by: 10.0 }}rem;
     }
   }
+  {%- if block.settings.number_badge %}
+    #FeatureCard-{{ block.id }} .feature-card__number {
+      display: inline-flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      width: {{ block.settings.number_badge_size }}px;
+      height: {{ block.settings.number_badge_size }}px;
+      border-radius: 50%;
+      background-color: {{ block.settings.number_badge_background }};
+      font-size: {{ block.settings.number_badge_font_size }}px;
+      font-weight: 600;
+      line-height: 1;
+    }
+  {%- endif %}
 {%- endstyle -%}
 
 {% stylesheet %}
@@ -1080,6 +1095,42 @@
       ],
       "default": "heading",
       "label": "t:blocks.feature_card.settings.number_font.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "number_badge",
+      "default": false,
+      "label": "t:blocks.feature_card.settings.number_badge.label",
+      "info": "t:blocks.feature_card.settings.number_badge.info"
+    },
+    {
+      "type": "range",
+      "id": "number_badge_size",
+      "min": 16,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 28,
+      "label": "t:blocks.feature_card.settings.number_badge_size.label",
+      "visible_if": "{{ block.settings.number_badge }}"
+    },
+    {
+      "type": "range",
+      "id": "number_badge_font_size",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 13,
+      "label": "t:blocks.feature_card.settings.number_badge_font_size.label",
+      "visible_if": "{{ block.settings.number_badge }}"
+    },
+    {
+      "type": "color",
+      "id": "number_badge_background",
+      "default": "#0066d6",
+      "label": "t:blocks.feature_card.settings.number_badge_background.label",
+      "visible_if": "{{ block.settings.number_badge }}"
     }
   ],
   "presets": [

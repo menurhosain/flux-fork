@@ -7051,6 +7051,19 @@
         },
         "accent_color": {
           "label": "Linienfarbe"
+        },
+        "number_badge": {
+          "label": "Zahl im Kreis anzeigen",
+          "info": "Funktioniert am besten mit dem nummerierten Layout. Die Zahl verwendet die Zahlenfarbe."
+        },
+        "number_badge_size": {
+          "label": "Kreisgröße"
+        },
+        "number_badge_font_size": {
+          "label": "Zahlengröße im Kreis"
+        },
+        "number_badge_background": {
+          "label": "Kreisfarbe"
         }
       }
     },

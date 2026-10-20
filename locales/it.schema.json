@@ -7051,6 +7051,19 @@
         },
         "accent_color": {
           "label": "Colore linea"
+        },
+        "number_badge": {
+          "label": "Mostra il numero in un cerchio",
+          "info": "Funziona meglio con il layout numerato. Il numero usa il colore del numero."
+        },
+        "number_badge_size": {
+          "label": "Dimensione cerchio"
+        },
+        "number_badge_font_size": {
+          "label": "Dimensione numero nel cerchio"
+        },
+        "number_badge_background": {
+          "label": "Colore cerchio"
         }
       }
     },

@@ -7051,6 +7051,19 @@
         },
         "accent_color": {
           "label": "Couleur de la ligne"
+        },
+        "number_badge": {
+          "label": "Afficher le numéro dans un cercle",
+          "info": "Fonctionne mieux avec la mise en page numérotée. Le numéro utilise la couleur du numéro."
+        },
+        "number_badge_size": {
+          "label": "Taille du cercle"
+        },
+        "number_badge_font_size": {
+          "label": "Taille du numéro dans le cercle"
+        },
+        "number_badge_background": {
+          "label": "Couleur du cercle"
         }
       }
     },
