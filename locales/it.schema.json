@@ -7625,7 +7625,81 @@
       "name": "Timer conto alla rovescia"
     },
     "email_signup": {
-      "name": "Modulo di iscrizione"
+      "name": "Modulo di iscrizione",
+      "settings": {
+        "placeholder": {
+          "label": "Testo segnaposto"
+        },
+        "button_label": {
+          "label": "Etichetta pulsante"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "alignment": {
+          "label": "Allineamento",
+          "options__1": {
+            "label": "Sinistra"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Destra"
+          }
+        },
+        "max_width": {
+          "label": "Larghezza massima"
+        },
+        "field_height": {
+          "label": "Altezza campo (desktop)"
+        },
+        "field_height_mobile": {
+          "label": "Altezza campo (mobile)"
+        },
+        "gap": {
+          "label": "Spazio tra campo e pulsante"
+        },
+        "radius": {
+          "label": "Raggio angoli"
+        },
+        "margin_top": {
+          "label": "Spazio sopra"
+        },
+        "margin_bottom": {
+          "label": "Spazio sotto"
+        },
+        "header_field": {
+          "content": "Campo email"
+        },
+        "field_background": {
+          "label": "Sfondo"
+        },
+        "field_text_color": {
+          "label": "Testo"
+        },
+        "placeholder_color": {
+          "label": "Segnaposto"
+        },
+        "field_border_color": {
+          "label": "Bordo"
+        },
+        "field_focus_color": {
+          "label": "Bordo con focus"
+        },
+        "header_button": {
+          "content": "Pulsante"
+        },
+        "button_background": {
+          "label": "Sfondo"
+        },
+        "button_hover_background": {
+          "label": "Sfondo al passaggio del mouse"
+        },
+        "button_text_color": {
+          "label": "Testo"
+        }
+      }
     },
     "two_images_text_image": {
       "settings": {

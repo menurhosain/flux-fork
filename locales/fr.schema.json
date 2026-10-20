@@ -7625,7 +7625,81 @@
       "name": "Compte à rebours"
     },
     "email_signup": {
-      "name": "Formulaire d’inscription"
+      "name": "Formulaire d’inscription",
+      "settings": {
+        "placeholder": {
+          "label": "Texte indicatif"
+        },
+        "button_label": {
+          "label": "Libellé du bouton"
+        },
+        "header_layout": {
+          "content": "Mise en page"
+        },
+        "alignment": {
+          "label": "Alignement",
+          "options__1": {
+            "label": "Gauche"
+          },
+          "options__2": {
+            "label": "Centre"
+          },
+          "options__3": {
+            "label": "Droite"
+          }
+        },
+        "max_width": {
+          "label": "Largeur maximale"
+        },
+        "field_height": {
+          "label": "Hauteur du champ (ordinateur)"
+        },
+        "field_height_mobile": {
+          "label": "Hauteur du champ (mobile)"
+        },
+        "gap": {
+          "label": "Espace entre le champ et le bouton"
+        },
+        "radius": {
+          "label": "Rayon des coins"
+        },
+        "margin_top": {
+          "label": "Espace au-dessus"
+        },
+        "margin_bottom": {
+          "label": "Espace en dessous"
+        },
+        "header_field": {
+          "content": "Champ e-mail"
+        },
+        "field_background": {
+          "label": "Arrière-plan"
+        },
+        "field_text_color": {
+          "label": "Texte"
+        },
+        "placeholder_color": {
+          "label": "Texte indicatif"
+        },
+        "field_border_color": {
+          "label": "Bordure"
+        },
+        "field_focus_color": {
+          "label": "Bordure au focus"
+        },
+        "header_button": {
+          "content": "Bouton"
+        },
+        "button_background": {
+          "label": "Arrière-plan"
+        },
+        "button_hover_background": {
+          "label": "Arrière-plan au survol"
+        },
+        "button_text_color": {
+          "label": "Texte"
+        }
+      }
     },
     "two_images_text_image": {
       "settings": {

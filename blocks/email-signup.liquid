@@ -4,83 +4,209 @@
   if section.settings.enable_terms == true
     assign terms_enabled = true
   endif
+  assign placeholder = block.settings.placeholder
+  if placeholder == blank
+    assign placeholder = 'newsletter.label' | t
+  endif
+  assign button_label = block.settings.button_label
+  if button_label == blank
+    assign button_label = 'newsletter.button_label' | t
+  endif
 -%}
-<div class="block-email-signup" {{ block.shopify_attributes }}>
-  {% form 'customer', class: 'newsletter-form', id: form_id %}
+<div
+  id="EmailSignup-{{ block.id }}"
+  class="email-signup email-signup--{{ block.settings.alignment }}"
+  {{ block.shopify_attributes }}
+>
+  {% form 'customer', class: 'email-signup__form', id: form_id %}
     <input type="hidden" name="contact[tags]" value="newsletter">
-    <div class="newsletter-form__field-wrapper animate-arrow">
-      <div class="field">
-        <input
-          id="NewsletterEmail--{{ block.id }}"
-          type="email"
-          name="contact[email]"
-          class="field-input email-input"
-          value="{{ form.email }}"
-          aria-required="true"
-          autocorrect="off"
-          autocapitalize="off"
-          autocomplete="email"
-          {% if form.errors %}
-            autofocus
-            aria-invalid="true"
-            aria-describedby="Newsletter-error--{{ block.id }}"
-          {% elsif form.posted_successfully? %}
-            aria-describedby="Newsletter-success--{{ block.id }}"
-          {% endif %}
-          placeholder="{{ 'newsletter.label' | t }}"
-          required
-        >
-        <label class="field-label" for="NewsletterEmail--{{ block.id }}">
-          {{ 'newsletter.label' | t }}
-        </label>
-        <button
-          type="submit"
-          class="newsletter-form__button field__button"
-          name="commit"
-          id="NewsletterSubscribe--{{ block.id }}"
-          aria-label="{{ 'newsletter.button_label' | t }}"
-          {% if terms_enabled %}
-            disabled
-          {% endif %}
-        >
-          {% render 'icon-arrow' %}
-        </button>
-      </div>
-
-      {%- if terms_enabled -%}
-        <div class="terms-cart">
-          <input
-            type="checkbox"
-            id="SignupTerms--{{ block.id }}"
-            name="termsCheckbox"
-            value="1"
-            data-terms-for="NewsletterSubscribe--{{ block.id }}"
-          >
-          <label for="SignupTerms--{{ block.id }}">{{ section.settings.terms_label }}</label>
-        </div>
-      {%- endif -%}
-
-      {%- if form.errors -%}
-        <small class="newsletter-form-message form-message" id="Newsletter-error--{{ block.id }}">
-          {%- render 'icon-error' -%}
-          {{- form.errors.translated_fields.email | capitalize }}
-          {{ form.errors.messages.email -}}
-        </small>
-      {%- endif -%}
+    <div class="email-signup__row">
+      <label class="visually-hidden" for="NewsletterEmail--{{ block.id }}">{{ placeholder }}</label>
+      <input
+        id="NewsletterEmail--{{ block.id }}"
+        type="email"
+        name="contact[email]"
+        class="email-signup__input"
+        value="{{ form.email }}"
+        aria-required="true"
+        autocorrect="off"
+        autocapitalize="off"
+        autocomplete="email"
+        {% if form.errors %}
+          autofocus
+          aria-invalid="true"
+          aria-describedby="Newsletter-error--{{ block.id }}"
+        {% elsif form.posted_successfully? %}
+          aria-describedby="Newsletter-success--{{ block.id }}"
+        {% endif %}
+        placeholder="{{ placeholder }}"
+        required
+      >
+      <button
+        type="submit"
+        class="email-signup__button"
+        name="commit"
+        id="NewsletterSubscribe--{{ block.id }}"
+        {% if terms_enabled %}
+          disabled
+        {% endif %}
+      >
+        {{ button_label }}
+      </button>
     </div>
+
+    {%- if terms_enabled -%}
+      <div class="terms-cart email-signup__terms">
+        <input
+          type="checkbox"
+          id="SignupTerms--{{ block.id }}"
+          name="termsCheckbox"
+          value="1"
+          data-terms-for="NewsletterSubscribe--{{ block.id }}"
+        >
+        <label for="SignupTerms--{{ block.id }}">{{ section.settings.terms_label }}</label>
+      </div>
+    {%- endif -%}
+
+    {%- if form.errors -%}
+      <small class="email-signup__message form-message" id="Newsletter-error--{{ block.id }}">
+        {%- render 'icon-error' -%}
+        {{- form.errors.translated_fields.email | capitalize }}
+        {{ form.errors.messages.email -}}
+      </small>
+    {%- endif -%}
+
     {%- if form.posted_successfully? -%}
-      <h3
-        class="newsletter-form-message newsletter-form-message--success form-message"
+      <p
+        class="email-signup__message email-signup__message--success form-message"
         id="Newsletter-success--{{ block.id }}"
         tabindex="-1"
         autofocus
       >
         {% render 'icon-success' -%}
         {{- 'newsletter.success' | t }}
-      </h3>
+      </p>
     {%- endif -%}
   {% endform %}
 </div>
+
+{%- style -%}
+  #EmailSignup-{{ block.id }} {
+    --email-signup-height: {{ block.settings.field_height_mobile }}px;
+    --email-signup-radius: {{ block.settings.radius }}px;
+    --email-signup-gap: {{ block.settings.gap }}px;
+    --email-signup-input-bg: {{ block.settings.field_background }};
+    --email-signup-input-text: {{ block.settings.field_text_color }};
+    --email-signup-input-border: {{ block.settings.field_border_color }};
+    --email-signup-input-focus: {{ block.settings.field_focus_color }};
+    --email-signup-placeholder: {{ block.settings.placeholder_color }};
+    --email-signup-button-bg: {{ block.settings.button_background }};
+    --email-signup-button-text: {{ block.settings.button_text_color }};
+    --email-signup-button-hover-bg: {{ block.settings.button_hover_background }};
+    max-width: {{ block.settings.max_width }}px;
+    margin-top: {{ block.settings.margin_top }}px;
+    margin-bottom: {{ block.settings.margin_bottom }}px;
+  }
+  @media screen and (min-width: 750px) {
+    #EmailSignup-{{ block.id }} {
+      --email-signup-height: {{ block.settings.field_height }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% stylesheet %}
+  .email-signup {
+    width: 100%;
+    text-align: left;
+  }
+
+  .email-signup--left {
+    margin-right: auto;
+  }
+
+  .email-signup--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .email-signup--right {
+    margin-left: auto;
+  }
+
+  .email-signup__row {
+    display: flex;
+    gap: var(--email-signup-gap);
+    width: 100%;
+  }
+
+  .email-signup__input {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: var(--email-signup-height);
+    padding: 0 1.6rem;
+    border: 1px solid var(--email-signup-input-border);
+    border-radius: var(--email-signup-radius);
+    background-color: var(--email-signup-input-bg);
+    color: var(--email-signup-input-text);
+    font-family: var(--font-body-family);
+    font-size: 1.5rem;
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .email-signup__input::placeholder {
+    color: var(--email-signup-placeholder);
+    opacity: 1;
+  }
+
+  .email-signup__input:focus,
+  .email-signup__input:focus-visible {
+    border-color: var(--email-signup-input-focus);
+    box-shadow: 0 0 0 1px var(--email-signup-input-focus);
+  }
+
+  .email-signup__button {
+    flex: 0 0 auto;
+    height: var(--email-signup-height);
+    min-width: var(--email-signup-height);
+    padding: 0 2rem;
+    border: 0;
+    border-radius: var(--email-signup-radius);
+    background-color: var(--email-signup-button-bg);
+    color: var(--email-signup-button-text);
+    font-family: var(--font-body-family);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .email-signup__button:hover {
+    background-color: var(--email-signup-button-hover-bg);
+  }
+
+  .email-signup__button:focus-visible {
+    outline: 2px solid var(--email-signup-input-focus);
+    outline-offset: 2px;
+  }
+
+  .email-signup__button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  .email-signup__terms {
+    margin-top: 1.2rem;
+  }
+
+  .email-signup__message {
+    margin: 1.2rem 0 0;
+  }
+{% endstylesheet %}
 
 {% javascript %}
   (function () {
@@ -107,7 +233,170 @@
 {
   "name": "t:blocks.email_signup.name",
   "tag": null,
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "placeholder",
+      "default": "Your email address",
+      "label": "t:blocks.email_signup.settings.placeholder.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Join",
+      "label": "t:blocks.email_signup.settings.button_label.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.email_signup.settings.header_layout.content"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:blocks.email_signup.settings.alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:blocks.email_signup.settings.alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:blocks.email_signup.settings.alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:blocks.email_signup.settings.alignment.label"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 300,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 940,
+      "label": "t:blocks.email_signup.settings.max_width.label"
+    },
+    {
+      "type": "range",
+      "id": "field_height",
+      "min": 36,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 46,
+      "label": "t:blocks.email_signup.settings.field_height.label"
+    },
+    {
+      "type": "range",
+      "id": "field_height_mobile",
+      "min": 36,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 46,
+      "label": "t:blocks.email_signup.settings.field_height_mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 10,
+      "label": "t:blocks.email_signup.settings.gap.label"
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 4,
+      "label": "t:blocks.email_signup.settings.radius.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 24,
+      "label": "t:blocks.email_signup.settings.margin_top.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.email_signup.settings.margin_bottom.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.email_signup.settings.header_field.content"
+    },
+    {
+      "type": "color",
+      "id": "field_background",
+      "default": "#ffffff",
+      "label": "t:blocks.email_signup.settings.field_background.label"
+    },
+    {
+      "type": "color",
+      "id": "field_text_color",
+      "default": "#1f2937",
+      "label": "t:blocks.email_signup.settings.field_text_color.label"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_color",
+      "default": "#8a94a6",
+      "label": "t:blocks.email_signup.settings.placeholder_color.label"
+    },
+    {
+      "type": "color",
+      "id": "field_border_color",
+      "default": "#c9dde9",
+      "label": "t:blocks.email_signup.settings.field_border_color.label"
+    },
+    {
+      "type": "color",
+      "id": "field_focus_color",
+      "default": "#0066d6",
+      "label": "t:blocks.email_signup.settings.field_focus_color.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.email_signup.settings.header_button.content"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "default": "#0066d6",
+      "label": "t:blocks.email_signup.settings.button_background.label"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "default": "#0052ab",
+      "label": "t:blocks.email_signup.settings.button_hover_background.label"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "default": "#ffffff",
+      "label": "t:blocks.email_signup.settings.button_text_color.label"
+    }
+  ],
   "presets": [
     {
       "name": "t:blocks.email_signup.name"

@@ -7625,7 +7625,81 @@
       "name": "Countdown-Timer"
     },
     "email_signup": {
-      "name": "E-Mail-Anmeldeformular"
+      "name": "E-Mail-Anmeldeformular",
+      "settings": {
+        "placeholder": {
+          "label": "Platzhaltertext"
+        },
+        "button_label": {
+          "label": "Schaltflächenbeschriftung"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "alignment": {
+          "label": "Ausrichtung",
+          "options__1": {
+            "label": "Links"
+          },
+          "options__2": {
+            "label": "Mitte"
+          },
+          "options__3": {
+            "label": "Rechts"
+          }
+        },
+        "max_width": {
+          "label": "Maximale Breite"
+        },
+        "field_height": {
+          "label": "Feldhöhe (Desktop)"
+        },
+        "field_height_mobile": {
+          "label": "Feldhöhe (mobil)"
+        },
+        "gap": {
+          "label": "Abstand zwischen Feld und Schaltfläche"
+        },
+        "radius": {
+          "label": "Eckenradius"
+        },
+        "margin_top": {
+          "label": "Abstand oben"
+        },
+        "margin_bottom": {
+          "label": "Abstand unten"
+        },
+        "header_field": {
+          "content": "E-Mail-Feld"
+        },
+        "field_background": {
+          "label": "Hintergrund"
+        },
+        "field_text_color": {
+          "label": "Text"
+        },
+        "placeholder_color": {
+          "label": "Platzhalter"
+        },
+        "field_border_color": {
+          "label": "Rahmen"
+        },
+        "field_focus_color": {
+          "label": "Fokusrahmen"
+        },
+        "header_button": {
+          "content": "Schaltfläche"
+        },
+        "button_background": {
+          "label": "Hintergrund"
+        },
+        "button_hover_background": {
+          "label": "Hintergrund beim Hovern"
+        },
+        "button_text_color": {
+          "label": "Text"
+        }
+      }
     },
     "two_images_text_image": {
       "settings": {

@@ -7625,7 +7625,81 @@
       "name": "Temporizador de cuenta regresiva"
     },
     "email_signup": {
-      "name": "Formulario de suscripción"
+      "name": "Formulario de suscripción",
+      "settings": {
+        "placeholder": {
+          "label": "Texto de marcador"
+        },
+        "button_label": {
+          "label": "Etiqueta del botón"
+        },
+        "header_layout": {
+          "content": "Diseño"
+        },
+        "alignment": {
+          "label": "Alineación",
+          "options__1": {
+            "label": "Izquierda"
+          },
+          "options__2": {
+            "label": "Centro"
+          },
+          "options__3": {
+            "label": "Derecha"
+          }
+        },
+        "max_width": {
+          "label": "Ancho máximo"
+        },
+        "field_height": {
+          "label": "Altura del campo (escritorio)"
+        },
+        "field_height_mobile": {
+          "label": "Altura del campo (móvil)"
+        },
+        "gap": {
+          "label": "Espacio entre campo y botón"
+        },
+        "radius": {
+          "label": "Radio de esquinas"
+        },
+        "margin_top": {
+          "label": "Espacio superior"
+        },
+        "margin_bottom": {
+          "label": "Espacio inferior"
+        },
+        "header_field": {
+          "content": "Campo de correo"
+        },
+        "field_background": {
+          "label": "Fondo"
+        },
+        "field_text_color": {
+          "label": "Texto"
+        },
+        "placeholder_color": {
+          "label": "Marcador"
+        },
+        "field_border_color": {
+          "label": "Borde"
+        },
+        "field_focus_color": {
+          "label": "Borde con foco"
+        },
+        "header_button": {
+          "content": "Botón"
+        },
+        "button_background": {
+          "label": "Fondo"
+        },
+        "button_hover_background": {
+          "label": "Fondo al pasar el cursor"
+        },
+        "button_text_color": {
+          "label": "Texto"
+        }
+      }
     },
     "two_images_text_image": {
       "settings": {

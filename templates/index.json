@@ -4735,6 +4735,73 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
+    },
+    "blocks_section_newsletter": {
+      "type": "blocks-section",
+      "blocks": {
+        "heading_newsletter": {
+          "type": "heading",
+          "settings": {
+            "heading": "One useful email a week",
+            "heading_tag": "h2",
+            "alignment": "left",
+            "text_color": "#160081",
+            "custom_font_size": true,
+            "font_size": 24,
+            "font_size_mobile": 22,
+            "custom_line_height": true,
+            "line_height": 32,
+            "line_height_mobile": 30
+          },
+          "blocks": {}
+        },
+        "text_newsletter": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Real answers about perimenopause and menopause. No scare tactics, no daily drip. Unsubscribe any time.</p>",
+            "alignment": "left",
+            "text_color": "#4b5563",
+            "custom_font_size": true,
+            "font_size": 15,
+            "font_size_mobile": 14,
+            "custom_line_height": true,
+            "line_height": 26,
+            "line_height_mobile": 24
+          },
+          "blocks": {}
+        },
+        "email_signup_newsletter": {
+          "type": "email-signup",
+          "settings": {
+            "placeholder": "Your email address",
+            "button_label": "Join",
+            "alignment": "left",
+            "max_width": 940,
+            "field_height": 46,
+            "field_height_mobile": 46,
+            "gap": 10,
+            "radius": 4,
+            "margin_top": 12,
+            "margin_bottom": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_newsletter",
+        "text_newsletter",
+        "email_signup_newsletter"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 12,
+        "blocks_gap_mobile": 8,
+        "color_scheme": "option-1",
+        "background_color": "#f8f8f9",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
     }
   },
   "order": [
@@ -4753,6 +4820,7 @@
     "blocks_section_experience",
     "testimonials",
     "featured_blog",
-    "image_banner"
+    "image_banner",
+    "blocks_section_newsletter"
   ]
 }

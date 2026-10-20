@@ -7625,7 +7625,81 @@
       "name": "Countdown timer"
     },
     "email_signup": {
-      "name": "Email signup form"
+      "name": "Email signup form",
+      "settings": {
+        "placeholder": {
+          "label": "Placeholder text"
+        },
+        "button_label": {
+          "label": "Button label"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "alignment": {
+          "label": "Alignment",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        },
+        "max_width": {
+          "label": "Maximum width"
+        },
+        "field_height": {
+          "label": "Field height on desktop"
+        },
+        "field_height_mobile": {
+          "label": "Field height on mobile"
+        },
+        "gap": {
+          "label": "Space between field and button"
+        },
+        "radius": {
+          "label": "Corner radius"
+        },
+        "margin_top": {
+          "label": "Space above"
+        },
+        "margin_bottom": {
+          "label": "Space below"
+        },
+        "header_field": {
+          "content": "Email field"
+        },
+        "field_background": {
+          "label": "Background"
+        },
+        "field_text_color": {
+          "label": "Text"
+        },
+        "placeholder_color": {
+          "label": "Placeholder"
+        },
+        "field_border_color": {
+          "label": "Border"
+        },
+        "field_focus_color": {
+          "label": "Focus border"
+        },
+        "header_button": {
+          "content": "Button"
+        },
+        "button_background": {
+          "label": "Background"
+        },
+        "button_hover_background": {
+          "label": "Hover background"
+        },
+        "button_text_color": {
+          "label": "Text"
+        }
+      }
     },
     "two_images_text_image": {
       "settings": {
