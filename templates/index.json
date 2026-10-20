@@ -2075,9 +2075,9 @@
         "item_gap": 40,
         "item_gap_mobile": 20,
         "stack_mobile": true,
-        "circle_size": 64,
+        "circle_size": 80,
         "circle_size_mobile": 56,
-        "icon_size": 32,
+        "icon_size": 40,
         "icon_size_mobile": 28,
         "circle_color": "#ffffff",
         "icon_color": "#2152d9",
@@ -4810,7 +4810,7 @@
         "blocks_gap": 12,
         "blocks_gap_mobile": 8,
         "color_scheme": "option-1",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 48
       }
