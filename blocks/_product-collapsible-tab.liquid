@@ -11,7 +11,31 @@
     {{ block.shopify_attributes }}
   >
 {%- endunless -%}
-{% if block.settings.content != blank or block.settings.page.content != blank or block.settings.custom_liquid != blank or block.settings.image != blank %} 
+{% if block.settings.content != blank or block.settings.page.content != blank or block.settings.custom_liquid != blank or block.settings.image != blank %}
+  {%- comment -%} Style lives inside the .block wrapper; two-column-layout JS drops anything outside it. {%- endcomment -%}
+  {%- if block.settings.custom_font -%}
+    {%- style -%}
+      .section-{{ block.id }}-margin .accordion .accordion__title {
+        font-size: {{ block.settings.label_font_size_mobile }}px;
+        font-weight: {{ block.settings.label_font_weight }};
+      }
+      .section-{{ block.id }}-margin .accordion .accordion__content,
+      .section-{{ block.id }}-margin .accordion .accordion__content :is(p, li, span, a) {
+        font-size: {{ block.settings.content_font_size_mobile }}px;
+        font-weight: {{ block.settings.content_font_weight }};
+        line-height: {{ block.settings.content_line_height }};
+      }
+      @media screen and (min-width: 750px) {
+        .section-{{ block.id }}-margin .accordion .accordion__title {
+          font-size: {{ block.settings.label_font_size }}px;
+        }
+        .section-{{ block.id }}-margin .accordion .accordion__content,
+        .section-{{ block.id }}-margin .accordion .accordion__content :is(p, li, span, a) {
+          font-size: {{ block.settings.content_font_size }}px;
+        }
+      }
+    {%- endstyle -%}
+  {%- endif -%}
   <div
     class="section-{{ block.id }}-margin product-accordion accordion {% if block.settings.no_padding == true %}no-padding{% endif %}"
   >
@@ -359,6 +383,120 @@
       "id": "custom_liquid",
       "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
       "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.accordion_font.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_font",
+      "default": false,
+      "label": "t:sections.all.accordion_font.custom_font.label"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "default": 18,
+      "label": "t:sections.all.accordion_font.label_font_size.label",
+      "visible_if": "{{ block.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size_mobile",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "default": 16,
+      "label": "t:sections.all.accordion_font.label_font_size_mobile.label",
+      "visible_if": "{{ block.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "label_font_weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__1.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__2.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__3.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__4.label"
+        }
+      ],
+      "default": "600",
+      "label": "t:sections.all.accordion_font.label_font_weight.label",
+      "visible_if": "{{ block.settings.custom_font }}"
+    },
+    {
+      "type": "range",
+      "id": "content_font_size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 16,
+      "label": "t:sections.all.accordion_font.content_font_size.label",
+      "visible_if": "{{ block.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "content_font_size_mobile",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 15,
+      "label": "t:sections.all.accordion_font.content_font_size_mobile.label",
+      "visible_if": "{{ block.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "content_font_weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__1.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__2.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__3.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__4.label"
+        }
+      ],
+      "default": "400",
+      "label": "t:sections.all.accordion_font.content_font_weight.label",
+      "visible_if": "{{ block.settings.custom_font }}"
+    },
+    {
+      "type": "range",
+      "id": "content_line_height",
+      "min": 1,
+      "max": 2.4,
+      "step": 0.1,
+      "default": 1.6,
+      "label": "t:sections.all.accordion_font.content_line_height.label",
+      "visible_if": "{{ block.settings.custom_font }}"
     },
     {
       "type": "checkbox",

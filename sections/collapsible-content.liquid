@@ -23,6 +23,28 @@
       margin-top: {{ section.settings.margin_top }}px;
     }
   }
+
+  {%- if section.settings.custom_font %}
+    .section-{{ section.id }}-margin .accordion .accordion__title {
+      font-size: {{ section.settings.label_font_size_mobile }}px;
+      font-weight: {{ section.settings.label_font_weight }};
+    }
+    .section-{{ section.id }}-margin .accordion .accordion__content,
+    .section-{{ section.id }}-margin .accordion .accordion__content :is(p, li, span, a) {
+      font-size: {{ section.settings.content_font_size_mobile }}px;
+      font-weight: {{ section.settings.content_font_weight }};
+      line-height: {{ section.settings.content_line_height }};
+    }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-margin .accordion .accordion__title {
+        font-size: {{ section.settings.label_font_size }}px;
+      }
+      .section-{{ section.id }}-margin .accordion .accordion__content,
+      .section-{{ section.id }}-margin .accordion .accordion__content :is(p, li, span, a) {
+        font-size: {{ section.settings.content_font_size }}px;
+      }
+    }
+  {%- endif %}
 {%- endstyle -%}
 
 {% comment %} Start Collapsible Content {% endcomment %}
@@ -224,6 +246,120 @@
       "id": "open_all_collapsible_row",
       "default": false,
       "label": "t:sections.collapsible_content.settings.open_all_collapsible_row.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.accordion_font.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_font",
+      "default": false,
+      "label": "t:sections.all.accordion_font.custom_font.label"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "default": 18,
+      "label": "t:sections.all.accordion_font.label_font_size.label",
+      "visible_if": "{{ section.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size_mobile",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "default": 16,
+      "label": "t:sections.all.accordion_font.label_font_size_mobile.label",
+      "visible_if": "{{ section.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "label_font_weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__1.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__2.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__3.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__4.label"
+        }
+      ],
+      "default": "600",
+      "label": "t:sections.all.accordion_font.label_font_weight.label",
+      "visible_if": "{{ section.settings.custom_font }}"
+    },
+    {
+      "type": "range",
+      "id": "content_font_size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 16,
+      "label": "t:sections.all.accordion_font.content_font_size.label",
+      "visible_if": "{{ section.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "content_font_size_mobile",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 15,
+      "label": "t:sections.all.accordion_font.content_font_size_mobile.label",
+      "visible_if": "{{ section.settings.custom_font }}",
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "content_font_weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__1.label"
+        },
+        {
+          "value": "500",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__2.label"
+        },
+        {
+          "value": "600",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__3.label"
+        },
+        {
+          "value": "700",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.label_font_weight.options__4.label"
+        }
+      ],
+      "default": "400",
+      "label": "t:sections.all.accordion_font.content_font_weight.label",
+      "visible_if": "{{ section.settings.custom_font }}"
+    },
+    {
+      "type": "range",
+      "id": "content_line_height",
+      "min": 1,
+      "max": 2.4,
+      "step": 0.1,
+      "default": 1.6,
+      "label": "t:sections.all.accordion_font.content_line_height.label",
+      "visible_if": "{{ section.settings.custom_font }}"
     },
     {
       "type": "header",

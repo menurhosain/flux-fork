@@ -1042,6 +1042,35 @@
       },
       "always_use_plus_icon": {
         "label": "Toujours utiliser l’icône *+* pour l’ajout rapide au panier"
+      },
+      "accordion_font": {
+        "header": {
+          "content": "Typographie"
+        },
+        "custom_font": {
+          "label": "Tailles de police personnalisées"
+        },
+        "label_font_size": {
+          "label": "Taille du titre de ligne (ordinateur)"
+        },
+        "label_font_size_mobile": {
+          "label": "Taille du titre de ligne (mobile)"
+        },
+        "label_font_weight": {
+          "label": "Graisse du titre de ligne"
+        },
+        "content_font_size": {
+          "label": "Taille du contenu (ordinateur)"
+        },
+        "content_font_size_mobile": {
+          "label": "Taille du contenu (mobile)"
+        },
+        "content_font_weight": {
+          "label": "Graisse du contenu"
+        },
+        "content_line_height": {
+          "label": "Hauteur de ligne du contenu"
+        }
       }
     },
     "announcement-bar": {

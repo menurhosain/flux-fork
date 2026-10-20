@@ -1042,6 +1042,35 @@
       },
       "always_use_plus_icon": {
         "label": "Usa sempre l'icona *+* per l'aggiunta rapida al carrello"
+      },
+      "accordion_font": {
+        "header": {
+          "content": "Tipografia"
+        },
+        "custom_font": {
+          "label": "Dimensioni carattere personalizzate"
+        },
+        "label_font_size": {
+          "label": "Dimensione titolo riga (desktop)"
+        },
+        "label_font_size_mobile": {
+          "label": "Dimensione titolo riga (mobile)"
+        },
+        "label_font_weight": {
+          "label": "Spessore titolo riga"
+        },
+        "content_font_size": {
+          "label": "Dimensione contenuto (desktop)"
+        },
+        "content_font_size_mobile": {
+          "label": "Dimensione contenuto (mobile)"
+        },
+        "content_font_weight": {
+          "label": "Spessore contenuto"
+        },
+        "content_line_height": {
+          "label": "Interlinea contenuto"
+        }
       }
     },
     "announcement-bar": {

@@ -1042,6 +1042,35 @@
       },
       "always_use_plus_icon": {
         "label": "Immer das *+*-Symbol für Schnellkauf verwenden"
+      },
+      "accordion_font": {
+        "header": {
+          "content": "Typografie"
+        },
+        "custom_font": {
+          "label": "Eigene Schriftgrößen"
+        },
+        "label_font_size": {
+          "label": "Zeilentitel-Größe (Desktop)"
+        },
+        "label_font_size_mobile": {
+          "label": "Zeilentitel-Größe (Mobil)"
+        },
+        "label_font_weight": {
+          "label": "Zeilentitel-Stärke"
+        },
+        "content_font_size": {
+          "label": "Inhaltsgröße (Desktop)"
+        },
+        "content_font_size_mobile": {
+          "label": "Inhaltsgröße (Mobil)"
+        },
+        "content_font_weight": {
+          "label": "Inhalts-Schriftstärke"
+        },
+        "content_line_height": {
+          "label": "Inhalts-Zeilenhöhe"
+        }
       }
     },
     "announcement-bar": {

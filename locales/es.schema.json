@@ -1042,6 +1042,35 @@
       },
       "always_use_plus_icon": {
         "label": "Usar siempre el icono *+* para añadir rápidamente al carrito"
+      },
+      "accordion_font": {
+        "header": {
+          "content": "Tipografía"
+        },
+        "custom_font": {
+          "label": "Tamaños de fuente personalizados"
+        },
+        "label_font_size": {
+          "label": "Tamaño del título de fila (escritorio)"
+        },
+        "label_font_size_mobile": {
+          "label": "Tamaño del título de fila (móvil)"
+        },
+        "label_font_weight": {
+          "label": "Grosor del título de fila"
+        },
+        "content_font_size": {
+          "label": "Tamaño del contenido (escritorio)"
+        },
+        "content_font_size_mobile": {
+          "label": "Tamaño del contenido (móvil)"
+        },
+        "content_font_weight": {
+          "label": "Grosor del contenido"
+        },
+        "content_line_height": {
+          "label": "Altura de línea del contenido"
+        }
       }
     },
     "announcement-bar": {

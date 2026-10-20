@@ -1042,6 +1042,35 @@
       },
       "always_use_plus_icon": {
         "label": "Always use *+* icon for quick add to cart"
+      },
+      "accordion_font": {
+        "header": {
+          "content": "Typography"
+        },
+        "custom_font": {
+          "label": "Custom font sizes"
+        },
+        "label_font_size": {
+          "label": "Row label size (desktop)"
+        },
+        "label_font_size_mobile": {
+          "label": "Row label size (mobile)"
+        },
+        "label_font_weight": {
+          "label": "Row label weight"
+        },
+        "content_font_size": {
+          "label": "Content size (desktop)"
+        },
+        "content_font_size_mobile": {
+          "label": "Content size (mobile)"
+        },
+        "content_font_weight": {
+          "label": "Content weight"
+        },
+        "content_line_height": {
+          "label": "Content line height"
+        }
       }
     },
     "announcement-bar": {
