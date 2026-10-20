@@ -4739,34 +4739,39 @@
     "blocks_section_newsletter": {
       "type": "blocks-section",
       "blocks": {
-        "heading_newsletter": {
-          "type": "heading",
+        "section_heading_D9dLDd": {
+          "type": "section-heading",
           "settings": {
+            "subheading": "Be connected",
             "heading": "One useful email a week",
             "heading_tag": "h2",
-            "alignment": "left",
-            "text_color": "#160081",
-            "custom_font_size": true,
-            "font_size": 24,
-            "font_size_mobile": 22,
-            "custom_line_height": true,
-            "line_height": 32,
-            "line_height_mobile": 30
-          },
-          "blocks": {}
-        },
-        "text_newsletter": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Real answers about perimenopause and menopause. No scare tactics, no daily drip. Unsubscribe any time.</p>",
-            "alignment": "left",
-            "text_color": "#4b5563",
-            "custom_font_size": true,
-            "font_size": 15,
-            "font_size_mobile": 14,
-            "custom_line_height": true,
-            "line_height": 26,
-            "line_height_mobile": 24
+            "description": "<p>Real answers about perimenopause and menopause. No scare tactics, no daily drip. Unsubscribe any time.</p>",
+            "alignment": "center",
+            "max_width": 840,
+            "margin_bottom": 32,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
           },
           "blocks": {}
         },
@@ -4775,31 +4780,38 @@
           "settings": {
             "placeholder": "Your email address",
             "button_label": "Join",
-            "alignment": "left",
-            "max_width": 940,
+            "alignment": "center",
+            "max_width": 660,
             "field_height": 46,
             "field_height_mobile": 46,
             "gap": 10,
             "radius": 4,
             "margin_top": 12,
-            "margin_bottom": 0
+            "margin_bottom": 0,
+            "field_background": "#ffffff",
+            "field_text_color": "#1f2937",
+            "placeholder_color": "#8a94a6",
+            "field_border_color": "#c9dde9",
+            "field_focus_color": "#0066d6",
+            "button_background": "#0066d6",
+            "button_hover_background": "#0052ab",
+            "button_text_color": "#ffffff"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "heading_newsletter",
-        "text_newsletter",
+        "section_heading_D9dLDd",
         "email_signup_newsletter"
       ],
       "settings": {
         "full_width": false,
-        "content_alignment": "left",
+        "content_alignment": "right",
         "blocks_gap": 12,
         "blocks_gap_mobile": 8,
         "color_scheme": "option-1",
-        "background_color": "#f8f8f9",
-        "padding_top": 48,
+        "background_color": "#FFFFFF",
+        "padding_top": 0,
         "padding_bottom": 48
       }
     }
