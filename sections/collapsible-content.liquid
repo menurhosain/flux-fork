@@ -45,6 +45,60 @@
       }
     }
   {%- endif %}
+
+  {%- if section.settings.align_to_page_edge %}
+    .section-{{ section.id }}-margin .collapsible-content-container {
+      max-width: none;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    #shopify-section-{{ section.id }} .accordion details > summary {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    #shopify-section-{{ section.id }} .accordion details > summary .icon-caret {
+      right: 0;
+    }
+  {%- endif %}
+
+  {%- if section.settings.max_width > 0 %}
+    .section-{{ section.id }}-margin .collapsible-content-container {
+      max-width: {{ section.settings.max_width }}px;
+      {%- if section.settings.rows_position == 'center' %}
+        margin-left: auto;
+        margin-right: auto;
+      {%- else %}
+        margin-left: 0;
+      {%- endif %}
+    }
+  {%- endif %}
+
+  {%- if section.settings.divider_color != blank %}
+    .section-{{ section.id }}-margin .accordion-block .accordion {
+      margin-bottom: 0;
+    }
+    .section-{{ section.id }}-margin .accordion-block > .accordion {
+      border-bottom: 1px solid {{ section.settings.divider_color }};
+    }
+    .section-{{ section.id }}-margin .accordion-block > .accordion:first-child {
+      border-top: 1px solid {{ section.settings.divider_color }};
+    }
+  {%- endif %}
+
+  {%- if section.settings.label_color != blank %}
+    .section-{{ section.id }}-margin .accordion summary,
+    .section-{{ section.id }}-margin .accordion .accordion__title,
+    .section-{{ section.id }}-margin .accordion summary .icon-caret {
+      color: {{ section.settings.label_color }};
+    }
+  {%- endif %}
+  {%- if section.settings.content_color != blank %}
+    .section-{{ section.id }}-margin .accordion .accordion__content,
+    .section-{{ section.id }}-margin .accordion .accordion__content :is(p, li, span) {
+      color: {{ section.settings.content_color }};
+    }
+  {%- endif %}
 {%- endstyle -%}
 
 {% comment %} Start Collapsible Content {% endcomment %}
@@ -360,6 +414,57 @@
       "default": 1.6,
       "label": "t:sections.all.accordion_font.content_line_height.label",
       "visible_if": "{{ section.settings.custom_font }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "align_to_page_edge",
+      "default": false,
+      "label": "t:sections.all.accordion_font.align_to_page_edge.label",
+      "info": "t:sections.all.accordion_font.align_to_page_edge.info"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 0,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 0,
+      "label": "t:sections.all.accordion_font.max_width.label",
+      "info": "t:sections.all.accordion_font.max_width.info"
+    },
+    {
+      "type": "select",
+      "id": "rows_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.accordion_font.rows_position.options__left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.accordion_font.rows_position.options__center.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.all.accordion_font.rows_position.label",
+      "visible_if": "{{ section.settings.max_width > 0 }}"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "t:sections.all.accordion_font.divider_color.label",
+      "info": "t:sections.all.accordion_font.divider_color.info"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "t:sections.all.accordion_font.label_color.label"
+    },
+    {
+      "type": "color",
+      "id": "content_color",
+      "label": "t:sections.all.accordion_font.content_color.label"
     },
     {
       "type": "header",

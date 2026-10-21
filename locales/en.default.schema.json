@@ -1133,6 +1133,33 @@
         },
         "content_line_height": {
           "label": "Content line height"
+        },
+        "align_to_page_edge": {
+          "label": "Align rows to page edge",
+          "info": "Full page width, no side padding"
+        },
+        "max_width": {
+          "label": "Rows max width",
+          "info": "0 uses the default width"
+        },
+        "rows_position": {
+          "label": "Rows position",
+          "options__left": {
+            "label": "Left"
+          },
+          "options__center": {
+            "label": "Center"
+          }
+        },
+        "divider_color": {
+          "label": "Row divider color",
+          "info": "Leave empty for no divider lines"
+        },
+        "label_color": {
+          "label": "Row label color"
+        },
+        "content_color": {
+          "label": "Content color"
         }
       }
     },

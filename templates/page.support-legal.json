@@ -1,14 +1,353 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "blocks_section_faq_hero": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_faq": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Support",
+            "heading": "Frequently asked questions",
+            "heading_tag": "h2",
+            "description": "<p>Quick answers about the AI guide, shipping, returns, privacy and care. Still stuck? Contact us below.</p>",
+            "alignment": "center",
+            "max_width": 840,
+            "margin_bottom": 28,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#ffffff",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#ffffff",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "#f8f8f8",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_faq"
+      ],
+      "name": "Banner section",
+      "settings": {
+        "anchor_id": "",
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 0,
+        "color_scheme": "option-4",
+        "background_color": "",
+        "background_image": "shopify://shop_images/inner3.jpg",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "collapsible_content_faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_ai_advice": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "Is the AI guide medical advice?",
+            "icon": "none",
+            "row_content": "<p>No. The AI guide gives information drawn from our guides and cited sources. It never diagnoses and never replaces your clinician. Every answer about treatment says so.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "row_shipping": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "How fast is shipping?",
+            "icon": "none",
+            "row_content": "<p>Most orders ship within 1 to 2 business days and arrive in 3 to 5 business days. You get a tracking link by email as soon as your order leaves us.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "row_returns": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>Unopened products can be returned within 30 days of delivery for a full refund. Contact us first and we will send you a return label.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "row_privacy": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "What do you do with my health information?",
+            "icon": "none",
+            "row_content": "<p>We use it only to run your account and answer your questions. We never sell it, and you can ask us to delete it at any time.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "row_insurance": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "Do you take insurance?",
+            "icon": "none",
+            "row_content": "<p>Not at the moment. Our products use clear cash pricing, and some may be FSA/HSA eligible. Check with your plan to be sure.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "row_physician": {
+          "type": "_collapsible-row",
+          "settings": {
+            "heading": "When can I see a physician through Bacton?",
+            "icon": "none",
+            "row_content": "<p>Clinician visits are coming soon. Join the waitlist on our physician page and we will email you once when visits open.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "row_ai_advice",
+        "row_shipping",
+        "row_returns",
+        "row_privacy",
+        "row_insurance",
+        "row_physician"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "heading": "",
+        "heading_size": "large",
+        "heading_style": "default",
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "open_first_collapsible_row": true,
+        "open_all_collapsible_row": false,
+        "custom_font": true,
+        "label_font_size": 18,
+        "label_font_size_mobile": 15,
+        "label_font_weight": "600",
+        "content_font_size": 16,
+        "content_font_size_mobile": 14,
+        "content_font_weight": "400",
+        "content_line_height": 1.6,
+        "align_to_page_edge": true,
+        "max_width": 760,
+        "rows_position": "center",
+        "divider_color": "#d6e4f5",
+        "label_color": "#160081",
+        "content_color": "#4b5563",
+        "color_scheme": "option-1",
+        "color_scheme_1": "option-1",
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "ignore_spacing": true,
+        "margin_spacing": "negative",
+        "margin_top": 0
+      }
+    },
+    "blocks_section_contact": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_contact": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Get in touch",
+            "heading": "Contact us",
+            "heading_tag": "h2",
+            "description": "<p>Email us at <a href=\"mailto:support@bactonhealth.com\">support@bactonhealth.com</a> or call <a href=\"tel:8882511518\">888-251-1518</a>, Monday to Friday, 9 to 5 Pacific. Our mailing address is 2108 N St. Ste. N, Sacramento, CA 95816.</p>",
+            "alignment": "center",
+            "max_width": 750,
+            "margin_bottom": 40,
+            "margin_bottom_mobile": 8,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 30,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 13,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_contact"
+      ],
+      "name": "Contact us",
+      "settings": {
+        "anchor_id": "contact",
+        "full_width": false,
+        "content_alignment": "center",
+        "blocks_gap": 20,
+        "blocks_gap_mobile": 16,
+        "color_scheme": "option-4",
+        "background_color": "",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "blocks_section_blog_heading": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_blog": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "From the blog",
+            "heading": "Latest news and updates",
+            "heading_tag": "h2",
+            "description": "",
+            "alignment": "center",
+            "max_width": 0,
+            "margin_bottom": 0,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 30,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 13,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_blog"
+      ],
+      "name": "Blog heading",
+      "settings": {
+        "anchor_id": "",
+        "full_width": false,
+        "content_alignment": "center",
+        "blocks_gap": 20,
+        "blocks_gap_mobile": 16,
+        "color_scheme": "",
+        "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "heading": "",
+        "heading_size": "medium",
+        "heading_style": "default",
+        "heading_tag": "h2",
+        "blog": "news",
+        "blog_style": "blog-style-four",
+        "post_limit": 6,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": true,
+        "custom_post_title_size": true,
+        "post_title_size": 20,
+        "post_title_size_mobile": 18,
+        "custom_excerpt_size": true,
+        "excerpt_size": 14,
+        "excerpt_size_mobile": 14,
+        "show_view_all": true,
+        "color_scheme": "option-1",
+        "color_scheme_1": "option-3",
+        "padding_top": 40,
+        "padding_bottom": 60,
+        "ignore_spacing": false,
+        "margin_spacing": "negative",
+        "margin_top": 0,
+        "swipe_on_mobile": false,
+        "disable_arrow_mobile": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "blocks_section_faq_hero",
+    "collapsible_content_faq",
+    "blocks_section_contact",
+    "blocks_section_blog_heading",
+    "featured_blog"
   ]
 }
