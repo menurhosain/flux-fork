@@ -1631,6 +1631,10 @@
         "blocks_gap_mobile": 0,
         "color_scheme": "",
         "background_color": "",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 32,
         "padding_bottom": 44
       }
@@ -1750,7 +1754,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -1810,7 +1818,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -1870,7 +1882,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             }
@@ -1893,6 +1909,10 @@
         "blocks_gap_mobile": 32,
         "color_scheme": "option-1",
         "background_color": "#eaf2fd",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -1985,7 +2005,7 @@
             "shelf_card_2": {
               "type": "product-card",
               "settings": {
-                "product": "bonafide-relizen",
+                "product": "kindra-daily-v-lotion",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -2011,7 +2031,7 @@
             "shelf_card_3": {
               "type": "product-card",
               "settings": {
-                "product": "bonafide-thermella",
+                "product": "womaness-let-me-sleep",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -2037,7 +2057,7 @@
             "shelf_card_4": {
               "type": "product-card",
               "settings": {
-                "product": "embr-wave-2",
+                "product": "bonafide-serenol",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -2102,6 +2122,10 @@
         "blocks_gap_mobile": 16,
         "color_scheme": "option-1",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 32,
         "padding_bottom": 40
       }
@@ -2431,7 +2455,11 @@
                 "number_color": "#107af8",
                 "number_size": 36,
                 "number_size_mobile": 30,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -2491,7 +2519,11 @@
                 "number_color": "#107af8",
                 "number_size": 36,
                 "number_size_mobile": 30,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -2551,7 +2583,11 @@
                 "number_color": "#107af8",
                 "number_size": 36,
                 "number_size_mobile": 30,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             }
@@ -2576,6 +2612,10 @@
         "blocks_gap_mobile": 32,
         "color_scheme": "option-1",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -3016,6 +3056,10 @@
         "blocks_gap_mobile": 32,
         "color_scheme": "",
         "background_color": "#f2f2f2",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 24,
         "padding_bottom": 0
       }
@@ -4414,7 +4458,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -4475,7 +4523,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -4536,7 +4588,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             }
@@ -4561,6 +4617,10 @@
         "blocks_gap_mobile": 32,
         "color_scheme": "option-1",
         "background_color": "#e3f4fd",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -4615,6 +4675,10 @@
         "blocks_gap_mobile": 32,
         "color_scheme": "",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 60,
         "padding_bottom": 0
       }
@@ -4780,6 +4844,10 @@
         "blocks_gap_mobile": 8,
         "color_scheme": "option-1",
         "background_color": "#0261d1",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -4834,6 +4902,10 @@
         "blocks_gap_mobile": 32,
         "color_scheme": "",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 40,
         "padding_bottom": 0
       }
@@ -4853,16 +4925,16 @@
         "post_limit": 2,
         "columns_desktop": 2,
         "show_image": true,
-        "show_date": true,
+        "show_date": false,
         "show_author": false,
         "show_excerpt": true,
         "custom_post_title_size": true,
-        "post_title_size": 24,
+        "post_title_size": 28,
         "post_title_size_mobile": 20,
         "custom_excerpt_size": true,
         "excerpt_size": 16,
         "excerpt_size_mobile": 14,
-        "show_view_all": true,
+        "show_view_all": false,
         "color_scheme": "option-1",
         "color_scheme_1": "option-3",
         "padding_top": 44,
@@ -4877,6 +4949,56 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "button_djEyJd": {
+          "type": "button",
+          "name": "t:blocks.button.name",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "apply_link_to_image": false,
+            "open_new_tab_1": false,
+            "button_style_secondary": false,
+            "link_style": false,
+            "underline_color": "",
+            "underline_thickness": 2,
+            "text_color": "",
+            "background_color": "",
+            "hover_effect": "none",
+            "sweep_color": "",
+            "hover_duration": 300,
+            "hover_text_color": "",
+            "hover_background_color": "",
+            "hover_border_color": "",
+            "hover_icon_color": "",
+            "hover_underline_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 16,
+            "font_weight": "inherit",
+            "custom_letter_spacing": false,
+            "letter_spacing": 0,
+            "custom_border_radius": false,
+            "border_radius": 6,
+            "border_width": 0,
+            "border_color": "",
+            "custom_padding": false,
+            "padding_vertical": 12,
+            "padding_horizontal": 24,
+            "padding_vertical_mobile": 10,
+            "padding_horizontal_mobile": 20,
+            "custom_margin": false,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_left": 0,
+            "margin_right": 0,
+            "icon_size": 20,
+            "icon_position": "last",
+            "icon_spacing": 8,
+            "recolor_icon": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
         "caption_y3iVR3": {
           "type": "caption",
           "name": "t:blocks.caption.name",
@@ -4996,13 +5118,13 @@
                 "link_style": false,
                 "underline_color": "",
                 "underline_thickness": 2,
-                "text_color": "#000000",
-                "background_color": "#f6de89",
+                "text_color": "#ffffff",
+                "background_color": "#0261d1",
                 "hover_effect": "lift",
                 "sweep_color": "",
                 "hover_duration": 300,
                 "hover_text_color": "#ffffff",
-                "hover_background_color": "#e0531a",
+                "hover_background_color": "#0b59b5",
                 "hover_border_color": "",
                 "hover_icon_color": "#ffffff",
                 "hover_underline_color": "",
@@ -5031,7 +5153,7 @@
                 "icon_position": "last",
                 "icon_spacing": 8,
                 "recolor_icon": true,
-                "icon_color": "#000000"
+                "icon_color": "#ffffff"
               },
               "blocks": {}
             },
@@ -5047,12 +5169,12 @@
                 "link_style": false,
                 "underline_color": "",
                 "underline_thickness": 2,
-                "text_color": "#ffffff",
-                "background_color": "#000000",
+                "text_color": "#0b59b5",
+                "background_color": "#ffffff",
                 "hover_effect": "lift",
                 "sweep_color": "",
                 "hover_duration": 300,
-                "hover_text_color": "#000000",
+                "hover_text_color": "#0261d1",
                 "hover_background_color": "#ffffff",
                 "hover_border_color": "",
                 "hover_icon_color": "#000000",
@@ -5094,6 +5216,7 @@
         }
       },
       "block_order": [
+        "button_djEyJd",
         "caption_y3iVR3",
         "heading",
         "text",
@@ -5102,7 +5225,7 @@
       "disabled": true,
       "settings": {
         "image": "shopify://shop_images/banner-2.jpg",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 10,
         "image_border_radius": 0,
         "image_height": "medium",
         "desktop_content_position": "top-center",

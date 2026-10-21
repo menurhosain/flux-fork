@@ -17,7 +17,7 @@
     "breadcrumbs_style": "border",
     "deactivate_animation": false,
     "page_scroll_indicator": true,
-    "scroll_indicator_color": "#00A2F8",
+    "scroll_indicator_color": "#0261D1",
     "page_loader_text": "Loading Bacton...",
     "accent_background_color_1": "#0068D6",
     "accent_color_1": "#FFFFFF",
@@ -31,7 +31,7 @@
     "countdown_text_top": "#2C2B2B",
     "countdown_background_bottom": "#D7F2FF",
     "countdown_text_bottom": "#2C2B2B",
-    "opacity_color": "#2C2B2B",
+    "opacity_color": "#0261D1",
     "type_header_font": "marcellus_n4",
     "type_body_font": "manrope_n4",
     "body_size": 17,
@@ -245,6 +245,28 @@
           "button_primary_text_color": "#ffffff",
           "button_secondary_color": "#ffffff",
           "color_link": "#ffffff"
+        }
+      },
+      "scheme-761544ac-bdc1-46a5-a276-482bf9320aaa": {
+        "settings": {
+          "background_color": "#0261D1",
+          "background_gradient": "",
+          "text_color": "#FFFFFF",
+          "button_primary_background_color": "#FFFFFF",
+          "button_primary_text_color": "#ffffff",
+          "button_secondary_color": "#FFFFFF",
+          "color_link": "#0261D1"
+        }
+      },
+      "scheme-876d2f2a-e34e-4cd4-8c2f-4bde28fd15ba": {
+        "settings": {
+          "background_color": "#E8F2FF",
+          "background_gradient": "",
+          "text_color": "#2c2b2b",
+          "button_primary_background_color": "#0261D1",
+          "button_primary_text_color": "#ffffff",
+          "button_secondary_color": "#0261D1",
+          "color_link": "#0261D1"
         }
       }
     }

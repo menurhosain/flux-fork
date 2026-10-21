@@ -11,20 +11,20 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
-      },
-      "disabled": true
+      }
     },
-    "blocks_section_research_banner": {
+    "blocks_section_YdpQ96": {
       "type": "blocks-section",
       "blocks": {
-        "section_heading_research": {
+        "section_heading_y33igG": {
           "type": "section-heading",
           "settings": {
             "subheading": "Research tracker",
-            "heading": "What is in development",
+            "heading": "&nbsp;What is in development&nbsp;",
             "heading_tag": "h2",
             "description": "<p>Menopause treatments moving through trials and approval. Every entry lists its source and the date we checked it, and timing is always uncertain until the FDA decides.</p>",
             "alignment": "center",
@@ -37,7 +37,7 @@
             "gap_heading_mobile": 12,
             "subheading_size": 15,
             "subheading_size_mobile": 12,
-            "subheading_color": "#0261d1",
+            "subheading_color": "#FFFFFF",
             "subheading_weight": "600",
             "subheading_uppercase": true,
             "subheading_lines": true,
@@ -45,22 +45,51 @@
             "subheading_line_color": "#cbd8e7",
             "heading_size": 56,
             "heading_size_mobile": 34,
-            "heading_color": "#160081",
+            "heading_color": "#FFFFFF",
             "heading_weight": "600",
             "heading_max_width": 0,
             "heading_font": "heading",
             "description_size": 16,
             "description_size_mobile": 15,
-            "description_color": "",
+            "description_color": "#F8F8F8",
             "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "container_ngAez7": {
+          "type": "container",
+          "name": "t:blocks.container.name",
+          "settings": {
+            "background_color": "rgba(0,0,0,0)",
+            "border_radius": 0,
+            "max_width": 0,
+            "alignment": "center",
+            "layout": "flex",
+            "flex_direction": "row",
+            "flex_direction_mobile": "row",
+            "align_items": "center",
+            "justify_content": "center",
+            "gap": 10,
+            "flex_wrap": true,
+            "border_width": 0,
+            "border_color": "#e5e5e5",
+            "border_top": true,
+            "border_right": true,
+            "border_bottom": true,
+            "border_left": true,
+            "padding_vertical": 0,
+            "padding_horizontal": 0,
+            "padding_vertical_mobile": 0,
+            "padding_horizontal_mobile": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "section_heading_research"
+        "section_heading_y33igG",
+        "container_ngAez7"
       ],
-      "name": "Research tracker banner",
+      "name": "Banner section",
       "settings": {
         "full_width": false,
         "content_alignment": "left",
@@ -68,13 +97,17 @@
         "blocks_gap_mobile": 0,
         "color_scheme": "option-4",
         "background_color": "",
-        "padding_top": 80,
-        "padding_bottom": 60
+        "background_image": "shopify://shop_images/inner3.jpg",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "blocks_section_tracker": {
       "type": "blocks-section",
-      "name": "Treatments to watch",
       "blocks": {
         "section_heading_tracker": {
           "type": "section-heading",
@@ -496,7 +529,7 @@
             "placeholder": "Your email address",
             "button_label": "Notify me about a topic",
             "alignment": "center",
-            "max_width": 940,
+            "max_width": 700,
             "field_height": 46,
             "field_height_mobile": 46,
             "gap": 10,
@@ -521,6 +554,7 @@
         "text_tracker_note",
         "email_signup_tracker"
       ],
+      "name": "Treatments to watch",
       "settings": {
         "full_width": false,
         "content_alignment": "center",
@@ -528,13 +562,16 @@
         "blocks_gap_mobile": 16,
         "color_scheme": "",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 60,
         "padding_bottom": 60
       }
     },
     "blocks_section_insurance": {
       "type": "blocks-section",
-      "name": "What insurance commonly covers",
       "blocks": {
         "section_heading_insurance": {
           "type": "section-heading",
@@ -956,6 +993,7 @@
         "row_insurance_cards",
         "text_insurance_note"
       ],
+      "name": "What insurance commonly covers",
       "settings": {
         "full_width": false,
         "content_alignment": "center",
@@ -963,6 +1001,10 @@
         "blocks_gap_mobile": 16,
         "color_scheme": "option-4",
         "background_color": "",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -970,7 +1012,7 @@
   },
   "order": [
     "main",
-    "blocks_section_research_banner",
+    "blocks_section_YdpQ96",
     "blocks_section_tracker",
     "blocks_section_insurance"
   ]

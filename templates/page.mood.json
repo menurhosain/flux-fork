@@ -81,6 +81,15 @@
           "settings": {
             "background_color": "#e8f2ff",
             "border_radius": 12,
+            "max_width": 0,
+            "alignment": "center",
+            "layout": "block",
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "align_items": "stretch",
+            "justify_content": "flex-start",
+            "gap": 16,
+            "flex_wrap": false,
             "border_width": 0,
             "border_color": "#e8f2ff",
             "border_top": true,
@@ -348,7 +357,7 @@
             "product_card_xJTrVJ": {
               "type": "product-card",
               "settings": {
-                "product": "creatine-creavitalis®",
+                "product": "womaness-me-no-pause",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -374,7 +383,7 @@
             "product_card_tJKqz7": {
               "type": "product-card",
               "settings": {
-                "product": "fiber-gdx",
+                "product": "bonafide-serenol",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -399,6 +408,7 @@
             },
             "product_card_7PbN8z": {
               "type": "product-card",
+              "disabled": true,
               "settings": {
                 "product": "menomulti",
                 "symptom_label": "",
@@ -425,6 +435,7 @@
             },
             "product_card_qwQgnU": {
               "type": "product-card",
+              "disabled": true,
               "settings": {
                 "product": "omega-3-vitamin-d3-k2",
                 "symptom_label": "",

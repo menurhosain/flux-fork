@@ -126,7 +126,7 @@
             "label_font_weight": "600",
             "label_color": "",
             "label_background": "rgba(0,0,0,0)",
-            "label_padding_vertical": 10,
+            "label_padding_vertical": 22,
             "label_padding_horizontal": 20,
             "content_font_size": 15,
             "content_font_size_mobile": 14,
@@ -134,14 +134,14 @@
             "content_line_height": 1.6,
             "content_color": "",
             "content_background": "",
-            "content_padding_vertical": 10,
+            "content_padding_vertical": 0,
             "content_padding_horizontal": 0,
             "border_style": "divider",
             "border_width": 1,
             "border_color": "#dbe5f3",
             "border_radius": 8,
             "row_gap": 10,
-            "open_first_collapsible_row": false,
+            "open_first_collapsible_row": true,
             "margin_top": 10,
             "color_scheme_1": "",
             "hide_quick_view": false
@@ -437,7 +437,9 @@
       "custom_css": [
         "h1 {line-height: calc(var(--font-heading-scale) * 4.6rem); font-size: calc(var(--font-heading-scale) * 3.8rem);}",
         ".accordion__title {font-weight: 700; font-family: var(--type-h1-family);}",
-        "ul {margin-bottom: 0;}"
+        "ul {margin-bottom: 0;}",
+        "ul strong {font-weight: 700;}",
+        "ul li {margin: 5px 0;}"
       ],
       "settings": {
         "enable_full_width": true,
@@ -579,7 +581,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -639,7 +645,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             },
@@ -699,7 +709,11 @@
                 "number_color": "#e8e8e8",
                 "number_size": 90,
                 "number_size_mobile": 70,
-                "number_font": "heading"
+                "number_font": "heading",
+                "number_badge": false,
+                "number_badge_size": 28,
+                "number_badge_font_size": 13,
+                "number_badge_background": "#0066d6"
               },
               "blocks": {}
             }

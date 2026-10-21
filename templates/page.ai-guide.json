@@ -23,10 +23,10 @@
         "section_heading_XgFQDd": {
           "type": "section-heading",
           "settings": {
-            "subheading": "Symptom guides",
-            "heading": "What are you dealing with?",
+            "subheading": "The AI Resource Center",
+            "heading": "&nbsp;Meet your AI guide&nbsp;",
             "heading_tag": "h2",
-            "description": "<p>Plain-language guides to the eight symptoms women ask about most. What is happening, what may help, and when it is worth seeing a clinician.</p>",
+            "description": "<p>Ask anything, any time, by voice or text. Describe what you are experiencing in your own words, and get clear, evidence-based options, not a sales pitch.<br/><br/></p>",
             "alignment": "center",
             "max_width": 840,
             "margin_bottom": 28,
@@ -37,7 +37,7 @@
             "gap_heading_mobile": 12,
             "subheading_size": 15,
             "subheading_size_mobile": 12,
-            "subheading_color": "#0261d1",
+            "subheading_color": "#FFFFFF",
             "subheading_weight": "600",
             "subheading_uppercase": true,
             "subheading_lines": true,
@@ -45,13 +45,13 @@
             "subheading_line_color": "#cbd8e7",
             "heading_size": 56,
             "heading_size_mobile": 34,
-            "heading_color": "#160081",
+            "heading_color": "#FFFFFF",
             "heading_weight": "600",
             "heading_max_width": 0,
             "heading_font": "heading",
             "description_size": 16,
             "description_size_mobile": 15,
-            "description_color": "",
+            "description_color": "#F8F8F8",
             "description_weight": "default"
           },
           "blocks": {}
@@ -194,7 +194,7 @@
         "section_heading_XgFQDd",
         "container_ai_buttons"
       ],
-      "name": "t:sections.blocks-section.presets.blank_name",
+      "name": "Banner section",
       "settings": {
         "full_width": false,
         "content_alignment": "left",
@@ -202,8 +202,13 @@
         "blocks_gap_mobile": 0,
         "color_scheme": "option-4",
         "background_color": "",
-        "padding_top": 80,
-        "padding_bottom": 60
+        "background_image": "shopify://shop_images/inner4.jpg",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "blocks_section_conversation": {
@@ -548,13 +553,16 @@
         "blocks_gap_mobile": 16,
         "color_scheme": "",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 48
       }
     },
     "blocks_section_help": {
       "type": "blocks-section",
-      "name": "What it can help with",
       "blocks": {
         "section_heading_help": {
           "type": "section-heading",
@@ -1063,20 +1071,24 @@
         "section_heading_help",
         "row_help_cards"
       ],
+      "name": "What it can help with",
       "settings": {
         "full_width": false,
         "content_alignment": "center",
         "blocks_gap": 20,
         "blocks_gap_mobile": 16,
         "color_scheme": "",
-        "background_color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 48
+        "background_color": "#F2F8FF",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 92,
+        "padding_bottom": 92
       }
     },
     "blocks_section_safety": {
       "type": "blocks-section",
-      "name": "Your safety and your privacy",
       "blocks": {
         "section_heading_safety": {
           "type": "section-heading",
@@ -1388,6 +1400,7 @@
         "row_safety_cards",
         "text_safety_disclaimer"
       ],
+      "name": "Your safety and your privacy",
       "settings": {
         "full_width": false,
         "content_alignment": "center",
@@ -1395,6 +1408,10 @@
         "blocks_gap_mobile": 16,
         "color_scheme": "",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 48
       }
