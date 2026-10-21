@@ -915,6 +915,10 @@
         },
         "overlay_opacity": {
           "label": "Overlay opacity"
+        },
+        "anchor_id": {
+          "label": "Section anchor ID",
+          "info": "Link to this section with #anchor-id, e.g. #waitlist"
         }
       }
     },

@@ -40,6 +40,9 @@
   id="BlocksSection-{{ section.id }}"
   class="blocks-section color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% if background_image != blank %} blocks-section--has-image{% endif %}"
 >
+  {%- if section.settings.anchor_id != blank -%}
+    <span id="{{ section.settings.anchor_id | handleize }}" class="blocks-section__anchor"></span>
+  {%- endif -%}
   {%- if background_image != blank -%}
     <div class="blocks-section__media" aria-hidden="true">
       {{
@@ -69,6 +72,11 @@
 </div>
 
 {% stylesheet %}
+  .blocks-section__anchor {
+    display: block;
+    scroll-margin-top: 80px;
+  }
+
   .blocks-section--has-image {
     position: relative;
     isolation: isolate;
@@ -140,6 +148,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "t:sections.blocks-section.settings.anchor_id.label",
+      "info": "t:sections.blocks-section.settings.anchor_id.info"
+    },
     {
       "type": "checkbox",
       "id": "full_width",

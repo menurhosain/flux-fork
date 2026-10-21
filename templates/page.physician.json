@@ -79,7 +79,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "button_label": "Join the waitlist",
-                "button_link": "#EmailSignup-email_signup_waitlist",
+                "button_link": "#waitlist",
                 "apply_link_to_image": false,
                 "open_new_tab_1": false,
                 "button_style_secondary": false,
@@ -539,7 +539,8 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 60,
+        "anchor_id": "waitlist"
       }
     }
   },
