@@ -31,6 +31,27 @@
         grid-template-columns: repeat({{ block.settings.columns_desktop }}, minmax(0, 1fr));
       }
     }
+    {%- if block.settings.center_last_row %}
+      {%- liquid
+        assign tablet_gaps = block.settings.columns_tablet | minus: 1 | times: block.settings.column_gap
+        assign desktop_gaps = block.settings.columns_desktop | minus: 1 | times: block.settings.column_gap
+      -%}
+      @media screen and (min-width: 750px) {
+        #Row-{{ block.id }} {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        #Row-{{ block.id }} > * {
+          flex: 0 0 calc((100% - {{ tablet_gaps }}px) / {{ block.settings.columns_tablet }});
+        }
+      }
+      @media screen and (min-width: 990px) {
+        #Row-{{ block.id }} > * {
+          flex-basis: calc((100% - {{ desktop_gaps }}px) / {{ block.settings.columns_desktop }});
+        }
+      }
+    {%- endif %}
   {%- else %}
     #Row-{{ block.id }} {
       align-items: {{ block.settings.vertical_alignment }};
@@ -152,6 +173,14 @@
       "id": "equal_height",
       "default": true,
       "label": "t:blocks.row.settings.equal_height.label",
+      "visible_if": "{{ block.settings.layout == 'columns' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "center_last_row",
+      "default": false,
+      "label": "t:blocks.row.settings.center_last_row.label",
+      "info": "t:blocks.row.settings.center_last_row.info",
       "visible_if": "{{ block.settings.layout == 'columns' }}"
     },
     {
