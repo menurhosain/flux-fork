@@ -559,8 +559,8 @@
         "background_fit": "cover",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 20,
+        "padding_bottom": 40
       }
     },
     "blocks_section_chat_preview": {
@@ -656,13 +656,13 @@
         "blocks_gap": 20,
         "blocks_gap_mobile": 16,
         "color_scheme": "",
-        "background_color": "#ffffff",
+        "background_color": "#F2F8FF",
         "background_position": "center",
         "background_fit": "cover",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 60,
+        "padding_bottom": 40
       }
     },
     "blocks_section_help": {
@@ -1183,13 +1183,13 @@
         "blocks_gap": 20,
         "blocks_gap_mobile": 16,
         "color_scheme": "",
-        "background_color": "#f2f8ff",
+        "background_color": "",
         "background_position": "center",
         "background_fit": "cover",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "padding_top": 92,
-        "padding_bottom": 92
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "blocks_section_safety": {
@@ -1513,12 +1513,12 @@
         "blocks_gap": 20,
         "blocks_gap_mobile": 16,
         "color_scheme": "",
-        "background_color": "#ffffff",
+        "background_color": "#F2F8FF",
         "background_position": "center",
         "background_fit": "cover",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "padding_top": 0,
+        "padding_top": 60,
         "padding_bottom": 48
       }
     }
