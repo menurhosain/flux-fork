@@ -3935,6 +3935,20 @@
             "header_source": {
               "content": "Origen"
             },
+            "source": {
+              "label": "Fuente del contenido",
+              "info": "Texto enriquecido: cada encabezado del metacampo de texto enriquecido del producto se convierte en el título de una fila y el texto debajo en su contenido.",
+              "options__1": {
+                "label": "Entradas de metaobjeto"
+              },
+              "options__2": {
+                "label": "Texto enriquecido (dividido por encabezado)"
+              }
+            },
+            "split_heading": {
+              "label": "Encabezado que inicia una nueva fila",
+              "info": "Usa el mismo nivel de encabezado que eliges en el editor de texto enriquecido del producto."
+            },
             "metafield": {
               "label": "Metacampo del producto",
               "info": "Espacio de nombres y clave de un metacampo del producto de tipo metaobjeto (único o lista), p. ej. custom.accordion."

@@ -14,6 +14,23 @@
 
   assign title_key = block.settings.title_field | strip
   assign content_key = block.settings.content_field | strip
+
+  assign is_rich_text = false
+  if block.settings.source == 'rich_text'
+    assign is_rich_text = true
+  endif
+
+  if is_rich_text and accordion_metafield != blank
+    assign split_open = '<' | append: block.settings.split_heading
+    assign split_close = '</' | append: block.settings.split_heading | append: '>'
+    assign rich_html = accordion_metafield | metafield_tag
+    if rich_html contains '<div class="metafield-rich_text_field">'
+      assign rich_html = rich_html | remove_first: '<div class="metafield-rich_text_field">' | remove_last: '</div>'
+    endif
+    unless rich_html contains split_open
+      assign accordion_metafield = null
+    endunless
+  endif
 -%}
 {%- if accordion_metafield != blank -%}
   {%- unless is_featured -%}
@@ -27,7 +44,26 @@
     id="MetafieldAccordion-{{ block.id }}"
     class="section-{{ block.id }}-margin metafield-accordion metafield-accordion--{{ block.settings.border_style }}"
   >
-    {%- if accordion_metafield.list? -%}
+    {%- if is_rich_text -%}
+      {%- assign rich_chunks = rich_html | split: split_open -%}
+      {%- assign row_index = 0 -%}
+      {%- for chunk in rich_chunks offset: 1 -%}
+        {%- liquid
+          assign chunk_head = chunk | split: split_close | first
+          assign head_attrs = chunk_head | split: '>' | first
+          assign row_title = chunk_head | remove_first: head_attrs | remove_first: '>' | strip_html | strip
+          assign row_content = chunk | remove_first: chunk_head | remove_first: split_close | strip
+          assign row_index = row_index | plus: 1
+        -%}
+        {%- render 'product-metafield-accordion-row',
+          row_title: row_title,
+          row_content: row_content,
+          index: row_index,
+          block: block,
+          section_id: section.id
+        -%}
+      {%- endfor -%}
+    {%- elsif accordion_metafield.list? -%}
       {%- for entry in accordion_metafield.value -%}
         {%- render 'product-metafield-accordion-row',
           entry: entry,
@@ -205,6 +241,23 @@
       "content": "t:sections.main-product.blocks.metafield_accordion.settings.header_source.content"
     },
     {
+      "type": "select",
+      "id": "source",
+      "options": [
+        {
+          "value": "metaobject",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.source.options__1.label"
+        },
+        {
+          "value": "rich_text",
+          "label": "t:sections.main-product.blocks.metafield_accordion.settings.source.options__2.label"
+        }
+      ],
+      "default": "metaobject",
+      "label": "t:sections.main-product.blocks.metafield_accordion.settings.source.label",
+      "info": "t:sections.main-product.blocks.metafield_accordion.settings.source.info"
+    },
+    {
       "type": "text",
       "id": "metafield",
       "default": "custom.accordion",
@@ -215,13 +268,31 @@
       "type": "text",
       "id": "title_field",
       "default": "label",
-      "label": "t:sections.main-product.blocks.metafield_accordion.settings.title_field.label"
+      "label": "t:sections.main-product.blocks.metafield_accordion.settings.title_field.label",
+      "visible_if": "{{ block.settings.source == 'metaobject' }}"
     },
     {
       "type": "text",
       "id": "content_field",
       "default": "content",
-      "label": "t:sections.main-product.blocks.metafield_accordion.settings.content_field.label"
+      "label": "t:sections.main-product.blocks.metafield_accordion.settings.content_field.label",
+      "visible_if": "{{ block.settings.source == 'metaobject' }}"
+    },
+    {
+      "type": "select",
+      "id": "split_heading",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" }
+      ],
+      "default": "h4",
+      "label": "t:sections.main-product.blocks.metafield_accordion.settings.split_heading.label",
+      "info": "t:sections.main-product.blocks.metafield_accordion.settings.split_heading.info",
+      "visible_if": "{{ block.settings.source == 'rich_text' }}"
     },
     {
       "type": "header",

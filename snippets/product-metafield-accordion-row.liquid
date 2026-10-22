@@ -1,17 +1,24 @@
 {%- comment -%}
-  Renders one collapsible row from a metaobject entry.
+  Renders one collapsible row from a metaobject entry, or from a title and HTML content.
 
   Accepts:
   - entry: {Object} Metaobject entry
   - index: {Number} Row position, used for unique ids
   - title_key: {String} Metaobject field used as the row title
   - content_key: {String} Metaobject field used as the row content
+  - row_title: {String} Row title, used instead of entry (optional)
+  - row_content: {String} Row content HTML, used instead of entry (optional)
   - block: {Object} The _product-metafield-accordion block
   - section_id: {String} Parent section id
 {%- endcomment -%}
 {%- liquid
-  assign entry_title = entry[title_key].value | default: entry[title_key]
-  assign entry_content = entry[content_key]
+  if row_title != blank
+    assign entry_title = row_title
+    assign entry_content = row_content
+  else
+    assign entry_title = entry[title_key].value | default: entry[title_key]
+    assign entry_content = entry[content_key]
+  endif
 -%}
 {%- if entry_title != blank and entry_content != blank -%}
   <div class="metafield-accordion__row product-accordion accordion">
@@ -40,7 +47,11 @@
           role="region"
           aria-labelledby="Summary-{{ block.id }}-{{ index }}-{{ section_id }}"
         >
-          {{ entry_content | metafield_tag }}
+          {%- if row_title != blank -%}
+            {{ entry_content }}
+          {%- else -%}
+            {{ entry_content | metafield_tag }}
+          {%- endif -%}
         </div>
       </details>
     </collapsible-row>

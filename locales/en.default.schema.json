@@ -3966,6 +3966,20 @@
             "header_source": {
               "content": "Source"
             },
+            "source": {
+              "label": "Content source",
+              "info": "Rich text: each heading in the product's rich text metafield becomes a row title, and the text below it becomes the row content.",
+              "options__1": {
+                "label": "Metaobject entries"
+              },
+              "options__2": {
+                "label": "Rich text (split by heading)"
+              }
+            },
+            "split_heading": {
+              "label": "Heading that starts a new row",
+              "info": "Use the same heading level you pick in the product's rich text editor."
+            },
             "metafield": {
               "label": "Product metafield",
               "info": "Namespace and key of a product metafield of type metaobject (single or list), e.g. custom.accordion."

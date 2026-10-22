@@ -3935,6 +3935,20 @@
             "header_source": {
               "content": "Quelle"
             },
+            "source": {
+              "label": "Inhaltsquelle",
+              "info": "Rich Text: Jede Überschrift im Rich-Text-Metafeld des Produkts wird zum Zeilentitel, der Text darunter zum Zeileninhalt.",
+              "options__1": {
+                "label": "Metaobjekt-Einträge"
+              },
+              "options__2": {
+                "label": "Rich Text (nach Überschrift geteilt)"
+              }
+            },
+            "split_heading": {
+              "label": "Überschrift, die eine neue Zeile beginnt",
+              "info": "Verwende dieselbe Überschriftenebene wie im Rich-Text-Editor des Produkts."
+            },
             "metafield": {
               "label": "Produkt-Metafeld",
               "info": "Namespace und Schlüssel eines Produkt-Metafelds vom Typ Metaobjekt (einzeln oder Liste), z. B. custom.accordion."

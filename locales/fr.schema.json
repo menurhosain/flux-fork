@@ -3935,6 +3935,20 @@
             "header_source": {
               "content": "Source"
             },
+            "source": {
+              "label": "Source du contenu",
+              "info": "Texte enrichi : chaque titre du métachamp texte enrichi du produit devient le titre d'une ligne, et le texte en dessous devient son contenu.",
+              "options__1": {
+                "label": "Entrées de métaobjet"
+              },
+              "options__2": {
+                "label": "Texte enrichi (divisé par titre)"
+              }
+            },
+            "split_heading": {
+              "label": "Titre qui commence une nouvelle ligne",
+              "info": "Utilisez le même niveau de titre que dans l'éditeur de texte enrichi du produit."
+            },
             "metafield": {
               "label": "Métachamp produit",
               "info": "Espace de noms et clé d’un métachamp produit de type métaobjet (unique ou liste), par ex. custom.accordion."

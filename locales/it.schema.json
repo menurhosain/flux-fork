@@ -3935,6 +3935,20 @@
             "header_source": {
               "content": "Origine"
             },
+            "source": {
+              "label": "Origine del contenuto",
+              "info": "Rich text: ogni titolo nel metacampo rich text del prodotto diventa il titolo di una riga e il testo sottostante il suo contenuto.",
+              "options__1": {
+                "label": "Voci metaoggetto"
+              },
+              "options__2": {
+                "label": "Rich text (diviso per titolo)"
+              }
+            },
+            "split_heading": {
+              "label": "Titolo che inizia una nuova riga",
+              "info": "Usa lo stesso livello di titolo scelto nell'editor rich text del prodotto."
+            },
             "metafield": {
               "label": "Metacampo prodotto",
               "info": "Namespace e chiave di un metacampo prodotto di tipo metaoggetto (singolo o elenco), ad es. custom.accordion."
