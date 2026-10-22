@@ -63,7 +63,8 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/inner2.jpg",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 30,
+        "image_position": "top",
         "image_border_radius": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
