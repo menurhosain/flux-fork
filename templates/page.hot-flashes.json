@@ -98,13 +98,17 @@
         "blocks_gap_mobile": 0,
         "color_scheme": "option-4",
         "background_color": "",
-        "background_image": "shopify://shop_images/inner5.jpg",
+        "background_image": "shopify://shop_images/banner-4.jpg",
         "background_position": "center",
         "background_fit": "cover",
         "overlay_color": "#000000",
         "overlay_opacity": 50,
         "padding_top": 152,
-        "padding_bottom": 152
+        "padding_bottom": 152,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "image_with_text_QQmH3M": {
@@ -172,7 +176,7 @@
         "text_Hwq3AR"
       ],
       "settings": {
-        "image": "shopify://shop_images/1.jpg",
+        "image": "shopify://shop_images/1_107ae1e4-f81f-4404-afd4-ab5e68515735.jpg",
         "caption": "",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -260,7 +264,7 @@
         "text_99eqwT"
       ],
       "settings": {
-        "image": "shopify://shop_images/workout.jpg",
+        "image": "shopify://shop_images/2_de26f800-78ec-48f4-95b7-44e28cb20e68.jpg",
         "caption": "",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -348,7 +352,7 @@
         "text_XkNNxY"
       ],
       "settings": {
-        "image": "shopify://shop_images/3.jpg",
+        "image": "shopify://shop_images/3_e9a70309-ede4-4af1-bff1-8323e2193e9a.jpg",
         "caption": "",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -513,7 +517,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 50,
         "padding_top": 152,
-        "padding_bottom": 152
+        "padding_bottom": 152,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "blocks_section_CG8Kak": {
@@ -758,7 +766,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 0,
-        "padding_bottom": 88
+        "padding_bottom": 88,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     }
   },

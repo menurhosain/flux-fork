@@ -104,7 +104,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 50,
         "padding_top": 152,
-        "padding_bottom": 152
+        "padding_bottom": 152,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "image_with_text_QQmH3M": {
@@ -175,7 +179,7 @@
         "image": "shopify://shop_images/1.jpg",
         "caption": "",
         "desktop_image_width": "small",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "full_width": true,
@@ -186,9 +190,9 @@
         "ignore_spacing": true,
         "content_custom_padding": true,
         "content_padding_top": 20,
-        "content_padding_right": 0,
+        "content_padding_right": 70,
         "content_padding_bottom": 20,
-        "content_padding_left": 70,
+        "content_padding_left": 0,
         "margin_spacing": "negative",
         "margin_top": 80,
         "mobile_content_alignment": "left",
@@ -263,7 +267,7 @@
         "image": "shopify://shop_images/workout.jpg",
         "caption": "",
         "desktop_image_width": "small",
-        "layout": "text_first",
+        "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "full_width": true,
@@ -274,9 +278,9 @@
         "ignore_spacing": true,
         "content_custom_padding": true,
         "content_padding_top": 20,
-        "content_padding_right": 70,
+        "content_padding_right": 0,
         "content_padding_bottom": 20,
-        "content_padding_left": 0,
+        "content_padding_left": 73,
         "margin_spacing": "negative",
         "margin_top": 80,
         "mobile_content_alignment": "left",
@@ -351,7 +355,7 @@
         "image": "shopify://shop_images/3.jpg",
         "caption": "",
         "desktop_image_width": "small",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "full_width": true,
@@ -362,9 +366,9 @@
         "ignore_spacing": true,
         "content_custom_padding": true,
         "content_padding_top": 20,
-        "content_padding_right": 0,
+        "content_padding_right": 70,
         "content_padding_bottom": 20,
-        "content_padding_left": 70,
+        "content_padding_left": 0,
         "margin_spacing": "negative",
         "margin_top": 80,
         "mobile_content_alignment": "left",
@@ -513,7 +517,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 50,
         "padding_top": 152,
-        "padding_bottom": 152
+        "padding_bottom": 152,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "blocks_section_CG8Kak": {
@@ -758,7 +766,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 0,
-        "padding_bottom": 88
+        "padding_bottom": 88,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     }
   },
