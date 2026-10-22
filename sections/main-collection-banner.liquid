@@ -6,6 +6,11 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
+  #shopify-section-{{ section.id }} .banner-media img,
+  #shopify-section-{{ section.id }} .image-with-text-media img {
+    object-position: {{ section.settings.image_position | replace: '_', ' ' }};
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}rem;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}rem;
@@ -358,6 +363,50 @@
       "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
       "info": "t:sections.image-banner.settings.image_overlay_opacity.info",
       "default": 40
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "options": [
+        {
+          "value": "center",
+          "label": "t:sections.blocks-section.settings.background_position.options__center.label"
+        },
+        {
+          "value": "top",
+          "label": "t:sections.blocks-section.settings.background_position.options__top.label"
+        },
+        {
+          "value": "bottom",
+          "label": "t:sections.blocks-section.settings.background_position.options__bottom.label"
+        },
+        {
+          "value": "left",
+          "label": "t:sections.blocks-section.settings.background_position.options__left.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.blocks-section.settings.background_position.options__right.label"
+        },
+        {
+          "value": "top_left",
+          "label": "t:sections.blocks-section.settings.background_position.options__top_left.label"
+        },
+        {
+          "value": "top_right",
+          "label": "t:sections.blocks-section.settings.background_position.options__top_right.label"
+        },
+        {
+          "value": "bottom_left",
+          "label": "t:sections.blocks-section.settings.background_position.options__bottom_left.label"
+        },
+        {
+          "value": "bottom_right",
+          "label": "t:sections.blocks-section.settings.background_position.options__bottom_right.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.blocks-section.settings.background_position.label"
     },
     {
     "type": "header",
