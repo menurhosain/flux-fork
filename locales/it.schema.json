@@ -7659,6 +7659,22 @@
         "margin_right": {
           "label": "Margine destro"
         },
+        "custom_margin_mobile": {
+          "label": "Usa un margine diverso su mobile",
+          "info": "Si applica a schermi sotto i 750 px. Se disattivato, viene usato il margine desktop."
+        },
+        "margin_top_mobile": {
+          "label": "Margine superiore su mobile"
+        },
+        "margin_bottom_mobile": {
+          "label": "Margine inferiore su mobile"
+        },
+        "margin_left_mobile": {
+          "label": "Margine sinistro su mobile"
+        },
+        "margin_right_mobile": {
+          "label": "Margine destro su mobile"
+        },
         "header_border": {
           "content": "Bordo"
         },

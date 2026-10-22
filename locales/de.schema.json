@@ -7659,6 +7659,22 @@
         "margin_right": {
           "label": "Rechter Abstand"
         },
+        "custom_margin_mobile": {
+          "label": "Auf Mobilgeräten anderen Außenabstand verwenden",
+          "info": "Gilt für Bildschirme unter 750 px. Wenn deaktiviert, wird der Desktop-Abstand verwendet."
+        },
+        "margin_top_mobile": {
+          "label": "Oberer Außenabstand (mobil)"
+        },
+        "margin_bottom_mobile": {
+          "label": "Unterer Außenabstand (mobil)"
+        },
+        "margin_left_mobile": {
+          "label": "Linker Außenabstand (mobil)"
+        },
+        "margin_right_mobile": {
+          "label": "Rechter Außenabstand (mobil)"
+        },
         "header_border": {
           "content": "Rahmen"
         },

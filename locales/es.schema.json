@@ -7659,6 +7659,22 @@
         "margin_right": {
           "label": "Margen derecho"
         },
+        "custom_margin_mobile": {
+          "label": "Usar un margen distinto en móvil",
+          "info": "Se aplica en pantallas de menos de 750 px. Si está desactivado, se usa el margen de escritorio."
+        },
+        "margin_top_mobile": {
+          "label": "Margen superior en móvil"
+        },
+        "margin_bottom_mobile": {
+          "label": "Margen inferior en móvil"
+        },
+        "margin_left_mobile": {
+          "label": "Margen izquierdo en móvil"
+        },
+        "margin_right_mobile": {
+          "label": "Margen derecho en móvil"
+        },
         "header_border": {
           "content": "Borde"
         },

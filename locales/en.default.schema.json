@@ -7694,6 +7694,22 @@
         "margin_right": {
           "label": "Right margin"
         },
+        "custom_margin_mobile": {
+          "label": "Use different margin on mobile",
+          "info": "Applies on screens under 750px. Desktop margin is used when off."
+        },
+        "margin_top_mobile": {
+          "label": "Top margin on mobile"
+        },
+        "margin_bottom_mobile": {
+          "label": "Bottom margin on mobile"
+        },
+        "margin_left_mobile": {
+          "label": "Left margin on mobile"
+        },
+        "margin_right_mobile": {
+          "label": "Right margin on mobile"
+        },
         "header_border": {
           "content": "Border"
         },

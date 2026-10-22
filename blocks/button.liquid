@@ -223,6 +223,13 @@
       #Buttons-{{ block.id }} {
         margin: {{ block.settings.margin_top }}px {{ block.settings.margin_right }}px {{ block.settings.margin_bottom }}px {{ block.settings.margin_left }}px;
       }
+      {%- if block.settings.custom_margin_mobile %}
+        @media screen and (max-width: 749px) {
+          #Buttons-{{ block.id }} {
+            margin: {{ block.settings.margin_top_mobile }}px {{ block.settings.margin_right_mobile }}px {{ block.settings.margin_bottom_mobile }}px {{ block.settings.margin_left_mobile }}px;
+          }
+        }
+      {%- endif %}
     {%- endif %}
 {%- endstyle -%}
 
@@ -660,6 +667,58 @@
       "default": 0,
       "label": "t:blocks.button.settings.margin_right.label",
       "visible_if": "{{ block.settings.custom_margin }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_margin_mobile",
+      "default": false,
+      "label": "t:blocks.button.settings.custom_margin_mobile.label",
+      "info": "t:blocks.button.settings.custom_margin_mobile.info",
+      "visible_if": "{{ block.settings.custom_margin }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_top_mobile.label",
+      "visible_if": "{{ block.settings.custom_margin and block.settings.custom_margin_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_bottom_mobile.label",
+      "visible_if": "{{ block.settings.custom_margin and block.settings.custom_margin_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_left_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_left_mobile.label",
+      "visible_if": "{{ block.settings.custom_margin and block.settings.custom_margin_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_right_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.button.settings.margin_right_mobile.label",
+      "visible_if": "{{ block.settings.custom_margin and block.settings.custom_margin_mobile }}"
     },
     {
       "type": "header",
