@@ -832,6 +832,16 @@
         "blank_name": "Section de blocs"
       },
       "settings": {
+        "custom_padding_mobile": {
+          "label": "Utiliser une marge intérieure différente sur mobile",
+          "info": "Si désactivé, la marge intérieure mobile correspond à 75 % de celle sur ordinateur."
+        },
+        "padding_top_mobile": {
+          "label": "Marge intérieure supérieure sur mobile"
+        },
+        "padding_bottom_mobile": {
+          "label": "Marge intérieure inférieure sur mobile"
+        },
         "header_margin": {
           "content": "Marge de la section"
         },

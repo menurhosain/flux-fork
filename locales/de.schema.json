@@ -832,6 +832,16 @@
         "blank_name": "Block-Abschnitt"
       },
       "settings": {
+        "custom_padding_mobile": {
+          "label": "Auf Mobilgeräten anderen Innenabstand verwenden",
+          "info": "Wenn deaktiviert, beträgt der mobile Innenabstand 75 % des Desktop-Innenabstands."
+        },
+        "padding_top_mobile": {
+          "label": "Oberer Innenabstand (mobil)"
+        },
+        "padding_bottom_mobile": {
+          "label": "Unterer Innenabstand (mobil)"
+        },
         "header_margin": {
           "content": "Abschnittsaußenabstand"
         },

@@ -832,6 +832,16 @@
         "blank_name": "Sezione a blocchi"
       },
       "settings": {
+        "custom_padding_mobile": {
+          "label": "Usa una spaziatura interna diversa su mobile",
+          "info": "Se disattivato, la spaziatura interna su mobile è il 75% di quella desktop."
+        },
+        "padding_top_mobile": {
+          "label": "Spaziatura interna superiore su mobile"
+        },
+        "padding_bottom_mobile": {
+          "label": "Spaziatura interna inferiore su mobile"
+        },
         "header_margin": {
           "content": "Margine della sezione"
         },

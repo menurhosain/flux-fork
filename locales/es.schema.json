@@ -832,6 +832,16 @@
         "blank_name": "Sección de bloques"
       },
       "settings": {
+        "custom_padding_mobile": {
+          "label": "Usar un relleno distinto en móvil",
+          "info": "Si está desactivado, el relleno en móvil es el 75 % del relleno de escritorio."
+        },
+        "padding_top_mobile": {
+          "label": "Relleno superior en móvil"
+        },
+        "padding_bottom_mobile": {
+          "label": "Relleno inferior en móvil"
+        },
         "header_margin": {
           "content": "Margen de la sección"
         },

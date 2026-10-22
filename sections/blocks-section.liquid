@@ -13,8 +13,13 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    {%- if section.settings.custom_padding_mobile %}
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    {%- else %}
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    {%- endif %}
     margin-top: {{ section.settings.margin_top_mobile }}px;
     margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
     {%- if has_background_color %}
@@ -343,6 +348,35 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 80
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_padding_mobile",
+      "default": false,
+      "label": "t:sections.blocks-section.settings.custom_padding_mobile.label",
+      "info": "t:sections.blocks-section.settings.custom_padding_mobile.info"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.blocks-section.settings.padding_top_mobile.label",
+      "default": 60,
+      "visible_if": "{{ section.settings.custom_padding_mobile }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.blocks-section.settings.padding_bottom_mobile.label",
+      "default": 60,
+      "visible_if": "{{ section.settings.custom_padding_mobile }}"
     },
     {
       "type": "header",

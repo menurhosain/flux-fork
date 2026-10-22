@@ -832,6 +832,16 @@
         "blank_name": "Blocks section"
       },
       "settings": {
+        "custom_padding_mobile": {
+          "label": "Use different padding on mobile",
+          "info": "When off, mobile padding is 75% of the desktop padding."
+        },
+        "padding_top_mobile": {
+          "label": "Top padding on mobile"
+        },
+        "padding_bottom_mobile": {
+          "label": "Bottom padding on mobile"
+        },
         "header_margin": {
           "content": "Section margin"
         },
