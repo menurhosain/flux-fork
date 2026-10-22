@@ -3910,6 +3910,13 @@
         },
         "columns_desktop": {
           "label": "Anzahl der Spalten auf Desktop"
+        },
+        "custom_gap_mobile": {
+          "label": "Benutzerdefinierten Kartenabstand auf Mobilgeräten verwenden",
+          "info": "Wenn deaktiviert, wird der Abstand aus den Theme-Einstellungen verwendet."
+        },
+        "gap_mobile": {
+          "label": "Abstand zwischen Karten (mobil)"
         }
       }
     },

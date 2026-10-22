@@ -3910,6 +3910,13 @@
         },
         "columns_desktop": {
           "label": "Nombre de colonnes sur ordinateur de bureau"
+        },
+        "custom_gap_mobile": {
+          "label": "Utiliser un espacement personnalisé des cartes sur mobile",
+          "info": "Si désactivé, l'espacement des paramètres du thème est utilisé."
+        },
+        "gap_mobile": {
+          "label": "Espace entre les cartes sur mobile"
         }
       }
     },

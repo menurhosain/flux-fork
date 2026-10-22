@@ -3941,6 +3941,13 @@
         },
         "columns_desktop": {
           "label": "Number of columns on desktop"
+        },
+        "custom_gap_mobile": {
+          "label": "Use custom card spacing on mobile",
+          "info": "When off, the spacing from theme settings is used."
+        },
+        "gap_mobile": {
+          "label": "Space between cards on mobile"
         }
       }
     },

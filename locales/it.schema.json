@@ -3910,6 +3910,13 @@
         },
         "columns_desktop": {
           "label": "Numero di colonne su desktop"
+        },
+        "custom_gap_mobile": {
+          "label": "Usa spaziatura personalizzata delle schede su mobile",
+          "info": "Se disattivato, viene usata la spaziatura delle impostazioni del tema."
+        },
+        "gap_mobile": {
+          "label": "Spazio tra le schede su mobile"
         }
       }
     },

@@ -3910,6 +3910,13 @@
         },
         "columns_desktop": {
           "label": "Número de columnas en el escritorio"
+        },
+        "custom_gap_mobile": {
+          "label": "Usar espaciado personalizado de tarjetas en móvil",
+          "info": "Si está desactivado, se usa el espaciado de la configuración del tema."
+        },
+        "gap_mobile": {
+          "label": "Espacio entre tarjetas en móvil"
         }
       }
     },
