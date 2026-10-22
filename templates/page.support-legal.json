@@ -350,7 +350,7 @@
             "subheading": "Account",
             "heading": "My account",
             "heading_tag": "h2",
-            "description": "<p>This is where a woman's relationship with Bacton lives, and where the customer database starts.</p>",
+            "description": "<p>This is where a woman's relationship with Bacton lives,<br/>&nbsp;and where the customer database starts.</p>",
             "alignment": "center",
             "max_width": 0,
             "margin_bottom": 40,
@@ -389,6 +389,7 @@
             "columns_tablet": 2,
             "columns_mobile": 1,
             "equal_height": true,
+            "center_last_row": true,
             "vertical_alignment": "flex-end",
             "left_width": 55,
             "right_max_width": 440,
@@ -399,8 +400,7 @@
             "row_gap_mobile": 12,
             "custom_spacing": true,
             "margin_top": 0,
-            "margin_bottom": 0,
-            "center_last_row": true
+            "margin_bottom": 0
           },
           "blocks": {
             "card_conversations": {
@@ -1027,6 +1027,7 @@
             "columns_tablet": 2,
             "columns_mobile": 1,
             "equal_height": true,
+            "center_last_row": false,
             "vertical_alignment": "flex-end",
             "left_width": 55,
             "right_max_width": 440,

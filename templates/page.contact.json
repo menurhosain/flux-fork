@@ -17,72 +17,101 @@
         "padding_bottom": 0
       }
     },
-    "image_banner_ccNLxE": {
-      "type": "image-banner",
+    "blocks_section_CfwfF8": {
+      "type": "blocks-section",
       "blocks": {
-        "heading_xhVfgX": {
-          "type": "heading",
+        "section_heading_Wq8cJe": {
+          "type": "section-heading",
           "settings": {
-            "heading": "Contact Us",
-            "heading_size": "large",
-            "heading_style": "default",
-            "heading_tag": "h1",
-            "highlight_option": "underline-hand",
-            "word_animation_color": "#272727",
+            "subheading": "Contact Us",
+            "heading": "Get in Touch with Bacton Health Services&nbsp;",
+            "heading_tag": "h2",
+            "description": "",
             "alignment": "center",
-            "text_color": "",
-            "custom_font_size": false,
-            "font_size": 52,
-            "font_size_mobile": 40,
-            "custom_spacing": false,
-            "margin_top": 0,
-            "margin_bottom": 16,
-            "margin_left": 0,
-            "margin_right": 0
+            "max_width": 840,
+            "margin_bottom": 28,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#ffffff",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#ffffff",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "#f8f8f8",
+            "description_weight": "default"
           },
           "blocks": {}
         },
-        "breadcrumbs_iJBVej": {
-          "type": "breadcrumbs",
-          "name": "t:blocks.breadcrumbs.name",
+        "container_hDWPJ3": {
+          "type": "container",
+          "name": "t:blocks.container.name",
           "settings": {
-            "show_border": false,
-            "border_color": "#e5e5e5",
-            "background_color": "",
-            "text_color": "",
+            "background_color": "rgba(0,0,0,0)",
+            "border_radius": 0,
+            "max_width": 0,
             "alignment": "center",
-            "font_size": 16,
-            "show_on_mobile": true
+            "layout": "flex",
+            "flex_direction": "row",
+            "flex_direction_mobile": "row",
+            "align_items": "center",
+            "justify_content": "center",
+            "gap": 10,
+            "flex_wrap": true,
+            "border_width": 0,
+            "border_color": "#e5e5e5",
+            "border_top": true,
+            "border_right": true,
+            "border_bottom": true,
+            "border_left": true,
+            "padding_vertical": 0,
+            "padding_horizontal": 0,
+            "padding_vertical_mobile": 0,
+            "padding_horizontal_mobile": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "heading_xhVfgX",
-        "breadcrumbs_iJBVej"
+        "section_heading_Wq8cJe",
+        "container_hDWPJ3"
       ],
-      "name": "t:sections.image-banner.presets.name",
+      "name": "Banner section",
       "settings": {
-        "image": "shopify://shop_images/three-surgeons-in-scrubs.jpg",
-        "image_overlay_opacity": 20,
-        "image_border_radius": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "ignore_spacing": false,
-        "color_scheme_1": "",
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
+        "anchor_id": "",
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 0,
+        "color_scheme": "option-4",
+        "background_color": "",
+        "background_image": "shopify://shop_images/inner5.jpg",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "padding_top": 152,
+        "padding_bottom": 152
       }
     },
     "contact-form": {
       "type": "contact-form",
       "settings": {
         "contact_style": "column",
-        "image": "shopify://shop_images/nurse-helping-patient.jpg",
+        "image": "shopify://shop_images/hero-3.jpg",
         "image_height": "adapt",
         "hide_image": false,
         "caption": "",
@@ -100,9 +129,9 @@
         "full_width": false,
         "hide_phone_field": false,
         "all_fields_required": false,
-        "color_scheme": "option-2",
-        "color_scheme_1": "",
-        "padding_top": 0,
+        "color_scheme": "option-4",
+        "color_scheme_1": "option-4",
+        "padding_top": 52,
         "padding_bottom": 0,
         "ignore_spacing": false,
         "image_height_mobile": "small",
@@ -117,14 +146,14 @@
         "custom_liquid": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.3541927848087!2d-121.48276012353509!3d38.57169066585572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ad1377eabbaf3%3A0x6aad02473cddd84c!2s2108%20N%20St%2C%20Sacramento%2C%20CA%2095816%2C%20USA!5e0!3m2!1sen!2sbd!4v1791891123985!5m2!1sen!2sbd\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_bottom": 100,
         "ignore_spacing": false
       }
     }
   },
   "order": [
     "main",
-    "image_banner_ccNLxE",
+    "blocks_section_CfwfF8",
     "contact-form",
     "custom_liquid_WWbz7r"
   ]
