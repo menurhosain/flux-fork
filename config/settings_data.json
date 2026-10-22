@@ -31,7 +31,7 @@
     "countdown_text_top": "#2C2B2B",
     "countdown_background_bottom": "#D7F2FF",
     "countdown_text_bottom": "#2C2B2B",
-    "opacity_color": "#0261D1",
+    "opacity_color": "#000000",
     "type_header_font": "marcellus_n4",
     "type_body_font": "manrope_n4",
     "body_size": 17,
