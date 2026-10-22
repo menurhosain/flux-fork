@@ -24,9 +24,9 @@
           "type": "section-heading",
           "settings": {
             "subheading": "Symtom",
-            "heading": "&nbsp;Fatigue&nbsp;",
+            "heading": "&nbsp;Irregular periods&nbsp;",
             "heading_tag": "h2",
-            "description": "<p>Explain what fatigue feels like, how it can affect daily life, and why persistent tiredness deserves attention.<br/><br/></p>",
+            "description": "<p>Cycles that come early, late, lighter, heavier, or not at all can feel unpredictable and make it hard to know what to expect.<br/><br/></p>",
             "alignment": "center",
             "max_width": 680,
             "margin_bottom": 28,
@@ -148,7 +148,7 @@
         "text_Hwq3AR": {
           "type": "text",
           "settings": {
-            "text": "<p>Fatigue is more than feeling tired after a busy day. It can leave you feeling physically drained, mentally exhausted, or low on energy even after a full night's sleep. Everyday activities may feel more demanding, and concentrating, staying motivated, or getting through the day can become difficult.</p><p>Fatigue can have many causes, including poor sleep, ongoing stress, nutritional deficiencies, hormonal changes, dehydration, certain medications, or underlying health conditions. During perimenopause and menopause, hormonal fluctuations may also contribute to fatigue, particularly when they affect sleep, mood, or overall well-being.</p>",
+            "text": "<p>Irregular periods are changes to your usual menstrual pattern. Cycles may become shorter or longer, bleeding may be lighter or heavier than usual, and you may skip periods altogether or notice spotting between them. This unpredictability can be inconvenient and sometimes worrying.</p><p>During perimenopause, ovulation becomes less regular and hormone levels rise and fall more unevenly, which commonly leads to irregular cycles. Stress, significant weight changes, intense exercise, thyroid conditions, and some medications may also affect your cycle. Very heavy bleeding, bleeding after sex, or any bleeding after menopause should always be checked by a healthcare professional.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -236,7 +236,7 @@
         "text_99eqwT": {
           "type": "text",
           "settings": {
-            "text": "<p>Organize practical suggestions into short, easy-to-read points:</p><ul><li>Maintain a consistent sleep routine.</li><li>Eat balanced, regular meals.</li><li>Stay hydrated.</li><li>Manage stress and pace daily activities.</li><li>Try gentle physical activity as tolerated.</li></ul>",
+            "text": "<p>Tracking your cycle and caring for your overall health may help you feel more prepared:</p><ul><li>Track your periods and symptoms with an app or diary.</li><li>Keep period products on hand for unexpected bleeding.</li><li>Eat iron-rich foods if your periods are heavy.</li><li>Manage stress with rest and relaxation.</li><li>Talk to your doctor about any sudden or significant changes.</li></ul>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -324,7 +324,7 @@
         "text_XkNNxY": {
           "type": "text",
           "settings": {
-            "text": "<p>Finding the right support for fatigue starts with understanding what may be affecting your energy levels. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, quality sleep, and healthy daily habits.</p><p>During perimenopause and menopause, changes in sleep, hormonal fluctuations, and other symptoms may contribute to low energy. Depending on your individual needs, certain nutritional supplements may help address specific nutritional gaps or support general health.</p>",
+            "text": "<p>Finding the right support for irregular periods starts with understanding what may be affecting your cycle. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, stress management, and healthy daily habits.</p><p>During perimenopause, hormonal fluctuations commonly lead to changes in cycle length and flow. Depending on your individual needs, certain nutritional supplements may help address specific nutritional gaps, such as iron, or support general health.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",

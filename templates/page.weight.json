@@ -24,9 +24,9 @@
           "type": "section-heading",
           "settings": {
             "subheading": "Symtom",
-            "heading": "&nbsp;Fatigue&nbsp;",
+            "heading": "&nbsp;Weight&nbsp;",
             "heading_tag": "h2",
-            "description": "<p>Explain what fatigue feels like, how it can affect daily life, and why persistent tiredness deserves attention.<br/><br/></p>",
+            "description": "<p>Gaining weight more easily, especially around the middle, can happen even when your eating and activity habits have not changed.<br/><br/></p>",
             "alignment": "center",
             "max_width": 680,
             "margin_bottom": 28,
@@ -148,7 +148,7 @@
         "text_Hwq3AR": {
           "type": "text",
           "settings": {
-            "text": "<p>Fatigue is more than feeling tired after a busy day. It can leave you feeling physically drained, mentally exhausted, or low on energy even after a full night's sleep. Everyday activities may feel more demanding, and concentrating, staying motivated, or getting through the day can become difficult.</p><p>Fatigue can have many causes, including poor sleep, ongoing stress, nutritional deficiencies, hormonal changes, dehydration, certain medications, or underlying health conditions. During perimenopause and menopause, hormonal fluctuations may also contribute to fatigue, particularly when they affect sleep, mood, or overall well-being.</p>",
+            "text": "<p>Many women notice that weight becomes harder to manage in midlife. You may gain weight more easily, find it harder to lose, or notice more fat around the abdomen even when your diet and activity have not changed much. These changes can affect how you feel about your body as well as your long-term health.</p><p>Weight changes can be influenced by age-related muscle loss, a slower metabolism, reduced activity, poor sleep, stress, and genetics. During perimenopause and menopause, falling estrogen levels may change where the body stores fat, and symptoms such as poor sleep and low energy can make healthy routines harder to keep.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -236,7 +236,7 @@
         "text_99eqwT": {
           "type": "text",
           "settings": {
-            "text": "<p>Organize practical suggestions into short, easy-to-read points:</p><ul><li>Maintain a consistent sleep routine.</li><li>Eat balanced, regular meals.</li><li>Stay hydrated.</li><li>Manage stress and pace daily activities.</li><li>Try gentle physical activity as tolerated.</li></ul>",
+            "text": "<p>Sustainable daily habits may help support a healthy weight:</p><ul><li>Include strength training to help maintain muscle.</li><li>Build meals around protein, fiber, and vegetables.</li><li>Stay active throughout the day.</li><li>Prioritize regular, good-quality sleep.</li><li>Manage stress and limit alcohol.</li></ul>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -324,7 +324,7 @@
         "text_XkNNxY": {
           "type": "text",
           "settings": {
-            "text": "<p>Finding the right support for fatigue starts with understanding what may be affecting your energy levels. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, quality sleep, and healthy daily habits.</p><p>During perimenopause and menopause, changes in sleep, hormonal fluctuations, and other symptoms may contribute to low energy. Depending on your individual needs, certain nutritional supplements may help address specific nutritional gaps or support general health.</p>",
+            "text": "<p>Finding the right support for weight changes starts with understanding what may be affecting your metabolism and daily habits. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, regular activity, and healthy daily habits.</p><p>During perimenopause and menopause, hormonal changes may affect metabolism and where the body stores fat. Depending on your individual needs, certain nutritional supplements may help support energy, metabolism, and general health.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",

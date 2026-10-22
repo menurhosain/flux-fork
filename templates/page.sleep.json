@@ -24,9 +24,9 @@
           "type": "section-heading",
           "settings": {
             "subheading": "Symtom",
-            "heading": "&nbsp;Fatigue&nbsp;",
+            "heading": "&nbsp;Sleep&nbsp;",
             "heading_tag": "h2",
-            "description": "<p>Explain what fatigue feels like, how it can affect daily life, and why persistent tiredness deserves attention.<br/><br/></p>",
+            "description": "<p>Trouble falling asleep, waking in the night, or waking too early can leave you feeling unrested and affect how you feel all day.<br/><br/></p>",
             "alignment": "center",
             "max_width": 680,
             "margin_bottom": 28,
@@ -148,7 +148,7 @@
         "text_Hwq3AR": {
           "type": "text",
           "settings": {
-            "text": "<p>Fatigue is more than feeling tired after a busy day. It can leave you feeling physically drained, mentally exhausted, or low on energy even after a full night's sleep. Everyday activities may feel more demanding, and concentrating, staying motivated, or getting through the day can become difficult.</p><p>Fatigue can have many causes, including poor sleep, ongoing stress, nutritional deficiencies, hormonal changes, dehydration, certain medications, or underlying health conditions. During perimenopause and menopause, hormonal fluctuations may also contribute to fatigue, particularly when they affect sleep, mood, or overall well-being.</p>",
+            "text": "<p>Sleep problems can include difficulty falling asleep, waking up often during the night, lying awake in the early hours, or waking up feeling unrefreshed. Over time, poor sleep can affect energy, mood, focus, and how well you cope with everyday stress.</p><p>Sleep can be disrupted by stress, anxiety, irregular routines, caffeine or alcohol, screen use before bed, and some health conditions. During perimenopause and menopause, hormonal changes, night sweats, and shifts in mood may make it harder to fall asleep and stay asleep.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -236,7 +236,7 @@
         "text_99eqwT": {
           "type": "text",
           "settings": {
-            "text": "<p>Organize practical suggestions into short, easy-to-read points:</p><ul><li>Maintain a consistent sleep routine.</li><li>Eat balanced, regular meals.</li><li>Stay hydrated.</li><li>Manage stress and pace daily activities.</li><li>Try gentle physical activity as tolerated.</li></ul>",
+            "text": "<p>Healthy sleep habits may help you fall asleep more easily and sleep more soundly:</p><ul><li>Go to bed and wake up at the same time each day.</li><li>Keep your bedroom cool, dark, and quiet.</li><li>Limit caffeine after midday and alcohol in the evening.</li><li>Put screens away an hour before bed.</li><li>Try relaxation techniques such as breathing exercises or gentle stretching.</li></ul>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -324,7 +324,7 @@
         "text_XkNNxY": {
           "type": "text",
           "settings": {
-            "text": "<p>Finding the right support for fatigue starts with understanding what may be affecting your energy levels. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, quality sleep, and healthy daily habits.</p><p>During perimenopause and menopause, changes in sleep, hormonal fluctuations, and other symptoms may contribute to low energy. Depending on your individual needs, certain nutritional supplements may help address specific nutritional gaps or support general health.</p>",
+            "text": "<p>Finding the right support for sleep starts with understanding what may be keeping you awake. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with a consistent bedtime routine, balanced nutrition, and healthy daily habits.</p><p>During perimenopause and menopause, hormonal fluctuations, night sweats, and mood changes may affect sleep quality. Depending on your individual needs, certain nutritional supplements may help support relaxation, restful sleep, and general health.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",

@@ -24,9 +24,9 @@
           "type": "section-heading",
           "settings": {
             "subheading": "Symtom",
-            "heading": "&nbsp;Fatigue&nbsp;",
+            "heading": "&nbsp;Hot flashes&nbsp;",
             "heading_tag": "h2",
-            "description": "<p>Explain what fatigue feels like, how it can affect daily life, and why persistent tiredness deserves attention.<br/><br/></p>",
+            "description": "<p>Sudden waves of heat, flushing, and sweating can arrive without warning, disrupting your day, your sleep, and your confidence.<br/><br/></p>",
             "alignment": "center",
             "max_width": 680,
             "margin_bottom": 28,
@@ -148,7 +148,7 @@
         "text_Hwq3AR": {
           "type": "text",
           "settings": {
-            "text": "<p>Fatigue is more than feeling tired after a busy day. It can leave you feeling physically drained, mentally exhausted, or low on energy even after a full night's sleep. Everyday activities may feel more demanding, and concentrating, staying motivated, or getting through the day can become difficult.</p><p>Fatigue can have many causes, including poor sleep, ongoing stress, nutritional deficiencies, hormonal changes, dehydration, certain medications, or underlying health conditions. During perimenopause and menopause, hormonal fluctuations may also contribute to fatigue, particularly when they affect sleep, mood, or overall well-being.</p>",
+            "text": "<p>A hot flash is a sudden feeling of intense heat that usually spreads across the face, neck, and chest. It may come with flushed skin, sweating, a rapid heartbeat, and sometimes chills as it fades. Hot flashes can last from a few seconds to several minutes and may happen a few times a week or many times a day.</p><p>Hot flashes are one of the most common symptoms of perimenopause and menopause. Changing estrogen levels are thought to affect the brain's temperature control, making the body more sensitive to small changes in temperature. Triggers such as warm environments, spicy food, alcohol, caffeine, and stress may make them more frequent or intense.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -236,7 +236,7 @@
         "text_99eqwT": {
           "type": "text",
           "settings": {
-            "text": "<p>Organize practical suggestions into short, easy-to-read points:</p><ul><li>Maintain a consistent sleep routine.</li><li>Eat balanced, regular meals.</li><li>Stay hydrated.</li><li>Manage stress and pace daily activities.</li><li>Try gentle physical activity as tolerated.</li></ul>",
+            "text": "<p>Simple changes may help reduce how often hot flashes happen and how strongly you feel them:</p><ul><li>Dress in light layers you can remove easily.</li><li>Keep your home and bedroom cool, and use a fan.</li><li>Notice and limit triggers such as spicy food, alcohol, and caffeine.</li><li>Practice slow, deep breathing when a hot flash starts.</li><li>Stay active and maintain a healthy weight.</li></ul>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -324,7 +324,7 @@
         "text_XkNNxY": {
           "type": "text",
           "settings": {
-            "text": "<p>Finding the right support for fatigue starts with understanding what may be affecting your energy levels. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, quality sleep, and healthy daily habits.</p><p>During perimenopause and menopause, changes in sleep, hormonal fluctuations, and other symptoms may contribute to low energy. Depending on your individual needs, certain nutritional supplements may help address specific nutritional gaps or support general health.</p>",
+            "text": "<p>Finding the right support for hot flashes starts with understanding what may be triggering them. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with a cool environment, balanced nutrition, and healthy daily habits.</p><p>During perimenopause and menopause, shifting hormone levels can make hot flashes more frequent and intense. Depending on your individual needs, certain nutritional supplements may help support comfort, temperature balance, and general health.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",

@@ -24,9 +24,9 @@
           "type": "section-heading",
           "settings": {
             "subheading": "Symtom",
-            "heading": "&nbsp;Fatigue&nbsp;",
+            "heading": "&nbsp;Night sweats&nbsp;",
             "heading_tag": "h2",
-            "description": "<p>Explain what fatigue feels like, how it can affect daily life, and why persistent tiredness deserves attention.<br/><br/></p>",
+            "description": "<p>Waking up soaked, too hot to sleep, or needing to change your sheets can leave you tired and frustrated the next day.<br/><br/></p>",
             "alignment": "center",
             "max_width": 680,
             "margin_bottom": 28,
@@ -148,7 +148,7 @@
         "text_Hwq3AR": {
           "type": "text",
           "settings": {
-            "text": "<p>Fatigue is more than feeling tired after a busy day. It can leave you feeling physically drained, mentally exhausted, or low on energy even after a full night's sleep. Everyday activities may feel more demanding, and concentrating, staying motivated, or getting through the day can become difficult.</p><p>Fatigue can have many causes, including poor sleep, ongoing stress, nutritional deficiencies, hormonal changes, dehydration, certain medications, or underlying health conditions. During perimenopause and menopause, hormonal fluctuations may also contribute to fatigue, particularly when they affect sleep, mood, or overall well-being.</p>",
+            "text": "<p>Night sweats are episodes of heavy sweating during sleep that can soak your nightclothes and bedding. They are often the nighttime version of hot flashes, bringing a sudden rush of heat followed by sweating and sometimes chills. Because they interrupt sleep, they can also lead to tiredness, irritability, and trouble concentrating the next day.</p><p>During perimenopause and menopause, changing estrogen levels may affect how the body regulates temperature, making night sweats more likely. A warm bedroom, heavy bedding, alcohol, spicy food, stress, certain medications, or other health conditions may also contribute.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -236,7 +236,7 @@
         "text_99eqwT": {
           "type": "text",
           "settings": {
-            "text": "<p>Organize practical suggestions into short, easy-to-read points:</p><ul><li>Maintain a consistent sleep routine.</li><li>Eat balanced, regular meals.</li><li>Stay hydrated.</li><li>Manage stress and pace daily activities.</li><li>Try gentle physical activity as tolerated.</li></ul>",
+            "text": "<p>A few changes to your evening routine and sleep space may help you stay cooler at night:</p><ul><li>Keep your bedroom cool and well ventilated.</li><li>Choose breathable bedding and lightweight sleepwear.</li><li>Keep a glass of cold water by your bed.</li><li>Avoid alcohol, caffeine, and spicy food in the evening.</li><li>Wind down with a calming routine before bed.</li></ul>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
@@ -324,7 +324,7 @@
         "text_XkNNxY": {
           "type": "text",
           "settings": {
-            "text": "<p>Finding the right support for fatigue starts with understanding what may be affecting your energy levels. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, quality sleep, and healthy daily habits.</p><p>During perimenopause and menopause, changes in sleep, hormonal fluctuations, and other symptoms may contribute to low energy. Depending on your individual needs, certain nutritional supplements may help address specific nutritional gaps or support general health.</p>",
+            "text": "<p>Finding the right support for night sweats starts with understanding what may be disturbing your sleep. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with a cool sleep environment, balanced nutrition, and healthy daily habits.</p><p>During perimenopause and menopause, hormonal fluctuations may make overheating at night more common. Depending on your individual needs, certain nutritional supplements may help support restful sleep, comfort, and general health.</p>",
             "text_style": "body",
             "alignment": "inherit",
             "text_color": "",
