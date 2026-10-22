@@ -28,7 +28,7 @@
             "heading_tag": "h2",
             "description": "<p>We are building a network of licensed clinicians who specialize in menopause care. When it opens, you will be able to book a visit, be evaluated, and, when a clinician decides it is appropriate, get a prescription, all without leaving home.</p>",
             "alignment": "center",
-            "max_width": 840,
+            "max_width": 720,
             "margin_bottom": 28,
             "margin_bottom_mobile": 0,
             "gap_subheading": 16,
@@ -153,12 +153,16 @@
         "color_scheme": "option-4",
         "background_color": "",
         "background_image": "shopify://shop_images/inner3.jpg",
-        "background_position": "center",
+        "background_position": "top",
         "background_fit": "cover",
         "overlay_color": "#000000",
-        "overlay_opacity": 50,
+        "overlay_opacity": 35,
         "padding_top": 100,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "blocks_section_how": {
@@ -444,7 +448,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "blocks_section_waitlist": {
@@ -552,7 +560,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     }
   },

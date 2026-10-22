@@ -98,13 +98,17 @@
         "blocks_gap_mobile": 0,
         "color_scheme": "option-4",
         "background_color": "",
-        "background_image": "shopify://shop_images/inner5.jpg",
-        "background_position": "center",
+        "background_image": "shopify://shop_images/about-banner.jpg",
+        "background_position": "top",
         "background_fit": "cover",
         "overlay_color": "#000000",
-        "overlay_opacity": 50,
-        "padding_top": 152,
-        "padding_bottom": 152
+        "overlay_opacity": 30,
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "image_with_text_HRaY3T": {
@@ -472,7 +476,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "blocks_section_A9U7PK": {
@@ -890,7 +898,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 60,
-        "padding_bottom": 40
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "blocks_section_zccKJN": {
@@ -923,7 +935,7 @@
               "type": "container",
               "name": "t:blocks.container.name",
               "settings": {
-                "background_color": "#EAF2FD",
+                "background_color": "#eaf2fd",
                 "border_radius": 12,
                 "max_width": 0,
                 "alignment": "center",
@@ -954,10 +966,10 @@
                     "alignment": "inherit",
                     "text_color": "",
                     "custom_font_size": true,
-                    "font_size": 32,
+                    "font_size": 24,
                     "font_size_mobile": 25,
                     "custom_line_height": true,
-                    "line_height": 40,
+                    "line_height": 34,
                     "line_height_mobile": 24,
                     "custom_spacing": false,
                     "margin_top": 0,
@@ -983,7 +995,7 @@
       ],
       "custom_css": [
         "p {font-style: italic;}",
-        "p+p{font-style: unset;}"
+        "p + p {font-style: unset;}"
       ],
       "name": "t:sections.blocks-section.presets.blank_name",
       "settings": {
@@ -999,7 +1011,11 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "padding_top": 0,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     }
   },
