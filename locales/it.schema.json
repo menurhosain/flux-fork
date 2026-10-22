@@ -832,6 +832,21 @@
         "blank_name": "Sezione a blocchi"
       },
       "settings": {
+        "header_margin": {
+          "content": "Margine della sezione"
+        },
+        "margin_top": {
+          "label": "Margine superiore su desktop"
+        },
+        "margin_bottom": {
+          "label": "Margine inferiore su desktop"
+        },
+        "margin_top_mobile": {
+          "label": "Margine superiore su mobile"
+        },
+        "margin_bottom_mobile": {
+          "label": "Margine inferiore su mobile"
+        },
         "full_width": {
           "label": "Contenuto a tutta larghezza",
           "info": "Disattivato mantiene il contenuto entro la larghezza della pagina."
@@ -7122,6 +7137,52 @@
         },
         "number_badge_background": {
           "label": "Colore cerchio"
+        }
+      }
+    },
+    "collection_pills": {
+      "name": "Pillole collezione",
+      "settings": {
+        "mobile_scroll": {
+          "label": "Scorrimento orizzontale su mobile"
+        },
+        "header_active": {
+          "content": "Pillola attiva",
+          "info": "Evidenzia la pillola della collezione visualizzata."
+        },
+        "active_text_color": {
+          "label": "Colore testo attivo"
+        },
+        "active_background_color": {
+          "label": "Colore sfondo attivo"
+        },
+        "active_border_color": {
+          "label": "Colore bordo attivo"
+        }
+      }
+    },
+    "collection_pill": {
+      "name": "Pillola collezione",
+      "settings": {
+        "collection": {
+          "label": "Collezione"
+        },
+        "label": {
+          "info": "Lascia vuoto per usare il titolo della collezione."
+        },
+        "link": {
+          "info": "Sostituisce il link della collezione. Usa /collections/all per una pillola Tutto."
+        },
+        "header_style": {
+          "info": "Lascia vuoto per usare lo stile del blocco Pillole collezione."
+        },
+        "font_weight": {
+          "options__1": {
+            "label": "Predefinito pillole"
+          }
+        },
+        "custom_padding": {
+          "label": "Usa spaziatura interna personalizzata"
         }
       }
     },

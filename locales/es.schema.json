@@ -832,6 +832,21 @@
         "blank_name": "Sección de bloques"
       },
       "settings": {
+        "header_margin": {
+          "content": "Margen de la sección"
+        },
+        "margin_top": {
+          "label": "Margen superior en escritorio"
+        },
+        "margin_bottom": {
+          "label": "Margen inferior en escritorio"
+        },
+        "margin_top_mobile": {
+          "label": "Margen superior en móvil"
+        },
+        "margin_bottom_mobile": {
+          "label": "Margen inferior en móvil"
+        },
         "full_width": {
           "label": "Contenido de ancho completo",
           "info": "Desactivado mantiene el contenido dentro del ancho de página."
@@ -7122,6 +7137,52 @@
         },
         "number_badge_background": {
           "label": "Color del círculo"
+        }
+      }
+    },
+    "collection_pills": {
+      "name": "Píldoras de colección",
+      "settings": {
+        "mobile_scroll": {
+          "label": "Desplazamiento horizontal en móvil"
+        },
+        "header_active": {
+          "content": "Píldora activa",
+          "info": "Resalta la píldora de la colección que se está viendo."
+        },
+        "active_text_color": {
+          "label": "Color de texto activo"
+        },
+        "active_background_color": {
+          "label": "Color de fondo activo"
+        },
+        "active_border_color": {
+          "label": "Color de borde activo"
+        }
+      }
+    },
+    "collection_pill": {
+      "name": "Píldora de colección",
+      "settings": {
+        "collection": {
+          "label": "Colección"
+        },
+        "label": {
+          "info": "Déjalo vacío para usar el título de la colección."
+        },
+        "link": {
+          "info": "Reemplaza el enlace de la colección. Usa /collections/all para una píldora Todo."
+        },
+        "header_style": {
+          "info": "Déjalo vacío para usar el estilo del bloque Píldoras de colección."
+        },
+        "font_weight": {
+          "options__1": {
+            "label": "Predeterminado de las píldoras"
+          }
+        },
+        "custom_padding": {
+          "label": "Usar relleno personalizado"
         }
       }
     },

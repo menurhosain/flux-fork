@@ -53,6 +53,74 @@
         "disable_arrow_mobile": true
       }
     },
+    "collection_pills": {
+      "type": "blocks-section",
+      "blocks": {
+        "pills": {
+          "type": "collection-pills",
+          "settings": {},
+          "blocks": {
+            "pill_all": {
+              "type": "_collection-pill",
+              "settings": {
+                "label": "All",
+                "link": "shopify://collections/all"
+              }
+            },
+            "pill_hot_flashes": {
+              "type": "_collection-pill",
+              "settings": {
+                "collection": "hot-flashes",
+                "label": "Hot flashes"
+              }
+            },
+            "pill_sleep": {
+              "type": "_collection-pill",
+              "settings": {
+                "collection": "sleep",
+                "label": "Sleep"
+              }
+            },
+            "pill_mood": {
+              "type": "_collection-pill",
+              "settings": {
+                "collection": "mood",
+                "label": "Mood"
+              }
+            },
+            "pill_comfort": {
+              "type": "_collection-pill",
+              "settings": {
+                "collection": "comfort",
+                "label": "Comfort"
+              }
+            },
+            "pill_weight": {
+              "type": "_collection-pill",
+              "settings": {
+                "collection": "weight",
+                "label": "Weight"
+              }
+            }
+          },
+          "block_order": [
+            "pill_all",
+            "pill_hot_flashes",
+            "pill_sleep",
+            "pill_mood",
+            "pill_comfort",
+            "pill_weight"
+          ]
+        }
+      },
+      "block_order": [
+        "pills"
+      ],
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
@@ -158,6 +226,7 @@
   "order": [
     "banner",
     "subcollections",
+    "collection_pills",
     "product-grid",
     "recently_viewed_products"
   ]

@@ -1,0 +1,492 @@
+{%- liquid
+  assign text_color = block.settings.text_color
+  assign has_text_color = false
+  if text_color != blank and text_color.alpha != 0
+    assign has_text_color = true
+  endif
+  assign background_color = block.settings.background_color
+  assign has_background_color = false
+  if background_color != blank and background_color.alpha != 0
+    assign has_background_color = true
+  endif
+  assign border_color = block.settings.border_color
+  assign has_border_color = false
+  if border_color != blank and border_color.alpha != 0
+    assign has_border_color = true
+  endif
+  assign hover_text_color = block.settings.hover_text_color
+  assign has_hover_text_color = false
+  if hover_text_color != blank and hover_text_color.alpha != 0
+    assign has_hover_text_color = true
+  endif
+  assign hover_background_color = block.settings.hover_background_color
+  assign has_hover_background_color = false
+  if hover_background_color != blank and hover_background_color.alpha != 0
+    assign has_hover_background_color = true
+  endif
+  assign hover_border_color = block.settings.hover_border_color
+  assign has_hover_border_color = false
+  if hover_border_color != blank and hover_border_color.alpha != 0
+    assign has_hover_border_color = true
+  endif
+  assign active_text_color = block.settings.active_text_color
+  assign has_active_text_color = false
+  if active_text_color != blank and active_text_color.alpha != 0
+    assign has_active_text_color = true
+  endif
+  assign active_background_color = block.settings.active_background_color
+  assign has_active_background_color = false
+  if active_background_color != blank and active_background_color.alpha != 0
+    assign has_active_background_color = true
+  endif
+  assign active_border_color = block.settings.active_border_color
+  assign has_active_border_color = false
+  if active_border_color != blank and active_border_color.alpha != 0
+    assign has_active_border_color = true
+  endif
+-%}
+
+<nav
+  id="CollectionPills-{{ block.id }}"
+  class="collection-pills collection-pills--{{ block.settings.alignment }}{% if block.settings.mobile_scroll %} collection-pills--scroll{% endif %}"
+  {{ block.shopify_attributes }}
+>
+  {% content_for 'blocks' %}
+</nav>
+
+{%- style -%}
+  #CollectionPills-{{ block.id }} {
+    gap: {{ block.settings.row_gap_mobile }}px {{ block.settings.column_gap_mobile }}px;
+    {%- if block.settings.custom_spacing %}
+      margin-top: {{ block.settings.margin_top }}px;
+      margin-bottom: {{ block.settings.margin_bottom }}px;
+    {%- endif %}
+  }
+  #CollectionPills-{{ block.id }} .collection-pill {
+    padding: {{ block.settings.padding_vertical_mobile }}px {{ block.settings.padding_horizontal_mobile }}px;
+    border-radius: {{ block.settings.border_radius }}px;
+    border-width: {{ block.settings.border_width }}px;
+    font-size: {{ block.settings.font_size_mobile | divided_by: 10.0 }}rem;
+    {%- if block.settings.font_weight != 'inherit' %}
+      font-weight: {{ block.settings.font_weight }};
+    {%- endif %}
+    {%- if has_text_color %}
+      color: {{ text_color }};
+    {%- endif %}
+    {%- if has_background_color %}
+      background-color: {{ background_color }};
+    {%- endif %}
+    {%- if has_border_color %}
+      border-color: {{ border_color }};
+    {%- endif %}
+  }
+  {%- if has_hover_text_color or has_hover_background_color or has_hover_border_color %}
+    #CollectionPills-{{ block.id }} .collection-pill:not(.is-active):hover {
+      {%- if has_hover_text_color %}
+        color: {{ hover_text_color }};
+      {%- endif %}
+      {%- if has_hover_background_color %}
+        background-color: {{ hover_background_color }};
+      {%- endif %}
+      {%- if has_hover_border_color %}
+        border-color: {{ hover_border_color }};
+      {%- endif %}
+    }
+  {%- endif %}
+  {%- if has_active_text_color or has_active_background_color or has_active_border_color %}
+    #CollectionPills-{{ block.id }} .collection-pill.is-active {
+      {%- if has_active_text_color %}
+        color: {{ active_text_color }};
+      {%- endif %}
+      {%- if has_active_background_color %}
+        background-color: {{ active_background_color }};
+      {%- endif %}
+      {%- if has_active_border_color %}
+        border-color: {{ active_border_color }};
+      {%- endif %}
+    }
+  {%- endif %}
+  @media screen and (min-width: 750px) {
+    #CollectionPills-{{ block.id }} {
+      gap: {{ block.settings.row_gap }}px {{ block.settings.column_gap }}px;
+    }
+    #CollectionPills-{{ block.id }} .collection-pill {
+      padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+      font-size: {{ block.settings.font_size | divided_by: 10.0 }}rem;
+    }
+  }
+{%- endstyle -%}
+
+{% stylesheet %}
+  .collection-pills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .collection-pills--left {
+    justify-content: flex-start;
+  }
+
+  .collection-pills--center {
+    justify-content: center;
+  }
+
+  .collection-pills--right {
+    justify-content: flex-end;
+  }
+
+  @media screen and (max-width: 749px) {
+    .collection-pills--scroll {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .collection-pills--scroll::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .collection-pill {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    border-style: solid;
+    border-color: rgba(var(--color-foreground), 0.12);
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    line-height: 1.3;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .collection-pill:not(.is-active):hover {
+    border-color: rgba(var(--color-foreground), 0.4);
+  }
+
+  .collection-pill.is-active {
+    background-color: rgb(var(--color-foreground));
+    border-color: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:blocks.collection_pills.name",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "_collection-pill"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:blocks.pills.settings.alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:blocks.pills.settings.alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:blocks.pills.settings.alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:blocks.pills.settings.alignment.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_scroll",
+      "default": true,
+      "label": "t:blocks.collection_pills.settings.mobile_scroll.label"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 10,
+      "label": "t:blocks.pills.settings.column_gap.label"
+    },
+    {
+      "type": "range",
+      "id": "row_gap",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 10,
+      "label": "t:blocks.pills.settings.row_gap.label"
+    },
+    {
+      "type": "range",
+      "id": "column_gap_mobile",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 8,
+      "label": "t:blocks.pills.settings.column_gap_mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "row_gap_mobile",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 8,
+      "label": "t:blocks.pills.settings.row_gap_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.pills.settings.header_pill.content"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "default": "#0A64D6",
+      "label": "t:blocks.pills.settings.text_color.label",
+      "info": "t:blocks.pills.settings.text_color.info"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "#FFFFFF",
+      "label": "t:blocks.pills.settings.background_color.label",
+      "info": "t:blocks.pills.settings.background_color.info"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "default": "#0A64D6",
+      "label": "t:blocks.pills.settings.border_color.label",
+      "info": "t:blocks.pills.settings.border_color.info"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1,
+      "label": "t:blocks.pills.settings.border_width.label"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:blocks.pills.settings.border_radius.label"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:blocks.pills.settings.font_size.label"
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 13,
+      "label": "t:blocks.pills.settings.font_size_mobile.label"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "options": [
+        {
+          "value": "inherit",
+          "label": "t:blocks.pills.settings.font_weight.options__1.label"
+        },
+        {
+          "value": "300",
+          "label": "t:blocks.pills.settings.font_weight.options__2.label"
+        },
+        {
+          "value": "400",
+          "label": "t:blocks.pills.settings.font_weight.options__3.label"
+        },
+        {
+          "value": "500",
+          "label": "t:blocks.pills.settings.font_weight.options__4.label"
+        },
+        {
+          "value": "600",
+          "label": "t:blocks.pills.settings.font_weight.options__5.label"
+        },
+        {
+          "value": "700",
+          "label": "t:blocks.pills.settings.font_weight.options__6.label"
+        }
+      ],
+      "default": "600",
+      "label": "t:blocks.pills.settings.font_weight.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 10,
+      "label": "t:blocks.pills.settings.padding_vertical.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 16,
+      "label": "t:blocks.pills.settings.padding_horizontal.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical_mobile",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 8,
+      "label": "t:blocks.pills.settings.padding_vertical_mobile.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal_mobile",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 14,
+      "label": "t:blocks.pills.settings.padding_horizontal_mobile.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.collection_pills.settings.header_active.content",
+      "info": "t:blocks.collection_pills.settings.header_active.info"
+    },
+    {
+      "type": "color",
+      "id": "active_text_color",
+      "default": "#FFFFFF",
+      "label": "t:blocks.collection_pills.settings.active_text_color.label"
+    },
+    {
+      "type": "color",
+      "id": "active_background_color",
+      "default": "#0A64D6",
+      "label": "t:blocks.collection_pills.settings.active_background_color.label"
+    },
+    {
+      "type": "color",
+      "id": "active_border_color",
+      "default": "#0A64D6",
+      "label": "t:blocks.collection_pills.settings.active_border_color.label"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.pills.settings.header_hover.content"
+    },
+    {
+      "type": "color",
+      "id": "hover_text_color",
+      "label": "t:blocks.pills.settings.hover_text_color.label"
+    },
+    {
+      "type": "color",
+      "id": "hover_background_color",
+      "default": "#EEF4FD",
+      "label": "t:blocks.pills.settings.hover_background_color.label"
+    },
+    {
+      "type": "color",
+      "id": "hover_border_color",
+      "label": "t:blocks.pills.settings.hover_border_color.label",
+      "info": "t:blocks.pills.settings.hover_border_color.info"
+    },
+    {
+      "type": "header",
+      "content": "t:blocks.pills.settings.header_spacing.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_spacing",
+      "default": false,
+      "label": "t:blocks.pills.settings.custom_spacing.label"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.pills.settings.margin_top.label",
+      "visible_if": "{{ block.settings.custom_spacing }}"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "label": "t:blocks.pills.settings.margin_bottom.label",
+      "visible_if": "{{ block.settings.custom_spacing }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:blocks.collection_pills.name",
+      "blocks": [
+        {
+          "type": "_collection-pill",
+          "settings": {
+            "label": "All",
+            "link": "shopify://collections/all"
+          }
+        },
+        {
+          "type": "_collection-pill"
+        },
+        {
+          "type": "_collection-pill"
+        },
+        {
+          "type": "_collection-pill"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

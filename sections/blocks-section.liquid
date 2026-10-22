@@ -15,6 +15,8 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    margin-top: {{ section.settings.margin_top_mobile }}px;
+    margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
     {%- if has_background_color %}
       background: {{ background_color }};
     {%- endif %}
@@ -28,6 +30,8 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
     }
 
     #BlocksSection-{{ section.id }} .blocks-section__inner > * + * {
@@ -339,6 +343,50 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 80
+    },
+    {
+      "type": "header",
+      "content": "t:sections.blocks-section.settings.header_margin.content"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.blocks-section.settings.margin_top.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.blocks-section.settings.margin_bottom.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.blocks-section.settings.margin_top_mobile.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.blocks-section.settings.margin_bottom_mobile.label",
+      "default": 0
     }
   ],
   "presets": [

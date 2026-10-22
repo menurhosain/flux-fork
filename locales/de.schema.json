@@ -832,6 +832,21 @@
         "blank_name": "Block-Abschnitt"
       },
       "settings": {
+        "header_margin": {
+          "content": "Abschnittsaußenabstand"
+        },
+        "margin_top": {
+          "label": "Oberer Außenabstand (Desktop)"
+        },
+        "margin_bottom": {
+          "label": "Unterer Außenabstand (Desktop)"
+        },
+        "margin_top_mobile": {
+          "label": "Oberer Außenabstand (mobil)"
+        },
+        "margin_bottom_mobile": {
+          "label": "Unterer Außenabstand (mobil)"
+        },
         "full_width": {
           "label": "Inhalt in voller Breite",
           "info": "Aus hält den Inhalt innerhalb der Seitenbreite."
@@ -7122,6 +7137,52 @@
         },
         "number_badge_background": {
           "label": "Kreisfarbe"
+        }
+      }
+    },
+    "collection_pills": {
+      "name": "Kollektions-Pills",
+      "settings": {
+        "mobile_scroll": {
+          "label": "Auf Mobilgeräten horizontal scrollen"
+        },
+        "header_active": {
+          "content": "Aktive Pill",
+          "info": "Hebt die Pill der aktuell angezeigten Kollektion hervor."
+        },
+        "active_text_color": {
+          "label": "Aktive Textfarbe"
+        },
+        "active_background_color": {
+          "label": "Aktive Hintergrundfarbe"
+        },
+        "active_border_color": {
+          "label": "Aktive Rahmenfarbe"
+        }
+      }
+    },
+    "collection_pill": {
+      "name": "Kollektions-Pill",
+      "settings": {
+        "collection": {
+          "label": "Kollektion"
+        },
+        "label": {
+          "info": "Leer lassen, um den Kollektionstitel zu verwenden."
+        },
+        "link": {
+          "info": "Überschreibt den Kollektionslink. /collections/all für eine Alle-Pill verwenden."
+        },
+        "header_style": {
+          "info": "Leer lassen, um den Stil des Kollektions-Pills-Blocks zu verwenden."
+        },
+        "font_weight": {
+          "options__1": {
+            "label": "Standard der Kollektions-Pills"
+          }
+        },
+        "custom_padding": {
+          "label": "Benutzerdefinierten Innenabstand verwenden"
         }
       }
     },

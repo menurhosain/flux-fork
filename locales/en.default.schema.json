@@ -832,6 +832,21 @@
         "blank_name": "Blocks section"
       },
       "settings": {
+        "header_margin": {
+          "content": "Section margin"
+        },
+        "margin_top": {
+          "label": "Top margin on desktop"
+        },
+        "margin_bottom": {
+          "label": "Bottom margin on desktop"
+        },
+        "margin_top_mobile": {
+          "label": "Top margin on mobile"
+        },
+        "margin_bottom_mobile": {
+          "label": "Bottom margin on mobile"
+        },
         "full_width": {
           "label": "Full width content",
           "info": "Off keeps content inside the page width."
@@ -7157,6 +7172,52 @@
         },
         "number_badge_background": {
           "label": "Circle color"
+        }
+      }
+    },
+    "collection_pills": {
+      "name": "Collection pills",
+      "settings": {
+        "mobile_scroll": {
+          "label": "Scroll horizontally on mobile"
+        },
+        "header_active": {
+          "content": "Active pill",
+          "info": "Highlights the pill for the collection being viewed."
+        },
+        "active_text_color": {
+          "label": "Active text color"
+        },
+        "active_background_color": {
+          "label": "Active background color"
+        },
+        "active_border_color": {
+          "label": "Active border color"
+        }
+      }
+    },
+    "collection_pill": {
+      "name": "Collection pill",
+      "settings": {
+        "collection": {
+          "label": "Collection"
+        },
+        "label": {
+          "info": "Leave empty to use the collection title."
+        },
+        "link": {
+          "info": "Overrides the collection link. Use /collections/all for an All pill."
+        },
+        "header_style": {
+          "info": "Leave empty to use the style set on the Collection pills block."
+        },
+        "font_weight": {
+          "options__1": {
+            "label": "Collection pills default"
+          }
+        },
+        "custom_padding": {
+          "label": "Use custom padding"
         }
       }
     },

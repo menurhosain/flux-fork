@@ -832,6 +832,21 @@
         "blank_name": "Section de blocs"
       },
       "settings": {
+        "header_margin": {
+          "content": "Marge de la section"
+        },
+        "margin_top": {
+          "label": "Marge supérieure sur ordinateur"
+        },
+        "margin_bottom": {
+          "label": "Marge inférieure sur ordinateur"
+        },
+        "margin_top_mobile": {
+          "label": "Marge supérieure sur mobile"
+        },
+        "margin_bottom_mobile": {
+          "label": "Marge inférieure sur mobile"
+        },
         "full_width": {
           "label": "Contenu pleine largeur",
           "info": "Désactivé garde le contenu dans la largeur de la page."
@@ -7122,6 +7137,52 @@
         },
         "number_badge_background": {
           "label": "Couleur du cercle"
+        }
+      }
+    },
+    "collection_pills": {
+      "name": "Pastilles de collection",
+      "settings": {
+        "mobile_scroll": {
+          "label": "Défilement horizontal sur mobile"
+        },
+        "header_active": {
+          "content": "Pastille active",
+          "info": "Met en évidence la pastille de la collection affichée."
+        },
+        "active_text_color": {
+          "label": "Couleur du texte active"
+        },
+        "active_background_color": {
+          "label": "Couleur de fond active"
+        },
+        "active_border_color": {
+          "label": "Couleur de bordure active"
+        }
+      }
+    },
+    "collection_pill": {
+      "name": "Pastille de collection",
+      "settings": {
+        "collection": {
+          "label": "Collection"
+        },
+        "label": {
+          "info": "Laisser vide pour utiliser le titre de la collection."
+        },
+        "link": {
+          "info": "Remplace le lien de la collection. Utilisez /collections/all pour une pastille Tout."
+        },
+        "header_style": {
+          "info": "Laisser vide pour utiliser le style du bloc Pastilles de collection."
+        },
+        "font_weight": {
+          "options__1": {
+            "label": "Par défaut des pastilles"
+          }
+        },
+        "custom_padding": {
+          "label": "Utiliser une marge intérieure personnalisée"
         }
       }
     },
