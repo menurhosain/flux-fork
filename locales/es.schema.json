@@ -8118,6 +8118,10 @@
         "gap": {
           "label": "Espacio entre campo y botón"
         },
+        "stack_on_mobile": {
+          "label": "Apilar campo y botón en móvil",
+          "info": "Muestra el campo de correo y el botón en líneas separadas a ancho completo en pantallas de menos de 750 px."
+        },
         "radius": {
           "label": "Radio de esquinas"
         },

@@ -15,7 +15,7 @@
 -%}
 <div
   id="EmailSignup-{{ block.id }}"
-  class="email-signup email-signup--{{ block.settings.alignment }}"
+  class="email-signup email-signup--{{ block.settings.alignment }}{% if block.settings.stack_on_mobile %} email-signup--stack-mobile{% endif %}"
   {{ block.shopify_attributes }}
 >
   {% form 'customer', class: 'email-signup__form', id: form_id %}
@@ -199,6 +199,21 @@
     opacity: 0.6;
   }
 
+  @media screen and (max-width: 749px) {
+    .email-signup--stack-mobile .email-signup__row {
+      flex-direction: column;
+    }
+
+    .email-signup--stack-mobile .email-signup__input {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .email-signup--stack-mobile .email-signup__button {
+      width: 100%;
+    }
+  }
+
   .email-signup__terms {
     margin-top: 1.2rem;
   }
@@ -309,6 +324,13 @@
       "unit": "px",
       "default": 10,
       "label": "t:blocks.email_signup.settings.gap.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_on_mobile",
+      "default": false,
+      "label": "t:blocks.email_signup.settings.stack_on_mobile.label",
+      "info": "t:blocks.email_signup.settings.stack_on_mobile.info"
     },
     {
       "type": "range",

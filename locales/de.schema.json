@@ -8118,6 +8118,10 @@
         "gap": {
           "label": "Abstand zwischen Feld und Schaltfläche"
         },
+        "stack_on_mobile": {
+          "label": "Feld und Schaltfläche auf Mobilgeräten untereinander",
+          "info": "Zeigt E-Mail-Feld und Schaltfläche auf Bildschirmen unter 750 px in eigenen Zeilen mit voller Breite."
+        },
         "radius": {
           "label": "Eckenradius"
         },

@@ -8153,6 +8153,10 @@
         "gap": {
           "label": "Space between field and button"
         },
+        "stack_on_mobile": {
+          "label": "Stack field and button on mobile",
+          "info": "Shows the email field and button on separate full-width lines on screens under 750px."
+        },
         "radius": {
           "label": "Corner radius"
         },

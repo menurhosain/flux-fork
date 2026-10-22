@@ -8118,6 +8118,10 @@
         "gap": {
           "label": "Espace entre le champ et le bouton"
         },
+        "stack_on_mobile": {
+          "label": "Empiler le champ et le bouton sur mobile",
+          "info": "Affiche le champ e-mail et le bouton sur des lignes séparées en pleine largeur sur les écrans de moins de 750 px."
+        },
         "radius": {
           "label": "Rayon des coins"
         },

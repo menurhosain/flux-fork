@@ -8118,6 +8118,10 @@
         "gap": {
           "label": "Spazio tra campo e pulsante"
         },
+        "stack_on_mobile": {
+          "label": "Impila campo e pulsante su mobile",
+          "info": "Mostra il campo email e il pulsante su righe separate a larghezza piena su schermi sotto i 750 px."
+        },
         "radius": {
           "label": "Raggio angoli"
         },
