@@ -17,19 +17,19 @@
         "padding_bottom": 36
       }
     },
-    "blocks_section_rUc7Hx": {
+    "blocks_section_RVPBKd": {
       "type": "blocks-section",
       "blocks": {
-        "section_heading_MQjeUd": {
+        "section_heading_efJWA4": {
           "type": "section-heading",
           "settings": {
-            "subheading": "Symptom",
-            "heading": "Weight",
+            "subheading": "Symtom",
+            "heading": "&nbsp;Fatigue&nbsp;",
             "heading_tag": "h2",
-            "description": "<p>Weight that shifts to the middle, even when nothing else has changed. Frustrating, very common, and not a personal failing.</p>",
+            "description": "<p>Explain what fatigue feels like, how it can affect daily life, and why persistent tiredness deserves attention.<br/><br/></p>",
             "alignment": "center",
-            "max_width": 840,
-            "margin_bottom": 60,
+            "max_width": 680,
+            "margin_bottom": 28,
             "margin_bottom_mobile": 0,
             "gap_subheading": 16,
             "gap_subheading_mobile": 12,
@@ -37,7 +37,7 @@
             "gap_heading_mobile": 12,
             "subheading_size": 15,
             "subheading_size_mobile": 12,
-            "subheading_color": "#0261d1",
+            "subheading_color": "#ffffff",
             "subheading_weight": "600",
             "subheading_uppercase": true,
             "subheading_lines": true,
@@ -45,6 +45,95 @@
             "subheading_line_color": "#cbd8e7",
             "heading_size": 56,
             "heading_size_mobile": 34,
+            "heading_color": "#ffffff",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "#f8f8f8",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "container_tzcfMA": {
+          "type": "container",
+          "name": "t:blocks.container.name",
+          "settings": {
+            "background_color": "rgba(0,0,0,0)",
+            "border_radius": 0,
+            "max_width": 0,
+            "alignment": "center",
+            "layout": "flex",
+            "flex_direction": "row",
+            "flex_direction_mobile": "row",
+            "align_items": "center",
+            "justify_content": "center",
+            "gap": 10,
+            "flex_wrap": true,
+            "border_width": 0,
+            "border_color": "#e5e5e5",
+            "border_top": true,
+            "border_right": true,
+            "border_bottom": true,
+            "border_left": true,
+            "padding_vertical": 0,
+            "padding_horizontal": 0,
+            "padding_vertical_mobile": 0,
+            "padding_horizontal_mobile": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_efJWA4",
+        "container_tzcfMA"
+      ],
+      "name": "Banner section",
+      "settings": {
+        "anchor_id": "",
+        "full_width": false,
+        "content_alignment": "left",
+        "blocks_gap": 0,
+        "blocks_gap_mobile": 0,
+        "color_scheme": "option-4",
+        "background_color": "",
+        "background_image": "shopify://shop_images/inner5.jpg",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "padding_top": 152,
+        "padding_bottom": 152
+      }
+    },
+    "image_with_text_QQmH3M": {
+      "type": "image-with-text",
+      "blocks": {
+        "section_heading_UCXHiU": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Symptoms and causes",
+            "heading": "What Is Happening?&nbsp;",
+            "heading_tag": "h2",
+            "description": "",
+            "alignment": "left",
+            "margin_bottom": 0,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 0,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": false,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 50,
+            "heading_size_mobile": 36,
             "heading_color": "#160081",
             "heading_weight": "600",
             "heading_max_width": 0,
@@ -55,244 +144,376 @@
             "description_weight": "default"
           },
           "blocks": {}
+        },
+        "text_Hwq3AR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fatigue is more than feeling tired after a busy day. It can leave you feeling physically drained, mentally exhausted, or low on energy even after a full night's sleep. Everyday activities may feel more demanding, and concentrating, staying motivated, or getting through the day can become difficult.</p><p>Fatigue can have many causes, including poor sleep, ongoing stress, nutritional deficiencies, hormonal changes, dehydration, certain medications, or underlying health conditions. During perimenopause and menopause, hormonal fluctuations may also contribute to fatigue, particularly when they affect sleep, mood, or overall well-being.</p>",
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_line_height": false,
+            "line_height": 26,
+            "line_height_mobile": 24,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "section_heading_MQjeUd"
+        "section_heading_UCXHiU",
+        "text_Hwq3AR"
       ],
-      "name": "t:sections.blocks-section.presets.blank_name",
       "settings": {
+        "image": "shopify://shop_images/1.jpg",
+        "caption": "",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "full_width": true,
+        "contain_content": true,
+        "color_scheme": "option-1",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "ignore_spacing": true,
+        "content_custom_padding": true,
+        "content_padding_top": 20,
+        "content_padding_right": 0,
+        "content_padding_bottom": 20,
+        "content_padding_left": 70,
+        "margin_spacing": "negative",
+        "margin_top": 80,
+        "mobile_content_alignment": "left",
+        "mobile_text_position": "above"
+      }
+    },
+    "image_with_text_9xxUay": {
+      "type": "image-with-text",
+      "blocks": {
+        "section_heading_NmVnRG": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Practical lifestyle",
+            "heading": "What May Help&nbsp;",
+            "heading_tag": "h3",
+            "description": "",
+            "alignment": "left",
+            "margin_bottom": 0,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 0,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": false,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 50,
+            "heading_size_mobile": 36,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "text_99eqwT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Organize practical suggestions into short, easy-to-read points:</p><ul><li>Maintain a consistent sleep routine.</li><li>Eat balanced, regular meals.</li><li>Stay hydrated.</li><li>Manage stress and pace daily activities.</li><li>Try gentle physical activity as tolerated.</li></ul>",
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_line_height": false,
+            "line_height": 26,
+            "line_height_mobile": 24,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_NmVnRG",
+        "text_99eqwT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/workout.jpg",
+        "caption": "",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "full_width": true,
+        "contain_content": true,
+        "color_scheme": "option-4",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "ignore_spacing": true,
+        "content_custom_padding": true,
+        "content_padding_top": 20,
+        "content_padding_right": 70,
+        "content_padding_bottom": 20,
+        "content_padding_left": 0,
+        "margin_spacing": "negative",
+        "margin_top": 80,
+        "mobile_content_alignment": "left",
+        "mobile_text_position": "above"
+      }
+    },
+    "image_with_text_jxmQp7": {
+      "type": "image-with-text",
+      "blocks": {
+        "section_heading_G64wx3": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Supplements",
+            "heading": "Products That May Help&nbsp;",
+            "heading_tag": "h3",
+            "description": "",
+            "alignment": "left",
+            "margin_bottom": 0,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 0,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#0261d1",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": false,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 50,
+            "heading_size_mobile": 36,
+            "heading_color": "#160081",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "text_XkNNxY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Finding the right support for fatigue starts with understanding what may be affecting your energy levels. Thoughtfully selected wellness products and nutritional supplements may help support overall well-being, particularly when combined with balanced nutrition, quality sleep, and healthy daily habits.</p><p>During perimenopause and menopause, changes in sleep, hormonal fluctuations, and other symptoms may contribute to low energy. Depending on your individual needs, certain nutritional supplements may help address specific nutritional gaps or support general health.</p>",
+            "text_style": "body",
+            "alignment": "inherit",
+            "text_color": "",
+            "custom_font_size": false,
+            "font_size": 16,
+            "font_size_mobile": 15,
+            "custom_line_height": false,
+            "line_height": 26,
+            "line_height_mobile": 24,
+            "custom_spacing": false,
+            "margin_top": 0,
+            "margin_bottom": 16,
+            "margin_left": 0,
+            "margin_right": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "section_heading_G64wx3",
+        "text_XkNNxY"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/3.jpg",
+        "caption": "",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "full_width": true,
+        "contain_content": true,
+        "color_scheme": "option-1",
+        "padding_top": 100,
+        "padding_bottom": 52,
+        "ignore_spacing": true,
+        "content_custom_padding": true,
+        "content_padding_top": 20,
+        "content_padding_right": 0,
+        "content_padding_bottom": 20,
+        "content_padding_left": 70,
+        "margin_spacing": "negative",
+        "margin_top": 80,
+        "mobile_content_alignment": "left",
+        "mobile_text_position": "above"
+      }
+    },
+    "blocks_section_zthJ4n": {
+      "type": "blocks-section",
+      "blocks": {
+        "section_heading_NCcTrB": {
+          "type": "section-heading",
+          "settings": {
+            "subheading": "Medical guidance",
+            "heading": "&nbsp;When to See a Clinician&nbsp;",
+            "heading_tag": "h2",
+            "description": "<p>If you experience ongoing or unexplained tiredness, speak with a healthcare professional to help identify the cause and explore appropriate treatment options.<br/><br/></p>",
+            "alignment": "center",
+            "max_width": 750,
+            "margin_bottom": 12,
+            "margin_bottom_mobile": 0,
+            "gap_subheading": 16,
+            "gap_subheading_mobile": 12,
+            "gap_heading": 16,
+            "gap_heading_mobile": 12,
+            "subheading_size": 15,
+            "subheading_size_mobile": 12,
+            "subheading_color": "#ffffff",
+            "subheading_weight": "600",
+            "subheading_uppercase": true,
+            "subheading_lines": true,
+            "subheading_line_width": 80,
+            "subheading_line_color": "#cbd8e7",
+            "heading_size": 56,
+            "heading_size_mobile": 34,
+            "heading_color": "#ffffff",
+            "heading_weight": "600",
+            "heading_max_width": 0,
+            "heading_font": "heading",
+            "description_size": 16,
+            "description_size_mobile": 15,
+            "description_color": "#f8f8f8",
+            "description_weight": "default"
+          },
+          "blocks": {}
+        },
+        "container_XtdcHE": {
+          "type": "container",
+          "name": "t:blocks.container.name",
+          "settings": {
+            "background_color": "rgba(0,0,0,0)",
+            "border_radius": 0,
+            "max_width": 0,
+            "alignment": "center",
+            "layout": "flex",
+            "flex_direction": "row",
+            "flex_direction_mobile": "row",
+            "align_items": "center",
+            "justify_content": "center",
+            "gap": 10,
+            "flex_wrap": true,
+            "border_width": 0,
+            "border_color": "#e5e5e5",
+            "border_top": true,
+            "border_right": true,
+            "border_bottom": true,
+            "border_left": true,
+            "padding_vertical": 0,
+            "padding_horizontal": 0,
+            "padding_vertical_mobile": 0,
+            "padding_horizontal_mobile": 0
+          },
+          "blocks": {
+            "button_KL87pW": {
+              "type": "button",
+              "name": "t:blocks.button.name",
+              "settings": {
+                "button_label": "Speak to a Healthcare Professional",
+                "button_link": "shopify://pages/contact",
+                "apply_link_to_image": false,
+                "open_new_tab_1": true,
+                "button_style_secondary": false,
+                "link_style": false,
+                "underline_color": "",
+                "underline_thickness": 2,
+                "text_color": "",
+                "background_color": "#0068d6",
+                "hover_effect": "lift",
+                "sweep_color": "",
+                "hover_duration": 300,
+                "hover_text_color": "",
+                "hover_background_color": "",
+                "hover_border_color": "",
+                "hover_icon_color": "",
+                "hover_underline_color": "",
+                "custom_font_size": true,
+                "font_size": 16,
+                "font_size_mobile": 16,
+                "font_weight": "inherit",
+                "custom_letter_spacing": false,
+                "letter_spacing": 0,
+                "custom_border_radius": true,
+                "border_radius": 6,
+                "border_width": 0,
+                "border_color": "#0068d6",
+                "custom_padding": true,
+                "padding_vertical": 16,
+                "padding_horizontal": 24,
+                "padding_vertical_mobile": 10,
+                "padding_horizontal_mobile": 20,
+                "custom_margin": true,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_left": 0,
+                "margin_right": 0,
+                "icon": "shopify://shop_images/arrow-icon.svg",
+                "icon_size": 20,
+                "icon_position": "last",
+                "icon_spacing": 8,
+                "recolor_icon": false,
+                "icon_color": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_KL87pW"
+          ]
+        }
+      },
+      "block_order": [
+        "section_heading_NCcTrB",
+        "container_XtdcHE"
+      ],
+      "name": "Banner section",
+      "settings": {
+        "anchor_id": "",
         "full_width": false,
         "content_alignment": "left",
         "blocks_gap": 0,
         "blocks_gap_mobile": 0,
         "color_scheme": "option-4",
         "background_color": "",
-        "padding_top": 80,
-        "padding_bottom": 12
-      }
-    },
-    "rich_text_GHEMLV": {
-      "type": "rich-text",
-      "blocks": {
-        "container_4m4Ywr": {
-          "type": "container",
-          "name": "t:blocks.container.name",
-          "settings": {
-            "background_color": "#e8f2ff",
-            "border_radius": 12,
-            "max_width": 0,
-            "alignment": "center",
-            "layout": "block",
-            "flex_direction": "row",
-            "flex_direction_mobile": "column",
-            "align_items": "stretch",
-            "justify_content": "flex-start",
-            "gap": 16,
-            "flex_wrap": false,
-            "border_width": 0,
-            "border_color": "#e8f2ff",
-            "border_top": true,
-            "border_right": true,
-            "border_bottom": true,
-            "border_left": true,
-            "padding_vertical": 52,
-            "padding_horizontal": 52,
-            "padding_vertical_mobile": 52,
-            "padding_horizontal_mobile": 52
-          },
-          "blocks": {
-            "heading_YAnAJa": {
-              "type": "heading",
-              "settings": {
-                "heading": "What is happening&nbsp;",
-                "heading_size": "small",
-                "heading_style": "default",
-                "heading_tag": "h3",
-                "enable_link": false,
-                "link": "",
-                "open_new_tab": false,
-                "highlight_option": "underline-hand",
-                "word_animation_color": "#272727",
-                "font_family": "heading",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 26,
-                "font_size_mobile": 40,
-                "custom_line_height": true,
-                "line_height": 60,
-                "line_height_mobile": 48,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 20,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "text_89QDy6": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Many women notice weight gain in their 40s and 50s, especially around the waist. Falling estrogen changes where the body stores fat, moving it from the hips and thighs toward the abdomen. At the same time, muscle mass naturally declines with age, which lowers the number of calories the body burns at rest.</p><p>Poor sleep, stress and night sweats can also affect appetite hormones and energy levels, making it harder to stay active. These changes are gradual and normal, but they are not inevitable, and small, steady habits make a real difference.</p>",
-                "text_style": "body",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 16,
-                "font_size_mobile": 15,
-                "custom_line_height": false,
-                "line_height": 26,
-                "line_height_mobile": 24,
-                "custom_spacing": false,
-                "margin_top": 0,
-                "margin_bottom": 16,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "heading_GBDyVV": {
-              "type": "heading",
-              "settings": {
-                "heading": "What may help&nbsp;",
-                "heading_size": "small",
-                "heading_style": "default",
-                "heading_tag": "h3",
-                "enable_link": false,
-                "link": "",
-                "open_new_tab": false,
-                "highlight_option": "underline-hand",
-                "word_animation_color": "#272727",
-                "font_family": "heading",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 26,
-                "font_size_mobile": 40,
-                "custom_line_height": true,
-                "line_height": 60,
-                "line_height_mobile": 48,
-                "custom_spacing": true,
-                "margin_top": 40,
-                "margin_bottom": 20,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "text_KwEnHH": {
-              "type": "text",
-              "settings": {
-                "text": "<p><strong>Everyday steps.</strong> Many women get real relief from simple changes:</p>",
-                "text_style": "body",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 16,
-                "font_size_mobile": 15,
-                "custom_line_height": false,
-                "line_height": 26,
-                "line_height_mobile": 24,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "text_NGe8XV": {
-              "type": "text",
-              "settings": {
-                "text": "<ul><li>Do strength training two or three times a week. Building and keeping muscle is one of the most effective ways to support metabolism in midlife.</li><li>Include protein at every meal and plenty of fiber from vegetables, beans and whole grains to help you feel full for longer.</li><li>Protect your sleep and manage stress where you can. Both affect hunger and cravings more than most people expect.</li></ul>",
-                "text_style": "body",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 16,
-                "font_size_mobile": 15,
-                "custom_line_height": true,
-                "line_height": 36,
-                "line_height_mobile": 24,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "text_mAtczE": {
-              "type": "text",
-              "settings": {
-                "text": "<p><strong>Products that may help.</strong> Some women find hormone-free supplements helpful, though the evidence is mixed and quality varies. We stock a small selection chosen for manufacturing quality, and we show the evidence level on every product page. Supplements are not FDA-approved to treat any condition, and what works for one woman may do nothing for another.</p>",
-                "text_style": "body",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 16,
-                "font_size_mobile": 15,
-                "custom_line_height": false,
-                "line_height": 26,
-                "line_height_mobile": 24,
-                "custom_spacing": true,
-                "margin_top": 0,
-                "margin_bottom": 20,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            },
-            "text_wejyc7": {
-              "type": "text",
-              "settings": {
-                "text": "<p><strong>When to see a clinician.</strong> If your weight changes quickly without a clear reason, or comes with fatigue, feeling cold, or changes to your skin or hair, ask a clinician to check things like thyroid function and blood sugar. A menopause-informed clinician can also talk through options that fit your health history. Bacton does not prescribe; we can help you prepare for that conversation.</p>",
-                "text_style": "body",
-                "alignment": "left",
-                "text_color": "",
-                "custom_font_size": false,
-                "font_size": 16,
-                "font_size_mobile": 15,
-                "custom_line_height": false,
-                "line_height": 26,
-                "line_height_mobile": 24,
-                "custom_spacing": false,
-                "margin_top": 0,
-                "margin_bottom": 16,
-                "margin_left": 0,
-                "margin_right": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "heading_YAnAJa",
-            "text_89QDy6",
-            "heading_GBDyVV",
-            "text_KwEnHH",
-            "text_NGe8XV",
-            "text_mAtczE",
-            "text_wejyc7"
-          ]
-        }
-      },
-      "block_order": [
-        "container_4m4Ywr"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "full_width": true,
-        "rich_text_width": 130,
-        "color_scheme": "option-1",
-        "padding_top": 80,
-        "padding_bottom": 32,
-        "ignore_spacing": true,
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "mobile_content_alignment": "left"
+        "background_image": "shopify://shop_images/doctor-consultation.jpg",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "padding_top": 152,
+        "padding_bottom": 152
       }
     },
     "blocks_section_CG8Kak": {
@@ -341,6 +562,7 @@
             "columns_tablet": 2,
             "columns_mobile": 1,
             "equal_height": true,
+            "center_last_row": false,
             "vertical_alignment": "flex-start",
             "left_width": 60,
             "right_max_width": 400,
@@ -357,7 +579,7 @@
             "product_card_xJTrVJ": {
               "type": "product-card",
               "settings": {
-                "product": "embr-wave-2",
+                "product": "womaness-let-me-sleep",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -383,7 +605,7 @@
             "product_card_tJKqz7": {
               "type": "product-card",
               "settings": {
-                "product": "bonafide-noctera",
+                "product": "embr-wave-2",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -409,7 +631,7 @@
             "product_card_7PbN8z": {
               "type": "product-card",
               "settings": {
-                "product": "bonafide-relizen",
+                "product": "womaness-coco-bliss",
                 "symptom_label": "",
                 "description": "",
                 "show_price": true,
@@ -524,12 +746,17 @@
         "text_GAzihQ"
       ],
       "settings": {
+        "anchor_id": "",
         "full_width": false,
         "content_alignment": "left",
         "blocks_gap": 16,
         "blocks_gap_mobile": 16,
         "color_scheme": "option-1",
         "background_color": "#ffffff",
+        "background_position": "center",
+        "background_fit": "cover",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 88
       }
@@ -537,8 +764,11 @@
   },
   "order": [
     "main",
-    "blocks_section_rUc7Hx",
-    "rich_text_GHEMLV",
+    "blocks_section_RVPBKd",
+    "image_with_text_QQmH3M",
+    "image_with_text_9xxUay",
+    "image_with_text_jxmQp7",
+    "blocks_section_zthJ4n",
     "blocks_section_CG8Kak"
   ]
 }
